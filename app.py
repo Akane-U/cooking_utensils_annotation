@@ -51,13 +51,16 @@ def github_write_json(filename: str, data) -> None:
     r.raise_for_status()
 
 # ─── Constants ────────────────────────────────────────────────────────────────
-# アノテーターID（A/B/C）→ 人名の対応表
+# アノテーターID → ログイン名の対応表
 ANNOTATORS = {
-    "A": "ayabe",
-    "B": "shibata",
-    "C": "kondo",
+    "main": "admain",
+    "ad":   "adsub1",
+    "A":    "ayabe",
+    "B":    "shibata",
+    "C":    "kondo",
 }
 _NAME_TO_ID = {v: k for k, v in ANNOTATORS.items()}
+_SUB_IDS = {"ad", "A", "B", "C"}  # sub1レシピ（10件）を使うアノテーター
 
 UTENSIL_CATEGORIES = {
     "容器": (100, 199),
@@ -246,7 +249,7 @@ def used_utensils_in_recipe(ridx: int) -> set:
 
 def init() -> None:
     annotator = st.session_state.get("annotator_select", "")
-    is_sub = annotator in ANNOTATORS
+    is_sub = annotator in _SUB_IDS
     prev = st.session_state.get("_ann_annotator", "__UNSET__")
 
     if "ann" not in st.session_state or prev != annotator:
@@ -260,9 +263,7 @@ def init() -> None:
         if is_sub:
             fname = f"{annotator}_sub1_annotated.json"
         else:
-            fname = st.session_state.get("save_filename", "annotated_output.json")
-            if not fname or fname.endswith("_sub1_annotated.json"):
-                fname = "annotated_output.json"
+            fname = f"{annotator}_annotated.json"
         st.session_state.save_filename = fname
         st.session_state["save_filename_input"] = fname
 
@@ -397,8 +398,8 @@ def cb_del_state(ridx, sidx, si):
 
 def _login_screen() -> None:
     st.title("調理器具アノテーション")
-    st.markdown("#### 名前を選択して開始してください")
-    entered = st.text_input("名前（ayabe / shibata / kondo）")
+    st.markdown("#### あなたの名字を半角ローマ字で入力して開始してください")
+    entered = st.text_input("名前")
 
     if st.button("開始", type="primary"):
         if entered not in _NAME_TO_ID:
@@ -466,7 +467,7 @@ def main() -> None:
 
     utensil_cats = load_utensils()
     annotator = st.session_state.get("annotator_select", "")
-    is_sub = annotator in ANNOTATORS
+    is_sub = annotator in _SUB_IDS
     recipes = load_sub_recipes() if is_sub else load_recipes()
     ann = st.session_state.ann
 
