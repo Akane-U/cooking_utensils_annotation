@@ -370,7 +370,7 @@ def source_select(label: str, key: str, current: str, src: dict, used_ids: set =
     idx = opts.index(cur_label) if cur_label in opts else 0
 
     def _fmt(v: str) -> str:
-        if v in used_labels and v != st.session_state.get(key, ""):
+        if v in used_labels:
             return "✔ " + v
         return v
 
