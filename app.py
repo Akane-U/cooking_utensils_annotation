@@ -244,6 +244,16 @@ def used_utensils_in_recipe(ridx: int) -> set:
     return result
 
 
+def unannotated_indices(ann: list) -> list[int]:
+    """step_after >= 1 のstate_listがすべて空のレシピのインデックスを返す。"""
+    result = []
+    for i, recipe in enumerate(ann):
+        steps = [ws for ws in recipe["world_state_list"] if ws["step_after"] >= 1]
+        if all(len(ws["state_list"]) == 0 for ws in steps):
+            result.append(i)
+    return result
+
+
 # ─── Session state init ────────────────────────────────────────────────────────
 
 
@@ -546,6 +556,16 @@ def main() -> None:
             except Exception as e:
                 st.error(f"読み込み失敗: {e}")
 
+        unannotated = unannotated_indices(ann)
+        if unannotated:
+            st.divider()
+            st.markdown(f"**未アノテーション（{len(unannotated)}件）**")
+            for i in unannotated:
+                title = recipes[i]["title"]
+                if st.button(title, key=f"jump_{i}", use_container_width=True):
+                    st.session_state.ridx = i
+                    st.session_state.sidx = 1
+                    st.rerun()
 
     ridx = st.session_state.ridx
     sidx = st.session_state.sidx
@@ -639,7 +659,7 @@ def main() -> None:
 
                 with loc_col:
                     state["touching_containers_id"] = utensil_single_select(
-                        "現在の場所 (touching_containers_id) ※単一選択",
+                        "位置 (touching_containers_id) ※単一選択",
                         f"loc_{ridx}_{sidx}_{si}",
                         state.get("touching_containers_id", ""),
                         utensil_cats,
@@ -726,11 +746,6 @@ def main() -> None:
         if st.button("＋ stateを追加", key=f"addst_{ridx}_{sidx}"):
             cb_add_state(ridx, sidx)
             st.rerun()
-
-        with st.expander("🔍 現在の World state（参考）", expanded=False):
-            if step_ws:
-                preview = clean_for_save([{"world_state_list": [step_ws]}])
-                st.json(preview[0]["world_state_list"][0])
 
 
 if __name__ == "__main__":
