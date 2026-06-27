@@ -245,11 +245,15 @@ def used_utensils_in_recipe(ridx: int) -> set:
 
 
 def unannotated_indices(ann: list) -> list[int]:
-    """step_after >= 1 のstate_listがすべて空のレシピのインデックスを返す。"""
+    """全stepのうち、state 1のnameが未定義のstepが1件以上あるレシピのインデックスを返す。"""
     result = []
     for i, recipe in enumerate(ann):
         steps = [ws for ws in recipe["world_state_list"] if ws["step_after"] >= 1]
-        if all(len(ws["state_list"]) == 0 for ws in steps):
+        has_empty = any(
+            not ws["state_list"] or not ws["state_list"][0].get("name", "")
+            for ws in steps
+        )
+        if has_empty:
             result.append(i)
     return result
 
@@ -560,7 +564,7 @@ def main() -> None:
         if unannotated:
             st.divider()
             st.markdown(f"**未アノテーション：{len(unannotated)}件**")
-            st.caption(recipes[unannotated[0]]["title"])
+            st.caption(f"{recipes[unannotated[0]]['title']} から再開")
 
     ridx = st.session_state.ridx
     sidx = st.session_state.sidx
