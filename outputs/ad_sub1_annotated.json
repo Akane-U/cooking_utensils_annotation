@@ -702,8 +702,42 @@
                         "touching_containers_id": "両手鍋・片手鍋",
                         "utensil_interactions_list": [
                             {
-                                "source_state_id": "",
-                                "utensils_list": []
+                                "source_state_id": "8",
+                                "utensils_list": [
+                                    "フライパン",
+                                    "木製へら",
+                                    "両手鍋・片手鍋"
+                                ]
+                            },
+                            {
+                                "source_state_id": "9",
+                                "utensils_list": [
+                                    "フライパン",
+                                    "木製へら",
+                                    "両手鍋・片手鍋"
+                                ]
+                            },
+                            {
+                                "source_state_id": "10",
+                                "utensils_list": [
+                                    "フライパン",
+                                    "木製へら",
+                                    "両手鍋・片手鍋"
+                                ]
+                            },
+                            {
+                                "source_state_id": "11",
+                                "utensils_list": [
+                                    "フライパン",
+                                    "木製へら",
+                                    "両手鍋・片手鍋"
+                                ]
+                            },
+                            {
+                                "source_state_id": "d64fcaaf",
+                                "utensils_list": [
+                                    "両手鍋・片手鍋"
+                                ]
                             }
                         ]
                     }
@@ -770,7 +804,14 @@
             },
             {
                 "step_after": 1,
-                "state_list": []
+                "state_list": [
+                    {
+                        "id": "19d04f6f",
+                        "name": "",
+                        "touching_containers_id": "",
+                        "utensil_interactions_list": []
+                    }
+                ]
             },
             {
                 "step_after": 2,
@@ -780,7 +821,8 @@
                 "step_after": 3,
                 "state_list": []
             }
-        ]
+        ],
+        "annotation_note": ""
     },
     {
         "title": "かぶとたらの白ドリア",
