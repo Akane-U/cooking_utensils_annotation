@@ -560,11 +560,7 @@ def main() -> None:
         if unannotated:
             st.divider()
             st.markdown(f"**未アノテーション：{len(unannotated)}件**")
-            first = unannotated[0]
-            if st.button(recipes[first]["title"], key="jump_first", use_container_width=True):
-                st.session_state.ridx = first
-                st.session_state.sidx = 1
-                st.rerun()
+            st.caption(recipes[unannotated[0]]["title"])
 
     ridx = st.session_state.ridx
     sidx = st.session_state.sidx
