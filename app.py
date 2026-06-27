@@ -280,7 +280,7 @@ def utensil_single_select(label: str, key: str, current: str, utensil_cats: dict
     opts.append(OTHER)
 
     def _fmt(v: str) -> str:
-        if used_utensils and v in used_utensils:
+        if used_utensils and v in used_utensils and v != st.session_state.get(key, ""):
             return "✔ " + v
         return v
 
@@ -314,7 +314,7 @@ def utensil_multi_select(label: str, key: str, current: list, utensil_cats: dict
     opts.append(OTHER)
 
     def _fmt(v: str) -> str:
-        if used_utensils and v in used_utensils:
+        if used_utensils and v in used_utensils and v not in st.session_state.get(key, []):
             return "✔ " + v
         return v
 
@@ -349,17 +349,21 @@ def source_label(step: int, name: str) -> str:
 
 def source_select(label: str, key: str, current: str, src: dict, used_ids=None) -> str:
     """src: {id: (step_after, name)}; used_ids: 既に選択済みのid集合"""
-    id2label = {}
-    for sid, (step, name) in src.items():
-        base = source_label(step, name)
-        id2label[sid] = ("✔ " + base) if (used_ids and sid in used_ids) else base
+    id2label = {sid: source_label(step, name) for sid, (step, name) in src.items()}
     label2id = {v: k for k, v in id2label.items()}
+
+    used_labels = {id2label[sid] for sid in (used_ids or []) if sid in id2label}
 
     cur_label = id2label.get(current, OTHER_CUSTOM if current else "")
     opts = [""] + list(id2label.values()) + [OTHER_CUSTOM]
     idx = opts.index(cur_label) if cur_label in opts else 0
 
-    sel = st.selectbox(label, opts, index=idx, key=key)
+    def _fmt(v: str) -> str:
+        if v in used_labels and v != st.session_state.get(key, ""):
+            return "✔ " + v
+        return v
+
+    sel = st.selectbox(label, opts, index=idx, key=key, format_func=_fmt)
     if sel == OTHER_CUSTOM:
         raw = current if current not in src else ""
         default_custom = raw[5:] if raw.startswith("None_") else raw
@@ -540,12 +544,6 @@ def main() -> None:
             except Exception as e:
                 st.error(f"読み込み失敗: {e}")
 
-        st.divider()
-        if st.button("🔄 初期化（全消去）", use_container_width=True):
-            fresh = build_from_recipes(recipes)
-            ensure_uids(fresh)
-            st.session_state.ann = fresh
-            st.rerun()
 
     ridx = st.session_state.ridx
     sidx = st.session_state.sidx
