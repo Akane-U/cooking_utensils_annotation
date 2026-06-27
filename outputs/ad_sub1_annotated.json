@@ -808,12 +808,12 @@
                     {
                         "id": "19d04f6f",
                         "name": "水気をきった豆腐",
-                        "touching_containers_id": "ボウル",
+                        "touching_containers_id": "耐熱皿・器",
                         "utensil_interactions_list": [
                             {
                                 "source_state_id": "1",
                                 "utensils_list": [
-                                    "ボウル"
+                                    "耐熱皿・器"
                                 ]
                             }
                         ]
@@ -895,7 +895,7 @@
                     {
                         "id": "a6cb0c08",
                         "name": "明太豆腐チーズ",
-                        "touching_containers_id": "耐熱皿・器",
+                        "touching_containers_id": "None_一次保存容器",
                         "utensil_interactions_list": [
                             {
                                 "source_state_id": "8",
@@ -1016,21 +1016,235 @@
             },
             {
                 "step_after": 1,
-                "state_list": []
+                "state_list": [
+                    {
+                        "id": "3f17da2b",
+                        "name": "縦半分に切ったかぶの実",
+                        "touching_containers_id": "まな板",
+                        "utensil_interactions_list": [
+                            {
+                                "source_state_id": "1",
+                                "utensils_list": [
+                                    "包丁",
+                                    "まな板"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "id": "addf14cf",
+                        "name": "4cm長さに切ったかぶの葉",
+                        "touching_containers_id": "まな板",
+                        "utensil_interactions_list": [
+                            {
+                                "source_state_id": "1",
+                                "utensils_list": [
+                                    "包丁",
+                                    "まな板"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "id": "0baca9ae",
+                        "name": "ほぐしたしめじ",
+                        "touching_containers_id": "None_一時保存容器",
+                        "utensil_interactions_list": [
+                            {
+                                "source_state_id": "3",
+                                "utensils_list": [
+                                    "None_一時保存容器"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "id": "983b593c",
+                        "name": "4cm長さに切ったねぎ",
+                        "touching_containers_id": "まな板",
+                        "utensil_interactions_list": [
+                            {
+                                "source_state_id": "4",
+                                "utensils_list": [
+                                    "包丁",
+                                    "まな板"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "id": "a9d8b02d",
+                        "name": "4等分にしたたら",
+                        "touching_containers_id": "まな板",
+                        "utensil_interactions_list": [
+                            {
+                                "source_state_id": "2",
+                                "utensils_list": [
+                                    "ざる",
+                                    "クッキングペーパー",
+                                    "包丁",
+                                    "まな板"
+                                ]
+                            },
+                            {
+                                "source_state_id": "None_熱湯",
+                                "utensils_list": [
+                                    "ざる",
+                                    "クッキングペーパー"
+                                ]
+                            },
+                            {
+                                "source_state_id": "None_氷水",
+                                "utensils_list": [
+                                    "ざる",
+                                    "クッキングペーパー"
+                                ]
+                            }
+                        ]
+                    }
+                ]
             },
             {
                 "step_after": 2,
-                "state_list": []
+                "state_list": [
+                    {
+                        "id": "431f6ab2",
+                        "name": "1・[A]を煮込んだもの",
+                        "touching_containers_id": "両手鍋・片手鍋",
+                        "utensil_interactions_list": [
+                            {
+                                "source_state_id": "3f17da2b",
+                                "utensils_list": [
+                                    "両手鍋・片手鍋"
+                                ]
+                            },
+                            {
+                                "source_state_id": "addf14cf",
+                                "utensils_list": [
+                                    "両手鍋・片手鍋"
+                                ]
+                            },
+                            {
+                                "source_state_id": "0baca9ae",
+                                "utensils_list": [
+                                    "両手鍋・片手鍋"
+                                ]
+                            },
+                            {
+                                "source_state_id": "983b593c",
+                                "utensils_list": [
+                                    "両手鍋・片手鍋"
+                                ]
+                            },
+                            {
+                                "source_state_id": "a9d8b02d",
+                                "utensils_list": [
+                                    "両手鍋・片手鍋"
+                                ]
+                            },
+                            {
+                                "source_state_id": "5",
+                                "utensils_list": [
+                                    "両手鍋・片手鍋"
+                                ]
+                            },
+                            {
+                                "source_state_id": "6",
+                                "utensils_list": [
+                                    "両手鍋・片手鍋"
+                                ]
+                            },
+                            {
+                                "source_state_id": "7",
+                                "utensils_list": [
+                                    "両手鍋・片手鍋"
+                                ]
+                            },
+                            {
+                                "source_state_id": "8",
+                                "utensils_list": [
+                                    "両手鍋・片手鍋"
+                                ]
+                            },
+                            {
+                                "source_state_id": "9",
+                                "utensils_list": [
+                                    "両手鍋・片手鍋"
+                                ]
+                            },
+                            {
+                                "source_state_id": "12",
+                                "utensils_list": [
+                                    "両手鍋・片手鍋"
+                                ]
+                            }
+                        ]
+                    }
+                ]
             },
             {
                 "step_after": 3,
-                "state_list": []
+                "state_list": [
+                    {
+                        "id": "d3b4415a",
+                        "name": "ごはんに2のソースをかけたもの",
+                        "touching_containers_id": "耐熱皿・器",
+                        "utensil_interactions_list": [
+                            {
+                                "source_state_id": "10",
+                                "utensils_list": [
+                                    "耐熱皿・器"
+                                ]
+                            },
+                            {
+                                "source_state_id": "431f6ab2",
+                                "utensils_list": [
+                                    "耐熱皿・器"
+                                ]
+                            },
+                            {
+                                "source_state_id": "13",
+                                "utensils_list": [
+                                    "耐熱皿・器"
+                                ]
+                            }
+                        ]
+                    }
+                ]
             },
             {
                 "step_after": 4,
-                "state_list": []
+                "state_list": [
+                    {
+                        "id": "05bd7ce3",
+                        "name": "かぶとたらの白ドリア",
+                        "touching_containers_id": "耐熱皿・器",
+                        "utensil_interactions_list": [
+                            {
+                                "source_state_id": "d3b4415a",
+                                "utensils_list": [
+                                    "耐熱皿・器"
+                                ]
+                            },
+                            {
+                                "source_state_id": "14",
+                                "utensils_list": [
+                                    "耐熱皿・器"
+                                ]
+                            },
+                            {
+                                "source_state_id": "11",
+                                "utensils_list": [
+                                    "おろし器",
+                                    "耐熱皿・器"
+                                ]
+                            }
+                        ]
+                    }
+                ]
             }
-        ]
+        ],
+        "annotation_note": "step1: 熱湯と氷水を書くべきか"
     },
     {
         "title": "ミートボールのトマト煮",
