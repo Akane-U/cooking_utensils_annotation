@@ -512,11 +512,7 @@ def main() -> None:
 
         st.divider()
 
-        filename = st.text_input(
-            "ファイル名",
-            value=st.session_state.save_filename,
-            key="save_filename_input",
-        )
+        filename = st.session_state.save_filename
         if not filename.endswith(".json"):
             filename += ".json"
 
