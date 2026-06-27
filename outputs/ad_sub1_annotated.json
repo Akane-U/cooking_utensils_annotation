@@ -137,7 +137,7 @@
                     {
                         "id": "b7e00461",
                         "name": "あさりの根深汁",
-                        "touching_containers_id": "耐熱皿・器",
+                        "touching_containers_id": "None_耐熱皿・器",
                         "utensil_interactions_list": [
                             {
                                 "source_state_id": "4",
@@ -145,20 +145,20 @@
                                     "計量スプーン",
                                     "味噌漉し",
                                     "両手鍋・片手鍋",
-                                    "耐熱皿・器"
+                                    "None_耐熱皿・器"
                                 ]
                             },
                             {
                                 "source_state_id": "faf2c71e",
                                 "utensils_list": [
                                     "両手鍋・片手鍋",
-                                    "耐熱皿・器"
+                                    "None_耐熱皿・器"
                                 ]
                             },
                             {
                                 "source_state_id": "85eb75eb",
                                 "utensils_list": [
-                                    "耐熱皿・器"
+                                    "None_耐熱皿・器"
                                 ]
                             }
                         ]
@@ -491,24 +491,24 @@
                     {
                         "id": "51f99af9",
                         "name": "マカロニグラタン",
-                        "touching_containers_id": "耐熱皿・器",
+                        "touching_containers_id": "None_耐熱皿・器",
                         "utensil_interactions_list": [
                             {
                                 "source_state_id": "efe8c283",
                                 "utensils_list": [
-                                    "耐熱皿・器"
+                                    "耐熱皿・器（盛り付けなど用途明記有）"
                                 ]
                             },
                             {
-                                "source_state_id": "",
+                                "source_state_id": "8",
                                 "utensils_list": [
-                                    "耐熱皿・器"
+                                    "耐熱皿・器（盛り付けなど用途明記有）"
                                 ]
                             },
                             {
-                                "source_state_id": "",
+                                "source_state_id": "9",
                                 "utensils_list": [
-                                    "耐熱皿・器"
+                                    "耐熱皿・器（盛り付けなど用途明記有）"
                                 ]
                             }
                         ]
@@ -808,12 +808,12 @@
                     {
                         "id": "19d04f6f",
                         "name": "水気をきった豆腐",
-                        "touching_containers_id": "耐熱皿・器",
+                        "touching_containers_id": "一時保管用皿・器（用途明記無）",
                         "utensil_interactions_list": [
                             {
                                 "source_state_id": "1",
                                 "utensils_list": [
-                                    "耐熱皿・器"
+                                    "耐熱皿・器（盛り付けなど用途明記有）"
                                 ]
                             }
                         ]
@@ -906,13 +906,13 @@
                             {
                                 "source_state_id": "dd52aada",
                                 "utensils_list": [
-                                    "耐熱皿・器"
+                                    "None_耐熱皿・器"
                                 ]
                             },
                             {
                                 "source_state_id": "7",
                                 "utensils_list": [
-                                    "耐熱皿・器"
+                                    "None_耐熱皿・器"
                                 ]
                             }
                         ]
@@ -1048,12 +1048,12 @@
                     {
                         "id": "0baca9ae",
                         "name": "ほぐしたしめじ",
-                        "touching_containers_id": "None_一時保存容器",
+                        "touching_containers_id": "一時保管用皿・器（用途明記無）",
                         "utensil_interactions_list": [
                             {
                                 "source_state_id": "3",
                                 "utensils_list": [
-                                    "None_一時保存容器"
+                                    "一時保管用皿・器（用途明記無）"
                                 ]
                             }
                         ]
@@ -1188,24 +1188,24 @@
                     {
                         "id": "d3b4415a",
                         "name": "ごはんに2のソースをかけたもの",
-                        "touching_containers_id": "耐熱皿・器",
+                        "touching_containers_id": "耐熱皿・器（盛り付けなど用途明記有）",
                         "utensil_interactions_list": [
                             {
                                 "source_state_id": "10",
                                 "utensils_list": [
-                                    "耐熱皿・器"
+                                    "耐熱皿・器（盛り付けなど用途明記有）"
                                 ]
                             },
                             {
                                 "source_state_id": "431f6ab2",
                                 "utensils_list": [
-                                    "耐熱皿・器"
+                                    "耐熱皿・器（盛り付けなど用途明記有）"
                                 ]
                             },
                             {
                                 "source_state_id": "13",
                                 "utensils_list": [
-                                    "耐熱皿・器"
+                                    "耐熱皿・器（盛り付けなど用途明記有）"
                                 ]
                             }
                         ]
@@ -1218,25 +1218,25 @@
                     {
                         "id": "05bd7ce3",
                         "name": "かぶとたらの白ドリア",
-                        "touching_containers_id": "耐熱皿・器",
+                        "touching_containers_id": "耐熱皿・器（盛り付けなど用途明記有）",
                         "utensil_interactions_list": [
                             {
                                 "source_state_id": "d3b4415a",
                                 "utensils_list": [
-                                    "耐熱皿・器"
+                                    "耐熱皿・器（盛り付けなど用途明記有）"
                                 ]
                             },
                             {
                                 "source_state_id": "14",
                                 "utensils_list": [
-                                    "耐熱皿・器"
+                                    "耐熱皿・器（盛り付けなど用途明記有）"
                                 ]
                             },
                             {
                                 "source_state_id": "11",
                                 "utensils_list": [
                                     "おろし器",
-                                    "耐熱皿・器"
+                                    "耐熱皿・器（盛り付けなど用途明記有）"
                                 ]
                             }
                         ]
@@ -1346,7 +1346,14 @@
             },
             {
                 "step_after": 1,
-                "state_list": []
+                "state_list": [
+                    {
+                        "id": "1bbeb5fa",
+                        "name": "",
+                        "touching_containers_id": "",
+                        "utensil_interactions_list": []
+                    }
+                ]
             },
             {
                 "step_after": 2,
@@ -1360,7 +1367,8 @@
                 "step_after": 4,
                 "state_list": []
             }
-        ]
+        ],
+        "annotation_note": ""
     },
     {
         "title": "大根とひき肉のコロコロカレー",
