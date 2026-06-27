@@ -245,12 +245,12 @@ def used_utensils_in_recipe(ridx: int) -> set:
 
 
 def unannotated_indices(ann: list) -> list[int]:
-    """全stepのうち、state 1のnameが未定義のstepが1件以上あるレシピのインデックスを返す。"""
+    """全stepを通じてnameが空のstateが1件以上あるレシピのインデックスを返す。"""
     result = []
     for i, recipe in enumerate(ann):
         steps = [ws for ws in recipe["world_state_list"] if ws["step_after"] >= 1]
         has_empty = any(
-            not ws["state_list"] or not ws["state_list"][0].get("name", "")
+            not ws["state_list"] or any(not s.get("name", "") for s in ws["state_list"])
             for ws in steps
         )
         if has_empty:
