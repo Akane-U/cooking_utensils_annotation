@@ -281,7 +281,7 @@ def utensil_single_select(label: str, key: str, current: str, utensil_cats: dict
 
     def _fmt(v: str) -> str:
         if used_utensils and v in used_utensils:
-            return "✅ " + v
+            return "✔ " + v
         return v
 
     display = current if in_list else (OTHER if current else "")
@@ -315,7 +315,7 @@ def utensil_multi_select(label: str, key: str, current: list, utensil_cats: dict
 
     def _fmt(v: str) -> str:
         if used_utensils and v in used_utensils:
-            return "✅ " + v
+            return "✔ " + v
         return v
 
     default = known + ([OTHER] if custom else [])
@@ -352,7 +352,7 @@ def source_select(label: str, key: str, current: str, src: dict, used_ids=None) 
     id2label = {}
     for sid, (step, name) in src.items():
         base = source_label(step, name)
-        id2label[sid] = ("✅ " + base) if (used_ids and sid in used_ids) else base
+        id2label[sid] = ("✔ " + base) if (used_ids and sid in used_ids) else base
     label2id = {v: k for k, v in id2label.items()}
 
     cur_label = id2label.get(current, OTHER_CUSTOM if current else "")
@@ -462,11 +462,11 @@ def main() -> None:
 
     # ── Nav column ────────────────────────────────────────────────────────────
     with nav_col:
-        st.markdown("**🍳 アノテーション**")
+        # st.markdown("**アノテーション**")
 
         # アノテーター選択（変更時に再初期化）
         st.selectbox(
-            "アノテーター",
+            "名前選択",
             [""] + ANNOTATORS,
             format_func=lambda x: "（メイン）" if x == "" else x,
             key="annotator_select",
@@ -478,7 +478,7 @@ def main() -> None:
         st.divider()
 
         new_ridx = st.selectbox(
-            "レシピ",
+            "レシピ選択",
             range(len(recipes)),
             format_func=lambda i: f"{i + 1}. {recipes[i]['title']}",
             index=st.session_state.ridx,
@@ -510,36 +510,21 @@ def main() -> None:
         if not filename.endswith(".json"):
             filename += ".json"
 
-        download_data = json.dumps(
-            add_none_prefixes(clean_for_save(ann), utensil_cats),
-            ensure_ascii=False,
-            indent=4,
-        )
-        st.download_button(
-            "⬇ ローカルにダウンロード",
-            data=download_data,
-            file_name=filename,
-            mime="application/json",
-            use_container_width=True,
-        )
-
-        if st.button("☁ GitHubに保存", type="primary", use_container_width=True):
+        if st.button("☁ 保存", type="primary", use_container_width=True):
             try:
                 github_write_json(
                     filename,
                     add_none_prefixes(clean_for_save(ann), utensil_cats),
                 )
-                st.success(f"GitHubに保存しました: outputs/{filename}")
+                st.success(f"保存しました: outputs/{filename}")
             except Exception as e:
                 st.error(f"保存失敗: {e}")
 
-        st.divider()
-
-        if st.button("☁ GitHubから読み込む", use_container_width=True):
+        if st.button("☁ 読み込み", use_container_width=True):
             try:
                 loaded, _ = github_read_json(filename)
                 if loaded is None:
-                    st.warning(f"outputs/{filename} がGitHubに見つかりません")
+                    st.warning(f"outputs/{filename} がストレージに見つかりません")
                 else:
                     fresh = build_from_recipes(recipes)
                     loaded_stripped = strip_none_prefixes(loaded)
@@ -554,23 +539,6 @@ def main() -> None:
                     st.rerun()
             except Exception as e:
                 st.error(f"読み込み失敗: {e}")
-
-        uploaded = st.file_uploader("ローカルJSONを読み込む", type=["json"], key="file_uploader")
-        if uploaded is not None:
-            loaded = json.load(uploaded)
-            fresh = build_from_recipes(recipes)
-            loaded_stripped = strip_none_prefixes(loaded)
-            loaded_map = {r["title"]: r for r in loaded_stripped}
-            for i, r in enumerate(fresh):
-                if r["title"] in loaded_map:
-                    fresh[i] = loaded_map[r["title"]]
-            ensure_uids(fresh)
-            st.session_state.ann = fresh
-            st.session_state.ridx = 0
-            st.session_state.sidx = 1
-            st.session_state.save_filename = uploaded.name
-            st.session_state["save_filename_input"] = uploaded.name
-            st.rerun()
 
         st.divider()
         if st.button("🔄 初期化（全消去）", use_container_width=True):
@@ -587,7 +555,7 @@ def main() -> None:
     with left:
         st.subheader(recipe["title"])
 
-        with st.expander("📋 材料", expanded=False):
+        with st.expander("材料", expanded=False):
             for ing in recipe["ingredients"]:
                 st.write(f"• {ing}")
 
@@ -604,7 +572,7 @@ def main() -> None:
                 st.markdown(f"**Step {i}**: {instr}")
             st.write("")
 
-        st.markdown("#### 📝 アノテーション備考欄")
+        st.markdown("#### アノテーション備考欄")
         ann[ridx]["annotation_note"] = st.text_area(
             "アノテーション備考欄",
             value=ann[ridx].get("annotation_note", ""),
