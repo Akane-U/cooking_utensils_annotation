@@ -990,25 +990,25 @@
                     },
                     {
                         "id": "11",
-                        "name": "【A】 チーズ（ハードタイプ） 適量",
+                        "name": "チーズ（ハードタイプ） 適量",
                         "touching_containers_id": "",
                         "utensil_interactions_list": []
                     },
                     {
                         "id": "12",
-                        "name": "【A】 塩 ",
+                        "name": "塩 ",
                         "touching_containers_id": "",
                         "utensil_interactions_list": []
                     },
                     {
                         "id": "13",
-                        "name": "【A】 バター ",
+                        "name": "バター ",
                         "touching_containers_id": "",
                         "utensil_interactions_list": []
                     },
                     {
                         "id": "14",
-                        "name": "【A】 黒こしょう（粗びき） ",
+                        "name": "黒こしょう（粗びき） ",
                         "touching_containers_id": "",
                         "utensil_interactions_list": []
                     }
