@@ -358,16 +358,23 @@ def source_label(step: int, name: str) -> str:
     return name if step == 0 else f"step {step}: {name}"
 
 
-def source_select(label: str, key: str, current: str, src: dict) -> str:
-    """src: {id: (step_after, name)}"""
+def source_select(label: str, key: str, current: str, src: dict, used_ids: set = None) -> str:
+    """src: {id: (step_after, name)}; used_ids: 既に使用済みのid集合"""
     id2label = {sid: source_label(step, name) for sid, (step, name) in src.items()}
     label2id = {v: k for k, v in id2label.items()}
+
+    used_labels = {id2label[sid] for sid in (used_ids or []) if sid in id2label}
 
     cur_label = id2label.get(current, OTHER_CUSTOM if current else "")
     opts = [""] + list(id2label.values()) + [OTHER_CUSTOM]
     idx = opts.index(cur_label) if cur_label in opts else 0
 
-    sel = st.selectbox(label, opts, index=idx, key=key)
+    def _fmt(v: str) -> str:
+        if v in used_labels and v != st.session_state.get(key, ""):
+            return "✔ " + v
+        return v
+
+    sel = st.selectbox(label, opts, index=idx, key=key, format_func=_fmt)
     if sel == OTHER_CUSTOM:
         raw = current if current not in src else ""
         default_custom = raw[5:] if raw.startswith("None_") else raw
@@ -564,7 +571,7 @@ def main() -> None:
         if unannotated:
             st.divider()
             st.markdown(f"**未アノテーション：{len(unannotated)}件**")
-            st.caption(f"{recipes[unannotated[0]]['title']} から再開")
+            st.caption(f"「{recipes[unannotated[0]]['title']}」から再開")
 
     ridx = st.session_state.ridx
     sidx = st.session_state.sidx
@@ -620,6 +627,7 @@ def main() -> None:
             return
 
         src = prev_states(ridx, sidx)
+        used_sources = used_source_ids(ridx, sidx)
 
         # stateが空なら1つ自動追加
         if not step_ws["state_list"]:
@@ -683,6 +691,7 @@ def main() -> None:
                                 f"src_{ridx}_{sidx}_{si}_{uid}",
                                 inter.get("source_state_id", ""),
                                 src,
+                                used_ids=used_sources,
                             )
 
                         with u_col:
