@@ -51,7 +51,13 @@ def github_write_json(filename: str, data) -> None:
     r.raise_for_status()
 
 # ─── Constants ────────────────────────────────────────────────────────────────
-ANNOTATORS = ["ueda", "A", "B", "C"]
+# アノテーターID（A/B/C）→ 人名の対応表
+ANNOTATORS = {
+    "A": "ayabe",
+    "B": "shibata",
+    "C": "kondo",
+}
+_NAME_TO_ID = {v: k for k, v in ANNOTATORS.items()}
 
 UTENSIL_CATEGORIES = {
     "容器": (100, 199),
@@ -269,7 +275,7 @@ _CAT_SEP_PRE = "── "
 _CAT_SEP_SUF = " ──"
 
 
-def utensil_single_select(label: str, key: str, current: str, utensil_cats: dict, used_utensils: set = None) -> str:
+def utensil_single_select(label: str, key: str, current: str, utensil_cats: dict) -> str:
     utensils = flat_utensils(utensil_cats)
     in_list = current in utensils
 
@@ -279,11 +285,6 @@ def utensil_single_select(label: str, key: str, current: str, utensil_cats: dict
         opts.extend(names)
     opts.append(OTHER)
 
-    def _fmt(v: str) -> str:
-        if used_utensils and v in used_utensils and v != st.session_state.get(key, ""):
-            return "✔ " + v
-        return v
-
     display = current if in_list else (OTHER if current else "")
 
     def _clear_sep() -> None:
@@ -292,7 +293,7 @@ def utensil_single_select(label: str, key: str, current: str, utensil_cats: dict
             st.session_state[key] = ""
 
     idx = opts.index(display) if display in opts else 0
-    sel = st.selectbox(label, opts, index=idx, key=key, on_change=_clear_sep, format_func=_fmt)
+    sel = st.selectbox(label, opts, index=idx, key=key, on_change=_clear_sep)
 
     if sel.startswith(_CAT_SEP_PRE) and sel.endswith(_CAT_SEP_SUF):
         return current
@@ -302,7 +303,7 @@ def utensil_single_select(label: str, key: str, current: str, utensil_cats: dict
     return sel
 
 
-def utensil_multi_select(label: str, key: str, current: list, utensil_cats: dict, used_utensils: set = None) -> list:
+def utensil_multi_select(label: str, key: str, current: list, utensil_cats: dict) -> list:
     utensils = flat_utensils(utensil_cats)
     known = [u for u in current if u in utensils]
     custom = [u for u in current if u not in utensils]
@@ -313,11 +314,6 @@ def utensil_multi_select(label: str, key: str, current: list, utensil_cats: dict
         opts.extend(names)
     opts.append(OTHER)
 
-    def _fmt(v: str) -> str:
-        if used_utensils and v in used_utensils and v not in st.session_state.get(key, []):
-            return "✔ " + v
-        return v
-
     default = known + ([OTHER] if custom else [])
 
     def _remove_seps() -> None:
@@ -326,7 +322,7 @@ def utensil_multi_select(label: str, key: str, current: list, utensil_cats: dict
             if not (u.startswith(_CAT_SEP_PRE) and u.endswith(_CAT_SEP_SUF))
         ]
 
-    sel = st.multiselect(label, opts, default=[d for d in default if d in opts], key=key, on_change=_remove_seps, format_func=_fmt)
+    sel = st.multiselect(label, opts, default=[d for d in default if d in opts], key=key, on_change=_remove_seps)
 
     result = [
         u for u in sel
@@ -347,23 +343,16 @@ def source_label(step: int, name: str) -> str:
     return name if step == 0 else f"step {step}: {name}"
 
 
-def source_select(label: str, key: str, current: str, src: dict, used_ids=None) -> str:
-    """src: {id: (step_after, name)}; used_ids: 既に選択済みのid集合"""
+def source_select(label: str, key: str, current: str, src: dict) -> str:
+    """src: {id: (step_after, name)}"""
     id2label = {sid: source_label(step, name) for sid, (step, name) in src.items()}
     label2id = {v: k for k, v in id2label.items()}
-
-    used_labels = {id2label[sid] for sid in (used_ids or []) if sid in id2label}
 
     cur_label = id2label.get(current, OTHER_CUSTOM if current else "")
     opts = [""] + list(id2label.values()) + [OTHER_CUSTOM]
     idx = opts.index(cur_label) if cur_label in opts else 0
 
-    def _fmt(v: str) -> str:
-        if v in used_labels and v != st.session_state.get(key, ""):
-            return "✔ " + v
-        return v
-
-    sel = st.selectbox(label, opts, index=idx, key=key, format_func=_fmt)
+    sel = st.selectbox(label, opts, index=idx, key=key)
     if sel == OTHER_CUSTOM:
         raw = current if current not in src else ""
         default_custom = raw[5:] if raw.startswith("None_") else raw
@@ -406,8 +395,28 @@ def cb_del_state(ridx, sidx, si):
 # ─── Main ─────────────────────────────────────────────────────────────────────
 
 
+def _login_screen() -> None:
+    st.title("調理器具アノテーション")
+    st.markdown("#### 名前を選択して開始してください")
+    entered = st.text_input("名前（ayabe / shibata / kondo）")
+
+    if st.button("開始", type="primary"):
+        if entered not in _NAME_TO_ID:
+            st.error(f"名前が正しくありません: {entered}")
+            return
+        st.session_state.annotator_select = _NAME_TO_ID[entered]
+        st.session_state.annotator_confirmed = True
+        init()
+        st.rerun()
+
+
 def main() -> None:
     st.set_page_config(page_title="アノテーションツール", layout="wide")
+
+    if not st.session_state.get("annotator_confirmed", False):
+        _login_screen()
+        return
+
     init()
 
     st.markdown(
@@ -468,15 +477,11 @@ def main() -> None:
     with nav_col:
         # st.markdown("**アノテーション**")
 
-        # アノテーター選択（変更時に再初期化）
-        st.selectbox(
-            "名前選択",
-            [""] + ANNOTATORS,
-            format_func=lambda x: "（メイン）" if x == "" else x,
-            key="annotator_select",
-        )
-        if st.session_state.get("_ann_annotator", "__UNSET__") != st.session_state.get("annotator_select", ""):
-            init()
+        annotator_label = ANNOTATORS.get(annotator, "admin")
+        st.markdown(f"**{annotator_label}**")
+        if st.button("ログアウト", use_container_width=True):
+            for k in ["annotator_confirmed", "annotator_select", "_ann_annotator", "ann"]:
+                st.session_state.pop(k, None)
             st.rerun()
 
         st.divider()
@@ -599,8 +604,6 @@ def main() -> None:
             return
 
         src = prev_states(ridx, sidx)
-        used_sources = used_source_ids(ridx, sidx)
-        used_utensils = used_utensils_in_recipe(ridx)
 
         # stateが空なら1つ自動追加
         if not step_ws["state_list"]:
@@ -643,7 +646,6 @@ def main() -> None:
                         f"loc_{ridx}_{sidx}_{si}",
                         state.get("touching_containers_id", ""),
                         utensil_cats,
-                        used_utensils=used_utensils,
                     )
 
                 st.markdown("---")
@@ -665,7 +667,6 @@ def main() -> None:
                                 f"src_{ridx}_{sidx}_{si}_{uid}",
                                 inter.get("source_state_id", ""),
                                 src,
-                                used_ids=used_sources,
                             )
 
                         with u_col:
@@ -674,7 +675,6 @@ def main() -> None:
                                 wkey,
                                 inter.get("utensils_list", []),
                                 utensil_cats,
-                                used_utensils=used_utensils,
                             )
 
                         with copy_col:
