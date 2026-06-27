@@ -559,13 +559,12 @@ def main() -> None:
         unannotated = unannotated_indices(ann)
         if unannotated:
             st.divider()
-            st.markdown(f"**未アノテーション（{len(unannotated)}件）**")
-            for i in unannotated:
-                title = recipes[i]["title"]
-                if st.button(title, key=f"jump_{i}", use_container_width=True):
-                    st.session_state.ridx = i
-                    st.session_state.sidx = 1
-                    st.rerun()
+            st.markdown(f"**未アノテーション：{len(unannotated)}件**")
+            first = unannotated[0]
+            if st.button(recipes[first]["title"], key="jump_first", use_container_width=True):
+                st.session_state.ridx = first
+                st.session_state.sidx = 1
+                st.rerun()
 
     ridx = st.session_state.ridx
     sidx = st.session_state.sidx
