@@ -353,7 +353,8 @@
                             {
                                 "source_state_id": "3",
                                 "utensils_list": [
-                                    "ボウル"
+                                    "ボウル",
+                                    "串"
                                 ]
                             },
                             {
@@ -377,19 +378,142 @@
                 "state_list": [
                     {
                         "id": "5d207792",
-                        "name": "",
-                        "touching_containers_id": "",
-                        "utensil_interactions_list": []
+                        "name": "たまねぎ・鶏肉・えび・しめじの炒めもの",
+                        "touching_containers_id": "フライパン",
+                        "utensil_interactions_list": [
+                            {
+                                "source_state_id": "12",
+                                "utensils_list": [
+                                    "台秤",
+                                    "フライパン",
+                                    "木製へら"
+                                ]
+                            },
+                            {
+                                "source_state_id": "b40cf6ad",
+                                "utensils_list": [
+                                    "フライパン",
+                                    "木製へら"
+                                ]
+                            },
+                            {
+                                "source_state_id": "d75c818d",
+                                "utensils_list": [
+                                    "フライパン",
+                                    "木製へら"
+                                ]
+                            },
+                            {
+                                "source_state_id": "a896cf1e",
+                                "utensils_list": [
+                                    "フライパン",
+                                    "木製へら"
+                                ]
+                            },
+                            {
+                                "source_state_id": "9ce3acd4",
+                                "utensils_list": [
+                                    "フライパン",
+                                    "木製へら"
+                                ]
+                            }
+                        ]
                     }
                 ]
             },
             {
                 "step_after": 4,
-                "state_list": []
+                "state_list": [
+                    {
+                        "id": "efe8c283",
+                        "name": "小麦粉・牛乳・生クリームを煮たものとマカロニの混合物",
+                        "touching_containers_id": "フライパン",
+                        "utensil_interactions_list": [
+                            {
+                                "source_state_id": "13",
+                                "utensils_list": [
+                                    "計量スプーン",
+                                    "フライパン",
+                                    "木製へら"
+                                ]
+                            },
+                            {
+                                "source_state_id": "6",
+                                "utensils_list": [
+                                    "フライパン",
+                                    "木製へら"
+                                ]
+                            },
+                            {
+                                "source_state_id": "7",
+                                "utensils_list": [
+                                    "フライパン",
+                                    "木製へら"
+                                ]
+                            },
+                            {
+                                "source_state_id": "10",
+                                "utensils_list": [
+                                    "計量スプーン",
+                                    "フライパン",
+                                    "木製へら"
+                                ]
+                            },
+                            {
+                                "source_state_id": "11",
+                                "utensils_list": [
+                                    "計量スプーン",
+                                    "フライパン",
+                                    "木製へら"
+                                ]
+                            },
+                            {
+                                "source_state_id": "e74e2874",
+                                "utensils_list": [
+                                    "フライパン",
+                                    "木製へら"
+                                ]
+                            },
+                            {
+                                "source_state_id": "5d207792",
+                                "utensils_list": [
+                                    "フライパン",
+                                    "木製へら"
+                                ]
+                            }
+                        ]
+                    }
+                ]
             },
             {
                 "step_after": 5,
-                "state_list": []
+                "state_list": [
+                    {
+                        "id": "51f99af9",
+                        "name": "マカロニグラタン",
+                        "touching_containers_id": "耐熱皿・器",
+                        "utensil_interactions_list": [
+                            {
+                                "source_state_id": "efe8c283",
+                                "utensils_list": [
+                                    "耐熱皿・器"
+                                ]
+                            },
+                            {
+                                "source_state_id": "8",
+                                "utensils_list": [
+                                    "耐熱皿・器"
+                                ]
+                            },
+                            {
+                                "source_state_id": "9",
+                                "utensils_list": [
+                                    "耐熱皿・器"
+                                ]
+                            }
+                        ]
+                    }
+                ]
             }
         ],
         "annotation_note": ""
