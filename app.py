@@ -1,14 +1,54 @@
+import base64
 import json
 import uuid
 from copy import deepcopy
 from pathlib import Path
 
 import pandas as pd
+import requests
 import streamlit as st
 
 # ─── Paths ────────────────────────────────────────────────────────────────────
 BASE = Path(__file__).parent
 DATA = BASE / "data"
+
+# ─── GitHub storage ───────────────────────────────────────────────────────────
+def _gh_headers() -> dict:
+    token = st.secrets["github"]["token"]
+    return {"Authorization": f"token {token}", "Accept": "application/vnd.github.v3+json"}
+
+
+def _gh_url(filename: str) -> str:
+    cfg = st.secrets["github"]
+    return f"https://api.github.com/repos/{cfg['owner']}/{cfg['repo']}/contents/outputs/{filename}"
+
+
+def github_read_json(filename: str):
+    """outputs/{filename} を GitHub から読み込む。存在しなければ None を返す。"""
+    r = requests.get(_gh_url(filename), headers=_gh_headers())
+    if r.status_code == 404:
+        return None, None
+    r.raise_for_status()
+    data = r.json()
+    content = json.loads(base64.b64decode(data["content"]).decode("utf-8"))
+    return content, data["sha"]
+
+
+def github_write_json(filename: str, data) -> None:
+    """outputs/{filename} を GitHub に保存（なければ作成、あれば更新）。"""
+    cfg = st.secrets["github"]
+    _, sha = github_read_json(filename)
+    body = {
+        "message": f"update {filename}",
+        "content": base64.b64encode(
+            json.dumps(data, ensure_ascii=False, indent=4).encode("utf-8")
+        ).decode("utf-8"),
+        "branch": cfg["branch"],
+    }
+    if sha:
+        body["sha"] = sha
+    r = requests.put(_gh_url(filename), headers=_gh_headers(), json=body)
+    r.raise_for_status()
 
 # ─── Constants ────────────────────────────────────────────────────────────────
 ANNOTATORS = ["ueda", "A", "B", "C"]
@@ -476,15 +516,46 @@ def main() -> None:
             indent=4,
         )
         st.download_button(
-            "⬇ ダウンロード",
+            "⬇ ローカルにダウンロード",
             data=download_data,
             file_name=filename,
             mime="application/json",
-            type="primary",
             use_container_width=True,
         )
 
-        uploaded = st.file_uploader("JSONを読み込む", type=["json"], key="file_uploader")
+        if st.button("☁ GitHubに保存", type="primary", use_container_width=True):
+            try:
+                github_write_json(
+                    filename,
+                    add_none_prefixes(clean_for_save(ann), utensil_cats),
+                )
+                st.success(f"GitHubに保存しました: outputs/{filename}")
+            except Exception as e:
+                st.error(f"保存失敗: {e}")
+
+        st.divider()
+
+        if st.button("☁ GitHubから読み込む", use_container_width=True):
+            try:
+                loaded, _ = github_read_json(filename)
+                if loaded is None:
+                    st.warning(f"outputs/{filename} がGitHubに見つかりません")
+                else:
+                    fresh = build_from_recipes(recipes)
+                    loaded_stripped = strip_none_prefixes(loaded)
+                    loaded_map = {r["title"]: r for r in loaded_stripped}
+                    for i, r in enumerate(fresh):
+                        if r["title"] in loaded_map:
+                            fresh[i] = loaded_map[r["title"]]
+                    ensure_uids(fresh)
+                    st.session_state.ann = fresh
+                    st.session_state.ridx = 0
+                    st.session_state.sidx = 1
+                    st.rerun()
+            except Exception as e:
+                st.error(f"読み込み失敗: {e}")
+
+        uploaded = st.file_uploader("ローカルJSONを読み込む", type=["json"], key="file_uploader")
         if uploaded is not None:
             loaded = json.load(uploaded)
             fresh = build_from_recipes(recipes)
