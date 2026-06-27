@@ -500,13 +500,13 @@
                                 ]
                             },
                             {
-                                "source_state_id": "8",
+                                "source_state_id": "",
                                 "utensils_list": [
                                     "耐熱皿・器"
                                 ]
                             },
                             {
-                                "source_state_id": "9",
+                                "source_state_id": "",
                                 "utensils_list": [
                                     "耐熱皿・器"
                                 ]
@@ -597,23 +597,117 @@
                 "state_list": [
                     {
                         "id": "97ef6aa1",
-                        "name": "",
-                        "touching_containers_id": "",
-                        "utensil_interactions_list": []
+                        "name": "そぎ切りにした白菜",
+                        "touching_containers_id": "まな板",
+                        "utensil_interactions_list": [
+                            {
+                                "source_state_id": "1",
+                                "utensils_list": [
+                                    "包丁",
+                                    "まな板"
+                                ]
+                            }
+                        ]
                     }
                 ]
             },
             {
                 "step_after": 2,
-                "state_list": []
+                "state_list": [
+                    {
+                        "id": "a8edc1f2",
+                        "name": "下味をつけた豚肉",
+                        "touching_containers_id": "まな板",
+                        "utensil_interactions_list": [
+                            {
+                                "source_state_id": "2",
+                                "utensils_list": [
+                                    "包丁",
+                                    "まな板"
+                                ]
+                            },
+                            {
+                                "source_state_id": "3",
+                                "utensils_list": [
+                                    "まな板"
+                                ]
+                            },
+                            {
+                                "source_state_id": "4",
+                                "utensils_list": [
+                                    "まな板"
+                                ]
+                            }
+                        ]
+                    }
+                ]
             },
             {
                 "step_after": 3,
-                "state_list": []
+                "state_list": [
+                    {
+                        "id": "d64fcaaf",
+                        "name": "[B]と豚肉と白菜を煮たもの",
+                        "touching_containers_id": "両手鍋・片手鍋",
+                        "utensil_interactions_list": [
+                            {
+                                "source_state_id": "5",
+                                "utensils_list": [
+                                    "両手鍋・片手鍋",
+                                    "網杓子",
+                                    "鍋の蓋"
+                                ]
+                            },
+                            {
+                                "source_state_id": "6",
+                                "utensils_list": [
+                                    "両手鍋・片手鍋",
+                                    "網杓子",
+                                    "鍋の蓋"
+                                ]
+                            },
+                            {
+                                "source_state_id": "7",
+                                "utensils_list": [
+                                    "両手鍋・片手鍋",
+                                    "網杓子",
+                                    "鍋の蓋"
+                                ]
+                            },
+                            {
+                                "source_state_id": "a8edc1f2",
+                                "utensils_list": [
+                                    "両手鍋・片手鍋",
+                                    "網杓子",
+                                    "鍋の蓋"
+                                ]
+                            },
+                            {
+                                "source_state_id": "97ef6aa1",
+                                "utensils_list": [
+                                    "両手鍋・片手鍋",
+                                    "鍋の蓋"
+                                ]
+                            }
+                        ]
+                    }
+                ]
             },
             {
                 "step_after": 4,
-                "state_list": []
+                "state_list": [
+                    {
+                        "id": "f909d186",
+                        "name": "とろとろ白菜のペペロン鍋",
+                        "touching_containers_id": "両手鍋・片手鍋",
+                        "utensil_interactions_list": [
+                            {
+                                "source_state_id": "",
+                                "utensils_list": []
+                            }
+                        ]
+                    }
+                ]
             }
         ],
         "annotation_note": ""
