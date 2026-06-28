@@ -365,8 +365,8 @@ def source_select(label: str, key: str, current: str, src: dict, used_ids: set =
 
     used_labels = {id2label[sid] for sid in (used_ids or []) if sid in id2label}
 
-    cur_label = id2label.get(current, OTHER_CUSTOM if current else "")
-    opts = [""] + list(id2label.values()) + [OTHER_CUSTOM]
+    cur_label = id2label.get(current, "")
+    opts = [""] + list(id2label.values())
     idx = opts.index(cur_label) if cur_label in opts else 0
 
     def _fmt(v: str) -> str:
@@ -375,10 +375,6 @@ def source_select(label: str, key: str, current: str, src: dict, used_ids: set =
         return v
 
     sel = st.selectbox(label, opts, index=idx, key=key, format_func=_fmt)
-    if sel == OTHER_CUSTOM:
-        raw = current if current not in src else ""
-        default_custom = raw[5:] if raw.startswith("None_") else raw
-        return st.text_input(f"{label}（自由記述）", value=default_custom, key=f"{key}_c")
     return label2id.get(sel, "")
 
 

@@ -40,13 +40,6 @@
                         "touching_containers_id": "両手鍋・片手鍋",
                         "utensil_interactions_list": [
                             {
-                                "source_state_id": "None_カップ2の水",
-                                "utensils_list": [
-                                    "計量カップ",
-                                    "両手鍋・片手鍋"
-                                ]
-                            },
-                            {
                                 "source_state_id": "3",
                                 "utensils_list": [
                                     "両手鍋・片手鍋"
@@ -137,7 +130,7 @@
                     {
                         "id": "b7e00461",
                         "name": "あさりの根深汁",
-                        "touching_containers_id": "None_耐熱皿・器",
+                        "touching_containers_id": "耐熱皿・器（盛り付けなど用途明記有）",
                         "utensil_interactions_list": [
                             {
                                 "source_state_id": "4",
@@ -145,20 +138,20 @@
                                     "計量スプーン",
                                     "味噌漉し",
                                     "両手鍋・片手鍋",
-                                    "None_耐熱皿・器"
+                                    "耐熱皿・器（盛り付けなど用途明記有）"
                                 ]
                             },
                             {
                                 "source_state_id": "faf2c71e",
                                 "utensils_list": [
                                     "両手鍋・片手鍋",
-                                    "None_耐熱皿・器"
+                                    "耐熱皿・器（盛り付けなど用途明記有）"
                                 ]
                             },
                             {
                                 "source_state_id": "85eb75eb",
                                 "utensils_list": [
-                                    "None_耐熱皿・器"
+                                    "耐熱皿・器（盛り付けなど用途明記有）"
                                 ]
                             }
                         ]
@@ -273,13 +266,6 @@
                                 "source_state_id": "10",
                                 "utensils_list": [
                                     "計量スプーン",
-                                    "両手鍋・片手鍋",
-                                    "ざる"
-                                ]
-                            },
-                            {
-                                "source_state_id": "None_1Lの湯",
-                                "utensils_list": [
                                     "両手鍋・片手鍋",
                                     "ざる"
                                 ]
@@ -491,7 +477,7 @@
                     {
                         "id": "51f99af9",
                         "name": "マカロニグラタン",
-                        "touching_containers_id": "None_耐熱皿・器",
+                        "touching_containers_id": "耐熱皿・器（盛り付けなど用途明記有）",
                         "utensil_interactions_list": [
                             {
                                 "source_state_id": "efe8c283",
@@ -895,7 +881,7 @@
                     {
                         "id": "a6cb0c08",
                         "name": "明太豆腐チーズ",
-                        "touching_containers_id": "None_一次保存容器",
+                        "touching_containers_id": "一時保管用皿・器（用途明記無）",
                         "utensil_interactions_list": [
                             {
                                 "source_state_id": "8",
@@ -906,13 +892,13 @@
                             {
                                 "source_state_id": "dd52aada",
                                 "utensils_list": [
-                                    "None_耐熱皿・器"
+                                    "耐熱皿・器（盛り付けなど用途明記有）"
                                 ]
                             },
                             {
                                 "source_state_id": "7",
                                 "utensils_list": [
-                                    "None_耐熱皿・器"
+                                    "耐熱皿・器（盛り付けなど用途明記有）"
                                 ]
                             }
                         ]
@@ -1084,20 +1070,6 @@
                                     "クッキングペーパー",
                                     "包丁",
                                     "まな板"
-                                ]
-                            },
-                            {
-                                "source_state_id": "None_熱湯",
-                                "utensils_list": [
-                                    "ざる",
-                                    "クッキングペーパー"
-                                ]
-                            },
-                            {
-                                "source_state_id": "None_氷水",
-                                "utensils_list": [
-                                    "ざる",
-                                    "クッキングペーパー"
                                 ]
                             }
                         ]
@@ -1529,14 +1501,6 @@
                                     "両手鍋・片手鍋",
                                     "鍋の蓋"
                                 ]
-                            },
-                            {
-                                "source_state_id": "None_カップ21/2の水",
-                                "utensils_list": [
-                                    "計量カップ",
-                                    "両手鍋・片手鍋",
-                                    "鍋の蓋"
-                                ]
                             }
                         ]
                     }
@@ -1820,17 +1784,6 @@
                                 ]
                             },
                             {
-                                "source_state_id": "None_カップ1の水",
-                                "utensils_list": [
-                                    "計量カップ",
-                                    "両手鍋・片手鍋",
-                                    "木製へら",
-                                    "網杓子",
-                                    "鍋の蓋",
-                                    "耐熱皿・器（盛り付けなど用途明記有）"
-                                ]
-                            },
-                            {
                                 "source_state_id": "10",
                                 "utensils_list": [
                                     "両手鍋・片手鍋",
@@ -1930,15 +1883,6 @@
                         "utensil_interactions_list": [
                             {
                                 "source_state_id": "6",
-                                "utensils_list": [
-                                    "計量スプーン",
-                                    "耐熱皿・器（盛り付けなど用途明記有）",
-                                    "スプーン",
-                                    "ラップフィルム"
-                                ]
-                            },
-                            {
-                                "source_state_id": "None_小さじ2の水",
                                 "utensils_list": [
                                     "計量スプーン",
                                     "耐熱皿・器（盛り付けなど用途明記有）",
