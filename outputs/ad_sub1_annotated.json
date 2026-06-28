@@ -1922,17 +1922,122 @@
             },
             {
                 "step_after": 1,
-                "state_list": []
+                "state_list": [
+                    {
+                        "id": "3e4df61c",
+                        "name": "片栗粉・水・卵・マヨネーズ・スープカップ・しらす干しを電子レンジにかけたもの（2人分）",
+                        "touching_containers_id": "耐熱皿・器（盛り付けなど用途明記有）",
+                        "utensil_interactions_list": [
+                            {
+                                "source_state_id": "6",
+                                "utensils_list": [
+                                    "計量スプーン",
+                                    "耐熱皿・器（盛り付けなど用途明記有）",
+                                    "スプーン",
+                                    "ラップフィルム"
+                                ]
+                            },
+                            {
+                                "source_state_id": "None_小さじ2の水",
+                                "utensils_list": [
+                                    "計量スプーン",
+                                    "耐熱皿・器（盛り付けなど用途明記有）",
+                                    "スプーン",
+                                    "ラップフィルム"
+                                ]
+                            },
+                            {
+                                "source_state_id": "1",
+                                "utensils_list": [
+                                    "耐熱皿・器（盛り付けなど用途明記有）",
+                                    "スプーン",
+                                    "ラップフィルム"
+                                ]
+                            },
+                            {
+                                "source_state_id": "7",
+                                "utensils_list": [
+                                    "計量スプーン",
+                                    "耐熱皿・器（盛り付けなど用途明記有）",
+                                    "スプーン",
+                                    "ラップフィルム"
+                                ]
+                            },
+                            {
+                                "source_state_id": "2",
+                                "utensils_list": [
+                                    "耐熱皿・器（盛り付けなど用途明記有）",
+                                    "スプーン",
+                                    "ラップフィルム"
+                                ]
+                            },
+                            {
+                                "source_state_id": "4",
+                                "utensils_list": [
+                                    "耐熱皿・器（盛り付けなど用途明記有）",
+                                    "スプーン",
+                                    "ラップフィルム"
+                                ]
+                            },
+                            {
+                                "source_state_id": "3",
+                                "utensils_list": [
+                                    "耐熱皿・器（盛り付けなど用途明記有）",
+                                    "スプーン",
+                                    "ラップフィルム"
+                                ]
+                            }
+                        ]
+                    }
+                ]
             },
             {
                 "step_after": 2,
-                "state_list": []
+                "state_list": [
+                    {
+                        "id": "a69da00a",
+                        "name": "1をスプーンで混ぜたもの",
+                        "touching_containers_id": "耐熱皿・器（盛り付けなど用途明記有）",
+                        "utensil_interactions_list": [
+                            {
+                                "source_state_id": "3e4df61c",
+                                "utensils_list": [
+                                    "耐熱皿・器（盛り付けなど用途明記有）",
+                                    "スプーン"
+                                ]
+                            }
+                        ]
+                    }
+                ]
             },
             {
                 "step_after": 3,
-                "state_list": []
+                "state_list": [
+                    {
+                        "id": "0736fbfa",
+                        "name": "韓国風茶碗蒸し",
+                        "touching_containers_id": "耐熱皿・器（盛り付けなど用途明記有）",
+                        "utensil_interactions_list": [
+                            {
+                                "source_state_id": "a69da00a",
+                                "utensils_list": [
+                                    "耐熱皿・器（盛り付けなど用途明記有）",
+                                    "ラップフィルム"
+                                ]
+                            },
+                            {
+                                "source_state_id": "5",
+                                "utensils_list": [
+                                    "耐熱皿・器（盛り付けなど用途明記有）",
+                                    "ラップフィルム"
+                                ]
+                            }
+                        ]
+                    }
+                ]
             }
-        ]
+        ],
+        "annotation_note": "１人分ずつ作るが2人分一気につくる分量で記入"
     },
     {
         "title": "白菜と油揚げのごま酢あえ",
