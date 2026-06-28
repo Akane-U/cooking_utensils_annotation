@@ -600,7 +600,7 @@ def main() -> None:
             value=ann[ridx].get("annotation_note", ""),
             key=f"annotation_note_{ridx}",
             height=120,
-            placeholder="不明点・感じたこと・改善すべき点",
+            placeholder="不明点・迷った点・感じた点・改善すべき点（複数ある場合は改行して区切る）",
             label_visibility="collapsed",
         )
 
