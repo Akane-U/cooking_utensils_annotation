@@ -130,7 +130,7 @@
                     {
                         "id": "b7e00461",
                         "name": "あさりの根深汁",
-                        "touching_containers_id": "耐熱皿・器（盛り付けなど用途明記有）",
+                        "touching_containers_id": "耐熱皿・器",
                         "utensil_interactions_list": [
                             {
                                 "source_state_id": "4",
@@ -138,20 +138,20 @@
                                     "計量スプーン",
                                     "味噌漉し",
                                     "両手鍋・片手鍋",
-                                    "耐熱皿・器（盛り付けなど用途明記有）"
+                                    "耐熱皿・器"
                                 ]
                             },
                             {
                                 "source_state_id": "faf2c71e",
                                 "utensils_list": [
                                     "両手鍋・片手鍋",
-                                    "耐熱皿・器（盛り付けなど用途明記有）"
+                                    "耐熱皿・器"
                                 ]
                             },
                             {
                                 "source_state_id": "85eb75eb",
                                 "utensils_list": [
-                                    "耐熱皿・器（盛り付けなど用途明記有）"
+                                    "耐熱皿・器"
                                 ]
                             }
                         ]
@@ -159,7 +159,7 @@
                 ]
             }
         ],
-        "annotation_note": "step2でアサリを洗うときにボウルが必要か不明"
+        "annotation_note": "step1: アサリを洗うときにボウルが必要か不明"
     },
     {
         "title": "マカロニグラタン",
@@ -477,24 +477,24 @@
                     {
                         "id": "51f99af9",
                         "name": "マカロニグラタン",
-                        "touching_containers_id": "耐熱皿・器（盛り付けなど用途明記有）",
+                        "touching_containers_id": "耐熱皿・器",
                         "utensil_interactions_list": [
                             {
                                 "source_state_id": "efe8c283",
                                 "utensils_list": [
-                                    "耐熱皿・器（盛り付けなど用途明記有）"
+                                    "耐熱皿・器"
                                 ]
                             },
                             {
                                 "source_state_id": "8",
                                 "utensils_list": [
-                                    "耐熱皿・器（盛り付けなど用途明記有）"
+                                    "耐熱皿・器"
                                 ]
                             },
                             {
                                 "source_state_id": "9",
                                 "utensils_list": [
-                                    "耐熱皿・器（盛り付けなど用途明記有）"
+                                    "耐熱皿・器"
                                 ]
                             }
                         ]
@@ -794,12 +794,12 @@
                     {
                         "id": "19d04f6f",
                         "name": "水気をきった豆腐",
-                        "touching_containers_id": "一時保管用皿・器（用途明記無）",
+                        "touching_containers_id": "バット",
                         "utensil_interactions_list": [
                             {
                                 "source_state_id": "1",
                                 "utensils_list": [
-                                    "耐熱皿・器（盛り付けなど用途明記有）"
+                                    "バット"
                                 ]
                             }
                         ]
@@ -881,7 +881,7 @@
                     {
                         "id": "a6cb0c08",
                         "name": "明太豆腐チーズ",
-                        "touching_containers_id": "一時保管用皿・器（用途明記無）",
+                        "touching_containers_id": "耐熱皿・器",
                         "utensil_interactions_list": [
                             {
                                 "source_state_id": "8",
@@ -892,13 +892,13 @@
                             {
                                 "source_state_id": "dd52aada",
                                 "utensils_list": [
-                                    "耐熱皿・器（盛り付けなど用途明記有）"
+                                    "耐熱皿・器"
                                 ]
                             },
                             {
                                 "source_state_id": "7",
                                 "utensils_list": [
-                                    "耐熱皿・器（盛り付けなど用途明記有）"
+                                    "耐熱皿・器"
                                 ]
                             }
                         ]
@@ -906,7 +906,7 @@
                 ]
             }
         ],
-        "annotation_note": ""
+        "annotation_note": "step1: 豆腐を置く場所はどこでもいい"
     },
     {
         "title": "かぶとたらの白ドリア",
@@ -1034,12 +1034,12 @@
                     {
                         "id": "0baca9ae",
                         "name": "ほぐしたしめじ",
-                        "touching_containers_id": "一時保管用皿・器（用途明記無）",
+                        "touching_containers_id": "バット",
                         "utensil_interactions_list": [
                             {
                                 "source_state_id": "3",
                                 "utensils_list": [
-                                    "一時保管用皿・器（用途明記無）"
+                                    "バット"
                                 ]
                             }
                         ]
@@ -1160,24 +1160,24 @@
                     {
                         "id": "d3b4415a",
                         "name": "ごはんに2のソースをかけたもの",
-                        "touching_containers_id": "耐熱皿・器（盛り付けなど用途明記有）",
+                        "touching_containers_id": "耐熱皿・器",
                         "utensil_interactions_list": [
                             {
                                 "source_state_id": "10",
                                 "utensils_list": [
-                                    "耐熱皿・器（盛り付けなど用途明記有）"
+                                    "耐熱皿・器"
                                 ]
                             },
                             {
                                 "source_state_id": "431f6ab2",
                                 "utensils_list": [
-                                    "耐熱皿・器（盛り付けなど用途明記有）"
+                                    "耐熱皿・器"
                                 ]
                             },
                             {
                                 "source_state_id": "13",
                                 "utensils_list": [
-                                    "耐熱皿・器（盛り付けなど用途明記有）"
+                                    "耐熱皿・器"
                                 ]
                             }
                         ]
@@ -1190,25 +1190,25 @@
                     {
                         "id": "05bd7ce3",
                         "name": "かぶとたらの白ドリア",
-                        "touching_containers_id": "耐熱皿・器（盛り付けなど用途明記有）",
+                        "touching_containers_id": "耐熱皿・器",
                         "utensil_interactions_list": [
                             {
                                 "source_state_id": "d3b4415a",
                                 "utensils_list": [
-                                    "耐熱皿・器（盛り付けなど用途明記有）"
+                                    "耐熱皿・器"
                                 ]
                             },
                             {
                                 "source_state_id": "14",
                                 "utensils_list": [
-                                    "耐熱皿・器（盛り付けなど用途明記有）"
+                                    "耐熱皿・器"
                                 ]
                             },
                             {
                                 "source_state_id": "11",
                                 "utensils_list": [
                                     "おろし器",
-                                    "耐熱皿・器（盛り付けなど用途明記有）"
+                                    "耐熱皿・器"
                                 ]
                             }
                         ]
@@ -1216,7 +1216,7 @@
                 ]
             }
         ],
-        "annotation_note": "step1: 熱湯と氷水を書くべきか"
+        "annotation_note": "step1: しめじを置く場所はどこでもいい"
     },
     {
         "title": "ミートボールのトマト煮",
@@ -1378,13 +1378,13 @@
                     {
                         "id": "bd50bb46",
                         "name": "つぶしたトマトの水煮",
-                        "touching_containers_id": "一時保管用皿・器（用途明記無）",
+                        "touching_containers_id": "None_一時保管用皿・器（用途明記無）",
                         "utensil_interactions_list": [
                             {
                                 "source_state_id": "12",
                                 "utensils_list": [
-                                    "一時保管用皿・器（用途明記無）",
-                                    "スプーン"
+                                    "スプーン",
+                                    "None_一時保管用皿・器（用途明記無）"
                                 ]
                             }
                         ]
@@ -1751,7 +1751,7 @@
                     {
                         "id": "3bbc38e1",
                         "name": "大根とひき肉のコロコロカレー",
-                        "touching_containers_id": "耐熱皿・器（盛り付けなど用途明記有）",
+                        "touching_containers_id": "耐熱皿・器",
                         "utensil_interactions_list": [
                             {
                                 "source_state_id": "79b629f0",
@@ -1760,7 +1760,7 @@
                                     "木製へら",
                                     "網杓子",
                                     "鍋の蓋",
-                                    "耐熱皿・器（盛り付けなど用途明記有）"
+                                    "耐熱皿・器"
                                 ]
                             },
                             {
@@ -1770,7 +1770,7 @@
                                     "木製へら",
                                     "網杓子",
                                     "鍋の蓋",
-                                    "耐熱皿・器（盛り付けなど用途明記有）"
+                                    "耐熱皿・器"
                                 ]
                             },
                             {
@@ -1780,7 +1780,7 @@
                                     "木製へら",
                                     "網杓子",
                                     "鍋の蓋",
-                                    "耐熱皿・器（盛り付けなど用途明記有）"
+                                    "耐熱皿・器"
                                 ]
                             },
                             {
@@ -1789,7 +1789,7 @@
                                     "両手鍋・片手鍋",
                                     "木製へら",
                                     "鍋の蓋",
-                                    "耐熱皿・器（盛り付けなど用途明記有）"
+                                    "耐熱皿・器"
                                 ]
                             },
                             {
@@ -1798,7 +1798,7 @@
                                     "両手鍋・片手鍋",
                                     "木製へら",
                                     "鍋の蓋",
-                                    "耐熱皿・器（盛り付けなど用途明記有）"
+                                    "耐熱皿・器"
                                 ]
                             },
                             {
@@ -1807,13 +1807,13 @@
                                     "両手鍋・片手鍋",
                                     "木製へら",
                                     "鍋の蓋",
-                                    "耐熱皿・器（盛り付けなど用途明記有）"
+                                    "耐熱皿・器"
                                 ]
                             },
                             {
                                 "source_state_id": "13",
                                 "utensils_list": [
-                                    "耐熱皿・器（盛り付けなど用途明記有）"
+                                    "耐熱皿・器"
                                 ]
                             }
                         ]
@@ -1879,56 +1879,56 @@
                     {
                         "id": "3e4df61c",
                         "name": "片栗粉・水・卵・マヨネーズ・スープカップ・しらす干しを電子レンジにかけたもの（2人分）",
-                        "touching_containers_id": "耐熱皿・器（盛り付けなど用途明記有）",
+                        "touching_containers_id": "耐熱皿・器",
                         "utensil_interactions_list": [
                             {
                                 "source_state_id": "6",
                                 "utensils_list": [
                                     "計量スプーン",
-                                    "耐熱皿・器（盛り付けなど用途明記有）",
                                     "スプーン",
-                                    "ラップフィルム"
+                                    "ラップフィルム",
+                                    "耐熱皿・器"
                                 ]
                             },
                             {
                                 "source_state_id": "1",
                                 "utensils_list": [
-                                    "耐熱皿・器（盛り付けなど用途明記有）",
                                     "スプーン",
-                                    "ラップフィルム"
+                                    "ラップフィルム",
+                                    "耐熱皿・器"
                                 ]
                             },
                             {
                                 "source_state_id": "7",
                                 "utensils_list": [
                                     "計量スプーン",
-                                    "耐熱皿・器（盛り付けなど用途明記有）",
                                     "スプーン",
-                                    "ラップフィルム"
+                                    "ラップフィルム",
+                                    "耐熱皿・器"
                                 ]
                             },
                             {
                                 "source_state_id": "2",
                                 "utensils_list": [
-                                    "耐熱皿・器（盛り付けなど用途明記有）",
                                     "スプーン",
-                                    "ラップフィルム"
+                                    "ラップフィルム",
+                                    "耐熱皿・器"
                                 ]
                             },
                             {
                                 "source_state_id": "4",
                                 "utensils_list": [
-                                    "耐熱皿・器（盛り付けなど用途明記有）",
                                     "スプーン",
-                                    "ラップフィルム"
+                                    "ラップフィルム",
+                                    "耐熱皿・器"
                                 ]
                             },
                             {
                                 "source_state_id": "3",
                                 "utensils_list": [
-                                    "耐熱皿・器（盛り付けなど用途明記有）",
                                     "スプーン",
-                                    "ラップフィルム"
+                                    "ラップフィルム",
+                                    "耐熱皿・器"
                                 ]
                             }
                         ]
@@ -1941,13 +1941,13 @@
                     {
                         "id": "a69da00a",
                         "name": "1をスプーンで混ぜたもの",
-                        "touching_containers_id": "耐熱皿・器（盛り付けなど用途明記有）",
+                        "touching_containers_id": "耐熱皿・器",
                         "utensil_interactions_list": [
                             {
                                 "source_state_id": "3e4df61c",
                                 "utensils_list": [
-                                    "耐熱皿・器（盛り付けなど用途明記有）",
-                                    "スプーン"
+                                    "スプーン",
+                                    "耐熱皿・器"
                                 ]
                             }
                         ]
@@ -1960,20 +1960,20 @@
                     {
                         "id": "0736fbfa",
                         "name": "韓国風茶碗蒸し",
-                        "touching_containers_id": "耐熱皿・器（盛り付けなど用途明記有）",
+                        "touching_containers_id": "耐熱皿・器",
                         "utensil_interactions_list": [
                             {
                                 "source_state_id": "a69da00a",
                                 "utensils_list": [
-                                    "耐熱皿・器（盛り付けなど用途明記有）",
-                                    "ラップフィルム"
+                                    "ラップフィルム",
+                                    "耐熱皿・器"
                                 ]
                             },
                             {
                                 "source_state_id": "5",
                                 "utensils_list": [
-                                    "耐熱皿・器（盛り付けなど用途明記有）",
-                                    "ラップフィルム"
+                                    "ラップフィルム",
+                                    "耐熱皿・器"
                                 ]
                             }
                         ]
@@ -2107,40 +2107,39 @@
                     {
                         "id": "cf5cf2dc",
                         "name": "白菜と油揚げのごま酢あえ",
-                        "touching_containers_id": "耐熱皿・器（盛り付けなど用途明記有）",
+                        "touching_containers_id": "耐熱皿・器",
                         "utensil_interactions_list": [
                             {
                                 "source_state_id": "2c987c71",
                                 "utensils_list": [
-                                    "耐熱皿・器（盛り付けなど用途明記有）",
-                                    "None_ポリ袋"
+                                    "耐熱皿・器"
                                 ]
                             },
                             {
                                 "source_state_id": "4",
                                 "utensils_list": [
-                                    "耐熱皿・器（盛り付けなど用途明記有）",
+                                    "耐熱皿・器",
                                     "None_ポリ袋"
                                 ]
                             },
                             {
                                 "source_state_id": "3",
                                 "utensils_list": [
-                                    "耐熱皿・器（盛り付けなど用途明記有）",
+                                    "耐熱皿・器",
                                     "None_ポリ袋"
                                 ]
                             },
                             {
                                 "source_state_id": "3590b02f",
                                 "utensils_list": [
-                                    "耐熱皿・器（盛り付けなど用途明記有）",
+                                    "耐熱皿・器",
                                     "None_ポリ袋"
                                 ]
                             },
                             {
                                 "source_state_id": "5",
                                 "utensils_list": [
-                                    "耐熱皿・器（盛り付けなど用途明記有）"
+                                    "耐熱皿・器"
                                 ]
                             }
                         ]
@@ -2212,12 +2211,12 @@
                     {
                         "id": "94e62cf7",
                         "name": "卵黄",
-                        "touching_containers_id": "一時保管用皿・器（用途明記無）",
+                        "touching_containers_id": "ボウル",
                         "utensil_interactions_list": [
                             {
                                 "source_state_id": "2",
                                 "utensils_list": [
-                                    "一時保管用皿・器（用途明記無）"
+                                    "ボウル"
                                 ]
                             }
                         ]
@@ -2225,12 +2224,12 @@
                     {
                         "id": "d3ee1164",
                         "name": "卵白",
-                        "touching_containers_id": "一時保管用皿・器（用途明記無）",
+                        "touching_containers_id": "None_ボウル-2",
                         "utensil_interactions_list": [
                             {
                                 "source_state_id": "2",
                                 "utensils_list": [
-                                    "一時保管用皿・器（用途明記無）"
+                                    "None_ボウル-2"
                                 ]
                             }
                         ]
@@ -2238,13 +2237,13 @@
                     {
                         "id": "20aab592",
                         "name": "1～2cm幅に切った明太子",
-                        "touching_containers_id": "一時保管用皿・器（用途明記無）",
+                        "touching_containers_id": "バット",
                         "utensil_interactions_list": [
                             {
                                 "source_state_id": "3",
                                 "utensils_list": [
-                                    "一時保管用皿・器（用途明記無）",
-                                    "料理ばさみ"
+                                    "料理ばさみ",
+                                    "バット"
                                 ]
                             }
                         ]
@@ -2257,53 +2256,53 @@
                     {
                         "id": "9dcab807",
                         "name": "明太子・卵白・粉チーズ・牛乳・しょうゆ・うどんを電子レンジにかけたもの",
-                        "touching_containers_id": "耐熱皿・器（盛り付けなど用途明記有）",
+                        "touching_containers_id": "耐熱皿・器",
                         "utensil_interactions_list": [
                             {
                                 "source_state_id": "20aab592",
                                 "utensils_list": [
-                                    "耐熱皿・器（盛り付けなど用途明記有）",
                                     "スプーン",
-                                    "ラップフィルム"
+                                    "ラップフィルム",
+                                    "耐熱皿・器"
                                 ]
                             },
                             {
                                 "source_state_id": "d3ee1164",
                                 "utensils_list": [
-                                    "耐熱皿・器（盛り付けなど用途明記有）",
                                     "スプーン",
-                                    "ラップフィルム"
+                                    "ラップフィルム",
+                                    "耐熱皿・器"
                                 ]
                             },
                             {
                                 "source_state_id": "4",
                                 "utensils_list": [
-                                    "耐熱皿・器（盛り付けなど用途明記有）",
                                     "スプーン",
-                                    "ラップフィルム"
+                                    "ラップフィルム",
+                                    "耐熱皿・器"
                                 ]
                             },
                             {
                                 "source_state_id": "5",
                                 "utensils_list": [
-                                    "耐熱皿・器（盛り付けなど用途明記有）",
                                     "スプーン",
-                                    "ラップフィルム"
+                                    "ラップフィルム",
+                                    "耐熱皿・器"
                                 ]
                             },
                             {
                                 "source_state_id": "6",
                                 "utensils_list": [
-                                    "耐熱皿・器（盛り付けなど用途明記有）",
                                     "スプーン",
-                                    "ラップフィルム"
+                                    "ラップフィルム",
+                                    "耐熱皿・器"
                                 ]
                             },
                             {
                                 "source_state_id": "1",
                                 "utensils_list": [
-                                    "耐熱皿・器（盛り付けなど用途明記有）",
-                                    "ラップフィルム"
+                                    "ラップフィルム",
+                                    "耐熱皿・器"
                                 ]
                             }
                         ]
@@ -2316,33 +2315,33 @@
                     {
                         "id": "10b757ec",
                         "name": "明太カルボうどん",
-                        "touching_containers_id": "耐熱皿・器（盛り付けなど用途明記有）",
+                        "touching_containers_id": "耐熱皿・器",
                         "utensil_interactions_list": [
                             {
                                 "source_state_id": "9dcab807",
                                 "utensils_list": [
-                                    "耐熱皿・器（盛り付けなど用途明記有）",
-                                    "菜箸"
+                                    "菜箸",
+                                    "耐熱皿・器"
                                 ]
                             },
                             {
                                 "source_state_id": "7",
                                 "utensils_list": [
                                     "台秤",
-                                    "耐熱皿・器（盛り付けなど用途明記有）",
-                                    "菜箸"
+                                    "菜箸",
+                                    "耐熱皿・器"
                                 ]
                             },
                             {
                                 "source_state_id": "94e62cf7",
                                 "utensils_list": [
-                                    "耐熱皿・器（盛り付けなど用途明記有）"
+                                    "耐熱皿・器"
                                 ]
                             },
                             {
                                 "source_state_id": "8",
                                 "utensils_list": [
-                                    "耐熱皿・器（盛り付けなど用途明記有）"
+                                    "耐熱皿・器"
                                 ]
                             }
                         ]
@@ -2350,6 +2349,6 @@
                 ]
             }
         ],
-        "annotation_note": "step3: 混ぜるときに菜箸か不明"
+        "annotation_note": "step1:明太子はどこにおいてもいい\nstep3: 混ぜるときに菜箸か不明"
     }
 ]
