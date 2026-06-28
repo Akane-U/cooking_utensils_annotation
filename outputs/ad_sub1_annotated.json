@@ -1349,23 +1349,241 @@
                 "state_list": [
                     {
                         "id": "1bbeb5fa",
-                        "name": "",
-                        "touching_containers_id": "",
-                        "utensil_interactions_list": []
+                        "name": "くし形に切ったたまねぎ",
+                        "touching_containers_id": "まな板",
+                        "utensil_interactions_list": [
+                            {
+                                "source_state_id": "8",
+                                "utensils_list": [
+                                    "包丁",
+                                    "まな板"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "id": "ab59ef9d",
+                        "name": "斜め切りしたセロリ",
+                        "touching_containers_id": "まな板",
+                        "utensil_interactions_list": [
+                            {
+                                "source_state_id": "9",
+                                "utensils_list": [
+                                    "包丁",
+                                    "まな板"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "id": "22034612",
+                        "name": "乱切りにしたにんじん",
+                        "touching_containers_id": "まな板",
+                        "utensil_interactions_list": [
+                            {
+                                "source_state_id": "10",
+                                "utensils_list": [
+                                    "包丁",
+                                    "まな板"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "id": "e5c22165",
+                        "name": "4つ割りにしたかぶ",
+                        "touching_containers_id": "まな板",
+                        "utensil_interactions_list": [
+                            {
+                                "source_state_id": "11",
+                                "utensils_list": [
+                                    "包丁",
+                                    "まな板"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "id": "bd50bb46",
+                        "name": "つぶしたトマトの水煮",
+                        "touching_containers_id": "一時保管用皿・器（用途明記無）",
+                        "utensil_interactions_list": [
+                            {
+                                "source_state_id": "12",
+                                "utensils_list": [
+                                    "一時保管用皿・器（用途明記無）",
+                                    "スプーン"
+                                ]
+                            }
+                        ]
                     }
                 ]
             },
             {
                 "step_after": 2,
-                "state_list": []
+                "state_list": [
+                    {
+                        "id": "3ed24228",
+                        "name": "ひき肉・[A]の混合物を6等分にして丸めたもの",
+                        "touching_containers_id": "バット",
+                        "utensil_interactions_list": [
+                            {
+                                "source_state_id": "1",
+                                "utensils_list": [
+                                    "ボウル",
+                                    "バット"
+                                ]
+                            },
+                            {
+                                "source_state_id": "2",
+                                "utensils_list": [
+                                    "ボウル",
+                                    "バット"
+                                ]
+                            },
+                            {
+                                "source_state_id": "3",
+                                "utensils_list": [
+                                    "ボウル",
+                                    "バット"
+                                ]
+                            },
+                            {
+                                "source_state_id": "4",
+                                "utensils_list": [
+                                    "ボウル",
+                                    "バット"
+                                ]
+                            },
+                            {
+                                "source_state_id": "5",
+                                "utensils_list": [
+                                    "ボウル",
+                                    "バット"
+                                ]
+                            },
+                            {
+                                "source_state_id": "6",
+                                "utensils_list": [
+                                    "ボウル",
+                                    "バット"
+                                ]
+                            },
+                            {
+                                "source_state_id": "7",
+                                "utensils_list": [
+                                    "ボウル",
+                                    "バット"
+                                ]
+                            }
+                        ]
+                    }
+                ]
             },
             {
                 "step_after": 3,
-                "state_list": []
+                "state_list": [
+                    {
+                        "id": "83f252dd",
+                        "name": "たまねぎ・セロリ・にんじん・かぶ・トマトの水煮・ローリエを煮たもの",
+                        "touching_containers_id": "両手鍋・片手鍋",
+                        "utensil_interactions_list": [
+                            {
+                                "source_state_id": "1bbeb5fa",
+                                "utensils_list": [
+                                    "両手鍋・片手鍋",
+                                    "鍋の蓋"
+                                ]
+                            },
+                            {
+                                "source_state_id": "ab59ef9d",
+                                "utensils_list": [
+                                    "両手鍋・片手鍋",
+                                    "鍋の蓋"
+                                ]
+                            },
+                            {
+                                "source_state_id": "22034612",
+                                "utensils_list": [
+                                    "両手鍋・片手鍋",
+                                    "鍋の蓋"
+                                ]
+                            },
+                            {
+                                "source_state_id": "e5c22165",
+                                "utensils_list": [
+                                    "両手鍋・片手鍋",
+                                    "鍋の蓋"
+                                ]
+                            },
+                            {
+                                "source_state_id": "bd50bb46",
+                                "utensils_list": [
+                                    "両手鍋・片手鍋",
+                                    "鍋の蓋"
+                                ]
+                            },
+                            {
+                                "source_state_id": "13",
+                                "utensils_list": [
+                                    "両手鍋・片手鍋",
+                                    "鍋の蓋"
+                                ]
+                            },
+                            {
+                                "source_state_id": "None_カップ21/2の水",
+                                "utensils_list": [
+                                    "計量カップ",
+                                    "両手鍋・片手鍋",
+                                    "鍋の蓋"
+                                ]
+                            }
+                        ]
+                    }
+                ]
             },
             {
                 "step_after": 4,
-                "state_list": []
+                "state_list": [
+                    {
+                        "id": "de63de20",
+                        "name": "ミートボールのトマト煮",
+                        "touching_containers_id": "両手鍋・片手鍋",
+                        "utensil_interactions_list": [
+                            {
+                                "source_state_id": "83f252dd",
+                                "utensils_list": [
+                                    "両手鍋・片手鍋",
+                                    "網杓子",
+                                    "鍋の蓋"
+                                ]
+                            },
+                            {
+                                "source_state_id": "3ed24228",
+                                "utensils_list": [
+                                    "両手鍋・片手鍋",
+                                    "網杓子",
+                                    "鍋の蓋"
+                                ]
+                            },
+                            {
+                                "source_state_id": "14",
+                                "utensils_list": [
+                                    "計量スプーン",
+                                    "両手鍋・片手鍋",
+                                    "鍋の蓋"
+                                ]
+                            },
+                            {
+                                "source_state_id": "15",
+                                "utensils_list": [
+                                    "両手鍋・片手鍋",
+                                    "鍋の蓋"
+                                ]
+                            }
+                        ]
+                    }
+                ]
             }
         ],
         "annotation_note": ""
