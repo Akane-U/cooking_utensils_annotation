@@ -1682,17 +1682,54 @@
             },
             {
                 "step_after": 1,
-                "state_list": []
+                "state_list": [
+                    {
+                        "id": "7c7b68ae",
+                        "name": "2cm角に切った大根",
+                        "touching_containers_id": "まな板",
+                        "utensil_interactions_list": [
+                            {
+                                "source_state_id": "1",
+                                "utensils_list": [
+                                    "包丁",
+                                    "まな板"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "id": "31dca712",
+                        "name": "みじん切りしたたまねぎ",
+                        "touching_containers_id": "まな板",
+                        "utensil_interactions_list": [
+                            {
+                                "source_state_id": "3",
+                                "utensils_list": [
+                                    "包丁",
+                                    "まな板"
+                                ]
+                            }
+                        ]
+                    }
+                ]
             },
             {
                 "step_after": 2,
-                "state_list": []
+                "state_list": [
+                    {
+                        "id": "79b629f0",
+                        "name": "炒めたたまねぎ・にんにく・しょうが・ひき肉・大根",
+                        "touching_containers_id": "両手鍋・片手鍋",
+                        "utensil_interactions_list": []
+                    }
+                ]
             },
             {
                 "step_after": 3,
                 "state_list": []
             }
-        ]
+        ],
+        "annotation_note": ""
     },
     {
         "title": "韓国風茶碗蒸し",
