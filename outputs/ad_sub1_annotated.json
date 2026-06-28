@@ -103,7 +103,7 @@
                 "state_list": [
                     {
                         "id": "faf2c71e",
-                        "name": "1の鍋にねぎとあさりを加えたもの",
+                        "name": "1の鍋にねぎ・あさりを加えたもの",
                         "touching_containers_id": "両手鍋・片手鍋",
                         "utensil_interactions_list": [
                             {
@@ -378,7 +378,7 @@
                 "state_list": [
                     {
                         "id": "5d207792",
-                        "name": "たまねぎ・鶏肉・えび・しめじの炒めもの",
+                        "name": "たまねぎ・鶏肉・えび・しめじを炒めたもの",
                         "touching_containers_id": "フライパン",
                         "utensil_interactions_list": [
                             {
@@ -426,7 +426,7 @@
                 "state_list": [
                     {
                         "id": "efe8c283",
-                        "name": "小麦粉・牛乳・生クリームを煮たものとマカロニの混合物",
+                        "name": "小麦粉・牛乳・生クリームを煮たものとマカロニを混ぜたもの",
                         "touching_containers_id": "フライパン",
                         "utensil_interactions_list": [
                             {
@@ -647,7 +647,7 @@
                 "state_list": [
                     {
                         "id": "d64fcaaf",
-                        "name": "[B]と豚肉と白菜を煮たもの",
+                        "name": "[B]・豚肉・白菜を煮たもの",
                         "touching_containers_id": "両手鍋・片手鍋",
                         "utensil_interactions_list": [
                             {
@@ -839,7 +839,7 @@
                 "state_list": [
                     {
                         "id": "dd52aada",
-                        "name": "豆腐・名太鼓・細ねぎ・[A]・卵の混合物",
+                        "name": "豆腐・名太鼓・細ねぎ・[A]・卵を混ぜたもの",
                         "touching_containers_id": "ボウル",
                         "utensil_interactions_list": [
                             {
@@ -1718,15 +1718,154 @@
                 "state_list": [
                     {
                         "id": "79b629f0",
-                        "name": "炒めたたまねぎ・にんにく・しょうが・ひき肉・大根",
+                        "name": "たまねぎ・にんにく・しょうが・ひき肉・大根を炒めたもの",
                         "touching_containers_id": "両手鍋・片手鍋",
-                        "utensil_interactions_list": []
+                        "utensil_interactions_list": [
+                            {
+                                "source_state_id": "14",
+                                "utensils_list": [
+                                    "両手鍋・片手鍋",
+                                    "木製へら"
+                                ]
+                            },
+                            {
+                                "source_state_id": "31dca712",
+                                "utensils_list": [
+                                    "両手鍋・片手鍋",
+                                    "木製へら"
+                                ]
+                            },
+                            {
+                                "source_state_id": "4",
+                                "utensils_list": [
+                                    "両手鍋・片手鍋",
+                                    "木製へら"
+                                ]
+                            },
+                            {
+                                "source_state_id": "5",
+                                "utensils_list": [
+                                    "両手鍋・片手鍋",
+                                    "木製へら"
+                                ]
+                            },
+                            {
+                                "source_state_id": "2",
+                                "utensils_list": [
+                                    "両手鍋・片手鍋",
+                                    "木製へら"
+                                ]
+                            },
+                            {
+                                "source_state_id": "6",
+                                "utensils_list": [
+                                    "両手鍋・片手鍋",
+                                    "木製へら"
+                                ]
+                            },
+                            {
+                                "source_state_id": "7",
+                                "utensils_list": [
+                                    "両手鍋・片手鍋",
+                                    "木製へら"
+                                ]
+                            },
+                            {
+                                "source_state_id": "7c7b68ae",
+                                "utensils_list": [
+                                    "両手鍋・片手鍋",
+                                    "木製へら"
+                                ]
+                            }
+                        ]
                     }
                 ]
             },
             {
                 "step_after": 3,
-                "state_list": []
+                "state_list": [
+                    {
+                        "id": "3bbc38e1",
+                        "name": "大根とひき肉のコロコロカレー",
+                        "touching_containers_id": "耐熱皿・器（盛り付けなど用途明記有）",
+                        "utensil_interactions_list": [
+                            {
+                                "source_state_id": "79b629f0",
+                                "utensils_list": [
+                                    "両手鍋・片手鍋",
+                                    "木製へら",
+                                    "網杓子",
+                                    "鍋の蓋",
+                                    "耐熱皿・器（盛り付けなど用途明記有）"
+                                ]
+                            },
+                            {
+                                "source_state_id": "8",
+                                "utensils_list": [
+                                    "両手鍋・片手鍋",
+                                    "木製へら",
+                                    "網杓子",
+                                    "鍋の蓋",
+                                    "耐熱皿・器（盛り付けなど用途明記有）"
+                                ]
+                            },
+                            {
+                                "source_state_id": "9",
+                                "utensils_list": [
+                                    "両手鍋・片手鍋",
+                                    "木製へら",
+                                    "網杓子",
+                                    "鍋の蓋",
+                                    "耐熱皿・器（盛り付けなど用途明記有）"
+                                ]
+                            },
+                            {
+                                "source_state_id": "None_カップ1の水",
+                                "utensils_list": [
+                                    "計量カップ",
+                                    "両手鍋・片手鍋",
+                                    "木製へら",
+                                    "網杓子",
+                                    "鍋の蓋",
+                                    "耐熱皿・器（盛り付けなど用途明記有）"
+                                ]
+                            },
+                            {
+                                "source_state_id": "10",
+                                "utensils_list": [
+                                    "両手鍋・片手鍋",
+                                    "木製へら",
+                                    "鍋の蓋",
+                                    "耐熱皿・器（盛り付けなど用途明記有）"
+                                ]
+                            },
+                            {
+                                "source_state_id": "11",
+                                "utensils_list": [
+                                    "両手鍋・片手鍋",
+                                    "木製へら",
+                                    "鍋の蓋",
+                                    "耐熱皿・器（盛り付けなど用途明記有）"
+                                ]
+                            },
+                            {
+                                "source_state_id": "12",
+                                "utensils_list": [
+                                    "両手鍋・片手鍋",
+                                    "木製へら",
+                                    "鍋の蓋",
+                                    "耐熱皿・器（盛り付けなど用途明記有）"
+                                ]
+                            },
+                            {
+                                "source_state_id": "13",
+                                "utensils_list": [
+                                    "耐熱皿・器（盛り付けなど用途明記有）"
+                                ]
+                            }
+                        ]
+                    }
+                ]
             }
         ],
         "annotation_note": ""
