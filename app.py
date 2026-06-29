@@ -591,7 +591,7 @@ def main() -> None:
                     unsafe_allow_html=True,
                 )
             else:
-                st.markdown(f"**Step ** {instr}")
+                st.markdown(f"<b>Step </b> {instr}")
             st.write("")
 
         st.markdown("#### アノテーション備考欄")
