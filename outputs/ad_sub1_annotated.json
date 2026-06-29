@@ -321,9 +321,9 @@
                             {
                                 "source_state_id": "4aceff1e",
                                 "utensils_list": [
+                                    "ボウル",
                                     "泡だて器",
-                                    "耐熱ゴムべら",
-                                    "None_両手鍋・片手鍋-2"
+                                    "耐熱ゴムべら"
                                 ]
                             }
                         ]
@@ -335,172 +335,44 @@
                 "state_list": [
                     {
                         "id": "082d9216",
-                        "name": "",
-                        "touching_containers_id": "",
-                        "utensil_interactions_list": []
+                        "name": "湯煎焼きにしたプリン",
+                        "touching_containers_id": "型",
+                        "utensil_interactions_list": [
+                            {
+                                "source_state_id": "182ce0ea",
+                                "utensils_list": [
+                                    "型",
+                                    "天板"
+                                ]
+                            },
+                            {
+                                "source_state_id": "e091c40d",
+                                "utensils_list": [
+                                    "型",
+                                    "裏漉し器",
+                                    "スプーン",
+                                    "天板"
+                                ]
+                            }
+                        ]
                     }
                 ]
             },
             {
                 "step_after": 6,
-                "state_list": []
-            }
-        ],
-        "annotation_note": ""
-    },
-    {
-        "title": "あさりの根深汁",
-        "world_state_list": [
-            {
-                "step_after": 0,
                 "state_list": [
                     {
-                        "id": "1",
-                        "name": "ねぎ（青い部分も適量含む） 2本（240g）",
-                        "touching_containers_id": "",
-                        "utensil_interactions_list": []
-                    },
-                    {
-                        "id": "2",
-                        "name": "あさり（殻付き、砂抜きしたもの） 150g",
-                        "touching_containers_id": "",
-                        "utensil_interactions_list": []
-                    },
-                    {
-                        "id": "3",
-                        "name": "昆布（5×4cm） 2枚（4g）",
-                        "touching_containers_id": "",
-                        "utensil_interactions_list": []
-                    },
-                    {
-                        "id": "4",
-                        "name": "みそ ",
-                        "touching_containers_id": "",
-                        "utensil_interactions_list": []
-                    }
-                ]
-            },
-            {
-                "step_after": 1,
-                "state_list": [
-                    {
-                        "id": "e2b1f53c",
-                        "name": "昆布を入れた水",
-                        "touching_containers_id": "両手鍋・片手鍋",
-                        "utensil_interactions_list": [
-                            {
-                                "source_state_id": "3",
-                                "utensils_list": [
-                                    "両手鍋・片手鍋"
-                                ]
-                            }
-                        ]
-                    },
-                    {
-                        "id": "3c634014",
-                        "name": "2cm長さに切ったねぎ",
-                        "touching_containers_id": "まな板",
-                        "utensil_interactions_list": [
-                            {
-                                "source_state_id": "1",
-                                "utensils_list": [
-                                    "まな板",
-                                    "包丁"
-                                ]
-                            }
-                        ]
-                    },
-                    {
-                        "id": "85eb75eb",
-                        "name": "粗みじん切りしたねぎの青い部分",
-                        "touching_containers_id": "まな板",
-                        "utensil_interactions_list": [
-                            {
-                                "source_state_id": "1",
-                                "utensils_list": [
-                                    "まな板",
-                                    "包丁"
-                                ]
-                            }
-                        ]
-                    },
-                    {
-                        "id": "5bcb15ae",
-                        "name": "水気をきったあさり",
-                        "touching_containers_id": "ボウル",
-                        "utensil_interactions_list": [
-                            {
-                                "source_state_id": "2",
-                                "utensils_list": [
-                                    "ボウル",
-                                    "ざる"
-                                ]
-                            }
-                        ]
-                    }
-                ]
-            },
-            {
-                "step_after": 2,
-                "state_list": [
-                    {
-                        "id": "faf2c71e",
-                        "name": "1の鍋にねぎ・あさりを加えたもの",
-                        "touching_containers_id": "両手鍋・片手鍋",
-                        "utensil_interactions_list": [
-                            {
-                                "source_state_id": "e2b1f53c",
-                                "utensils_list": [
-                                    "両手鍋・片手鍋",
-                                    "網杓子"
-                                ]
-                            },
-                            {
-                                "source_state_id": "3c634014",
-                                "utensils_list": [
-                                    "両手鍋・片手鍋",
-                                    "網杓子"
-                                ]
-                            },
-                            {
-                                "source_state_id": "5bcb15ae",
-                                "utensils_list": [
-                                    "両手鍋・片手鍋",
-                                    "網杓子"
-                                ]
-                            }
-                        ]
-                    }
-                ]
-            },
-            {
-                "step_after": 3,
-                "state_list": [
-                    {
-                        "id": "b7e00461",
-                        "name": "あさりの根深汁",
+                        "id": "2c438d39",
+                        "name": "ジャンボプリン",
                         "touching_containers_id": "耐熱皿・器",
                         "utensil_interactions_list": [
                             {
-                                "source_state_id": "4",
+                                "source_state_id": "082d9216",
                                 "utensils_list": [
-                                    "計量スプーン",
-                                    "味噌漉し",
-                                    "両手鍋・片手鍋",
-                                    "耐熱皿・器"
-                                ]
-                            },
-                            {
-                                "source_state_id": "faf2c71e",
-                                "utensils_list": [
-                                    "両手鍋・片手鍋",
-                                    "耐熱皿・器"
-                                ]
-                            },
-                            {
-                                "source_state_id": "85eb75eb",
-                                "utensils_list": [
-                                    "耐熱皿・器"
+                                    "型",
+                                    "パレットナイフ",
+                                    "耐熱皿・器",
+                                    "スプーン"
                                 ]
                             }
                         ]
@@ -508,7 +380,7 @@
                 ]
             }
         ],
-        "annotation_note": "step1: アサリを洗うときにボウルが必要か不明"
+        "annotation_note": ""
     },
     {
         "title": "あさりの根深汁",
