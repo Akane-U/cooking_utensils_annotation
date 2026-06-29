@@ -587,7 +587,7 @@ def main() -> None:
                 st.markdown(
                     f'<div style="background:#fff9c4;padding:10px;border-radius:6px;'
                     f'border-left:4px solid #f9a825;margin:4px 0">'
-                    f"<b>Step {i}</b>: {instr}</div>",
+                    f"<b>Step </b>: {instr}</div>",
                     unsafe_allow_html=True,
                 )
             else:
