@@ -235,29 +235,164 @@
             },
             {
                 "step_after": 1,
-                "state_list": []
+                "state_list": [
+                    {
+                        "id": "335deacd",
+                        "name": "カラメルソース",
+                        "touching_containers_id": "耐熱皿・器",
+                        "utensil_interactions_list": [
+                            {
+                                "source_state_id": "1",
+                                "utensils_list": [
+                                    "両手鍋・片手鍋",
+                                    "耐熱ゴムべら"
+                                ]
+                            },
+                            {
+                                "source_state_id": "2",
+                                "utensils_list": [
+                                    "両手鍋・片手鍋",
+                                    "耐熱ゴムべら"
+                                ]
+                            }
+                        ]
+                    }
+                ]
             },
             {
                 "step_after": 2,
-                "state_list": []
+                "state_list": [
+                    {
+                        "id": "2d43da7e",
+                        "name": "卵と卵黄とグラニュー糖を混ぜたもの",
+                        "touching_containers_id": "ボウル",
+                        "utensil_interactions_list": [
+                            {
+                                "source_state_id": "3",
+                                "utensils_list": [
+                                    "泡だて器",
+                                    "ボウル"
+                                ]
+                            },
+                            {
+                                "source_state_id": "4",
+                                "utensils_list": [
+                                    "ボウル",
+                                    "泡だて器"
+                                ]
+                            },
+                            {
+                                "source_state_id": "5",
+                                "utensils_list": [
+                                    "ボウル",
+                                    "泡だて器"
+                                ]
+                            }
+                        ]
+                    }
+                ]
             },
             {
                 "step_after": 3,
-                "state_list": []
+                "state_list": [
+                    {
+                        "id": "820dfcf3",
+                        "name": "牛乳と生クリームを混ぜて温めたもの",
+                        "touching_containers_id": "両手鍋・片手鍋",
+                        "utensil_interactions_list": [
+                            {
+                                "source_state_id": "6",
+                                "utensils_list": [
+                                    "両手鍋・片手鍋",
+                                    "耐熱ゴムべら"
+                                ]
+                            },
+                            {
+                                "source_state_id": "7",
+                                "utensils_list": [
+                                    "両手鍋・片手鍋",
+                                    "耐熱ゴムべら"
+                                ]
+                            }
+                        ]
+                    }
+                ]
             },
             {
                 "step_after": 4,
-                "state_list": []
+                "state_list": [
+                    {
+                        "id": "67674057",
+                        "name": "２・３を混ぜたもの",
+                        "touching_containers_id": "ボウル",
+                        "utensil_interactions_list": [
+                            {
+                                "source_state_id": "2d43da7e",
+                                "utensils_list": [
+                                    "ボウル",
+                                    "泡だて器",
+                                    "耐熱ゴムべら"
+                                ]
+                            },
+                            {
+                                "source_state_id": "820dfcf3",
+                                "utensils_list": [
+                                    "ボウル",
+                                    "泡だて器",
+                                    "耐熱ゴムべら"
+                                ]
+                            }
+                        ]
+                    }
+                ]
             },
             {
                 "step_after": 5,
-                "state_list": []
+                "state_list": [
+                    {
+                        "id": "bb3cf620",
+                        "name": "１の容器に４を注いで湯煎焼きしたもの",
+                        "touching_containers_id": "耐熱皿・器",
+                        "utensil_interactions_list": [
+                            {
+                                "source_state_id": "335deacd",
+                                "utensils_list": [
+                                    "耐熱皿・器"
+                                ]
+                            },
+                            {
+                                "source_state_id": "67674057",
+                                "utensils_list": [
+                                    "耐熱皿・器",
+                                    "耐熱ゴムべら",
+                                    "裏漉し器"
+                                ]
+                            }
+                        ]
+                    }
+                ]
             },
             {
                 "step_after": 6,
-                "state_list": []
+                "state_list": [
+                    {
+                        "id": "7cd0f1e9",
+                        "name": "ジャンボプリン",
+                        "touching_containers_id": "耐熱皿・器",
+                        "utensil_interactions_list": [
+                            {
+                                "source_state_id": "bb3cf620",
+                                "utensils_list": [
+                                    "耐熱皿・器",
+                                    "パレットナイフ"
+                                ]
+                            }
+                        ]
+                    }
+                ]
             }
-        ]
+        ],
+        "annotation_note": ""
     },
     {
         "title": "あさりの根深汁",
