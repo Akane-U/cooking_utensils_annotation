@@ -600,7 +600,7 @@ def main() -> None:
             value=ann[ridx].get("annotation_note", ""),
             key=f"annotation_note_{ridx}",
             height=120,
-            placeholder="不明点・迷った点・感じた点・改善すべき点（複数ある場合は改行して区切る）",
+            placeholder="不明点・迷った点・感じた点・改善すべき点（Step1: ○○が不明など）（複数ある場合は改行して区切る）",
             label_visibility="collapsed",
         )
 
@@ -645,11 +645,11 @@ def main() -> None:
                     st.markdown(
                         f'<span style="background:#005AFF;color:#fff;'
                         f'padding:3px 10px;border-radius:4px;font-size:0.9em;font-weight:bold">'
-                        f'state {si + 1}</span>',
+                        f'State {si + 1}</span>',
                         unsafe_allow_html=True,
                     )
                 with del_col:
-                    if st.button("🗑", key=f"dst_{ridx}_{sidx}_{si}", help="このstateを削除"):
+                    if st.button("🗑", key=f"dst_{ridx}_{sidx}_{si}", help="このStateを削除"):
                         state_to_del = si
 
                 name_col, loc_col = st.columns(2)
@@ -669,7 +669,7 @@ def main() -> None:
                     )
 
                 st.markdown("---")
-                st.markdown("**生成元の材料・中間state → 直接・間接接触する調理器具**")
+                st.markdown("**生成元（材料一覧・登録済 State） → 使用器具**")
 
                 interactions = state.setdefault("utensil_interactions_list", [])
 
@@ -692,7 +692,7 @@ def main() -> None:
 
                         with u_col:
                             inter["utensils_list"] = utensil_multi_select(
-                                "調理器具（utensils_list）※複数選択可）",
+                                "使用器具（utensils_list）※複数選択可）",
                                 wkey,
                                 inter.get("utensils_list", []),
                                 utensil_cats,
@@ -747,7 +747,7 @@ def main() -> None:
             st.rerun()
 
         st.markdown("---")
-        if st.button("＋ stateを追加", key=f"addst_{ridx}_{sidx}"):
+        if st.button("＋ Stateを追加", key=f"addst_{ridx}_{sidx}"):
             cb_add_state(ridx, sidx)
             st.rerun()
 
