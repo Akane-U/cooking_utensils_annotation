@@ -2320,7 +2320,57 @@
             },
             {
                 "step_after": 1,
-                "state_list": []
+                "state_list": [
+                    {
+                        "id": "a1668d0c",
+                        "name": "",
+                        "touching_containers_id": "耐熱皿・器",
+                        "utensil_interactions_list": [
+                            {
+                                "source_state_id": "6",
+                                "utensils_list": [
+                                    "耐熱皿・器",
+                                    "計量スプーン"
+                                ]
+                            },
+                            {
+                                "source_state_id": "1",
+                                "utensils_list": [
+                                    "耐熱皿・器",
+                                    "計量スプーン"
+                                ]
+                            },
+                            {
+                                "source_state_id": "7",
+                                "utensils_list": [
+                                    "耐熱皿・器",
+                                    "計量スプーン"
+                                ]
+                            },
+                            {
+                                "source_state_id": "2",
+                                "utensils_list": [
+                                    "耐熱皿・器",
+                                    "計量スプーン"
+                                ]
+                            },
+                            {
+                                "source_state_id": "4",
+                                "utensils_list": [
+                                    "耐熱皿・器",
+                                    "計量スプーン"
+                                ]
+                            },
+                            {
+                                "source_state_id": "3",
+                                "utensils_list": [
+                                    "耐熱皿・器",
+                                    "計量スプーン"
+                                ]
+                            }
+                        ]
+                    }
+                ]
             },
             {
                 "step_after": 2,
@@ -2330,7 +2380,8 @@
                 "step_after": 3,
                 "state_list": []
             }
-        ]
+        ],
+        "annotation_note": ""
     },
     {
         "title": "白菜と油揚げのごま酢あえ",
