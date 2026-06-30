@@ -2491,17 +2491,118 @@
             },
             {
                 "step_after": 1,
-                "state_list": []
+                "state_list": [
+                    {
+                        "id": "5d454c4a",
+                        "name": "塩漬けにして酢を揉み込んだ白菜",
+                        "touching_containers_id": "ボウル",
+                        "utensil_interactions_list": [
+                            {
+                                "source_state_id": "1",
+                                "utensils_list": [
+                                    "包丁",
+                                    "まな板",
+                                    "None_ポリ袋"
+                                ]
+                            },
+                            {
+                                "source_state_id": "6",
+                                "utensils_list": [
+                                    "包丁",
+                                    "まな板",
+                                    "計量スプーン",
+                                    "None_ポリ袋"
+                                ]
+                            },
+                            {
+                                "source_state_id": "7",
+                                "utensils_list": [
+                                    "計量スプーン",
+                                    "None_ポリ袋"
+                                ]
+                            },
+                            {
+                                "source_state_id": "8",
+                                "utensils_list": [
+                                    "計量スプーン",
+                                    "None_ポリ袋"
+                                ]
+                            }
+                        ]
+                    }
+                ]
             },
             {
                 "step_after": 2,
-                "state_list": []
+                "state_list": [
+                    {
+                        "id": "dd83d791",
+                        "name": "焼いてから切った油揚げ",
+                        "touching_containers_id": "まな板",
+                        "utensil_interactions_list": [
+                            {
+                                "source_state_id": "2",
+                                "utensils_list": [
+                                    "フライパン",
+                                    "菜箸",
+                                    "包丁",
+                                    "まな板"
+                                ]
+                            }
+                        ]
+                    }
+                ]
             },
             {
                 "step_after": 3,
-                "state_list": []
+                "state_list": [
+                    {
+                        "id": "9b9fd34b",
+                        "name": "白菜と油揚げのごま酢あえ",
+                        "touching_containers_id": "耐熱皿・器",
+                        "utensil_interactions_list": [
+                            {
+                                "source_state_id": "5d454c4a",
+                                "utensils_list": [
+                                    "ボウル",
+                                    "耐熱皿・器"
+                                ]
+                            },
+                            {
+                                "source_state_id": "3",
+                                "utensils_list": [
+                                    "ボウル",
+                                    "耐熱皿・器",
+                                    "計量スプーン"
+                                ]
+                            },
+                            {
+                                "source_state_id": "4",
+                                "utensils_list": [
+                                    "ボウル",
+                                    "耐熱皿・器",
+                                    "計量スプーン"
+                                ]
+                            },
+                            {
+                                "source_state_id": "dd83d791",
+                                "utensils_list": [
+                                    "ボウル",
+                                    "耐熱皿・器"
+                                ]
+                            },
+                            {
+                                "source_state_id": "5",
+                                "utensils_list": [
+                                    "耐熱皿・器"
+                                ]
+                            }
+                        ]
+                    }
+                ]
             }
-        ]
+        ],
+        "annotation_note": "Step 3で「手で揉み込む」とあるため、レシピ的にはどこかでポリ袋からボウルに移している模様。ポリ袋のまま合わせても良い気もするが、ここではレシピに沿ってStep3で一旦ボウルに移したと仮定してアノテーションした。"
     },
     {
         "title": "明太カルボうどん",
