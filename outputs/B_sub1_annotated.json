@@ -554,7 +554,7 @@
                 ]
             }
         ],
-        "annotation_note": "食材名（ネギやアサリなど）の表記をカタカナにするか迷った。"
+        "annotation_note": "食材名（ネギやアサリなど）の表記をカタカナにするか迷った。\n他の調理でもだが、家で調理する時はマカロニやパン粉、粉チーズ、塩胡椒などは計っていないが、今回はレシピ通りということで台秤や計量スプーンを利用した。\n材料のうちグラム数と個数の両方が書いてある場合は個数を基準として台秤などは使用しな買った。"
     },
     {
         "title": "マカロニグラタン",
@@ -896,7 +896,7 @@
                 ]
             }
         ],
-        "annotation_note": "家で調理する時はマカロニやパン粉、粉チーズなどはわざわざスプーンやカップで測らずに目分量で使いがちだが、今回はレシピ通りということで台秤や計量スプーンを利用した。"
+        "annotation_note": "鶏肉100gなどは購入時に100g相当のものを購入すると思うので計量器具を書かなかった。店舗で使う場合は大量に仕入れるので計量器具を使うべきかも？"
     },
     {
         "title": "とろとろ白菜のペペロン鍋",
@@ -1049,7 +1049,8 @@
                                 "source_state_id": "5",
                                 "utensils_list": [
                                     "両手鍋・片手鍋",
-                                    "おたま"
+                                    "おたま",
+                                    "計量カップ"
                                 ]
                             },
                             {
@@ -1083,7 +1084,8 @@
                                 "utensils_list": [
                                     "両手鍋・片手鍋",
                                     "フライパン",
-                                    "耐熱ゴムべら"
+                                    "耐熱ゴムべら",
+                                    "計量スプーン"
                                 ]
                             },
                             {
@@ -1103,7 +1105,8 @@
                                     "フライパン",
                                     "包丁",
                                     "まな板",
-                                    "耐熱ゴムべら"
+                                    "耐熱ゴムべら",
+                                    "台秤"
                                 ]
                             },
                             {
@@ -1259,14 +1262,16 @@
                                 "source_state_id": "5",
                                 "utensils_list": [
                                     "ボウル",
-                                    "耐熱ゴムべら"
+                                    "耐熱ゴムべら",
+                                    "計量スプーン"
                                 ]
                             },
                             {
                                 "source_state_id": "6",
                                 "utensils_list": [
                                     "ボウル",
-                                    "耐熱ゴムべら"
+                                    "耐熱ゴムべら",
+                                    "計量スプーン"
                                 ]
                             }
                         ]
@@ -1293,13 +1298,15 @@
                                 "source_state_id": "8",
                                 "utensils_list": [
                                     "耐熱皿・器",
-                                    "刷毛"
+                                    "刷毛",
+                                    "計量スプーン"
                                 ]
                             },
                             {
                                 "source_state_id": "7",
                                 "utensils_list": [
-                                    "耐熱皿・器"
+                                    "耐熱皿・器",
+                                    "台秤"
                                 ]
                             }
                         ]
@@ -1535,28 +1542,32 @@
                                 "source_state_id": "6",
                                 "utensils_list": [
                                     "両手鍋・片手鍋",
-                                    "おたま"
+                                    "おたま",
+                                    "計量カップ"
                                 ]
                             },
                             {
                                 "source_state_id": "7",
                                 "utensils_list": [
                                     "両手鍋・片手鍋",
-                                    "おたま"
+                                    "おたま",
+                                    "計量カップ"
                                 ]
                             },
                             {
                                 "source_state_id": "8",
                                 "utensils_list": [
                                     "両手鍋・片手鍋",
-                                    "おたま"
+                                    "おたま",
+                                    "計量カップ"
                                 ]
                             },
                             {
                                 "source_state_id": "9",
                                 "utensils_list": [
                                     "両手鍋・片手鍋",
-                                    "おたま"
+                                    "おたま",
+                                    "計量スプーン"
                                 ]
                             },
                             {
@@ -1582,14 +1593,16 @@
                                 "source_state_id": "13",
                                 "utensils_list": [
                                     "耐熱皿・器",
-                                    "刷毛"
+                                    "刷毛",
+                                    "台秤"
                                 ]
                             },
                             {
                                 "source_state_id": "10",
                                 "utensils_list": [
                                     "耐熱皿・器",
-                                    "しゃもじ"
+                                    "しゃもじ",
+                                    "台秤"
                                 ]
                             },
                             {
@@ -1813,14 +1826,15 @@
                 "state_list": [
                     {
                         "id": "1eae110a",
-                        "name": "混ぜたひき肉",
-                        "touching_containers_id": "None_ボウル-2",
+                        "name": "混ぜたひき肉を丸めたもの",
+                        "touching_containers_id": "バット",
                         "utensil_interactions_list": [
                             {
                                 "source_state_id": "2",
                                 "utensils_list": [
                                     "包丁",
                                     "まな板",
+                                    "バット",
                                     "None_ボウル-2"
                                 ]
                             },
@@ -1828,6 +1842,7 @@
                                 "source_state_id": "3",
                                 "utensils_list": [
                                     "計量カップ",
+                                    "バット",
                                     "None_ボウル-2"
                                 ]
                             },
@@ -1835,6 +1850,7 @@
                                 "source_state_id": "4",
                                 "utensils_list": [
                                     "計量スプーン",
+                                    "バット",
                                     "None_ボウル-2"
                                 ]
                             },
@@ -1842,6 +1858,7 @@
                                 "source_state_id": "5",
                                 "utensils_list": [
                                     "計量スプーン",
+                                    "バット",
                                     "None_ボウル-2"
                                 ]
                             },
@@ -1849,12 +1866,14 @@
                                 "source_state_id": "6",
                                 "utensils_list": [
                                     "計量スプーン",
+                                    "バット",
                                     "None_ボウル-2"
                                 ]
                             },
                             {
                                 "source_state_id": "7",
                                 "utensils_list": [
+                                    "バット",
                                     "None_ボウル-2"
                                 ]
                             }
@@ -1864,14 +1883,110 @@
             },
             {
                 "step_after": 3,
-                "state_list": []
+                "state_list": [
+                    {
+                        "id": "8be88d22",
+                        "name": "１を煮込んだもの",
+                        "touching_containers_id": "両手鍋・片手鍋",
+                        "utensil_interactions_list": [
+                            {
+                                "source_state_id": "5ed616c3",
+                                "utensils_list": [
+                                    "両手鍋・片手鍋",
+                                    "鍋の蓋",
+                                    "木製へら"
+                                ]
+                            },
+                            {
+                                "source_state_id": "e5f1ce2f",
+                                "utensils_list": [
+                                    "両手鍋・片手鍋",
+                                    "鍋の蓋",
+                                    "木製へら"
+                                ]
+                            },
+                            {
+                                "source_state_id": "8e7cfd1c",
+                                "utensils_list": [
+                                    "両手鍋・片手鍋",
+                                    "鍋の蓋",
+                                    "木製へら"
+                                ]
+                            },
+                            {
+                                "source_state_id": "83a932d6",
+                                "utensils_list": [
+                                    "両手鍋・片手鍋",
+                                    "鍋の蓋",
+                                    "木製へら"
+                                ]
+                            },
+                            {
+                                "source_state_id": "a821ec49",
+                                "utensils_list": [
+                                    "両手鍋・片手鍋",
+                                    "鍋の蓋",
+                                    "木製へら"
+                                ]
+                            },
+                            {
+                                "source_state_id": "13",
+                                "utensils_list": [
+                                    "両手鍋・片手鍋",
+                                    "鍋の蓋",
+                                    "木製へら"
+                                ]
+                            }
+                        ]
+                    }
+                ]
             },
             {
                 "step_after": 4,
-                "state_list": []
+                "state_list": [
+                    {
+                        "id": "8af0f27a",
+                        "name": "ミートボールのトマト煮",
+                        "touching_containers_id": "耐熱皿・器",
+                        "utensil_interactions_list": [
+                            {
+                                "source_state_id": "8be88d22",
+                                "utensils_list": [
+                                    "耐熱皿・器",
+                                    "両手鍋・片手鍋",
+                                    "おたま"
+                                ]
+                            },
+                            {
+                                "source_state_id": "1eae110a",
+                                "utensils_list": [
+                                    "耐熱皿・器",
+                                    "両手鍋・片手鍋",
+                                    "おたま"
+                                ]
+                            },
+                            {
+                                "source_state_id": "14",
+                                "utensils_list": [
+                                    "耐熱皿・器",
+                                    "両手鍋・片手鍋",
+                                    "おたま"
+                                ]
+                            },
+                            {
+                                "source_state_id": "15",
+                                "utensils_list": [
+                                    "耐熱皿・器",
+                                    "両手鍋・片手鍋",
+                                    "おたま"
+                                ]
+                            }
+                        ]
+                    }
+                ]
             }
         ],
-        "annotation_note": ""
+        "annotation_note": "Step4で器に盛り付ける工程が書かれていないが、鍋のまま出す料理ではなさそうなので皿に盛り付ける工程を入れた。"
     },
     {
         "title": "大根とひき肉のコロコロカレー",
