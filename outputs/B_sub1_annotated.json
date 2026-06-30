@@ -1160,17 +1160,126 @@
             },
             {
                 "step_after": 1,
-                "state_list": []
+                "state_list": [
+                    {
+                        "id": "5316ab58",
+                        "name": "水をきった豆腐",
+                        "touching_containers_id": "ボウル",
+                        "utensil_interactions_list": [
+                            {
+                                "source_state_id": "1",
+                                "utensils_list": [
+                                    "ボウル"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "id": "6ad97b2a",
+                        "name": "切った細ねぎ",
+                        "touching_containers_id": "まな板",
+                        "utensil_interactions_list": [
+                            {
+                                "source_state_id": "3",
+                                "utensils_list": [
+                                    "包丁",
+                                    "まな板"
+                                ]
+                            }
+                        ]
+                    }
+                ]
             },
             {
                 "step_after": 2,
-                "state_list": []
+                "state_list": [
+                    {
+                        "id": "c4106b04",
+                        "name": "豆腐・明太子・細ねぎ・卵を混ぜたもの",
+                        "touching_containers_id": "ボウル",
+                        "utensil_interactions_list": [
+                            {
+                                "source_state_id": "5316ab58",
+                                "utensils_list": [
+                                    "ボウル",
+                                    "耐熱ゴムべら"
+                                ]
+                            },
+                            {
+                                "source_state_id": "2",
+                                "utensils_list": [
+                                    "ボウル",
+                                    "料理ばさみ",
+                                    "耐熱ゴムべら"
+                                ]
+                            },
+                            {
+                                "source_state_id": "6ad97b2a",
+                                "utensils_list": [
+                                    "ボウル",
+                                    "耐熱ゴムべら"
+                                ]
+                            },
+                            {
+                                "source_state_id": "4",
+                                "utensils_list": [
+                                    "ボウル",
+                                    "耐熱ゴムべら"
+                                ]
+                            },
+                            {
+                                "source_state_id": "5",
+                                "utensils_list": [
+                                    "ボウル",
+                                    "耐熱ゴムべら"
+                                ]
+                            },
+                            {
+                                "source_state_id": "6",
+                                "utensils_list": [
+                                    "ボウル",
+                                    "耐熱ゴムべら"
+                                ]
+                            }
+                        ]
+                    }
+                ]
             },
             {
                 "step_after": 3,
-                "state_list": []
+                "state_list": [
+                    {
+                        "id": "2204f272",
+                        "name": "明太豆腐チーズ",
+                        "touching_containers_id": "耐熱皿・器",
+                        "utensil_interactions_list": [
+                            {
+                                "source_state_id": "c4106b04",
+                                "utensils_list": [
+                                    "ボウル",
+                                    "耐熱ゴムべら",
+                                    "耐熱皿・器"
+                                ]
+                            },
+                            {
+                                "source_state_id": "8",
+                                "utensils_list": [
+                                    "耐熱皿・器",
+                                    "刷毛"
+                                ]
+                            },
+                            {
+                                "source_state_id": "7",
+                                "utensils_list": [
+                                    "耐熱皿・器"
+                                ]
+                            }
+                        ]
+                    }
+                ]
             }
-        ]
+        ],
+        "annotation_note": ""
     },
     {
         "title": "かぶとたらの白ドリア",
