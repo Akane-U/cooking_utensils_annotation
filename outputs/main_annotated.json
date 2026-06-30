@@ -62,7 +62,7 @@
                     },
                     {
                         "id": "84a83c7e",
-                        "name": "[A]の混合物",
+                        "name": "[A]を混ぜたもの",
                         "touching_containers_id": "ボウル",
                         "utensil_interactions_list": [
                             {
@@ -152,7 +152,8 @@
                     }
                 ]
             }
-        ]
+        ],
+        "annotation_note": ""
     },
     {
         "title": "ハンバーグ",
@@ -355,12 +356,6 @@
                         "touching_containers_id": "耐熱皿・器",
                         "utensil_interactions_list": [
                             {
-                                "source_state_id": "344d259a",
-                                "utensils_list": [
-                                    "耐熱皿・器"
-                                ]
-                            },
-                            {
                                 "source_state_id": "8",
                                 "utensils_list": [
                                     "フライパン",
@@ -390,12 +385,19 @@
                                 "utensils_list": [
                                     "耐熱皿・器"
                                 ]
+                            },
+                            {
+                                "source_state_id": "344d259a",
+                                "utensils_list": [
+                                    "耐熱皿・器"
+                                ]
                             }
                         ]
                     }
                 ]
             }
-        ]
+        ],
+        "annotation_note": ""
     },
     {
         "title": "小松菜と牛肉の中国風炒め",
@@ -472,7 +474,7 @@
                     },
                     {
                         "id": "9a8d664f",
-                        "name": "半分に切った赤とうがらし",
+                        "name": "斜め半分に切った赤とうがらし",
                         "touching_containers_id": "まな板",
                         "utensil_interactions_list": [
                             {
@@ -599,7 +601,8 @@
                     }
                 ]
             }
-        ]
+        ],
+        "annotation_note": "step2: 取り出して保管する器は何でも良い"
     },
     {
         "title": "ねぎの青い部分のチヂミ風",
@@ -662,7 +665,7 @@
                 "state_list": [
                     {
                         "id": "c211bed3",
-                        "name": "溶き卵・小麦粉・ねぎ・削り節・白ごまの混合物",
+                        "name": "溶き卵・小麦粉・ねぎ・削り節・白ごまを混ぜたもの",
                         "touching_containers_id": "ボウル",
                         "utensil_interactions_list": [
                             {
@@ -749,7 +752,8 @@
                     }
                 ]
             }
-        ]
+        ],
+        "annotation_note": ""
     },
     {
         "title": "肉だんご煮込み 半熟卵トマトソース",
