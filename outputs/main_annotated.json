@@ -2217,13 +2217,14 @@
                     {
                         "id": "ce862ddb",
                         "name": "一口大にちぎったキャベツ",
-                        "touching_containers_id": "まな板",
+                        "touching_containers_id": "耐熱皿・器",
                         "utensil_interactions_list": [
                             {
                                 "source_state_id": "1",
                                 "utensils_list": [
                                     "まな板",
-                                    "包丁"
+                                    "包丁",
+                                    "耐熱皿・器"
                                 ]
                             }
                         ]
@@ -2263,12 +2264,13 @@
                 "state_list": [
                     {
                         "id": "bb02c8e9",
-                        "name": "炒め合わせたしょうがと豚肉",
+                        "name": "しょうがと豚肉を炒めたもの",
                         "touching_containers_id": "フライパン",
                         "utensil_interactions_list": [
                             {
                                 "source_state_id": "8",
                                 "utensils_list": [
+                                    "計量スプーン",
                                     "フライパン",
                                     "菜箸"
                                 ]
@@ -2297,14 +2299,14 @@
                     {
                         "id": "8977b2e7",
                         "name": "ちぎりキャベツの豚バラ甘辛ソース",
-                        "touching_containers_id": "None_器",
+                        "touching_containers_id": "耐熱皿・器",
                         "utensil_interactions_list": [
                             {
                                 "source_state_id": "bb02c8e9",
                                 "utensils_list": [
                                     "フライパン",
                                     "菜箸",
-                                    "None_器"
+                                    "耐熱皿・器"
                                 ]
                             },
                             {
@@ -2312,7 +2314,7 @@
                                 "utensils_list": [
                                     "フライパン",
                                     "菜箸",
-                                    "None_器"
+                                    "耐熱皿・器"
                                 ]
                             },
                             {
@@ -2320,7 +2322,7 @@
                                 "utensils_list": [
                                     "フライパン",
                                     "菜箸",
-                                    "None_器"
+                                    "耐熱皿・器"
                                 ]
                             },
                             {
@@ -2328,7 +2330,7 @@
                                 "utensils_list": [
                                     "フライパン",
                                     "菜箸",
-                                    "None_器"
+                                    "耐熱皿・器"
                                 ]
                             },
                             {
@@ -2336,20 +2338,21 @@
                                 "utensils_list": [
                                     "フライパン",
                                     "菜箸",
-                                    "None_器"
+                                    "耐熱皿・器"
                                 ]
                             },
                             {
                                 "source_state_id": "ce862ddb",
                                 "utensils_list": [
-                                    "None_器"
+                                    "耐熱皿・器"
                                 ]
                             }
                         ]
                     }
                 ]
             }
-        ]
+        ],
+        "annotation_note": ""
     },
     {
         "title": "フライドチキン",
