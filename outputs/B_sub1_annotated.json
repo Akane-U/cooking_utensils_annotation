@@ -2323,49 +2323,62 @@
                 "state_list": [
                     {
                         "id": "a1668d0c",
-                        "name": "",
+                        "name": "ねぎ以外の材料を混ぜて温めたもの",
                         "touching_containers_id": "耐熱皿・器",
                         "utensil_interactions_list": [
                             {
                                 "source_state_id": "6",
                                 "utensils_list": [
                                     "耐熱皿・器",
-                                    "計量スプーン"
+                                    "計量スプーン",
+                                    "ラップフィルム",
+                                    "スプーン"
                                 ]
                             },
                             {
                                 "source_state_id": "1",
                                 "utensils_list": [
                                     "耐熱皿・器",
-                                    "計量スプーン"
+                                    "計量スプーン",
+                                    "ラップフィルム",
+                                    "スプーン"
                                 ]
                             },
                             {
                                 "source_state_id": "7",
                                 "utensils_list": [
                                     "耐熱皿・器",
-                                    "計量スプーン"
+                                    "計量スプーン",
+                                    "ラップフィルム",
+                                    "スプーン"
                                 ]
                             },
                             {
                                 "source_state_id": "2",
                                 "utensils_list": [
                                     "耐熱皿・器",
-                                    "計量スプーン"
+                                    "計量スプーン",
+                                    "ラップフィルム",
+                                    "スプーン"
                                 ]
                             },
                             {
                                 "source_state_id": "4",
                                 "utensils_list": [
                                     "耐熱皿・器",
-                                    "計量スプーン"
+                                    "計量スプーン",
+                                    "ラップフィルム",
+                                    "計量カップ",
+                                    "スプーン"
                                 ]
                             },
                             {
                                 "source_state_id": "3",
                                 "utensils_list": [
                                     "耐熱皿・器",
-                                    "計量スプーン"
+                                    "ラップフィルム",
+                                    "スプーン",
+                                    "台秤"
                                 ]
                             }
                         ]
@@ -2374,14 +2387,26 @@
             },
             {
                 "step_after": 2,
-                "state_list": []
+                "state_list": [
+                    {
+                        "id": "21dbef59",
+                        "name": "１をかき混ぜたもの",
+                        "touching_containers_id": "耐熱皿・器",
+                        "utensil_interactions_list": [
+                            {
+                                "source_state_id": "a1668d0c",
+                                "utensils_list": []
+                            }
+                        ]
+                    }
+                ]
             },
             {
                 "step_after": 3,
                 "state_list": []
             }
         ],
-        "annotation_note": ""
+        "annotation_note": "しらす10gなら普通は台秤で測らずに、ひとつまみ・ひと匙で代用する気がする。ここでは厳密に台秤を使ったとした。"
     },
     {
         "title": "白菜と油揚げのごま酢あえ",
