@@ -1375,21 +1375,238 @@
             },
             {
                 "step_after": 1,
-                "state_list": []
+                "state_list": [
+                    {
+                        "id": "b701667e",
+                        "name": "切ったかぶの根",
+                        "touching_containers_id": "まな板",
+                        "utensil_interactions_list": [
+                            {
+                                "source_state_id": "1",
+                                "utensils_list": [
+                                    "包丁",
+                                    "まな板"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "id": "5f045c71",
+                        "name": "切ったかぶの葉",
+                        "touching_containers_id": "まな板",
+                        "utensil_interactions_list": [
+                            {
+                                "source_state_id": "1",
+                                "utensils_list": [
+                                    "包丁",
+                                    "まな板"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "id": "c8ac0ee6",
+                        "name": "ほぐしたしめじ",
+                        "touching_containers_id": "まな板",
+                        "utensil_interactions_list": [
+                            {
+                                "source_state_id": "3",
+                                "utensils_list": [
+                                    "包丁",
+                                    "まな板"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "id": "95062373",
+                        "name": "切ったねぎ",
+                        "touching_containers_id": "まな板",
+                        "utensil_interactions_list": [
+                            {
+                                "source_state_id": "4",
+                                "utensils_list": [
+                                    "包丁",
+                                    "まな板"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "id": "fd98f1d8",
+                        "name": "湯通しした銀だら",
+                        "touching_containers_id": "まな板",
+                        "utensil_interactions_list": [
+                            {
+                                "source_state_id": "2",
+                                "utensils_list": [
+                                    "ボウル",
+                                    "包丁",
+                                    "まな板",
+                                    "ざる",
+                                    "クッキングペーパー"
+                                ]
+                            }
+                        ]
+                    }
+                ]
             },
             {
                 "step_after": 2,
-                "state_list": []
+                "state_list": [
+                    {
+                        "id": "50f25f4f",
+                        "name": "１をクリームソースで煮たもの",
+                        "touching_containers_id": "両手鍋・片手鍋",
+                        "utensil_interactions_list": [
+                            {
+                                "source_state_id": "b701667e",
+                                "utensils_list": [
+                                    "両手鍋・片手鍋",
+                                    "おたま"
+                                ]
+                            },
+                            {
+                                "source_state_id": "5f045c71",
+                                "utensils_list": [
+                                    "両手鍋・片手鍋",
+                                    "おたま"
+                                ]
+                            },
+                            {
+                                "source_state_id": "c8ac0ee6",
+                                "utensils_list": [
+                                    "両手鍋・片手鍋",
+                                    "おたま"
+                                ]
+                            },
+                            {
+                                "source_state_id": "95062373",
+                                "utensils_list": [
+                                    "両手鍋・片手鍋",
+                                    "おたま"
+                                ]
+                            },
+                            {
+                                "source_state_id": "fd98f1d8",
+                                "utensils_list": [
+                                    "両手鍋・片手鍋",
+                                    "おたま"
+                                ]
+                            },
+                            {
+                                "source_state_id": "5",
+                                "utensils_list": [
+                                    "両手鍋・片手鍋",
+                                    "おたま",
+                                    "包丁",
+                                    "まな板"
+                                ]
+                            },
+                            {
+                                "source_state_id": "6",
+                                "utensils_list": [
+                                    "両手鍋・片手鍋",
+                                    "おたま"
+                                ]
+                            },
+                            {
+                                "source_state_id": "7",
+                                "utensils_list": [
+                                    "両手鍋・片手鍋",
+                                    "おたま"
+                                ]
+                            },
+                            {
+                                "source_state_id": "8",
+                                "utensils_list": [
+                                    "両手鍋・片手鍋",
+                                    "おたま"
+                                ]
+                            },
+                            {
+                                "source_state_id": "9",
+                                "utensils_list": [
+                                    "両手鍋・片手鍋",
+                                    "おたま"
+                                ]
+                            },
+                            {
+                                "source_state_id": "12",
+                                "utensils_list": [
+                                    "両手鍋・片手鍋",
+                                    "おたま"
+                                ]
+                            }
+                        ]
+                    }
+                ]
             },
             {
                 "step_after": 3,
-                "state_list": []
+                "state_list": [
+                    {
+                        "id": "a2fca87a",
+                        "name": "２のソースをかけたご飯",
+                        "touching_containers_id": "耐熱皿・器",
+                        "utensil_interactions_list": [
+                            {
+                                "source_state_id": "13",
+                                "utensils_list": [
+                                    "耐熱皿・器",
+                                    "刷毛"
+                                ]
+                            },
+                            {
+                                "source_state_id": "10",
+                                "utensils_list": [
+                                    "耐熱皿・器",
+                                    "しゃもじ"
+                                ]
+                            },
+                            {
+                                "source_state_id": "50f25f4f",
+                                "utensils_list": [
+                                    "耐熱皿・器",
+                                    "おたま"
+                                ]
+                            }
+                        ]
+                    }
+                ]
             },
             {
                 "step_after": 4,
-                "state_list": []
+                "state_list": [
+                    {
+                        "id": "20b98925",
+                        "name": "かぶとたらの白ドリア",
+                        "touching_containers_id": "耐熱皿・器",
+                        "utensil_interactions_list": [
+                            {
+                                "source_state_id": "a2fca87a",
+                                "utensils_list": [
+                                    "耐熱皿・器"
+                                ]
+                            },
+                            {
+                                "source_state_id": "11",
+                                "utensils_list": [
+                                    "耐熱皿・器"
+                                ]
+                            },
+                            {
+                                "source_state_id": "14",
+                                "utensils_list": [
+                                    "耐熱皿・器"
+                                ]
+                            }
+                        ]
+                    }
+                ]
             }
-        ]
+        ],
+        "annotation_note": ""
     },
     {
         "title": "ミートボールのトマト煮",
