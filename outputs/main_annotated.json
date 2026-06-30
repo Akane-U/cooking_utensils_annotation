@@ -1692,7 +1692,7 @@
                 "state_list": [
                     {
                         "id": "e5b3fd0f",
-                        "name": "ねぎとハムを炒めた混合物",
+                        "name": "ねぎとハムを炒めたもの",
                         "touching_containers_id": "フライパン",
                         "utensil_interactions_list": [
                             {
@@ -1758,7 +1758,8 @@
                     }
                 ]
             }
-        ]
+        ],
+        "annotation_note": ""
     },
     {
         "title": "きゅうり・ハム・トマトサンド",
@@ -1912,7 +1913,8 @@
                     }
                 ]
             }
-        ]
+        ],
+        "annotation_note": ""
     },
     {
         "title": "昔ながらの堅めプリン",
