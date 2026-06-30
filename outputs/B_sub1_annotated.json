@@ -722,21 +722,150 @@
                         "id": "c973d41e",
                         "name": "下処理したえび",
                         "touching_containers_id": "まな板",
-                        "utensil_interactions_list": []
+                        "utensil_interactions_list": [
+                            {
+                                "source_state_id": "3",
+                                "utensils_list": [
+                                    "包丁",
+                                    "まな板",
+                                    "串"
+                                ]
+                            },
+                            {
+                                "source_state_id": "10",
+                                "utensils_list": [
+                                    "まな板"
+                                ]
+                            },
+                            {
+                                "source_state_id": "11",
+                                "utensils_list": [
+                                    "まな板"
+                                ]
+                            }
+                        ]
                     }
                 ]
             },
             {
                 "step_after": 3,
-                "state_list": []
+                "state_list": [
+                    {
+                        "id": "0d5ecd25",
+                        "name": "たまねぎ・鶏肉・えび・しめじを炒めたもの",
+                        "touching_containers_id": "両手鍋・片手鍋",
+                        "utensil_interactions_list": [
+                            {
+                                "source_state_id": "00a544c4",
+                                "utensils_list": [
+                                    "フライパン",
+                                    "木製へら"
+                                ]
+                            },
+                            {
+                                "source_state_id": "7bd50246",
+                                "utensils_list": [
+                                    "フライパン",
+                                    "木製へら"
+                                ]
+                            },
+                            {
+                                "source_state_id": "c973d41e",
+                                "utensils_list": [
+                                    "フライパン",
+                                    "木製へら"
+                                ]
+                            },
+                            {
+                                "source_state_id": "774ef618",
+                                "utensils_list": [
+                                    "フライパン",
+                                    "木製へら"
+                                ]
+                            }
+                        ]
+                    }
+                ]
             },
             {
                 "step_after": 4,
-                "state_list": []
+                "state_list": [
+                    {
+                        "id": "d53ac122",
+                        "name": "３とベシャメルソースとマカロニを混ぜたもの",
+                        "touching_containers_id": "フライパン",
+                        "utensil_interactions_list": [
+                            {
+                                "source_state_id": "0d5ecd25",
+                                "utensils_list": [
+                                    "フライパン",
+                                    "木製へら"
+                                ]
+                            },
+                            {
+                                "source_state_id": "13",
+                                "utensils_list": [
+                                    "フライパン",
+                                    "木製へら"
+                                ]
+                            },
+                            {
+                                "source_state_id": "6",
+                                "utensils_list": [
+                                    "フライパン",
+                                    "木製へら"
+                                ]
+                            },
+                            {
+                                "source_state_id": "7",
+                                "utensils_list": [
+                                    "フライパン",
+                                    "木製へら"
+                                ]
+                            },
+                            {
+                                "source_state_id": "11",
+                                "utensils_list": [
+                                    "フライパン",
+                                    "木製へら"
+                                ]
+                            },
+                            {
+                                "source_state_id": "10",
+                                "utensils_list": [
+                                    "フライパン",
+                                    "木製へら"
+                                ]
+                            },
+                            {
+                                "source_state_id": "104a6bdf",
+                                "utensils_list": [
+                                    "フライパン",
+                                    "木製へら"
+                                ]
+                            }
+                        ]
+                    }
+                ]
             },
             {
                 "step_after": 5,
-                "state_list": []
+                "state_list": [
+                    {
+                        "id": "ec595b79",
+                        "name": "マカロニグラタン",
+                        "touching_containers_id": "耐熱皿・器",
+                        "utensil_interactions_list": [
+                            {
+                                "source_state_id": "d53ac122",
+                                "utensils_list": [
+                                    "耐熱皿・器",
+                                    "木製へら"
+                                ]
+                            }
+                        ]
+                    }
+                ]
             }
         ],
         "annotation_note": ""
