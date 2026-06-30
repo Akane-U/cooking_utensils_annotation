@@ -1242,7 +1242,8 @@
                     }
                 ]
             }
-        ]
+        ],
+        "annotation_note": ""
     },
     {
         "title": "スフレチーズケーキ",
@@ -1311,7 +1312,7 @@
                 "state_list": [
                     {
                         "id": "6b135ffc",
-                        "name": "クリームチーズとバターの混合物",
+                        "name": "クリームチーズとバターを練り混ぜたもの",
                         "touching_containers_id": "ボウル",
                         "utensil_interactions_list": [
                             {
@@ -1339,7 +1340,7 @@
                 "state_list": [
                     {
                         "id": "236c04a4",
-                        "name": "1・卵黄・レモン汁・牛乳・薄力粉の混合物",
+                        "name": "1・卵黄・レモン汁・牛乳・薄力粉を混ぜたもの",
                         "touching_containers_id": "ボウル",
                         "utensil_interactions_list": [
                             {
@@ -1420,7 +1421,7 @@
                 "state_list": [
                     {
                         "id": "dacda045",
-                        "name": "メレンゲ・2の混合物",
+                        "name": "メレンゲ・2を混ぜたもの",
                         "touching_containers_id": "ボウル",
                         "utensil_interactions_list": [
                             {
@@ -1491,7 +1492,10 @@
                         "utensil_interactions_list": [
                             {
                                 "source_state_id": "3b50253b",
-                                "utensils_list": []
+                                "utensils_list": [
+                                    "型",
+                                    "天板"
+                                ]
                             }
                         ]
                     }
@@ -1507,7 +1511,9 @@
                         "utensil_interactions_list": [
                             {
                                 "source_state_id": "a97c8213",
-                                "utensils_list": []
+                                "utensils_list": [
+                                    "型"
+                                ]
                             }
                         ]
                     }
@@ -1534,7 +1540,8 @@
                     }
                 ]
             }
-        ]
+        ],
+        "annotation_note": ""
     },
     {
         "title": "ねぎとハムのキッシュ風",
