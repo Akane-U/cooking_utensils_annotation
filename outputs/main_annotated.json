@@ -1999,7 +1999,7 @@
                 "state_list": [
                     {
                         "id": "7047ad1c",
-                        "name": "卵・グラニュー糖・みりん・バニラエッセンスの混合物",
+                        "name": "卵・グラニュー糖・みりん・バニラエッセンスを混ぜたもの",
                         "touching_containers_id": "ボウル",
                         "utensil_interactions_list": [
                             {
@@ -2039,7 +2039,7 @@
                 "state_list": [
                     {
                         "id": "10d58e7f",
-                        "name": "2・牛乳の混合物",
+                        "name": "2・牛乳を混ぜてこしたもの",
                         "touching_containers_id": "None_ボウル-2",
                         "utensil_interactions_list": [
                             {
@@ -2122,7 +2122,11 @@
                         "utensil_interactions_list": [
                             {
                                 "source_state_id": "f176e94f",
-                                "utensils_list": []
+                                "utensils_list": [
+                                    "型",
+                                    "バット",
+                                    "天板"
+                                ]
                             }
                         ]
                     }
@@ -2148,7 +2152,8 @@
                     }
                 ]
             }
-        ]
+        ],
+        "annotation_note": "step4: ボウル-2を書くべきか迷う\nstep6: バットと天板を書くべきか迷う"
     },
     {
         "title": "ちぎりキャベツの豚バラ甘辛ソース",
