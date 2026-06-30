@@ -2662,16 +2662,152 @@
             },
             {
                 "step_after": 1,
-                "state_list": []
+                "state_list": [
+                    {
+                        "id": "13301269",
+                        "name": "卵黄",
+                        "touching_containers_id": "ボウル",
+                        "utensil_interactions_list": [
+                            {
+                                "source_state_id": "2",
+                                "utensils_list": [
+                                    "ボウル"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "id": "2cda3b07",
+                        "name": "卵白",
+                        "touching_containers_id": "耐熱皿・器",
+                        "utensil_interactions_list": [
+                            {
+                                "source_state_id": "2",
+                                "utensils_list": [
+                                    "耐熱皿・器"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "id": "5055421f",
+                        "name": "切ったからし明太子",
+                        "touching_containers_id": "耐熱皿・器",
+                        "utensil_interactions_list": [
+                            {
+                                "source_state_id": "3",
+                                "utensils_list": [
+                                    "料理ばさみ",
+                                    "耐熱皿・器"
+                                ]
+                            }
+                        ]
+                    }
+                ]
             },
             {
                 "step_after": 2,
-                "state_list": []
+                "state_list": [
+                    {
+                        "id": "c501bf8d",
+                        "name": "卵白・明太子・粉チーズ・牛乳・しょうゆとうどんを混ぜて温めたもの",
+                        "touching_containers_id": "耐熱皿・器",
+                        "utensil_interactions_list": [
+                            {
+                                "source_state_id": "2cda3b07",
+                                "utensils_list": [
+                                    "耐熱皿・器",
+                                    "菜箸",
+                                    "ラップフィルム"
+                                ]
+                            },
+                            {
+                                "source_state_id": "5055421f",
+                                "utensils_list": [
+                                    "耐熱皿・器",
+                                    "菜箸",
+                                    "ラップフィルム"
+                                ]
+                            },
+                            {
+                                "source_state_id": "4",
+                                "utensils_list": [
+                                    "耐熱皿・器",
+                                    "菜箸",
+                                    "台秤",
+                                    "ラップフィルム"
+                                ]
+                            },
+                            {
+                                "source_state_id": "5",
+                                "utensils_list": [
+                                    "耐熱皿・器",
+                                    "菜箸",
+                                    "計量スプーン",
+                                    "ラップフィルム"
+                                ]
+                            },
+                            {
+                                "source_state_id": "6",
+                                "utensils_list": [
+                                    "耐熱皿・器",
+                                    "菜箸",
+                                    "ラップフィルム"
+                                ]
+                            },
+                            {
+                                "source_state_id": "1",
+                                "utensils_list": [
+                                    "耐熱皿・器",
+                                    "菜箸",
+                                    "ラップフィルム"
+                                ]
+                            }
+                        ]
+                    }
+                ]
             },
             {
                 "step_after": 3,
-                "state_list": []
+                "state_list": [
+                    {
+                        "id": "6294e2ff",
+                        "name": "明太カルボうどん",
+                        "touching_containers_id": "耐熱皿・器",
+                        "utensil_interactions_list": [
+                            {
+                                "source_state_id": "c501bf8d",
+                                "utensils_list": [
+                                    "耐熱皿・器",
+                                    "菜箸"
+                                ]
+                            },
+                            {
+                                "source_state_id": "7",
+                                "utensils_list": [
+                                    "耐熱皿・器",
+                                    "菜箸",
+                                    "パレットナイフ",
+                                    "台秤"
+                                ]
+                            },
+                            {
+                                "source_state_id": "13301269",
+                                "utensils_list": [
+                                    "耐熱皿・器"
+                                ]
+                            },
+                            {
+                                "source_state_id": "8",
+                                "utensils_list": [
+                                    "耐熱皿・器"
+                                ]
+                            }
+                        ]
+                    }
+                ]
             }
-        ]
+        ],
+        "annotation_note": ""
     }
 ]
