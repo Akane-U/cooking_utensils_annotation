@@ -2082,17 +2082,191 @@
             },
             {
                 "step_after": 1,
-                "state_list": []
+                "state_list": [
+                    {
+                        "id": "a7b52836",
+                        "name": "切った大根",
+                        "touching_containers_id": "まな板",
+                        "utensil_interactions_list": [
+                            {
+                                "source_state_id": "1",
+                                "utensils_list": [
+                                    "包丁",
+                                    "まな板",
+                                    "ピーラー"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "id": "f426a8bd",
+                        "name": "刻んだたまねぎ",
+                        "touching_containers_id": "まな板",
+                        "utensil_interactions_list": [
+                            {
+                                "source_state_id": "3",
+                                "utensils_list": [
+                                    "包丁",
+                                    "まな板"
+                                ]
+                            }
+                        ]
+                    }
+                ]
             },
             {
                 "step_after": 2,
-                "state_list": []
+                "state_list": [
+                    {
+                        "id": "3d44051c",
+                        "name": "ひき肉と大根を炒めたもの",
+                        "touching_containers_id": "両手鍋・片手鍋",
+                        "utensil_interactions_list": [
+                            {
+                                "source_state_id": "14",
+                                "utensils_list": [
+                                    "両手鍋・片手鍋",
+                                    "木製へら",
+                                    "計量スプーン"
+                                ]
+                            },
+                            {
+                                "source_state_id": "a7b52836",
+                                "utensils_list": [
+                                    "両手鍋・片手鍋",
+                                    "木製へら"
+                                ]
+                            },
+                            {
+                                "source_state_id": "f426a8bd",
+                                "utensils_list": [
+                                    "両手鍋・片手鍋",
+                                    "木製へら"
+                                ]
+                            },
+                            {
+                                "source_state_id": "4",
+                                "utensils_list": [
+                                    "両手鍋・片手鍋",
+                                    "木製へら",
+                                    "包丁",
+                                    "まな板"
+                                ]
+                            },
+                            {
+                                "source_state_id": "5",
+                                "utensils_list": [
+                                    "包丁",
+                                    "まな板",
+                                    "両手鍋・片手鍋",
+                                    "木製へら"
+                                ]
+                            },
+                            {
+                                "source_state_id": "2",
+                                "utensils_list": [
+                                    "両手鍋・片手鍋",
+                                    "木製へら"
+                                ]
+                            },
+                            {
+                                "source_state_id": "6",
+                                "utensils_list": [
+                                    "両手鍋・片手鍋",
+                                    "木製へら"
+                                ]
+                            },
+                            {
+                                "source_state_id": "7",
+                                "utensils_list": [
+                                    "両手鍋・片手鍋",
+                                    "木製へら"
+                                ]
+                            }
+                        ]
+                    }
+                ]
             },
             {
                 "step_after": 3,
-                "state_list": []
+                "state_list": [
+                    {
+                        "id": "1a139abc",
+                        "name": "大根とひき肉のコロコロカレー",
+                        "touching_containers_id": "耐熱皿・器",
+                        "utensil_interactions_list": [
+                            {
+                                "source_state_id": "3d44051c",
+                                "utensils_list": [
+                                    "耐熱皿・器",
+                                    "両手鍋・片手鍋",
+                                    "木製へら",
+                                    "おたま"
+                                ]
+                            },
+                            {
+                                "source_state_id": "8",
+                                "utensils_list": [
+                                    "耐熱皿・器",
+                                    "両手鍋・片手鍋",
+                                    "木製へら",
+                                    "おたま",
+                                    "計量スプーン"
+                                ]
+                            },
+                            {
+                                "source_state_id": "9",
+                                "utensils_list": [
+                                    "耐熱皿・器",
+                                    "両手鍋・片手鍋",
+                                    "木製へら",
+                                    "おたま",
+                                    "計量カップ"
+                                ]
+                            },
+                            {
+                                "source_state_id": "10",
+                                "utensils_list": [
+                                    "耐熱皿・器",
+                                    "両手鍋・片手鍋",
+                                    "木製へら",
+                                    "おたま",
+                                    "計量スプーン"
+                                ]
+                            },
+                            {
+                                "source_state_id": "11",
+                                "utensils_list": [
+                                    "耐熱皿・器",
+                                    "両手鍋・片手鍋",
+                                    "木製へら",
+                                    "おたま",
+                                    "計量スプーン"
+                                ]
+                            },
+                            {
+                                "source_state_id": "12",
+                                "utensils_list": [
+                                    "耐熱皿・器",
+                                    "両手鍋・片手鍋",
+                                    "木製へら",
+                                    "おたま",
+                                    "計量スプーン"
+                                ]
+                            },
+                            {
+                                "source_state_id": "13",
+                                "utensils_list": [
+                                    "耐熱皿・器",
+                                    "しゃもじ"
+                                ]
+                            }
+                        ]
+                    }
+                ]
             }
-        ]
+        ],
+        "annotation_note": ""
     },
     {
         "title": "韓国風茶碗蒸し",
