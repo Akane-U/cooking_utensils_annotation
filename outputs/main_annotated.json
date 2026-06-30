@@ -1854,19 +1854,19 @@
                     {
                         "id": "3950a675",
                         "name": "具材を挟んだ食パン",
-                        "touching_containers_id": "耐熱皿・器",
+                        "touching_containers_id": "バット",
                         "utensil_interactions_list": [
                             {
                                 "source_state_id": "1",
                                 "utensils_list": [
-                                    "耐熱皿・器"
+                                    "バット"
                                 ]
                             },
                             {
                                 "source_state_id": "6",
                                 "utensils_list": [
                                     "計量スプーン",
-                                    "耐熱皿・器"
+                                    "バット"
                                 ]
                             },
                             {
@@ -1874,19 +1874,19 @@
                                 "utensils_list": [
                                     "まな板",
                                     "包丁",
-                                    "耐熱皿・器"
+                                    "バット"
                                 ]
                             },
                             {
                                 "source_state_id": "a56a232a",
                                 "utensils_list": [
-                                    "耐熱皿・器"
+                                    "バット"
                                 ]
                             },
                             {
                                 "source_state_id": "4",
                                 "utensils_list": [
-                                    "耐熱皿・器"
+                                    "バット"
                                 ]
                             }
                         ]
@@ -1899,14 +1899,14 @@
                     {
                         "id": "ebc0e608",
                         "name": "きゅうり・ハム・トマトサンド",
-                        "touching_containers_id": "耐熱皿・器",
+                        "touching_containers_id": "バット",
                         "utensil_interactions_list": [
                             {
                                 "source_state_id": "3950a675",
                                 "utensils_list": [
+                                    "バット",
                                     "ラップフィルム",
-                                    "包丁",
-                                    "耐熱皿・器"
+                                    "包丁"
                                 ]
                             }
                         ]
@@ -1914,7 +1914,7 @@
                 ]
             }
         ],
-        "annotation_note": ""
+        "annotation_note": "step2: 食パンを置く場所はどこでもよい"
     },
     {
         "title": "昔ながらの堅めプリン",
