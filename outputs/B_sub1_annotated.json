@@ -2395,7 +2395,10 @@
                         "utensil_interactions_list": [
                             {
                                 "source_state_id": "a1668d0c",
-                                "utensils_list": []
+                                "utensils_list": [
+                                    "耐熱皿・器",
+                                    "スプーン"
+                                ]
                             }
                         ]
                     }
@@ -2403,10 +2406,32 @@
             },
             {
                 "step_after": 3,
-                "state_list": []
+                "state_list": [
+                    {
+                        "id": "626d0a4b",
+                        "name": "韓国風茶碗蒸し",
+                        "touching_containers_id": "耐熱皿・器",
+                        "utensil_interactions_list": [
+                            {
+                                "source_state_id": "21dbef59",
+                                "utensils_list": [
+                                    "耐熱皿・器",
+                                    "ラップフィルム"
+                                ]
+                            },
+                            {
+                                "source_state_id": "5",
+                                "utensils_list": [
+                                    "耐熱皿・器",
+                                    "ラップフィルム"
+                                ]
+                            }
+                        ]
+                    }
+                ]
             }
         ],
-        "annotation_note": "しらす10gなら普通は台秤で測らずに、ひとつまみ・ひと匙で代用する気がする。ここでは厳密に台秤を使ったとした。"
+        "annotation_note": "２人前の材料だが、レシピは１人前分の材料しか書いていない。ここでは材料は１人前の分量と仮定して選択した。そのため器具も1つでなく一つとしてカウントしてある。\nしらす10gなら普通は台秤で測らずに、ひとつまみ・ひと匙で代用する気がする。ここでは厳密に台秤を使ったとした。"
     },
     {
         "title": "白菜と油揚げのごま酢あえ",
