@@ -1543,9 +1543,7 @@
                                 "source_state_id": "5",
                                 "utensils_list": [
                                     "両手鍋・片手鍋",
-                                    "おたま",
-                                    "包丁",
-                                    "まな板"
+                                    "おたま"
                                 ]
                             },
                             {
@@ -1658,7 +1656,7 @@
                 ]
             }
         ],
-        "annotation_note": ""
+        "annotation_note": "Step4でニンニクを使っているが、潰す描写がないため、包丁とまな板を追加しなかった。"
     },
     {
         "title": "ミートボールのトマト煮",
@@ -1958,12 +1956,11 @@
                     {
                         "id": "8af0f27a",
                         "name": "ミートボールのトマト煮",
-                        "touching_containers_id": "耐熱皿・器",
+                        "touching_containers_id": "両手鍋・片手鍋",
                         "utensil_interactions_list": [
                             {
                                 "source_state_id": "8be88d22",
                                 "utensils_list": [
-                                    "耐熱皿・器",
                                     "両手鍋・片手鍋",
                                     "おたま"
                                 ]
@@ -1971,7 +1968,6 @@
                             {
                                 "source_state_id": "1eae110a",
                                 "utensils_list": [
-                                    "耐熱皿・器",
                                     "両手鍋・片手鍋",
                                     "おたま"
                                 ]
@@ -1979,7 +1975,6 @@
                             {
                                 "source_state_id": "14",
                                 "utensils_list": [
-                                    "耐熱皿・器",
                                     "両手鍋・片手鍋",
                                     "おたま"
                                 ]
@@ -1987,7 +1982,6 @@
                             {
                                 "source_state_id": "15",
                                 "utensils_list": [
-                                    "耐熱皿・器",
                                     "両手鍋・片手鍋",
                                     "おたま"
                                 ]
@@ -1997,7 +1991,7 @@
                 ]
             }
         ],
-        "annotation_note": "Step 4には盛り付けが書いてないですが、鍋のまま提供するのは不自然なので、器に盛り付けた前提で書いてます。"
+        "annotation_note": "Step 4で完成したものを盛り付けていないため、最終的な位置が両手鍋・片手鍋になっている。"
     },
     {
         "title": "大根とひき肉のコロコロカレー",
