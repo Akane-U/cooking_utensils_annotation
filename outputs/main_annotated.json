@@ -3927,25 +3927,210 @@
             },
             {
                 "step_after": 1,
-                "state_list": []
+                "state_list": [
+                    {
+                        "id": "2a9d41b0",
+                        "name": "常温に戻した豚肉",
+                        "touching_containers_id": "バット",
+                        "utensil_interactions_list": [
+                            {
+                                "source_state_id": "1",
+                                "utensils_list": [
+                                    "バット"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "id": "417cc0a7",
+                        "name": "水けをきったねぎ",
+                        "touching_containers_id": "ボウル",
+                        "utensil_interactions_list": [
+                            {
+                                "source_state_id": "2",
+                                "utensils_list": [
+                                    "包丁",
+                                    "まな板",
+                                    "ボウル"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "id": "b470ec8b",
+                        "name": "[A}を混ぜたもの",
+                        "touching_containers_id": "None_ボウル-2",
+                        "utensil_interactions_list": [
+                            {
+                                "source_state_id": "4",
+                                "utensils_list": [
+                                    "スプーン",
+                                    "None_ボウル-2"
+                                ]
+                            },
+                            {
+                                "source_state_id": "5",
+                                "utensils_list": [
+                                    "スプーン",
+                                    "None_ボウル-2"
+                                ]
+                            },
+                            {
+                                "source_state_id": "6",
+                                "utensils_list": [
+                                    "スプーン",
+                                    "None_ボウル-2"
+                                ]
+                            },
+                            {
+                                "source_state_id": "7",
+                                "utensils_list": [
+                                    "スプーン",
+                                    "None_ボウル-2"
+                                ]
+                            },
+                            {
+                                "source_state_id": "8",
+                                "utensils_list": [
+                                    "スプーン",
+                                    "None_ボウル-2"
+                                ]
+                            }
+                        ]
+                    }
+                ]
             },
             {
                 "step_after": 2,
-                "state_list": []
+                "state_list": [
+                    {
+                        "id": "8ac14bc7",
+                        "name": "油とアクを落とした豚肉",
+                        "touching_containers_id": "None_ボウル-3",
+                        "utensil_interactions_list": [
+                            {
+                                "source_state_id": "10",
+                                "utensils_list": [
+                                    "計量スプーン",
+                                    "フライパン",
+                                    "菜箸",
+                                    "None_ボウル-3"
+                                ]
+                            },
+                            {
+                                "source_state_id": "2a9d41b0",
+                                "utensils_list": [
+                                    "フライパン",
+                                    "菜箸",
+                                    "None_ボウル-3"
+                                ]
+                            }
+                        ]
+                    }
+                ]
             },
             {
                 "step_after": 3,
-                "state_list": []
+                "state_list": [
+                    {
+                        "id": "dd8aeb53",
+                        "name": "2の豚肉・ねぎの青い部分・酒をフライパンに加え、蒸し焼きにしたもの",
+                        "touching_containers_id": "フライパン",
+                        "utensil_interactions_list": [
+                            {
+                                "source_state_id": "8ac14bc7",
+                                "utensils_list": [
+                                    "フライパン",
+                                    "落とし蓋",
+                                    "フライパンの蓋",
+                                    "串"
+                                ]
+                            },
+                            {
+                                "source_state_id": "3",
+                                "utensils_list": [
+                                    "フライパン",
+                                    "落とし蓋",
+                                    "フライパンの蓋",
+                                    "串"
+                                ]
+                            },
+                            {
+                                "source_state_id": "11",
+                                "utensils_list": [
+                                    "計量カップ",
+                                    "フライパン",
+                                    "落とし蓋",
+                                    "フライパンの蓋",
+                                    "串"
+                                ]
+                            }
+                        ]
+                    }
+                ]
             },
             {
                 "step_after": 4,
-                "state_list": []
+                "state_list": [
+                    {
+                        "id": "6464de4f",
+                        "name": "3からねぎの青い部分を除いて[A]を回し入れたもの",
+                        "touching_containers_id": "バット",
+                        "utensil_interactions_list": [
+                            {
+                                "source_state_id": "dd8aeb53",
+                                "utensils_list": [
+                                    "フライパン",
+                                    "バット",
+                                    "アルミホイル"
+                                ]
+                            },
+                            {
+                                "source_state_id": "b470ec8b",
+                                "utensils_list": [
+                                    "フライパン",
+                                    "バット",
+                                    "アルミホイル"
+                                ]
+                            }
+                        ]
+                    }
+                ]
             },
             {
                 "step_after": 5,
-                "state_list": []
+                "state_list": [
+                    {
+                        "id": "7f3cb341",
+                        "name": "みそチャーシュー",
+                        "touching_containers_id": "耐熱皿・器",
+                        "utensil_interactions_list": [
+                            {
+                                "source_state_id": "6464de4f",
+                                "utensils_list": [
+                                    "包丁",
+                                    "まな板",
+                                    "耐熱皿・器"
+                                ]
+                            },
+                            {
+                                "source_state_id": "417cc0a7",
+                                "utensils_list": [
+                                    "フライパン"
+                                ]
+                            },
+                            {
+                                "source_state_id": "9",
+                                "utensils_list": [
+                                    "フライパン"
+                                ]
+                            }
+                        ]
+                    }
+                ]
             }
-        ]
+        ],
+        "annotation_note": "step3: ねぎにも串必要？\nstep4: 材料を途中で捨てる場合はどうすべきか（ここだとねぎの青い部分捨ててる）\nstep5: 煮汁系はどう処理する？"
     },
     {
         "title": "キャベツと豚肉の蒸し煮",
