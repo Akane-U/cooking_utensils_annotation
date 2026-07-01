@@ -4051,8 +4051,7 @@
                                 "utensils_list": [
                                     "フライパン",
                                     "落とし蓋",
-                                    "フライパンの蓋",
-                                    "串"
+                                    "フライパンの蓋"
                                 ]
                             },
                             {
@@ -4061,8 +4060,7 @@
                                     "計量カップ",
                                     "フライパン",
                                     "落とし蓋",
-                                    "フライパンの蓋",
-                                    "串"
+                                    "フライパンの蓋"
                                 ]
                             }
                         ]
@@ -4202,17 +4200,148 @@
             },
             {
                 "step_after": 1,
-                "state_list": []
+                "state_list": [
+                    {
+                        "id": "db45bba3",
+                        "name": "ほぐしたキャベツ",
+                        "touching_containers_id": "まな板",
+                        "utensil_interactions_list": [
+                            {
+                                "source_state_id": "1",
+                                "utensils_list": [
+                                    "包丁",
+                                    "まな板"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "id": "40dfe764",
+                        "name": "6等分に切った豚肉",
+                        "touching_containers_id": "まな板",
+                        "utensil_interactions_list": [
+                            {
+                                "source_state_id": "2",
+                                "utensils_list": [
+                                    "包丁",
+                                    "まな板"
+                                ]
+                            },
+                            {
+                                "source_state_id": "8",
+                                "utensils_list": [
+                                    "まな板"
+                                ]
+                            },
+                            {
+                                "source_state_id": "9",
+                                "utensils_list": [
+                                    "まな板"
+                                ]
+                            }
+                        ]
+                    }
+                ]
             },
             {
                 "step_after": 2,
-                "state_list": []
+                "state_list": [
+                    {
+                        "id": "b7e1d9d6",
+                        "name": "焼いた豚肉",
+                        "touching_containers_id": "耐熱皿・器",
+                        "utensil_interactions_list": [
+                            {
+                                "source_state_id": "10",
+                                "utensils_list": [
+                                    "計量スプーン",
+                                    "フライパン",
+                                    "菜箸",
+                                    "耐熱皿・器"
+                                ]
+                            },
+                            {
+                                "source_state_id": "40dfe764",
+                                "utensils_list": [
+                                    "フライパン",
+                                    "菜箸",
+                                    "耐熱皿・器"
+                                ]
+                            }
+                        ]
+                    }
+                ]
             },
             {
                 "step_after": 3,
-                "state_list": []
+                "state_list": [
+                    {
+                        "id": "f6e6d14a",
+                        "name": "キャベツと豚肉の蒸し煮",
+                        "touching_containers_id": "フライパン",
+                        "utensil_interactions_list": [
+                            {
+                                "source_state_id": "db45bba3",
+                                "utensils_list": [
+                                    "フライパン",
+                                    "菜箸",
+                                    "フライパンの蓋"
+                                ]
+                            },
+                            {
+                                "source_state_id": "b7e1d9d6",
+                                "utensils_list": [
+                                    "フライパン",
+                                    "菜箸",
+                                    "フライパンの蓋"
+                                ]
+                            },
+                            {
+                                "source_state_id": "3",
+                                "utensils_list": [
+                                    "フライパン",
+                                    "菜箸",
+                                    "フライパンの蓋"
+                                ]
+                            },
+                            {
+                                "source_state_id": "4",
+                                "utensils_list": [
+                                    "フライパン",
+                                    "菜箸",
+                                    "フライパンの蓋"
+                                ]
+                            },
+                            {
+                                "source_state_id": "5",
+                                "utensils_list": [
+                                    "フライパン",
+                                    "菜箸",
+                                    "フライパンの蓋"
+                                ]
+                            },
+                            {
+                                "source_state_id": "6",
+                                "utensils_list": [
+                                    "フライパン",
+                                    "菜箸",
+                                    "フライパンの蓋"
+                                ]
+                            },
+                            {
+                                "source_state_id": "7",
+                                "utensils_list": [
+                                    "フライパン",
+                                    "菜箸",
+                                    "フライパンの蓋"
+                                ]
+                            }
+                        ]
+                    }
+                ]
             }
-        ]
+        ],
+        "annotation_note": ""
     },
     {
         "title": "新たまのトマトすき煮",
@@ -4266,17 +4395,147 @@
             },
             {
                 "step_after": 1,
-                "state_list": []
+                "state_list": [
+                    {
+                        "id": "063513d3",
+                        "name": "くし形に切ったたまねぎ",
+                        "touching_containers_id": "まな板",
+                        "utensil_interactions_list": [
+                            {
+                                "source_state_id": "1",
+                                "utensils_list": [
+                                    "包丁",
+                                    "まな板"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "id": "16bd9b82",
+                        "name": "斜め半分に切ったトマト",
+                        "touching_containers_id": "まな板",
+                        "utensil_interactions_list": [
+                            {
+                                "source_state_id": "3",
+                                "utensils_list": [
+                                    "包丁",
+                                    "まな板"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "id": "bd20aa19",
+                        "name": "食べやすく切った牛肉",
+                        "touching_containers_id": "まな板",
+                        "utensil_interactions_list": [
+                            {
+                                "source_state_id": "2",
+                                "utensils_list": [
+                                    "包丁",
+                                    "まな板"
+                                ]
+                            }
+                        ]
+                    }
+                ]
             },
             {
                 "step_after": 2,
-                "state_list": []
+                "state_list": [
+                    {
+                        "id": "4a346f86",
+                        "name": "焼いたたまねぎ",
+                        "touching_containers_id": "フライパン",
+                        "utensil_interactions_list": [
+                            {
+                                "source_state_id": "7",
+                                "utensils_list": [
+                                    "計量スプーン",
+                                    "フライパン",
+                                    "菜箸"
+                                ]
+                            },
+                            {
+                                "source_state_id": "063513d3",
+                                "utensils_list": [
+                                    "フライパン",
+                                    "菜箸"
+                                ]
+                            }
+                        ]
+                    }
+                ]
             },
             {
                 "step_after": 3,
-                "state_list": []
+                "state_list": [
+                    {
+                        "id": "a3d0546e",
+                        "name": "新たまのトマトすき煮",
+                        "touching_containers_id": "フライパン",
+                        "utensil_interactions_list": [
+                            {
+                                "source_state_id": "4a346f86",
+                                "utensils_list": [
+                                    "フライパン",
+                                    "菜箸",
+                                    "落とし蓋",
+                                    "フライパンの蓋",
+                                    "串"
+                                ]
+                            },
+                            {
+                                "source_state_id": "bd20aa19",
+                                "utensils_list": [
+                                    "フライパン",
+                                    "菜箸",
+                                    "落とし蓋",
+                                    "フライパンの蓋"
+                                ]
+                            },
+                            {
+                                "source_state_id": "16bd9b82",
+                                "utensils_list": [
+                                    "フライパン",
+                                    "菜箸",
+                                    "落とし蓋",
+                                    "フライパンの蓋"
+                                ]
+                            },
+                            {
+                                "source_state_id": "4",
+                                "utensils_list": [
+                                    "フライパン",
+                                    "菜箸",
+                                    "落とし蓋",
+                                    "フライパンの蓋"
+                                ]
+                            },
+                            {
+                                "source_state_id": "5",
+                                "utensils_list": [
+                                    "フライパン",
+                                    "菜箸",
+                                    "落とし蓋",
+                                    "フライパンの蓋"
+                                ]
+                            },
+                            {
+                                "source_state_id": "6",
+                                "utensils_list": [
+                                    "フライパン",
+                                    "菜箸",
+                                    "落とし蓋",
+                                    "フライパンの蓋"
+                                ]
+                            }
+                        ]
+                    }
+                ]
             }
-        ]
+        ],
+        "annotation_note": ""
     },
     {
         "title": "じゃがいものきんぴら",
