@@ -3697,7 +3697,7 @@
                 ]
             }
         ],
-        "annotation_note": ""
+        "annotation_note": "step4: 「かける」にスプーン必要？"
     },
     {
         "title": "れんこんのひき肉はさみ焼き",
@@ -3751,17 +3751,105 @@
             },
             {
                 "step_after": 1,
-                "state_list": []
+                "state_list": [
+                    {
+                        "id": "660913f4",
+                        "name": "肉ダネ",
+                        "touching_containers_id": "バット",
+                        "utensil_interactions_list": [
+                            {
+                                "source_state_id": "2",
+                                "utensils_list": [
+                                    "バット"
+                                ]
+                            },
+                            {
+                                "source_state_id": "3",
+                                "utensils_list": [
+                                    "バット"
+                                ]
+                            },
+                            {
+                                "source_state_id": "4",
+                                "utensils_list": [
+                                    "バット"
+                                ]
+                            },
+                            {
+                                "source_state_id": "5",
+                                "utensils_list": [
+                                    "バット"
+                                ]
+                            }
+                        ]
+                    }
+                ]
             },
             {
                 "step_after": 2,
-                "state_list": []
+                "state_list": [
+                    {
+                        "id": "432391af",
+                        "name": "れんこんで1を挟んだもの",
+                        "touching_containers_id": "まな板",
+                        "utensil_interactions_list": [
+                            {
+                                "source_state_id": "1",
+                                "utensils_list": [
+                                    "包丁",
+                                    "まな板",
+                                    "ピーラー"
+                                ]
+                            },
+                            {
+                                "source_state_id": "6",
+                                "utensils_list": [
+                                    "まな板"
+                                ]
+                            },
+                            {
+                                "source_state_id": "660913f4",
+                                "utensils_list": [
+                                    "まな板"
+                                ]
+                            }
+                        ]
+                    }
+                ]
             },
             {
                 "step_after": 3,
-                "state_list": []
+                "state_list": [
+                    {
+                        "id": "513e6a74",
+                        "name": "れんこんのひき肉はさみ焼き",
+                        "touching_containers_id": "フライパン",
+                        "utensil_interactions_list": [
+                            {
+                                "source_state_id": "7",
+                                "utensils_list": [
+                                    "計量スプーン",
+                                    "フライパン",
+                                    "フライ返し",
+                                    "菜箸",
+                                    "フライパンの蓋"
+                                ]
+                            },
+                            {
+                                "source_state_id": "432391af",
+                                "utensils_list": [
+                                    "フライパン",
+                                    "フライ返し",
+                                    "菜箸",
+                                    "フライパンの蓋"
+                                ]
+                            }
+                        ]
+                    }
+                ]
             }
-        ]
+        ],
+        "annotation_note": ""
     },
     {
         "title": "みそチャーシュー",
