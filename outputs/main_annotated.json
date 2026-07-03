@@ -4583,13 +4583,86 @@
             },
             {
                 "step_after": 1,
-                "state_list": []
+                "state_list": [
+                    {
+                        "id": "9046f9cb",
+                        "name": "水けを拭いた千切りじゃがいも",
+                        "touching_containers_id": "ざる",
+                        "utensil_interactions_list": [
+                            {
+                                "source_state_id": "1",
+                                "utensils_list": [
+                                    "スライサー",
+                                    "ボウル",
+                                    "ざる",
+                                    "None_布巾"
+                                ]
+                            }
+                        ]
+                    }
+                ]
             },
             {
                 "step_after": 2,
-                "state_list": []
+                "state_list": [
+                    {
+                        "id": "96043621",
+                        "name": "じゃがいものきんぴら",
+                        "touching_containers_id": "耐熱皿・器",
+                        "utensil_interactions_list": [
+                            {
+                                "source_state_id": "6",
+                                "utensils_list": [
+                                    "計量スプーン",
+                                    "フライパン",
+                                    "菜箸",
+                                    "耐熱皿・器"
+                                ]
+                            },
+                            {
+                                "source_state_id": "9046f9cb",
+                                "utensils_list": [
+                                    "フライパン",
+                                    "菜箸",
+                                    "耐熱皿・器"
+                                ]
+                            },
+                            {
+                                "source_state_id": "2",
+                                "utensils_list": [
+                                    "フライパン",
+                                    "菜箸",
+                                    "耐熱皿・器"
+                                ]
+                            },
+                            {
+                                "source_state_id": "3",
+                                "utensils_list": [
+                                    "フライパン",
+                                    "菜箸",
+                                    "耐熱皿・器"
+                                ]
+                            },
+                            {
+                                "source_state_id": "4",
+                                "utensils_list": [
+                                    "フライパン",
+                                    "菜箸",
+                                    "耐熱皿・器"
+                                ]
+                            },
+                            {
+                                "source_state_id": "5",
+                                "utensils_list": [
+                                    "耐熱皿・器"
+                                ]
+                            }
+                        ]
+                    }
+                ]
             }
-        ]
+        ],
+        "annotation_note": ""
     },
     {
         "title": "鶏肉とアスパラのトマトスープ",
@@ -4649,17 +4722,156 @@
             },
             {
                 "step_after": 1,
-                "state_list": []
+                "state_list": [
+                    {
+                        "id": "206f71bd",
+                        "name": "3cm角に切った鶏肉",
+                        "touching_containers_id": "まな板",
+                        "utensil_interactions_list": [
+                            {
+                                "source_state_id": "1",
+                                "utensils_list": [
+                                    "包丁",
+                                    "まな板"
+                                ]
+                            },
+                            {
+                                "source_state_id": "6",
+                                "utensils_list": [
+                                    "まな板"
+                                ]
+                            },
+                            {
+                                "source_state_id": "7",
+                                "utensils_list": [
+                                    "まな板"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "id": "735702c9",
+                        "name": "薄切りにしたたまねぎ",
+                        "touching_containers_id": "まな板",
+                        "utensil_interactions_list": [
+                            {
+                                "source_state_id": "2",
+                                "utensils_list": [
+                                    "包丁",
+                                    "まな板"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "id": "e6388f40",
+                        "name": "斜め切りにしたアスパラガス",
+                        "touching_containers_id": "まな板",
+                        "utensil_interactions_list": [
+                            {
+                                "source_state_id": "3",
+                                "utensils_list": [
+                                    "包丁",
+                                    "まな板"
+                                ]
+                            }
+                        ]
+                    }
+                ]
             },
             {
                 "step_after": 2,
-                "state_list": []
+                "state_list": [
+                    {
+                        "id": "5fa2ee49",
+                        "name": "鶏肉・たまねぎ・アスパラガスを炒めたもの",
+                        "touching_containers_id": "フライパン",
+                        "utensil_interactions_list": [
+                            {
+                                "source_state_id": "8",
+                                "utensils_list": [
+                                    "計量スプーン",
+                                    "フライパン",
+                                    "菜箸"
+                                ]
+                            },
+                            {
+                                "source_state_id": "206f71bd",
+                                "utensils_list": [
+                                    "フライパン",
+                                    "菜箸"
+                                ]
+                            },
+                            {
+                                "source_state_id": "735702c9",
+                                "utensils_list": [
+                                    "フライパン",
+                                    "菜箸"
+                                ]
+                            },
+                            {
+                                "source_state_id": "e6388f40",
+                                "utensils_list": [
+                                    "フライパン",
+                                    "菜箸"
+                                ]
+                            }
+                        ]
+                    }
+                ]
             },
             {
                 "step_after": 3,
-                "state_list": []
+                "state_list": [
+                    {
+                        "id": "e9a3698b",
+                        "name": "鶏肉とアスパラのトマトスープ",
+                        "touching_containers_id": "耐熱皿・器",
+                        "utensil_interactions_list": [
+                            {
+                                "source_state_id": "5fa2ee49",
+                                "utensils_list": [
+                                    "フライパン",
+                                    "木製へら",
+                                    "耐熱皿・器"
+                                ]
+                            },
+                            {
+                                "source_state_id": "4",
+                                "utensils_list": [
+                                    "フライパン",
+                                    "木製へら",
+                                    "耐熱皿・器"
+                                ]
+                            },
+                            {
+                                "source_state_id": "6",
+                                "utensils_list": [
+                                    "フライパン",
+                                    "木製へら",
+                                    "耐熱皿・器"
+                                ]
+                            },
+                            {
+                                "source_state_id": "7",
+                                "utensils_list": [
+                                    "フライパン",
+                                    "木製へら",
+                                    "耐熱皿・器"
+                                ]
+                            },
+                            {
+                                "source_state_id": "5",
+                                "utensils_list": [
+                                    "耐熱皿・器"
+                                ]
+                            }
+                        ]
+                    }
+                ]
             }
-        ]
+        ],
+        "annotation_note": ""
     },
     {
         "title": "鶏とそら豆の水ギョーザ",
@@ -4755,27 +4967,129 @@
             },
             {
                 "step_after": 1,
-                "state_list": []
+                "state_list": [
+                    {
+                        "id": "cf5a0959",
+                        "name": "薄力粉・強力粉を混ぜたもの",
+                        "touching_containers_id": "ボウル",
+                        "utensil_interactions_list": [
+                            {
+                                "source_state_id": "1",
+                                "utensils_list": [
+                                    "ボウル",
+                                    "菜箸"
+                                ]
+                            },
+                            {
+                                "source_state_id": "2",
+                                "utensils_list": [
+                                    "ボウル",
+                                    "菜箸"
+                                ]
+                            }
+                        ]
+                    }
+                ]
             },
             {
                 "step_after": 2,
-                "state_list": []
+                "state_list": [
+                    {
+                        "id": "185fe069",
+                        "name": "1に水を加えて混ぜたもの",
+                        "touching_containers_id": "ボウル",
+                        "utensil_interactions_list": [
+                            {
+                                "source_state_id": "cf5a0959",
+                                "utensils_list": [
+                                    "ボウル",
+                                    "菜箸"
+                                ]
+                            },
+                            {
+                                "source_state_id": "3",
+                                "utensils_list": [
+                                    "ボウル",
+                                    "菜箸"
+                                ]
+                            }
+                        ]
+                    }
+                ]
             },
             {
                 "step_after": 3,
-                "state_list": []
+                "state_list": [
+                    {
+                        "id": "b8350146",
+                        "name": "全体に水分をなじませた生地",
+                        "touching_containers_id": "ボウル",
+                        "utensil_interactions_list": [
+                            {
+                                "source_state_id": "185fe069",
+                                "utensils_list": [
+                                    "ボウル"
+                                ]
+                            }
+                        ]
+                    }
+                ]
             },
             {
                 "step_after": 4,
-                "state_list": []
+                "state_list": [
+                    {
+                        "id": "a642f369",
+                        "name": "こねた生地",
+                        "touching_containers_id": "ボウル",
+                        "utensil_interactions_list": [
+                            {
+                                "source_state_id": "b8350146",
+                                "utensils_list": [
+                                    "ボウル"
+                                ]
+                            }
+                        ]
+                    }
+                ]
             },
             {
                 "step_after": 5,
-                "state_list": []
+                "state_list": [
+                    {
+                        "id": "7b47bff2",
+                        "name": "20分～1時間ねかせた生地",
+                        "touching_containers_id": "ボウル",
+                        "utensil_interactions_list": [
+                            {
+                                "source_state_id": "a642f369",
+                                "utensils_list": [
+                                    "ボウル",
+                                    "None_ぬれ布巾"
+                                ]
+                            }
+                        ]
+                    }
+                ]
             },
             {
                 "step_after": 6,
-                "state_list": []
+                "state_list": [
+                    {
+                        "id": "d61a679f",
+                        "name": "粗みじん切りしたそら豆",
+                        "touching_containers_id": "まな板",
+                        "utensil_interactions_list": [
+                            {
+                                "source_state_id": "5",
+                                "utensils_list": [
+                                    "包丁",
+                                    "まな板"
+                                ]
+                            }
+                        ]
+                    }
+                ]
             },
             {
                 "step_after": 7,
@@ -4833,7 +5147,8 @@
                 "step_after": 20,
                 "state_list": []
             }
-        ]
+        ],
+        "annotation_note": ""
     },
     {
         "title": "ふんわり鶏むね肉のたまねぎソース",
