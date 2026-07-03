@@ -5093,15 +5093,108 @@
             },
             {
                 "step_after": 7,
-                "state_list": []
+                "state_list": [
+                    {
+                        "id": "2bd4af69",
+                        "name": "ひき肉・調味料を混ぜたもの",
+                        "touching_containers_id": "ボウル",
+                        "utensil_interactions_list": [
+                            {
+                                "source_state_id": "7b47bff2",
+                                "utensils_list": [
+                                    "ボウル"
+                                ]
+                            },
+                            {
+                                "source_state_id": "4",
+                                "utensils_list": [
+                                    "ボウル"
+                                ]
+                            },
+                            {
+                                "source_state_id": "11",
+                                "utensils_list": [
+                                    "ボウル"
+                                ]
+                            },
+                            {
+                                "source_state_id": "12",
+                                "utensils_list": [
+                                    "計量スプーン",
+                                    "ボウル"
+                                ]
+                            },
+                            {
+                                "source_state_id": "13",
+                                "utensils_list": [
+                                    "計量スプーン",
+                                    "ボウル"
+                                ]
+                            },
+                            {
+                                "source_state_id": "8",
+                                "utensils_list": [
+                                    "計量スプーン",
+                                    "ボウル"
+                                ]
+                            },
+                            {
+                                "source_state_id": "14",
+                                "utensils_list": [
+                                    "計量スプーン",
+                                    "ボウル"
+                                ]
+                            }
+                        ]
+                    }
+                ]
             },
             {
                 "step_after": 8,
-                "state_list": []
+                "state_list": [
+                    {
+                        "id": "24964172",
+                        "name": "7・しょうが・ねぎ・そら豆を混ぜたもの",
+                        "touching_containers_id": "ボウル",
+                        "utensil_interactions_list": [
+                            {
+                                "source_state_id": "2bd4af69",
+                                "utensils_list": [
+                                    "ボウル"
+                                ]
+                            },
+                            {
+                                "source_state_id": "6",
+                                "utensils_list": [
+                                    "ボウル"
+                                ]
+                            },
+                            {
+                                "source_state_id": "7",
+                                "utensils_list": [
+                                    "ボウル"
+                                ]
+                            },
+                            {
+                                "source_state_id": "d61a679f",
+                                "utensils_list": [
+                                    "ボウル"
+                                ]
+                            }
+                        ]
+                    }
+                ]
             },
             {
                 "step_after": 9,
-                "state_list": []
+                "state_list": [
+                    {
+                        "id": "db263f38",
+                        "name": "",
+                        "touching_containers_id": "",
+                        "utensil_interactions_list": []
+                    }
+                ]
             },
             {
                 "step_after": 10,
