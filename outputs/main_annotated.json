@@ -5659,7 +5659,7 @@
                                 ]
                             },
                             {
-                                "source_state_id": "fa60d67a",
+                                "source_state_id": "",
                                 "utensils_list": [
                                     "耐熱皿・器"
                                 ]
@@ -5735,17 +5735,143 @@
             },
             {
                 "step_after": 1,
-                "state_list": []
+                "state_list": [
+                    {
+                        "id": "efc0c98a",
+                        "name": "四方切りにしたキャベツ",
+                        "touching_containers_id": "まな板",
+                        "utensil_interactions_list": [
+                            {
+                                "source_state_id": "1",
+                                "utensils_list": [
+                                    "包丁",
+                                    "まな板"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "id": "2d5e6403",
+                        "name": "1cm幅に切ったたまねぎ",
+                        "touching_containers_id": "まな板",
+                        "utensil_interactions_list": [
+                            {
+                                "source_state_id": "3",
+                                "utensils_list": [
+                                    "包丁",
+                                    "まな板"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "id": "3d78dba3",
+                        "name": "[A]を混ぜ合わせたもの",
+                        "touching_containers_id": "ボウル",
+                        "utensil_interactions_list": [
+                            {
+                                "source_state_id": "4",
+                                "utensils_list": [
+                                    "ボウル",
+                                    "スプーン"
+                                ]
+                            },
+                            {
+                                "source_state_id": "5",
+                                "utensils_list": [
+                                    "ボウル",
+                                    "スプーン"
+                                ]
+                            },
+                            {
+                                "source_state_id": "6",
+                                "utensils_list": [
+                                    "ボウル",
+                                    "スプーン"
+                                ]
+                            },
+                            {
+                                "source_state_id": "7",
+                                "utensils_list": [
+                                    "ボウル",
+                                    "スプーン"
+                                ]
+                            }
+                        ]
+                    }
+                ]
             },
             {
                 "step_after": 2,
-                "state_list": []
+                "state_list": [
+                    {
+                        "id": "550bda78",
+                        "name": "焼いた豚肉",
+                        "touching_containers_id": "フライパン",
+                        "utensil_interactions_list": [
+                            {
+                                "source_state_id": "2",
+                                "utensils_list": [
+                                    "フライパン",
+                                    "菜箸",
+                                    "クッキングペーパー"
+                                ]
+                            },
+                            {
+                                "source_state_id": "8",
+                                "utensils_list": [
+                                    "計量スプーン",
+                                    "フライパン",
+                                    "菜箸",
+                                    "クッキングペーパー"
+                                ]
+                            }
+                        ]
+                    }
+                ]
             },
             {
                 "step_after": 3,
-                "state_list": []
+                "state_list": [
+                    {
+                        "id": "666661ca",
+                        "name": "キャベツと豚肉のみそ炒め",
+                        "touching_containers_id": "フライパン",
+                        "utensil_interactions_list": [
+                            {
+                                "source_state_id": "550bda78",
+                                "utensils_list": [
+                                    "フライパン",
+                                    "菜箸"
+                                ]
+                            },
+                            {
+                                "source_state_id": "2d5e6403",
+                                "utensils_list": [
+                                    "フライパン",
+                                    "菜箸"
+                                ]
+                            },
+                            {
+                                "source_state_id": "efc0c98a",
+                                "utensils_list": [
+                                    "フライパン",
+                                    "菜箸"
+                                ]
+                            },
+                            {
+                                "source_state_id": "3d78dba3",
+                                "utensils_list": [
+                                    "フライパン",
+                                    "菜箸"
+                                ]
+                            }
+                        ]
+                    }
+                ]
             }
-        ]
+        ],
+        "annotation_note": ""
     },
     {
         "title": "冬のロールチキン",
@@ -5805,29 +5931,197 @@
             },
             {
                 "step_after": 1,
-                "state_list": []
+                "state_list": [
+                    {
+                        "id": "c4df8f79",
+                        "name": "塩こしょうをなじませた鶏肉",
+                        "touching_containers_id": "まな板",
+                        "utensil_interactions_list": [
+                            {
+                                "source_state_id": "1",
+                                "utensils_list": [
+                                    "包丁",
+                                    "まな板",
+                                    "フォーク"
+                                ]
+                            },
+                            {
+                                "source_state_id": "6",
+                                "utensils_list": [
+                                    "計量スプーン",
+                                    "まな板"
+                                ]
+                            },
+                            {
+                                "source_state_id": "7",
+                                "utensils_list": [
+                                    "まな板"
+                                ]
+                            }
+                        ]
+                    }
+                ]
             },
             {
                 "step_after": 2,
-                "state_list": []
+                "state_list": [
+                    {
+                        "id": "7aa9979d",
+                        "name": "甘栗とプルーンを芯にして巻いた鶏肉",
+                        "touching_containers_id": "まな板",
+                        "utensil_interactions_list": [
+                            {
+                                "source_state_id": "c4df8f79",
+                                "utensils_list": [
+                                    "まな板",
+                                    "None_たこ糸"
+                                ]
+                            },
+                            {
+                                "source_state_id": "2",
+                                "utensils_list": [
+                                    "まな板",
+                                    "None_たこ糸"
+                                ]
+                            },
+                            {
+                                "source_state_id": "3",
+                                "utensils_list": [
+                                    "まな板",
+                                    "None_たこ糸"
+                                ]
+                            }
+                        ]
+                    }
+                ]
             },
             {
                 "step_after": 3,
-                "state_list": []
+                "state_list": [
+                    {
+                        "id": "47f69f2d",
+                        "name": "2を電子レンジにかけたもの",
+                        "touching_containers_id": "耐熱皿・器",
+                        "utensil_interactions_list": [
+                            {
+                                "source_state_id": "7aa9979d",
+                                "utensils_list": [
+                                    "耐熱皿・器",
+                                    "ラップフィルム"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "id": "362fc63e",
+                        "name": "肉汁",
+                        "touching_containers_id": "耐熱皿・器",
+                        "utensil_interactions_list": [
+                            {
+                                "source_state_id": "7aa9979d",
+                                "utensils_list": [
+                                    "耐熱皿・器",
+                                    "ラップフィルム"
+                                ]
+                            }
+                        ]
+                    }
+                ]
             },
             {
                 "step_after": 4,
-                "state_list": []
+                "state_list": [
+                    {
+                        "id": "8bc3d774",
+                        "name": "焼いた鶏肉",
+                        "touching_containers_id": "None_耐熱皿・器-2",
+                        "utensil_interactions_list": [
+                            {
+                                "source_state_id": "8",
+                                "utensils_list": [
+                                    "計量スプーン",
+                                    "フライパン",
+                                    "菜箸",
+                                    "None_耐熱皿・器-2"
+                                ]
+                            },
+                            {
+                                "source_state_id": "47f69f2d",
+                                "utensils_list": [
+                                    "ラップフィルム",
+                                    "フライパン",
+                                    "菜箸",
+                                    "None_たこ糸",
+                                    "None_耐熱皿・器-2"
+                                ]
+                            }
+                        ]
+                    }
+                ]
             },
             {
                 "step_after": 5,
-                "state_list": []
+                "state_list": [
+                    {
+                        "id": "1d9187d1",
+                        "name": "ブロッコリー・肉汁を炒めたもの",
+                        "touching_containers_id": "フライパン",
+                        "utensil_interactions_list": [
+                            {
+                                "source_state_id": "4",
+                                "utensils_list": [
+                                    "包丁",
+                                    "まな板",
+                                    "フライパン",
+                                    "菜箸"
+                                ]
+                            },
+                            {
+                                "source_state_id": "362fc63e",
+                                "utensils_list": [
+                                    "フライパン",
+                                    "菜箸"
+                                ]
+                            },
+                            {
+                                "source_state_id": "6",
+                                "utensils_list": [
+                                    "フライパン",
+                                    "菜箸"
+                                ]
+                            }
+                        ]
+                    }
+                ]
             },
             {
                 "step_after": 6,
-                "state_list": []
+                "state_list": [
+                    {
+                        "id": "1ff619c0",
+                        "name": "冬のロールチキン",
+                        "touching_containers_id": "None_耐熱皿・器-3",
+                        "utensil_interactions_list": [
+                            {
+                                "source_state_id": "8bc3d774",
+                                "utensils_list": [
+                                    "包丁",
+                                    "まな板",
+                                    "None_耐熱皿・器-3"
+                                ]
+                            },
+                            {
+                                "source_state_id": "5",
+                                "utensils_list": [
+                                    "None_耐熱皿・器-3"
+                                ]
+                            }
+                        ]
+                    }
+                ]
             }
-        ]
+        ],
+        "annotation_note": "step4: ここでたこ糸・ラップを書くべきか"
     },
     {
         "title": "トマトと豆腐の和風サラダ",
@@ -5875,17 +6169,134 @@
             },
             {
                 "step_after": 1,
-                "state_list": []
+                "state_list": [
+                    {
+                        "id": "52d3aa80",
+                        "name": "冷蔵庫で冷やした豆腐",
+                        "touching_containers_id": "耐熱皿・器",
+                        "utensil_interactions_list": [
+                            {
+                                "source_state_id": "3",
+                                "utensils_list": [
+                                    "包丁",
+                                    "まな板",
+                                    "耐熱皿・器",
+                                    "クッキングペーパー"
+                                ]
+                            }
+                        ]
+                    }
+                ]
             },
             {
                 "step_after": 2,
-                "state_list": []
+                "state_list": [
+                    {
+                        "id": "b033491c",
+                        "name": "水けをきったたまねぎ",
+                        "touching_containers_id": "ざる",
+                        "utensil_interactions_list": [
+                            {
+                                "source_state_id": "2",
+                                "utensils_list": [
+                                    "包丁",
+                                    "まな板",
+                                    "ボウル",
+                                    "ざる"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "id": "b98bf2ac",
+                        "name": "千切りにした青じそ",
+                        "touching_containers_id": "まな板",
+                        "utensil_interactions_list": [
+                            {
+                                "source_state_id": "4",
+                                "utensils_list": [
+                                    "包丁",
+                                    "まな板"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "id": "b6d320f3",
+                        "name": "くし形に切ったトマト",
+                        "touching_containers_id": "まな板",
+                        "utensil_interactions_list": [
+                            {
+                                "source_state_id": "1",
+                                "utensils_list": [
+                                    "包丁",
+                                    "まな板"
+                                ]
+                            }
+                        ]
+                    }
+                ]
             },
             {
                 "step_after": 3,
-                "state_list": []
+                "state_list": [
+                    {
+                        "id": "98820555",
+                        "name": "トマトと豆腐の和風サラダ",
+                        "touching_containers_id": "None_耐熱皿・器-2",
+                        "utensil_interactions_list": [
+                            {
+                                "source_state_id": "5",
+                                "utensils_list": [
+                                    "スプーン",
+                                    "None_ボウル-2",
+                                    "None_耐熱皿・器-2"
+                                ]
+                            },
+                            {
+                                "source_state_id": "6",
+                                "utensils_list": [
+                                    "スプーン",
+                                    "None_ボウル-2",
+                                    "None_耐熱皿・器-2"
+                                ]
+                            },
+                            {
+                                "source_state_id": "52d3aa80",
+                                "utensils_list": [
+                                    "スプーン",
+                                    "None_ボウル-3",
+                                    "None_耐熱皿・器-2"
+                                ]
+                            },
+                            {
+                                "source_state_id": "b033491c",
+                                "utensils_list": [
+                                    "スプーン",
+                                    "None_ボウル-3",
+                                    "None_耐熱皿・器-2"
+                                ]
+                            },
+                            {
+                                "source_state_id": "b98bf2ac",
+                                "utensils_list": [
+                                    "スプーン",
+                                    "None_ボウル-3",
+                                    "None_耐熱皿・器-2"
+                                ]
+                            },
+                            {
+                                "source_state_id": "b6d320f3",
+                                "utensils_list": [
+                                    "None_耐熱皿・器-2"
+                                ]
+                            }
+                        ]
+                    }
+                ]
             }
-        ]
+        ],
+        "annotation_note": ""
     },
     {
         "title": "ねぎ塩だれ",
@@ -5915,13 +6326,62 @@
             },
             {
                 "step_after": 1,
-                "state_list": []
+                "state_list": [
+                    {
+                        "id": "d0464e8a",
+                        "name": "斜め薄切りにしたねぎ",
+                        "touching_containers_id": "ボウル",
+                        "utensil_interactions_list": [
+                            {
+                                "source_state_id": "1",
+                                "utensils_list": [
+                                    "包丁",
+                                    "まな板",
+                                    "ボウル"
+                                ]
+                            }
+                        ]
+                    }
+                ]
             },
             {
                 "step_after": 2,
-                "state_list": []
+                "state_list": [
+                    {
+                        "id": "cfe85d09",
+                        "name": "ねぎ塩だれ",
+                        "touching_containers_id": "ボウル",
+                        "utensil_interactions_list": [
+                            {
+                                "source_state_id": "2",
+                                "utensils_list": [
+                                    "計量スプーン",
+                                    "フライパン",
+                                    "ボウル",
+                                    "スプーン"
+                                ]
+                            },
+                            {
+                                "source_state_id": "d0464e8a",
+                                "utensils_list": [
+                                    "ボウル",
+                                    "スプーン"
+                                ]
+                            },
+                            {
+                                "source_state_id": "3",
+                                "utensils_list": [
+                                    "計量スプーン",
+                                    "ボウル",
+                                    "スプーン"
+                                ]
+                            }
+                        ]
+                    }
+                ]
             }
-        ]
+        ],
+        "annotation_note": ""
     },
     {
         "title": "無限ごぼうのぶりしゃぶ",
@@ -5993,21 +6453,158 @@
             },
             {
                 "step_after": 1,
-                "state_list": []
+                "state_list": [
+                    {
+                        "id": "a4ebfc1c",
+                        "name": "[A]を加熱したもの",
+                        "touching_containers_id": "None_土鍋",
+                        "utensil_interactions_list": [
+                            {
+                                "source_state_id": "5",
+                                "utensils_list": [
+                                    "None_土鍋"
+                                ]
+                            },
+                            {
+                                "source_state_id": "6",
+                                "utensils_list": [
+                                    "None_土鍋"
+                                ]
+                            }
+                        ]
+                    }
+                ]
             },
             {
                 "step_after": 2,
-                "state_list": []
+                "state_list": [
+                    {
+                        "id": "75c9f31b",
+                        "name": "薄く切ったぶり",
+                        "touching_containers_id": "バット",
+                        "utensil_interactions_list": [
+                            {
+                                "source_state_id": "1",
+                                "utensils_list": [
+                                    "包丁",
+                                    "まな板",
+                                    "バット"
+                                ]
+                            },
+                            {
+                                "source_state_id": "9",
+                                "utensils_list": [
+                                    "バット"
+                                ]
+                            }
+                        ]
+                    }
+                ]
             },
             {
                 "step_after": 3,
-                "state_list": []
+                "state_list": [
+                    {
+                        "id": "5a512f37",
+                        "name": "ごぼう・ねぎ・水菜を盛り付けたもの",
+                        "touching_containers_id": "耐熱皿・器",
+                        "utensil_interactions_list": [
+                            {
+                                "source_state_id": "2",
+                                "utensils_list": [
+                                    "包丁",
+                                    "ピーラー",
+                                    "耐熱皿・器"
+                                ]
+                            },
+                            {
+                                "source_state_id": "3",
+                                "utensils_list": [
+                                    "包丁",
+                                    "まな板",
+                                    "耐熱皿・器"
+                                ]
+                            },
+                            {
+                                "source_state_id": "4",
+                                "utensils_list": [
+                                    "包丁",
+                                    "まな板",
+                                    "耐熱皿・器"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "id": "2288b3e7",
+                        "name": "ぶりを盛り付けたもの",
+                        "touching_containers_id": "None_耐熱皿・器-2",
+                        "utensil_interactions_list": [
+                            {
+                                "source_state_id": "75c9f31b",
+                                "utensils_list": [
+                                    "None_耐熱皿・器-2"
+                                ]
+                            }
+                        ]
+                    }
+                ]
             },
             {
                 "step_after": 4,
-                "state_list": []
+                "state_list": [
+                    {
+                        "id": "82511121",
+                        "name": "無限ごぼうのぶりしゃぶ",
+                        "touching_containers_id": "",
+                        "utensil_interactions_list": [
+                            {
+                                "source_state_id": "a4ebfc1c",
+                                "utensils_list": [
+                                    "None_土鍋"
+                                ]
+                            },
+                            {
+                                "source_state_id": "10",
+                                "utensils_list": [
+                                    "計量スプーン",
+                                    "None_土鍋"
+                                ]
+                            },
+                            {
+                                "source_state_id": "5a512f37",
+                                "utensils_list": [
+                                    "菜箸",
+                                    "None_土鍋",
+                                    "None_耐熱皿・器-3"
+                                ]
+                            },
+                            {
+                                "source_state_id": "2288b3e7",
+                                "utensils_list": [
+                                    "菜箸",
+                                    "None_土鍋",
+                                    "None_耐熱皿・器-3"
+                                ]
+                            },
+                            {
+                                "source_state_id": "7",
+                                "utensils_list": [
+                                    "None_耐熱皿・器-3"
+                                ]
+                            },
+                            {
+                                "source_state_id": "8",
+                                "utensils_list": [
+                                    "None_耐熱皿・器-3"
+                                ]
+                            }
+                        ]
+                    }
+                ]
             }
-        ]
+        ],
+        "annotation_note": ""
     },
     {
         "title": "のり梅醤（ジャン）の豚バラ炒め",
@@ -6073,7 +6670,14 @@
             },
             {
                 "step_after": 1,
-                "state_list": []
+                "state_list": [
+                    {
+                        "id": "544d2322",
+                        "name": "",
+                        "touching_containers_id": "",
+                        "utensil_interactions_list": []
+                    }
+                ]
             },
             {
                 "step_after": 2,
@@ -6087,7 +6691,8 @@
                 "step_after": 4,
                 "state_list": []
             }
-        ]
+        ],
+        "annotation_note": ""
     },
     {
         "title": "しっとり肉そぼろ丼",
