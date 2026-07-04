@@ -1,0 +1,2541 @@
+[
+    {
+        "title": "例題1：トマトの冷やしおでん風",
+        "world_state_list": [
+            {
+                "step_after": 0,
+                "state_list": [
+                    {
+                        "id": "1",
+                        "name": "トマト 4コ（300g）",
+                        "touching_containers_id": "",
+                        "utensil_interactions_list": []
+                    },
+                    {
+                        "id": "2",
+                        "name": "油揚げ 40g",
+                        "touching_containers_id": "",
+                        "utensil_interactions_list": []
+                    },
+                    {
+                        "id": "3",
+                        "name": "【A】 だし カップ1+1/2",
+                        "touching_containers_id": "",
+                        "utensil_interactions_list": []
+                    },
+                    {
+                        "id": "4",
+                        "name": "【A】 うす口しょうゆ 大さじ1",
+                        "touching_containers_id": "",
+                        "utensil_interactions_list": []
+                    },
+                    {
+                        "id": "5",
+                        "name": "すだち（薄い輪切り） 適量",
+                        "touching_containers_id": "",
+                        "utensil_interactions_list": []
+                    },
+                    {
+                        "id": "6",
+                        "name": "七味とうがらし 適宜",
+                        "touching_containers_id": "",
+                        "utensil_interactions_list": []
+                    }
+                ]
+            },
+            {
+                "step_after": 1,
+                "state_list": [
+                    {
+                        "id": "fb1d74eb",
+                        "name": "へたを取ったトマト",
+                        "touching_containers_id": "まな板",
+                        "utensil_interactions_list": [
+                            {
+                                "source_state_id": "1",
+                                "utensils_list": [
+                                    "包丁"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "id": "0583a34a",
+                        "name": "切った油揚げ",
+                        "touching_containers_id": "まな板",
+                        "utensil_interactions_list": [
+                            {
+                                "source_state_id": "2",
+                                "utensils_list": [
+                                    "包丁"
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "step_after": 2,
+                "state_list": [
+                    {
+                        "id": "0218b231",
+                        "name": "煮たトマト",
+                        "touching_containers_id": "耐熱皿・器",
+                        "utensil_interactions_list": [
+                            {
+                                "source_state_id": "3",
+                                "utensils_list": [
+                                    "両手鍋・片手鍋"
+                                ]
+                            },
+                            {
+                                "source_state_id": "4",
+                                "utensils_list": [
+                                    "両手鍋・片手鍋"
+                                ]
+                            },
+                            {
+                                "source_state_id": "fb1d74eb",
+                                "utensils_list": [
+                                    "両手鍋・片手鍋"
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "step_after": 3,
+                "state_list": [
+                    {
+                        "id": "09b95087",
+                        "name": "冷ましたトマトと油揚げ",
+                        "touching_containers_id": "耐熱皿・器",
+                        "utensil_interactions_list": [
+                            {
+                                "source_state_id": "0218b231",
+                                "utensils_list": [
+                                    "耐熱皿・器"
+                                ]
+                            },
+                            {
+                                "source_state_id": "0583a34a",
+                                "utensils_list": [
+                                    "両手鍋・片手鍋"
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "step_after": 4,
+                "state_list": [
+                    {
+                        "id": "c77d813d",
+                        "name": "トマトの冷やしおでん風",
+                        "touching_containers_id": "耐熱皿・器",
+                        "utensil_interactions_list": [
+                            {
+                                "source_state_id": "09b95087",
+                                "utensils_list": [
+                                    "耐熱皿・器"
+                                ]
+                            },
+                            {
+                                "source_state_id": "5",
+                                "utensils_list": [
+                                    "耐熱皿・器"
+                                ]
+                            },
+                            {
+                                "source_state_id": "6",
+                                "utensils_list": [
+                                    "耐熱皿・器"
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            }
+        ],
+        "annotation_note": "Aを煮るのとトマトを加えて加熱するのは一つのStateでいいのかわからなかった。"
+    },
+    {
+        "title": "例題2：ジャンボプリン",
+        "world_state_list": [
+            {
+                "step_after": 0,
+                "state_list": [
+                    {
+                        "id": "1",
+                        "name": "【カラメルソース】 グラニュー糖 80g",
+                        "touching_containers_id": "",
+                        "utensil_interactions_list": []
+                    },
+                    {
+                        "id": "2",
+                        "name": "【カラメルソース】 水 小さじ1",
+                        "touching_containers_id": "",
+                        "utensil_interactions_list": []
+                    },
+                    {
+                        "id": "3",
+                        "name": "卵 3コ",
+                        "touching_containers_id": "",
+                        "utensil_interactions_list": []
+                    },
+                    {
+                        "id": "4",
+                        "name": "卵黄 3コ分",
+                        "touching_containers_id": "",
+                        "utensil_interactions_list": []
+                    },
+                    {
+                        "id": "5",
+                        "name": "グラニュー糖 120g",
+                        "touching_containers_id": "",
+                        "utensil_interactions_list": []
+                    },
+                    {
+                        "id": "6",
+                        "name": "牛乳 カップ4",
+                        "touching_containers_id": "",
+                        "utensil_interactions_list": []
+                    },
+                    {
+                        "id": "7",
+                        "name": "生クリーム カップ1/2",
+                        "touching_containers_id": "",
+                        "utensil_interactions_list": []
+                    }
+                ]
+            },
+            {
+                "step_after": 1,
+                "state_list": [
+                    {
+                        "id": "fb162d2d",
+                        "name": "カラメルソース",
+                        "touching_containers_id": "型",
+                        "utensil_interactions_list": [
+                            {
+                                "source_state_id": "1",
+                                "utensils_list": [
+                                    "両手鍋・片手鍋"
+                                ]
+                            },
+                            {
+                                "source_state_id": "2",
+                                "utensils_list": [
+                                    "両手鍋・片手鍋"
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "step_after": 2,
+                "state_list": [
+                    {
+                        "id": "b9ae7dda",
+                        "name": "卵・卵黄・グラニュー糖を混ぜたもの",
+                        "touching_containers_id": "ボウル",
+                        "utensil_interactions_list": [
+                            {
+                                "source_state_id": "3",
+                                "utensils_list": [
+                                    "ボウル"
+                                ]
+                            },
+                            {
+                                "source_state_id": "4",
+                                "utensils_list": [
+                                    "ボウル"
+                                ]
+                            },
+                            {
+                                "source_state_id": "5",
+                                "utensils_list": [
+                                    "ボウル"
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "step_after": 3,
+                "state_list": [
+                    {
+                        "id": "a99f8c46",
+                        "name": "牛乳と生クリームを加熱したもの",
+                        "touching_containers_id": "両手鍋・片手鍋",
+                        "utensil_interactions_list": [
+                            {
+                                "source_state_id": "6",
+                                "utensils_list": [
+                                    "両手鍋・片手鍋"
+                                ]
+                            },
+                            {
+                                "source_state_id": "7",
+                                "utensils_list": [
+                                    "両手鍋・片手鍋"
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "step_after": 4,
+                "state_list": [
+                    {
+                        "id": "279e8af8",
+                        "name": "メレンゲ",
+                        "touching_containers_id": "ボウル",
+                        "utensil_interactions_list": [
+                            {
+                                "source_state_id": "b9ae7dda",
+                                "utensils_list": [
+                                    "ボウル",
+                                    "耐熱ゴムべら",
+                                    "泡だて器"
+                                ]
+                            },
+                            {
+                                "source_state_id": "a99f8c46",
+                                "utensils_list": [
+                                    "ボウル",
+                                    "泡だて器",
+                                    "耐熱ゴムべら"
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "step_after": 5,
+                "state_list": [
+                    {
+                        "id": "48195a32",
+                        "name": "加熱したプリン",
+                        "touching_containers_id": "型",
+                        "utensil_interactions_list": [
+                            {
+                                "source_state_id": "fb162d2d",
+                                "utensils_list": [
+                                    "型"
+                                ]
+                            },
+                            {
+                                "source_state_id": "279e8af8",
+                                "utensils_list": [
+                                    "スプーン",
+                                    "型"
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "step_after": 6,
+                "state_list": [
+                    {
+                        "id": "85c245db",
+                        "name": "ジャンボプリン",
+                        "touching_containers_id": "耐熱皿・器",
+                        "utensil_interactions_list": [
+                            {
+                                "source_state_id": "48195a32",
+                                "utensils_list": [
+                                    "耐熱皿・器",
+                                    "スプーン"
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            }
+        ],
+        "annotation_note": ""
+    },
+    {
+        "title": "あさりの根深汁",
+        "world_state_list": [
+            {
+                "step_after": 0,
+                "state_list": [
+                    {
+                        "id": "1",
+                        "name": "ねぎ（青い部分も適量含む） 2本（240g）",
+                        "touching_containers_id": "",
+                        "utensil_interactions_list": []
+                    },
+                    {
+                        "id": "2",
+                        "name": "あさり（殻付き、砂抜きしたもの） 150g",
+                        "touching_containers_id": "",
+                        "utensil_interactions_list": []
+                    },
+                    {
+                        "id": "3",
+                        "name": "昆布（5×4cm） 2枚（4g）",
+                        "touching_containers_id": "",
+                        "utensil_interactions_list": []
+                    },
+                    {
+                        "id": "4",
+                        "name": "みそ ",
+                        "touching_containers_id": "",
+                        "utensil_interactions_list": []
+                    }
+                ]
+            },
+            {
+                "step_after": 1,
+                "state_list": [
+                    {
+                        "id": "4fd9b3b5",
+                        "name": "水につけた昆布",
+                        "touching_containers_id": "両手鍋・片手鍋",
+                        "utensil_interactions_list": [
+                            {
+                                "source_state_id": "3",
+                                "utensils_list": [
+                                    "両手鍋・片手鍋"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "id": "67738a4a",
+                        "name": "切ったねぎ",
+                        "touching_containers_id": "まな板",
+                        "utensil_interactions_list": [
+                            {
+                                "source_state_id": "1",
+                                "utensils_list": [
+                                    "包丁",
+                                    "まな板"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "id": "939f03a3",
+                        "name": "洗ったあさり",
+                        "touching_containers_id": "ボウル",
+                        "utensil_interactions_list": [
+                            {
+                                "source_state_id": "2",
+                                "utensils_list": [
+                                    "ボウル"
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "step_after": 2,
+                "state_list": [
+                    {
+                        "id": "9d6609c3",
+                        "name": "煮立った昆布とねぎとあさり",
+                        "touching_containers_id": "両手鍋・片手鍋",
+                        "utensil_interactions_list": [
+                            {
+                                "source_state_id": "4fd9b3b5",
+                                "utensils_list": [
+                                    "両手鍋・片手鍋"
+                                ]
+                            },
+                            {
+                                "source_state_id": "67738a4a",
+                                "utensils_list": [
+                                    "両手鍋・片手鍋"
+                                ]
+                            },
+                            {
+                                "source_state_id": "939f03a3",
+                                "utensils_list": [
+                                    "両手鍋・片手鍋"
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "step_after": 3,
+                "state_list": [
+                    {
+                        "id": "103f78a6",
+                        "name": "あさりの根深汁",
+                        "touching_containers_id": "耐熱皿・器",
+                        "utensil_interactions_list": [
+                            {
+                                "source_state_id": "9d6609c3",
+                                "utensils_list": [
+                                    "両手鍋・片手鍋"
+                                ]
+                            },
+                            {
+                                "source_state_id": "4",
+                                "utensils_list": [
+                                    "両手鍋・片手鍋"
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            }
+        ],
+        "annotation_note": ""
+    },
+    {
+        "title": "マカロニグラタン",
+        "world_state_list": [
+            {
+                "step_after": 0,
+                "state_list": [
+                    {
+                        "id": "1",
+                        "name": "マカロニ 100g",
+                        "touching_containers_id": "",
+                        "utensil_interactions_list": []
+                    },
+                    {
+                        "id": "2",
+                        "name": "鶏もも肉 100g",
+                        "touching_containers_id": "",
+                        "utensil_interactions_list": []
+                    },
+                    {
+                        "id": "3",
+                        "name": "むきえび 100g",
+                        "touching_containers_id": "",
+                        "utensil_interactions_list": []
+                    },
+                    {
+                        "id": "4",
+                        "name": "たまねぎ 1/2コ（100g）",
+                        "touching_containers_id": "",
+                        "utensil_interactions_list": []
+                    },
+                    {
+                        "id": "5",
+                        "name": "しめじ 1パック（100g）",
+                        "touching_containers_id": "",
+                        "utensil_interactions_list": []
+                    },
+                    {
+                        "id": "6",
+                        "name": "牛乳 カップ2",
+                        "touching_containers_id": "",
+                        "utensil_interactions_list": []
+                    },
+                    {
+                        "id": "7",
+                        "name": "生クリーム カップ1/4",
+                        "touching_containers_id": "",
+                        "utensil_interactions_list": []
+                    },
+                    {
+                        "id": "8",
+                        "name": "パン粉 小さじ2",
+                        "touching_containers_id": "",
+                        "utensil_interactions_list": []
+                    },
+                    {
+                        "id": "9",
+                        "name": "粉チーズ 小さじ2",
+                        "touching_containers_id": "",
+                        "utensil_interactions_list": []
+                    },
+                    {
+                        "id": "10",
+                        "name": "塩 ",
+                        "touching_containers_id": "",
+                        "utensil_interactions_list": []
+                    },
+                    {
+                        "id": "11",
+                        "name": "こしょう ",
+                        "touching_containers_id": "",
+                        "utensil_interactions_list": []
+                    },
+                    {
+                        "id": "12",
+                        "name": "バター ",
+                        "touching_containers_id": "",
+                        "utensil_interactions_list": []
+                    },
+                    {
+                        "id": "13",
+                        "name": "小麦粉 ",
+                        "touching_containers_id": "",
+                        "utensil_interactions_list": []
+                    }
+                ]
+            },
+            {
+                "step_after": 1,
+                "state_list": [
+                    {
+                        "id": "2ba50607",
+                        "name": "ゆでたマカロニ",
+                        "touching_containers_id": "ざる",
+                        "utensil_interactions_list": [
+                            {
+                                "source_state_id": "10",
+                                "utensils_list": [
+                                    "両手鍋・片手鍋"
+                                ]
+                            },
+                            {
+                                "source_state_id": "1",
+                                "utensils_list": [
+                                    "両手鍋・片手鍋"
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "step_after": 2,
+                "state_list": [
+                    {
+                        "id": "ed60fbef",
+                        "name": "薄切りにしたたまねぎ",
+                        "touching_containers_id": "まな板",
+                        "utensil_interactions_list": [
+                            {
+                                "source_state_id": "4",
+                                "utensils_list": [
+                                    "包丁",
+                                    "まな板"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "id": "66e2afd6",
+                        "name": "切ったしめじ",
+                        "touching_containers_id": "まな板",
+                        "utensil_interactions_list": [
+                            {
+                                "source_state_id": "5",
+                                "utensils_list": [
+                                    "包丁",
+                                    "まな板"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "id": "7c798880",
+                        "name": "切った鶏肉",
+                        "touching_containers_id": "まな板",
+                        "utensil_interactions_list": [
+                            {
+                                "source_state_id": "2",
+                                "utensils_list": [
+                                    "包丁",
+                                    "まな板"
+                                ]
+                            },
+                            {
+                                "source_state_id": "10",
+                                "utensils_list": [
+                                    "まな板"
+                                ]
+                            },
+                            {
+                                "source_state_id": "11",
+                                "utensils_list": [
+                                    "まな板"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "id": "ba8b4fbd",
+                        "name": "背わたを取ったえび",
+                        "touching_containers_id": "まな板",
+                        "utensil_interactions_list": [
+                            {
+                                "source_state_id": "3",
+                                "utensils_list": [
+                                    "串"
+                                ]
+                            },
+                            {
+                                "source_state_id": "10",
+                                "utensils_list": [
+                                    "まな板"
+                                ]
+                            },
+                            {
+                                "source_state_id": "11",
+                                "utensils_list": [
+                                    "まな板"
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "step_after": 3,
+                "state_list": [
+                    {
+                        "id": "d2bba447",
+                        "name": "炒めたたまねぎ・鶏肉・えび・しめじ",
+                        "touching_containers_id": "フライパン",
+                        "utensil_interactions_list": [
+                            {
+                                "source_state_id": "12",
+                                "utensils_list": [
+                                    "フライパン"
+                                ]
+                            },
+                            {
+                                "source_state_id": "ed60fbef",
+                                "utensils_list": [
+                                    "フライパン"
+                                ]
+                            },
+                            {
+                                "source_state_id": "7c798880",
+                                "utensils_list": [
+                                    "フライパン"
+                                ]
+                            },
+                            {
+                                "source_state_id": "ba8b4fbd",
+                                "utensils_list": [
+                                    "フライパン"
+                                ]
+                            },
+                            {
+                                "source_state_id": "66e2afd6",
+                                "utensils_list": [
+                                    "フライパン"
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "step_after": 4,
+                "state_list": [
+                    {
+                        "id": "d0c719cf",
+                        "name": "加熱した３・マカロニ・牛乳・生クリーム",
+                        "touching_containers_id": "フライパン",
+                        "utensil_interactions_list": [
+                            {
+                                "source_state_id": "13",
+                                "utensils_list": [
+                                    "フライパン"
+                                ]
+                            },
+                            {
+                                "source_state_id": "d2bba447",
+                                "utensils_list": [
+                                    "フライパン"
+                                ]
+                            },
+                            {
+                                "source_state_id": "6",
+                                "utensils_list": [
+                                    "フライパン"
+                                ]
+                            },
+                            {
+                                "source_state_id": "7",
+                                "utensils_list": [
+                                    "フライパン"
+                                ]
+                            },
+                            {
+                                "source_state_id": "10",
+                                "utensils_list": [
+                                    "フライパン"
+                                ]
+                            },
+                            {
+                                "source_state_id": "11",
+                                "utensils_list": [
+                                    "フライパン"
+                                ]
+                            },
+                            {
+                                "source_state_id": "2ba50607",
+                                "utensils_list": [
+                                    "フライパン"
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "step_after": 5,
+                "state_list": [
+                    {
+                        "id": "dee60954",
+                        "name": "マカロニグラタン",
+                        "touching_containers_id": "耐熱皿・器",
+                        "utensil_interactions_list": [
+                            {
+                                "source_state_id": "d0c719cf",
+                                "utensils_list": [
+                                    "耐熱皿・器"
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            }
+        ],
+        "annotation_note": ""
+    },
+    {
+        "title": "とろとろ白菜のペペロン鍋",
+        "world_state_list": [
+            {
+                "step_after": 0,
+                "state_list": [
+                    {
+                        "id": "1",
+                        "name": "白菜 1/4コ（600g）",
+                        "touching_containers_id": "",
+                        "utensil_interactions_list": []
+                    },
+                    {
+                        "id": "2",
+                        "name": "豚肩ロース肉（薄切り） 200g",
+                        "touching_containers_id": "",
+                        "utensil_interactions_list": []
+                    },
+                    {
+                        "id": "3",
+                        "name": "【A】 塩 少々",
+                        "touching_containers_id": "",
+                        "utensil_interactions_list": []
+                    },
+                    {
+                        "id": "4",
+                        "name": "【A】 こしょう 少々",
+                        "touching_containers_id": "",
+                        "utensil_interactions_list": []
+                    },
+                    {
+                        "id": "5",
+                        "name": "【B】 水 カップ3",
+                        "touching_containers_id": "",
+                        "utensil_interactions_list": []
+                    },
+                    {
+                        "id": "6",
+                        "name": "【B】 固形チキンスープのもと（洋風） 1コ",
+                        "touching_containers_id": "",
+                        "utensil_interactions_list": []
+                    },
+                    {
+                        "id": "7",
+                        "name": "【B】 ローリエ 1枚",
+                        "touching_containers_id": "",
+                        "utensil_interactions_list": []
+                    },
+                    {
+                        "id": "8",
+                        "name": "【ペペロンソース】 オリーブ油 大さじ3",
+                        "touching_containers_id": "",
+                        "utensil_interactions_list": []
+                    },
+                    {
+                        "id": "9",
+                        "name": "【ペペロンソース】 にんにく（薄切り） 2かけ分",
+                        "touching_containers_id": "",
+                        "utensil_interactions_list": []
+                    },
+                    {
+                        "id": "10",
+                        "name": "【ペペロンソース】 アンチョビ（フィレ/刻む） 15g",
+                        "touching_containers_id": "",
+                        "utensil_interactions_list": []
+                    },
+                    {
+                        "id": "11",
+                        "name": "【ペペロンソース】 赤とうがらし（種を除いて小口切り） 少々",
+                        "touching_containers_id": "",
+                        "utensil_interactions_list": []
+                    }
+                ]
+            },
+            {
+                "step_after": 1,
+                "state_list": [
+                    {
+                        "id": "3d1e0329",
+                        "name": "切った白菜",
+                        "touching_containers_id": "まな板",
+                        "utensil_interactions_list": [
+                            {
+                                "source_state_id": "1",
+                                "utensils_list": [
+                                    "包丁",
+                                    "まな板"
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "step_after": 2,
+                "state_list": [
+                    {
+                        "id": "7bd1d1f7",
+                        "name": "下味をつけた豚肉",
+                        "touching_containers_id": "まな板",
+                        "utensil_interactions_list": [
+                            {
+                                "source_state_id": "2",
+                                "utensils_list": [
+                                    "包丁",
+                                    "まな板"
+                                ]
+                            },
+                            {
+                                "source_state_id": "3",
+                                "utensils_list": [
+                                    "まな板"
+                                ]
+                            },
+                            {
+                                "source_state_id": "4",
+                                "utensils_list": [
+                                    "まな板"
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "step_after": 3,
+                "state_list": [
+                    {
+                        "id": "2c89055d",
+                        "name": "加熱した２・３",
+                        "touching_containers_id": "両手鍋・片手鍋",
+                        "utensil_interactions_list": [
+                            {
+                                "source_state_id": "5",
+                                "utensils_list": [
+                                    "両手鍋・片手鍋",
+                                    "鍋の蓋"
+                                ]
+                            },
+                            {
+                                "source_state_id": "6",
+                                "utensils_list": [
+                                    "両手鍋・片手鍋",
+                                    "鍋の蓋"
+                                ]
+                            },
+                            {
+                                "source_state_id": "7",
+                                "utensils_list": [
+                                    "両手鍋・片手鍋",
+                                    "鍋の蓋"
+                                ]
+                            },
+                            {
+                                "source_state_id": "7bd1d1f7",
+                                "utensils_list": [
+                                    "両手鍋・片手鍋",
+                                    "鍋の蓋"
+                                ]
+                            },
+                            {
+                                "source_state_id": "3d1e0329",
+                                "utensils_list": [
+                                    "両手鍋・片手鍋",
+                                    "鍋の蓋"
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "step_after": 4,
+                "state_list": [
+                    {
+                        "id": "60885d67",
+                        "name": "とろとろ白菜のペペロン鍋",
+                        "touching_containers_id": "両手鍋・片手鍋",
+                        "utensil_interactions_list": [
+                            {
+                                "source_state_id": "8",
+                                "utensils_list": [
+                                    "フライパン"
+                                ]
+                            },
+                            {
+                                "source_state_id": "9",
+                                "utensils_list": [
+                                    "フライパン"
+                                ]
+                            },
+                            {
+                                "source_state_id": "10",
+                                "utensils_list": [
+                                    "フライパン"
+                                ]
+                            },
+                            {
+                                "source_state_id": "11",
+                                "utensils_list": [
+                                    "フライパン"
+                                ]
+                            },
+                            {
+                                "source_state_id": "2c89055d",
+                                "utensils_list": [
+                                    "両手鍋・片手鍋"
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            }
+        ],
+        "annotation_note": ""
+    },
+    {
+        "title": "明太豆腐チーズ",
+        "world_state_list": [
+            {
+                "step_after": 0,
+                "state_list": [
+                    {
+                        "id": "1",
+                        "name": "絹ごし豆腐（小） 1丁（200g）",
+                        "touching_containers_id": "",
+                        "utensil_interactions_list": []
+                    },
+                    {
+                        "id": "2",
+                        "name": "からし明太子（大） 1/2腹（50g）",
+                        "touching_containers_id": "",
+                        "utensil_interactions_list": []
+                    },
+                    {
+                        "id": "3",
+                        "name": "細ねぎ 1/2ワ（20g）",
+                        "touching_containers_id": "",
+                        "utensil_interactions_list": []
+                    },
+                    {
+                        "id": "4",
+                        "name": "卵 1コ",
+                        "touching_containers_id": "",
+                        "utensil_interactions_list": []
+                    },
+                    {
+                        "id": "5",
+                        "name": "【A】 片栗粉 大さじ2",
+                        "touching_containers_id": "",
+                        "utensil_interactions_list": []
+                    },
+                    {
+                        "id": "6",
+                        "name": "【A】 しょうゆ 小さじ2",
+                        "touching_containers_id": "",
+                        "utensil_interactions_list": []
+                    },
+                    {
+                        "id": "7",
+                        "name": "ピザ用チーズ 30g",
+                        "touching_containers_id": "",
+                        "utensil_interactions_list": []
+                    },
+                    {
+                        "id": "8",
+                        "name": "ごま油 ",
+                        "touching_containers_id": "",
+                        "utensil_interactions_list": []
+                    }
+                ]
+            },
+            {
+                "step_after": 1,
+                "state_list": [
+                    {
+                        "id": "81ff15d2",
+                        "name": "水気をきった豆腐",
+                        "touching_containers_id": "まな板",
+                        "utensil_interactions_list": [
+                            {
+                                "source_state_id": "1",
+                                "utensils_list": [
+                                    "まな板"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "id": "fe054126",
+                        "name": "切った細ねぎ",
+                        "touching_containers_id": "まな板",
+                        "utensil_interactions_list": [
+                            {
+                                "source_state_id": "3",
+                                "utensils_list": [
+                                    "包丁",
+                                    "まな板"
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "step_after": 2,
+                "state_list": [
+                    {
+                        "id": "cf09a3ed",
+                        "name": "混ぜた１と明太子と卵",
+                        "touching_containers_id": "ボウル",
+                        "utensil_interactions_list": [
+                            {
+                                "source_state_id": "81ff15d2",
+                                "utensils_list": [
+                                    "ボウル",
+                                    "耐熱ゴムべら"
+                                ]
+                            },
+                            {
+                                "source_state_id": "2",
+                                "utensils_list": [
+                                    "ボウル",
+                                    "料理ばさみ",
+                                    "耐熱ゴムべら"
+                                ]
+                            },
+                            {
+                                "source_state_id": "fe054126",
+                                "utensils_list": [
+                                    "ボウル",
+                                    "耐熱ゴムべら"
+                                ]
+                            },
+                            {
+                                "source_state_id": "5",
+                                "utensils_list": [
+                                    "ボウル",
+                                    "耐熱ゴムべら"
+                                ]
+                            },
+                            {
+                                "source_state_id": "6",
+                                "utensils_list": [
+                                    "ボウル",
+                                    "耐熱ゴムべら"
+                                ]
+                            },
+                            {
+                                "source_state_id": "4",
+                                "utensils_list": [
+                                    "ボウル",
+                                    "耐熱ゴムべら"
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "step_after": 3,
+                "state_list": [
+                    {
+                        "id": "79e8b677",
+                        "name": "明太豆腐チーズ",
+                        "touching_containers_id": "耐熱皿・器",
+                        "utensil_interactions_list": [
+                            {
+                                "source_state_id": "8",
+                                "utensils_list": [
+                                    "耐熱皿・器"
+                                ]
+                            },
+                            {
+                                "source_state_id": "cf09a3ed",
+                                "utensils_list": [
+                                    "耐熱皿・器"
+                                ]
+                            },
+                            {
+                                "source_state_id": "7",
+                                "utensils_list": [
+                                    "耐熱皿・器"
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            }
+        ],
+        "annotation_note": ""
+    },
+    {
+        "title": "かぶとたらの白ドリア",
+        "world_state_list": [
+            {
+                "step_after": 0,
+                "state_list": [
+                    {
+                        "id": "1",
+                        "name": "かぶ（葉付き/小） 4コ（320g）",
+                        "touching_containers_id": "",
+                        "utensil_interactions_list": []
+                    },
+                    {
+                        "id": "2",
+                        "name": "塩だら（甘塩/切り身） 3切れ（300g）",
+                        "touching_containers_id": "",
+                        "utensil_interactions_list": []
+                    },
+                    {
+                        "id": "3",
+                        "name": "しめじ 1パック（100g）",
+                        "touching_containers_id": "",
+                        "utensil_interactions_list": []
+                    },
+                    {
+                        "id": "4",
+                        "name": "ねぎ（白い部分） 1本（100g）",
+                        "touching_containers_id": "",
+                        "utensil_interactions_list": []
+                    },
+                    {
+                        "id": "5",
+                        "name": "【A】 にんにく（軽くつぶす） 4かけ分",
+                        "touching_containers_id": "",
+                        "utensil_interactions_list": []
+                    },
+                    {
+                        "id": "6",
+                        "name": "【A】 牛乳 カップ1+1/4",
+                        "touching_containers_id": "",
+                        "utensil_interactions_list": []
+                    },
+                    {
+                        "id": "7",
+                        "name": "【A】 生クリーム（乳脂肪分35％） カップ3/4",
+                        "touching_containers_id": "",
+                        "utensil_interactions_list": []
+                    },
+                    {
+                        "id": "8",
+                        "name": "【A】 酒 カップ1/4",
+                        "touching_containers_id": "",
+                        "utensil_interactions_list": []
+                    },
+                    {
+                        "id": "9",
+                        "name": "【A】 塩 小さじ1強",
+                        "touching_containers_id": "",
+                        "utensil_interactions_list": []
+                    },
+                    {
+                        "id": "10",
+                        "name": "ご飯（温かいもの） 約600g",
+                        "touching_containers_id": "",
+                        "utensil_interactions_list": []
+                    },
+                    {
+                        "id": "11",
+                        "name": "チーズ（ハードタイプ） 適量",
+                        "touching_containers_id": "",
+                        "utensil_interactions_list": []
+                    },
+                    {
+                        "id": "12",
+                        "name": "塩 ",
+                        "touching_containers_id": "",
+                        "utensil_interactions_list": []
+                    },
+                    {
+                        "id": "13",
+                        "name": "バター ",
+                        "touching_containers_id": "",
+                        "utensil_interactions_list": []
+                    },
+                    {
+                        "id": "14",
+                        "name": "黒こしょう（粗びき） ",
+                        "touching_containers_id": "",
+                        "utensil_interactions_list": []
+                    }
+                ]
+            },
+            {
+                "step_after": 1,
+                "state_list": [
+                    {
+                        "id": "29fb6e7f",
+                        "name": "切ったかぶ",
+                        "touching_containers_id": "まな板",
+                        "utensil_interactions_list": [
+                            {
+                                "source_state_id": "1",
+                                "utensils_list": [
+                                    "包丁",
+                                    "まな板"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "id": "4da0fea1",
+                        "name": "ほぐしたしめじ",
+                        "touching_containers_id": "まな板",
+                        "utensil_interactions_list": [
+                            {
+                                "source_state_id": "3",
+                                "utensils_list": [
+                                    "包丁",
+                                    "まな板"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "id": "6141d649",
+                        "name": "切ったねぎ",
+                        "touching_containers_id": "まな板",
+                        "utensil_interactions_list": [
+                            {
+                                "source_state_id": "4",
+                                "utensils_list": [
+                                    "包丁",
+                                    "まな板"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "id": "eee2682f",
+                        "name": "切ったたら",
+                        "touching_containers_id": "まな板",
+                        "utensil_interactions_list": [
+                            {
+                                "source_state_id": "2",
+                                "utensils_list": [
+                                    "ざる",
+                                    "包丁",
+                                    "まな板"
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "step_after": 2,
+                "state_list": [
+                    {
+                        "id": "95ca4e89",
+                        "name": "加熱した１",
+                        "touching_containers_id": "両手鍋・片手鍋",
+                        "utensil_interactions_list": [
+                            {
+                                "source_state_id": "29fb6e7f",
+                                "utensils_list": [
+                                    "両手鍋・片手鍋"
+                                ]
+                            },
+                            {
+                                "source_state_id": "4da0fea1",
+                                "utensils_list": [
+                                    "両手鍋・片手鍋"
+                                ]
+                            },
+                            {
+                                "source_state_id": "6141d649",
+                                "utensils_list": [
+                                    "両手鍋・片手鍋"
+                                ]
+                            },
+                            {
+                                "source_state_id": "eee2682f",
+                                "utensils_list": [
+                                    "両手鍋・片手鍋"
+                                ]
+                            },
+                            {
+                                "source_state_id": "5",
+                                "utensils_list": [
+                                    "両手鍋・片手鍋"
+                                ]
+                            },
+                            {
+                                "source_state_id": "6",
+                                "utensils_list": [
+                                    "両手鍋・片手鍋"
+                                ]
+                            },
+                            {
+                                "source_state_id": "7",
+                                "utensils_list": [
+                                    "両手鍋・片手鍋"
+                                ]
+                            },
+                            {
+                                "source_state_id": "8",
+                                "utensils_list": [
+                                    "両手鍋・片手鍋"
+                                ]
+                            },
+                            {
+                                "source_state_id": "9",
+                                "utensils_list": [
+                                    "両手鍋・片手鍋"
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "step_after": 3,
+                "state_list": [
+                    {
+                        "id": "fd408fbb",
+                        "name": "ご飯と２",
+                        "touching_containers_id": "耐熱皿・器",
+                        "utensil_interactions_list": [
+                            {
+                                "source_state_id": "10",
+                                "utensils_list": [
+                                    "耐熱皿・器"
+                                ]
+                            },
+                            {
+                                "source_state_id": "13",
+                                "utensils_list": [
+                                    "耐熱皿・器"
+                                ]
+                            },
+                            {
+                                "source_state_id": "95ca4e89",
+                                "utensils_list": [
+                                    "耐熱皿・器"
+                                ]
+                            },
+                            {
+                                "source_state_id": "12",
+                                "utensils_list": [
+                                    "耐熱皿・器"
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "step_after": 4,
+                "state_list": [
+                    {
+                        "id": "abf659d7",
+                        "name": "かぶとたらの白ドリア",
+                        "touching_containers_id": "耐熱皿・器",
+                        "utensil_interactions_list": [
+                            {
+                                "source_state_id": "fd408fbb",
+                                "utensils_list": [
+                                    "耐熱皿・器"
+                                ]
+                            },
+                            {
+                                "source_state_id": "11",
+                                "utensils_list": [
+                                    "耐熱皿・器"
+                                ]
+                            },
+                            {
+                                "source_state_id": "14",
+                                "utensils_list": [
+                                    "耐熱皿・器"
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            }
+        ],
+        "annotation_note": ""
+    },
+    {
+        "title": "ミートボールのトマト煮",
+        "world_state_list": [
+            {
+                "step_after": 0,
+                "state_list": [
+                    {
+                        "id": "1",
+                        "name": "合いびき肉 200g",
+                        "touching_containers_id": "",
+                        "utensil_interactions_list": []
+                    },
+                    {
+                        "id": "2",
+                        "name": "【A】 たまねぎ（みじん切り） 40g",
+                        "touching_containers_id": "",
+                        "utensil_interactions_list": []
+                    },
+                    {
+                        "id": "3",
+                        "name": "【A】 生パン粉 カップ1/3強（15g）",
+                        "touching_containers_id": "",
+                        "utensil_interactions_list": []
+                    },
+                    {
+                        "id": "4",
+                        "name": "【A】 小麦粉 大さじ1",
+                        "touching_containers_id": "",
+                        "utensil_interactions_list": []
+                    },
+                    {
+                        "id": "5",
+                        "name": "【A】 牛乳 大さじ2",
+                        "touching_containers_id": "",
+                        "utensil_interactions_list": []
+                    },
+                    {
+                        "id": "6",
+                        "name": "【A】 塩 小さじ1/4",
+                        "touching_containers_id": "",
+                        "utensil_interactions_list": []
+                    },
+                    {
+                        "id": "7",
+                        "name": "【A】 こしょう 少々",
+                        "touching_containers_id": "",
+                        "utensil_interactions_list": []
+                    },
+                    {
+                        "id": "8",
+                        "name": "たまねぎ 1/2コ（100g）",
+                        "touching_containers_id": "",
+                        "utensil_interactions_list": []
+                    },
+                    {
+                        "id": "9",
+                        "name": "セロリ 1/2本（50g）",
+                        "touching_containers_id": "",
+                        "utensil_interactions_list": []
+                    },
+                    {
+                        "id": "10",
+                        "name": "にんじん（小） 1枚（100g）",
+                        "touching_containers_id": "",
+                        "utensil_interactions_list": []
+                    },
+                    {
+                        "id": "11",
+                        "name": "かぶ 2コ",
+                        "touching_containers_id": "",
+                        "utensil_interactions_list": []
+                    },
+                    {
+                        "id": "12",
+                        "name": "トマトの水煮（缶詰/ホールタイプ） 1/2缶（200g）",
+                        "touching_containers_id": "",
+                        "utensil_interactions_list": []
+                    },
+                    {
+                        "id": "13",
+                        "name": "ローリエ 1枚",
+                        "touching_containers_id": "",
+                        "utensil_interactions_list": []
+                    },
+                    {
+                        "id": "14",
+                        "name": "塩 ",
+                        "touching_containers_id": "",
+                        "utensil_interactions_list": []
+                    },
+                    {
+                        "id": "15",
+                        "name": "こしょう ",
+                        "touching_containers_id": "",
+                        "utensil_interactions_list": []
+                    }
+                ]
+            },
+            {
+                "step_after": 1,
+                "state_list": [
+                    {
+                        "id": "5a50f809",
+                        "name": "切ったたまねぎ",
+                        "touching_containers_id": "まな板",
+                        "utensil_interactions_list": [
+                            {
+                                "source_state_id": "8",
+                                "utensils_list": [
+                                    "包丁",
+                                    "まな板"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "id": "3b7f77a7",
+                        "name": "切ったセロリ",
+                        "touching_containers_id": "まな板",
+                        "utensil_interactions_list": [
+                            {
+                                "source_state_id": "9",
+                                "utensils_list": [
+                                    "包丁",
+                                    "まな板"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "id": "d98a5c18",
+                        "name": "切ったにんじん",
+                        "touching_containers_id": "まな板",
+                        "utensil_interactions_list": [
+                            {
+                                "source_state_id": "10",
+                                "utensils_list": [
+                                    "包丁",
+                                    "まな板"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "id": "aed9b1eb",
+                        "name": "切ったかぶ",
+                        "touching_containers_id": "まな板",
+                        "utensil_interactions_list": [
+                            {
+                                "source_state_id": "11",
+                                "utensils_list": [
+                                    "包丁",
+                                    "まな板"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "id": "a7c73182",
+                        "name": "つぶしたトマト",
+                        "touching_containers_id": "ボウル",
+                        "utensil_interactions_list": [
+                            {
+                                "source_state_id": "12",
+                                "utensils_list": [
+                                    "スプーン",
+                                    "ボウル"
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "step_after": 2,
+                "state_list": [
+                    {
+                        "id": "7b01bf39",
+                        "name": "丸めたひき肉",
+                        "touching_containers_id": "ボウル",
+                        "utensil_interactions_list": [
+                            {
+                                "source_state_id": "1",
+                                "utensils_list": [
+                                    "ボウル"
+                                ]
+                            },
+                            {
+                                "source_state_id": "2",
+                                "utensils_list": [
+                                    "ボウル"
+                                ]
+                            },
+                            {
+                                "source_state_id": "3",
+                                "utensils_list": [
+                                    "ボウル"
+                                ]
+                            },
+                            {
+                                "source_state_id": "4",
+                                "utensils_list": [
+                                    "ボウル"
+                                ]
+                            },
+                            {
+                                "source_state_id": "5",
+                                "utensils_list": [
+                                    "ボウル"
+                                ]
+                            },
+                            {
+                                "source_state_id": "6",
+                                "utensils_list": [
+                                    "ボウル"
+                                ]
+                            },
+                            {
+                                "source_state_id": "7",
+                                "utensils_list": [
+                                    "ボウル"
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "step_after": 3,
+                "state_list": [
+                    {
+                        "id": "ed945a83",
+                        "name": "煮た１",
+                        "touching_containers_id": "両手鍋・片手鍋",
+                        "utensil_interactions_list": [
+                            {
+                                "source_state_id": "5a50f809",
+                                "utensils_list": [
+                                    "両手鍋・片手鍋"
+                                ]
+                            },
+                            {
+                                "source_state_id": "3b7f77a7",
+                                "utensils_list": [
+                                    "両手鍋・片手鍋"
+                                ]
+                            },
+                            {
+                                "source_state_id": "d98a5c18",
+                                "utensils_list": [
+                                    "両手鍋・片手鍋"
+                                ]
+                            },
+                            {
+                                "source_state_id": "aed9b1eb",
+                                "utensils_list": [
+                                    "両手鍋・片手鍋"
+                                ]
+                            },
+                            {
+                                "source_state_id": "a7c73182",
+                                "utensils_list": [
+                                    "両手鍋・片手鍋"
+                                ]
+                            },
+                            {
+                                "source_state_id": "13",
+                                "utensils_list": [
+                                    "両手鍋・片手鍋"
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "step_after": 4,
+                "state_list": [
+                    {
+                        "id": "fffb1aab",
+                        "name": "ミートボールのトマト煮",
+                        "touching_containers_id": "両手鍋・片手鍋",
+                        "utensil_interactions_list": [
+                            {
+                                "source_state_id": "ed945a83",
+                                "utensils_list": [
+                                    "両手鍋・片手鍋"
+                                ]
+                            },
+                            {
+                                "source_state_id": "7b01bf39",
+                                "utensils_list": [
+                                    "両手鍋・片手鍋"
+                                ]
+                            },
+                            {
+                                "source_state_id": "14",
+                                "utensils_list": [
+                                    "両手鍋・片手鍋"
+                                ]
+                            },
+                            {
+                                "source_state_id": "15",
+                                "utensils_list": [
+                                    "両手鍋・片手鍋"
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            }
+        ],
+        "annotation_note": ""
+    },
+    {
+        "title": "大根とひき肉のコロコロカレー",
+        "world_state_list": [
+            {
+                "step_after": 0,
+                "state_list": [
+                    {
+                        "id": "1",
+                        "name": "大根 1/3本（400g）",
+                        "touching_containers_id": "",
+                        "utensil_interactions_list": []
+                    },
+                    {
+                        "id": "2",
+                        "name": "合いびき肉 150g",
+                        "touching_containers_id": "",
+                        "utensil_interactions_list": []
+                    },
+                    {
+                        "id": "3",
+                        "name": "たまねぎ（小） 1コ（150g）",
+                        "touching_containers_id": "",
+                        "utensil_interactions_list": []
+                    },
+                    {
+                        "id": "4",
+                        "name": "にんにく（みじん切り） 小さじ1",
+                        "touching_containers_id": "",
+                        "utensil_interactions_list": []
+                    },
+                    {
+                        "id": "5",
+                        "name": "しょうが（みじん切り） 小さじ1",
+                        "touching_containers_id": "",
+                        "utensil_interactions_list": []
+                    },
+                    {
+                        "id": "6",
+                        "name": "【A】 赤とうがらし 1本",
+                        "touching_containers_id": "",
+                        "utensil_interactions_list": []
+                    },
+                    {
+                        "id": "7",
+                        "name": "【A】 ローリエ 1枚",
+                        "touching_containers_id": "",
+                        "utensil_interactions_list": []
+                    },
+                    {
+                        "id": "8",
+                        "name": "カレー粉 大さじ3",
+                        "touching_containers_id": "",
+                        "utensil_interactions_list": []
+                    },
+                    {
+                        "id": "9",
+                        "name": "白ワイン（または酒） 大さじ2",
+                        "touching_containers_id": "",
+                        "utensil_interactions_list": []
+                    },
+                    {
+                        "id": "10",
+                        "name": "【B】 トマトケチャップ 大さじ2",
+                        "touching_containers_id": "",
+                        "utensil_interactions_list": []
+                    },
+                    {
+                        "id": "11",
+                        "name": "【B】 しょうゆ 大さじ1",
+                        "touching_containers_id": "",
+                        "utensil_interactions_list": []
+                    },
+                    {
+                        "id": "12",
+                        "name": "【B】 塩 小さじ2/3～1",
+                        "touching_containers_id": "",
+                        "utensil_interactions_list": []
+                    },
+                    {
+                        "id": "13",
+                        "name": "ご飯（温かいもの） 適量",
+                        "touching_containers_id": "",
+                        "utensil_interactions_list": []
+                    },
+                    {
+                        "id": "14",
+                        "name": "油 ",
+                        "touching_containers_id": "",
+                        "utensil_interactions_list": []
+                    }
+                ]
+            },
+            {
+                "step_after": 1,
+                "state_list": [
+                    {
+                        "id": "65d3f1b8",
+                        "name": "切った大根",
+                        "touching_containers_id": "まな板",
+                        "utensil_interactions_list": [
+                            {
+                                "source_state_id": "1",
+                                "utensils_list": [
+                                    "包丁",
+                                    "まな板"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "id": "a3407098",
+                        "name": "切ったたまねぎ",
+                        "touching_containers_id": "まな板",
+                        "utensil_interactions_list": [
+                            {
+                                "source_state_id": "3",
+                                "utensils_list": [
+                                    "包丁",
+                                    "まな板"
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "step_after": 2,
+                "state_list": [
+                    {
+                        "id": "8b7dc5a3",
+                        "name": "加熱した大根とひき肉",
+                        "touching_containers_id": "両手鍋・片手鍋",
+                        "utensil_interactions_list": [
+                            {
+                                "source_state_id": "14",
+                                "utensils_list": [
+                                    "両手鍋・片手鍋"
+                                ]
+                            },
+                            {
+                                "source_state_id": "a3407098",
+                                "utensils_list": [
+                                    "両手鍋・片手鍋"
+                                ]
+                            },
+                            {
+                                "source_state_id": "4",
+                                "utensils_list": [
+                                    "両手鍋・片手鍋"
+                                ]
+                            },
+                            {
+                                "source_state_id": "5",
+                                "utensils_list": [
+                                    "両手鍋・片手鍋"
+                                ]
+                            },
+                            {
+                                "source_state_id": "2",
+                                "utensils_list": [
+                                    "両手鍋・片手鍋"
+                                ]
+                            },
+                            {
+                                "source_state_id": "6",
+                                "utensils_list": [
+                                    "両手鍋・片手鍋"
+                                ]
+                            },
+                            {
+                                "source_state_id": "7",
+                                "utensils_list": [
+                                    "両手鍋・片手鍋"
+                                ]
+                            },
+                            {
+                                "source_state_id": "65d3f1b8",
+                                "utensils_list": [
+                                    "両手鍋・片手鍋"
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "step_after": 3,
+                "state_list": [
+                    {
+                        "id": "c2d4a4d6",
+                        "name": "大根とひき肉のコロコロカレー",
+                        "touching_containers_id": "耐熱皿・器",
+                        "utensil_interactions_list": [
+                            {
+                                "source_state_id": "8b7dc5a3",
+                                "utensils_list": [
+                                    "両手鍋・片手鍋"
+                                ]
+                            },
+                            {
+                                "source_state_id": "8",
+                                "utensils_list": [
+                                    "両手鍋・片手鍋"
+                                ]
+                            },
+                            {
+                                "source_state_id": "9",
+                                "utensils_list": [
+                                    "両手鍋・片手鍋"
+                                ]
+                            },
+                            {
+                                "source_state_id": "10",
+                                "utensils_list": [
+                                    "両手鍋・片手鍋"
+                                ]
+                            },
+                            {
+                                "source_state_id": "11",
+                                "utensils_list": [
+                                    "両手鍋・片手鍋"
+                                ]
+                            },
+                            {
+                                "source_state_id": "12",
+                                "utensils_list": [
+                                    "両手鍋・片手鍋"
+                                ]
+                            },
+                            {
+                                "source_state_id": "13",
+                                "utensils_list": [
+                                    "耐熱皿・器"
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            }
+        ],
+        "annotation_note": ""
+    },
+    {
+        "title": "韓国風茶碗蒸し",
+        "world_state_list": [
+            {
+                "step_after": 0,
+                "state_list": [
+                    {
+                        "id": "1",
+                        "name": "卵 2コ",
+                        "touching_containers_id": "",
+                        "utensil_interactions_list": []
+                    },
+                    {
+                        "id": "2",
+                        "name": "マヨネーズ 大さじ1",
+                        "touching_containers_id": "",
+                        "utensil_interactions_list": []
+                    },
+                    {
+                        "id": "3",
+                        "name": "しらす干し 20g",
+                        "touching_containers_id": "",
+                        "utensil_interactions_list": []
+                    },
+                    {
+                        "id": "4",
+                        "name": "スープ（＊顆粒（かりゅう）チキンスープのもと（中華風）小さじ1/2を水カップ1/2で溶く。） カップ1/2",
+                        "touching_containers_id": "",
+                        "utensil_interactions_list": []
+                    },
+                    {
+                        "id": "5",
+                        "name": "細ねぎ（小口切り） 2本分",
+                        "touching_containers_id": "",
+                        "utensil_interactions_list": []
+                    },
+                    {
+                        "id": "6",
+                        "name": "片栗粉 ",
+                        "touching_containers_id": "",
+                        "utensil_interactions_list": []
+                    },
+                    {
+                        "id": "7",
+                        "name": "ごま油 ",
+                        "touching_containers_id": "",
+                        "utensil_interactions_list": []
+                    }
+                ]
+            },
+            {
+                "step_after": 1,
+                "state_list": [
+                    {
+                        "id": "e7bfe9d9",
+                        "name": "加熱した卵としらす",
+                        "touching_containers_id": "耐熱皿・器",
+                        "utensil_interactions_list": [
+                            {
+                                "source_state_id": "6",
+                                "utensils_list": [
+                                    "耐熱皿・器"
+                                ]
+                            },
+                            {
+                                "source_state_id": "1",
+                                "utensils_list": [
+                                    "耐熱皿・器"
+                                ]
+                            },
+                            {
+                                "source_state_id": "7",
+                                "utensils_list": [
+                                    "耐熱皿・器"
+                                ]
+                            },
+                            {
+                                "source_state_id": "2",
+                                "utensils_list": [
+                                    "耐熱皿・器"
+                                ]
+                            },
+                            {
+                                "source_state_id": "4",
+                                "utensils_list": [
+                                    "耐熱皿・器"
+                                ]
+                            },
+                            {
+                                "source_state_id": "3",
+                                "utensils_list": [
+                                    "耐熱皿・器"
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "step_after": 2,
+                "state_list": [
+                    {
+                        "id": "e3de93eb",
+                        "name": "混ぜた１",
+                        "touching_containers_id": "耐熱皿・器",
+                        "utensil_interactions_list": [
+                            {
+                                "source_state_id": "e7bfe9d9",
+                                "utensils_list": [
+                                    "耐熱皿・器"
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "step_after": 3,
+                "state_list": [
+                    {
+                        "id": "7501ac31",
+                        "name": "韓国風茶碗蒸し",
+                        "touching_containers_id": "耐熱皿・器",
+                        "utensil_interactions_list": [
+                            {
+                                "source_state_id": "e3de93eb",
+                                "utensils_list": [
+                                    "耐熱皿・器"
+                                ]
+                            },
+                            {
+                                "source_state_id": "5",
+                                "utensils_list": [
+                                    "耐熱皿・器"
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            }
+        ],
+        "annotation_note": ""
+    },
+    {
+        "title": "白菜と油揚げのごま酢あえ",
+        "world_state_list": [
+            {
+                "step_after": 0,
+                "state_list": [
+                    {
+                        "id": "1",
+                        "name": "白菜 200g",
+                        "touching_containers_id": "",
+                        "utensil_interactions_list": []
+                    },
+                    {
+                        "id": "2",
+                        "name": "油揚げ 1枚（30～40g）",
+                        "touching_containers_id": "",
+                        "utensil_interactions_list": []
+                    },
+                    {
+                        "id": "3",
+                        "name": "すりごま（白） 大さじ6",
+                        "touching_containers_id": "",
+                        "utensil_interactions_list": []
+                    },
+                    {
+                        "id": "4",
+                        "name": "うす口しょうゆ 小さじ1",
+                        "touching_containers_id": "",
+                        "utensil_interactions_list": []
+                    },
+                    {
+                        "id": "5",
+                        "name": "白ごま 適量",
+                        "touching_containers_id": "",
+                        "utensil_interactions_list": []
+                    },
+                    {
+                        "id": "6",
+                        "name": "塩 ",
+                        "touching_containers_id": "",
+                        "utensil_interactions_list": []
+                    },
+                    {
+                        "id": "7",
+                        "name": "酢 ",
+                        "touching_containers_id": "",
+                        "utensil_interactions_list": []
+                    },
+                    {
+                        "id": "8",
+                        "name": "砂糖 ",
+                        "touching_containers_id": "",
+                        "utensil_interactions_list": []
+                    }
+                ]
+            },
+            {
+                "step_after": 1,
+                "state_list": [
+                    {
+                        "id": "84b53853",
+                        "name": "切って味をつけた白菜",
+                        "touching_containers_id": "まな板",
+                        "utensil_interactions_list": [
+                            {
+                                "source_state_id": "1",
+                                "utensils_list": [
+                                    "包丁",
+                                    "まな板",
+                                    "None_ポリ袋"
+                                ]
+                            },
+                            {
+                                "source_state_id": "6",
+                                "utensils_list": [
+                                    "台秤",
+                                    "None_ポリ袋"
+                                ]
+                            },
+                            {
+                                "source_state_id": "7",
+                                "utensils_list": [
+                                    "計量スプーン",
+                                    "None_ポリ袋"
+                                ]
+                            },
+                            {
+                                "source_state_id": "8",
+                                "utensils_list": [
+                                    "計量スプーン",
+                                    "None_ポリ袋"
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "step_after": 2,
+                "state_list": [
+                    {
+                        "id": "92ff924e",
+                        "name": "加熱して切った油揚げ",
+                        "touching_containers_id": "まな板",
+                        "utensil_interactions_list": [
+                            {
+                                "source_state_id": "2",
+                                "utensils_list": [
+                                    "フライパン",
+                                    "包丁",
+                                    "まな板"
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "step_after": 3,
+                "state_list": [
+                    {
+                        "id": "6552b784",
+                        "name": "白菜と油揚げのごま酢あえ",
+                        "touching_containers_id": "耐熱皿・器",
+                        "utensil_interactions_list": [
+                            {
+                                "source_state_id": "4",
+                                "utensils_list": [
+                                    "None_ポリ袋"
+                                ]
+                            },
+                            {
+                                "source_state_id": "3",
+                                "utensils_list": [
+                                    "None_ポリ袋"
+                                ]
+                            },
+                            {
+                                "source_state_id": "92ff924e",
+                                "utensils_list": [
+                                    "None_ポリ袋"
+                                ]
+                            },
+                            {
+                                "source_state_id": "84b53853",
+                                "utensils_list": [
+                                    "None_ポリ袋"
+                                ]
+                            },
+                            {
+                                "source_state_id": "5",
+                                "utensils_list": [
+                                    "耐熱皿・器"
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            }
+        ],
+        "annotation_note": ""
+    },
+    {
+        "title": "明太カルボうどん",
+        "world_state_list": [
+            {
+                "step_after": 0,
+                "state_list": [
+                    {
+                        "id": "1",
+                        "name": "ゆでうどん 1玉（約180g）",
+                        "touching_containers_id": "",
+                        "utensil_interactions_list": []
+                    },
+                    {
+                        "id": "2",
+                        "name": "卵 1コ",
+                        "touching_containers_id": "",
+                        "utensil_interactions_list": []
+                    },
+                    {
+                        "id": "3",
+                        "name": "からし明太子（小） 1/2腹（30g）",
+                        "touching_containers_id": "",
+                        "utensil_interactions_list": []
+                    },
+                    {
+                        "id": "4",
+                        "name": "粉チーズ 20g",
+                        "touching_containers_id": "",
+                        "utensil_interactions_list": []
+                    },
+                    {
+                        "id": "5",
+                        "name": "牛乳 大さじ4～5",
+                        "touching_containers_id": "",
+                        "utensil_interactions_list": []
+                    },
+                    {
+                        "id": "6",
+                        "name": "しょうゆ ",
+                        "touching_containers_id": "",
+                        "utensil_interactions_list": []
+                    },
+                    {
+                        "id": "7",
+                        "name": "バター ",
+                        "touching_containers_id": "",
+                        "utensil_interactions_list": []
+                    },
+                    {
+                        "id": "8",
+                        "name": "黒こしょう（粗びき） ",
+                        "touching_containers_id": "",
+                        "utensil_interactions_list": []
+                    }
+                ]
+            },
+            {
+                "step_after": 1,
+                "state_list": [
+                    {
+                        "id": "b48fe044",
+                        "name": "卵黄",
+                        "touching_containers_id": "ボウル",
+                        "utensil_interactions_list": [
+                            {
+                                "source_state_id": "2",
+                                "utensils_list": [
+                                    "ボウル"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "id": "975ea027",
+                        "name": "卵白",
+                        "touching_containers_id": "ボウル",
+                        "utensil_interactions_list": [
+                            {
+                                "source_state_id": "2",
+                                "utensils_list": [
+                                    "ボウル"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "id": "e844092b",
+                        "name": "切った明太子",
+                        "touching_containers_id": "まな板",
+                        "utensil_interactions_list": [
+                            {
+                                "source_state_id": "3",
+                                "utensils_list": [
+                                    "料理ばさみ"
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "step_after": 2,
+                "state_list": [
+                    {
+                        "id": "5a8006f0",
+                        "name": "加熱したうどんと明太子",
+                        "touching_containers_id": "耐熱皿・器",
+                        "utensil_interactions_list": [
+                            {
+                                "source_state_id": "e844092b",
+                                "utensils_list": [
+                                    "耐熱皿・器"
+                                ]
+                            },
+                            {
+                                "source_state_id": "975ea027",
+                                "utensils_list": [
+                                    "耐熱皿・器"
+                                ]
+                            },
+                            {
+                                "source_state_id": "4",
+                                "utensils_list": [
+                                    "耐熱皿・器"
+                                ]
+                            },
+                            {
+                                "source_state_id": "5",
+                                "utensils_list": [
+                                    "耐熱皿・器"
+                                ]
+                            },
+                            {
+                                "source_state_id": "6",
+                                "utensils_list": [
+                                    "耐熱皿・器"
+                                ]
+                            },
+                            {
+                                "source_state_id": "1",
+                                "utensils_list": [
+                                    "耐熱皿・器"
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "step_after": 3,
+                "state_list": [
+                    {
+                        "id": "0a64d77b",
+                        "name": "明太カルボうどん",
+                        "touching_containers_id": "耐熱皿・器",
+                        "utensil_interactions_list": [
+                            {
+                                "source_state_id": "5a8006f0",
+                                "utensils_list": [
+                                    "耐熱皿・器"
+                                ]
+                            },
+                            {
+                                "source_state_id": "7",
+                                "utensils_list": [
+                                    "耐熱皿・器"
+                                ]
+                            },
+                            {
+                                "source_state_id": "b48fe044",
+                                "utensils_list": [
+                                    "耐熱皿・器"
+                                ]
+                            },
+                            {
+                                "source_state_id": "8",
+                                "utensils_list": [
+                                    "耐熱皿・器"
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            }
+        ],
+        "annotation_note": ""
+    }
+]
