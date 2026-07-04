@@ -5097,52 +5097,45 @@
                     {
                         "id": "2bd4af69",
                         "name": "ひき肉・調味料を混ぜたもの",
-                        "touching_containers_id": "ボウル",
+                        "touching_containers_id": "None_ボウル-2",
                         "utensil_interactions_list": [
-                            {
-                                "source_state_id": "7b47bff2",
-                                "utensils_list": [
-                                    "ボウル"
-                                ]
-                            },
                             {
                                 "source_state_id": "4",
                                 "utensils_list": [
-                                    "ボウル"
+                                    "None_ボウル-2"
                                 ]
                             },
                             {
                                 "source_state_id": "11",
                                 "utensils_list": [
-                                    "ボウル"
+                                    "None_ボウル-2"
                                 ]
                             },
                             {
                                 "source_state_id": "12",
                                 "utensils_list": [
                                     "計量スプーン",
-                                    "ボウル"
+                                    "None_ボウル-2"
                                 ]
                             },
                             {
                                 "source_state_id": "13",
                                 "utensils_list": [
                                     "計量スプーン",
-                                    "ボウル"
+                                    "None_ボウル-2"
                                 ]
                             },
                             {
                                 "source_state_id": "8",
                                 "utensils_list": [
-                                    "計量スプーン",
-                                    "ボウル"
+                                    "None_ボウル-2"
                                 ]
                             },
                             {
                                 "source_state_id": "14",
                                 "utensils_list": [
                                     "計量スプーン",
-                                    "ボウル"
+                                    "None_ボウル-2"
                                 ]
                             }
                         ]
@@ -5154,31 +5147,31 @@
                 "state_list": [
                     {
                         "id": "24964172",
-                        "name": "7・しょうが・ねぎ・そら豆を混ぜたもの",
-                        "touching_containers_id": "ボウル",
+                        "name": "7・しょうが・ねぎ・そら豆を混ぜたあんを4等分にしたもの",
+                        "touching_containers_id": "None_ボウル-2",
                         "utensil_interactions_list": [
                             {
                                 "source_state_id": "2bd4af69",
                                 "utensils_list": [
-                                    "ボウル"
+                                    "None_ボウル-2"
                                 ]
                             },
                             {
                                 "source_state_id": "6",
                                 "utensils_list": [
-                                    "ボウル"
+                                    "None_ボウル-2"
                                 ]
                             },
                             {
                                 "source_state_id": "7",
                                 "utensils_list": [
-                                    "ボウル"
+                                    "None_ボウル-2"
                                 ]
                             },
                             {
                                 "source_state_id": "d61a679f",
                                 "utensils_list": [
-                                    "ボウル"
+                                    "None_ボウル-2"
                                 ]
                             }
                         ]
@@ -5190,55 +5183,250 @@
                 "state_list": [
                     {
                         "id": "db263f38",
-                        "name": "",
-                        "touching_containers_id": "",
-                        "utensil_interactions_list": []
+                        "name": "4等分に切った生地",
+                        "touching_containers_id": "None_台",
+                        "utensil_interactions_list": [
+                            {
+                                "source_state_id": "7b47bff2",
+                                "utensils_list": [
+                                    "None_台"
+                                ]
+                            }
+                        ]
                     }
                 ]
             },
             {
                 "step_after": 10,
-                "state_list": []
+                "state_list": [
+                    {
+                        "id": "ab898874",
+                        "name": "棒状にした生地",
+                        "touching_containers_id": "None_台",
+                        "utensil_interactions_list": [
+                            {
+                                "source_state_id": "db263f38",
+                                "utensils_list": [
+                                    "包丁",
+                                    "None_台"
+                                ]
+                            }
+                        ]
+                    }
+                ]
             },
             {
                 "step_after": 11,
-                "state_list": []
+                "state_list": [
+                    {
+                        "id": "360454e9",
+                        "name": "それぞれ10等分にした生地",
+                        "touching_containers_id": "None_台",
+                        "utensil_interactions_list": [
+                            {
+                                "source_state_id": "ab898874",
+                                "utensils_list": [
+                                    "包丁",
+                                    "None_台"
+                                ]
+                            }
+                        ]
+                    }
+                ]
             },
             {
                 "step_after": 12,
-                "state_list": []
+                "state_list": [
+                    {
+                        "id": "b37165fe",
+                        "name": "円形にした生地",
+                        "touching_containers_id": "None_台",
+                        "utensil_interactions_list": [
+                            {
+                                "source_state_id": "360454e9",
+                                "utensils_list": [
+                                    "None_台"
+                                ]
+                            },
+                            {
+                                "source_state_id": "9",
+                                "utensils_list": [
+                                    "None_台"
+                                ]
+                            }
+                        ]
+                    }
+                ]
             },
             {
                 "step_after": 13,
-                "state_list": []
+                "state_list": [
+                    {
+                        "id": "0de22a5e",
+                        "name": "直径8cmにのばした生地",
+                        "touching_containers_id": "None_台",
+                        "utensil_interactions_list": [
+                            {
+                                "source_state_id": "b37165fe",
+                                "utensils_list": [
+                                    "めん棒",
+                                    "None_台"
+                                ]
+                            },
+                            {
+                                "source_state_id": "9",
+                                "utensils_list": [
+                                    "めん棒",
+                                    "None_台"
+                                ]
+                            }
+                        ]
+                    }
+                ]
             },
             {
                 "step_after": 14,
-                "state_list": []
+                "state_list": [
+                    {
+                        "id": "681f59b2",
+                        "name": "皮にあんをのせたもの",
+                        "touching_containers_id": "None_台",
+                        "utensil_interactions_list": [
+                            {
+                                "source_state_id": "0de22a5e",
+                                "utensils_list": [
+                                    "None_台"
+                                ]
+                            },
+                            {
+                                "source_state_id": "24964172",
+                                "utensils_list": [
+                                    "None_台"
+                                ]
+                            }
+                        ]
+                    }
+                ]
             },
             {
                 "step_after": 15,
-                "state_list": []
+                "state_list": [
+                    {
+                        "id": "4e87b24f",
+                        "name": "皮を閉じた水ギョーザ",
+                        "touching_containers_id": "バット",
+                        "utensil_interactions_list": [
+                            {
+                                "source_state_id": "681f59b2",
+                                "utensils_list": [
+                                    "バット"
+                                ]
+                            }
+                        ]
+                    }
+                ]
             },
             {
                 "step_after": 16,
-                "state_list": []
+                "state_list": [
+                    {
+                        "id": "a47b3ce3",
+                        "name": "ひだを寄せた水ギョーザ",
+                        "touching_containers_id": "バット",
+                        "utensil_interactions_list": [
+                            {
+                                "source_state_id": "4e87b24f",
+                                "utensils_list": [
+                                    "バット"
+                                ]
+                            }
+                        ]
+                    }
+                ]
             },
             {
                 "step_after": 17,
-                "state_list": []
+                "state_list": [
+                    {
+                        "id": "1780655a",
+                        "name": "しっかり閉じた水ギョーザ",
+                        "touching_containers_id": "バット",
+                        "utensil_interactions_list": [
+                            {
+                                "source_state_id": "a47b3ce3",
+                                "utensils_list": [
+                                    "バット"
+                                ]
+                            }
+                        ]
+                    }
+                ]
             },
             {
                 "step_after": 18,
-                "state_list": []
+                "state_list": [
+                    {
+                        "id": "a7b2c43b",
+                        "name": "鍋に入れた水ギョーザ",
+                        "touching_containers_id": "両手鍋・片手鍋",
+                        "utensil_interactions_list": [
+                            {
+                                "source_state_id": "1780655a",
+                                "utensils_list": [
+                                    "両手鍋・片手鍋",
+                                    "おたま",
+                                    "鍋の蓋"
+                                ]
+                            }
+                        ]
+                    }
+                ]
             },
             {
                 "step_after": 19,
-                "state_list": []
+                "state_list": [
+                    {
+                        "id": "c3123684",
+                        "name": "茹でた水ギョーザ",
+                        "touching_containers_id": "両手鍋・片手鍋",
+                        "utensil_interactions_list": [
+                            {
+                                "source_state_id": "a7b2c43b",
+                                "utensils_list": [
+                                    "両手鍋・片手鍋",
+                                    "鍋の蓋",
+                                    "おたま"
+                                ]
+                            }
+                        ]
+                    }
+                ]
             },
             {
                 "step_after": 20,
-                "state_list": []
+                "state_list": [
+                    {
+                        "id": "5580d002",
+                        "name": "鶏とそら豆の水ギョーザ",
+                        "touching_containers_id": "耐熱皿・器",
+                        "utensil_interactions_list": [
+                            {
+                                "source_state_id": "c3123684",
+                                "utensils_list": [
+                                    "両手鍋・片手鍋",
+                                    "網杓子",
+                                    "耐熱皿・器"
+                                ]
+                            },
+                            {
+                                "source_state_id": "10",
+                                "utensils_list": [
+                                    "耐熱皿・器"
+                                ]
+                            }
+                        ]
+                    }
+                ]
             }
         ],
         "annotation_note": ""
@@ -5307,21 +5495,187 @@
             },
             {
                 "step_after": 1,
-                "state_list": []
+                "state_list": [
+                    {
+                        "id": "ca173156",
+                        "name": "すりおろしたたまねぎ",
+                        "touching_containers_id": "ボウル",
+                        "utensil_interactions_list": [
+                            {
+                                "source_state_id": "2",
+                                "utensils_list": [
+                                    "ボウル",
+                                    "おろし器"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "id": "fa60d67a",
+                        "name": "葉先を残して小口切りにした細ねぎ",
+                        "touching_containers_id": "まな板",
+                        "utensil_interactions_list": [
+                            {
+                                "source_state_id": "7",
+                                "utensils_list": [
+                                    "包丁",
+                                    "まな板"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "id": "8e99d617",
+                        "name": "小麦粉をまぶした鶏肉",
+                        "touching_containers_id": "まな板",
+                        "utensil_interactions_list": [
+                            {
+                                "source_state_id": "1",
+                                "utensils_list": [
+                                    "包丁",
+                                    "まな板"
+                                ]
+                            },
+                            {
+                                "source_state_id": "8",
+                                "utensils_list": [
+                                    "計量スプーン",
+                                    "まな板"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "id": "3012bb57",
+                        "name": "葉先のねぎ",
+                        "touching_containers_id": "まな板",
+                        "utensil_interactions_list": [
+                            {
+                                "source_state_id": "7",
+                                "utensils_list": [
+                                    "包丁",
+                                    "まな板"
+                                ]
+                            }
+                        ]
+                    }
+                ]
             },
             {
                 "step_after": 2,
-                "state_list": []
+                "state_list": [
+                    {
+                        "id": "adbf348b",
+                        "name": "焼いた鶏肉",
+                        "touching_containers_id": "耐熱皿・器",
+                        "utensil_interactions_list": [
+                            {
+                                "source_state_id": "8e99d617",
+                                "utensils_list": [
+                                    "フライパン",
+                                    "菜箸",
+                                    "耐熱皿・器"
+                                ]
+                            },
+                            {
+                                "source_state_id": "9",
+                                "utensils_list": [
+                                    "計量スプーン",
+                                    "フライパン",
+                                    "菜箸",
+                                    "耐熱皿・器"
+                                ]
+                            }
+                        ]
+                    }
+                ]
             },
             {
                 "step_after": 3,
-                "state_list": []
+                "state_list": [
+                    {
+                        "id": "57a5bcb8",
+                        "name": "鶏肉にソースを煮からめたもの",
+                        "touching_containers_id": "フライパン",
+                        "utensil_interactions_list": [
+                            {
+                                "source_state_id": "ca173156",
+                                "utensils_list": [
+                                    "フライパン",
+                                    "木製へら"
+                                ]
+                            },
+                            {
+                                "source_state_id": "3",
+                                "utensils_list": [
+                                    "フライパン",
+                                    "木製へら"
+                                ]
+                            },
+                            {
+                                "source_state_id": "4",
+                                "utensils_list": [
+                                    "フライパン",
+                                    "木製へら"
+                                ]
+                            },
+                            {
+                                "source_state_id": "5",
+                                "utensils_list": [
+                                    "フライパン",
+                                    "木製へら"
+                                ]
+                            },
+                            {
+                                "source_state_id": "6",
+                                "utensils_list": [
+                                    "フライパン",
+                                    "木製へら"
+                                ]
+                            },
+                            {
+                                "source_state_id": "adbf348b",
+                                "utensils_list": [
+                                    "フライパン",
+                                    "木製へら"
+                                ]
+                            }
+                        ]
+                    }
+                ]
             },
             {
                 "step_after": 4,
-                "state_list": []
+                "state_list": [
+                    {
+                        "id": "272c41d4",
+                        "name": "ふんわり鶏むね肉のたまねぎソース",
+                        "touching_containers_id": "耐熱皿・器",
+                        "utensil_interactions_list": [
+                            {
+                                "source_state_id": "57a5bcb8",
+                                "utensils_list": [
+                                    "耐熱皿・器"
+                                ]
+                            },
+                            {
+                                "source_state_id": "fa60d67a",
+                                "utensils_list": [
+                                    "耐熱皿・器"
+                                ]
+                            },
+                            {
+                                "source_state_id": "3012bb57",
+                                "utensils_list": [
+                                    "耐熱皿・器"
+                                ]
+                            }
+                        ]
+                    }
+                ]
             }
-        ]
+        ],
+        "annotation_note": "step1: おろし器は受け皿付き？"
     },
     {
         "title": "キャベツと豚肉のみそ炒め",
