@@ -8922,13 +8922,15 @@
                             {
                                 "source_state_id": "52054066",
                                 "utensils_list": [
-                                    "ボウル"
+                                    "ボウル",
+                                    "バット"
                                 ]
                             },
                             {
                                 "source_state_id": "6",
                                 "utensils_list": [
                                     "計量スプーン",
+                                    "ボウル",
                                     "バット"
                                 ]
                             }
@@ -8938,11 +8940,56 @@
             },
             {
                 "step_after": 3,
-                "state_list": []
+                "state_list": [
+                    {
+                        "id": "c26cec36",
+                        "name": "揚げた鶏肉",
+                        "touching_containers_id": "両手鍋・片手鍋",
+                        "utensil_interactions_list": [
+                            {
+                                "source_state_id": "7",
+                                "utensils_list": [
+                                    "両手鍋・片手鍋",
+                                    "温度計",
+                                    "網杓子"
+                                ]
+                            },
+                            {
+                                "source_state_id": "9a343d0a",
+                                "utensils_list": [
+                                    "両手鍋・片手鍋",
+                                    "菜箸",
+                                    "網杓子"
+                                ]
+                            }
+                        ]
+                    }
+                ]
             },
             {
                 "step_after": 4,
-                "state_list": []
+                "state_list": [
+                    {
+                        "id": "275b3fc9",
+                        "name": "サクッとジューシー竜田揚げ",
+                        "touching_containers_id": "耐熱皿・器",
+                        "utensil_interactions_list": [
+                            {
+                                "source_state_id": "c26cec36",
+                                "utensils_list": [
+                                    "バット",
+                                    "耐熱皿・器"
+                                ]
+                            },
+                            {
+                                "source_state_id": "5",
+                                "utensils_list": [
+                                    "耐熱皿・器"
+                                ]
+                            }
+                        ]
+                    }
+                ]
             }
         ],
         "annotation_note": ""
@@ -9011,7 +9058,14 @@
             },
             {
                 "step_after": 1,
-                "state_list": []
+                "state_list": [
+                    {
+                        "id": "ecfb8460",
+                        "name": "",
+                        "touching_containers_id": "",
+                        "utensil_interactions_list": []
+                    }
+                ]
             },
             {
                 "step_after": 2,
@@ -9021,7 +9075,8 @@
                 "step_after": 3,
                 "state_list": []
             }
-        ]
+        ],
+        "annotation_note": ""
     },
     {
         "title": "厚揚げのごまみそのせとヒラヒラにんじん",
