@@ -8523,7 +8523,7 @@
                 "state_list": [
                     {
                         "id": "92c6fa2c",
-                        "name": "",
+                        "name": "新じゃがのポタージュ",
                         "touching_containers_id": "耐熱皿・器",
                         "utensil_interactions_list": [
                             {
@@ -8875,11 +8875,66 @@
             },
             {
                 "step_after": 1,
-                "state_list": []
+                "state_list": [
+                    {
+                        "id": "52054066",
+                        "name": "下味をつけた鶏肉",
+                        "touching_containers_id": "ボウル",
+                        "utensil_interactions_list": [
+                            {
+                                "source_state_id": "1",
+                                "utensils_list": [
+                                    "包丁",
+                                    "まな板",
+                                    "ボウル"
+                                ]
+                            },
+                            {
+                                "source_state_id": "2",
+                                "utensils_list": [
+                                    "ボウル"
+                                ]
+                            },
+                            {
+                                "source_state_id": "3",
+                                "utensils_list": [
+                                    "ボウル"
+                                ]
+                            },
+                            {
+                                "source_state_id": "4",
+                                "utensils_list": [
+                                    "ボウル"
+                                ]
+                            }
+                        ]
+                    }
+                ]
             },
             {
                 "step_after": 2,
-                "state_list": []
+                "state_list": [
+                    {
+                        "id": "9a343d0a",
+                        "name": "片栗粉をまぶした鶏肉",
+                        "touching_containers_id": "バット",
+                        "utensil_interactions_list": [
+                            {
+                                "source_state_id": "52054066",
+                                "utensils_list": [
+                                    "ボウル"
+                                ]
+                            },
+                            {
+                                "source_state_id": "6",
+                                "utensils_list": [
+                                    "計量スプーン",
+                                    "バット"
+                                ]
+                            }
+                        ]
+                    }
+                ]
             },
             {
                 "step_after": 3,
@@ -8889,7 +8944,8 @@
                 "step_after": 4,
                 "state_list": []
             }
-        ]
+        ],
+        "annotation_note": ""
     },
     {
         "title": "新たまナポリタン",
@@ -9875,7 +9931,14 @@
             },
             {
                 "step_after": 1,
-                "state_list": []
+                "state_list": [
+                    {
+                        "id": "010a1169",
+                        "name": "",
+                        "touching_containers_id": "",
+                        "utensil_interactions_list": []
+                    }
+                ]
             },
             {
                 "step_after": 2,
@@ -9885,7 +9948,8 @@
                 "step_after": 3,
                 "state_list": []
             }
-        ]
+        ],
+        "annotation_note": ""
     },
     {
         "title": "たいのオムレツ ケチャップ甘酢あん",
