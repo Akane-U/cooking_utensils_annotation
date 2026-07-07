@@ -342,12 +342,18 @@
                             {
                                 "source_state_id": "0204491c",
                                 "utensils_list": [
-                                    "型"
+                                    "型",
+                                    "天板"
                                 ]
                             },
                             {
                                 "source_state_id": "cc9eea86",
-                                "utensils_list": []
+                                "utensils_list": [
+                                    "天板",
+                                    "型",
+                                    "スプーン",
+                                    "裏漉し器"
+                                ]
                             }
                         ]
                     }
