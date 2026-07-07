@@ -135,7 +135,33 @@
             },
             {
                 "step_after": 4,
-                "state_list": []
+                "state_list": [
+                    {
+                        "id": "f021509b",
+                        "name": "トマトの冷やしおでん風",
+                        "touching_containers_id": "耐熱皿・器",
+                        "utensil_interactions_list": [
+                            {
+                                "source_state_id": "4f2c8921",
+                                "utensils_list": [
+                                    "耐熱皿・器"
+                                ]
+                            },
+                            {
+                                "source_state_id": "5",
+                                "utensils_list": [
+                                    "耐熱皿・器"
+                                ]
+                            },
+                            {
+                                "source_state_id": "6",
+                                "utensils_list": [
+                                    "耐熱皿・器"
+                                ]
+                            }
+                        ]
+                    }
+                ]
             }
         ],
         "annotation_note": ""
