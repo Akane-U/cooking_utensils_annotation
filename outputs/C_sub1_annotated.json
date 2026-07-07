@@ -360,7 +360,24 @@
             },
             {
                 "step_after": 6,
-                "state_list": []
+                "state_list": [
+                    {
+                        "id": "4771b95a",
+                        "name": "ジャンボプリン",
+                        "touching_containers_id": "耐熱皿・器",
+                        "utensil_interactions_list": [
+                            {
+                                "source_state_id": "ad906ccf",
+                                "utensils_list": [
+                                    "型",
+                                    "耐熱皿・器",
+                                    "スプーン",
+                                    "パレットナイフ"
+                                ]
+                            }
+                        ]
+                    }
+                ]
             }
         ],
         "annotation_note": ""
