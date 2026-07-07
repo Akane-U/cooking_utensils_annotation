@@ -335,9 +335,26 @@
                 "state_list": [
                     {
                         "id": "ad906ccf",
-                        "name": "",
-                        "touching_containers_id": "",
-                        "utensil_interactions_list": []
+                        "name": "湯煎焼きにしたプリン",
+                        "touching_containers_id": "型",
+                        "utensil_interactions_list": [
+                            {
+                                "source_state_id": "da90845c",
+                                "utensils_list": [
+                                    "型",
+                                    "天板"
+                                ]
+                            },
+                            {
+                                "source_state_id": "c3d421a1",
+                                "utensils_list": [
+                                    "裏漉し器",
+                                    "型",
+                                    "スプーン",
+                                    "天板"
+                                ]
+                            }
+                        ]
                     }
                 ]
             },
