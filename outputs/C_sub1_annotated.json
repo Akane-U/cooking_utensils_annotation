@@ -312,7 +312,7 @@
                         "touching_containers_id": "ボウル",
                         "utensil_interactions_list": [
                             {
-                                "source_state_id": "4",
+                                "source_state_id": "bcd756f2",
                                 "utensils_list": [
                                     "ボウル",
                                     "泡だて器",
@@ -333,7 +333,25 @@
             },
             {
                 "step_after": 5,
-                "state_list": []
+                "state_list": [
+                    {
+                        "id": "705a0a0d",
+                        "name": "湯戦焼きしたプリン",
+                        "touching_containers_id": "型",
+                        "utensil_interactions_list": [
+                            {
+                                "source_state_id": "0204491c",
+                                "utensils_list": [
+                                    "型"
+                                ]
+                            },
+                            {
+                                "source_state_id": "cc9eea86",
+                                "utensils_list": []
+                            }
+                        ]
+                    }
+                ]
             },
             {
                 "step_after": 6,
