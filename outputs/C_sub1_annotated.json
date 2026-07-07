@@ -361,7 +361,24 @@
             },
             {
                 "step_after": 6,
-                "state_list": []
+                "state_list": [
+                    {
+                        "id": "5a21d3a5",
+                        "name": "ジャンポプリン",
+                        "touching_containers_id": "耐熱皿・器",
+                        "utensil_interactions_list": [
+                            {
+                                "source_state_id": "705a0a0d",
+                                "utensils_list": [
+                                    "パレットナイフ",
+                                    "スプーン",
+                                    "耐熱皿・器",
+                                    "型"
+                                ]
+                            }
+                        ]
+                    }
+                ]
             }
         ],
         "annotation_note": ""
