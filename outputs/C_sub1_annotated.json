@@ -110,7 +110,28 @@
             },
             {
                 "step_after": 3,
-                "state_list": []
+                "state_list": [
+                    {
+                        "id": "4f2c8921",
+                        "name": "油揚げを煮てトマトと冷やしたもの",
+                        "touching_containers_id": "耐熱皿・器",
+                        "utensil_interactions_list": [
+                            {
+                                "source_state_id": "0966274a",
+                                "utensils_list": [
+                                    "両手鍋・片手鍋",
+                                    "耐熱皿・器"
+                                ]
+                            },
+                            {
+                                "source_state_id": "d2e9cab1",
+                                "utensils_list": [
+                                    "耐熱皿・器"
+                                ]
+                            }
+                        ]
+                    }
+                ]
             },
             {
                 "step_after": 4,
