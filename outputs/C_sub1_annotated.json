@@ -508,7 +508,38 @@
             },
             {
                 "step_after": 3,
-                "state_list": []
+                "state_list": [
+                    {
+                        "id": "bf58fcd8",
+                        "name": "あさりの根深汁",
+                        "touching_containers_id": "耐熱皿・器",
+                        "utensil_interactions_list": [
+                            {
+                                "source_state_id": "4",
+                                "utensils_list": [
+                                    "両手鍋・片手鍋",
+                                    "耐熱皿・器",
+                                    "味噌漉し",
+                                    "菜箸"
+                                ]
+                            },
+                            {
+                                "source_state_id": "4e752699",
+                                "utensils_list": [
+                                    "耐熱皿・器"
+                                ]
+                            },
+                            {
+                                "source_state_id": "a29fd8b0",
+                                "utensils_list": [
+                                    "両手鍋・片手鍋",
+                                    "耐熱皿・器",
+                                    "おたま"
+                                ]
+                            }
+                        ]
+                    }
+                ]
             }
         ],
         "annotation_note": "通常の出汁は、昆布を途中で取り出す工程がありますが、このレシピは昆布を取り出す工程がなかったので、工程が抜けているのか、最後まで入れっぱなしなのか、どちらが正しいのか気になりました。"
