@@ -477,14 +477,41 @@
             },
             {
                 "step_after": 2,
-                "state_list": []
+                "state_list": [
+                    {
+                        "id": "a29fd8b0",
+                        "name": "ねぎとあさりを出汁で煮たもの",
+                        "touching_containers_id": "両手鍋・片手鍋",
+                        "utensil_interactions_list": [
+                            {
+                                "source_state_id": "873f7297",
+                                "utensils_list": [
+                                    "両手鍋・片手鍋",
+                                    "網杓子"
+                                ]
+                            },
+                            {
+                                "source_state_id": "abdff82f",
+                                "utensils_list": [
+                                    "両手鍋・片手鍋"
+                                ]
+                            },
+                            {
+                                "source_state_id": "3be05d90",
+                                "utensils_list": [
+                                    "両手鍋・片手鍋"
+                                ]
+                            }
+                        ]
+                    }
+                ]
             },
             {
                 "step_after": 3,
                 "state_list": []
             }
         ],
-        "annotation_note": ""
+        "annotation_note": "通常の出汁は、昆布を途中で取り出す工程がありますが、このレシピは昆布を取り出す工程がなかったので、工程が抜けているのか、最後まで入れっぱなしなのか、どちらが正しいのか気になりました。"
     },
     {
         "title": "マカロニグラタン",
