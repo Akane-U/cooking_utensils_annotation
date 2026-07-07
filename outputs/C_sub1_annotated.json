@@ -47,120 +47,24 @@
                 "step_after": 1,
                 "state_list": [
                     {
-                        "id": "1372f044",
-                        "name": "ヘタをくりぬいたトマト",
-                        "touching_containers_id": "まな板",
-                        "utensil_interactions_list": [
-                            {
-                                "source_state_id": "1",
-                                "utensils_list": [
-                                    "包丁",
-                                    "まな板"
-                                ]
-                            }
-                        ]
-                    },
-                    {
-                        "id": "4f4062e5",
-                        "name": "短冊形にきった油揚げ",
-                        "touching_containers_id": "まな板",
-                        "utensil_interactions_list": [
-                            {
-                                "source_state_id": "2",
-                                "utensils_list": [
-                                    "包丁",
-                                    "まな板"
-                                ]
-                            }
-                        ]
+                        "id": "fe86b455",
+                        "name": "",
+                        "touching_containers_id": "",
+                        "utensil_interactions_list": []
                     }
                 ]
             },
             {
                 "step_after": 2,
-                "state_list": [
-                    {
-                        "id": "ca6fd6e7",
-                        "name": "皮をむいたトマト",
-                        "touching_containers_id": "耐熱皿・器",
-                        "utensil_interactions_list": [
-                            {
-                                "source_state_id": "1372f044",
-                                "utensils_list": [
-                                    "両手鍋・片手鍋",
-                                    "おたま"
-                                ]
-                            },
-                            {
-                                "source_state_id": "3",
-                                "utensils_list": [
-                                    "両手鍋・片手鍋"
-                                ]
-                            },
-                            {
-                                "source_state_id": "4",
-                                "utensils_list": [
-                                    "両手鍋・片手鍋"
-                                ]
-                            }
-                        ]
-                    }
-                ]
+                "state_list": []
             },
             {
                 "step_after": 3,
-                "state_list": [
-                    {
-                        "id": "e2cbc3b1",
-                        "name": "油揚げを煮て冷やしたもの",
-                        "touching_containers_id": "耐熱皿・器",
-                        "utensil_interactions_list": [
-                            {
-                                "source_state_id": "4f4062e5",
-                                "utensils_list": [
-                                    "両手鍋・片手鍋",
-                                    "耐熱皿・器"
-                                ]
-                            },
-                            {
-                                "source_state_id": "ca6fd6e7",
-                                "utensils_list": [
-                                    "耐熱皿・器"
-                                ]
-                            }
-                        ]
-                    }
-                ]
+                "state_list": []
             },
             {
                 "step_after": 4,
-                "state_list": [
-                    {
-                        "id": "f6974506",
-                        "name": "トマトの冷やしおでん風",
-                        "touching_containers_id": "耐熱皿・器",
-                        "utensil_interactions_list": [
-                            {
-                                "source_state_id": "e2cbc3b1",
-                                "utensils_list": [
-                                    "耐熱皿・器"
-                                ]
-                            },
-                            {
-                                "source_state_id": "5",
-                                "utensils_list": [
-                                    "耐熱皿・器"
-                                ]
-                            },
-                            {
-                                "source_state_id": "6",
-                                "utensils_list": [
-                                    "耐熱皿・器"
-                                ]
-                            }
-                        ]
-                    }
-                ]
+                "state_list": []
             }
         ],
         "annotation_note": ""
@@ -217,170 +121,29 @@
             },
             {
                 "step_after": 1,
-                "state_list": [
-                    {
-                        "id": "da90845c",
-                        "name": "カラメルソース",
-                        "touching_containers_id": "型",
-                        "utensil_interactions_list": [
-                            {
-                                "source_state_id": "1",
-                                "utensils_list": [
-                                    "両手鍋・片手鍋",
-                                    "型",
-                                    "耐熱ゴムべら"
-                                ]
-                            },
-                            {
-                                "source_state_id": "2",
-                                "utensils_list": [
-                                    "両手鍋・片手鍋",
-                                    "型",
-                                    "耐熱ゴムべら"
-                                ]
-                            }
-                        ]
-                    }
-                ]
+                "state_list": []
             },
             {
                 "step_after": 2,
-                "state_list": [
-                    {
-                        "id": "72ee3cf7",
-                        "name": "卵・卵黄・グラニュー糖を混ぜたもの",
-                        "touching_containers_id": "ボウル",
-                        "utensil_interactions_list": [
-                            {
-                                "source_state_id": "3",
-                                "utensils_list": [
-                                    "ボウル",
-                                    "泡だて器"
-                                ]
-                            },
-                            {
-                                "source_state_id": "4",
-                                "utensils_list": [
-                                    "ボウル",
-                                    "泡だて器"
-                                ]
-                            },
-                            {
-                                "source_state_id": "5",
-                                "utensils_list": [
-                                    "ボウル",
-                                    "泡だて器"
-                                ]
-                            }
-                        ]
-                    }
-                ]
+                "state_list": []
             },
             {
                 "step_after": 3,
-                "state_list": [
-                    {
-                        "id": "a19346bd",
-                        "name": "牛乳と生クリームを沸騰させたもの",
-                        "touching_containers_id": "None_両手鍋・片手鍋-2",
-                        "utensil_interactions_list": [
-                            {
-                                "source_state_id": "6",
-                                "utensils_list": [
-                                    "耐熱ゴムべら",
-                                    "None_両手鍋・片手鍋-2"
-                                ]
-                            },
-                            {
-                                "source_state_id": "7",
-                                "utensils_list": [
-                                    "耐熱ゴムべら",
-                                    "None_両手鍋・片手鍋-2"
-                                ]
-                            }
-                        ]
-                    }
-                ]
+                "state_list": []
             },
             {
                 "step_after": 4,
-                "state_list": [
-                    {
-                        "id": "c3d421a1",
-                        "name": "２と３を混ぜ合わせたもの",
-                        "touching_containers_id": "ボウル",
-                        "utensil_interactions_list": [
-                            {
-                                "source_state_id": "72ee3cf7",
-                                "utensils_list": [
-                                    "ボウル",
-                                    "泡だて器",
-                                    "耐熱ゴムべら"
-                                ]
-                            },
-                            {
-                                "source_state_id": "a19346bd",
-                                "utensils_list": [
-                                    "ボウル",
-                                    "泡だて器",
-                                    "耐熱ゴムべら"
-                                ]
-                            }
-                        ]
-                    }
-                ]
+                "state_list": []
             },
             {
                 "step_after": 5,
-                "state_list": [
-                    {
-                        "id": "ad906ccf",
-                        "name": "湯煎焼きにしたプリン",
-                        "touching_containers_id": "型",
-                        "utensil_interactions_list": [
-                            {
-                                "source_state_id": "da90845c",
-                                "utensils_list": [
-                                    "型",
-                                    "天板"
-                                ]
-                            },
-                            {
-                                "source_state_id": "c3d421a1",
-                                "utensils_list": [
-                                    "裏漉し器",
-                                    "型",
-                                    "スプーン",
-                                    "天板"
-                                ]
-                            }
-                        ]
-                    }
-                ]
+                "state_list": []
             },
             {
                 "step_after": 6,
-                "state_list": [
-                    {
-                        "id": "4771b95a",
-                        "name": "ジャンボプリン",
-                        "touching_containers_id": "耐熱皿・器",
-                        "utensil_interactions_list": [
-                            {
-                                "source_state_id": "ad906ccf",
-                                "utensils_list": [
-                                    "型",
-                                    "耐熱皿・器",
-                                    "スプーン",
-                                    "パレットナイフ"
-                                ]
-                            }
-                        ]
-                    }
-                ]
+                "state_list": []
             }
-        ],
-        "annotation_note": ""
+        ]
     },
     {
         "title": "あさりの根深汁",
@@ -416,7 +179,30 @@
             },
             {
                 "step_after": 1,
-                "state_list": []
+                "state_list": [
+                    {
+                        "id": "aaa07548",
+                        "name": "昆布だし",
+                        "touching_containers_id": "",
+                        "utensil_interactions_list": [
+                            {
+                                "source_state_id": "3",
+                                "utensils_list": []
+                            }
+                        ]
+                    },
+                    {
+                        "id": "eb0dfd8a",
+                        "name": "",
+                        "touching_containers_id": "",
+                        "utensil_interactions_list": [
+                            {
+                                "source_state_id": "",
+                                "utensils_list": []
+                            }
+                        ]
+                    }
+                ]
             },
             {
                 "step_after": 2,
@@ -426,7 +212,8 @@
                 "step_after": 3,
                 "state_list": []
             }
-        ]
+        ],
+        "annotation_note": ""
     },
     {
         "title": "マカロニグラタン",
