@@ -304,7 +304,31 @@
             },
             {
                 "step_after": 4,
-                "state_list": []
+                "state_list": [
+                    {
+                        "id": "c3d421a1",
+                        "name": "２と３を混ぜ合わせたもの",
+                        "touching_containers_id": "ボウル",
+                        "utensil_interactions_list": [
+                            {
+                                "source_state_id": "72ee3cf7",
+                                "utensils_list": [
+                                    "ボウル",
+                                    "泡だて器",
+                                    "耐熱ゴムべら"
+                                ]
+                            },
+                            {
+                                "source_state_id": "a19346bd",
+                                "utensils_list": [
+                                    "ボウル",
+                                    "泡だて器",
+                                    "耐熱ゴムべら"
+                                ]
+                            }
+                        ]
+                    }
+                ]
             },
             {
                 "step_after": 5,
