@@ -47,7 +47,7 @@
                 "step_after": 1,
                 "state_list": [
                     {
-                        "id": "fe86b455",
+                        "id": "19fb5318",
                         "name": "",
                         "touching_containers_id": "",
                         "utensil_interactions_list": []
@@ -179,30 +179,7 @@
             },
             {
                 "step_after": 1,
-                "state_list": [
-                    {
-                        "id": "aaa07548",
-                        "name": "昆布だし",
-                        "touching_containers_id": "",
-                        "utensil_interactions_list": [
-                            {
-                                "source_state_id": "3",
-                                "utensils_list": []
-                            }
-                        ]
-                    },
-                    {
-                        "id": "eb0dfd8a",
-                        "name": "",
-                        "touching_containers_id": "",
-                        "utensil_interactions_list": [
-                            {
-                                "source_state_id": "",
-                                "utensils_list": []
-                            }
-                        ]
-                    }
-                ]
+                "state_list": []
             },
             {
                 "step_after": 2,
@@ -212,8 +189,7 @@
                 "step_after": 3,
                 "state_list": []
             }
-        ],
-        "annotation_note": ""
+        ]
     },
     {
         "title": "マカロニグラタン",
