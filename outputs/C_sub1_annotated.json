@@ -281,9 +281,24 @@
                 "state_list": [
                     {
                         "id": "a19346bd",
-                        "name": "",
-                        "touching_containers_id": "",
-                        "utensil_interactions_list": []
+                        "name": "牛乳と生クリームを沸騰させたもの",
+                        "touching_containers_id": "None_両手鍋・片手鍋-2",
+                        "utensil_interactions_list": [
+                            {
+                                "source_state_id": "6",
+                                "utensils_list": [
+                                    "耐熱ゴムべら",
+                                    "None_両手鍋・片手鍋-2"
+                                ]
+                            },
+                            {
+                                "source_state_id": "7",
+                                "utensils_list": [
+                                    "耐熱ゴムべら",
+                                    "None_両手鍋・片手鍋-2"
+                                ]
+                            }
+                        ]
                     }
                 ]
             },
