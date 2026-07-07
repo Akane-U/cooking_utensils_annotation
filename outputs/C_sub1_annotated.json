@@ -248,15 +248,44 @@
                 "state_list": [
                     {
                         "id": "72ee3cf7",
-                        "name": "",
-                        "touching_containers_id": "",
-                        "utensil_interactions_list": []
+                        "name": "卵・卵黄・グラニュー糖を混ぜたもの",
+                        "touching_containers_id": "ボウル",
+                        "utensil_interactions_list": [
+                            {
+                                "source_state_id": "3",
+                                "utensils_list": [
+                                    "ボウル",
+                                    "泡だて器"
+                                ]
+                            },
+                            {
+                                "source_state_id": "4",
+                                "utensils_list": [
+                                    "ボウル",
+                                    "泡だて器"
+                                ]
+                            },
+                            {
+                                "source_state_id": "5",
+                                "utensils_list": [
+                                    "ボウル",
+                                    "泡だて器"
+                                ]
+                            }
+                        ]
                     }
                 ]
             },
             {
                 "step_after": 3,
-                "state_list": []
+                "state_list": [
+                    {
+                        "id": "a19346bd",
+                        "name": "",
+                        "touching_containers_id": "",
+                        "utensil_interactions_list": []
+                    }
+                ]
             },
             {
                 "step_after": 4,
