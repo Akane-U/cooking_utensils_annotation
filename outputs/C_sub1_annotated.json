@@ -48,9 +48,31 @@
                 "state_list": [
                     {
                         "id": "19fb5318",
-                        "name": "",
-                        "touching_containers_id": "",
-                        "utensil_interactions_list": []
+                        "name": "ヘタをくりぬいたトマト",
+                        "touching_containers_id": "まな板",
+                        "utensil_interactions_list": [
+                            {
+                                "source_state_id": "1",
+                                "utensils_list": [
+                                    "まな板",
+                                    "包丁"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "id": "0966274a",
+                        "name": "短冊型に切った油揚げ",
+                        "touching_containers_id": "まな板",
+                        "utensil_interactions_list": [
+                            {
+                                "source_state_id": "2",
+                                "utensils_list": [
+                                    "まな板",
+                                    "包丁"
+                                ]
+                            }
+                        ]
                     }
                 ]
             },
