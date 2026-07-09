@@ -779,7 +779,66 @@
             },
             {
                 "step_after": 4,
-                "state_list": []
+                "state_list": [
+                    {
+                        "id": "a4bdda9f",
+                        "name": "具材を煮て、マカロニと混ぜたもの",
+                        "touching_containers_id": "フライパン",
+                        "utensil_interactions_list": [
+                            {
+                                "source_state_id": "13",
+                                "utensils_list": [
+                                    "フライパン",
+                                    "計量スプーン",
+                                    "木製へら"
+                                ]
+                            },
+                            {
+                                "source_state_id": "6",
+                                "utensils_list": [
+                                    "フライパン",
+                                    "木製へら"
+                                ]
+                            },
+                            {
+                                "source_state_id": "7",
+                                "utensils_list": [
+                                    "フライパン",
+                                    "木製へら"
+                                ]
+                            },
+                            {
+                                "source_state_id": "10",
+                                "utensils_list": [
+                                    "フライパン",
+                                    "計量スプーン",
+                                    "木製へら"
+                                ]
+                            },
+                            {
+                                "source_state_id": "11",
+                                "utensils_list": [
+                                    "フライパン",
+                                    "木製へら"
+                                ]
+                            },
+                            {
+                                "source_state_id": "cc60a43d",
+                                "utensils_list": [
+                                    "フライパン",
+                                    "木製へら"
+                                ]
+                            },
+                            {
+                                "source_state_id": "ca9a3838",
+                                "utensils_list": [
+                                    "フライパン",
+                                    "木製へら"
+                                ]
+                            }
+                        ]
+                    }
+                ]
             },
             {
                 "step_after": 5,
