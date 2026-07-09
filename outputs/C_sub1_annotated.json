@@ -2134,9 +2134,65 @@
                 "state_list": [
                     {
                         "id": "c2a9df46",
-                        "name": "",
-                        "touching_containers_id": "",
-                        "utensil_interactions_list": []
+                        "name": "大根とひき肉のコロコロカレー",
+                        "touching_containers_id": "耐熱皿・器",
+                        "utensil_interactions_list": [
+                            {
+                                "source_state_id": "35c6bb88",
+                                "utensils_list": [
+                                    "両手鍋・片手鍋",
+                                    "おたま",
+                                    "鍋の蓋"
+                                ]
+                            },
+                            {
+                                "source_state_id": "8",
+                                "utensils_list": [
+                                    "両手鍋・片手鍋",
+                                    "おたま",
+                                    "鍋の蓋"
+                                ]
+                            },
+                            {
+                                "source_state_id": "9",
+                                "utensils_list": [
+                                    "両手鍋・片手鍋",
+                                    "おたま",
+                                    "鍋の蓋"
+                                ]
+                            },
+                            {
+                                "source_state_id": "10",
+                                "utensils_list": [
+                                    "両手鍋・片手鍋",
+                                    "おたま",
+                                    "鍋の蓋"
+                                ]
+                            },
+                            {
+                                "source_state_id": "11",
+                                "utensils_list": [
+                                    "両手鍋・片手鍋",
+                                    "おたま",
+                                    "鍋の蓋"
+                                ]
+                            },
+                            {
+                                "source_state_id": "12",
+                                "utensils_list": [
+                                    "両手鍋・片手鍋",
+                                    "おたま",
+                                    "鍋の蓋"
+                                ]
+                            },
+                            {
+                                "source_state_id": "13",
+                                "utensils_list": [
+                                    "耐熱皿・器",
+                                    "しゃもじ"
+                                ]
+                            }
+                        ]
                     }
                 ]
             }
