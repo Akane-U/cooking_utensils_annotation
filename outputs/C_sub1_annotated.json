@@ -632,7 +632,29 @@
             },
             {
                 "step_after": 1,
-                "state_list": []
+                "state_list": [
+                    {
+                        "id": "cc60a43d",
+                        "name": "茹でたマカロニ",
+                        "touching_containers_id": "ざる",
+                        "utensil_interactions_list": [
+                            {
+                                "source_state_id": "10",
+                                "utensils_list": [
+                                    "計量スプーン",
+                                    "両手鍋・片手鍋"
+                                ]
+                            },
+                            {
+                                "source_state_id": "1",
+                                "utensils_list": [
+                                    "両手鍋・片手鍋",
+                                    "ざる"
+                                ]
+                            }
+                        ]
+                    }
+                ]
             },
             {
                 "step_after": 2,
@@ -650,7 +672,8 @@
                 "step_after": 5,
                 "state_list": []
             }
-        ]
+        ],
+        "annotation_note": ""
     },
     {
         "title": "とろとろ白菜のペペロン鍋",
