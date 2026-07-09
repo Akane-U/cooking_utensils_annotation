@@ -2309,11 +2309,33 @@
             },
             {
                 "step_after": 2,
-                "state_list": []
+                "state_list": [
+                    {
+                        "id": "fcc07a0d",
+                        "name": "温める途中で取り出して混ぜたもの",
+                        "touching_containers_id": "耐熱皿・器",
+                        "utensil_interactions_list": [
+                            {
+                                "source_state_id": "1934976b",
+                                "utensils_list": [
+                                    "スプーン",
+                                    "耐熱皿・器"
+                                ]
+                            }
+                        ]
+                    }
+                ]
             },
             {
                 "step_after": 3,
-                "state_list": []
+                "state_list": [
+                    {
+                        "id": "60043f4c",
+                        "name": "",
+                        "touching_containers_id": "",
+                        "utensil_interactions_list": []
+                    }
+                ]
             }
         ],
         "annotation_note": ""
