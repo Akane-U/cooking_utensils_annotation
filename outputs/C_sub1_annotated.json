@@ -2251,7 +2251,61 @@
             },
             {
                 "step_after": 1,
-                "state_list": []
+                "state_list": [
+                    {
+                        "id": "1934976b",
+                        "name": "具材をレンジで温めたもの（1人前）",
+                        "touching_containers_id": "耐熱皿・器",
+                        "utensil_interactions_list": [
+                            {
+                                "source_state_id": "6",
+                                "utensils_list": [
+                                    "耐熱皿・器",
+                                    "計量スプーン",
+                                    "ラップフィルム"
+                                ]
+                            },
+                            {
+                                "source_state_id": "1",
+                                "utensils_list": [
+                                    "耐熱皿・器",
+                                    "ラップフィルム"
+                                ]
+                            },
+                            {
+                                "source_state_id": "7",
+                                "utensils_list": [
+                                    "耐熱皿・器",
+                                    "計量スプーン",
+                                    "ラップフィルム"
+                                ]
+                            },
+                            {
+                                "source_state_id": "2",
+                                "utensils_list": [
+                                    "耐熱皿・器",
+                                    "計量スプーン",
+                                    "ラップフィルム"
+                                ]
+                            },
+                            {
+                                "source_state_id": "4",
+                                "utensils_list": [
+                                    "耐熱皿・器",
+                                    "計量カップ",
+                                    "ラップフィルム"
+                                ]
+                            },
+                            {
+                                "source_state_id": "3",
+                                "utensils_list": [
+                                    "耐熱皿・器",
+                                    "ラップフィルム"
+                                ]
+                            }
+                        ]
+                    }
+                ]
             },
             {
                 "step_after": 2,
@@ -2261,7 +2315,8 @@
                 "step_after": 3,
                 "state_list": []
             }
-        ]
+        ],
+        "annotation_note": ""
     },
     {
         "title": "白菜と油揚げのごま酢あえ",
