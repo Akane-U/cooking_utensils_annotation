@@ -2648,7 +2648,48 @@
             },
             {
                 "step_after": 1,
-                "state_list": []
+                "state_list": [
+                    {
+                        "id": "4a4d964a",
+                        "name": "卵黄",
+                        "touching_containers_id": "ボウル",
+                        "utensil_interactions_list": [
+                            {
+                                "source_state_id": "2",
+                                "utensils_list": [
+                                    "ボウル"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "id": "78b13525",
+                        "name": "卵白",
+                        "touching_containers_id": "None_ボウル-2",
+                        "utensil_interactions_list": [
+                            {
+                                "source_state_id": "2",
+                                "utensils_list": [
+                                    "None_ボウル-2"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "id": "19229738",
+                        "name": "1～2㎝幅に切った明太子",
+                        "touching_containers_id": "まな板",
+                        "utensil_interactions_list": [
+                            {
+                                "source_state_id": "3",
+                                "utensils_list": [
+                                    "まな板",
+                                    "料理ばさみ"
+                                ]
+                            }
+                        ]
+                    }
+                ]
             },
             {
                 "step_after": 2,
@@ -2658,6 +2699,7 @@
                 "step_after": 3,
                 "state_list": []
             }
-        ]
+        ],
+        "annotation_note": ""
     }
 ]
