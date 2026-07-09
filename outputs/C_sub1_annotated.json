@@ -1794,6 +1794,42 @@
                                 "utensils_list": [
                                     "ボウル"
                                 ]
+                            },
+                            {
+                                "source_state_id": "2",
+                                "utensils_list": [
+                                    "ボウル"
+                                ]
+                            },
+                            {
+                                "source_state_id": "3",
+                                "utensils_list": [
+                                    "ボウル"
+                                ]
+                            },
+                            {
+                                "source_state_id": "4",
+                                "utensils_list": [
+                                    "ボウル"
+                                ]
+                            },
+                            {
+                                "source_state_id": "5",
+                                "utensils_list": [
+                                    "ボウル"
+                                ]
+                            },
+                            {
+                                "source_state_id": "6",
+                                "utensils_list": [
+                                    "ボウル"
+                                ]
+                            },
+                            {
+                                "source_state_id": "7",
+                                "utensils_list": [
+                                    "ボウル"
+                                ]
                             }
                         ]
                     }
@@ -1801,11 +1837,101 @@
             },
             {
                 "step_after": 3,
-                "state_list": []
+                "state_list": [
+                    {
+                        "id": "a91a3e1b",
+                        "name": "具材をトマトで煮込んだもの",
+                        "touching_containers_id": "両手鍋・片手鍋",
+                        "utensil_interactions_list": [
+                            {
+                                "source_state_id": "929cee3e",
+                                "utensils_list": [
+                                    "両手鍋・片手鍋",
+                                    "鍋の蓋"
+                                ]
+                            },
+                            {
+                                "source_state_id": "d96c4bec",
+                                "utensils_list": [
+                                    "両手鍋・片手鍋",
+                                    "鍋の蓋"
+                                ]
+                            },
+                            {
+                                "source_state_id": "bf8e9c58",
+                                "utensils_list": [
+                                    "両手鍋・片手鍋",
+                                    "鍋の蓋"
+                                ]
+                            },
+                            {
+                                "source_state_id": "4915d3ac",
+                                "utensils_list": [
+                                    "両手鍋・片手鍋",
+                                    "鍋の蓋"
+                                ]
+                            },
+                            {
+                                "source_state_id": "4b312fdf",
+                                "utensils_list": [
+                                    "両手鍋・片手鍋",
+                                    "鍋の蓋"
+                                ]
+                            },
+                            {
+                                "source_state_id": "13",
+                                "utensils_list": [
+                                    "両手鍋・片手鍋",
+                                    "鍋の蓋"
+                                ]
+                            }
+                        ]
+                    }
+                ]
             },
             {
                 "step_after": 4,
-                "state_list": []
+                "state_list": [
+                    {
+                        "id": "3fbd6a32",
+                        "name": "ミートボールのトマト煮",
+                        "touching_containers_id": "両手鍋・片手鍋",
+                        "utensil_interactions_list": [
+                            {
+                                "source_state_id": "a91a3e1b",
+                                "utensils_list": [
+                                    "両手鍋・片手鍋",
+                                    "網杓子",
+                                    "鍋の蓋"
+                                ]
+                            },
+                            {
+                                "source_state_id": "46247ede",
+                                "utensils_list": [
+                                    "両手鍋・片手鍋",
+                                    "網杓子",
+                                    "鍋の蓋"
+                                ]
+                            },
+                            {
+                                "source_state_id": "14",
+                                "utensils_list": [
+                                    "両手鍋・片手鍋",
+                                    "網杓子",
+                                    "鍋の蓋"
+                                ]
+                            },
+                            {
+                                "source_state_id": "15",
+                                "utensils_list": [
+                                    "両手鍋・片手鍋",
+                                    "網杓子",
+                                    "鍋の蓋"
+                                ]
+                            }
+                        ]
+                    }
+                ]
             }
         ],
         "annotation_note": "・step1のstateを「切ったりつぶしたりした野菜」として1つにまとめたほうがいいのか、材料5種類に分けていいのか迷いました。（step3ですべて鍋に入れるのでまとめたほうがよい？）"
