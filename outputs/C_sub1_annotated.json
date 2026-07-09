@@ -847,7 +847,33 @@
             },
             {
                 "step_after": 5,
-                "state_list": []
+                "state_list": [
+                    {
+                        "id": "329d4da0",
+                        "name": "マカロニグラタン",
+                        "touching_containers_id": "耐熱皿・器",
+                        "utensil_interactions_list": [
+                            {
+                                "source_state_id": "a4bdda9f",
+                                "utensils_list": [
+                                    "耐熱皿・器"
+                                ]
+                            },
+                            {
+                                "source_state_id": "8",
+                                "utensils_list": [
+                                    "耐熱皿・器"
+                                ]
+                            },
+                            {
+                                "source_state_id": "9",
+                                "utensils_list": [
+                                    "耐熱皿・器"
+                                ]
+                            }
+                        ]
+                    }
+                ]
             }
         ],
         "annotation_note": "step2「鶏肉とえびに塩こしょうを少々ふる」の塩とこしょうの使用器具は「選択なし」でよいか少し迷いました。（アノテーションガイドラインに記載されていたらごめんなさい）"
