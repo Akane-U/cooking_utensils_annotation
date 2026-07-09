@@ -1268,7 +1268,35 @@
             },
             {
                 "step_after": 3,
-                "state_list": []
+                "state_list": [
+                    {
+                        "id": "6c46cb54",
+                        "name": "明太豆腐チーズ",
+                        "touching_containers_id": "耐熱皿・器",
+                        "utensil_interactions_list": [
+                            {
+                                "source_state_id": "8",
+                                "utensils_list": [
+                                    "耐熱皿・器",
+                                    "スプーン"
+                                ]
+                            },
+                            {
+                                "source_state_id": "",
+                                "utensils_list": [
+                                    "耐熱皿・器",
+                                    "スプーン"
+                                ]
+                            },
+                            {
+                                "source_state_id": "7",
+                                "utensils_list": [
+                                    "耐熱皿・器"
+                                ]
+                            }
+                        ]
+                    }
+                ]
             }
         ],
         "annotation_note": ""
