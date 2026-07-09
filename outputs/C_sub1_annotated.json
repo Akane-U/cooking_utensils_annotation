@@ -1399,7 +1399,7 @@
                     {
                         "id": "61f03674",
                         "name": "切ったかぶ",
-                        "touching_containers_id": "",
+                        "touching_containers_id": "まな板",
                         "utensil_interactions_list": [
                             {
                                 "source_state_id": "1",
@@ -1441,12 +1441,17 @@
                     {
                         "id": "313e3f8e",
                         "name": "下処理し4等分に切ったたら",
-                        "touching_containers_id": "",
+                        "touching_containers_id": "まな板",
                         "utensil_interactions_list": [
                             {
                                 "source_state_id": "2",
                                 "utensils_list": [
-                                    "ざる"
+                                    "ざる",
+                                    "やかん",
+                                    "クッキングペーパー",
+                                    "バット",
+                                    "包丁",
+                                    "まな板"
                                 ]
                             }
                         ]
@@ -1466,7 +1471,7 @@
                 "state_list": []
             }
         ],
-        "annotation_note": ""
+        "annotation_note": "・step1のstateを1つにまとめたほうがいいのか、4種類材料ごとにつくっていいのか迷いました。（step2ですべて鍋に入れるのでまとめたほうがよい？）\n・step1の生成元の「 塩だら（甘塩/切り身） 3切れ（300g）」について、熱湯に使用する器具としてやかんを記載してよいか迷いました。（自分はこのような場合には小さいフライパンで熱湯を用意するので）"
     },
     {
         "title": "ミートボールのトマト煮",
