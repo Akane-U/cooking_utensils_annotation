@@ -1181,17 +1181,53 @@
             },
             {
                 "step_after": 1,
-                "state_list": []
+                "state_list": [
+                    {
+                        "id": "06af8240",
+                        "name": "水気をきった豆腐",
+                        "touching_containers_id": "ざる",
+                        "utensil_interactions_list": [
+                            {
+                                "source_state_id": "1",
+                                "utensils_list": [
+                                    "ざる"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "id": "3c0201b4",
+                        "name": "小口切りにした細ねぎ",
+                        "touching_containers_id": "まな板",
+                        "utensil_interactions_list": [
+                            {
+                                "source_state_id": "3",
+                                "utensils_list": [
+                                    "包丁",
+                                    "まな板"
+                                ]
+                            }
+                        ]
+                    }
+                ]
             },
             {
                 "step_after": 2,
-                "state_list": []
+                "state_list": [
+                    {
+                        "id": "fb28dc03",
+                        "name": "",
+                        "touching_containers_id": "",
+                        "utensil_interactions_list": []
+                    }
+                ]
             },
             {
                 "step_after": 3,
                 "state_list": []
             }
-        ]
+        ],
+        "annotation_note": ""
     },
     {
         "title": "かぶとたらの白ドリア",
