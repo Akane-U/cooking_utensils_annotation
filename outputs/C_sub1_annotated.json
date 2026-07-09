@@ -1282,7 +1282,7 @@
                                 ]
                             },
                             {
-                                "source_state_id": "fb28dc03",
+                                "source_state_id": "",
                                 "utensils_list": [
                                     "耐熱皿・器",
                                     "スプーン"
@@ -1395,7 +1395,63 @@
             },
             {
                 "step_after": 1,
-                "state_list": []
+                "state_list": [
+                    {
+                        "id": "61f03674",
+                        "name": "切ったかぶ",
+                        "touching_containers_id": "",
+                        "utensil_interactions_list": [
+                            {
+                                "source_state_id": "1",
+                                "utensils_list": [
+                                    "包丁",
+                                    "まな板"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "id": "e02c186d",
+                        "name": "ほぐしたしめじ",
+                        "touching_containers_id": "まな板",
+                        "utensil_interactions_list": [
+                            {
+                                "source_state_id": "3",
+                                "utensils_list": [
+                                    "まな板",
+                                    "包丁"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "id": "0883c29c",
+                        "name": "4㎝に切ったねぎ",
+                        "touching_containers_id": "まな板",
+                        "utensil_interactions_list": [
+                            {
+                                "source_state_id": "4",
+                                "utensils_list": [
+                                    "包丁",
+                                    "まな板"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "id": "313e3f8e",
+                        "name": "下処理し4等分に切ったたら",
+                        "touching_containers_id": "",
+                        "utensil_interactions_list": [
+                            {
+                                "source_state_id": "2",
+                                "utensils_list": [
+                                    "ざる"
+                                ]
+                            }
+                        ]
+                    }
+                ]
             },
             {
                 "step_after": 2,
@@ -1409,7 +1465,8 @@
                 "step_after": 4,
                 "state_list": []
             }
-        ]
+        ],
+        "annotation_note": ""
     },
     {
         "title": "ミートボールのトマト煮",
