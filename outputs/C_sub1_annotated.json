@@ -1708,7 +1708,37 @@
             },
             {
                 "step_after": 1,
-                "state_list": []
+                "state_list": [
+                    {
+                        "id": "929cee3e",
+                        "name": "",
+                        "touching_containers_id": "",
+                        "utensil_interactions_list": []
+                    },
+                    {
+                        "id": "d96c4bec",
+                        "name": "",
+                        "touching_containers_id": "",
+                        "utensil_interactions_list": [
+                            {
+                                "source_state_id": "",
+                                "utensils_list": []
+                            }
+                        ]
+                    },
+                    {
+                        "id": "bf8e9c58",
+                        "name": "",
+                        "touching_containers_id": "",
+                        "utensil_interactions_list": []
+                    },
+                    {
+                        "id": "4915d3ac",
+                        "name": "",
+                        "touching_containers_id": "",
+                        "utensil_interactions_list": []
+                    }
+                ]
             },
             {
                 "step_after": 2,
@@ -1722,7 +1752,8 @@
                 "step_after": 4,
                 "state_list": []
             }
-        ]
+        ],
+        "annotation_note": "・step1のstateを「切ったりつぶしたりした野菜」として1つにまとめたほうがいいのか、材料5種類ごとに分けていいのか迷いました。（step3ですべて鍋に入れるのでまとめたほうがよい？）"
     },
     {
         "title": "大根とひき肉のコロコロカレー",
