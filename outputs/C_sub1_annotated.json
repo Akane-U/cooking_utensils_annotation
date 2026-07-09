@@ -2693,11 +2693,103 @@
             },
             {
                 "step_after": 2,
-                "state_list": []
+                "state_list": [
+                    {
+                        "id": "e1c7db2a",
+                        "name": "材料を電子レンジで温めたもの",
+                        "touching_containers_id": "耐熱皿・器",
+                        "utensil_interactions_list": [
+                            {
+                                "source_state_id": "19229738",
+                                "utensils_list": [
+                                    "耐熱皿・器",
+                                    "菜箸",
+                                    "ラップフィルム"
+                                ]
+                            },
+                            {
+                                "source_state_id": "78b13525",
+                                "utensils_list": [
+                                    "耐熱皿・器",
+                                    "菜箸",
+                                    "ラップフィルム"
+                                ]
+                            },
+                            {
+                                "source_state_id": "4",
+                                "utensils_list": [
+                                    "耐熱皿・器",
+                                    "菜箸",
+                                    "ラップフィルム"
+                                ]
+                            },
+                            {
+                                "source_state_id": "5",
+                                "utensils_list": [
+                                    "耐熱皿・器",
+                                    "菜箸",
+                                    "ラップフィルム"
+                                ]
+                            },
+                            {
+                                "source_state_id": "6",
+                                "utensils_list": [
+                                    "耐熱皿・器",
+                                    "菜箸",
+                                    "ラップフィルム"
+                                ]
+                            },
+                            {
+                                "source_state_id": "1",
+                                "utensils_list": [
+                                    "耐熱皿・器",
+                                    "菜箸",
+                                    "ラップフィルム"
+                                ]
+                            }
+                        ]
+                    }
+                ]
             },
             {
                 "step_after": 3,
-                "state_list": []
+                "state_list": [
+                    {
+                        "id": "e109c99b",
+                        "name": "明太カルボうどん",
+                        "touching_containers_id": "耐熱皿・器",
+                        "utensil_interactions_list": [
+                            {
+                                "source_state_id": "e1c7db2a",
+                                "utensils_list": [
+                                    "耐熱皿・器",
+                                    "菜箸"
+                                ]
+                            },
+                            {
+                                "source_state_id": "7",
+                                "utensils_list": [
+                                    "耐熱皿・器",
+                                    "菜箸"
+                                ]
+                            },
+                            {
+                                "source_state_id": "4a4d964a",
+                                "utensils_list": [
+                                    "耐熱皿・器",
+                                    "菜箸"
+                                ]
+                            },
+                            {
+                                "source_state_id": "8",
+                                "utensils_list": [
+                                    "耐熱皿・器",
+                                    "菜箸"
+                                ]
+                            }
+                        ]
+                    }
+                ]
             }
         ],
         "annotation_note": ""
