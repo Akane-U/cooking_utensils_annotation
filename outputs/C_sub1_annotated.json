@@ -2543,7 +2543,49 @@
             },
             {
                 "step_after": 3,
-                "state_list": []
+                "state_list": [
+                    {
+                        "id": "8e79f5ed",
+                        "name": "白菜と油揚げのごま酢あえ",
+                        "touching_containers_id": "耐熱皿・器",
+                        "utensil_interactions_list": [
+                            {
+                                "source_state_id": "a3af6751",
+                                "utensils_list": [
+                                    "耐熱皿・器",
+                                    "None_ポリ袋"
+                                ]
+                            },
+                            {
+                                "source_state_id": "4",
+                                "utensils_list": [
+                                    "耐熱皿・器",
+                                    "None_ポリ袋"
+                                ]
+                            },
+                            {
+                                "source_state_id": "3",
+                                "utensils_list": [
+                                    "耐熱皿・器",
+                                    "None_ポリ袋"
+                                ]
+                            },
+                            {
+                                "source_state_id": "6dcd31eb",
+                                "utensils_list": [
+                                    "耐熱皿・器",
+                                    "None_ポリ袋"
+                                ]
+                            },
+                            {
+                                "source_state_id": "5",
+                                "utensils_list": [
+                                    "耐熱皿・器"
+                                ]
+                            }
+                        ]
+                    }
+                ]
             }
         ],
         "annotation_note": ""
