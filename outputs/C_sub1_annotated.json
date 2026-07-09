@@ -2284,23 +2284,25 @@
                                 "source_state_id": "2",
                                 "utensils_list": [
                                     "耐熱皿・器",
-                                    "計量スプーン",
-                                    "ラップフィルム"
+                                    "ラップフィルム",
+                                    "計量スプーン"
                                 ]
                             },
                             {
                                 "source_state_id": "4",
                                 "utensils_list": [
                                     "耐熱皿・器",
-                                    "計量カップ",
-                                    "ラップフィルム"
+                                    "ラップフィルム",
+                                    "計量カップ"
                                 ]
                             },
                             {
                                 "source_state_id": "3",
                                 "utensils_list": [
                                     "耐熱皿・器",
-                                    "ラップフィルム"
+                                    "ラップフィルム",
+                                    "計量スプーン",
+                                    "台秤"
                                 ]
                             }
                         ]
@@ -2331,14 +2333,96 @@
                 "state_list": [
                     {
                         "id": "60043f4c",
-                        "name": "",
-                        "touching_containers_id": "",
-                        "utensil_interactions_list": []
+                        "name": "韓国風茶碗蒸し(1人前）",
+                        "touching_containers_id": "耐熱皿・器",
+                        "utensil_interactions_list": [
+                            {
+                                "source_state_id": "fcc07a0d",
+                                "utensils_list": [
+                                    "耐熱皿・器",
+                                    "ラップフィルム"
+                                ]
+                            },
+                            {
+                                "source_state_id": "5",
+                                "utensils_list": [
+                                    "耐熱皿・器",
+                                    "ラップフィルム"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "id": "70c29a92",
+                        "name": "韓国風茶碗蒸し（もう1人前）",
+                        "touching_containers_id": "None_耐熱皿・器-2",
+                        "utensil_interactions_list": [
+                            {
+                                "source_state_id": "6",
+                                "utensils_list": [
+                                    "計量スプーン",
+                                    "ラップフィルム",
+                                    "スプーン",
+                                    "None_耐熱皿・器-2"
+                                ]
+                            },
+                            {
+                                "source_state_id": "1",
+                                "utensils_list": [
+                                    "ラップフィルム",
+                                    "スプーン",
+                                    "None_耐熱皿・器-2"
+                                ]
+                            },
+                            {
+                                "source_state_id": "7",
+                                "utensils_list": [
+                                    "ラップフィルム",
+                                    "スプーン",
+                                    "計量スプーン",
+                                    "None_耐熱皿・器-2"
+                                ]
+                            },
+                            {
+                                "source_state_id": "2",
+                                "utensils_list": [
+                                    "ラップフィルム",
+                                    "スプーン",
+                                    "計量スプーン",
+                                    "None_耐熱皿・器-2"
+                                ]
+                            },
+                            {
+                                "source_state_id": "4",
+                                "utensils_list": [
+                                    "ラップフィルム",
+                                    "スプーン",
+                                    "計量カップ",
+                                    "None_耐熱皿・器-2"
+                                ]
+                            },
+                            {
+                                "source_state_id": "3",
+                                "utensils_list": [
+                                    "ラップフィルム",
+                                    "スプーン",
+                                    "台秤",
+                                    "None_耐熱皿・器-2"
+                                ]
+                            },
+                            {
+                                "source_state_id": "5",
+                                "utensils_list": [
+                                    "ラップフィルム",
+                                    "None_耐熱皿・器-2"
+                                ]
+                            }
+                        ]
                     }
                 ]
             }
         ],
-        "annotation_note": ""
+        "annotation_note": "・step1,3のマヨネーズ・スープ・しらす干しは材料の半両ずつなので、量るための器具（計量スプーンや計量カップ）を使用器具に加えています。ねぎ半量は目分量なので計量する器具は入れていません。\n\n・step3の「もう1人分を同様につくる」がstate２の書き方で合っているのか、自信がありません。アノテーションガイドで記入例を教えてほしいです。"
     },
     {
         "title": "白菜と油揚げのごま酢あえ",
