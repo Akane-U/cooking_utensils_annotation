@@ -1711,32 +1711,73 @@
                 "state_list": [
                     {
                         "id": "929cee3e",
-                        "name": "",
-                        "touching_containers_id": "",
-                        "utensil_interactions_list": []
+                        "name": "くし形に切ったたまねぎ",
+                        "touching_containers_id": "まな板",
+                        "utensil_interactions_list": [
+                            {
+                                "source_state_id": "8",
+                                "utensils_list": [
+                                    "まな板",
+                                    "包丁"
+                                ]
+                            }
+                        ]
                     },
                     {
                         "id": "d96c4bec",
-                        "name": "",
-                        "touching_containers_id": "",
+                        "name": "斜め切りにしたセロリ",
+                        "touching_containers_id": "まな板",
                         "utensil_interactions_list": [
                             {
-                                "source_state_id": "",
-                                "utensils_list": []
+                                "source_state_id": "9",
+                                "utensils_list": [
+                                    "包丁",
+                                    "まな板"
+                                ]
                             }
                         ]
                     },
                     {
                         "id": "bf8e9c58",
-                        "name": "",
-                        "touching_containers_id": "",
-                        "utensil_interactions_list": []
+                        "name": "乱切りしたにんじん",
+                        "touching_containers_id": "まな板",
+                        "utensil_interactions_list": [
+                            {
+                                "source_state_id": "10",
+                                "utensils_list": [
+                                    "まな板",
+                                    "包丁"
+                                ]
+                            }
+                        ]
                     },
                     {
                         "id": "4915d3ac",
-                        "name": "",
-                        "touching_containers_id": "",
-                        "utensil_interactions_list": []
+                        "name": "四つ割りにしたかぶ",
+                        "touching_containers_id": "まな板",
+                        "utensil_interactions_list": [
+                            {
+                                "source_state_id": "11",
+                                "utensils_list": [
+                                    "まな板",
+                                    "包丁"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "id": "4b312fdf",
+                        "name": "つぶしたトマトの水煮",
+                        "touching_containers_id": "ボウル",
+                        "utensil_interactions_list": [
+                            {
+                                "source_state_id": "12",
+                                "utensils_list": [
+                                    "ボウル",
+                                    "フォーク"
+                                ]
+                            }
+                        ]
                     }
                 ]
             },
@@ -1753,7 +1794,7 @@
                 "state_list": []
             }
         ],
-        "annotation_note": "・step1のstateを「切ったりつぶしたりした野菜」として1つにまとめたほうがいいのか、材料5種類ごとに分けていいのか迷いました。（step3ですべて鍋に入れるのでまとめたほうがよい？）"
+        "annotation_note": "・step1のstateを「切ったりつぶしたりした野菜」として1つにまとめたほうがいいのか、材料5種類に分けていいのか迷いました。（step3ですべて鍋に入れるのでまとめたほうがよい？）"
     },
     {
         "title": "大根とひき肉のコロコロカレー",
