@@ -698,6 +698,14 @@
                                     "包丁",
                                     "まな板"
                                 ]
+                            },
+                            {
+                                "source_state_id": "10",
+                                "utensils_list": []
+                            },
+                            {
+                                "source_state_id": "11",
+                                "utensils_list": []
                             }
                         ]
                     },
@@ -709,8 +717,17 @@
                             {
                                 "source_state_id": "3",
                                 "utensils_list": [
-                                    "串"
+                                    "串",
+                                    "まな板"
                                 ]
+                            },
+                            {
+                                "source_state_id": "10",
+                                "utensils_list": []
+                            },
+                            {
+                                "source_state_id": "11",
+                                "utensils_list": []
                             }
                         ]
                     }
@@ -729,7 +746,7 @@
                 "state_list": []
             }
         ],
-        "annotation_note": ""
+        "annotation_note": "step2「鶏肉とえびに塩こしょうを少々ふる」の塩とこしょうの使用器具は「選択なし」でよいか少し迷いました。（アノテーションガイドラインに記載されていたらごめんなさい）"
     },
     {
         "title": "とろとろ白菜のペペロン鍋",
