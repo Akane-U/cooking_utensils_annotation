@@ -1012,11 +1012,113 @@
             },
             {
                 "step_after": 3,
-                "state_list": []
+                "state_list": [
+                    {
+                        "id": "fec1588e",
+                        "name": "豚肉と白菜を煮たもの",
+                        "touching_containers_id": "両手鍋・片手鍋",
+                        "utensil_interactions_list": [
+                            {
+                                "source_state_id": "5",
+                                "utensils_list": [
+                                    "両手鍋・片手鍋",
+                                    "網杓子",
+                                    "鍋の蓋"
+                                ]
+                            },
+                            {
+                                "source_state_id": "6",
+                                "utensils_list": [
+                                    "両手鍋・片手鍋",
+                                    "網杓子",
+                                    "鍋の蓋"
+                                ]
+                            },
+                            {
+                                "source_state_id": "6",
+                                "utensils_list": [
+                                    "両手鍋・片手鍋",
+                                    "網杓子",
+                                    "鍋の蓋"
+                                ]
+                            },
+                            {
+                                "source_state_id": "7",
+                                "utensils_list": [
+                                    "両手鍋・片手鍋",
+                                    "網杓子",
+                                    "鍋の蓋"
+                                ]
+                            },
+                            {
+                                "source_state_id": "5057e83f",
+                                "utensils_list": [
+                                    "両手鍋・片手鍋",
+                                    "網杓子",
+                                    "鍋の蓋"
+                                ]
+                            },
+                            {
+                                "source_state_id": "6185f014",
+                                "utensils_list": [
+                                    "両手鍋・片手鍋",
+                                    "網杓子",
+                                    "鍋の蓋"
+                                ]
+                            }
+                        ]
+                    }
+                ]
             },
             {
                 "step_after": 4,
-                "state_list": []
+                "state_list": [
+                    {
+                        "id": "635be7f9",
+                        "name": "とろとろ白菜のペペロン鍋",
+                        "touching_containers_id": "両手鍋・片手鍋",
+                        "utensil_interactions_list": [
+                            {
+                                "source_state_id": "8",
+                                "utensils_list": [
+                                    "フライパン",
+                                    "木製へら",
+                                    "両手鍋・片手鍋"
+                                ]
+                            },
+                            {
+                                "source_state_id": "9",
+                                "utensils_list": [
+                                    "フライパン",
+                                    "木製へら",
+                                    "両手鍋・片手鍋"
+                                ]
+                            },
+                            {
+                                "source_state_id": "10",
+                                "utensils_list": [
+                                    "フライパン",
+                                    "木製へら",
+                                    "両手鍋・片手鍋"
+                                ]
+                            },
+                            {
+                                "source_state_id": "11",
+                                "utensils_list": [
+                                    "フライパン",
+                                    "木製へら",
+                                    "両手鍋・片手鍋"
+                                ]
+                            },
+                            {
+                                "source_state_id": "fec1588e",
+                                "utensils_list": [
+                                    "両手鍋・片手鍋"
+                                ]
+                            }
+                        ]
+                    }
+                ]
             }
         ],
         "annotation_note": ""
