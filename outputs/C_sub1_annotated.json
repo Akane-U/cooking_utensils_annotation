@@ -1190,7 +1190,8 @@
                             {
                                 "source_state_id": "1",
                                 "utensils_list": [
-                                    "ざる"
+                                    "ざる",
+                                    "クッキングペーパー"
                                 ]
                             }
                         ]
@@ -1460,15 +1461,149 @@
             },
             {
                 "step_after": 2,
-                "state_list": []
+                "state_list": [
+                    {
+                        "id": "49186d70",
+                        "name": "具材を煮込んだソース",
+                        "touching_containers_id": "両手鍋・片手鍋",
+                        "utensil_interactions_list": [
+                            {
+                                "source_state_id": "61f03674",
+                                "utensils_list": [
+                                    "両手鍋・片手鍋",
+                                    "おたま"
+                                ]
+                            },
+                            {
+                                "source_state_id": "e02c186d",
+                                "utensils_list": [
+                                    "両手鍋・片手鍋",
+                                    "おたま"
+                                ]
+                            },
+                            {
+                                "source_state_id": "0883c29c",
+                                "utensils_list": [
+                                    "両手鍋・片手鍋",
+                                    "おたま"
+                                ]
+                            },
+                            {
+                                "source_state_id": "313e3f8e",
+                                "utensils_list": [
+                                    "両手鍋・片手鍋",
+                                    "おたま"
+                                ]
+                            },
+                            {
+                                "source_state_id": "5",
+                                "utensils_list": [
+                                    "両手鍋・片手鍋",
+                                    "おたま"
+                                ]
+                            },
+                            {
+                                "source_state_id": "6",
+                                "utensils_list": [
+                                    "両手鍋・片手鍋",
+                                    "おたま"
+                                ]
+                            },
+                            {
+                                "source_state_id": "7",
+                                "utensils_list": [
+                                    "両手鍋・片手鍋",
+                                    "おたま"
+                                ]
+                            },
+                            {
+                                "source_state_id": "8",
+                                "utensils_list": [
+                                    "両手鍋・片手鍋",
+                                    "おたま"
+                                ]
+                            },
+                            {
+                                "source_state_id": "9",
+                                "utensils_list": [
+                                    "両手鍋・片手鍋",
+                                    "おたま"
+                                ]
+                            },
+                            {
+                                "source_state_id": "12",
+                                "utensils_list": [
+                                    "両手鍋・片手鍋",
+                                    "おたま"
+                                ]
+                            }
+                        ]
+                    }
+                ]
             },
             {
                 "step_after": 3,
-                "state_list": []
+                "state_list": [
+                    {
+                        "id": "3bce632f",
+                        "name": "ごはんにソースをかけたもの",
+                        "touching_containers_id": "耐熱皿・器",
+                        "utensil_interactions_list": [
+                            {
+                                "source_state_id": "13",
+                                "utensils_list": [
+                                    "耐熱皿・器",
+                                    "包丁"
+                                ]
+                            },
+                            {
+                                "source_state_id": "10",
+                                "utensils_list": [
+                                    "耐熱皿・器",
+                                    "しゃもじ"
+                                ]
+                            },
+                            {
+                                "source_state_id": "49186d70",
+                                "utensils_list": [
+                                    "耐熱皿・器",
+                                    "おたま"
+                                ]
+                            }
+                        ]
+                    }
+                ]
             },
             {
                 "step_after": 4,
-                "state_list": []
+                "state_list": [
+                    {
+                        "id": "9fe2cbf4",
+                        "name": "かぶとたらの白ドリア",
+                        "touching_containers_id": "耐熱皿・器",
+                        "utensil_interactions_list": [
+                            {
+                                "source_state_id": "3bce632f",
+                                "utensils_list": [
+                                    "耐熱皿・器"
+                                ]
+                            },
+                            {
+                                "source_state_id": "14",
+                                "utensils_list": [
+                                    "耐熱皿・器"
+                                ]
+                            },
+                            {
+                                "source_state_id": "11",
+                                "utensils_list": [
+                                    "耐熱皿・器",
+                                    "おろし器"
+                                ]
+                            }
+                        ]
+                    }
+                ]
             }
         ],
         "annotation_note": "・step1のstateを1つにまとめたほうがいいのか、4種類材料ごとにつくっていいのか迷いました。（step2ですべて鍋に入れるのでまとめたほうがよい？）\n・step1の生成元の「 塩だら（甘塩/切り身） 3切れ（300g）」について、熱湯に使用する器具としてやかんを記載してよいか迷いました。（自分はこのような場合には小さいフライパンで熱湯を用意するので）"
