@@ -2030,17 +2030,118 @@
             },
             {
                 "step_after": 1,
-                "state_list": []
+                "state_list": [
+                    {
+                        "id": "527c95ab",
+                        "name": "皮をむいて角切りした大根",
+                        "touching_containers_id": "まな板",
+                        "utensil_interactions_list": [
+                            {
+                                "source_state_id": "1",
+                                "utensils_list": [
+                                    "まな板",
+                                    "包丁"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "id": "4bf07513",
+                        "name": "みじん切りにした玉ねぎ",
+                        "touching_containers_id": "まな板",
+                        "utensil_interactions_list": [
+                            {
+                                "source_state_id": "3",
+                                "utensils_list": [
+                                    "まな板",
+                                    "包丁"
+                                ]
+                            }
+                        ]
+                    }
+                ]
             },
             {
                 "step_after": 2,
-                "state_list": []
+                "state_list": [
+                    {
+                        "id": "35c6bb88",
+                        "name": "具材を炒めた鍋",
+                        "touching_containers_id": "両手鍋・片手鍋",
+                        "utensil_interactions_list": [
+                            {
+                                "source_state_id": "14",
+                                "utensils_list": [
+                                    "両手鍋・片手鍋",
+                                    "木製へら"
+                                ]
+                            },
+                            {
+                                "source_state_id": "4bf07513",
+                                "utensils_list": [
+                                    "両手鍋・片手鍋",
+                                    "木製へら"
+                                ]
+                            },
+                            {
+                                "source_state_id": "4",
+                                "utensils_list": [
+                                    "両手鍋・片手鍋",
+                                    "木製へら"
+                                ]
+                            },
+                            {
+                                "source_state_id": "5",
+                                "utensils_list": [
+                                    "両手鍋・片手鍋",
+                                    "木製へら"
+                                ]
+                            },
+                            {
+                                "source_state_id": "2",
+                                "utensils_list": [
+                                    "両手鍋・片手鍋",
+                                    "木製へら"
+                                ]
+                            },
+                            {
+                                "source_state_id": "6",
+                                "utensils_list": [
+                                    "両手鍋・片手鍋",
+                                    "木製へら"
+                                ]
+                            },
+                            {
+                                "source_state_id": "7",
+                                "utensils_list": [
+                                    "両手鍋・片手鍋",
+                                    "木製へら"
+                                ]
+                            },
+                            {
+                                "source_state_id": "527c95ab",
+                                "utensils_list": [
+                                    "両手鍋・片手鍋",
+                                    "木製へら"
+                                ]
+                            }
+                        ]
+                    }
+                ]
             },
             {
                 "step_after": 3,
-                "state_list": []
+                "state_list": [
+                    {
+                        "id": "c2a9df46",
+                        "name": "",
+                        "touching_containers_id": "",
+                        "utensil_interactions_list": []
+                    }
+                ]
             }
-        ]
+        ],
+        "annotation_note": ""
     },
     {
         "title": "韓国風茶碗蒸し",
