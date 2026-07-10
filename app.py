@@ -663,10 +663,18 @@ def main() -> None:
     with utensil_col:
         st.markdown("**🥄 器具一覧**")
         st.divider()
+        used = used_utensils_in_recipe(ridx)
+        mark_cats = {"容器・保管可能な器具", "加熱容器"}
         for cat, names in utensil_cats.items():
-            with st.expander(cat, expanded=False):
+            with st.expander(cat, expanded=(cat in mark_cats)):
                 for u in names:
-                    st.caption(u)
+                    if cat in mark_cats and u in used:
+                        st.markdown(
+                            f'<span style="color:#03AF7A;font-weight:bold">✔ {u}</span>',
+                            unsafe_allow_html=True,
+                        )
+                    else:
+                        st.caption(u)
 
     # ── Middle column: annotation form ────────────────────────────────────────
     with mid:
@@ -707,6 +715,10 @@ def main() -> None:
                     if st.button("🗑", key=f"dst_{ridx}_{sidx}_{si}", help="このStateを削除"):
                         state_to_del = si
 
+                # 最終ステップは名前にレシピタイトルを必ず入れる
+                if sidx == mstep and not state.get("name"):
+                    state["name"] = recipe["title"]
+
                 name_col, loc_col = st.columns(2)
                 with name_col:
                     state["name"] = st.text_input(
@@ -717,7 +729,7 @@ def main() -> None:
 
                 with loc_col:
                     state["final_position"] = utensil_single_select(
-                        "位置 (final_position) ※単一選択",
+                        "最終位置 (final_position) ※単一選択",
                         f"loc_{ridx}_{sidx}_{si}",
                         state.get("final_position", ""),
                         utensil_cats,
