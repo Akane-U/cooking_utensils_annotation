@@ -55,6 +55,7 @@ def github_write_json(filename: str, data) -> None:
 ANNOTATORS = {
     "main": "admain",
     "ad":   "adsub1",
+    "ad2":  "adsub2",
     "A":    "ayabe",
     "B":    "shibata",
     "C":    "kondo",
