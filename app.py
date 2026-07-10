@@ -54,24 +54,25 @@ def github_write_json(filename: str, data) -> None:
 # アノテーターID → ログイン名の対応表
 ANNOTATORS = {
     "main": "admain",
-    "ad":   "adsub1",
+    "ad":   "adsub2",
     "A":    "ayabe",
     "B":    "shibata",
     "C":    "kondo",
 }
 _NAME_TO_ID = {v: k for k, v in ANNOTATORS.items()}
-_SUB_IDS = {"ad", "A", "B", "C"}  # sub1レシピ（10件）を使うアノテーター
+_SUB_IDS = {"ad", "A", "B", "C"}  # sub2レシピ（10件）を使うアノテーター
 
 UTENSIL_CATEGORIES = {
-    "容器": (100, 199),
+    "容器・保管可能な器具": (100, 199),
     "加熱容器": (200, 299),
     "切る": (300, 399),
-    "混ぜる・すくう・掴む": (400, 499),
-    "すりおろす・漉す・ふるう": (500, 599),
-    "伸ばす・塗る": (600, 699),
-    "整える": (700, 799),
-    "量る・測る": (800, 899),
-    "その他": (900, 999),
+    "混ぜる": (400, 499),
+    "すくう": (500, 599),
+    "すりおろす・漉す・ふるう": (600, 699),
+    "伸ばす・塗る": (700, 799),
+    "整える": (800, 899),
+    "量る・測る": (900, 999),
+    "包む・覆う・敷く": (1000, 1099)
 }
 
 # ─── Data loaders ─────────────────────────────────────────────────────────────
@@ -85,7 +86,7 @@ def load_recipes() -> list:
 
 @st.cache_data
 def load_sub_recipes() -> list:
-    with open(DATA / "sub1_recipe_10.json", encoding="utf-8") as f:
+    with open(DATA / "sub2_recipe_10.json", encoding="utf-8") as f:
         return json.load(f)
 
 
@@ -113,7 +114,7 @@ def build_from_recipes(recipes: list) -> list:
             {
                 "id": str(i),
                 "name": ing,
-                "touching_containers_id": "",
+                "final_position": "",
                 "utensil_interactions_list": [],
             }
             for i, ing in enumerate(recipe["ingredients"], 1)
@@ -143,9 +144,9 @@ def strip_none_prefixes(annotations: list) -> list:
     for recipe in result:
         for ws in recipe.get("world_state_list", []):
             for state in ws.get("state_list", []):
-                tc = state.get("touching_containers_id", "")
+                tc = state.get("final_position", "")
                 if tc.startswith("None_"):
-                    state["touching_containers_id"] = tc[5:]
+                    state["final_position"] = tc[5:]
                 for inter in state.get("utensil_interactions_list", []):
                     sid = inter.get("source_state_id", "")
                     if sid.startswith("None_"):
@@ -169,9 +170,9 @@ def add_none_prefixes(annotations: list, utensil_cats: dict) -> list:
         }
         for ws in recipe.get("world_state_list", []):
             for state in ws.get("state_list", []):
-                tc = state.get("touching_containers_id", "")
+                tc = state.get("final_position", "")
                 if tc and tc not in flat:
-                    state["touching_containers_id"] = f"None_{tc}"
+                    state["final_position"] = f"None_{tc}"
                 for inter in state.get("utensil_interactions_list", []):
                     sid = inter.get("source_state_id", "")
                     if sid and sid not in valid_ids:
@@ -234,7 +235,7 @@ def used_utensils_in_recipe(ridx: int) -> set:
     result = set()
     for ws in st.session_state.ann[ridx]["world_state_list"]:
         for state in ws["state_list"]:
-            tc = state.get("touching_containers_id", "")
+            tc = state.get("final_position", "")
             if tc:
                 result.add(tc)
             for inter in state.get("utensil_interactions_list", []):
@@ -275,7 +276,7 @@ def init() -> None:
         st.session_state.sidx = 1
         st.session_state._ann_annotator = annotator
         if is_sub:
-            fname = f"{annotator}_sub1_annotated.json"
+            fname = f"{annotator}_sub2_annotated.json"
         else:
             fname = f"{annotator}_annotated.json"
         st.session_state.save_filename = fname
@@ -399,7 +400,7 @@ def cb_add_state(ridx, sidx):
         {
             "id": uuid.uuid4().hex[:8],
             "name": "",
-            "touching_containers_id": "",
+            "final_position": "",
             "utensil_interactions_list": [],
         }
     )
@@ -631,7 +632,7 @@ def main() -> None:
                 {
                     "id": uuid.uuid4().hex[:8],
                     "name": "",
-                    "touching_containers_id": "",
+                    "final_position": "",
                     "utensil_interactions_list": [],
                 }
             )
@@ -661,10 +662,10 @@ def main() -> None:
                     )
 
                 with loc_col:
-                    state["touching_containers_id"] = utensil_single_select(
-                        "位置 (touching_containers_id) ※単一選択",
+                    state["final_position"] = utensil_single_select(
+                        "位置 (final_position) ※単一選択",
                         f"loc_{ridx}_{sidx}_{si}",
-                        state.get("touching_containers_id", ""),
+                        state.get("final_position", ""),
                         utensil_cats,
                     )
 
