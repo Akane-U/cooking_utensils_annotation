@@ -728,8 +728,8 @@ def main() -> None:
 
                 interactions = state.setdefault("utensil_interactions_list", [])
 
-                # State 1 は生成元が空なら1つ自動追加
-                if si == 0 and not interactions:
+                # 生成元が空なら1つ自動追加
+                if not interactions:
                     interactions.append(
                         {"source_state_id": "", "utensils_list": [], "_uid": uuid.uuid4().hex[:8]}
                     )
