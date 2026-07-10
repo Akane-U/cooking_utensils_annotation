@@ -54,14 +54,13 @@ def github_write_json(filename: str, data) -> None:
 # アノテーターID → ログイン名の対応表
 ANNOTATORS = {
     "main": "admain",
-    "ad":   "adsub1",
-    "ad2":  "adsub2",
+    "ad":   "adsub2",
     "A":    "ayabe",
     "B":    "shibata",
     "C":    "kondo",
 }
 _NAME_TO_ID = {v: k for k, v in ANNOTATORS.items()}
-_SUB_IDS = {"ad", "A", "B", "C"}  # sub1レシピ（10件）を使うアノテーター
+_SUB_IDS = {"ad", "A", "B", "C"}  # sub2レシピ（10件）を使うアノテーター
 
 UTENSIL_CATEGORIES = {
     "単体使用が多い容器": (100, 199),
@@ -108,7 +107,7 @@ def load_recipes() -> list:
 
 @st.cache_data
 def load_sub_recipes() -> list:
-    with open(DATA / "sub1_recipe_10.json", encoding="utf-8") as f:
+    with open(DATA / "sub2_recipe_10.json", encoding="utf-8") as f:
         return json.load(f)
 
 
@@ -306,7 +305,7 @@ def init() -> None:
         st.session_state.sidx = 1
         st.session_state._ann_annotator = annotator
         if is_sub:
-            fname = f"{annotator}_sub1_annotated.json"
+            fname = f"{annotator}_sub2_annotated.json"
         else:
             fname = f"{annotator}_annotated.json"
         st.session_state.save_filename = fname
