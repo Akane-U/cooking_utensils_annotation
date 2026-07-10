@@ -54,13 +54,23 @@ def github_write_json(filename: str, data) -> None:
 # アノテーターID → ログイン名の対応表
 ANNOTATORS = {
     "main": "admain",
-    "ad":   "adsub2",
+    "ad":   "adsub1",
+    "ad2":  "adsub2",
     "A":    "ayabe",
     "B":    "shibata",
     "C":    "kondo",
 }
 _NAME_TO_ID = {v: k for k, v in ANNOTATORS.items()}
-_SUB_IDS = {"ad", "A", "B", "C"}  # sub2レシピ（10件）を使うアノテーター
+
+# sub1/sub2 レシピファイル
+SUB_RECIPE_FILES = {
+    "sub1": "sub1_recipe_10.json",
+    "sub2": "sub2_recipe_10.json",
+}
+# バッチ固定のアノテーター（ad: sub1専任, ad2: sub2専任）
+_FIXED_BATCH = {"ad": "sub1", "ad2": "sub2"}
+# ログイン後にsub1/sub2を選択するアノテーター（同じログイン名で両方担当）
+_SELECTABLE_BATCH_IDS = {"A", "B", "C"}
 
 UTENSIL_CATEGORIES = {
     "容器・保管可能な器具": (100, 199),
@@ -85,8 +95,8 @@ def load_recipes() -> list:
 
 
 @st.cache_data
-def load_sub_recipes() -> list:
-    with open(DATA / "sub2_recipe_10.json", encoding="utf-8") as f:
+def load_sub_recipes(batch: str) -> list:
+    with open(DATA / SUB_RECIPE_FILES[batch], encoding="utf-8") as f:
         return json.load(f)
 
 
@@ -262,21 +272,36 @@ def unannotated_indices(ann: list) -> list[int]:
 # ─── Session state init ────────────────────────────────────────────────────────
 
 
+def get_batch(annotator: str) -> str | None:
+    """アノテーターが担当するバッチ（'sub1'/'sub2'）。main はフルレシピのため None。"""
+    if annotator in _FIXED_BATCH:
+        return _FIXED_BATCH[annotator]
+    if annotator in _SELECTABLE_BATCH_IDS:
+        return st.session_state.get("batch_select")
+    return None
+
+
+def get_recipes(annotator: str) -> list:
+    batch = get_batch(annotator)
+    return load_sub_recipes(batch) if batch else load_recipes()
+
+
 def init() -> None:
     annotator = st.session_state.get("annotator_select", "")
-    is_sub = annotator in _SUB_IDS
-    prev = st.session_state.get("_ann_annotator", "__UNSET__")
+    batch = get_batch(annotator)
+    key = (annotator, batch)
+    prev = st.session_state.get("_ann_key", "__UNSET__")
 
-    if "ann" not in st.session_state or prev != annotator:
-        recipes = load_sub_recipes() if is_sub else load_recipes()
+    if "ann" not in st.session_state or prev != key:
+        recipes = load_sub_recipes(batch) if batch else load_recipes()
         ann = build_from_recipes(recipes)
         ensure_uids(ann)
         st.session_state.ann = ann
         st.session_state.ridx = 0
         st.session_state.sidx = 1
-        st.session_state._ann_annotator = annotator
-        if is_sub:
-            fname = f"{annotator}_sub2_annotated.json"
+        st.session_state._ann_key = key
+        if batch:
+            fname = f"{annotator}_{batch}_annotated.json"
         else:
             fname = f"{annotator}_annotated.json"
         st.session_state.save_filename = fname
@@ -425,8 +450,24 @@ def _login_screen() -> None:
             return
         st.session_state.annotator_select = _NAME_TO_ID[entered]
         st.session_state.annotator_confirmed = True
-        init()
         st.rerun()
+
+
+def _batch_screen() -> None:
+    st.title("調理器具アノテーション")
+    annotator = st.session_state.get("annotator_select", "")
+    label = ANNOTATORS.get(annotator, "")
+    st.markdown(f"#### {label} さん、担当するレシピセットを選択してください")
+
+    col1, col2 = st.columns(2)
+    with col1:
+        if st.button("sub1（10レシピ）", type="primary", use_container_width=True):
+            st.session_state.batch_select = "sub1"
+            st.rerun()
+    with col2:
+        if st.button("sub2（10レシピ）", type="primary", use_container_width=True):
+            st.session_state.batch_select = "sub2"
+            st.rerun()
 
 
 def main() -> None:
@@ -434,6 +475,11 @@ def main() -> None:
 
     if not st.session_state.get("annotator_confirmed", False):
         _login_screen()
+        return
+
+    annotator = st.session_state.get("annotator_select", "")
+    if annotator in _SELECTABLE_BATCH_IDS and not st.session_state.get("batch_select"):
+        _batch_screen()
         return
 
     init()
@@ -485,8 +531,8 @@ def main() -> None:
 
     utensil_cats = load_utensils()
     annotator = st.session_state.get("annotator_select", "")
-    is_sub = annotator in _SUB_IDS
-    recipes = load_sub_recipes() if is_sub else load_recipes()
+    batch = get_batch(annotator)
+    recipes = get_recipes(annotator)
     ann = st.session_state.ann
 
     # ── 4カラム: ナビ | レシピ情報 | アノテーション | 器具一覧 ───────────────────────
@@ -497,9 +543,17 @@ def main() -> None:
         # st.markdown("**アノテーション**")
 
         annotator_label = ANNOTATORS.get(annotator, "admin")
-        st.markdown(f"**{annotator_label}**")
+        label_suffix = f"（{batch}）" if batch else ""
+        st.markdown(f"**{annotator_label}{label_suffix}**")
+
+        if annotator in _SELECTABLE_BATCH_IDS:
+            if st.button("sub1/sub2 切り替え", use_container_width=True):
+                st.session_state.pop("batch_select", None)
+                st.session_state.pop("ann", None)
+                st.rerun()
+
         if st.button("ログアウト", use_container_width=True):
-            for k in ["annotator_confirmed", "annotator_select", "_ann_annotator", "ann"]:
+            for k in ["annotator_confirmed", "annotator_select", "batch_select", "_ann_key", "ann"]:
                 st.session_state.pop(k, None)
             st.rerun()
 
