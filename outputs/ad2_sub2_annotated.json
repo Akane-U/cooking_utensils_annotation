@@ -488,12 +488,20 @@
                 "state_list": [
                     {
                         "id": "6740b3ec",
-                        "name": "",
-                        "final_position": "",
+                        "name": "2に大根を加え白ワインでひと煮立ちさせたもの",
+                        "final_position": "フライパン（蓋付き）",
                         "utensil_interactions_list": [
                             {
-                                "source_state_id": "",
-                                "utensils_list": []
+                                "source_state_id": "ef024b88",
+                                "utensils_list": [
+                                    "フライパン（蓋付き）"
+                                ]
+                            },
+                            {
+                                "source_state_id": "3",
+                                "utensils_list": [
+                                    "フライパン（蓋付き）"
+                                ]
                             }
                         ]
                     }
@@ -504,12 +512,37 @@
                 "state_list": [
                     {
                         "id": "258d7aa7",
-                        "name": "",
-                        "final_position": "",
+                        "name": "3に固形スープの素を加えて煮たもの",
+                        "final_position": "フライパン（蓋付き）",
                         "utensil_interactions_list": [
                             {
-                                "source_state_id": "",
-                                "utensils_list": []
+                                "source_state_id": "6740b3ec",
+                                "utensils_list": [
+                                    "フライパン（蓋付き）",
+                                    "網目の細かい網杓子",
+                                    "木製へら"
+                                ]
+                            },
+                            {
+                                "source_state_id": "4",
+                                "utensils_list": [
+                                    "フライパン（蓋付き）",
+                                    "木製へら"
+                                ]
+                            },
+                            {
+                                "source_state_id": "5",
+                                "utensils_list": [
+                                    "フライパン（蓋付き）",
+                                    "木製へら"
+                                ]
+                            },
+                            {
+                                "source_state_id": "6",
+                                "utensils_list": [
+                                    "フライパン（蓋付き）",
+                                    "木製へら"
+                                ]
                             }
                         ]
                     }
