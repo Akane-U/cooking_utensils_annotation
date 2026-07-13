@@ -1,0 +1,1064 @@
+[
+    {
+        "title": "例題1：トマトの冷やしおでん風",
+        "world_state_list": [
+            {
+                "step_after": 0,
+                "state_list": [
+                    {
+                        "id": "1",
+                        "name": "トマト 4コ（300g）",
+                        "utensil_interactions_list": [],
+                        "final_position": ""
+                    },
+                    {
+                        "id": "2",
+                        "name": "油揚げ 40g",
+                        "utensil_interactions_list": [],
+                        "final_position": ""
+                    },
+                    {
+                        "id": "3",
+                        "name": "【A】 だし カップ1+1/2",
+                        "utensil_interactions_list": [],
+                        "final_position": ""
+                    },
+                    {
+                        "id": "4",
+                        "name": "【A】 うす口しょうゆ 大さじ1",
+                        "utensil_interactions_list": [],
+                        "final_position": ""
+                    },
+                    {
+                        "id": "5",
+                        "name": "すだち（薄い輪切り） 適量",
+                        "utensil_interactions_list": [],
+                        "final_position": ""
+                    },
+                    {
+                        "id": "6",
+                        "name": "七味とうがらし 適宜",
+                        "utensil_interactions_list": [],
+                        "final_position": ""
+                    }
+                ]
+            },
+            {
+                "step_after": 1,
+                "state_list": [
+                    {
+                        "id": "e10655e5",
+                        "name": "ヘタをくり抜いたトマト",
+                        "utensil_interactions_list": [
+                            {
+                                "source_state_id": "1",
+                                "vessel": [
+                                    "まな板"
+                                ],
+                                "tools": [
+                                    "包丁"
+                                ]
+                            }
+                        ],
+                        "final_position": "まな板"
+                    },
+                    {
+                        "id": "dc434abf",
+                        "name": "切った油揚げ",
+                        "utensil_interactions_list": [
+                            {
+                                "source_state_id": "2",
+                                "vessel": [
+                                    "まな板"
+                                ],
+                                "tools": [
+                                    "包丁"
+                                ]
+                            }
+                        ],
+                        "final_position": "まな板"
+                    }
+                ]
+            },
+            {
+                "step_after": 2,
+                "state_list": [
+                    {
+                        "id": "4ef62c39",
+                        "name": "皮をむいたトマト",
+                        "utensil_interactions_list": [
+                            {
+                                "source_state_id": "e10655e5",
+                                "vessel": [
+                                    "鍋（蓋付き）",
+                                    "ボウル"
+                                ],
+                                "tools": [
+                                    "道具不使用",
+                                    "網目の粗い網杓子"
+                                ]
+                            }
+                        ],
+                        "final_position": "ボウル"
+                    }
+                ]
+            },
+            {
+                "step_after": 3,
+                "state_list": []
+            },
+            {
+                "step_after": 4,
+                "state_list": [
+                    {
+                        "id": "48476713",
+                        "name": "例題1：トマトの冷やしおでん風",
+                        "utensil_interactions_list": [
+                            {
+                                "source_state_id": "",
+                                "vessel": [],
+                                "tools": []
+                            }
+                        ],
+                        "final_position": ""
+                    }
+                ]
+            }
+        ],
+        "annotation_note": ""
+    },
+    {
+        "title": "例題2：ジャンボプリン",
+        "world_state_list": [
+            {
+                "step_after": 0,
+                "state_list": [
+                    {
+                        "id": "1",
+                        "name": "【カラメルソース】 グラニュー糖 80g",
+                        "utensil_interactions_list": [],
+                        "final_position": ""
+                    },
+                    {
+                        "id": "2",
+                        "name": "【カラメルソース】 水 小さじ1",
+                        "utensil_interactions_list": [],
+                        "final_position": ""
+                    },
+                    {
+                        "id": "3",
+                        "name": "卵 3コ",
+                        "utensil_interactions_list": [],
+                        "final_position": ""
+                    },
+                    {
+                        "id": "4",
+                        "name": "卵黄 3コ分",
+                        "utensil_interactions_list": [],
+                        "final_position": ""
+                    },
+                    {
+                        "id": "5",
+                        "name": "グラニュー糖 120g",
+                        "utensil_interactions_list": [],
+                        "final_position": ""
+                    },
+                    {
+                        "id": "6",
+                        "name": "牛乳 カップ4",
+                        "utensil_interactions_list": [],
+                        "final_position": ""
+                    },
+                    {
+                        "id": "7",
+                        "name": "生クリーム カップ1/2",
+                        "utensil_interactions_list": [],
+                        "final_position": ""
+                    }
+                ]
+            },
+            {
+                "step_after": 1,
+                "state_list": []
+            },
+            {
+                "step_after": 2,
+                "state_list": []
+            },
+            {
+                "step_after": 3,
+                "state_list": []
+            },
+            {
+                "step_after": 4,
+                "state_list": []
+            },
+            {
+                "step_after": 5,
+                "state_list": []
+            },
+            {
+                "step_after": 6,
+                "state_list": []
+            }
+        ]
+    },
+    {
+        "title": "本格チキンビリヤニ",
+        "world_state_list": [
+            {
+                "step_after": 0,
+                "state_list": [
+                    {
+                        "id": "1",
+                        "name": "米 360ml（2合）",
+                        "utensil_interactions_list": [],
+                        "final_position": ""
+                    },
+                    {
+                        "id": "2",
+                        "name": "鶏もも肉 200g",
+                        "utensil_interactions_list": [],
+                        "final_position": ""
+                    },
+                    {
+                        "id": "3",
+                        "name": "たまねぎ（粗みじん切り） 1/2コ分（100g）",
+                        "utensil_interactions_list": [],
+                        "final_position": ""
+                    },
+                    {
+                        "id": "4",
+                        "name": "トマト（粗みじん切り） 1/2コ分（100g）",
+                        "utensil_interactions_list": [],
+                        "final_position": ""
+                    },
+                    {
+                        "id": "5",
+                        "name": "にんにく（すりおろす） 1かけ分",
+                        "utensil_interactions_list": [],
+                        "final_position": ""
+                    },
+                    {
+                        "id": "6",
+                        "name": "しょうが（すりおろす） 1かけ分",
+                        "utensil_interactions_list": [],
+                        "final_position": ""
+                    },
+                    {
+                        "id": "7",
+                        "name": "プレーンヨーグルト（無糖） 大さじ2",
+                        "utensil_interactions_list": [],
+                        "final_position": ""
+                    },
+                    {
+                        "id": "8",
+                        "name": "カレー粉 大さじ1+1/2",
+                        "utensil_interactions_list": [],
+                        "final_position": ""
+                    },
+                    {
+                        "id": "9",
+                        "name": "サフラン 1つまみ",
+                        "utensil_interactions_list": [],
+                        "final_position": ""
+                    },
+                    {
+                        "id": "10",
+                        "name": "好みのスパイス（クミンシード、ローリエ、カルダモン、シナモンスティック、黒こしょう） 適宜",
+                        "utensil_interactions_list": [],
+                        "final_position": ""
+                    },
+                    {
+                        "id": "11",
+                        "name": "パクチー（根） 適宜",
+                        "utensil_interactions_list": [],
+                        "final_position": ""
+                    },
+                    {
+                        "id": "12",
+                        "name": "トマトのライタ（＊全体備考参照） 適宜",
+                        "utensil_interactions_list": [],
+                        "final_position": ""
+                    },
+                    {
+                        "id": "13",
+                        "name": "大根のアチャール風（＊全体備考参照） 適宜",
+                        "utensil_interactions_list": [],
+                        "final_position": ""
+                    },
+                    {
+                        "id": "14",
+                        "name": "塩 ",
+                        "utensil_interactions_list": [],
+                        "final_position": ""
+                    },
+                    {
+                        "id": "15",
+                        "name": "サラダ油 ",
+                        "utensil_interactions_list": [],
+                        "final_position": ""
+                    },
+                    {
+                        "id": "16",
+                        "name": "バター ",
+                        "utensil_interactions_list": [],
+                        "final_position": ""
+                    }
+                ]
+            },
+            {
+                "step_after": 1,
+                "state_list": []
+            },
+            {
+                "step_after": 2,
+                "state_list": []
+            },
+            {
+                "step_after": 3,
+                "state_list": []
+            },
+            {
+                "step_after": 4,
+                "state_list": []
+            }
+        ]
+    },
+    {
+        "title": "フランス風豚バラ大根",
+        "world_state_list": [
+            {
+                "step_after": 0,
+                "state_list": [
+                    {
+                        "id": "1",
+                        "name": "豚バラ肉（塊） 600g",
+                        "utensil_interactions_list": [],
+                        "final_position": ""
+                    },
+                    {
+                        "id": "2",
+                        "name": "大根 1/2本（500g）",
+                        "utensil_interactions_list": [],
+                        "final_position": ""
+                    },
+                    {
+                        "id": "3",
+                        "name": "白ワイン カップ1/2",
+                        "utensil_interactions_list": [],
+                        "final_position": ""
+                    },
+                    {
+                        "id": "4",
+                        "name": "固形スープのもと（洋風） 1コ",
+                        "utensil_interactions_list": [],
+                        "final_position": ""
+                    },
+                    {
+                        "id": "5",
+                        "name": "タイム 適宜",
+                        "utensil_interactions_list": [],
+                        "final_position": ""
+                    },
+                    {
+                        "id": "6",
+                        "name": "ローリエ 適宜",
+                        "utensil_interactions_list": [],
+                        "final_position": ""
+                    },
+                    {
+                        "id": "7",
+                        "name": "塩 ",
+                        "utensil_interactions_list": [],
+                        "final_position": ""
+                    },
+                    {
+                        "id": "8",
+                        "name": "こしょう ",
+                        "utensil_interactions_list": [],
+                        "final_position": ""
+                    },
+                    {
+                        "id": "9",
+                        "name": "オリーブ油 ",
+                        "utensil_interactions_list": [],
+                        "final_position": ""
+                    }
+                ]
+            },
+            {
+                "step_after": 1,
+                "state_list": []
+            },
+            {
+                "step_after": 2,
+                "state_list": []
+            },
+            {
+                "step_after": 3,
+                "state_list": []
+            },
+            {
+                "step_after": 4,
+                "state_list": []
+            },
+            {
+                "step_after": 5,
+                "state_list": []
+            }
+        ]
+    },
+    {
+        "title": "白菜と手羽先のピリ辛煮",
+        "world_state_list": [
+            {
+                "step_after": 0,
+                "state_list": [
+                    {
+                        "id": "1",
+                        "name": "白菜（小） 1/4コ（600g）",
+                        "utensil_interactions_list": [],
+                        "final_position": ""
+                    },
+                    {
+                        "id": "2",
+                        "name": "鶏手羽先 6本（360g）",
+                        "utensil_interactions_list": [],
+                        "final_position": ""
+                    },
+                    {
+                        "id": "3",
+                        "name": "にんにく 1かけ",
+                        "utensil_interactions_list": [],
+                        "final_position": ""
+                    },
+                    {
+                        "id": "4",
+                        "name": "赤とうがらし 1本",
+                        "utensil_interactions_list": [],
+                        "final_position": ""
+                    },
+                    {
+                        "id": "5",
+                        "name": "【A】 砂糖 大さじ1",
+                        "utensil_interactions_list": [],
+                        "final_position": ""
+                    },
+                    {
+                        "id": "6",
+                        "name": "【A】 しょうゆ 大さじ3",
+                        "utensil_interactions_list": [],
+                        "final_position": ""
+                    },
+                    {
+                        "id": "7",
+                        "name": "油 ",
+                        "utensil_interactions_list": [],
+                        "final_position": ""
+                    },
+                    {
+                        "id": "8",
+                        "name": "酒 ",
+                        "utensil_interactions_list": [],
+                        "final_position": ""
+                    }
+                ]
+            },
+            {
+                "step_after": 1,
+                "state_list": []
+            },
+            {
+                "step_after": 2,
+                "state_list": []
+            },
+            {
+                "step_after": 3,
+                "state_list": []
+            }
+        ]
+    },
+    {
+        "title": "アスパラの豚肉巻き",
+        "world_state_list": [
+            {
+                "step_after": 0,
+                "state_list": [
+                    {
+                        "id": "1",
+                        "name": "グリーンアスパラガス（細めのもの） 6本（120g）",
+                        "utensil_interactions_list": [],
+                        "final_position": ""
+                    },
+                    {
+                        "id": "2",
+                        "name": "豚バラ肉（薄切り） 12枚（200g）",
+                        "utensil_interactions_list": [],
+                        "final_position": ""
+                    },
+                    {
+                        "id": "3",
+                        "name": "レモン（薄切り） 2枚",
+                        "utensil_interactions_list": [],
+                        "final_position": ""
+                    },
+                    {
+                        "id": "4",
+                        "name": "塩 ",
+                        "utensil_interactions_list": [],
+                        "final_position": ""
+                    },
+                    {
+                        "id": "5",
+                        "name": "こしょう ",
+                        "utensil_interactions_list": [],
+                        "final_position": ""
+                    },
+                    {
+                        "id": "6",
+                        "name": "油 ",
+                        "utensil_interactions_list": [],
+                        "final_position": ""
+                    },
+                    {
+                        "id": "7",
+                        "name": "酒 ",
+                        "utensil_interactions_list": [],
+                        "final_position": ""
+                    }
+                ]
+            },
+            {
+                "step_after": 1,
+                "state_list": []
+            },
+            {
+                "step_after": 2,
+                "state_list": []
+            },
+            {
+                "step_after": 3,
+                "state_list": []
+            }
+        ]
+    },
+    {
+        "title": "ナポリタン",
+        "world_state_list": [
+            {
+                "step_after": 0,
+                "state_list": [
+                    {
+                        "id": "1",
+                        "name": "スパゲッティ 160g",
+                        "utensil_interactions_list": [],
+                        "final_position": ""
+                    },
+                    {
+                        "id": "2",
+                        "name": "ハム 4枚（70g）",
+                        "utensil_interactions_list": [],
+                        "final_position": ""
+                    },
+                    {
+                        "id": "3",
+                        "name": "たまねぎ 1/4コ（50g）",
+                        "utensil_interactions_list": [],
+                        "final_position": ""
+                    },
+                    {
+                        "id": "4",
+                        "name": "ピーマン 2コ（60g）",
+                        "utensil_interactions_list": [],
+                        "final_position": ""
+                    },
+                    {
+                        "id": "5",
+                        "name": "マッシュルーム 4コ（50g）",
+                        "utensil_interactions_list": [],
+                        "final_position": ""
+                    },
+                    {
+                        "id": "6",
+                        "name": "【A】 トマトケチャップ 大さじ5",
+                        "utensil_interactions_list": [],
+                        "final_position": ""
+                    },
+                    {
+                        "id": "7",
+                        "name": "【A】 ウスターソース 小さじ2",
+                        "utensil_interactions_list": [],
+                        "final_position": ""
+                    },
+                    {
+                        "id": "8",
+                        "name": "粉チーズ 適宜",
+                        "utensil_interactions_list": [],
+                        "final_position": ""
+                    },
+                    {
+                        "id": "9",
+                        "name": "塩 ",
+                        "utensil_interactions_list": [],
+                        "final_position": ""
+                    },
+                    {
+                        "id": "10",
+                        "name": "油 ",
+                        "utensil_interactions_list": [],
+                        "final_position": ""
+                    },
+                    {
+                        "id": "11",
+                        "name": "こしょう ",
+                        "utensil_interactions_list": [],
+                        "final_position": ""
+                    },
+                    {
+                        "id": "12",
+                        "name": "バター ",
+                        "utensil_interactions_list": [],
+                        "final_position": ""
+                    }
+                ]
+            },
+            {
+                "step_after": 1,
+                "state_list": []
+            },
+            {
+                "step_after": 2,
+                "state_list": []
+            },
+            {
+                "step_after": 3,
+                "state_list": []
+            },
+            {
+                "step_after": 4,
+                "state_list": []
+            }
+        ]
+    },
+    {
+        "title": "簡単ティラミス",
+        "world_state_list": [
+            {
+                "step_after": 0,
+                "state_list": [
+                    {
+                        "id": "1",
+                        "name": "【クリーム】 クリームチーズ 200g",
+                        "utensil_interactions_list": [],
+                        "final_position": ""
+                    },
+                    {
+                        "id": "2",
+                        "name": "【クリーム】 グラニュー糖 50g",
+                        "utensil_interactions_list": [],
+                        "final_position": ""
+                    },
+                    {
+                        "id": "3",
+                        "name": "【クリーム】 生クリーム カップ1/2",
+                        "utensil_interactions_list": [],
+                        "final_position": ""
+                    },
+                    {
+                        "id": "4",
+                        "name": "【コーヒー】 インスタントコーヒー 小さじ2",
+                        "utensil_interactions_list": [],
+                        "final_position": ""
+                    },
+                    {
+                        "id": "5",
+                        "name": "【コーヒー】 湯 カップ1/4",
+                        "utensil_interactions_list": [],
+                        "final_position": ""
+                    },
+                    {
+                        "id": "6",
+                        "name": "ビスケット（市販） 16枚",
+                        "utensil_interactions_list": [],
+                        "final_position": ""
+                    },
+                    {
+                        "id": "7",
+                        "name": "ココアパウダー 適量",
+                        "utensil_interactions_list": [],
+                        "final_position": ""
+                    }
+                ]
+            },
+            {
+                "step_after": 1,
+                "state_list": []
+            },
+            {
+                "step_after": 2,
+                "state_list": []
+            },
+            {
+                "step_after": 3,
+                "state_list": []
+            }
+        ]
+    },
+    {
+        "title": "ワザあり豚カツ",
+        "world_state_list": [
+            {
+                "step_after": 0,
+                "state_list": [
+                    {
+                        "id": "1",
+                        "name": "豚ロース肉（豚カツ用） 2枚（250～300g）",
+                        "utensil_interactions_list": [],
+                        "final_position": ""
+                    },
+                    {
+                        "id": "2",
+                        "name": "キャベツ 1/4コ（300g）",
+                        "utensil_interactions_list": [],
+                        "final_position": ""
+                    },
+                    {
+                        "id": "3",
+                        "name": "【A】 小麦粉 大さじ1",
+                        "utensil_interactions_list": [],
+                        "final_position": ""
+                    },
+                    {
+                        "id": "4",
+                        "name": "【A】 塩 小さじ1/4",
+                        "utensil_interactions_list": [],
+                        "final_position": ""
+                    },
+                    {
+                        "id": "5",
+                        "name": "【A】 こしょう 少々",
+                        "utensil_interactions_list": [],
+                        "final_position": ""
+                    },
+                    {
+                        "id": "6",
+                        "name": "パン粉 カップ2/3",
+                        "utensil_interactions_list": [],
+                        "final_position": ""
+                    },
+                    {
+                        "id": "7",
+                        "name": "卵 1コ",
+                        "utensil_interactions_list": [],
+                        "final_position": ""
+                    },
+                    {
+                        "id": "8",
+                        "name": "【B】 豚カツソース 適量",
+                        "utensil_interactions_list": [],
+                        "final_position": ""
+                    },
+                    {
+                        "id": "9",
+                        "name": "【B】 練りがらし 適量",
+                        "utensil_interactions_list": [],
+                        "final_position": ""
+                    },
+                    {
+                        "id": "10",
+                        "name": "【B】 塩 適量",
+                        "utensil_interactions_list": [],
+                        "final_position": ""
+                    },
+                    {
+                        "id": "11",
+                        "name": "揚げ油 ",
+                        "utensil_interactions_list": [],
+                        "final_position": ""
+                    }
+                ]
+            },
+            {
+                "step_after": 1,
+                "state_list": []
+            },
+            {
+                "step_after": 2,
+                "state_list": []
+            },
+            {
+                "step_after": 3,
+                "state_list": []
+            },
+            {
+                "step_after": 4,
+                "state_list": []
+            },
+            {
+                "step_after": 5,
+                "state_list": []
+            }
+        ]
+    },
+    {
+        "title": "春の豚たまあえ",
+        "world_state_list": [
+            {
+                "step_after": 0,
+                "state_list": [
+                    {
+                        "id": "1",
+                        "name": "新たまねぎ 1/2コ",
+                        "utensil_interactions_list": [],
+                        "final_position": ""
+                    },
+                    {
+                        "id": "2",
+                        "name": "スナップえんどう 6本",
+                        "utensil_interactions_list": [],
+                        "final_position": ""
+                    },
+                    {
+                        "id": "3",
+                        "name": "豚肩ロース肉（しゃぶしゃぶ用） 250g",
+                        "utensil_interactions_list": [],
+                        "final_position": ""
+                    },
+                    {
+                        "id": "4",
+                        "name": "【A】 すりごま（白） 大さじ2",
+                        "utensil_interactions_list": [],
+                        "final_position": ""
+                    },
+                    {
+                        "id": "5",
+                        "name": "【A】 みそ 大さじ2",
+                        "utensil_interactions_list": [],
+                        "final_position": ""
+                    },
+                    {
+                        "id": "6",
+                        "name": "【A】 砂糖 大さじ1",
+                        "utensil_interactions_list": [],
+                        "final_position": ""
+                    },
+                    {
+                        "id": "7",
+                        "name": "ポン酢しょうゆ 大さじ4",
+                        "utensil_interactions_list": [],
+                        "final_position": ""
+                    },
+                    {
+                        "id": "8",
+                        "name": "塩 ",
+                        "utensil_interactions_list": [],
+                        "final_position": ""
+                    },
+                    {
+                        "id": "9",
+                        "name": "オリーブ油 ",
+                        "utensil_interactions_list": [],
+                        "final_position": ""
+                    }
+                ]
+            },
+            {
+                "step_after": 1,
+                "state_list": []
+            },
+            {
+                "step_after": 2,
+                "state_list": []
+            },
+            {
+                "step_after": 3,
+                "state_list": []
+            },
+            {
+                "step_after": 4,
+                "state_list": []
+            }
+        ]
+    },
+    {
+        "title": "牛肉の赤ワイン煮込み",
+        "world_state_list": [
+            {
+                "step_after": 0,
+                "state_list": [
+                    {
+                        "id": "1",
+                        "name": "牛肉（シチュー用） 500g",
+                        "utensil_interactions_list": [],
+                        "final_position": ""
+                    },
+                    {
+                        "id": "2",
+                        "name": "たまねぎ（小） 1コ（125g）",
+                        "utensil_interactions_list": [],
+                        "final_position": ""
+                    },
+                    {
+                        "id": "3",
+                        "name": "セロリ 1/2本（60g）",
+                        "utensil_interactions_list": [],
+                        "final_position": ""
+                    },
+                    {
+                        "id": "4",
+                        "name": "にんじん（小） 1本（100g）",
+                        "utensil_interactions_list": [],
+                        "final_position": ""
+                    },
+                    {
+                        "id": "5",
+                        "name": "にんにく 2～3かけ（10g）",
+                        "utensil_interactions_list": [],
+                        "final_position": ""
+                    },
+                    {
+                        "id": "6",
+                        "name": "【A】 水 カップ2",
+                        "utensil_interactions_list": [],
+                        "final_position": ""
+                    },
+                    {
+                        "id": "7",
+                        "name": "【A】 赤ワイン カップ1",
+                        "utensil_interactions_list": [],
+                        "final_position": ""
+                    },
+                    {
+                        "id": "8",
+                        "name": "【A】 トマトピュレ 75ml",
+                        "utensil_interactions_list": [],
+                        "final_position": ""
+                    },
+                    {
+                        "id": "9",
+                        "name": "【A】 ローリエ 1枚",
+                        "utensil_interactions_list": [],
+                        "final_position": ""
+                    },
+                    {
+                        "id": "10",
+                        "name": "【A】 タイム 適宜",
+                        "utensil_interactions_list": [],
+                        "final_position": ""
+                    },
+                    {
+                        "id": "11",
+                        "name": "【A】 白こしょう（粒） 約小さじ1（2g）",
+                        "utensil_interactions_list": [],
+                        "final_position": ""
+                    },
+                    {
+                        "id": "12",
+                        "name": "パセリの葉（みじん切り） 適量",
+                        "utensil_interactions_list": [],
+                        "final_position": ""
+                    },
+                    {
+                        "id": "13",
+                        "name": "塩 ",
+                        "utensil_interactions_list": [],
+                        "final_position": ""
+                    },
+                    {
+                        "id": "14",
+                        "name": "こしょう ",
+                        "utensil_interactions_list": [],
+                        "final_position": ""
+                    }
+                ]
+            },
+            {
+                "step_after": 1,
+                "state_list": []
+            },
+            {
+                "step_after": 2,
+                "state_list": []
+            },
+            {
+                "step_after": 3,
+                "state_list": []
+            },
+            {
+                "step_after": 4,
+                "state_list": []
+            }
+        ]
+    },
+    {
+        "title": "春キャベツと春にんじんのスープ",
+        "world_state_list": [
+            {
+                "step_after": 0,
+                "state_list": [
+                    {
+                        "id": "1",
+                        "name": "春キャベツ 200g",
+                        "utensil_interactions_list": [],
+                        "final_position": ""
+                    },
+                    {
+                        "id": "2",
+                        "name": "春にんじん 1/3本（50g）",
+                        "utensil_interactions_list": [],
+                        "final_position": ""
+                    },
+                    {
+                        "id": "3",
+                        "name": "ベーコン（薄切り） 2枚（30g）",
+                        "utensil_interactions_list": [],
+                        "final_position": ""
+                    },
+                    {
+                        "id": "4",
+                        "name": "顆粒（かりゅう）チキンスープのもと（洋風） 小さじ1",
+                        "utensil_interactions_list": [],
+                        "final_position": ""
+                    },
+                    {
+                        "id": "5",
+                        "name": "ローリエ 1枚",
+                        "utensil_interactions_list": [],
+                        "final_position": ""
+                    },
+                    {
+                        "id": "6",
+                        "name": "オリーブ油 ",
+                        "utensil_interactions_list": [],
+                        "final_position": ""
+                    },
+                    {
+                        "id": "7",
+                        "name": "塩 ",
+                        "utensil_interactions_list": [],
+                        "final_position": ""
+                    },
+                    {
+                        "id": "8",
+                        "name": "こしょう ",
+                        "utensil_interactions_list": [],
+                        "final_position": ""
+                    }
+                ]
+            },
+            {
+                "step_after": 1,
+                "state_list": []
+            },
+            {
+                "step_after": 2,
+                "state_list": []
+            },
+            {
+                "step_after": 3,
+                "state_list": []
+            }
+        ]
+    }
+]
