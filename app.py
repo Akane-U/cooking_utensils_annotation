@@ -407,7 +407,7 @@ def source_transition_hint(src: dict, source_id: str, current_vessel: list = Non
         return ""
     container_desc = f"「{position}」" if position else "最後に選んだ容器"
     first_desc = f"「{current_vessel[0]}」" if current_vessel else "先頭容器"
-    return f"[step{step}の{container_desc}⇒{first_desc}] に必要な移動道具を先頭に記入"
+    return f"step{step}の{container_desc}⇒{first_desc} に必要な移動道具を先頭に記入"
 
 
 # ─── Callbacks ────────────────────────────────────────────────────────────────
@@ -760,13 +760,6 @@ def main() -> None:
                                 inter.get("vessel", []),
                                 vessel_cats,
                             )
-                            src_hint = source_transition_hint(
-                                src, inter["source_state_id"], inter["vessel"]
-                            )
-                            if src_hint:
-                                st.warning(src_hint)
-                            if sidx == mstep:
-                                st.warning("「盛り付け皿・器」へ移動するために必要な移動道具を末尾に記入")
 
                         with tools_col:
                             inter["tools"] = utensil_multi_select(
@@ -775,6 +768,13 @@ def main() -> None:
                                 inter.get("tools", []),
                                 tool_cats,
                             )
+                            src_hint = source_transition_hint(
+                                src, inter["source_state_id"], inter["vessel"]
+                            )
+                            if src_hint:
+                                st.warning(src_hint)
+                            if sidx == mstep:
+                                st.warning("「盛り付け皿・器」へ移動するために必要な移動道具を末尾に記入")
 
                         with copy_col:
                             if ii > 0:
