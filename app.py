@@ -406,7 +406,7 @@ def source_transition_hint(src: dict, source_id: str) -> str:
     if step <= 0:
         return ""
     container_desc = f"「{position}」" if position else "最後に選んだ容器"
-    return f"[step {step}の{container_desc}⇒今回選ぶ最初の容器] に必要な移動道具を先頭に記入"
+    return f"[step{step}の{container_desc}⇒先頭容器] に必要な移動道具を先頭に記入"
 
 
 # ─── Callbacks ────────────────────────────────────────────────────────────────
