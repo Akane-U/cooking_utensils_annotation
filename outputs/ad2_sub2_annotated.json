@@ -94,18 +94,80 @@
                                     "ボウル"
                                 ],
                                 "tools": [
-                                    "道具不使用",
+                                    "道具不使用（素手で操作など） ",
                                     "網目の粗い網杓子"
+                                ]
+                            }
+                        ],
+                        "final_position": "ボウル"
+                    },
+                    {
+                        "id": "43bd963f",
+                        "name": "煮汁",
+                        "utensil_interactions_list": [
+                            {
+                                "source_state_id": "3",
+                                "vessel": [
+                                    "鍋（蓋付き）"
+                                ],
+                                "tools": [
+                                    "道具不使用（素手で操作など） "
+                                ]
+                            },
+                            {
+                                "source_state_id": "4",
+                                "vessel": [
+                                    "鍋（蓋付き）"
+                                ],
+                                "tools": [
+                                    "道具不使用（素手で操作など） "
+                                ]
+                            }
+                        ],
+                        "final_position": "鍋（蓋付き）"
+                    }
+                ]
+            },
+            {
+                "step_after": 3,
+                "state_list": [
+                    {
+                        "id": "f4736715",
+                        "name": "油揚げとトマトを冷やしたもの",
+                        "utensil_interactions_list": [
+                            {
+                                "source_state_id": "43bd963f",
+                                "vessel": [
+                                    "鍋（蓋付き）",
+                                    "ボウル"
+                                ],
+                                "tools": [
+                                    "おたま"
+                                ]
+                            },
+                            {
+                                "source_state_id": "dc434abf",
+                                "vessel": [
+                                    "鍋（蓋付き）",
+                                    "ボウル"
+                                ],
+                                "tools": [
+                                    "おたま"
+                                ]
+                            },
+                            {
+                                "source_state_id": "4ef62c39",
+                                "vessel": [
+                                    "ボウル"
+                                ],
+                                "tools": [
+                                    "道具不使用（素手で操作など） "
                                 ]
                             }
                         ],
                         "final_position": "ボウル"
                     }
                 ]
-            },
-            {
-                "step_after": 3,
-                "state_list": []
             },
             {
                 "step_after": 4,
@@ -115,12 +177,34 @@
                         "name": "例題1：トマトの冷やしおでん風",
                         "utensil_interactions_list": [
                             {
-                                "source_state_id": "",
-                                "vessel": [],
-                                "tools": []
+                                "source_state_id": "f4736715",
+                                "vessel": [
+                                    "盛り付け皿・器"
+                                ],
+                                "tools": [
+                                    "おたま"
+                                ]
+                            },
+                            {
+                                "source_state_id": "5",
+                                "vessel": [
+                                    "盛り付け皿・器"
+                                ],
+                                "tools": [
+                                    "道具不使用（素手で操作など） "
+                                ]
+                            },
+                            {
+                                "source_state_id": "6",
+                                "vessel": [
+                                    "盛り付け皿・器"
+                                ],
+                                "tools": [
+                                    "道具不使用（素手で操作など） "
+                                ]
                             }
                         ],
-                        "final_position": ""
+                        "final_position": "盛り付け皿・器"
                     }
                 ]
             }
