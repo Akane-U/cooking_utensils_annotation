@@ -395,15 +395,18 @@ def source_select(label: str, key: str, current: str, src: dict, used_ids: set =
         return v
 
     sel = st.selectbox(label, opts, index=idx, key=key, format_func=_fmt)
-    result = label2id.get(sel, "")
+    return label2id.get(sel, "")
 
-    if result:
-        step, _name, position = src[result]
-        if step > 0:
-            container_desc = f"「{position}」" if position else "最後に選んだ容器"
-            st.warning(f"⚠️ [step {step}の{container_desc}⇒今回選ぶ最初の容器] に必要な移動道具を使用道具の先頭に記入（移動しない・素手で移動する場合は記入不要）")
 
-    return result
+def source_transition_hint(src: dict, source_id: str) -> str:
+    """生成元が中間stateの場合に、使用道具欄に表示する移動道具の案内文を返す（該当なしは""）。"""
+    if not source_id or source_id not in src:
+        return ""
+    step, _name, position = src[source_id]
+    if step <= 0:
+        return ""
+    container_desc = f"「{position}」" if position else "最後に選んだ容器"
+    return f"⚠️ [step {step}の{container_desc}⇒今回選ぶ最初の容器] に必要な移動道具を先頭に記入（移動しない・素手で移動する場合は記入不要）"
 
 
 # ─── Callbacks ────────────────────────────────────────────────────────────────
@@ -721,9 +724,6 @@ def main() -> None:
                     key=f"name_{ridx}_{sidx}_{si}",
                 )
 
-                if sidx == mstep:
-                    st.warning("⚠️ 盛り付け皿へ移動するために必要な移動道具を使用道具の末尾に記入（素手で移動する場合は記入不要）")
-
                 st.markdown("---")
                 st.markdown("**生成元（材料一覧・登録済 State） → 使用容器（vessel）・使用道具（tools）**")
 
@@ -767,6 +767,11 @@ def main() -> None:
                                 inter.get("tools", []),
                                 tool_cats,
                             )
+                            src_hint = source_transition_hint(src, inter["source_state_id"])
+                            if src_hint:
+                                st.warning(src_hint)
+                            if sidx == mstep:
+                                st.warning("⚠️ 盛り付け皿へ移動するために必要な移動道具を使用道具の末尾に記入（素手で移動する場合は記入不要）")
 
                         with copy_col:
                             if ii > 0:
