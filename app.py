@@ -401,7 +401,7 @@ def source_select(label: str, key: str, current: str, src: dict, used_ids: set =
         step, _name, position = src[result]
         if step > 0:
             container_desc = f"「{position}」" if position else "最後に選んだ容器"
-            st.info(f"❕使用道具に、step {step}の{container_desc}から今回選ぶ最初の容器に移動するために必要な道具を先頭に記入してください。さらに最終ステップの場合は、最後に盛り付け皿へ移動するために必要な道具も末尾に記入してください。（移動しない・素手で移動する場合は記入不要）")
+            st.warning(f"⚠️ [step {step}の{container_desc}⇒今回選ぶ最初の容器] に必要な移動道具を使用道具の先頭に記入（移動しない・素手で移動する場合は記入不要）")
 
     return result
 
@@ -720,6 +720,9 @@ def main() -> None:
                     value=state.get("name", ""),
                     key=f"name_{ridx}_{sidx}_{si}",
                 )
+
+                if sidx == mstep:
+                    st.warning("⚠️ 盛り付け皿へ移動するために必要な移動道具を使用道具の末尾に記入（素手で移動する場合は記入不要）")
 
                 st.markdown("---")
                 st.markdown("**生成元（材料一覧・登録済 State） → 使用容器（vessel）・使用道具（tools）**")
