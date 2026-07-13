@@ -243,12 +243,12 @@ def max_step(ridx: int) -> int:
 
 
 def prev_states(ridx: int, sidx: int) -> dict:
-    """Return {id: (step_after, name)} for all states in steps 0..sidx-1."""
+    """Return {id: (step_after, name, final_position)} for all states in steps 0..sidx-1."""
     result = {}
     for ws in st.session_state.ann[ridx]["world_state_list"]:
         if ws["step_after"] < sidx:
             for s in ws["state_list"]:
-                result[s["id"]] = (ws["step_after"], s["name"])
+                result[s["id"]] = (ws["step_after"], s["name"], compute_final_position(s))
     return result
 
 
@@ -379,8 +379,8 @@ def source_label(step: int, name: str) -> str:
 
 
 def source_select(label: str, key: str, current: str, src: dict, used_ids: set = None) -> str:
-    """src: {id: (step_after, name)}; used_ids: 既に使用済みのid集合"""
-    id2label = {sid: source_label(step, name) for sid, (step, name) in src.items()}
+    """src: {id: (step_after, name, final_position)}; used_ids: 既に使用済みのid集合"""
+    id2label = {sid: source_label(step, name) for sid, (step, name, _pos) in src.items()}
     label2id = {v: k for k, v in id2label.items()}
 
     used_labels = {id2label[sid] for sid in (used_ids or []) if sid in id2label}
@@ -398,9 +398,10 @@ def source_select(label: str, key: str, current: str, src: dict, used_ids: set =
     result = label2id.get(sel, "")
 
     if result:
-        step = src[result][0]
+        step, _name, position = src[result]
         if step > 0:
-            st.info(f"使用道具に、step {step}から今回選ぶ最初の容器に移動するための道具を先頭に記入してください")
+            container_desc = f"「{position}」" if position else "最後に選んだ容器"
+            st.info(f"❕使用道具に、step {step}の{container_desc}から今回選ぶ最初の容器に移動するために必要な道具を先頭に記入してください。さらに最終ステップの場合は、最後に盛り付け皿へ移動するために必要な道具も末尾に記入してください。（移動しない・素手で移動する場合は記入不要）")
 
     return result
 
@@ -721,7 +722,7 @@ def main() -> None:
                 )
 
                 st.markdown("---")
-                st.markdown("**生成元（材料一覧・登録済 State） → 容器（vessel）・道具（tools）**")
+                st.markdown("**生成元（材料一覧・登録済 State） → 使用容器（vessel）・使用道具（tools）**")
 
                 interactions = state.setdefault("utensil_interactions_list", [])
 
@@ -750,7 +751,7 @@ def main() -> None:
 
                         with vessel_col:
                             inter["vessel"] = utensil_multi_select(
-                                "容器（vessels）※複数選択可",
+                                "使用容器（vessels）※複数選択可",
                                 f"{wkey}_vessel",
                                 inter.get("vessel", []),
                                 vessel_cats,
@@ -758,7 +759,7 @@ def main() -> None:
 
                         with tools_col:
                             inter["tools"] = utensil_multi_select(
-                                "道具（tools）※複数選択可",
+                                "使用道具（tools）※複数選択可",
                                 f"{wkey}_tools",
                                 inter.get("tools", []),
                                 tool_cats,
