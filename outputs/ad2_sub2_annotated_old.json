@@ -162,13 +162,13 @@
                     {
                         "id": "00597b9d",
                         "name": "塩水",
-                        "final_position": "None_ボウル-2",
+                        "final_position": "ボウル-2",
                         "utensil_interactions_list": [
                             {
                                 "source_state_id": "14",
                                 "utensils_list": [
                                     "計量スプーン",
-                                    "None_ボウル-2"
+                                    "ボウル-2"
                                 ]
                             }
                         ]
@@ -176,12 +176,12 @@
                     {
                         "id": "f35394f9",
                         "name": "サフラン水",
-                        "final_position": "None_ボウル-3",
+                        "final_position": "ボウル-3",
                         "utensil_interactions_list": [
                             {
                                 "source_state_id": "9",
                                 "utensils_list": [
-                                    "None_ボウル-3"
+                                    "ボウル-3"
                                 ]
                             }
                         ]
@@ -296,49 +296,49 @@
                                 "source_state_id": "16",
                                 "utensils_list": [
                                     "耐熱皿・器",
-                                    "None_鍋-2"
+                                    "鍋-2"
                                 ]
                             },
                             {
                                 "source_state_id": "7e100fe8",
                                 "utensils_list": [
                                     "耐熱皿・器",
-                                    "None_鍋-2"
+                                    "鍋-2"
                                 ]
                             },
                             {
                                 "source_state_id": "35c365b8",
                                 "utensils_list": [
                                     "耐熱皿・器",
-                                    "None_鍋-2"
+                                    "鍋-2"
                                 ]
                             },
                             {
                                 "source_state_id": "f35394f9",
                                 "utensils_list": [
                                     "耐熱皿・器",
-                                    "None_鍋-2"
+                                    "鍋-2"
                                 ]
                             },
                             {
                                 "source_state_id": "11",
                                 "utensils_list": [
                                     "耐熱皿・器",
-                                    "None_鍋-2"
+                                    "鍋-2"
                                 ]
                             },
                             {
                                 "source_state_id": "12",
                                 "utensils_list": [
                                     "耐熱皿・器",
-                                    "None_鍋-2"
+                                    "鍋-2"
                                 ]
                             },
                             {
                                 "source_state_id": "13",
                                 "utensils_list": [
                                     "耐熱皿・器",
-                                    "None_鍋-2"
+                                    "鍋-2"
                                 ]
                             }
                         ]
@@ -415,7 +415,7 @@
                 "state_list": [
                     {
                         "id": "ef024b88",
-                        "name": "いちょう形に切った大根",
+                        "name": "切った大根",
                         "final_position": "まな板",
                         "utensil_interactions_list": [
                             {
@@ -660,7 +660,7 @@
                     },
                     {
                         "id": "3c6e12fe",
-                        "name": "縦半分に切ったにんにく",
+                        "name": "切ったにんにく",
                         "final_position": "まな板",
                         "utensil_interactions_list": [
                             {
@@ -736,14 +736,14 @@
                     {
                         "id": "9f237325",
                         "name": "白菜と手羽先のピリ辛煮",
-                        "final_position": "None_盛り付け皿・器",
+                        "final_position": "盛り付け皿・器",
                         "utensil_interactions_list": [
                             {
                                 "source_state_id": "377ceb7d",
                                 "utensils_list": [
                                     "フライパン（蓋付き）",
                                     "おたま",
-                                    "None_盛り付け皿・器"
+                                    "盛り付け皿・器"
                                 ]
                             },
                             {
@@ -751,7 +751,7 @@
                                 "utensils_list": [
                                     "フライパン（蓋付き）",
                                     "おたま",
-                                    "None_盛り付け皿・器"
+                                    "盛り付け皿・器"
                                 ]
                             },
                             {
@@ -759,7 +759,7 @@
                                 "utensils_list": [
                                     "フライパン（蓋付き）",
                                     "おたま",
-                                    "None_盛り付け皿・器"
+                                    "盛り付け皿・器"
                                 ]
                             },
                             {
@@ -767,7 +767,7 @@
                                 "utensils_list": [
                                     "フライパン（蓋付き）",
                                     "おたま",
-                                    "None_盛り付け皿・器"
+                                    "盛り付け皿・器"
                                 ]
                             },
                             {
@@ -775,7 +775,7 @@
                                 "utensils_list": [
                                     "フライパン（蓋付き）",
                                     "おたま",
-                                    "None_盛り付け皿・器"
+                                    "盛り付け皿・器"
                                 ]
                             },
                             {
@@ -784,7 +784,7 @@
                                     "計量カップ",
                                     "フライパン（蓋付き）",
                                     "おたま",
-                                    "None_盛り付け皿・器"
+                                    "盛り付け皿・器"
                                 ]
                             },
                             {
@@ -792,7 +792,7 @@
                                 "utensils_list": [
                                     "フライパン（蓋付き）",
                                     "おたま",
-                                    "None_盛り付け皿・器"
+                                    "盛り付け皿・器"
                                 ]
                             },
                             {
@@ -800,7 +800,7 @@
                                 "utensils_list": [
                                     "フライパン（蓋付き）",
                                     "おたま",
-                                    "None_盛り付け皿・器"
+                                    "盛り付け皿・器"
                                 ]
                             }
                         ]

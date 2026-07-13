@@ -82,8 +82,19 @@ UTENSIL_CATEGORIES = {
     "伸ばす・塗る": (700, 799),
     "整える": (800, 899),
     "量る・測る": (900, 999),
-    "包む・覆う・敷く": (1000, 1099)
+    "包む・覆う・敷く": (1000, 1099),
+    "道具不使用": (1100, 1199),
 }
+
+# vessel（容器・場）扱いのカテゴリ。それ以外は tools（操作道具）扱い。
+VESSEL_CATEGORY_NAMES = {"容器・保管可能な器具", "加熱容器"}
+
+
+def split_utensil_cats(utensil_cats: dict) -> tuple[dict, dict]:
+    """utensil_cats を vessel用カテゴリと tools用カテゴリに分割する。"""
+    vessel_cats = {k: v for k, v in utensil_cats.items() if k in VESSEL_CATEGORY_NAMES}
+    tool_cats = {k: v for k, v in utensil_cats.items() if k not in VESSEL_CATEGORY_NAMES}
+    return vessel_cats, tool_cats
 
 # ─── Data loaders ─────────────────────────────────────────────────────────────
 
@@ -124,7 +135,6 @@ def build_from_recipes(recipes: list) -> list:
             {
                 "id": str(i),
                 "name": ing,
-                "final_position": "",
                 "utensil_interactions_list": [],
             }
             for i, ing in enumerate(recipe["ingredients"], 1)
@@ -154,22 +164,26 @@ def strip_none_prefixes(annotations: list) -> list:
     for recipe in result:
         for ws in recipe.get("world_state_list", []):
             for state in ws.get("state_list", []):
-                tc = state.get("final_position", "")
-                if tc.startswith("None_"):
-                    state["final_position"] = tc[5:]
+                fp = state.get("final_position", "")
+                if fp.startswith("None_"):
+                    state["final_position"] = fp[5:]
                 for inter in state.get("utensil_interactions_list", []):
                     sid = inter.get("source_state_id", "")
                     if sid.startswith("None_"):
                         inter["source_state_id"] = sid[5:]
-                    inter["utensils_list"] = [
-                        u[5:] if u.startswith("None_") else u
-                        for u in inter.get("utensils_list", [])
+                    inter["vessel"] = [
+                        v[5:] if v.startswith("None_") else v
+                        for v in inter.get("vessel", [])
+                    ]
+                    inter["tools"] = [
+                        t[5:] if t.startswith("None_") else t
+                        for t in inter.get("tools", [])
                     ]
     return result
 
 
 def add_none_prefixes(annotations: list, utensil_cats: dict) -> list:
-    """保存前に一覧外の値へ None_ プレフィックスを付与する。"""
+    """保存前に一覧外の値へ None_ プレフィックスを付与し、final_position を自動導出する。"""
     flat = flat_utensils(utensil_cats)
     result = deepcopy(annotations)
     for recipe in result:
@@ -180,18 +194,29 @@ def add_none_prefixes(annotations: list, utensil_cats: dict) -> list:
         }
         for ws in recipe.get("world_state_list", []):
             for state in ws.get("state_list", []):
-                tc = state.get("final_position", "")
-                if tc and tc not in flat:
-                    state["final_position"] = f"None_{tc}"
                 for inter in state.get("utensil_interactions_list", []):
                     sid = inter.get("source_state_id", "")
                     if sid and sid not in valid_ids:
                         inter["source_state_id"] = f"None_{sid}"
-                    inter["utensils_list"] = [
-                        u if u in flat else f"None_{u}"
-                        for u in inter.get("utensils_list", [])
+                    inter["vessel"] = [
+                        v if v in flat else f"None_{v}"
+                        for v in inter.get("vessel", [])
                     ]
+                    inter["tools"] = [
+                        t if t in flat else f"None_{t}"
+                        for t in inter.get("tools", [])
+                    ]
+                state["final_position"] = compute_final_position(state)
     return result
+
+
+def compute_final_position(state: dict) -> str:
+    """Stateの最終位置を、合流する最後の生成元(interaction)のvessel配列の末尾から自動導出する。"""
+    interactions = state.get("utensil_interactions_list", [])
+    if not interactions:
+        return ""
+    vessel = interactions[-1].get("vessel", [])
+    return vessel[-1] if vessel else ""
 
 
 # ─── State helpers ────────────────────────────────────────────────────────────
@@ -245,11 +270,8 @@ def used_utensils_in_recipe(ridx: int) -> set:
     result = set()
     for ws in st.session_state.ann[ridx]["world_state_list"]:
         for state in ws["state_list"]:
-            tc = state.get("final_position", "")
-            if tc:
-                result.add(tc)
             for inter in state.get("utensil_interactions_list", []):
-                for u in inter.get("utensils_list", []):
+                for u in inter.get("vessel", []) + inter.get("tools", []):
                     if u:
                         result.add(u)
     return result
@@ -314,34 +336,6 @@ OTHER = "一覧外（自由記述）"
 OTHER_CUSTOM = "一覧外（自由記述）"
 _CAT_SEP_PRE = "── "
 _CAT_SEP_SUF = " ──"
-
-
-def utensil_single_select(label: str, key: str, current: str, utensil_cats: dict) -> str:
-    utensils = flat_utensils(utensil_cats)
-    in_list = current in utensils
-
-    opts = [""]
-    for cat, names in utensil_cats.items():
-        opts.append(f"{_CAT_SEP_PRE}{cat}{_CAT_SEP_SUF}")
-        opts.extend(names)
-    opts.append(OTHER)
-
-    display = current if in_list else (OTHER if current else "")
-
-    def _clear_sep() -> None:
-        val = st.session_state[key]
-        if val.startswith(_CAT_SEP_PRE) and val.endswith(_CAT_SEP_SUF):
-            st.session_state[key] = ""
-
-    idx = opts.index(display) if display in opts else 0
-    sel = st.selectbox(label, opts, index=idx, key=key, on_change=_clear_sep)
-
-    if sel.startswith(_CAT_SEP_PRE) and sel.endswith(_CAT_SEP_SUF):
-        return current
-    if sel == OTHER:
-        default_custom = "" if in_list else current
-        return st.text_input(f"{label}（自由記述）", value=default_custom, key=f"{key}_c")
-    return sel
 
 
 def utensil_multi_select(label: str, key: str, current: list, utensil_cats: dict) -> list:
@@ -410,7 +404,7 @@ def source_select(label: str, key: str, current: str, src: dict, used_ids: set =
 def cb_add_interaction(ridx, sidx, si):
     ws = get_step_ws(ridx, sidx)
     ws["state_list"][si]["utensil_interactions_list"].append(
-        {"source_state_id": "", "utensils_list": [], "_uid": uuid.uuid4().hex[:8]}
+        {"source_state_id": "", "vessel": [], "tools": [], "_uid": uuid.uuid4().hex[:8]}
     )
 
 
@@ -425,7 +419,6 @@ def cb_add_state(ridx, sidx):
         {
             "id": uuid.uuid4().hex[:8],
             "name": "",
-            "final_position": "",
             "utensil_interactions_list": [],
         }
     )
@@ -530,6 +523,7 @@ def main() -> None:
     )
 
     utensil_cats = load_utensils()
+    vessel_cats, tool_cats = split_utensil_cats(utensil_cats)
     annotator = st.session_state.get("annotator_select", "")
     batch = get_batch(annotator)
     recipes = get_recipes(annotator)
@@ -694,12 +688,12 @@ def main() -> None:
                 {
                     "id": uuid.uuid4().hex[:8],
                     "name": "",
-                    "final_position": "",
                     "utensil_interactions_list": [],
                 }
             )
 
-        flat = flat_utensils(utensil_cats)
+        flat_vessel = flat_utensils(vessel_cats)
+        flat_tools = flat_utensils(tool_cats)
         state_to_del = None
         for si, state in enumerate(step_ws["state_list"]):
             with st.container(border=True):
@@ -719,31 +713,21 @@ def main() -> None:
                 if sidx == mstep and not state.get("name"):
                     state["name"] = recipe["title"]
 
-                name_col, loc_col = st.columns(2)
-                with name_col:
-                    state["name"] = st.text_input(
-                        "名前（name）",
-                        value=state.get("name", ""),
-                        key=f"name_{ridx}_{sidx}_{si}",
-                    )
-
-                with loc_col:
-                    state["final_position"] = utensil_single_select(
-                        "最終位置 (final_position) ※単一選択",
-                        f"loc_{ridx}_{sidx}_{si}",
-                        state.get("final_position", ""),
-                        utensil_cats,
-                    )
+                state["name"] = st.text_input(
+                    "名前（name）",
+                    value=state.get("name", ""),
+                    key=f"name_{ridx}_{sidx}_{si}",
+                )
 
                 st.markdown("---")
-                st.markdown("**生成元（材料一覧・登録済 State） → 使用器具**")
+                st.markdown("**生成元（材料一覧・登録済 State） → 容器（vessel）・道具（tools）**")
 
                 interactions = state.setdefault("utensil_interactions_list", [])
 
                 # 生成元が空なら1つ自動追加
                 if not interactions:
                     interactions.append(
-                        {"source_state_id": "", "utensils_list": [], "_uid": uuid.uuid4().hex[:8]}
+                        {"source_state_id": "", "vessel": [], "tools": [], "_uid": uuid.uuid4().hex[:8]}
                     )
 
                 to_del = None
@@ -752,7 +736,7 @@ def main() -> None:
                     wkey = f"u_{ridx}_{sidx}_{si}_{uid}"
 
                     with st.container():
-                        src_col, u_col, copy_col, del_col = st.columns([5, 5, 1, 1])
+                        src_col, vessel_col, tools_col, copy_col, del_col = st.columns([4, 4, 4, 1, 1])
 
                         with src_col:
                             inter["source_state_id"] = source_select(
@@ -763,42 +747,58 @@ def main() -> None:
                                 used_ids=used_sources,
                             )
 
-                        with u_col:
-                            inter["utensils_list"] = utensil_multi_select(
-                                "使用器具（utensils_list）※複数選択可）",
-                                wkey,
-                                inter.get("utensils_list", []),
-                                utensil_cats,
+                        with vessel_col:
+                            inter["vessel"] = utensil_multi_select(
+                                "容器（vessel）※複数選択可・時系列順",
+                                f"{wkey}_vessel",
+                                inter.get("vessel", []),
+                                vessel_cats,
+                            )
+
+                        with tools_col:
+                            inter["tools"] = utensil_multi_select(
+                                "道具（tools）※複数選択可",
+                                f"{wkey}_tools",
+                                inter.get("tools", []),
+                                tool_cats,
                             )
 
                         with copy_col:
                             if ii > 0:
-                                prev_utensils = deepcopy(interactions[ii - 1]["utensils_list"])
+                                prev_vessel = deepcopy(interactions[ii - 1].get("vessel", []))
+                                prev_tools = deepcopy(interactions[ii - 1].get("tools", []))
 
                                 def _do_copy(
                                     _inter=inter,
-                                    _prev=prev_utensils,
+                                    _prev_vessel=prev_vessel,
+                                    _prev_tools=prev_tools,
                                     _wkey=wkey,
-                                    _flat=flat,
+                                    _flat_vessel=flat_vessel,
+                                    _flat_tools=flat_tools,
                                 ) -> None:
-                                    current_u = _inter.get("utensils_list", [])
-                                    merged = list(dict.fromkeys(current_u + _prev))
-                                    _inter["utensils_list"] = merged
-                                    in_list = [u for u in merged if u in _flat]
-                                    custom_p = [u for u in merged if u not in _flat]
-                                    st.session_state[_wkey] = in_list + (
-                                        [OTHER] if custom_p else []
-                                    )
-                                    if custom_p:
-                                        st.session_state[f"{_wkey}_c"] = ", ".join(custom_p)
-                                    else:
-                                        st.session_state.pop(f"{_wkey}_c", None)
+                                    for _field, _prev, _flat in (
+                                        ("vessel", _prev_vessel, _flat_vessel),
+                                        ("tools", _prev_tools, _flat_tools),
+                                    ):
+                                        current_u = _inter.get(_field, [])
+                                        merged = list(dict.fromkeys(current_u + _prev))
+                                        _inter[_field] = merged
+                                        in_list = [u for u in merged if u in _flat]
+                                        custom_p = [u for u in merged if u not in _flat]
+                                        _fkey = f"{_wkey}_{_field}"
+                                        st.session_state[_fkey] = in_list + (
+                                            [OTHER] if custom_p else []
+                                        )
+                                        if custom_p:
+                                            st.session_state[f"{_fkey}_c"] = ", ".join(custom_p)
+                                        else:
+                                            st.session_state.pop(f"{_fkey}_c", None)
 
                                 st.write("")
                                 st.button(
                                     "⬆",
                                     key=f"copy_{ridx}_{sidx}_{si}_{uid}",
-                                    help="1個上の行の器具をコピー",
+                                    help="1個上の行の容器・道具をコピー",
                                     on_click=_do_copy,
                                 )
 
