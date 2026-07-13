@@ -400,7 +400,7 @@ def source_select(label: str, key: str, current: str, src: dict, used_ids: set =
     if result:
         step = src[result][0]
         if step > 0:
-            st.info(f"step {step}から今回選ぶ最初の容器に移動するための道具を選んでください")
+            st.info(f"使用道具に、step {step}から今回選ぶ最初の容器に移動するための道具を先頭に記入してください")
 
     return result
 
@@ -750,7 +750,7 @@ def main() -> None:
 
                         with vessel_col:
                             inter["vessel"] = utensil_multi_select(
-                                "容器（vessel）※複数選択可",
+                                "容器（vessels）※複数選択可",
                                 f"{wkey}_vessel",
                                 inter.get("vessel", []),
                                 vessel_cats,
