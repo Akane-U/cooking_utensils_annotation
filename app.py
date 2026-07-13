@@ -406,7 +406,7 @@ def source_transition_hint(src: dict, source_id: str) -> str:
     if step <= 0:
         return ""
     container_desc = f"「{position}」" if position else "最後に選んだ容器"
-    return f"⚠️ [step {step}の{container_desc}⇒今回選ぶ最初の容器] に必要な移動道具を先頭に記入（移動しない・素手で移動する場合は記入不要）"
+    return f"[step {step}の{container_desc}⇒今回選ぶ最初の容器] に必要な移動道具を先頭に記入"
 
 
 # ─── Callbacks ────────────────────────────────────────────────────────────────
@@ -771,7 +771,7 @@ def main() -> None:
                             if src_hint:
                                 st.warning(src_hint)
                             if sidx == mstep:
-                                st.warning("⚠️ 盛り付け皿へ移動するために必要な移動道具を使用道具の末尾に記入（素手で移動する場合は記入不要）")
+                                st.warning("盛り付け皿へ移動するために必要な移動道具を末尾に記入")
 
                         with copy_col:
                             if ii > 0:
