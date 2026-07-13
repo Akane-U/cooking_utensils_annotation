@@ -398,15 +398,16 @@ def source_select(label: str, key: str, current: str, src: dict, used_ids: set =
     return label2id.get(sel, "")
 
 
-def source_transition_hint(src: dict, source_id: str) -> str:
-    """生成元が中間stateの場合に、使用道具欄に表示する移動道具の案内文を返す（該当なしは""）。"""
+def source_transition_hint(src: dict, source_id: str, current_vessel: list = None) -> str:
+    """生成元が中間stateの場合に、使用容器欄に表示する移動道具の案内文を返す（該当なしは""）。"""
     if not source_id or source_id not in src:
         return ""
     step, _name, position = src[source_id]
     if step <= 0:
         return ""
     container_desc = f"「{position}」" if position else "最後に選んだ容器"
-    return f"[step{step}の{container_desc}⇒先頭容器] に必要な移動道具を先頭に記入"
+    first_desc = f"「{current_vessel[0]}」" if current_vessel else "先頭容器"
+    return f"[step{step}の{container_desc}⇒{first_desc}] に必要な移動道具を先頭に記入"
 
 
 # ─── Callbacks ────────────────────────────────────────────────────────────────
@@ -759,6 +760,13 @@ def main() -> None:
                                 inter.get("vessel", []),
                                 vessel_cats,
                             )
+                            src_hint = source_transition_hint(
+                                src, inter["source_state_id"], inter["vessel"]
+                            )
+                            if src_hint:
+                                st.warning(src_hint)
+                            if sidx == mstep:
+                                st.warning("「盛り付け皿・器」へ移動するために必要な移動道具を末尾に記入")
 
                         with tools_col:
                             inter["tools"] = utensil_multi_select(
@@ -767,11 +775,6 @@ def main() -> None:
                                 inter.get("tools", []),
                                 tool_cats,
                             )
-                            src_hint = source_transition_hint(src, inter["source_state_id"])
-                            if src_hint:
-                                st.warning(src_hint)
-                            if sidx == mstep:
-                                st.warning("盛り付け皿へ移動するために必要な移動道具を末尾に記入")
 
                         with copy_col:
                             if ii > 0:
