@@ -773,7 +773,8 @@ def main() -> None:
                             )
                             if src_hint:
                                 st.warning(src_hint)
-                            if sidx == mstep:
+                            source_step = src.get(inter["source_state_id"], (0, "", ""))[0]
+                            if sidx == mstep and source_step > 0:
                                 st.warning("「盛り付け皿・器」へ移動するために必要な移動道具を末尾に記入")
 
                         with copy_col:
