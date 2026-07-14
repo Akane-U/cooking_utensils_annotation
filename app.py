@@ -760,6 +760,11 @@ def main() -> None:
                                 inter.get("vessel", []),
                                 vessel_cats,
                             )
+                            src_hint = source_transition_hint(
+                                src, inter["source_state_id"], inter["vessel"]
+                            )
+                            if src_hint:
+                                st.warning(src_hint)
 
                         with tools_col:
                             inter["tools"] = utensil_multi_select(
@@ -768,14 +773,6 @@ def main() -> None:
                                 inter.get("tools", []),
                                 tool_cats,
                             )
-                            src_hint = source_transition_hint(
-                                src, inter["source_state_id"], inter["vessel"]
-                            )
-                            if src_hint:
-                                st.warning(src_hint)
-                            source_step = src.get(inter["source_state_id"], (0, "", ""))[0]
-                            if sidx == mstep and source_step > 0:
-                                st.warning("「盛り付け皿・器」へ移動するために必要な移動道具を末尾に記入")
 
                         with copy_col:
                             if ii > 0:
