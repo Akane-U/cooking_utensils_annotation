@@ -407,7 +407,7 @@ def source_transition_hint(src: dict, source_id: str, current_vessel: list = Non
         return ""
     container_desc = f"「{position}」" if position else "最後に選んだ容器"
     first_desc = f"「{current_vessel[0]}」" if current_vessel else "先頭容器"
-    return f"step{step}の{container_desc}⇒{first_desc} に必要な移動道具を先頭に記入"
+    return f"step{step}時点の最終位置：{container_desc}"
 
 
 # ─── Callbacks ────────────────────────────────────────────────────────────────
