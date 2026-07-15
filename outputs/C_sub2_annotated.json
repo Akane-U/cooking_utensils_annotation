@@ -85,7 +85,7 @@
                 "state_list": [
                     {
                         "id": "7a8e4648",
-                        "name": "煮て皮をむいたトマト",
+                        "name": "皮をむいたトマト",
                         "utensil_interactions_list": [
                             {
                                 "source_state_id": "8176f8fc",
@@ -119,14 +119,27 @@
             },
             {
                 "step_after": 3,
-                "state_list": []
+                "state_list": [
+                    {
+                        "id": "fbcc05be",
+                        "name": "",
+                        "utensil_interactions_list": [
+                            {
+                                "source_state_id": "",
+                                "vessel": [],
+                                "tools": []
+                            }
+                        ],
+                        "final_position": ""
+                    }
+                ]
             },
             {
                 "step_after": 4,
                 "state_list": []
             }
         ],
-        "annotation_note": "step2のトマトで使用する「耐熱の保存容器」について、使用器具（vessels）で「盛り付け皿・器」を選択すればよいか、自由記述にした方がよいか迷いました。"
+        "annotation_note": "step2のトマトで使用する「耐熱の保存容器」について、使用器具（vessels）で「盛り付け皿・器」を選択すればよいか、自由記述にした方がよいか迷いました。\n\n例題では選択されていなかったですが、step２でトマトをすくうのに「網目の粗い網杓子」が必要だと思ったので選択しました。"
     },
     {
         "title": "例題2：ジャンボプリン",
