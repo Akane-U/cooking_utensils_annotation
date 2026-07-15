@@ -943,31 +943,127 @@
                                 "vessel": [
                                     "フライパン（蓋付き）"
                                 ],
-                                "tools": []
+                                "tools": [
+                                    "フライ返し"
+                                ]
                             },
                             {
                                 "source_state_id": "9",
-                                "vessel": [],
+                                "vessel": [
+                                    "フライパン（蓋付き）"
+                                ],
                                 "tools": [
-                                    "計量スプーン"
+                                    "計量スプーン",
+                                    "フライ返し"
                                 ]
                             }
                         ],
-                        "final_position": ""
+                        "final_position": "フライパン（蓋付き）"
                     }
                 ]
             },
             {
                 "step_after": 3,
-                "state_list": []
+                "state_list": [
+                    {
+                        "id": "269be53b",
+                        "name": "焼いた豚肉と大根",
+                        "utensil_interactions_list": [
+                            {
+                                "source_state_id": "6c1a4a7c",
+                                "vessel": [
+                                    "フライパン（蓋付き）"
+                                ],
+                                "tools": [
+                                    "菜箸"
+                                ]
+                            },
+                            {
+                                "source_state_id": "7089d3f3",
+                                "vessel": [
+                                    "フライパン（蓋付き）"
+                                ],
+                                "tools": [
+                                    "菜箸"
+                                ]
+                            },
+                            {
+                                "source_state_id": "3",
+                                "vessel": [
+                                    "フライパン（蓋付き）"
+                                ],
+                                "tools": [
+                                    "菜箸"
+                                ]
+                            }
+                        ],
+                        "final_position": "フライパン（蓋付き）"
+                    }
+                ]
             },
             {
                 "step_after": 4,
-                "state_list": []
+                "state_list": [
+                    {
+                        "id": "f7e5d482",
+                        "name": "スープで煮込んだ豚肉と大根",
+                        "utensil_interactions_list": [
+                            {
+                                "source_state_id": "269be53b",
+                                "vessel": [
+                                    "フライパン（蓋付き）"
+                                ],
+                                "tools": [
+                                    "網目の細かい網杓子"
+                                ]
+                            },
+                            {
+                                "source_state_id": "4",
+                                "vessel": [
+                                    "フライパン（蓋付き）"
+                                ],
+                                "tools": []
+                            },
+                            {
+                                "source_state_id": "5",
+                                "vessel": [
+                                    "フライパン（蓋付き）"
+                                ],
+                                "tools": []
+                            },
+                            {
+                                "source_state_id": "6",
+                                "vessel": [
+                                    "フライパン（蓋付き）"
+                                ],
+                                "tools": []
+                            }
+                        ],
+                        "final_position": "フライパン（蓋付き）"
+                    }
+                ]
             },
             {
                 "step_after": 5,
-                "state_list": []
+                "state_list": [
+                    {
+                        "id": "03a5c96c",
+                        "name": "フランス風豚バラ大根",
+                        "utensil_interactions_list": [
+                            {
+                                "source_state_id": "f7e5d482",
+                                "vessel": [
+                                    "フライパン（蓋付き）",
+                                    "盛り付け皿・器"
+                                ],
+                                "tools": [
+                                    "おたま"
+                                ]
+                            }
+                        ],
+                        "final_position": "盛り付け皿・器"
+                    }
+                ]
             }
         ],
         "annotation_note": ""
