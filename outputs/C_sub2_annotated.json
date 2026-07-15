@@ -90,7 +90,6 @@
                             {
                                 "source_state_id": "8176f8fc",
                                 "vessel": [
-                                    "まな板",
                                     "鍋（蓋付き）",
                                     "盛り付け皿・器"
                                 ],
@@ -122,24 +121,63 @@
                 "state_list": [
                     {
                         "id": "fbcc05be",
-                        "name": "",
+                        "name": "油揚げとトマトを冷やしたもの",
                         "utensil_interactions_list": [
                             {
-                                "source_state_id": "",
-                                "vessel": [],
+                                "source_state_id": "5fefbf50",
+                                "vessel": [
+                                    "鍋（蓋付き）",
+                                    "盛り付け皿・器"
+                                ],
+                                "tools": []
+                            },
+                            {
+                                "source_state_id": "7a8e4648",
+                                "vessel": [
+                                    "盛り付け皿・器"
+                                ],
                                 "tools": []
                             }
                         ],
-                        "final_position": ""
+                        "final_position": "盛り付け皿・器"
                     }
                 ]
             },
             {
                 "step_after": 4,
-                "state_list": []
+                "state_list": [
+                    {
+                        "id": "d70d5d65",
+                        "name": "例題1：トマトの冷やしおでん風",
+                        "utensil_interactions_list": [
+                            {
+                                "source_state_id": "5",
+                                "vessel": [
+                                    "盛り付け皿・器"
+                                ],
+                                "tools": []
+                            },
+                            {
+                                "source_state_id": "6",
+                                "vessel": [
+                                    "盛り付け皿・器"
+                                ],
+                                "tools": []
+                            },
+                            {
+                                "source_state_id": "fbcc05be",
+                                "vessel": [
+                                    "盛り付け皿・器"
+                                ],
+                                "tools": []
+                            }
+                        ],
+                        "final_position": "盛り付け皿・器"
+                    }
+                ]
             }
         ],
-        "annotation_note": "step2のトマトで使用する「耐熱の保存容器」について、使用器具（vessels）で「盛り付け皿・器」を選択すればよいか、自由記述にした方がよいか迷いました。\n\n例題では選択されていなかったですが、step２でトマトをすくうのに「網目の粗い網杓子」が必要だと思ったので選択しました。"
+        "annotation_note": "step2のトマトで使用する「耐熱の保存容器」について、使用器具（vessels）で「盛り付け皿・器」を選択すればよいか、自由記述にした方がよいか迷いました。\n\nstep２でトマトをすくうのに「網目の粗い網杓子」が必要だと思ったので選択しました。\n"
     },
     {
         "title": "例題2：ジャンボプリン",
