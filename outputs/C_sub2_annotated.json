@@ -690,14 +690,105 @@
             },
             {
                 "step_after": 3,
-                "state_list": []
+                "state_list": [
+                    {
+                        "id": "388b520c",
+                        "name": "鶏肉・塩水・カレー粉を煮たもの",
+                        "utensil_interactions_list": [
+                            {
+                                "source_state_id": "8bf029b7",
+                                "vessel": [
+                                    "フライパン（蓋付き）-2"
+                                ],
+                                "tools": []
+                            },
+                            {
+                                "source_state_id": "09d68b7e",
+                                "vessel": [
+                                    "フライパン（蓋付き）-2"
+                                ],
+                                "tools": []
+                            },
+                            {
+                                "source_state_id": "8",
+                                "vessel": [
+                                    "フライパン（蓋付き）-2"
+                                ],
+                                "tools": []
+                            }
+                        ],
+                        "final_position": "フライパン（蓋付き）-2"
+                    }
+                ]
             },
             {
                 "step_after": 4,
-                "state_list": []
+                "state_list": [
+                    {
+                        "id": "5f388ad8",
+                        "name": "本格チキンビリヤニ",
+                        "utensil_interactions_list": [
+                            {
+                                "source_state_id": "16",
+                                "vessel": [
+                                    "鍋（蓋付き）-2"
+                                ],
+                                "tools": []
+                            },
+                            {
+                                "source_state_id": "af84840b",
+                                "vessel": [
+                                    "ざる",
+                                    "鍋（蓋付き）-2"
+                                ],
+                                "tools": []
+                            },
+                            {
+                                "source_state_id": "7c405e19",
+                                "vessel": [
+                                    "フライパン（蓋付き）",
+                                    "ざる",
+                                    "鍋（蓋付き）-2"
+                                ],
+                                "tools": []
+                            },
+                            {
+                                "source_state_id": "328b11c8",
+                                "vessel": [
+                                    "ボウル-3",
+                                    "フライパン（蓋付き）",
+                                    "ざる",
+                                    "鍋（蓋付き）-2"
+                                ],
+                                "tools": []
+                            },
+                            {
+                                "source_state_id": "11",
+                                "vessel": [],
+                                "tools": []
+                            },
+                            {
+                                "source_state_id": "12",
+                                "vessel": [],
+                                "tools": []
+                            },
+                            {
+                                "source_state_id": "13",
+                                "vessel": [],
+                                "tools": []
+                            },
+                            {
+                                "source_state_id": "",
+                                "vessel": [],
+                                "tools": []
+                            }
+                        ],
+                        "final_position": ""
+                    }
+                ]
             }
         ],
-        "annotation_note": ""
+        "annotation_note": "step3の使用容器を選ぶ際、もともと入力されている「ボウル」を消して「フライパン２」を選んでも、また「ボウル」が出てきてしまう。（一旦両方選択して、あとから「ボウル」を消すという作業が必要）\n\n\nstep４のレシピ内で生成元「step3：鶏肉・塩水・カレー粉を煮たもの」に触れていないので、✓が入らず残っている"
     },
     {
         "title": "フランス風豚バラ大根",
