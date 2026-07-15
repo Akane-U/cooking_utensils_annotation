@@ -398,18 +398,6 @@ def source_select(label: str, key: str, current: str, src: dict, used_ids: set =
     return label2id.get(sel, "")
 
 
-def source_transition_hint(src: dict, source_id: str, current_vessel: list = None) -> str:
-    """生成元が中間stateの場合に、使用容器欄に表示する移動道具の案内文を返す（該当なしは""）。"""
-    if not source_id or source_id not in src:
-        return ""
-    step, _name, position = src[source_id]
-    if step <= 0:
-        return ""
-    container_desc = f"「{position}」" if position else "最後に選んだ容器"
-    first_desc = f"「{current_vessel[0]}」" if current_vessel else "先頭容器"
-    return f"step{step}時点の最終位置：{container_desc}"
-
-
 # ─── Callbacks ────────────────────────────────────────────────────────────────
 
 
@@ -757,17 +745,28 @@ def main() -> None:
                             )
 
                         with vessel_col:
+                            src_step, _src_name, src_position = src.get(
+                                inter["source_state_id"], (0, "", "")
+                            )
+                            if src_step > 0 and src_position and not inter.get("vessel"):
+                                vessel_key = f"{wkey}_vessel"
+                                inter["vessel"] = [src_position]
+                                in_list = [src_position] if src_position in flat_vessel else []
+                                custom_p = [] if src_position in flat_vessel else [src_position]
+                                st.session_state[vessel_key] = in_list + (
+                                    [OTHER] if custom_p else []
+                                )
+                                if custom_p:
+                                    st.session_state[f"{vessel_key}_c"] = src_position
+                                else:
+                                    st.session_state.pop(f"{vessel_key}_c", None)
+
                             inter["vessel"] = utensil_multi_select(
                                 "使用容器（vessels）※複数選択可",
                                 f"{wkey}_vessel",
                                 inter.get("vessel", []),
                                 vessel_cats,
                             )
-                            src_hint = source_transition_hint(
-                                src, inter["source_state_id"], inter["vessel"]
-                            )
-                            if src_hint:
-                                st.warning(src_hint)
 
                         with tools_col:
                             inter["tools"] = utensil_multi_select(
