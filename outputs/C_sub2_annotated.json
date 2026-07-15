@@ -1126,17 +1126,127 @@
             },
             {
                 "step_after": 1,
-                "state_list": []
+                "state_list": [
+                    {
+                        "id": "260a3b78",
+                        "name": "白菜の芯",
+                        "utensil_interactions_list": [
+                            {
+                                "source_state_id": "1",
+                                "vessel": [
+                                    "まな板"
+                                ],
+                                "tools": [
+                                    "包丁"
+                                ]
+                            }
+                        ],
+                        "final_position": "まな板"
+                    },
+                    {
+                        "id": "1e751372",
+                        "name": "半分に切ったにんにく",
+                        "utensil_interactions_list": [
+                            {
+                                "source_state_id": "3",
+                                "vessel": [
+                                    "まな板"
+                                ],
+                                "tools": [
+                                    "包丁"
+                                ]
+                            }
+                        ],
+                        "final_position": "まな板"
+                    },
+                    {
+                        "id": "9a78aca0",
+                        "name": "先端を切った手羽先",
+                        "utensil_interactions_list": [
+                            {
+                                "source_state_id": "2",
+                                "vessel": [
+                                    "まな板"
+                                ],
+                                "tools": [
+                                    "包丁"
+                                ]
+                            }
+                        ],
+                        "final_position": "まな板"
+                    },
+                    {
+                        "id": "5855bcba",
+                        "name": "白菜の根元",
+                        "utensil_interactions_list": [
+                            {
+                                "source_state_id": "1",
+                                "vessel": [
+                                    "まな板"
+                                ],
+                                "tools": [
+                                    "包丁"
+                                ]
+                            }
+                        ],
+                        "final_position": "まな板"
+                    }
+                ]
             },
             {
                 "step_after": 2,
-                "state_list": []
+                "state_list": [
+                    {
+                        "id": "2f8ac0bb",
+                        "name": "白菜の根元を焼いたもの",
+                        "utensil_interactions_list": [
+                            {
+                                "source_state_id": "5855bcba",
+                                "vessel": [
+                                    "フライパン（蓋付き）",
+                                    "盛り付け皿・器"
+                                ],
+                                "tools": [
+                                    "菜箸"
+                                ]
+                            },
+                            {
+                                "source_state_id": "7",
+                                "vessel": [
+                                    "フライパン（蓋付き）",
+                                    "盛り付け皿・器"
+                                ],
+                                "tools": [
+                                    "菜箸"
+                                ]
+                            }
+                        ],
+                        "final_position": "盛り付け皿・器"
+                    },
+                    {
+                        "id": "c1b4d6c7",
+                        "name": "手羽先を焼いたもの",
+                        "utensil_interactions_list": [
+                            {
+                                "source_state_id": "9a78aca0",
+                                "vessel": [
+                                    "フライパン（蓋付き）"
+                                ],
+                                "tools": [
+                                    "菜箸"
+                                ]
+                            }
+                        ],
+                        "final_position": "フライパン（蓋付き）"
+                    }
+                ]
             },
             {
                 "step_after": 3,
                 "state_list": []
             }
-        ]
+        ],
+        "annotation_note": "step2の手羽先は、おそらく白菜を焼いたフライパンと同じものを使って焼くという意味だと思うので、フライパンは白菜と同一ものを選択しました。同一のフライパンをつかう事がわかるような記述にしたほうが分かりやすいと思いました。"
     },
     {
         "title": "アスパラの豚肉巻き",
