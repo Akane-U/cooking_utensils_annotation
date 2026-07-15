@@ -331,24 +331,20 @@ def init() -> None:
 
 # ─── Widget helpers ────────────────────────────────────────────────────────────
 
-OTHER = "一覧外（自由記述）"
-OTHER_CUSTOM = "一覧外（自由記述）"
 _CAT_SEP_PRE = "── "
 _CAT_SEP_SUF = " ──"
 
 
 def utensil_multi_select(label: str, key: str, current: list, utensil_cats: dict) -> list:
+    """複数選択。選択順（一覧外の自由記述も含む）はそのまま維持して返す。"""
     utensils = flat_utensils(utensil_cats)
-    known = [u for u in current if u in utensils]
-    custom = [u for u in current if u not in utensils]
 
     opts = []
     for cat, names in utensil_cats.items():
         opts.append(f"{_CAT_SEP_PRE}{cat}{_CAT_SEP_SUF}")
         opts.extend(names)
-    opts.append(OTHER)
-
-    default = known + ([OTHER] if custom else [])
+    # 既存の一覧外（自由記述）値も選択肢に加え、選択済みとして表示できるようにする
+    opts.extend(u for u in current if u not in utensils)
 
     def _remove_seps() -> None:
         st.session_state[key] = [
@@ -356,20 +352,20 @@ def utensil_multi_select(label: str, key: str, current: list, utensil_cats: dict
             if not (u.startswith(_CAT_SEP_PRE) and u.endswith(_CAT_SEP_SUF))
         ]
 
-    sel = st.multiselect(label, opts, default=[d for d in default if d in opts], key=key, on_change=_remove_seps)
+    sel = st.multiselect(
+        label,
+        opts,
+        default=[u for u in current if u in opts],
+        key=key,
+        on_change=_remove_seps,
+        accept_new_options=True,
+        placeholder="選択、または一覧外の名称を入力",
+    )
 
-    result = [
+    return [
         u for u in sel
-        if u != OTHER and not (u.startswith(_CAT_SEP_PRE) and u.endswith(_CAT_SEP_SUF))
+        if not (u.startswith(_CAT_SEP_PRE) and u.endswith(_CAT_SEP_SUF))
     ]
-    if OTHER in sel:
-        ctext = st.text_input(
-            f"{label}（一覧外・カンマ区切り）",
-            value=", ".join(custom),
-            key=f"{key}_c",
-        )
-        result += [u.strip() for u in ctext.split(",") if u.strip()]
-    return result
 
 
 def source_label(step: int, name: str) -> str:
@@ -688,8 +684,6 @@ def main() -> None:
                 }
             )
 
-        flat_vessel = flat_utensils(vessel_cats)
-        flat_tools = flat_utensils(tool_cats)
         state_to_del = None
         for si, state in enumerate(step_ws["state_list"]):
             with st.container(border=True):
@@ -748,17 +742,8 @@ def main() -> None:
                                 inter["source_state_id"], (0, "", "")
                             )
                             if src_step > 0 and src_position and not inter.get("vessel"):
-                                vessel_key = f"{wkey}_vessel"
                                 inter["vessel"] = [src_position]
-                                in_list = [src_position] if src_position in flat_vessel else []
-                                custom_p = [] if src_position in flat_vessel else [src_position]
-                                st.session_state[vessel_key] = in_list + (
-                                    [OTHER] if custom_p else []
-                                )
-                                if custom_p:
-                                    st.session_state[f"{vessel_key}_c"] = src_position
-                                else:
-                                    st.session_state.pop(f"{vessel_key}_c", None)
+                                st.session_state[f"{wkey}_vessel"] = [src_position]
 
                             inter["vessel"] = utensil_multi_select(
                                 "使用容器（vessels）※複数選択可",
@@ -785,26 +770,15 @@ def main() -> None:
                                     _prev_vessel=prev_vessel,
                                     _prev_tools=prev_tools,
                                     _wkey=wkey,
-                                    _flat_vessel=flat_vessel,
-                                    _flat_tools=flat_tools,
                                 ) -> None:
-                                    for _field, _prev, _flat in (
-                                        ("vessel", _prev_vessel, _flat_vessel),
-                                        ("tools", _prev_tools, _flat_tools),
+                                    for _field, _prev in (
+                                        ("vessel", _prev_vessel),
+                                        ("tools", _prev_tools),
                                     ):
                                         current_u = _inter.get(_field, [])
                                         merged = list(dict.fromkeys(current_u + _prev))
                                         _inter[_field] = merged
-                                        in_list = [u for u in merged if u in _flat]
-                                        custom_p = [u for u in merged if u not in _flat]
-                                        _fkey = f"{_wkey}_{_field}"
-                                        st.session_state[_fkey] = in_list + (
-                                            [OTHER] if custom_p else []
-                                        )
-                                        if custom_p:
-                                            st.session_state[f"{_fkey}_c"] = ", ".join(custom_p)
-                                        else:
-                                            st.session_state.pop(f"{_fkey}_c", None)
+                                        st.session_state[f"{_wkey}_{_field}"] = merged
 
                                 st.write("")
                                 st.button(
