@@ -1,0 +1,2032 @@
+[
+    {
+        "title": "例題1：トマトの冷やしおでん風",
+        "world_state_list": [
+            {
+                "step_after": 0,
+                "state_list": [
+                    {
+                        "id": "1",
+                        "name": "トマト 4コ（300g）",
+                        "utensil_interactions_list": [],
+                        "final_position": ""
+                    },
+                    {
+                        "id": "2",
+                        "name": "油揚げ 40g",
+                        "utensil_interactions_list": [],
+                        "final_position": ""
+                    },
+                    {
+                        "id": "3",
+                        "name": "【A】 だし カップ1+1/2",
+                        "utensil_interactions_list": [],
+                        "final_position": ""
+                    },
+                    {
+                        "id": "4",
+                        "name": "【A】 うす口しょうゆ 大さじ1",
+                        "utensil_interactions_list": [],
+                        "final_position": ""
+                    },
+                    {
+                        "id": "5",
+                        "name": "すだち（薄い輪切り） 適量",
+                        "utensil_interactions_list": [],
+                        "final_position": ""
+                    },
+                    {
+                        "id": "6",
+                        "name": "七味とうがらし 適宜",
+                        "utensil_interactions_list": [],
+                        "final_position": ""
+                    }
+                ]
+            },
+            {
+                "step_after": 1,
+                "state_list": [
+                    {
+                        "id": "8176f8fc",
+                        "name": "ヘタをくりぬいたトマト",
+                        "utensil_interactions_list": [
+                            {
+                                "source_state_id": "1",
+                                "vessel": [
+                                    "まな板"
+                                ],
+                                "tools": [
+                                    "包丁"
+                                ]
+                            }
+                        ],
+                        "final_position": "まな板"
+                    },
+                    {
+                        "id": "5fefbf50",
+                        "name": "短冊形にした油揚げ",
+                        "utensil_interactions_list": [
+                            {
+                                "source_state_id": "2",
+                                "vessel": [
+                                    "まな板"
+                                ],
+                                "tools": [
+                                    "包丁"
+                                ]
+                            }
+                        ],
+                        "final_position": "まな板"
+                    }
+                ]
+            },
+            {
+                "step_after": 2,
+                "state_list": [
+                    {
+                        "id": "7a8e4648",
+                        "name": "皮をむいたトマト",
+                        "utensil_interactions_list": [
+                            {
+                                "source_state_id": "8176f8fc",
+                                "vessel": [
+                                    "鍋（蓋付き）",
+                                    "盛り付け皿・器"
+                                ],
+                                "tools": [
+                                    "網目の粗い網杓子"
+                                ]
+                            },
+                            {
+                                "source_state_id": "3",
+                                "vessel": [
+                                    "鍋（蓋付き）"
+                                ],
+                                "tools": []
+                            },
+                            {
+                                "source_state_id": "4",
+                                "vessel": [
+                                    "鍋（蓋付き）"
+                                ],
+                                "tools": []
+                            }
+                        ],
+                        "final_position": "鍋（蓋付き）"
+                    }
+                ]
+            },
+            {
+                "step_after": 3,
+                "state_list": [
+                    {
+                        "id": "fbcc05be",
+                        "name": "油揚げとトマトを冷やしたもの",
+                        "utensil_interactions_list": [
+                            {
+                                "source_state_id": "5fefbf50",
+                                "vessel": [
+                                    "鍋（蓋付き）",
+                                    "盛り付け皿・器"
+                                ],
+                                "tools": []
+                            },
+                            {
+                                "source_state_id": "7a8e4648",
+                                "vessel": [
+                                    "盛り付け皿・器"
+                                ],
+                                "tools": []
+                            }
+                        ],
+                        "final_position": "盛り付け皿・器"
+                    }
+                ]
+            },
+            {
+                "step_after": 4,
+                "state_list": [
+                    {
+                        "id": "d70d5d65",
+                        "name": "例題1：トマトの冷やしおでん風",
+                        "utensil_interactions_list": [
+                            {
+                                "source_state_id": "5",
+                                "vessel": [
+                                    "盛り付け皿・器"
+                                ],
+                                "tools": []
+                            },
+                            {
+                                "source_state_id": "6",
+                                "vessel": [
+                                    "盛り付け皿・器"
+                                ],
+                                "tools": []
+                            },
+                            {
+                                "source_state_id": "fbcc05be",
+                                "vessel": [
+                                    "盛り付け皿・器"
+                                ],
+                                "tools": []
+                            }
+                        ],
+                        "final_position": "盛り付け皿・器"
+                    }
+                ]
+            }
+        ],
+        "annotation_note": "step2のトマトで使用する「耐熱の保存容器」について、使用器具（vessels）で「盛り付け皿・器」を選択すればよいか、自由記述にした方がよいか迷いました。\n\nstep２でトマトをすくうのに「網目の粗い網杓子」が必要だと思ったので選択しました。\n"
+    },
+    {
+        "title": "例題2：ジャンボプリン",
+        "world_state_list": [
+            {
+                "step_after": 0,
+                "state_list": [
+                    {
+                        "id": "1",
+                        "name": "【カラメルソース】 グラニュー糖 80g",
+                        "utensil_interactions_list": [],
+                        "final_position": ""
+                    },
+                    {
+                        "id": "2",
+                        "name": "【カラメルソース】 水 小さじ1",
+                        "utensil_interactions_list": [],
+                        "final_position": ""
+                    },
+                    {
+                        "id": "3",
+                        "name": "卵 3コ",
+                        "utensil_interactions_list": [],
+                        "final_position": ""
+                    },
+                    {
+                        "id": "4",
+                        "name": "卵黄 3コ分",
+                        "utensil_interactions_list": [],
+                        "final_position": ""
+                    },
+                    {
+                        "id": "5",
+                        "name": "グラニュー糖 120g",
+                        "utensil_interactions_list": [],
+                        "final_position": ""
+                    },
+                    {
+                        "id": "6",
+                        "name": "牛乳 カップ4",
+                        "utensil_interactions_list": [],
+                        "final_position": ""
+                    },
+                    {
+                        "id": "7",
+                        "name": "生クリーム カップ1/2",
+                        "utensil_interactions_list": [],
+                        "final_position": ""
+                    }
+                ]
+            },
+            {
+                "step_after": 1,
+                "state_list": [
+                    {
+                        "id": "dddbfc55",
+                        "name": "カラメルソース",
+                        "utensil_interactions_list": [
+                            {
+                                "source_state_id": "1",
+                                "vessel": [
+                                    "鍋（蓋付き）",
+                                    "流し型"
+                                ],
+                                "tools": [
+                                    "耐熱ゴムべら"
+                                ]
+                            },
+                            {
+                                "source_state_id": "2",
+                                "vessel": [
+                                    "鍋（蓋付き）",
+                                    "流し型"
+                                ],
+                                "tools": [
+                                    "耐熱ゴムべら"
+                                ]
+                            }
+                        ],
+                        "final_position": "流し型"
+                    }
+                ]
+            },
+            {
+                "step_after": 2,
+                "state_list": [
+                    {
+                        "id": "0d00fc0a",
+                        "name": "卵・卵黄・グラニュー糖を混ぜたもの",
+                        "utensil_interactions_list": [
+                            {
+                                "source_state_id": "3",
+                                "vessel": [
+                                    "ボウル"
+                                ],
+                                "tools": [
+                                    "泡だて器"
+                                ]
+                            },
+                            {
+                                "source_state_id": "4",
+                                "vessel": [
+                                    "ボウル"
+                                ],
+                                "tools": [
+                                    "泡だて器"
+                                ]
+                            },
+                            {
+                                "source_state_id": "5",
+                                "vessel": [
+                                    "ボウル"
+                                ],
+                                "tools": [
+                                    "泡だて器"
+                                ]
+                            }
+                        ],
+                        "final_position": "ボウル"
+                    }
+                ]
+            },
+            {
+                "step_after": 3,
+                "state_list": [
+                    {
+                        "id": "ffe61e63",
+                        "name": "牛乳と生クリームを沸騰させたもの",
+                        "utensil_interactions_list": [
+                            {
+                                "source_state_id": "6",
+                                "vessel": [
+                                    "鍋（蓋付き）-2"
+                                ],
+                                "tools": [
+                                    "耐熱ゴムべら"
+                                ]
+                            },
+                            {
+                                "source_state_id": "7",
+                                "vessel": [
+                                    "鍋（蓋付き）-2"
+                                ],
+                                "tools": [
+                                    "耐熱ゴムべら"
+                                ]
+                            }
+                        ],
+                        "final_position": "鍋（蓋付き）-2"
+                    }
+                ]
+            },
+            {
+                "step_after": 4,
+                "state_list": [
+                    {
+                        "id": "c695c9cf",
+                        "name": "２と３を混ぜたもの",
+                        "utensil_interactions_list": [
+                            {
+                                "source_state_id": "0d00fc0a",
+                                "vessel": [
+                                    "ボウル"
+                                ],
+                                "tools": [
+                                    "泡だて器",
+                                    "耐熱ゴムべら"
+                                ]
+                            },
+                            {
+                                "source_state_id": "ffe61e63",
+                                "vessel": [
+                                    "ボウル"
+                                ],
+                                "tools": [
+                                    "泡だて器",
+                                    "耐熱ゴムべら"
+                                ]
+                            }
+                        ],
+                        "final_position": "ボウル"
+                    }
+                ]
+            },
+            {
+                "step_after": 5,
+                "state_list": [
+                    {
+                        "id": "7bebfdbc",
+                        "name": "湯煎焼きにしたプリン",
+                        "utensil_interactions_list": [
+                            {
+                                "source_state_id": "dddbfc55",
+                                "vessel": [
+                                    "流し型",
+                                    "None_天板"
+                                ],
+                                "tools": []
+                            },
+                            {
+                                "source_state_id": "c695c9cf",
+                                "vessel": [
+                                    "流し型",
+                                    "None_天板"
+                                ],
+                                "tools": [
+                                    "スプーン",
+                                    "裏漉し器（受け皿なし）"
+                                ]
+                            }
+                        ],
+                        "final_position": "None_天板"
+                    }
+                ]
+            },
+            {
+                "step_after": 6,
+                "state_list": [
+                    {
+                        "id": "88683186",
+                        "name": "例題2：ジャンボプリン",
+                        "utensil_interactions_list": [
+                            {
+                                "source_state_id": "7bebfdbc",
+                                "vessel": [
+                                    "盛り付け皿・器",
+                                    "流し型"
+                                ],
+                                "tools": [
+                                    "製菓用パレットナイフ",
+                                    "スプーン"
+                                ]
+                            }
+                        ],
+                        "final_position": "流し型"
+                    }
+                ]
+            }
+        ],
+        "annotation_note": "step6の使用容器（vessels）で、自動入力された「一覧外（自由記入）天板」を削除したうえで「盛り付け皿・器」を選ぼうとすると、また「一覧外（自由記入）天板」が表示されてしまいます。（バグ？）そのまますべてを選択した上で、最後に「一覧外（自由記入）天板」を削除することはできました。\n\n調理手順の最後に\n「盛り付け皿・器」を最終容器として記入\nと書いてありますが、使用容器として選択するということでいいですか？"
+    },
+    {
+        "title": "本格チキンビリヤニ",
+        "world_state_list": [
+            {
+                "step_after": 0,
+                "state_list": [
+                    {
+                        "id": "1",
+                        "name": "米 360ml（2合）",
+                        "utensil_interactions_list": [],
+                        "final_position": ""
+                    },
+                    {
+                        "id": "2",
+                        "name": "鶏もも肉 200g",
+                        "utensil_interactions_list": [],
+                        "final_position": ""
+                    },
+                    {
+                        "id": "3",
+                        "name": "たまねぎ（粗みじん切り） 1/2コ分（100g）",
+                        "utensil_interactions_list": [],
+                        "final_position": ""
+                    },
+                    {
+                        "id": "4",
+                        "name": "トマト（粗みじん切り） 1/2コ分（100g）",
+                        "utensil_interactions_list": [],
+                        "final_position": ""
+                    },
+                    {
+                        "id": "5",
+                        "name": "にんにく（すりおろす） 1かけ分",
+                        "utensil_interactions_list": [],
+                        "final_position": ""
+                    },
+                    {
+                        "id": "6",
+                        "name": "しょうが（すりおろす） 1かけ分",
+                        "utensil_interactions_list": [],
+                        "final_position": ""
+                    },
+                    {
+                        "id": "7",
+                        "name": "プレーンヨーグルト（無糖） 大さじ2",
+                        "utensil_interactions_list": [],
+                        "final_position": ""
+                    },
+                    {
+                        "id": "8",
+                        "name": "カレー粉 大さじ1+1/2",
+                        "utensil_interactions_list": [],
+                        "final_position": ""
+                    },
+                    {
+                        "id": "9",
+                        "name": "サフラン 1つまみ",
+                        "utensil_interactions_list": [],
+                        "final_position": ""
+                    },
+                    {
+                        "id": "10",
+                        "name": "好みのスパイス（クミンシード、ローリエ、カルダモン、シナモンスティック、黒こしょう） 適宜",
+                        "utensil_interactions_list": [],
+                        "final_position": ""
+                    },
+                    {
+                        "id": "11",
+                        "name": "パクチー（根） 適宜",
+                        "utensil_interactions_list": [],
+                        "final_position": ""
+                    },
+                    {
+                        "id": "12",
+                        "name": "トマトのライタ（＊全体備考参照） 適宜",
+                        "utensil_interactions_list": [],
+                        "final_position": ""
+                    },
+                    {
+                        "id": "13",
+                        "name": "大根のアチャール風（＊全体備考参照） 適宜",
+                        "utensil_interactions_list": [],
+                        "final_position": ""
+                    },
+                    {
+                        "id": "14",
+                        "name": "塩 ",
+                        "utensil_interactions_list": [],
+                        "final_position": ""
+                    },
+                    {
+                        "id": "15",
+                        "name": "サラダ油 ",
+                        "utensil_interactions_list": [],
+                        "final_position": ""
+                    },
+                    {
+                        "id": "16",
+                        "name": "バター ",
+                        "utensil_interactions_list": [],
+                        "final_position": ""
+                    }
+                ]
+            },
+            {
+                "step_after": 1,
+                "state_list": [
+                    {
+                        "id": "af84840b",
+                        "name": "ざるにあげた米",
+                        "utensil_interactions_list": [
+                            {
+                                "source_state_id": "1",
+                                "vessel": [
+                                    "鍋（蓋付き）",
+                                    "ざる"
+                                ],
+                                "tools": [
+                                    "木製へら"
+                                ]
+                            }
+                        ],
+                        "final_position": "ざる"
+                    },
+                    {
+                        "id": "8bf029b7",
+                        "name": "下味をつけた鶏肉",
+                        "utensil_interactions_list": [
+                            {
+                                "source_state_id": "2",
+                                "vessel": [
+                                    "まな板",
+                                    "ボウル"
+                                ],
+                                "tools": [
+                                    "包丁",
+                                    "スプーン"
+                                ]
+                            },
+                            {
+                                "source_state_id": "7",
+                                "vessel": [
+                                    "ボウル"
+                                ],
+                                "tools": [
+                                    "スプーン"
+                                ]
+                            },
+                            {
+                                "source_state_id": "8",
+                                "vessel": [
+                                    "ボウル"
+                                ],
+                                "tools": [
+                                    "スプーン"
+                                ]
+                            },
+                            {
+                                "source_state_id": "14",
+                                "vessel": [
+                                    "ボウル"
+                                ],
+                                "tools": [
+                                    "計量スプーン",
+                                    "スプーン"
+                                ]
+                            }
+                        ],
+                        "final_position": "ボウル"
+                    },
+                    {
+                        "id": "09d68b7e",
+                        "name": "塩水",
+                        "utensil_interactions_list": [
+                            {
+                                "source_state_id": "14",
+                                "vessel": [
+                                    "ボウル-2"
+                                ],
+                                "tools": [
+                                    "計量スプーン"
+                                ]
+                            }
+                        ],
+                        "final_position": "ボウル-2"
+                    },
+                    {
+                        "id": "328b11c8",
+                        "name": "サフラン水",
+                        "utensil_interactions_list": [
+                            {
+                                "source_state_id": "9",
+                                "vessel": [
+                                    "ボウル-3"
+                                ],
+                                "tools": []
+                            }
+                        ],
+                        "final_position": "ボウル-3"
+                    }
+                ]
+            },
+            {
+                "step_after": 2,
+                "state_list": [
+                    {
+                        "id": "7c405e19",
+                        "name": "カレーベース",
+                        "utensil_interactions_list": [
+                            {
+                                "source_state_id": "15",
+                                "vessel": [
+                                    "フライパン（蓋付き）"
+                                ],
+                                "tools": [
+                                    "木製へら",
+                                    "計量スプーン"
+                                ]
+                            },
+                            {
+                                "source_state_id": "10",
+                                "vessel": [
+                                    "フライパン（蓋付き）"
+                                ],
+                                "tools": [
+                                    "木製へら"
+                                ]
+                            },
+                            {
+                                "source_state_id": "3",
+                                "vessel": [
+                                    "フライパン（蓋付き）"
+                                ],
+                                "tools": [
+                                    "木製へら"
+                                ]
+                            },
+                            {
+                                "source_state_id": "4",
+                                "vessel": [
+                                    "フライパン（蓋付き）"
+                                ],
+                                "tools": [
+                                    "木製へら"
+                                ]
+                            },
+                            {
+                                "source_state_id": "5",
+                                "vessel": [
+                                    "フライパン（蓋付き）"
+                                ],
+                                "tools": [
+                                    "木製へら"
+                                ]
+                            },
+                            {
+                                "source_state_id": "6",
+                                "vessel": [
+                                    "フライパン（蓋付き）"
+                                ],
+                                "tools": [
+                                    "木製へら"
+                                ]
+                            }
+                        ],
+                        "final_position": "フライパン（蓋付き）"
+                    }
+                ]
+            },
+            {
+                "step_after": 3,
+                "state_list": [
+                    {
+                        "id": "388b520c",
+                        "name": "カレーベースに鶏肉・塩水・カレー粉を煮たもの",
+                        "utensil_interactions_list": [
+                            {
+                                "source_state_id": "8bf029b7",
+                                "vessel": [
+                                    "フライパン（蓋付き）"
+                                ],
+                                "tools": []
+                            },
+                            {
+                                "source_state_id": "09d68b7e",
+                                "vessel": [
+                                    "フライパン（蓋付き）"
+                                ],
+                                "tools": []
+                            },
+                            {
+                                "source_state_id": "8",
+                                "vessel": [
+                                    "フライパン（蓋付き）"
+                                ],
+                                "tools": []
+                            },
+                            {
+                                "source_state_id": "7c405e19",
+                                "vessel": [
+                                    "フライパン（蓋付き）"
+                                ],
+                                "tools": []
+                            }
+                        ],
+                        "final_position": "フライパン（蓋付き）"
+                    }
+                ]
+            },
+            {
+                "step_after": 4,
+                "state_list": [
+                    {
+                        "id": "5f388ad8",
+                        "name": "本格チキンビリヤニ",
+                        "utensil_interactions_list": [
+                            {
+                                "source_state_id": "16",
+                                "vessel": [
+                                    "鍋（蓋付き）-2",
+                                    "盛り付け皿・器"
+                                ],
+                                "tools": [
+                                    "木製へら"
+                                ]
+                            },
+                            {
+                                "source_state_id": "af84840b",
+                                "vessel": [
+                                    "鍋（蓋付き）-2",
+                                    "盛り付け皿・器"
+                                ],
+                                "tools": [
+                                    "木製へら"
+                                ]
+                            },
+                            {
+                                "source_state_id": "388b520c",
+                                "vessel": [
+                                    "鍋（蓋付き）-2",
+                                    "盛り付け皿・器"
+                                ],
+                                "tools": [
+                                    "木製へら"
+                                ]
+                            },
+                            {
+                                "source_state_id": "328b11c8",
+                                "vessel": [
+                                    "鍋（蓋付き）-2",
+                                    "盛り付け皿・器"
+                                ],
+                                "tools": [
+                                    "木製へら"
+                                ]
+                            },
+                            {
+                                "source_state_id": "11",
+                                "vessel": [
+                                    "鍋（蓋付き）-2",
+                                    "盛り付け皿・器"
+                                ],
+                                "tools": [
+                                    "木製へら"
+                                ]
+                            },
+                            {
+                                "source_state_id": "12",
+                                "vessel": [
+                                    "盛り付け皿・器"
+                                ],
+                                "tools": [
+                                    "スプーン"
+                                ]
+                            },
+                            {
+                                "source_state_id": "13",
+                                "vessel": [
+                                    "盛り付け皿・器"
+                                ],
+                                "tools": [
+                                    "スプーン"
+                                ]
+                            },
+                            {
+                                "source_state_id": "",
+                                "vessel": [],
+                                "tools": []
+                            }
+                        ],
+                        "final_position": ""
+                    }
+                ]
+            }
+        ],
+        "annotation_note": "step3の使用容器を選ぶ際、もともと自動入力されている「ボウル」を消して「フライパン２」を選んでも、また「ボウル」が出てきてしまう。（一旦両方選択して、あとから「ボウル」を消すという作業が必要）他でも同様のバグがあります。\n\nstep3レシピの記述に「フライパンに」と書いてあるが新しいフライパンで作るものだと勘違いしてしまいました。（その後、step4で辻褄が合わなくなり気付きました）「2のフライパンに」と変更したほうがよいのとstep4の記述もカレーベースではなく「３のカレーベース」としたほうがよいです。\n\n\n• トマトのライタ（＊全体備考参照） 適宜\n• 大根のアチャール風（＊全体備考参照） 適宜\nの「全体備考」がどこに記載してあるか分かりませんでした。"
+    },
+    {
+        "title": "フランス風豚バラ大根",
+        "world_state_list": [
+            {
+                "step_after": 0,
+                "state_list": [
+                    {
+                        "id": "1",
+                        "name": "豚バラ肉（塊） 600g",
+                        "utensil_interactions_list": [],
+                        "final_position": ""
+                    },
+                    {
+                        "id": "2",
+                        "name": "大根 1/2本（500g）",
+                        "utensil_interactions_list": [],
+                        "final_position": ""
+                    },
+                    {
+                        "id": "3",
+                        "name": "白ワイン カップ1/2",
+                        "utensil_interactions_list": [],
+                        "final_position": ""
+                    },
+                    {
+                        "id": "4",
+                        "name": "固形スープのもと（洋風） 1コ",
+                        "utensil_interactions_list": [],
+                        "final_position": ""
+                    },
+                    {
+                        "id": "5",
+                        "name": "タイム 適宜",
+                        "utensil_interactions_list": [],
+                        "final_position": ""
+                    },
+                    {
+                        "id": "6",
+                        "name": "ローリエ 適宜",
+                        "utensil_interactions_list": [],
+                        "final_position": ""
+                    },
+                    {
+                        "id": "7",
+                        "name": "塩 ",
+                        "utensil_interactions_list": [],
+                        "final_position": ""
+                    },
+                    {
+                        "id": "8",
+                        "name": "こしょう ",
+                        "utensil_interactions_list": [],
+                        "final_position": ""
+                    },
+                    {
+                        "id": "9",
+                        "name": "オリーブ油 ",
+                        "utensil_interactions_list": [],
+                        "final_position": ""
+                    }
+                ]
+            },
+            {
+                "step_after": 1,
+                "state_list": [
+                    {
+                        "id": "7089d3f3",
+                        "name": "いちょう切りにした大根",
+                        "utensil_interactions_list": [
+                            {
+                                "source_state_id": "2",
+                                "vessel": [
+                                    "まな板"
+                                ],
+                                "tools": [
+                                    "包丁"
+                                ]
+                            }
+                        ],
+                        "final_position": "まな板"
+                    },
+                    {
+                        "id": "15475132",
+                        "name": "切って下味をつけた豚肉",
+                        "utensil_interactions_list": [
+                            {
+                                "source_state_id": "1",
+                                "vessel": [
+                                    "まな板"
+                                ],
+                                "tools": [
+                                    "包丁"
+                                ]
+                            },
+                            {
+                                "source_state_id": "7",
+                                "vessel": [
+                                    "まな板"
+                                ],
+                                "tools": [
+                                    "計量スプーン"
+                                ]
+                            },
+                            {
+                                "source_state_id": "8",
+                                "vessel": [
+                                    "まな板"
+                                ],
+                                "tools": []
+                            }
+                        ],
+                        "final_position": "まな板"
+                    }
+                ]
+            },
+            {
+                "step_after": 2,
+                "state_list": [
+                    {
+                        "id": "6c1a4a7c",
+                        "name": "豚肉を焼いたもの",
+                        "utensil_interactions_list": [
+                            {
+                                "source_state_id": "15475132",
+                                "vessel": [
+                                    "フライパン（蓋付き）"
+                                ],
+                                "tools": [
+                                    "フライ返し"
+                                ]
+                            },
+                            {
+                                "source_state_id": "9",
+                                "vessel": [
+                                    "フライパン（蓋付き）"
+                                ],
+                                "tools": [
+                                    "計量スプーン",
+                                    "フライ返し"
+                                ]
+                            }
+                        ],
+                        "final_position": "フライパン（蓋付き）"
+                    }
+                ]
+            },
+            {
+                "step_after": 3,
+                "state_list": [
+                    {
+                        "id": "269be53b",
+                        "name": "焼いた豚肉と大根",
+                        "utensil_interactions_list": [
+                            {
+                                "source_state_id": "6c1a4a7c",
+                                "vessel": [
+                                    "フライパン（蓋付き）"
+                                ],
+                                "tools": [
+                                    "菜箸",
+                                    "クッキングペーパー"
+                                ]
+                            },
+                            {
+                                "source_state_id": "7089d3f3",
+                                "vessel": [
+                                    "フライパン（蓋付き）"
+                                ],
+                                "tools": [
+                                    "菜箸"
+                                ]
+                            },
+                            {
+                                "source_state_id": "3",
+                                "vessel": [
+                                    "フライパン（蓋付き）"
+                                ],
+                                "tools": [
+                                    "菜箸"
+                                ]
+                            }
+                        ],
+                        "final_position": "フライパン（蓋付き）"
+                    }
+                ]
+            },
+            {
+                "step_after": 4,
+                "state_list": [
+                    {
+                        "id": "f7e5d482",
+                        "name": "スープで煮込んだ豚肉と大根",
+                        "utensil_interactions_list": [
+                            {
+                                "source_state_id": "269be53b",
+                                "vessel": [
+                                    "フライパン（蓋付き）"
+                                ],
+                                "tools": [
+                                    "網目の細かい網杓子"
+                                ]
+                            },
+                            {
+                                "source_state_id": "4",
+                                "vessel": [
+                                    "フライパン（蓋付き）"
+                                ],
+                                "tools": []
+                            },
+                            {
+                                "source_state_id": "5",
+                                "vessel": [
+                                    "フライパン（蓋付き）"
+                                ],
+                                "tools": []
+                            },
+                            {
+                                "source_state_id": "6",
+                                "vessel": [
+                                    "フライパン（蓋付き）"
+                                ],
+                                "tools": []
+                            }
+                        ],
+                        "final_position": "フライパン（蓋付き）"
+                    }
+                ]
+            },
+            {
+                "step_after": 5,
+                "state_list": [
+                    {
+                        "id": "03a5c96c",
+                        "name": "フランス風豚バラ大根",
+                        "utensil_interactions_list": [
+                            {
+                                "source_state_id": "f7e5d482",
+                                "vessel": [
+                                    "フライパン（蓋付き）",
+                                    "盛り付け皿・器"
+                                ],
+                                "tools": [
+                                    "おたま"
+                                ]
+                            }
+                        ],
+                        "final_position": "盛り付け皿・器"
+                    }
+                ]
+            }
+        ],
+        "annotation_note": ""
+    },
+    {
+        "title": "白菜と手羽先のピリ辛煮",
+        "world_state_list": [
+            {
+                "step_after": 0,
+                "state_list": [
+                    {
+                        "id": "1",
+                        "name": "白菜（小） 1/4コ（600g）",
+                        "utensil_interactions_list": [],
+                        "final_position": ""
+                    },
+                    {
+                        "id": "2",
+                        "name": "鶏手羽先 6本（360g）",
+                        "utensil_interactions_list": [],
+                        "final_position": ""
+                    },
+                    {
+                        "id": "3",
+                        "name": "にんにく 1かけ",
+                        "utensil_interactions_list": [],
+                        "final_position": ""
+                    },
+                    {
+                        "id": "4",
+                        "name": "赤とうがらし 1本",
+                        "utensil_interactions_list": [],
+                        "final_position": ""
+                    },
+                    {
+                        "id": "5",
+                        "name": "【A】 砂糖 大さじ1",
+                        "utensil_interactions_list": [],
+                        "final_position": ""
+                    },
+                    {
+                        "id": "6",
+                        "name": "【A】 しょうゆ 大さじ3",
+                        "utensil_interactions_list": [],
+                        "final_position": ""
+                    },
+                    {
+                        "id": "7",
+                        "name": "油 ",
+                        "utensil_interactions_list": [],
+                        "final_position": ""
+                    },
+                    {
+                        "id": "8",
+                        "name": "酒 ",
+                        "utensil_interactions_list": [],
+                        "final_position": ""
+                    }
+                ]
+            },
+            {
+                "step_after": 1,
+                "state_list": [
+                    {
+                        "id": "260a3b78",
+                        "name": "白菜の芯",
+                        "utensil_interactions_list": [
+                            {
+                                "source_state_id": "1",
+                                "vessel": [
+                                    "まな板"
+                                ],
+                                "tools": [
+                                    "包丁"
+                                ]
+                            }
+                        ],
+                        "final_position": "まな板"
+                    },
+                    {
+                        "id": "1e751372",
+                        "name": "半分に切ったにんにく",
+                        "utensil_interactions_list": [
+                            {
+                                "source_state_id": "3",
+                                "vessel": [
+                                    "まな板"
+                                ],
+                                "tools": [
+                                    "包丁"
+                                ]
+                            }
+                        ],
+                        "final_position": "まな板"
+                    },
+                    {
+                        "id": "9a78aca0",
+                        "name": "先端を切った手羽先",
+                        "utensil_interactions_list": [
+                            {
+                                "source_state_id": "2",
+                                "vessel": [
+                                    "まな板"
+                                ],
+                                "tools": [
+                                    "包丁"
+                                ]
+                            }
+                        ],
+                        "final_position": "まな板"
+                    },
+                    {
+                        "id": "5855bcba",
+                        "name": "白菜の根元",
+                        "utensil_interactions_list": [
+                            {
+                                "source_state_id": "1",
+                                "vessel": [
+                                    "まな板"
+                                ],
+                                "tools": [
+                                    "包丁"
+                                ]
+                            }
+                        ],
+                        "final_position": "まな板"
+                    }
+                ]
+            },
+            {
+                "step_after": 2,
+                "state_list": [
+                    {
+                        "id": "2f8ac0bb",
+                        "name": "白菜の根元を焼いたもの",
+                        "utensil_interactions_list": [
+                            {
+                                "source_state_id": "5855bcba",
+                                "vessel": [
+                                    "フライパン（蓋付き）",
+                                    "盛り付け皿・器"
+                                ],
+                                "tools": [
+                                    "菜箸"
+                                ]
+                            },
+                            {
+                                "source_state_id": "7",
+                                "vessel": [
+                                    "フライパン（蓋付き）",
+                                    "盛り付け皿・器"
+                                ],
+                                "tools": [
+                                    "菜箸"
+                                ]
+                            }
+                        ],
+                        "final_position": "盛り付け皿・器"
+                    },
+                    {
+                        "id": "c1b4d6c7",
+                        "name": "手羽先を焼いたもの",
+                        "utensil_interactions_list": [
+                            {
+                                "source_state_id": "9a78aca0",
+                                "vessel": [
+                                    "フライパン（蓋付き）"
+                                ],
+                                "tools": [
+                                    "菜箸"
+                                ]
+                            }
+                        ],
+                        "final_position": "フライパン（蓋付き）"
+                    }
+                ]
+            },
+            {
+                "step_after": 3,
+                "state_list": [
+                    {
+                        "id": "3dedfed1",
+                        "name": "白菜と手羽先のピリ辛煮",
+                        "utensil_interactions_list": [
+                            {
+                                "source_state_id": "c1b4d6c7",
+                                "vessel": [
+                                    "フライパン（蓋付き）",
+                                    "盛り付け皿・器"
+                                ],
+                                "tools": []
+                            },
+                            {
+                                "source_state_id": "1e751372",
+                                "vessel": [
+                                    "フライパン（蓋付き）",
+                                    "盛り付け皿・器"
+                                ],
+                                "tools": []
+                            },
+                            {
+                                "source_state_id": "4",
+                                "vessel": [
+                                    "フライパン（蓋付き）",
+                                    "盛り付け皿・器"
+                                ],
+                                "tools": []
+                            },
+                            {
+                                "source_state_id": "260a3b78",
+                                "vessel": [
+                                    "フライパン（蓋付き）",
+                                    "盛り付け皿・器"
+                                ],
+                                "tools": []
+                            },
+                            {
+                                "source_state_id": "8",
+                                "vessel": [
+                                    "フライパン（蓋付き）",
+                                    "盛り付け皿・器"
+                                ],
+                                "tools": [
+                                    "計量スプーン"
+                                ]
+                            },
+                            {
+                                "source_state_id": "5",
+                                "vessel": [
+                                    "フライパン（蓋付き）",
+                                    "盛り付け皿・器"
+                                ],
+                                "tools": [
+                                    "計量スプーン"
+                                ]
+                            },
+                            {
+                                "source_state_id": "6",
+                                "vessel": [
+                                    "フライパン（蓋付き）",
+                                    "盛り付け皿・器"
+                                ],
+                                "tools": [
+                                    "計量スプーン"
+                                ]
+                            },
+                            {
+                                "source_state_id": "2f8ac0bb",
+                                "vessel": [
+                                    "盛り付け皿・器",
+                                    "フライパン（蓋付き）"
+                                ],
+                                "tools": [
+                                    "計量スプーン"
+                                ]
+                            }
+                        ],
+                        "final_position": "フライパン（蓋付き）"
+                    }
+                ]
+            }
+        ],
+        "annotation_note": "step2の手羽先は、おそらく白菜を焼いたフライパンと同じものを使って焼くという意味だと思うので、フライパンは白菜と同一ものを選択しました。レシピは同一のフライパンをつかう事がわかるような記述にしたほうが分かりやすいと思いました。"
+    },
+    {
+        "title": "アスパラの豚肉巻き",
+        "world_state_list": [
+            {
+                "step_after": 0,
+                "state_list": [
+                    {
+                        "id": "1",
+                        "name": "グリーンアスパラガス（細めのもの） 6本（120g）",
+                        "utensil_interactions_list": [],
+                        "final_position": ""
+                    },
+                    {
+                        "id": "2",
+                        "name": "豚バラ肉（薄切り） 12枚（200g）",
+                        "utensil_interactions_list": [],
+                        "final_position": ""
+                    },
+                    {
+                        "id": "3",
+                        "name": "レモン（薄切り） 2枚",
+                        "utensil_interactions_list": [],
+                        "final_position": ""
+                    },
+                    {
+                        "id": "4",
+                        "name": "塩 ",
+                        "utensil_interactions_list": [],
+                        "final_position": ""
+                    },
+                    {
+                        "id": "5",
+                        "name": "こしょう ",
+                        "utensil_interactions_list": [],
+                        "final_position": ""
+                    },
+                    {
+                        "id": "6",
+                        "name": "油 ",
+                        "utensil_interactions_list": [],
+                        "final_position": ""
+                    },
+                    {
+                        "id": "7",
+                        "name": "酒 ",
+                        "utensil_interactions_list": [],
+                        "final_position": ""
+                    }
+                ]
+            },
+            {
+                "step_after": 1,
+                "state_list": [
+                    {
+                        "id": "fbb50ec5",
+                        "name": "下処理をしたアスパラガス",
+                        "utensil_interactions_list": [
+                            {
+                                "source_state_id": "1",
+                                "vessel": [
+                                    "まな板"
+                                ],
+                                "tools": [
+                                    "包丁"
+                                ]
+                            }
+                        ],
+                        "final_position": "まな板"
+                    }
+                ]
+            },
+            {
+                "step_after": 2,
+                "state_list": [
+                    {
+                        "id": "b2c07903",
+                        "name": "アスパラガスに豚肉を巻いたもの",
+                        "utensil_interactions_list": [
+                            {
+                                "source_state_id": "fbb50ec5",
+                                "vessel": [
+                                    "バット"
+                                ],
+                                "tools": []
+                            },
+                            {
+                                "source_state_id": "2",
+                                "vessel": [
+                                    "バット"
+                                ],
+                                "tools": []
+                            },
+                            {
+                                "source_state_id": "4",
+                                "vessel": [
+                                    "バット"
+                                ],
+                                "tools": [
+                                    "計量スプーン"
+                                ]
+                            },
+                            {
+                                "source_state_id": "5",
+                                "vessel": [
+                                    "バット"
+                                ],
+                                "tools": []
+                            }
+                        ],
+                        "final_position": "バット"
+                    }
+                ]
+            },
+            {
+                "step_after": 3,
+                "state_list": [
+                    {
+                        "id": "74bccdd2",
+                        "name": "アスパラの豚肉巻き",
+                        "utensil_interactions_list": [
+                            {
+                                "source_state_id": "b2c07903",
+                                "vessel": [
+                                    "フライパン（蓋付き）",
+                                    "盛り付け皿・器"
+                                ],
+                                "tools": [
+                                    "菜箸"
+                                ]
+                            },
+                            {
+                                "source_state_id": "6",
+                                "vessel": [
+                                    "フライパン（蓋付き）",
+                                    "盛り付け皿・器"
+                                ],
+                                "tools": [
+                                    "菜箸",
+                                    "クッキングペーパー",
+                                    "計量スプーン"
+                                ]
+                            },
+                            {
+                                "source_state_id": "7",
+                                "vessel": [
+                                    "フライパン（蓋付き）",
+                                    "盛り付け皿・器"
+                                ],
+                                "tools": [
+                                    "菜箸",
+                                    "計量スプーン"
+                                ]
+                            },
+                            {
+                                "source_state_id": "3",
+                                "vessel": [
+                                    "盛り付け皿・器"
+                                ],
+                                "tools": []
+                            }
+                        ],
+                        "final_position": "盛り付け皿・器"
+                    }
+                ]
+            }
+        ],
+        "annotation_note": ""
+    },
+    {
+        "title": "ナポリタン",
+        "world_state_list": [
+            {
+                "step_after": 0,
+                "state_list": [
+                    {
+                        "id": "1",
+                        "name": "スパゲッティ 160g",
+                        "utensil_interactions_list": [],
+                        "final_position": ""
+                    },
+                    {
+                        "id": "2",
+                        "name": "ハム 4枚（70g）",
+                        "utensil_interactions_list": [],
+                        "final_position": ""
+                    },
+                    {
+                        "id": "3",
+                        "name": "たまねぎ 1/4コ（50g）",
+                        "utensil_interactions_list": [],
+                        "final_position": ""
+                    },
+                    {
+                        "id": "4",
+                        "name": "ピーマン 2コ（60g）",
+                        "utensil_interactions_list": [],
+                        "final_position": ""
+                    },
+                    {
+                        "id": "5",
+                        "name": "マッシュルーム 4コ（50g）",
+                        "utensil_interactions_list": [],
+                        "final_position": ""
+                    },
+                    {
+                        "id": "6",
+                        "name": "【A】 トマトケチャップ 大さじ5",
+                        "utensil_interactions_list": [],
+                        "final_position": ""
+                    },
+                    {
+                        "id": "7",
+                        "name": "【A】 ウスターソース 小さじ2",
+                        "utensil_interactions_list": [],
+                        "final_position": ""
+                    },
+                    {
+                        "id": "8",
+                        "name": "粉チーズ 適宜",
+                        "utensil_interactions_list": [],
+                        "final_position": ""
+                    },
+                    {
+                        "id": "9",
+                        "name": "塩 ",
+                        "utensil_interactions_list": [],
+                        "final_position": ""
+                    },
+                    {
+                        "id": "10",
+                        "name": "油 ",
+                        "utensil_interactions_list": [],
+                        "final_position": ""
+                    },
+                    {
+                        "id": "11",
+                        "name": "こしょう ",
+                        "utensil_interactions_list": [],
+                        "final_position": ""
+                    },
+                    {
+                        "id": "12",
+                        "name": "バター ",
+                        "utensil_interactions_list": [],
+                        "final_position": ""
+                    }
+                ]
+            },
+            {
+                "step_after": 1,
+                "state_list": [
+                    {
+                        "id": "4215623a",
+                        "name": "",
+                        "utensil_interactions_list": [
+                            {
+                                "source_state_id": "",
+                                "vessel": [],
+                                "tools": []
+                            }
+                        ],
+                        "final_position": ""
+                    }
+                ]
+            },
+            {
+                "step_after": 2,
+                "state_list": []
+            },
+            {
+                "step_after": 3,
+                "state_list": []
+            },
+            {
+                "step_after": 4,
+                "state_list": []
+            }
+        ],
+        "annotation_note": ""
+    },
+    {
+        "title": "簡単ティラミス",
+        "world_state_list": [
+            {
+                "step_after": 0,
+                "state_list": [
+                    {
+                        "id": "1",
+                        "name": "【クリーム】 クリームチーズ 200g",
+                        "utensil_interactions_list": [],
+                        "final_position": ""
+                    },
+                    {
+                        "id": "2",
+                        "name": "【クリーム】 グラニュー糖 50g",
+                        "utensil_interactions_list": [],
+                        "final_position": ""
+                    },
+                    {
+                        "id": "3",
+                        "name": "【クリーム】 生クリーム カップ1/2",
+                        "utensil_interactions_list": [],
+                        "final_position": ""
+                    },
+                    {
+                        "id": "4",
+                        "name": "【コーヒー】 インスタントコーヒー 小さじ2",
+                        "utensil_interactions_list": [],
+                        "final_position": ""
+                    },
+                    {
+                        "id": "5",
+                        "name": "【コーヒー】 湯 カップ1/4",
+                        "utensil_interactions_list": [],
+                        "final_position": ""
+                    },
+                    {
+                        "id": "6",
+                        "name": "ビスケット（市販） 16枚",
+                        "utensil_interactions_list": [],
+                        "final_position": ""
+                    },
+                    {
+                        "id": "7",
+                        "name": "ココアパウダー 適量",
+                        "utensil_interactions_list": [],
+                        "final_position": ""
+                    }
+                ]
+            },
+            {
+                "step_after": 1,
+                "state_list": []
+            },
+            {
+                "step_after": 2,
+                "state_list": []
+            },
+            {
+                "step_after": 3,
+                "state_list": []
+            }
+        ]
+    },
+    {
+        "title": "ワザあり豚カツ",
+        "world_state_list": [
+            {
+                "step_after": 0,
+                "state_list": [
+                    {
+                        "id": "1",
+                        "name": "豚ロース肉（豚カツ用） 2枚（250～300g）",
+                        "utensil_interactions_list": [],
+                        "final_position": ""
+                    },
+                    {
+                        "id": "2",
+                        "name": "キャベツ 1/4コ（300g）",
+                        "utensil_interactions_list": [],
+                        "final_position": ""
+                    },
+                    {
+                        "id": "3",
+                        "name": "【A】 小麦粉 大さじ1",
+                        "utensil_interactions_list": [],
+                        "final_position": ""
+                    },
+                    {
+                        "id": "4",
+                        "name": "【A】 塩 小さじ1/4",
+                        "utensil_interactions_list": [],
+                        "final_position": ""
+                    },
+                    {
+                        "id": "5",
+                        "name": "【A】 こしょう 少々",
+                        "utensil_interactions_list": [],
+                        "final_position": ""
+                    },
+                    {
+                        "id": "6",
+                        "name": "パン粉 カップ2/3",
+                        "utensil_interactions_list": [],
+                        "final_position": ""
+                    },
+                    {
+                        "id": "7",
+                        "name": "卵 1コ",
+                        "utensil_interactions_list": [],
+                        "final_position": ""
+                    },
+                    {
+                        "id": "8",
+                        "name": "【B】 豚カツソース 適量",
+                        "utensil_interactions_list": [],
+                        "final_position": ""
+                    },
+                    {
+                        "id": "9",
+                        "name": "【B】 練りがらし 適量",
+                        "utensil_interactions_list": [],
+                        "final_position": ""
+                    },
+                    {
+                        "id": "10",
+                        "name": "【B】 塩 適量",
+                        "utensil_interactions_list": [],
+                        "final_position": ""
+                    },
+                    {
+                        "id": "11",
+                        "name": "揚げ油 ",
+                        "utensil_interactions_list": [],
+                        "final_position": ""
+                    }
+                ]
+            },
+            {
+                "step_after": 1,
+                "state_list": []
+            },
+            {
+                "step_after": 2,
+                "state_list": []
+            },
+            {
+                "step_after": 3,
+                "state_list": []
+            },
+            {
+                "step_after": 4,
+                "state_list": []
+            },
+            {
+                "step_after": 5,
+                "state_list": []
+            }
+        ]
+    },
+    {
+        "title": "春の豚たまあえ",
+        "world_state_list": [
+            {
+                "step_after": 0,
+                "state_list": [
+                    {
+                        "id": "1",
+                        "name": "新たまねぎ 1/2コ",
+                        "utensil_interactions_list": [],
+                        "final_position": ""
+                    },
+                    {
+                        "id": "2",
+                        "name": "スナップえんどう 6本",
+                        "utensil_interactions_list": [],
+                        "final_position": ""
+                    },
+                    {
+                        "id": "3",
+                        "name": "豚肩ロース肉（しゃぶしゃぶ用） 250g",
+                        "utensil_interactions_list": [],
+                        "final_position": ""
+                    },
+                    {
+                        "id": "4",
+                        "name": "【A】 すりごま（白） 大さじ2",
+                        "utensil_interactions_list": [],
+                        "final_position": ""
+                    },
+                    {
+                        "id": "5",
+                        "name": "【A】 みそ 大さじ2",
+                        "utensil_interactions_list": [],
+                        "final_position": ""
+                    },
+                    {
+                        "id": "6",
+                        "name": "【A】 砂糖 大さじ1",
+                        "utensil_interactions_list": [],
+                        "final_position": ""
+                    },
+                    {
+                        "id": "7",
+                        "name": "ポン酢しょうゆ 大さじ4",
+                        "utensil_interactions_list": [],
+                        "final_position": ""
+                    },
+                    {
+                        "id": "8",
+                        "name": "塩 ",
+                        "utensil_interactions_list": [],
+                        "final_position": ""
+                    },
+                    {
+                        "id": "9",
+                        "name": "オリーブ油 ",
+                        "utensil_interactions_list": [],
+                        "final_position": ""
+                    }
+                ]
+            },
+            {
+                "step_after": 1,
+                "state_list": []
+            },
+            {
+                "step_after": 2,
+                "state_list": []
+            },
+            {
+                "step_after": 3,
+                "state_list": []
+            },
+            {
+                "step_after": 4,
+                "state_list": []
+            }
+        ]
+    },
+    {
+        "title": "牛肉の赤ワイン煮込み",
+        "world_state_list": [
+            {
+                "step_after": 0,
+                "state_list": [
+                    {
+                        "id": "1",
+                        "name": "牛肉（シチュー用） 500g",
+                        "utensil_interactions_list": [],
+                        "final_position": ""
+                    },
+                    {
+                        "id": "2",
+                        "name": "たまねぎ（小） 1コ（125g）",
+                        "utensil_interactions_list": [],
+                        "final_position": ""
+                    },
+                    {
+                        "id": "3",
+                        "name": "セロリ 1/2本（60g）",
+                        "utensil_interactions_list": [],
+                        "final_position": ""
+                    },
+                    {
+                        "id": "4",
+                        "name": "にんじん（小） 1本（100g）",
+                        "utensil_interactions_list": [],
+                        "final_position": ""
+                    },
+                    {
+                        "id": "5",
+                        "name": "にんにく 2～3かけ（10g）",
+                        "utensil_interactions_list": [],
+                        "final_position": ""
+                    },
+                    {
+                        "id": "6",
+                        "name": "【A】 水 カップ2",
+                        "utensil_interactions_list": [],
+                        "final_position": ""
+                    },
+                    {
+                        "id": "7",
+                        "name": "【A】 赤ワイン カップ1",
+                        "utensil_interactions_list": [],
+                        "final_position": ""
+                    },
+                    {
+                        "id": "8",
+                        "name": "【A】 トマトピュレ 75ml",
+                        "utensil_interactions_list": [],
+                        "final_position": ""
+                    },
+                    {
+                        "id": "9",
+                        "name": "【A】 ローリエ 1枚",
+                        "utensil_interactions_list": [],
+                        "final_position": ""
+                    },
+                    {
+                        "id": "10",
+                        "name": "【A】 タイム 適宜",
+                        "utensil_interactions_list": [],
+                        "final_position": ""
+                    },
+                    {
+                        "id": "11",
+                        "name": "【A】 白こしょう（粒） 約小さじ1（2g）",
+                        "utensil_interactions_list": [],
+                        "final_position": ""
+                    },
+                    {
+                        "id": "12",
+                        "name": "パセリの葉（みじん切り） 適量",
+                        "utensil_interactions_list": [],
+                        "final_position": ""
+                    },
+                    {
+                        "id": "13",
+                        "name": "塩 ",
+                        "utensil_interactions_list": [],
+                        "final_position": ""
+                    },
+                    {
+                        "id": "14",
+                        "name": "こしょう ",
+                        "utensil_interactions_list": [],
+                        "final_position": ""
+                    }
+                ]
+            },
+            {
+                "step_after": 1,
+                "state_list": []
+            },
+            {
+                "step_after": 2,
+                "state_list": []
+            },
+            {
+                "step_after": 3,
+                "state_list": []
+            },
+            {
+                "step_after": 4,
+                "state_list": []
+            }
+        ]
+    },
+    {
+        "title": "春キャベツと春にんじんのスープ",
+        "world_state_list": [
+            {
+                "step_after": 0,
+                "state_list": [
+                    {
+                        "id": "1",
+                        "name": "春キャベツ 200g",
+                        "utensil_interactions_list": [],
+                        "final_position": ""
+                    },
+                    {
+                        "id": "2",
+                        "name": "春にんじん 1/3本（50g）",
+                        "utensil_interactions_list": [],
+                        "final_position": ""
+                    },
+                    {
+                        "id": "3",
+                        "name": "ベーコン（薄切り） 2枚（30g）",
+                        "utensil_interactions_list": [],
+                        "final_position": ""
+                    },
+                    {
+                        "id": "4",
+                        "name": "顆粒（かりゅう）チキンスープのもと（洋風） 小さじ1",
+                        "utensil_interactions_list": [],
+                        "final_position": ""
+                    },
+                    {
+                        "id": "5",
+                        "name": "ローリエ 1枚",
+                        "utensil_interactions_list": [],
+                        "final_position": ""
+                    },
+                    {
+                        "id": "6",
+                        "name": "オリーブ油 ",
+                        "utensil_interactions_list": [],
+                        "final_position": ""
+                    },
+                    {
+                        "id": "7",
+                        "name": "塩 ",
+                        "utensil_interactions_list": [],
+                        "final_position": ""
+                    },
+                    {
+                        "id": "8",
+                        "name": "こしょう ",
+                        "utensil_interactions_list": [],
+                        "final_position": ""
+                    }
+                ]
+            },
+            {
+                "step_after": 1,
+                "state_list": []
+            },
+            {
+                "step_after": 2,
+                "state_list": []
+            },
+            {
+                "step_after": 3,
+                "state_list": []
+            }
+        ]
+    }
+]
