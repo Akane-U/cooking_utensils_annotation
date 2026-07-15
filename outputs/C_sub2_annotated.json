@@ -883,21 +883,79 @@
                 "state_list": [
                     {
                         "id": "7089d3f3",
-                        "name": "",
+                        "name": "いちょう切りにした大根",
                         "utensil_interactions_list": [
                             {
-                                "source_state_id": "",
-                                "vessel": [],
+                                "source_state_id": "2",
+                                "vessel": [
+                                    "まな板"
+                                ],
+                                "tools": [
+                                    "包丁"
+                                ]
+                            }
+                        ],
+                        "final_position": "まな板"
+                    },
+                    {
+                        "id": "15475132",
+                        "name": "切って下味をつけた豚肉",
+                        "utensil_interactions_list": [
+                            {
+                                "source_state_id": "1",
+                                "vessel": [
+                                    "まな板"
+                                ],
+                                "tools": [
+                                    "包丁"
+                                ]
+                            },
+                            {
+                                "source_state_id": "7",
+                                "vessel": [
+                                    "まな板"
+                                ],
+                                "tools": [
+                                    "計量スプーン"
+                                ]
+                            },
+                            {
+                                "source_state_id": "8",
+                                "vessel": [
+                                    "まな板"
+                                ],
                                 "tools": []
                             }
                         ],
-                        "final_position": ""
+                        "final_position": "まな板"
                     }
                 ]
             },
             {
                 "step_after": 2,
-                "state_list": []
+                "state_list": [
+                    {
+                        "id": "6c1a4a7c",
+                        "name": "豚肉を焼いたもの",
+                        "utensil_interactions_list": [
+                            {
+                                "source_state_id": "15475132",
+                                "vessel": [
+                                    "フライパン（蓋付き）"
+                                ],
+                                "tools": []
+                            },
+                            {
+                                "source_state_id": "9",
+                                "vessel": [],
+                                "tools": [
+                                    "計量スプーン"
+                                ]
+                            }
+                        ],
+                        "final_position": ""
+                    }
+                ]
             },
             {
                 "step_after": 3,
