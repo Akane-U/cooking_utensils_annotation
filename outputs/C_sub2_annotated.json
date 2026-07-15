@@ -1467,7 +1467,8 @@
                                 ],
                                 "tools": [
                                     "菜箸",
-                                    "クッキングペーパー"
+                                    "クッキングペーパー",
+                                    "計量スプーン"
                                 ]
                             },
                             {
@@ -1477,7 +1478,8 @@
                                     "盛り付け皿・器"
                                 ],
                                 "tools": [
-                                    "菜箸"
+                                    "菜箸",
+                                    "計量スプーン"
                                 ]
                             },
                             {
@@ -1577,7 +1579,20 @@
             },
             {
                 "step_after": 1,
-                "state_list": []
+                "state_list": [
+                    {
+                        "id": "4215623a",
+                        "name": "",
+                        "utensil_interactions_list": [
+                            {
+                                "source_state_id": "",
+                                "vessel": [],
+                                "tools": []
+                            }
+                        ],
+                        "final_position": ""
+                    }
+                ]
             },
             {
                 "step_after": 2,
@@ -1591,7 +1606,8 @@
                 "step_after": 4,
                 "state_list": []
             }
-        ]
+        ],
+        "annotation_note": ""
     },
     {
         "title": "簡単ティラミス",
