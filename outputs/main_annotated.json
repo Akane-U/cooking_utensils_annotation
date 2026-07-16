@@ -2052,17 +2052,135 @@
             },
             {
                 "step_after": 1,
-                "state_list": []
+                "state_list": [
+                    {
+                        "id": "f45a1061",
+                        "name": "切って水けを取ったきゅうり",
+                        "utensil_interactions_list": [
+                            {
+                                "source_state_id": "2",
+                                "vessel": [
+                                    "まな板"
+                                ],
+                                "tools": [
+                                    "包丁",
+                                    "ピーラー",
+                                    "クッキングペーパー"
+                                ]
+                            },
+                            {
+                                "source_state_id": "5",
+                                "vessel": [
+                                    "まな板"
+                                ],
+                                "tools": [
+                                    "クッキングペーパー"
+                                ]
+                            }
+                        ],
+                        "final_position": "まな板"
+                    },
+                    {
+                        "id": "5a95e996",
+                        "name": "切ったトマト",
+                        "utensil_interactions_list": [
+                            {
+                                "source_state_id": "3",
+                                "vessel": [
+                                    "まな板"
+                                ],
+                                "tools": [
+                                    "包丁"
+                                ]
+                            }
+                        ],
+                        "final_position": "まな板"
+                    }
+                ]
             },
             {
                 "step_after": 2,
-                "state_list": []
+                "state_list": [
+                    {
+                        "id": "7c981034",
+                        "name": "きゅうり・トマト・ハムを挟んだ食パン",
+                        "utensil_interactions_list": [
+                            {
+                                "source_state_id": "1",
+                                "vessel": [
+                                    "盛り付け皿・器"
+                                ],
+                                "tools": [
+                                    "道具不使用"
+                                ]
+                            },
+                            {
+                                "source_state_id": "6",
+                                "vessel": [
+                                    "盛り付け皿・器"
+                                ],
+                                "tools": [
+                                    "None_バターナイフ"
+                                ]
+                            },
+                            {
+                                "source_state_id": "f45a1061",
+                                "vessel": [
+                                    "まな板",
+                                    "盛り付け皿・器"
+                                ],
+                                "tools": [
+                                    "包丁"
+                                ]
+                            },
+                            {
+                                "source_state_id": "5a95e996",
+                                "vessel": [
+                                    "まな板",
+                                    "盛り付け皿・器"
+                                ],
+                                "tools": [
+                                    "道具不使用"
+                                ]
+                            },
+                            {
+                                "source_state_id": "4",
+                                "vessel": [
+                                    "盛り付け皿・器"
+                                ],
+                                "tools": [
+                                    "道具不使用"
+                                ]
+                            }
+                        ],
+                        "final_position": "盛り付け皿・器"
+                    }
+                ]
             },
             {
                 "step_after": 3,
-                "state_list": []
+                "state_list": [
+                    {
+                        "id": "302ef143",
+                        "name": "きゅうり・ハム・トマトサンド",
+                        "utensil_interactions_list": [
+                            {
+                                "source_state_id": "7c981034",
+                                "vessel": [
+                                    "盛り付け皿・器"
+                                ],
+                                "tools": [
+                                    "ラップフィルム",
+                                    "包丁"
+                                ]
+                            }
+                        ],
+                        "final_position": "盛り付け皿・器"
+                    }
+                ]
             }
-        ]
+        ],
+        "annotation_note": ""
     },
     {
         "title": "昔ながらの堅めプリン",
