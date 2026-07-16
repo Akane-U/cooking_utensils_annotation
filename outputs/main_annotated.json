@@ -2386,22 +2386,61 @@
                         "name": "蒸し焼きにしたプリン",
                         "utensil_interactions_list": [
                             {
-                                "source_state_id": "",
-                                "vessel": [],
-                                "tools": []
+                                "source_state_id": "9973ed24",
+                                "vessel": [
+                                    "流し型"
+                                ],
+                                "tools": [
+                                    "道具不使用"
+                                ]
                             }
                         ],
-                        "final_position": ""
+                        "final_position": "流し型"
                     }
                 ]
             },
             {
                 "step_after": 6,
-                "state_list": []
+                "state_list": [
+                    {
+                        "id": "18ae532d",
+                        "name": "冷やしたプリン",
+                        "utensil_interactions_list": [
+                            {
+                                "source_state_id": "6e15b5d0",
+                                "vessel": [
+                                    "流し型"
+                                ],
+                                "tools": [
+                                    "道具不使用"
+                                ]
+                            }
+                        ],
+                        "final_position": "流し型"
+                    }
+                ]
             },
             {
                 "step_after": 7,
-                "state_list": []
+                "state_list": [
+                    {
+                        "id": "5912111d",
+                        "name": "昔ながらの堅めプリン",
+                        "utensil_interactions_list": [
+                            {
+                                "source_state_id": "18ae532d",
+                                "vessel": [
+                                    "流し型",
+                                    "盛り付け皿・器"
+                                ],
+                                "tools": [
+                                    "スプーン"
+                                ]
+                            }
+                        ],
+                        "final_position": "盛り付け皿・器"
+                    }
+                ]
             }
         ],
         "annotation_note": ""
