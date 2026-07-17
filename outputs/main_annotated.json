@@ -5649,7 +5649,7 @@
                 "state_list": [
                     {
                         "id": "431feecc",
-                        "name": "薄力粉と強力粉を混ぜたもの",
+                        "name": "薄力粉・強力粉を混ぜたもの",
                         "utensil_interactions_list": [
                             {
                                 "source_state_id": "1",
@@ -5679,10 +5679,144 @@
                 "state_list": [
                     {
                         "id": "4fb5938b",
-                        "name": "",
+                        "name": "1・水を混ぜた生地",
                         "utensil_interactions_list": [
                             {
-                                "source_state_id": "",
+                                "source_state_id": "431feecc",
+                                "vessel": [
+                                    "ボウル"
+                                ],
+                                "tools": [
+                                    "菜箸"
+                                ]
+                            }
+                        ],
+                        "final_position": "ボウル"
+                    }
+                ]
+            },
+            {
+                "step_after": 3,
+                "state_list": [
+                    {
+                        "id": "fe7eb804",
+                        "name": "水分をなじませた生地",
+                        "utensil_interactions_list": [
+                            {
+                                "source_state_id": "4fb5938b",
+                                "vessel": [
+                                    "ボウル"
+                                ],
+                                "tools": [
+                                    "道具不使用"
+                                ]
+                            }
+                        ],
+                        "final_position": "ボウル"
+                    }
+                ]
+            },
+            {
+                "step_after": 4,
+                "state_list": [
+                    {
+                        "id": "1226a903",
+                        "name": "こねた生地",
+                        "utensil_interactions_list": [
+                            {
+                                "source_state_id": "fe7eb804",
+                                "vessel": [
+                                    "ボウル"
+                                ],
+                                "tools": [
+                                    "道具不使用"
+                                ]
+                            }
+                        ],
+                        "final_position": "ボウル"
+                    }
+                ]
+            },
+            {
+                "step_after": 5,
+                "state_list": [
+                    {
+                        "id": "e5b0eba8",
+                        "name": "ねかせた生地",
+                        "utensil_interactions_list": [
+                            {
+                                "source_state_id": "1226a903",
+                                "vessel": [
+                                    "ボウル"
+                                ],
+                                "tools": [
+                                    "None_ぬれ布巾"
+                                ]
+                            }
+                        ],
+                        "final_position": "ボウル"
+                    }
+                ]
+            },
+            {
+                "step_after": 6,
+                "state_list": [
+                    {
+                        "id": "00358ba6",
+                        "name": "切ったそら豆",
+                        "utensil_interactions_list": [
+                            {
+                                "source_state_id": "5",
+                                "vessel": [
+                                    "まな板"
+                                ],
+                                "tools": [
+                                    "包丁"
+                                ]
+                            }
+                        ],
+                        "final_position": "まな板"
+                    }
+                ]
+            },
+            {
+                "step_after": 7,
+                "state_list": [
+                    {
+                        "id": "4ac3caa8",
+                        "name": "ひき肉・黒こしょう・酒・しょうゆ・粗塩・ごま油を混ぜたもの",
+                        "utensil_interactions_list": [
+                            {
+                                "source_state_id": "4",
+                                "vessel": [
+                                    "ボウル-2"
+                                ],
+                                "tools": [
+                                    "スプーン"
+                                ]
+                            },
+                            {
+                                "source_state_id": "11",
+                                "vessel": [],
+                                "tools": []
+                            },
+                            {
+                                "source_state_id": "12",
+                                "vessel": [],
+                                "tools": []
+                            },
+                            {
+                                "source_state_id": "13",
+                                "vessel": [],
+                                "tools": []
+                            },
+                            {
+                                "source_state_id": "8",
+                                "vessel": [],
+                                "tools": []
+                            },
+                            {
+                                "source_state_id": "14",
                                 "vessel": [],
                                 "tools": []
                             }
@@ -5690,26 +5824,6 @@
                         "final_position": ""
                     }
                 ]
-            },
-            {
-                "step_after": 3,
-                "state_list": []
-            },
-            {
-                "step_after": 4,
-                "state_list": []
-            },
-            {
-                "step_after": 5,
-                "state_list": []
-            },
-            {
-                "step_after": 6,
-                "state_list": []
-            },
-            {
-                "step_after": 7,
-                "state_list": []
             },
             {
                 "step_after": 8,
@@ -5764,7 +5878,7 @@
                 "state_list": []
             }
         ],
-        "annotation_note": ""
+        "annotation_note": "全体：手順が長くて使えるか怪しい"
     },
     {
         "title": "ふんわり鶏むね肉のたまねぎソース",
