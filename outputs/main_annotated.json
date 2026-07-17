@@ -4251,17 +4251,131 @@
             },
             {
                 "step_after": 1,
-                "state_list": []
+                "state_list": [
+                    {
+                        "id": "1a44a614",
+                        "name": "肉ダネ",
+                        "utensil_interactions_list": [
+                            {
+                                "source_state_id": "2",
+                                "vessel": [
+                                    "ボウル"
+                                ],
+                                "tools": [
+                                    "道具不使用"
+                                ]
+                            },
+                            {
+                                "source_state_id": "3",
+                                "vessel": [
+                                    "ボウル"
+                                ],
+                                "tools": [
+                                    "道具不使用"
+                                ]
+                            },
+                            {
+                                "source_state_id": "4",
+                                "vessel": [
+                                    "ボウル"
+                                ],
+                                "tools": [
+                                    "道具不使用"
+                                ]
+                            },
+                            {
+                                "source_state_id": "5",
+                                "vessel": [
+                                    "ボウル"
+                                ],
+                                "tools": [
+                                    "道具不使用"
+                                ]
+                            }
+                        ],
+                        "final_position": "ボウル"
+                    }
+                ]
             },
             {
                 "step_after": 2,
-                "state_list": []
+                "state_list": [
+                    {
+                        "id": "21c2c495",
+                        "name": "れんこんで肉ダネをはさんだもの",
+                        "utensil_interactions_list": [
+                            {
+                                "source_state_id": "1",
+                                "vessel": [
+                                    "まな板"
+                                ],
+                                "tools": [
+                                    "ピーラー",
+                                    "包丁",
+                                    "クッキングペーパー"
+                                ]
+                            },
+                            {
+                                "source_state_id": "6",
+                                "vessel": [
+                                    "まな板"
+                                ],
+                                "tools": [
+                                    "道具不使用"
+                                ]
+                            },
+                            {
+                                "source_state_id": "1a44a614",
+                                "vessel": [
+                                    "ボウル",
+                                    "まな板"
+                                ],
+                                "tools": [
+                                    "道具不使用"
+                                ]
+                            }
+                        ],
+                        "final_position": "まな板"
+                    }
+                ]
             },
             {
                 "step_after": 3,
-                "state_list": []
+                "state_list": [
+                    {
+                        "id": "31592cf7",
+                        "name": "れんこんのひき肉はさみ焼き",
+                        "utensil_interactions_list": [
+                            {
+                                "source_state_id": "7",
+                                "vessel": [
+                                    "フライパン（蓋付き）",
+                                    "盛り付け皿・器"
+                                ],
+                                "tools": [
+                                    "フライ返し",
+                                    "菜箸"
+                                ]
+                            },
+                            {
+                                "source_state_id": "21c2c495",
+                                "vessel": [
+                                    "まな板",
+                                    "フライパン（蓋付き）",
+                                    "盛り付け皿・器"
+                                ],
+                                "tools": [
+                                    "フライ返し",
+                                    "菜箸"
+                                ]
+                            }
+                        ],
+                        "final_position": "盛り付け皿・器"
+                    }
+                ]
             }
-        ]
+        ],
+        "annotation_note": ""
     },
     {
         "title": "みそチャーシュー",
@@ -4339,25 +4453,253 @@
             },
             {
                 "step_after": 1,
-                "state_list": []
+                "state_list": [
+                    {
+                        "id": "e44ef02c",
+                        "name": "常温に戻した豚肉",
+                        "utensil_interactions_list": [
+                            {
+                                "source_state_id": "1",
+                                "vessel": [
+                                    "バット"
+                                ],
+                                "tools": [
+                                    "道具不使用"
+                                ]
+                            }
+                        ],
+                        "final_position": "バット"
+                    },
+                    {
+                        "id": "fc417e59",
+                        "name": "切ったねぎ",
+                        "utensil_interactions_list": [
+                            {
+                                "source_state_id": "2",
+                                "vessel": [
+                                    "まな板",
+                                    "ボウル",
+                                    "ざる"
+                                ],
+                                "tools": [
+                                    "包丁",
+                                    "クッキングペーパー"
+                                ]
+                            }
+                        ],
+                        "final_position": "ざる"
+                    },
+                    {
+                        "id": "adc8311a",
+                        "name": "混ぜた[A]",
+                        "utensil_interactions_list": [
+                            {
+                                "source_state_id": "4",
+                                "vessel": [
+                                    "ボウル-2"
+                                ],
+                                "tools": [
+                                    "スプーン"
+                                ]
+                            },
+                            {
+                                "source_state_id": "5",
+                                "vessel": [
+                                    "ボウル-2"
+                                ],
+                                "tools": [
+                                    "スプーン"
+                                ]
+                            },
+                            {
+                                "source_state_id": "6",
+                                "vessel": [
+                                    "ボウル-2"
+                                ],
+                                "tools": [
+                                    "スプーン"
+                                ]
+                            },
+                            {
+                                "source_state_id": "7",
+                                "vessel": [
+                                    "ボウル-2"
+                                ],
+                                "tools": [
+                                    "スプーン"
+                                ]
+                            },
+                            {
+                                "source_state_id": "8",
+                                "vessel": [
+                                    "ボウル-2"
+                                ],
+                                "tools": [
+                                    "スプーン"
+                                ]
+                            }
+                        ],
+                        "final_position": "ボウル-2"
+                    }
+                ]
             },
             {
                 "step_after": 2,
-                "state_list": []
+                "state_list": [
+                    {
+                        "id": "9d54e779",
+                        "name": "油とアクを落とした豚肉",
+                        "utensil_interactions_list": [
+                            {
+                                "source_state_id": "10",
+                                "vessel": [
+                                    "フライパン（蓋付き）"
+                                ],
+                                "tools": [
+                                    "フライ返し",
+                                    "菜箸"
+                                ]
+                            },
+                            {
+                                "source_state_id": "e44ef02c",
+                                "vessel": [
+                                    "バット",
+                                    "フライパン（蓋付き）",
+                                    "ボウル-3",
+                                    "None_バット-2"
+                                ],
+                                "tools": [
+                                    "フライ返し",
+                                    "菜箸",
+                                    "クッキングペーパー"
+                                ]
+                            }
+                        ],
+                        "final_position": "None_バット-2"
+                    }
+                ]
             },
             {
                 "step_after": 3,
-                "state_list": []
+                "state_list": [
+                    {
+                        "id": "b36c9ea9",
+                        "name": "豚肉・ねぎの青い部分を蒸し焼きにしたもの",
+                        "utensil_interactions_list": [
+                            {
+                                "source_state_id": "9d54e779",
+                                "vessel": [
+                                    "None_バット-2",
+                                    "フライパン（蓋付き）"
+                                ],
+                                "tools": [
+                                    "菜箸",
+                                    "落とし蓋",
+                                    "串"
+                                ]
+                            },
+                            {
+                                "source_state_id": "3",
+                                "vessel": [
+                                    "フライパン（蓋付き）"
+                                ],
+                                "tools": [
+                                    "落とし蓋"
+                                ]
+                            },
+                            {
+                                "source_state_id": "11",
+                                "vessel": [
+                                    "フライパン（蓋付き）"
+                                ],
+                                "tools": [
+                                    "落とし蓋"
+                                ]
+                            }
+                        ],
+                        "final_position": "フライパン（蓋付き）"
+                    }
+                ]
             },
             {
                 "step_after": 4,
-                "state_list": []
+                "state_list": [
+                    {
+                        "id": "178afe68",
+                        "name": "3からねぎの青い部分を取り除き、[A]を加えて粗熱を取ったもの",
+                        "utensil_interactions_list": [
+                            {
+                                "source_state_id": "b36c9ea9",
+                                "vessel": [
+                                    "フライパン（蓋付き）",
+                                    "None_バット-3"
+                                ],
+                                "tools": [
+                                    "フライ返し",
+                                    "アルミホイル"
+                                ]
+                            },
+                            {
+                                "source_state_id": "adc8311a",
+                                "vessel": [
+                                    "ボウル-2",
+                                    "フライパン（蓋付き）"
+                                ],
+                                "tools": [
+                                    "スプーン",
+                                    "フライ返し"
+                                ]
+                            }
+                        ],
+                        "final_position": "フライパン（蓋付き）"
+                    }
+                ]
             },
             {
                 "step_after": 5,
-                "state_list": []
+                "state_list": [
+                    {
+                        "id": "e8b09d40",
+                        "name": "みそチャーシュー",
+                        "utensil_interactions_list": [
+                            {
+                                "source_state_id": "178afe68",
+                                "vessel": [
+                                    "None_バット-3",
+                                    "盛り付け皿・器"
+                                ],
+                                "tools": [
+                                    "包丁",
+                                    "菜箸"
+                                ]
+                            },
+                            {
+                                "source_state_id": "fc417e59",
+                                "vessel": [
+                                    "ざる",
+                                    "盛り付け皿・器"
+                                ],
+                                "tools": [
+                                    "道具不使用"
+                                ]
+                            },
+                            {
+                                "source_state_id": "9",
+                                "vessel": [
+                                    "ざる",
+                                    "盛り付け皿・器"
+                                ],
+                                "tools": [
+                                    "道具不使用"
+                                ]
+                            }
+                        ],
+                        "final_position": "盛り付け皿・器"
+                    }
+                ]
             }
-        ]
+        ],
+        "annotation_note": "step1, 4:ねぎの青い部分は加工するのか\nstep5: 煮汁を記入できていない"
     },
     {
         "title": "キャベツと豚肉の蒸し煮",
