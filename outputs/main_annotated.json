@@ -5368,17 +5368,189 @@
             },
             {
                 "step_after": 1,
-                "state_list": []
+                "state_list": [
+                    {
+                        "id": "4ac72ffd",
+                        "name": "切った鶏肉",
+                        "utensil_interactions_list": [
+                            {
+                                "source_state_id": "1",
+                                "vessel": [
+                                    "生肉・生魚用まな板"
+                                ],
+                                "tools": [
+                                    "包丁"
+                                ]
+                            },
+                            {
+                                "source_state_id": "6",
+                                "vessel": [
+                                    "生肉・生魚用まな板"
+                                ],
+                                "tools": [
+                                    "道具不使用"
+                                ]
+                            },
+                            {
+                                "source_state_id": "7",
+                                "vessel": [
+                                    "生肉・生魚用まな板"
+                                ],
+                                "tools": [
+                                    "道具不使用"
+                                ]
+                            }
+                        ],
+                        "final_position": "生肉・生魚用まな板"
+                    },
+                    {
+                        "id": "2a2dd779",
+                        "name": "切ったたまねぎ",
+                        "utensil_interactions_list": [
+                            {
+                                "source_state_id": "2",
+                                "vessel": [
+                                    "まな板"
+                                ],
+                                "tools": [
+                                    "包丁"
+                                ]
+                            }
+                        ],
+                        "final_position": "まな板"
+                    },
+                    {
+                        "id": "2b9a4fc0",
+                        "name": "切ったアスパラガス",
+                        "utensil_interactions_list": [
+                            {
+                                "source_state_id": "3",
+                                "vessel": [
+                                    "まな板"
+                                ],
+                                "tools": [
+                                    "包丁"
+                                ]
+                            }
+                        ],
+                        "final_position": "まな板"
+                    }
+                ]
             },
             {
                 "step_after": 2,
-                "state_list": []
+                "state_list": [
+                    {
+                        "id": "c7e9c7cc",
+                        "name": "炒め合わせた1",
+                        "utensil_interactions_list": [
+                            {
+                                "source_state_id": "8",
+                                "vessel": [
+                                    "フライパン（蓋付き）"
+                                ],
+                                "tools": [
+                                    "菜箸"
+                                ]
+                            },
+                            {
+                                "source_state_id": "4ac72ffd",
+                                "vessel": [
+                                    "生肉・生魚用まな板",
+                                    "フライパン（蓋付き）"
+                                ],
+                                "tools": [
+                                    "菜箸"
+                                ]
+                            },
+                            {
+                                "source_state_id": "2a2dd779",
+                                "vessel": [
+                                    "まな板",
+                                    "フライパン（蓋付き）"
+                                ],
+                                "tools": [
+                                    "菜箸"
+                                ]
+                            },
+                            {
+                                "source_state_id": "2b9a4fc0",
+                                "vessel": [
+                                    "まな板",
+                                    "フライパン（蓋付き）"
+                                ],
+                                "tools": [
+                                    "菜箸"
+                                ]
+                            }
+                        ],
+                        "final_position": "フライパン（蓋付き）"
+                    }
+                ]
             },
             {
                 "step_after": 3,
-                "state_list": []
+                "state_list": [
+                    {
+                        "id": "a1d83357",
+                        "name": "鶏肉とアスパラのトマトスープ",
+                        "utensil_interactions_list": [
+                            {
+                                "source_state_id": "c7e9c7cc",
+                                "vessel": [
+                                    "フライパン（蓋付き）",
+                                    "盛り付け皿・器"
+                                ],
+                                "tools": [
+                                    "おたま"
+                                ]
+                            },
+                            {
+                                "source_state_id": "4",
+                                "vessel": [
+                                    "フライパン（蓋付き）",
+                                    "盛り付け皿・器"
+                                ],
+                                "tools": [
+                                    "おたま"
+                                ]
+                            },
+                            {
+                                "source_state_id": "6",
+                                "vessel": [
+                                    "フライパン（蓋付き）",
+                                    "盛り付け皿・器"
+                                ],
+                                "tools": [
+                                    "おたま"
+                                ]
+                            },
+                            {
+                                "source_state_id": "7",
+                                "vessel": [
+                                    "フライパン（蓋付き）",
+                                    "盛り付け皿・器"
+                                ],
+                                "tools": [
+                                    "おたま"
+                                ]
+                            },
+                            {
+                                "source_state_id": "5",
+                                "vessel": [
+                                    "盛り付け皿・器"
+                                ],
+                                "tools": [
+                                    "道具不使用"
+                                ]
+                            }
+                        ],
+                        "final_position": "盛り付け皿・器"
+                    }
+                ]
             }
-        ]
+        ],
+        "annotation_note": ""
     },
     {
         "title": "鶏とそら豆の水ギョーザ",
