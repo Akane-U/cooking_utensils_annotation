@@ -5689,6 +5689,15 @@
                                 "tools": [
                                     "菜箸"
                                 ]
+                            },
+                            {
+                                "source_state_id": "3",
+                                "vessel": [
+                                    "ボウル"
+                                ],
+                                "tools": [
+                                    "菜箸"
+                                ]
                             }
                         ],
                         "final_position": "ボウル"
@@ -5797,88 +5806,401 @@
                             },
                             {
                                 "source_state_id": "11",
-                                "vessel": [],
-                                "tools": []
+                                "vessel": [
+                                    "ボウル-2"
+                                ],
+                                "tools": [
+                                    "スプーン"
+                                ]
                             },
                             {
                                 "source_state_id": "12",
-                                "vessel": [],
-                                "tools": []
+                                "vessel": [
+                                    "ボウル-2"
+                                ],
+                                "tools": [
+                                    "スプーン"
+                                ]
                             },
                             {
                                 "source_state_id": "13",
-                                "vessel": [],
-                                "tools": []
+                                "vessel": [
+                                    "ボウル-2"
+                                ],
+                                "tools": [
+                                    "スプーン"
+                                ]
                             },
                             {
                                 "source_state_id": "8",
-                                "vessel": [],
-                                "tools": []
+                                "vessel": [
+                                    "ボウル-2"
+                                ],
+                                "tools": [
+                                    "スプーン"
+                                ]
                             },
                             {
                                 "source_state_id": "14",
-                                "vessel": [],
-                                "tools": []
+                                "vessel": [
+                                    "ボウル-2"
+                                ],
+                                "tools": [
+                                    "スプーン"
+                                ]
                             }
                         ],
-                        "final_position": ""
+                        "final_position": "ボウル-2"
                     }
                 ]
             },
             {
                 "step_after": 8,
-                "state_list": []
+                "state_list": [
+                    {
+                        "id": "0f479ff3",
+                        "name": "7・しょうが・ねぎを混ぜたあん",
+                        "utensil_interactions_list": [
+                            {
+                                "source_state_id": "4ac3caa8",
+                                "vessel": [
+                                    "ボウル-2",
+                                    "バット"
+                                ],
+                                "tools": [
+                                    "スプーン"
+                                ]
+                            },
+                            {
+                                "source_state_id": "6",
+                                "vessel": [
+                                    "ボウル-2",
+                                    "バット"
+                                ],
+                                "tools": [
+                                    "スプーン"
+                                ]
+                            },
+                            {
+                                "source_state_id": "7",
+                                "vessel": [
+                                    "ボウル-2",
+                                    "バット"
+                                ],
+                                "tools": [
+                                    "スプーン"
+                                ]
+                            },
+                            {
+                                "source_state_id": "00358ba6",
+                                "vessel": [
+                                    "まな板",
+                                    "ボウル-2",
+                                    "バット"
+                                ],
+                                "tools": [
+                                    "スプーン"
+                                ]
+                            }
+                        ],
+                        "final_position": "バット"
+                    }
+                ]
             },
             {
                 "step_after": 9,
-                "state_list": []
+                "state_list": [
+                    {
+                        "id": "ddfdef04",
+                        "name": "4等分に切った生地",
+                        "utensil_interactions_list": [
+                            {
+                                "source_state_id": "e5b0eba8",
+                                "vessel": [
+                                    "ボウル",
+                                    "None_台"
+                                ],
+                                "tools": [
+                                    "None_スケッパー"
+                                ]
+                            }
+                        ],
+                        "final_position": "None_台"
+                    }
+                ]
             },
             {
                 "step_after": 10,
-                "state_list": []
+                "state_list": [
+                    {
+                        "id": "f32abc98",
+                        "name": "棒状にした4つの生地",
+                        "utensil_interactions_list": [
+                            {
+                                "source_state_id": "ddfdef04",
+                                "vessel": [
+                                    "None_台"
+                                ],
+                                "tools": [
+                                    "道具不使用"
+                                ]
+                            }
+                        ],
+                        "final_position": "None_台"
+                    }
+                ]
             },
             {
                 "step_after": 11,
-                "state_list": []
+                "state_list": [
+                    {
+                        "id": "0a694c92",
+                        "name": "それぞれ10等分にした生地",
+                        "utensil_interactions_list": [
+                            {
+                                "source_state_id": "f32abc98",
+                                "vessel": [
+                                    "None_台"
+                                ],
+                                "tools": [
+                                    "包丁"
+                                ]
+                            }
+                        ],
+                        "final_position": "None_台"
+                    }
+                ]
             },
             {
                 "step_after": 12,
-                "state_list": []
+                "state_list": [
+                    {
+                        "id": "89d763bb",
+                        "name": "円形にした生地",
+                        "utensil_interactions_list": [
+                            {
+                                "source_state_id": "0a694c92",
+                                "vessel": [
+                                    "None_台"
+                                ],
+                                "tools": [
+                                    "道具不使用"
+                                ]
+                            },
+                            {
+                                "source_state_id": "9",
+                                "vessel": [
+                                    "None_台"
+                                ],
+                                "tools": [
+                                    "道具不使用"
+                                ]
+                            }
+                        ],
+                        "final_position": "None_台"
+                    }
+                ]
             },
             {
                 "step_after": 13,
-                "state_list": []
+                "state_list": [
+                    {
+                        "id": "81a08a33",
+                        "name": "伸ばした皮",
+                        "utensil_interactions_list": [
+                            {
+                                "source_state_id": "89d763bb",
+                                "vessel": [
+                                    "None_台"
+                                ],
+                                "tools": [
+                                    "None_麵棒"
+                                ]
+                            },
+                            {
+                                "source_state_id": "9",
+                                "vessel": [
+                                    "None_台"
+                                ],
+                                "tools": [
+                                    "None_麵棒"
+                                ]
+                            }
+                        ],
+                        "final_position": "None_台"
+                    }
+                ]
             },
             {
                 "step_after": 14,
-                "state_list": []
+                "state_list": [
+                    {
+                        "id": "e9de931b",
+                        "name": "皮に餡をのせたもの",
+                        "utensil_interactions_list": [
+                            {
+                                "source_state_id": "81a08a33",
+                                "vessel": [
+                                    "None_台"
+                                ],
+                                "tools": [
+                                    "道具不使用"
+                                ]
+                            },
+                            {
+                                "source_state_id": "0f479ff3",
+                                "vessel": [
+                                    "バット",
+                                    "None_台"
+                                ],
+                                "tools": [
+                                    "道具不使用"
+                                ]
+                            }
+                        ],
+                        "final_position": "None_台"
+                    }
+                ]
             },
             {
                 "step_after": 15,
-                "state_list": []
+                "state_list": [
+                    {
+                        "id": "a53ee0ee",
+                        "name": "14の皮を閉じたもの",
+                        "utensil_interactions_list": [
+                            {
+                                "source_state_id": "e9de931b",
+                                "vessel": [
+                                    "None_台"
+                                ],
+                                "tools": [
+                                    "道具不使用"
+                                ]
+                            }
+                        ],
+                        "final_position": "None_台"
+                    }
+                ]
             },
             {
                 "step_after": 16,
-                "state_list": []
+                "state_list": [
+                    {
+                        "id": "4560c7fb",
+                        "name": "15のひだを寄せたもの",
+                        "utensil_interactions_list": [
+                            {
+                                "source_state_id": "a53ee0ee",
+                                "vessel": [
+                                    "None_台"
+                                ],
+                                "tools": [
+                                    "道具不使用"
+                                ]
+                            }
+                        ],
+                        "final_position": "None_台"
+                    }
+                ]
             },
             {
                 "step_after": 17,
-                "state_list": []
+                "state_list": [
+                    {
+                        "id": "6726e1c4",
+                        "name": "16をしっかり閉じた水ギョーザ",
+                        "utensil_interactions_list": [
+                            {
+                                "source_state_id": "4560c7fb",
+                                "vessel": [
+                                    "None_台"
+                                ],
+                                "tools": [
+                                    "道具不使用"
+                                ]
+                            }
+                        ],
+                        "final_position": "None_台"
+                    }
+                ]
             },
             {
                 "step_after": 18,
-                "state_list": []
+                "state_list": [
+                    {
+                        "id": "92598f7b",
+                        "name": "水ギョーザを入れ沸騰させたもの",
+                        "utensil_interactions_list": [
+                            {
+                                "source_state_id": "6726e1c4",
+                                "vessel": [
+                                    "None_台",
+                                    "鍋（蓋付き）"
+                                ],
+                                "tools": [
+                                    "菜箸"
+                                ]
+                            }
+                        ],
+                        "final_position": "鍋（蓋付き）"
+                    }
+                ]
             },
             {
                 "step_after": 19,
-                "state_list": []
+                "state_list": [
+                    {
+                        "id": "aa90b98e",
+                        "name": "ゆでた水ギョーザ",
+                        "utensil_interactions_list": [
+                            {
+                                "source_state_id": "92598f7b",
+                                "vessel": [
+                                    "鍋（蓋付き）"
+                                ],
+                                "tools": [
+                                    "網目の粗い網杓子"
+                                ]
+                            }
+                        ],
+                        "final_position": "鍋（蓋付き）"
+                    }
+                ]
             },
             {
                 "step_after": 20,
-                "state_list": []
+                "state_list": [
+                    {
+                        "id": "00eb53ae",
+                        "name": "鶏とそら豆の水ギョーザ",
+                        "utensil_interactions_list": [
+                            {
+                                "source_state_id": "aa90b98e",
+                                "vessel": [
+                                    "鍋（蓋付き）",
+                                    "盛り付け皿・器"
+                                ],
+                                "tools": [
+                                    "網目の粗い網杓子"
+                                ]
+                            },
+                            {
+                                "source_state_id": "10",
+                                "vessel": [
+                                    "盛り付け皿・器"
+                                ],
+                                "tools": [
+                                    "道具不使用"
+                                ]
+                            }
+                        ],
+                        "final_position": "盛り付け皿・器"
+                    }
+                ]
             }
         ],
-        "annotation_note": "全体：手順が長くて使えるか怪しい"
+        "annotation_note": "全体: 手順が長くて使えるか怪しい\nstep7: あんはスプーンで混ぜるか、素手で混ぜるか"
     },
     {
         "title": "ふんわり鶏むね肉のたまねぎソース",
