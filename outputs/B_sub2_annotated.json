@@ -2827,21 +2827,248 @@
             },
             {
                 "step_after": 1,
-                "state_list": []
+                "state_list": [
+                    {
+                        "id": "1798ecc3",
+                        "name": "切ったたまねぎ",
+                        "utensil_interactions_list": [
+                            {
+                                "source_state_id": "2",
+                                "vessel": [
+                                    "まな板"
+                                ],
+                                "tools": [
+                                    "包丁"
+                                ]
+                            }
+                        ],
+                        "final_position": "まな板"
+                    },
+                    {
+                        "id": "be040907",
+                        "name": "切ったセロリ",
+                        "utensil_interactions_list": [
+                            {
+                                "source_state_id": "3",
+                                "vessel": [
+                                    "まな板"
+                                ],
+                                "tools": [
+                                    "包丁"
+                                ]
+                            }
+                        ],
+                        "final_position": "まな板"
+                    },
+                    {
+                        "id": "656c4b5c",
+                        "name": "切ったにんじん",
+                        "utensil_interactions_list": [
+                            {
+                                "source_state_id": "4",
+                                "vessel": [
+                                    "まな板"
+                                ],
+                                "tools": [
+                                    "包丁"
+                                ]
+                            }
+                        ],
+                        "final_position": "まな板"
+                    }
+                ]
             },
             {
                 "step_after": 2,
-                "state_list": []
+                "state_list": [
+                    {
+                        "id": "6127b8a4",
+                        "name": "野菜と牛肉を煮たもの",
+                        "utensil_interactions_list": [
+                            {
+                                "source_state_id": "1",
+                                "vessel": [
+                                    "生肉・生魚用まな板",
+                                    "鍋（蓋付き）"
+                                ],
+                                "tools": [
+                                    "包丁",
+                                    "木製へら"
+                                ]
+                            },
+                            {
+                                "source_state_id": "1798ecc3",
+                                "vessel": [
+                                    "まな板",
+                                    "鍋（蓋付き）"
+                                ],
+                                "tools": [
+                                    "木製へら"
+                                ]
+                            },
+                            {
+                                "source_state_id": "be040907",
+                                "vessel": [
+                                    "まな板",
+                                    "鍋（蓋付き）"
+                                ],
+                                "tools": [
+                                    "木製へら"
+                                ]
+                            },
+                            {
+                                "source_state_id": "656c4b5c",
+                                "vessel": [
+                                    "まな板",
+                                    "鍋（蓋付き）"
+                                ],
+                                "tools": [
+                                    "木製へら"
+                                ]
+                            },
+                            {
+                                "source_state_id": "5",
+                                "vessel": [
+                                    "鍋（蓋付き）"
+                                ],
+                                "tools": [
+                                    "木製へら"
+                                ]
+                            },
+                            {
+                                "source_state_id": "6",
+                                "vessel": [
+                                    "鍋（蓋付き）"
+                                ],
+                                "tools": [
+                                    "木製へら"
+                                ]
+                            },
+                            {
+                                "source_state_id": "7",
+                                "vessel": [
+                                    "鍋（蓋付き）"
+                                ],
+                                "tools": [
+                                    "木製へら"
+                                ]
+                            },
+                            {
+                                "source_state_id": "8",
+                                "vessel": [
+                                    "鍋（蓋付き）"
+                                ],
+                                "tools": [
+                                    "木製へら"
+                                ]
+                            },
+                            {
+                                "source_state_id": "9",
+                                "vessel": [
+                                    "鍋（蓋付き）"
+                                ],
+                                "tools": [
+                                    "木製へら"
+                                ]
+                            },
+                            {
+                                "source_state_id": "10",
+                                "vessel": [
+                                    "鍋（蓋付き）"
+                                ],
+                                "tools": [
+                                    "木製へら"
+                                ]
+                            },
+                            {
+                                "source_state_id": "11",
+                                "vessel": [
+                                    "鍋（蓋付き）"
+                                ],
+                                "tools": [
+                                    "木製へら"
+                                ]
+                            },
+                            {
+                                "source_state_id": "13",
+                                "vessel": [
+                                    "生肉・生魚用まな板",
+                                    "鍋（蓋付き）"
+                                ],
+                                "tools": [
+                                    "木製へら"
+                                ]
+                            },
+                            {
+                                "source_state_id": "14",
+                                "vessel": [
+                                    "生肉・生魚用まな板",
+                                    "鍋（蓋付き）"
+                                ],
+                                "tools": [
+                                    "木製へら"
+                                ]
+                            }
+                        ],
+                        "final_position": "鍋（蓋付き）"
+                    }
+                ]
             },
             {
                 "step_after": 3,
-                "state_list": []
+                "state_list": [
+                    {
+                        "id": "20a341c9",
+                        "name": "牛肉と野菜を煮込んだもの",
+                        "utensil_interactions_list": [
+                            {
+                                "source_state_id": "6127b8a4",
+                                "vessel": [
+                                    "鍋（蓋付き）"
+                                ],
+                                "tools": [
+                                    "網目の細かい網杓子",
+                                    "木製へら"
+                                ]
+                            }
+                        ],
+                        "final_position": "鍋（蓋付き）"
+                    }
+                ]
             },
             {
                 "step_after": 4,
-                "state_list": []
+                "state_list": [
+                    {
+                        "id": "d7593696",
+                        "name": "牛肉の赤ワイン煮込み",
+                        "utensil_interactions_list": [
+                            {
+                                "source_state_id": "20a341c9",
+                                "vessel": [
+                                    "鍋（蓋付き）",
+                                    "盛り付け皿・器"
+                                ],
+                                "tools": [
+                                    "おたま"
+                                ]
+                            },
+                            {
+                                "source_state_id": "12",
+                                "vessel": [
+                                    "盛り付け皿・器"
+                                ],
+                                "tools": [
+                                    "道具不使用"
+                                ]
+                            }
+                        ],
+                        "final_position": "盛り付け皿・器"
+                    }
+                ]
             }
-        ]
+        ],
+        "annotation_note": ""
     },
     {
         "title": "春キャベツと春にんじんのスープ",
