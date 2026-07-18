@@ -1985,17 +1985,170 @@
             },
             {
                 "step_after": 1,
-                "state_list": []
+                "state_list": [
+                    {
+                        "id": "c44937a7",
+                        "name": "【クリーム】",
+                        "utensil_interactions_list": [
+                            {
+                                "source_state_id": "1",
+                                "vessel": [
+                                    "ボウル"
+                                ],
+                                "tools": [
+                                    "耐熱ゴムべら"
+                                ]
+                            },
+                            {
+                                "source_state_id": "2",
+                                "vessel": [
+                                    "ボウル"
+                                ],
+                                "tools": [
+                                    "耐熱ゴムべら"
+                                ]
+                            },
+                            {
+                                "source_state_id": "3",
+                                "vessel": [
+                                    "ボウル"
+                                ],
+                                "tools": [
+                                    "耐熱ゴムべら"
+                                ]
+                            }
+                        ],
+                        "final_position": "ボウル"
+                    }
+                ]
             },
             {
                 "step_after": 2,
-                "state_list": []
+                "state_list": [
+                    {
+                        "id": "94612dfd",
+                        "name": "【コーヒー】",
+                        "utensil_interactions_list": [
+                            {
+                                "source_state_id": "4",
+                                "vessel": [
+                                    "ボウル-2"
+                                ],
+                                "tools": [
+                                    "菜箸"
+                                ]
+                            },
+                            {
+                                "source_state_id": "5",
+                                "vessel": [
+                                    "ボウル-2"
+                                ],
+                                "tools": [
+                                    "菜箸"
+                                ]
+                            }
+                        ],
+                        "final_position": "ボウル-2"
+                    },
+                    {
+                        "id": "a3b41403",
+                        "name": "コーヒーに浸したビスケット",
+                        "utensil_interactions_list": [
+                            {
+                                "source_state_id": "4",
+                                "vessel": [
+                                    "ボウル-2"
+                                ],
+                                "tools": [
+                                    "菜箸"
+                                ]
+                            },
+                            {
+                                "source_state_id": "5",
+                                "vessel": [
+                                    "ボウル-2"
+                                ],
+                                "tools": [
+                                    "菜箸"
+                                ]
+                            },
+                            {
+                                "source_state_id": "6",
+                                "vessel": [
+                                    "ボウル-2",
+                                    "盛り付け皿・器"
+                                ],
+                                "tools": [
+                                    "菜箸"
+                                ]
+                            }
+                        ],
+                        "final_position": "盛り付け皿・器"
+                    }
+                ]
             },
             {
                 "step_after": 3,
-                "state_list": []
+                "state_list": [
+                    {
+                        "id": "d3c2ee94",
+                        "name": "簡単ティラミス",
+                        "utensil_interactions_list": [
+                            {
+                                "source_state_id": "a3b41403",
+                                "vessel": [
+                                    "盛り付け皿・器"
+                                ],
+                                "tools": [
+                                    "耐熱ゴムべら"
+                                ]
+                            },
+                            {
+                                "source_state_id": "c44937a7",
+                                "vessel": [
+                                    "ボウル",
+                                    "盛り付け皿・器"
+                                ],
+                                "tools": [
+                                    "耐熱ゴムべら"
+                                ]
+                            },
+                            {
+                                "source_state_id": "94612dfd",
+                                "vessel": [
+                                    "ボウル-2"
+                                ],
+                                "tools": [
+                                    "菜箸"
+                                ]
+                            },
+                            {
+                                "source_state_id": "6",
+                                "vessel": [
+                                    "ボウル-2",
+                                    "盛り付け皿・器"
+                                ],
+                                "tools": [
+                                    "菜箸",
+                                    "耐熱ゴムべら"
+                                ]
+                            },
+                            {
+                                "source_state_id": "7",
+                                "vessel": [
+                                    "盛り付け皿・器"
+                                ],
+                                "tools": [
+                                    "ふるい"
+                                ]
+                            }
+                        ],
+                        "final_position": "盛り付け皿・器"
+                    }
+                ]
             }
-        ]
+        ],
+        "annotation_note": "Step 3：「1の【クリーム】の1/2量を入れ、表面を平らにする。」に目的語（どこに入れる）がない。ここでは器と仮定。\nStep 3：茶漉しがないので篩を利用。"
     },
     {
         "title": "ワザあり豚カツ",
