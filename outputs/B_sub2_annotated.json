@@ -583,6 +583,23 @@
                 "state_list": [
                     {
                         "id": "97a9881f",
+                        "name": "茹でた米",
+                        "utensil_interactions_list": [
+                            {
+                                "source_state_id": "1",
+                                "vessel": [
+                                    "鍋（蓋付き）",
+                                    "ざる"
+                                ],
+                                "tools": [
+                                    "木製へら"
+                                ]
+                            }
+                        ],
+                        "final_position": "ざる"
+                    },
+                    {
+                        "id": "dd3c95b1",
                         "name": "",
                         "utensil_interactions_list": [
                             {
