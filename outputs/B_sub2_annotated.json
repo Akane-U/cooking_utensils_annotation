@@ -3128,16 +3128,176 @@
             },
             {
                 "step_after": 1,
-                "state_list": []
+                "state_list": [
+                    {
+                        "id": "10acf9cd",
+                        "name": "切ったキャベツ",
+                        "utensil_interactions_list": [
+                            {
+                                "source_state_id": "1",
+                                "vessel": [
+                                    "まな板"
+                                ],
+                                "tools": [
+                                    "包丁"
+                                ]
+                            }
+                        ],
+                        "final_position": "まな板"
+                    },
+                    {
+                        "id": "c31e1b96",
+                        "name": "切ったにんじん",
+                        "utensil_interactions_list": [
+                            {
+                                "source_state_id": "2",
+                                "vessel": [
+                                    "まな板"
+                                ],
+                                "tools": [
+                                    "包丁"
+                                ]
+                            }
+                        ],
+                        "final_position": "まな板"
+                    },
+                    {
+                        "id": "d00ed3e3",
+                        "name": "切ったベーコン",
+                        "utensil_interactions_list": [
+                            {
+                                "source_state_id": "3",
+                                "vessel": [
+                                    "生肉・生魚用まな板"
+                                ],
+                                "tools": [
+                                    "包丁"
+                                ]
+                            }
+                        ],
+                        "final_position": "生肉・生魚用まな板"
+                    }
+                ]
             },
             {
                 "step_after": 2,
-                "state_list": []
+                "state_list": [
+                    {
+                        "id": "5e4e4956",
+                        "name": "野菜とベーコンを炒めたもの",
+                        "utensil_interactions_list": [
+                            {
+                                "source_state_id": "10acf9cd",
+                                "vessel": [
+                                    "まな板",
+                                    "鍋（蓋付き）"
+                                ],
+                                "tools": [
+                                    "木製へら"
+                                ]
+                            },
+                            {
+                                "source_state_id": "c31e1b96",
+                                "vessel": [
+                                    "まな板",
+                                    "鍋（蓋付き）"
+                                ],
+                                "tools": [
+                                    "木製へら"
+                                ]
+                            },
+                            {
+                                "source_state_id": "d00ed3e3",
+                                "vessel": [
+                                    "生肉・生魚用まな板",
+                                    "鍋（蓋付き）"
+                                ],
+                                "tools": [
+                                    "木製へら"
+                                ]
+                            },
+                            {
+                                "source_state_id": "6",
+                                "vessel": [
+                                    "鍋（蓋付き）"
+                                ],
+                                "tools": [
+                                    "木製へら"
+                                ]
+                            }
+                        ],
+                        "final_position": "鍋（蓋付き）"
+                    }
+                ]
             },
             {
                 "step_after": 3,
-                "state_list": []
+                "state_list": [
+                    {
+                        "id": "5f3916c5",
+                        "name": "春キャベツと春にんじんのスープ",
+                        "utensil_interactions_list": [
+                            {
+                                "source_state_id": "5e4e4956",
+                                "vessel": [
+                                    "鍋（蓋付き）",
+                                    "盛り付け皿・器"
+                                ],
+                                "tools": [
+                                    "木製へら",
+                                    "おたま"
+                                ]
+                            },
+                            {
+                                "source_state_id": "4",
+                                "vessel": [
+                                    "鍋（蓋付き）",
+                                    "盛り付け皿・器"
+                                ],
+                                "tools": [
+                                    "木製へら",
+                                    "おたま"
+                                ]
+                            },
+                            {
+                                "source_state_id": "5",
+                                "vessel": [
+                                    "鍋（蓋付き）",
+                                    "盛り付け皿・器"
+                                ],
+                                "tools": [
+                                    "木製へら",
+                                    "おたま"
+                                ]
+                            },
+                            {
+                                "source_state_id": "7",
+                                "vessel": [
+                                    "鍋（蓋付き）",
+                                    "盛り付け皿・器"
+                                ],
+                                "tools": [
+                                    "木製へら",
+                                    "おたま"
+                                ]
+                            },
+                            {
+                                "source_state_id": "8",
+                                "vessel": [
+                                    "鍋（蓋付き）",
+                                    "盛り付け皿・器"
+                                ],
+                                "tools": [
+                                    "木製へら",
+                                    "おたま"
+                                ]
+                            }
+                        ],
+                        "final_position": "盛り付け皿・器"
+                    }
+                ]
             }
-        ]
+        ],
+        "annotation_note": ""
     }
 ]
