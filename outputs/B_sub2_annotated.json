@@ -2226,25 +2226,245 @@
             },
             {
                 "step_after": 1,
-                "state_list": []
+                "state_list": [
+                    {
+                        "id": "fd8170d0",
+                        "name": "切ったキャベツ",
+                        "utensil_interactions_list": [
+                            {
+                                "source_state_id": "2",
+                                "vessel": [
+                                    "まな板",
+                                    "ボウル",
+                                    "ざる"
+                                ],
+                                "tools": [
+                                    "包丁"
+                                ]
+                            }
+                        ],
+                        "final_position": "ざる"
+                    },
+                    {
+                        "id": "2276e3a2",
+                        "name": "小麦粉と塩とこしょうを混ぜたもの",
+                        "utensil_interactions_list": [
+                            {
+                                "source_state_id": "3",
+                                "vessel": [
+                                    "None_ポリ袋"
+                                ],
+                                "tools": [
+                                    "道具不使用"
+                                ]
+                            },
+                            {
+                                "source_state_id": "4",
+                                "vessel": [
+                                    "None_ポリ袋"
+                                ],
+                                "tools": [
+                                    "道具不使用"
+                                ]
+                            },
+                            {
+                                "source_state_id": "5",
+                                "vessel": [
+                                    "None_ポリ袋"
+                                ],
+                                "tools": [
+                                    "道具不使用"
+                                ]
+                            }
+                        ],
+                        "final_position": "None_ポリ袋"
+                    },
+                    {
+                        "id": "0536076e",
+                        "name": "バットに敷いたパン粉",
+                        "utensil_interactions_list": [
+                            {
+                                "source_state_id": "6",
+                                "vessel": [
+                                    "バット"
+                                ],
+                                "tools": [
+                                    "道具不使用"
+                                ]
+                            }
+                        ],
+                        "final_position": "バット"
+                    }
+                ]
             },
             {
                 "step_after": 2,
-                "state_list": []
+                "state_list": [
+                    {
+                        "id": "012ee708",
+                        "name": "卵を絡めた豚肉",
+                        "utensil_interactions_list": [
+                            {
+                                "source_state_id": "1",
+                                "vessel": [
+                                    "None_ポリ袋",
+                                    "生肉・生魚用まな板",
+                                    "ボウル"
+                                ],
+                                "tools": [
+                                    "クッキングペーパー",
+                                    "包丁",
+                                    "None_フォーク"
+                                ]
+                            },
+                            {
+                                "source_state_id": "2276e3a2",
+                                "vessel": [
+                                    "None_ポリ袋"
+                                ],
+                                "tools": [
+                                    "道具不使用"
+                                ]
+                            },
+                            {
+                                "source_state_id": "7",
+                                "vessel": [
+                                    "None_ポリ袋"
+                                ],
+                                "tools": [
+                                    "道具不使用"
+                                ]
+                            }
+                        ],
+                        "final_position": "None_ポリ袋"
+                    }
+                ]
             },
             {
                 "step_after": 3,
-                "state_list": []
+                "state_list": [
+                    {
+                        "id": "a41f001f",
+                        "name": "パン粉を塗した豚肉",
+                        "utensil_interactions_list": [
+                            {
+                                "source_state_id": "012ee708",
+                                "vessel": [
+                                    "None_ポリ袋",
+                                    "バット"
+                                ],
+                                "tools": [
+                                    "None_フォーク"
+                                ]
+                            },
+                            {
+                                "source_state_id": "0536076e",
+                                "vessel": [
+                                    "バット"
+                                ],
+                                "tools": [
+                                    "道具不使用"
+                                ]
+                            }
+                        ],
+                        "final_position": "バット"
+                    }
+                ]
             },
             {
                 "step_after": 4,
-                "state_list": []
+                "state_list": [
+                    {
+                        "id": "31afbcf2",
+                        "name": "一度あげた豚カツ",
+                        "utensil_interactions_list": [
+                            {
+                                "source_state_id": "a41f001f",
+                                "vessel": [
+                                    "バット",
+                                    "フライパン（蓋付き）"
+                                ],
+                                "tools": [
+                                    "菜箸"
+                                ]
+                            },
+                            {
+                                "source_state_id": "11",
+                                "vessel": [
+                                    "フライパン（蓋付き）"
+                                ],
+                                "tools": [
+                                    "菜箸"
+                                ]
+                            }
+                        ],
+                        "final_position": "フライパン（蓋付き）"
+                    }
+                ]
             },
             {
                 "step_after": 5,
-                "state_list": []
+                "state_list": [
+                    {
+                        "id": "45beb800",
+                        "name": "ワザあり豚カツ",
+                        "utensil_interactions_list": [
+                            {
+                                "source_state_id": "31afbcf2",
+                                "vessel": [
+                                    "フライパン（蓋付き）",
+                                    "None_網",
+                                    "まな板",
+                                    "盛り付け皿・器"
+                                ],
+                                "tools": [
+                                    "菜箸",
+                                    "包丁"
+                                ]
+                            },
+                            {
+                                "source_state_id": "fd8170d0",
+                                "vessel": [
+                                    "ざる"
+                                ],
+                                "tools": [
+                                    "道具不使用"
+                                ]
+                            },
+                            {
+                                "source_state_id": "8",
+                                "vessel": [
+                                    "盛り付け皿・器"
+                                ],
+                                "tools": [
+                                    "道具不使用"
+                                ]
+                            },
+                            {
+                                "source_state_id": "9",
+                                "vessel": [
+                                    "盛り付け皿・器"
+                                ],
+                                "tools": [
+                                    "道具不使用"
+                                ]
+                            },
+                            {
+                                "source_state_id": "10",
+                                "vessel": [
+                                    "盛り付け皿・器"
+                                ],
+                                "tools": [
+                                    "道具不使用"
+                                ]
+                            }
+                        ],
+                        "final_position": "盛り付け皿・器"
+                    }
+                ]
             }
-        ]
+        ],
+        "annotation_note": ""
     },
     {
         "title": "春の豚たまあえ",
