@@ -2234,8 +2234,8 @@
                                 "source_state_id": "1",
                                 "vessel": [
                                     "生肉・生魚用まな板",
-                                    "None_ポリ袋",
-                                    "バット"
+                                    "None_バット2",
+                                    "None_ポリ袋"
                                 ],
                                 "tools": [
                                     "包丁",
@@ -2247,7 +2247,7 @@
                                 "source_state_id": "fdbec32b",
                                 "vessel": [
                                     "None_ポリ袋",
-                                    "バット"
+                                    "None_バット2"
                                 ],
                                 "tools": [
                                     "道具不使用"
@@ -2272,28 +2272,125 @@
                 "state_list": [
                     {
                         "id": "159c3a08",
-                        "name": "",
+                        "name": "２にパン粉をつけたもの",
                         "utensil_interactions_list": [
                             {
-                                "source_state_id": "",
-                                "vessel": [],
-                                "tools": []
+                                "source_state_id": "c592f909",
+                                "vessel": [
+                                    "None_ポリ袋",
+                                    "バット"
+                                ],
+                                "tools": [
+                                    "None_フォーク"
+                                ]
+                            },
+                            {
+                                "source_state_id": "87ae208c",
+                                "vessel": [
+                                    "バット"
+                                ],
+                                "tools": [
+                                    "道具不使用"
+                                ]
                             }
                         ],
-                        "final_position": ""
+                        "final_position": "バット"
                     }
                 ]
             },
             {
                 "step_after": 4,
-                "state_list": []
+                "state_list": [
+                    {
+                        "id": "33d5ebe3",
+                        "name": "揚げた豚肉",
+                        "utensil_interactions_list": [
+                            {
+                                "source_state_id": "11",
+                                "vessel": [
+                                    "フライパン（蓋付き）"
+                                ],
+                                "tools": [
+                                    "菜箸"
+                                ]
+                            },
+                            {
+                                "source_state_id": "159c3a08",
+                                "vessel": [
+                                    "バット",
+                                    "フライパン（蓋付き）"
+                                ],
+                                "tools": [
+                                    "菜箸"
+                                ]
+                            }
+                        ],
+                        "final_position": "フライパン（蓋付き）"
+                    }
+                ]
             },
             {
                 "step_after": 5,
-                "state_list": []
+                "state_list": [
+                    {
+                        "id": "bd803ae3",
+                        "name": "ワザあり豚カツ",
+                        "utensil_interactions_list": [
+                            {
+                                "source_state_id": "33d5ebe3",
+                                "vessel": [
+                                    "フライパン（蓋付き）",
+                                    "None_網",
+                                    "盛り付け皿・器"
+                                ],
+                                "tools": [
+                                    "菜箸"
+                                ]
+                            },
+                            {
+                                "source_state_id": "05e187de",
+                                "vessel": [
+                                    "ざる",
+                                    "盛り付け皿・器"
+                                ],
+                                "tools": [
+                                    "道具不使用"
+                                ]
+                            },
+                            {
+                                "source_state_id": "8",
+                                "vessel": [
+                                    "盛り付け皿・器"
+                                ],
+                                "tools": [
+                                    "道具不使用"
+                                ]
+                            },
+                            {
+                                "source_state_id": "9",
+                                "vessel": [
+                                    "盛り付け皿・器"
+                                ],
+                                "tools": [
+                                    "道具不使用"
+                                ]
+                            },
+                            {
+                                "source_state_id": "10",
+                                "vessel": [
+                                    "盛り付け皿・器"
+                                ],
+                                "tools": [
+                                    "道具不使用"
+                                ]
+                            }
+                        ],
+                        "final_position": "盛り付け皿・器"
+                    }
+                ]
             }
         ],
-        "annotation_note": ""
+        "annotation_note": "step2/state1の生成元「豚ロース肉...」の使用容器の順は「生肉用まな板→ポリ袋→バット２→ポリ袋」です。最後はポリ袋なので、この選択順は「生肉まな板、バット２、ポリ袋」としています。\n\n※その下の【A】を混ぜたものも同様の理由で、「バット2、ポリ袋」の順番にしたかったのですが、step1のポリ袋を引き継いでいるためか、この順番しか入力できませんでした。\n"
     },
     {
         "title": "春の豚たまあえ",
