@@ -934,7 +934,7 @@
                             {
                                 "source_state_id": "1",
                                 "vessel": [
-                                    "まな板"
+                                    "生肉・生魚用まな板"
                                 ],
                                 "tools": [
                                     "包丁"
@@ -943,21 +943,19 @@
                             {
                                 "source_state_id": "7",
                                 "vessel": [
-                                    "まな板"
+                                    "生肉・生魚用まな板"
                                 ],
-                                "tools": [
-                                    "None_計量スプーン"
-                                ]
+                                "tools": []
                             },
                             {
                                 "source_state_id": "8",
                                 "vessel": [
-                                    "まな板"
+                                    "生肉・生魚用まな板"
                                 ],
                                 "tools": []
                             }
                         ],
-                        "final_position": "まな板"
+                        "final_position": "生肉・生魚用まな板"
                     }
                 ]
             },
@@ -966,26 +964,22 @@
                 "state_list": [
                     {
                         "id": "6c1a4a7c",
-                        "name": "豚肉を焼いたもの",
+                        "name": "焼いた豚肉",
                         "utensil_interactions_list": [
-                            {
-                                "source_state_id": "15475132",
-                                "vessel": [
-                                    "フライパン（蓋付き）"
-                                ],
-                                "tools": [
-                                    "フライ返し"
-                                ]
-                            },
                             {
                                 "source_state_id": "9",
                                 "vessel": [
                                     "フライパン（蓋付き）"
                                 ],
-                                "tools": [
-                                    "None_計量スプーン",
-                                    "フライ返し"
-                                ]
+                                "tools": []
+                            },
+                            {
+                                "source_state_id": "15475132",
+                                "vessel": [
+                                    "生肉・生魚用まな板",
+                                    "フライパン（蓋付き）"
+                                ],
+                                "tools": []
                             }
                         ],
                         "final_position": "フライパン（蓋付き）"
