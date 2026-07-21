@@ -10117,21 +10117,152 @@
             },
             {
                 "step_after": 1,
-                "state_list": []
+                "state_list": [
+                    {
+                        "id": "7bb29e32",
+                        "name": "下味をつけた鶏肉",
+                        "utensil_interactions_list": [
+                            {
+                                "source_state_id": "1",
+                                "vessel": [
+                                    "生肉・生魚用まな板",
+                                    "ボウル"
+                                ],
+                                "tools": [
+                                    "包丁",
+                                    "スプーン"
+                                ]
+                            },
+                            {
+                                "source_state_id": "2",
+                                "vessel": [
+                                    "ボウル"
+                                ],
+                                "tools": [
+                                    "スプーン"
+                                ]
+                            },
+                            {
+                                "source_state_id": "3",
+                                "vessel": [
+                                    "ボウル"
+                                ],
+                                "tools": [
+                                    "スプーン"
+                                ]
+                            },
+                            {
+                                "source_state_id": "4",
+                                "vessel": [
+                                    "ボウル"
+                                ],
+                                "tools": [
+                                    "スプーン"
+                                ]
+                            }
+                        ],
+                        "final_position": "ボウル"
+                    }
+                ]
             },
             {
                 "step_after": 2,
-                "state_list": []
+                "state_list": [
+                    {
+                        "id": "d91e1889",
+                        "name": "片栗粉をまぶした鶏肉",
+                        "utensil_interactions_list": [
+                            {
+                                "source_state_id": "7bb29e32",
+                                "vessel": [
+                                    "ボウル",
+                                    "バット"
+                                ],
+                                "tools": [
+                                    "スプーン"
+                                ]
+                            },
+                            {
+                                "source_state_id": "6",
+                                "vessel": [
+                                    "ボウル",
+                                    "バット"
+                                ],
+                                "tools": [
+                                    "スプーン"
+                                ]
+                            }
+                        ],
+                        "final_position": "バット"
+                    }
+                ]
             },
             {
                 "step_after": 3,
-                "state_list": []
+                "state_list": [
+                    {
+                        "id": "d17dc0d0",
+                        "name": "揚げた鶏肉",
+                        "utensil_interactions_list": [
+                            {
+                                "source_state_id": "7",
+                                "vessel": [
+                                    "鍋（蓋付き）"
+                                ],
+                                "tools": [
+                                    "菜箸",
+                                    "網目の細かい網杓子"
+                                ]
+                            },
+                            {
+                                "source_state_id": "d91e1889",
+                                "vessel": [
+                                    "バット",
+                                    "鍋（蓋付き）"
+                                ],
+                                "tools": [
+                                    "菜箸"
+                                ]
+                            }
+                        ],
+                        "final_position": "鍋（蓋付き）"
+                    }
+                ]
             },
             {
                 "step_after": 4,
-                "state_list": []
+                "state_list": [
+                    {
+                        "id": "3570ccd2",
+                        "name": "サクッとジューシー竜田揚げ",
+                        "utensil_interactions_list": [
+                            {
+                                "source_state_id": "d17dc0d0",
+                                "vessel": [
+                                    "鍋（蓋付き）",
+                                    "バット",
+                                    "盛り付け皿・器"
+                                ],
+                                "tools": [
+                                    "菜箸"
+                                ]
+                            },
+                            {
+                                "source_state_id": "5",
+                                "vessel": [
+                                    "盛り付け皿・器"
+                                ],
+                                "tools": [
+                                    "道具不使用"
+                                ]
+                            }
+                        ],
+                        "final_position": "盛り付け皿・器"
+                    }
+                ]
             }
-        ]
+        ],
+        "annotation_note": "step3: 鶏肉は網杓子と接触するか"
     },
     {
         "title": "新たまナポリタン",
@@ -10197,7 +10328,20 @@
             },
             {
                 "step_after": 1,
-                "state_list": []
+                "state_list": [
+                    {
+                        "id": "ffea9d82",
+                        "name": "",
+                        "utensil_interactions_list": [
+                            {
+                                "source_state_id": "",
+                                "vessel": [],
+                                "tools": []
+                            }
+                        ],
+                        "final_position": ""
+                    }
+                ]
             },
             {
                 "step_after": 2,
@@ -10207,7 +10351,8 @@
                 "step_after": 3,
                 "state_list": []
             }
-        ]
+        ],
+        "annotation_note": ""
     },
     {
         "title": "厚揚げのごまみそのせとヒラヒラにんじん",
