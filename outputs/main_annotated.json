@@ -10882,29 +10882,135 @@
             },
             {
                 "step_after": 1,
-                "state_list": []
+                "state_list": [
+                    {
+                        "id": "d6048cc8",
+                        "name": "蒸し器にいれたさつまいも",
+                        "utensil_interactions_list": [
+                            {
+                                "source_state_id": "1",
+                                "vessel": [
+                                    "蒸し器"
+                                ],
+                                "tools": [
+                                    "道具不使用"
+                                ]
+                            }
+                        ],
+                        "final_position": "蒸し器"
+                    }
+                ]
             },
             {
                 "step_after": 2,
-                "state_list": []
+                "state_list": [
+                    {
+                        "id": "0b8a6448",
+                        "name": "蒸したさつまいも",
+                        "utensil_interactions_list": [
+                            {
+                                "source_state_id": "d6048cc8",
+                                "vessel": [
+                                    "蒸し器"
+                                ],
+                                "tools": [
+                                    "道具不使用"
+                                ]
+                            }
+                        ],
+                        "final_position": "蒸し器"
+                    }
+                ]
             },
             {
                 "step_after": 3,
-                "state_list": []
+                "state_list": [
+                    {
+                        "id": "9cc71bef",
+                        "name": "冷ましたさつまいも",
+                        "utensil_interactions_list": [
+                            {
+                                "source_state_id": "0b8a6448",
+                                "vessel": [
+                                    "蒸し器",
+                                    "まな板"
+                                ],
+                                "tools": [
+                                    "道具不使用"
+                                ]
+                            }
+                        ],
+                        "final_position": "まな板"
+                    }
+                ]
             },
             {
                 "step_after": 4,
-                "state_list": []
+                "state_list": [
+                    {
+                        "id": "04d4554e",
+                        "name": "切ったさつまいも",
+                        "utensil_interactions_list": [
+                            {
+                                "source_state_id": "9cc71bef",
+                                "vessel": [
+                                    "まな板"
+                                ],
+                                "tools": [
+                                    "包丁"
+                                ]
+                            }
+                        ],
+                        "final_position": "まな板"
+                    }
+                ]
             },
             {
                 "step_after": 5,
-                "state_list": []
+                "state_list": [
+                    {
+                        "id": "73982af0",
+                        "name": "干したさつまいも",
+                        "utensil_interactions_list": [
+                            {
+                                "source_state_id": "04d4554e",
+                                "vessel": [
+                                    "まな板",
+                                    "ざる"
+                                ],
+                                "tools": [
+                                    "道具不使用"
+                                ]
+                            }
+                        ],
+                        "final_position": "ざる"
+                    }
+                ]
             },
             {
                 "step_after": 6,
-                "state_list": []
+                "state_list": [
+                    {
+                        "id": "46579797",
+                        "name": "干し芋",
+                        "utensil_interactions_list": [
+                            {
+                                "source_state_id": "73982af0",
+                                "vessel": [
+                                    "ざる",
+                                    "盛り付け皿・器"
+                                ],
+                                "tools": [
+                                    "道具不使用"
+                                ]
+                            }
+                        ],
+                        "final_position": "盛り付け皿・器"
+                    }
+                ]
             }
-        ]
+        ],
+        "annotation_note": ""
     },
     {
         "title": "焼き大根の豚こま肉みそ",
