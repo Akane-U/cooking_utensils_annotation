@@ -776,7 +776,7 @@
                                     "盛り付け皿・器"
                                 ],
                                 "tools": [
-                                    "包丁",
+                                    "菜箸",
                                     "スプーン"
                                 ]
                             },
@@ -844,7 +844,7 @@
                 ]
             }
         ],
-        "annotation_note": "step3レシピの記述に「フライパンに」と書いてあるが新しいフライパンで作るものだと勘違いしてしまいました。（その後、step4で辻褄が合わなくなり気付きました）step3の記述を「2のフライパンに」と変更したほうがよいのと、step4の記述も「（３の）カレーベースの順に」としたほうがよいです。\n\nstep4のバターを使用する際に、家ではバターナイフを使いますが、ここでは「包丁」を選択しました。\n\nstep3step4の使用道具を木製へらにするか迷いました。こういう場合は、我が家では無印良品のおたまとへらが一体になったもシリコン調理スプーン（炒めることもすくう事も可能なもの）を使用するのでスプーンを選択しました。toolsの選択肢の「スプーン」は、あまり炒めるイメージがないので、木製へらのほうが妥当かもしれません。https://www.muji.com/jp/ja/store/cmdty/detail/4550584376412?sc_cid=google_pla_pj_direct_cp_14797768044_adg_144078557257_cr_none_opt_online&gad_source=1&gad_campaignid=14797768044&gbraid=0AAAAABRJBpcdMDT6_kIiHpIHB4vbjuVC-&gclid=EAIaIQobChMIlcHk2ObilQMVl1gPAh3eGwFQEAQYBiABEgLM2_D_BwE\n\n\n材料一覧の\n• トマトのライタ（＊全体備考参照） 適宜\n• 大根のアチャール風（＊全体備考参照） 適宜\nの「全体備考」がどこに記載してあるか分かりませんでした。"
+        "annotation_note": "step3レシピの記述に「フライパンに」と書いてあるが新しいフライパンで作るものだと勘違いしてしまいました。（その後、step4で辻褄が合わなくなり気付きました）step3の記述を「2のフライパンに」と変更したほうがよいのと、step4の記述も「（３の）カレーベースの順に」としたほうがよいです。\nstep3step4の使用道具を木製へらにするか迷いました。こういう場合は、我が家では無印良品のおたまとへらが一体になったもシリコン調理スプーン（炒めることもすくう事も可能なもの）を使用するのでスプーンを選択しました。toolsの選択肢の「スプーン」は、あまり炒めるイメージがないので、木製へらのほうが妥当かもしれません。https://www.muji.com/jp/ja/store/cmdty/detail/4550584376412?sc_cid=google_pla_pj_direct_cp_14797768044_adg_144078557257_cr_none_opt_online&gad_source=1&gad_campaignid=14797768044&gbraid=0AAAAABRJBpcdMDT6_kIiHpIHB4vbjuVC-&gclid=EAIaIQobChMIlcHk2ObilQMVl1gPAh3eGwFQEAQYBiABEgLM2_D_BwE\n\nstep4 鍋のそこにバターを塗るのが菜箸でいいか迷いました。\n\n材料一覧の\n• トマトのライタ（＊全体備考参照） 適宜\n• 大根のアチャール風（＊全体備考参照） 適宜\nの「全体備考」がどこに記載してあるか分かりませんでした。"
     },
     {
         "title": "フランス風豚バラ大根",
@@ -1170,7 +1170,7 @@
                 "state_list": [
                     {
                         "id": "260a3b78",
-                        "name": "白菜の芯",
+                        "name": "切った白菜",
                         "utensil_interactions_list": [
                             {
                                 "source_state_id": "1",
@@ -1185,8 +1185,24 @@
                         "final_position": "まな板"
                     },
                     {
-                        "id": "1e751372",
-                        "name": "半分に切ったにんにく",
+                        "id": "52f294d6",
+                        "name": "切った白菜の根元",
+                        "utensil_interactions_list": [
+                            {
+                                "source_state_id": "1",
+                                "vessel": [
+                                    "まな板"
+                                ],
+                                "tools": [
+                                    "包丁"
+                                ]
+                            }
+                        ],
+                        "final_position": "まな板"
+                    },
+                    {
+                        "id": "1b221dfb",
+                        "name": "切ったにんにく",
                         "utensil_interactions_list": [
                             {
                                 "source_state_id": "3",
@@ -1201,27 +1217,11 @@
                         "final_position": "まな板"
                     },
                     {
-                        "id": "9a78aca0",
-                        "name": "先端を切った手羽先",
+                        "id": "a2f2fd3e",
+                        "name": "先端を切り離した手羽先",
                         "utensil_interactions_list": [
                             {
                                 "source_state_id": "2",
-                                "vessel": [
-                                    "まな板"
-                                ],
-                                "tools": [
-                                    "包丁"
-                                ]
-                            }
-                        ],
-                        "final_position": "まな板"
-                    },
-                    {
-                        "id": "5855bcba",
-                        "name": "白菜の根元",
-                        "utensil_interactions_list": [
-                            {
-                                "source_state_id": "1",
                                 "vessel": [
                                     "まな板"
                                 ],
@@ -1239,37 +1239,24 @@
                 "state_list": [
                     {
                         "id": "2f8ac0bb",
-                        "name": "白菜の根元を焼いたもの",
+                        "name": "焼いた白菜の根元",
                         "utensil_interactions_list": [
-                            {
-                                "source_state_id": "5855bcba",
-                                "vessel": [
-                                    "フライパン（蓋付き）",
-                                    "盛り付け皿・器"
-                                ],
-                                "tools": [
-                                    "菜箸"
-                                ]
-                            },
                             {
                                 "source_state_id": "7",
                                 "vessel": [
-                                    "フライパン（蓋付き）",
-                                    "盛り付け皿・器"
+                                    "フライパン（蓋付き）"
                                 ],
-                                "tools": [
-                                    "菜箸"
-                                ]
+                                "tools": []
                             }
                         ],
-                        "final_position": "盛り付け皿・器"
+                        "final_position": "フライパン（蓋付き）"
                     },
                     {
                         "id": "c1b4d6c7",
                         "name": "手羽先を焼いたもの",
                         "utensil_interactions_list": [
                             {
-                                "source_state_id": "9a78aca0",
+                                "source_state_id": "",
                                 "vessel": [
                                     "フライパン（蓋付き）"
                                 ],
@@ -1298,7 +1285,7 @@
                                 "tools": []
                             },
                             {
-                                "source_state_id": "1e751372",
+                                "source_state_id": "None_1e751372",
                                 "vessel": [
                                     "フライパン（蓋付き）",
                                     "盛り付け皿・器"
