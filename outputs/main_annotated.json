@@ -11438,15 +11438,18 @@
                 "state_list": [
                     {
                         "id": "40a29f86",
-                        "name": "",
+                        "name": "焼いた大根",
                         "utensil_interactions_list": [
                             {
-                                "source_state_id": "",
-                                "vessel": [],
+                                "source_state_id": "205d2f4e",
+                                "vessel": [
+                                    "鍋（蓋付き）",
+                                    "フライパン（蓋付き）"
+                                ],
                                 "tools": []
                             }
                         ],
-                        "final_position": ""
+                        "final_position": "フライパン（蓋付き）"
                     }
                 ]
             },
