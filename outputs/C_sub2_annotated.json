@@ -132,7 +132,8 @@
                                 "source_state_id": "5fefbf50",
                                 "vessel": [
                                     "まな板",
-                                    "盛り付け皿・器"
+                                    "鍋（蓋付き）",
+                                    "ボウル"
                                 ],
                                 "tools": [
                                     "おたま"
@@ -141,14 +142,14 @@
                             {
                                 "source_state_id": "7a8e4648",
                                 "vessel": [
-                                    "盛り付け皿・器"
+                                    "ボウル"
                                 ],
                                 "tools": [
                                     "道具不使用"
                                 ]
                             }
                         ],
-                        "final_position": "盛り付け皿・器"
+                        "final_position": "ボウル"
                     }
                 ]
             },
@@ -160,26 +161,31 @@
                         "name": "例題1：トマトの冷やしおでん風",
                         "utensil_interactions_list": [
                             {
+                                "source_state_id": "fbcc05be",
+                                "vessel": [
+                                    "ボウル",
+                                    "盛り付け皿・器"
+                                ],
+                                "tools": [
+                                    "おたま"
+                                ]
+                            },
+                            {
                                 "source_state_id": "5",
                                 "vessel": [
                                     "盛り付け皿・器"
                                 ],
-                                "tools": []
+                                "tools": [
+                                    "道具不使用"
+                                ]
                             },
                             {
                                 "source_state_id": "6",
                                 "vessel": [
                                     "盛り付け皿・器"
                                 ],
-                                "tools": []
-                            },
-                            {
-                                "source_state_id": "fbcc05be",
-                                "vessel": [
-                                    "盛り付け皿・器"
-                                ],
                                 "tools": [
-                                    "おたま"
+                                    "道具不使用"
                                 ]
                             }
                         ],
