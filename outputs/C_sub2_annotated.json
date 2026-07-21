@@ -371,9 +371,11 @@
                             {
                                 "source_state_id": "ffe61e63",
                                 "vessel": [
+                                    "鍋（蓋付き）-2",
                                     "ボウル"
                                 ],
                                 "tools": [
+                                    "おたま",
                                     "泡だて器",
                                     "耐熱ゴムべら"
                                 ]
@@ -393,26 +395,26 @@
                             {
                                 "source_state_id": "dddbfc55",
                                 "vessel": [
-                                    "流し型",
-                                    "None_天板"
+                                    "流し型"
                                 ],
                                 "tools": [
-                                    "スプーン"
+                                    "道具不使用"
                                 ]
                             },
                             {
                                 "source_state_id": "c695c9cf",
                                 "vessel": [
-                                    "流し型",
-                                    "None_天板"
+                                    "ボウル",
+                                    "流し型"
                                 ],
                                 "tools": [
-                                    "スプーン",
-                                    "裏漉し器（受け皿なし）"
+                                    "おたま",
+                                    "裏漉し器（受け皿なし）",
+                                    "スプーン"
                                 ]
                             }
                         ],
-                        "final_position": "None_天板"
+                        "final_position": "流し型"
                     }
                 ]
             },
@@ -426,8 +428,8 @@
                             {
                                 "source_state_id": "7bebfdbc",
                                 "vessel": [
-                                    "盛り付け皿・器",
-                                    "流し型"
+                                    "流し型",
+                                    "盛り付け皿・器"
                                 ],
                                 "tools": [
                                     "製菓用パレットナイフ",
@@ -435,7 +437,7 @@
                                 ]
                             }
                         ],
-                        "final_position": "流し型"
+                        "final_position": "盛り付け皿・器"
                     }
                 ]
             }
