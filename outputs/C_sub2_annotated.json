@@ -1645,29 +1645,257 @@
                 "state_list": [
                     {
                         "id": "4215623a",
-                        "name": "",
+                        "name": "茹でたスパゲッティ",
                         "utensil_interactions_list": [
                             {
-                                "source_state_id": "",
-                                "vessel": [],
-                                "tools": []
+                                "source_state_id": "9",
+                                "vessel": [
+                                    "鍋（蓋付き）",
+                                    "ざる"
+                                ],
+                                "tools": [
+                                    "トング"
+                                ]
+                            },
+                            {
+                                "source_state_id": "1",
+                                "vessel": [
+                                    "鍋（蓋付き）",
+                                    "ざる"
+                                ],
+                                "tools": [
+                                    "トング"
+                                ]
                             }
                         ],
-                        "final_position": ""
+                        "final_position": "ざる"
                     }
                 ]
             },
             {
                 "step_after": 2,
-                "state_list": []
+                "state_list": [
+                    {
+                        "id": "f42c3fac",
+                        "name": "切ったハム",
+                        "utensil_interactions_list": [
+                            {
+                                "source_state_id": "2",
+                                "vessel": [
+                                    "まな板"
+                                ],
+                                "tools": [
+                                    "包丁"
+                                ]
+                            }
+                        ],
+                        "final_position": "まな板"
+                    },
+                    {
+                        "id": "0b493eb6",
+                        "name": "薄切りにしたたまねぎ",
+                        "utensil_interactions_list": [
+                            {
+                                "source_state_id": "3",
+                                "vessel": [
+                                    "まな板"
+                                ],
+                                "tools": [
+                                    "包丁"
+                                ]
+                            }
+                        ],
+                        "final_position": "まな板"
+                    },
+                    {
+                        "id": "e23115f3",
+                        "name": "切ったピーマン",
+                        "utensil_interactions_list": [
+                            {
+                                "source_state_id": "4",
+                                "vessel": [
+                                    "まな板"
+                                ],
+                                "tools": [
+                                    "包丁"
+                                ]
+                            }
+                        ],
+                        "final_position": "まな板"
+                    },
+                    {
+                        "id": "06153c6f",
+                        "name": "切ったマッシュルーム",
+                        "utensil_interactions_list": [
+                            {
+                                "source_state_id": "5",
+                                "vessel": [
+                                    "まな板"
+                                ],
+                                "tools": [
+                                    "包丁"
+                                ]
+                            }
+                        ],
+                        "final_position": "まな板"
+                    }
+                ]
             },
             {
                 "step_after": 3,
-                "state_list": []
+                "state_list": [
+                    {
+                        "id": "cd3a53ec",
+                        "name": "たまねぎ、ピーマン、ハム、マッシュルームを炒めたもの",
+                        "utensil_interactions_list": [
+                            {
+                                "source_state_id": "10",
+                                "vessel": [
+                                    "フライパン（蓋付き）"
+                                ],
+                                "tools": [
+                                    "菜箸"
+                                ]
+                            },
+                            {
+                                "source_state_id": "0b493eb6",
+                                "vessel": [
+                                    "まな板",
+                                    "フライパン（蓋付き）"
+                                ],
+                                "tools": [
+                                    "菜箸"
+                                ]
+                            },
+                            {
+                                "source_state_id": "e23115f3",
+                                "vessel": [
+                                    "まな板",
+                                    "フライパン（蓋付き）"
+                                ],
+                                "tools": [
+                                    "菜箸"
+                                ]
+                            },
+                            {
+                                "source_state_id": "f42c3fac",
+                                "vessel": [
+                                    "まな板",
+                                    "フライパン（蓋付き）"
+                                ],
+                                "tools": [
+                                    "菜箸"
+                                ]
+                            },
+                            {
+                                "source_state_id": "06153c6f",
+                                "vessel": [
+                                    "まな板",
+                                    "フライパン（蓋付き）"
+                                ],
+                                "tools": [
+                                    "菜箸"
+                                ]
+                            },
+                            {
+                                "source_state_id": "9",
+                                "vessel": [
+                                    "まな板",
+                                    "フライパン（蓋付き）"
+                                ],
+                                "tools": [
+                                    "菜箸"
+                                ]
+                            },
+                            {
+                                "source_state_id": "11",
+                                "vessel": [
+                                    "まな板",
+                                    "フライパン（蓋付き）"
+                                ],
+                                "tools": [
+                                    "菜箸"
+                                ]
+                            }
+                        ],
+                        "final_position": "フライパン（蓋付き）"
+                    }
+                ]
             },
             {
                 "step_after": 4,
-                "state_list": []
+                "state_list": [
+                    {
+                        "id": "d131a01c",
+                        "name": "ナポリタン",
+                        "utensil_interactions_list": [
+                            {
+                                "source_state_id": "cd3a53ec",
+                                "vessel": [
+                                    "フライパン（蓋付き）",
+                                    "盛り付け皿・器"
+                                ],
+                                "tools": [
+                                    "トング"
+                                ]
+                            },
+                            {
+                                "source_state_id": "4215623a",
+                                "vessel": [
+                                    "ざる",
+                                    "フライパン（蓋付き）",
+                                    "盛り付け皿・器"
+                                ],
+                                "tools": [
+                                    "トング"
+                                ]
+                            },
+                            {
+                                "source_state_id": "6",
+                                "vessel": [
+                                    "ざる",
+                                    "フライパン（蓋付き）",
+                                    "盛り付け皿・器"
+                                ],
+                                "tools": [
+                                    "トング"
+                                ]
+                            },
+                            {
+                                "source_state_id": "7",
+                                "vessel": [
+                                    "ざる",
+                                    "フライパン（蓋付き）",
+                                    "盛り付け皿・器"
+                                ],
+                                "tools": [
+                                    "トング"
+                                ]
+                            },
+                            {
+                                "source_state_id": "12",
+                                "vessel": [
+                                    "ざる",
+                                    "フライパン（蓋付き）",
+                                    "盛り付け皿・器"
+                                ],
+                                "tools": [
+                                    "トング"
+                                ]
+                            },
+                            {
+                                "source_state_id": "8",
+                                "vessel": [
+                                    "盛り付け皿・器"
+                                ],
+                                "tools": [
+                                    "道具不使用"
+                                ]
+                            }
+                        ],
+                        "final_position": "盛り付け皿・器"
+                    }
+                ]
             }
         ],
         "annotation_note": ""
