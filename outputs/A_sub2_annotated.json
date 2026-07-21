@@ -47,8 +47,8 @@
                 "step_after": 1,
                 "state_list": [
                     {
-                        "id": "e10655e5",
-                        "name": "ヘタをくり抜いたトマト",
+                        "id": "e7776b14",
+                        "name": "切ったトマト",
                         "utensil_interactions_list": [
                             {
                                 "source_state_id": "1",
@@ -63,7 +63,7 @@
                         "final_position": "まな板"
                     },
                     {
-                        "id": "dc434abf",
+                        "id": "91780864",
                         "name": "切った油揚げ",
                         "utensil_interactions_list": [
                             {
@@ -84,27 +84,16 @@
                 "step_after": 2,
                 "state_list": [
                     {
-                        "id": "4ef62c39",
-                        "name": "皮をむいたトマト",
+                        "id": "8c8aea99",
+                        "name": "加熱した味付けトマト",
                         "utensil_interactions_list": [
-                            {
-                                "source_state_id": "e10655e5",
-                                "vessel": [
-                                    "まな板",
-                                    "鍋（蓋付き）",
-                                    "ボウル"
-                                ],
-                                "tools": [
-                                    "網目の粗い網杓子"
-                                ]
-                            },
                             {
                                 "source_state_id": "3",
                                 "vessel": [
                                     "鍋（蓋付き）"
                                 ],
                                 "tools": [
-                                    "道具不使用"
+                                    "菜箸"
                                 ]
                             },
                             {
@@ -113,7 +102,51 @@
                                     "鍋（蓋付き）"
                                 ],
                                 "tools": [
-                                    "道具不使用"
+                                    "菜箸"
+                                ]
+                            },
+                            {
+                                "source_state_id": "e7776b14",
+                                "vessel": [
+                                    "ボウル",
+                                    "鍋（蓋付き）"
+                                ],
+                                "tools": [
+                                    "菜箸"
+                                ]
+                            }
+                        ],
+                        "final_position": "鍋（蓋付き）"
+                    },
+                    {
+                        "id": "850393b5",
+                        "name": "加熱した調味料",
+                        "utensil_interactions_list": [
+                            {
+                                "source_state_id": "3",
+                                "vessel": [
+                                    "鍋（蓋付き）"
+                                ],
+                                "tools": [
+                                    "菜箸"
+                                ]
+                            },
+                            {
+                                "source_state_id": "4",
+                                "vessel": [
+                                    "鍋（蓋付き）"
+                                ],
+                                "tools": [
+                                    "菜箸"
+                                ]
+                            },
+                            {
+                                "source_state_id": "e7776b14",
+                                "vessel": [
+                                    "鍋（蓋付き）"
+                                ],
+                                "tools": [
+                                    "菜箸"
                                 ]
                             }
                         ],
@@ -125,37 +158,27 @@
                 "step_after": 3,
                 "state_list": [
                     {
-                        "id": "f4736715",
-                        "name": "油揚げとトマトを冷やしたもの",
+                        "id": "8379161a",
+                        "name": "加熱した油揚げ",
                         "utensil_interactions_list": [
                             {
-                                "source_state_id": "None_43bd963f",
+                                "source_state_id": "850393b5",
                                 "vessel": [
                                     "鍋（蓋付き）",
                                     "ボウル"
                                 ],
                                 "tools": [
-                                    "おたま"
+                                    "菜箸"
                                 ]
                             },
                             {
-                                "source_state_id": "dc434abf",
+                                "source_state_id": "91780864",
                                 "vessel": [
                                     "まな板",
-                                    "鍋（蓋付き）",
                                     "ボウル"
                                 ],
                                 "tools": [
-                                    "おたま"
-                                ]
-                            },
-                            {
-                                "source_state_id": "4ef62c39",
-                                "vessel": [
-                                    "ボウル"
-                                ],
-                                "tools": [
-                                    "道具不使用"
+                                    "菜箸"
                                 ]
                             }
                         ],
@@ -167,36 +190,38 @@
                 "step_after": 4,
                 "state_list": [
                     {
-                        "id": "48476713",
+                        "id": "46e0a05a",
                         "name": "例題1：トマトの冷やしおでん風",
                         "utensil_interactions_list": [
                             {
-                                "source_state_id": "f4736715",
+                                "source_state_id": "8c8aea99",
+                                "vessel": [
+                                    "盛り付け皿・器",
+                                    "ボウル"
+                                ],
+                                "tools": []
+                            },
+                            {
+                                "source_state_id": "8379161a",
                                 "vessel": [
                                     "ボウル",
                                     "盛り付け皿・器"
                                 ],
-                                "tools": [
-                                    "おたま"
-                                ]
+                                "tools": []
                             },
                             {
                                 "source_state_id": "5",
                                 "vessel": [
                                     "盛り付け皿・器"
                                 ],
-                                "tools": [
-                                    "道具不使用"
-                                ]
+                                "tools": []
                             },
                             {
                                 "source_state_id": "6",
                                 "vessel": [
                                     "盛り付け皿・器"
                                 ],
-                                "tools": [
-                                    "道具不使用"
-                                ]
+                                "tools": []
                             }
                         ],
                         "final_position": "盛り付け皿・器"
@@ -260,7 +285,7 @@
                 "step_after": 1,
                 "state_list": [
                     {
-                        "id": "f5b7c0b3",
+                        "id": "7e4dbfe5",
                         "name": "カラメルソース",
                         "utensil_interactions_list": [
                             {
@@ -270,7 +295,7 @@
                                     "流し型"
                                 ],
                                 "tools": [
-                                    "道具不使用"
+                                    "耐熱ゴムべら"
                                 ]
                             },
                             {
@@ -280,7 +305,7 @@
                                     "流し型"
                                 ],
                                 "tools": [
-                                    "道具不使用"
+                                    "耐熱ゴムべら"
                                 ]
                             }
                         ],
@@ -292,8 +317,8 @@
                 "step_after": 2,
                 "state_list": [
                     {
-                        "id": "b7e52b53",
-                        "name": "卵・卵黄・グラニュー糖を混ぜたもの",
+                        "id": "5764adc4",
+                        "name": "卵と卵黄とグラニュー糖",
                         "utensil_interactions_list": [
                             {
                                 "source_state_id": "3",
@@ -301,7 +326,7 @@
                                     "ボウル"
                                 ],
                                 "tools": [
-                                    "泡だて器"
+                                    "木製へら"
                                 ]
                             },
                             {
@@ -310,7 +335,7 @@
                                     "ボウル"
                                 ],
                                 "tools": [
-                                    "泡だて器"
+                                    "木製へら"
                                 ]
                             },
                             {
@@ -319,7 +344,7 @@
                                     "ボウル"
                                 ],
                                 "tools": [
-                                    "泡だて器"
+                                    "木製へら"
                                 ]
                             }
                         ],
@@ -331,8 +356,8 @@
                 "step_after": 3,
                 "state_list": [
                     {
-                        "id": "edcf883d",
-                        "name": "牛乳・生クリームを沸騰させたもの",
+                        "id": "bec7828e",
+                        "name": "加熱した牛乳と生クリーム",
                         "utensil_interactions_list": [
                             {
                                 "source_state_id": "6",
@@ -361,11 +386,11 @@
                 "step_after": 4,
                 "state_list": [
                     {
-                        "id": "19c46d2f",
-                        "name": "2・3を混ぜ合わせたもの",
+                        "id": "c51dc7f3",
+                        "name": "混ぜた2と3",
                         "utensil_interactions_list": [
                             {
-                                "source_state_id": "b7e52b53",
+                                "source_state_id": "5764adc4",
                                 "vessel": [
                                     "ボウル"
                                 ],
@@ -375,19 +400,17 @@
                                 ]
                             },
                             {
-                                "source_state_id": "edcf883d",
+                                "source_state_id": "bec7828e",
                                 "vessel": [
-                                    "鍋（蓋付き）-2",
-                                    "ボウル"
+                                    "鍋（蓋付き）-2"
                                 ],
                                 "tools": [
-                                    "おたま",
                                     "泡だて器",
                                     "耐熱ゴムべら"
                                 ]
                             }
                         ],
-                        "final_position": "ボウル"
+                        "final_position": "鍋（蓋付き）-2"
                     }
                 ]
             },
@@ -395,32 +418,27 @@
                 "step_after": 5,
                 "state_list": [
                     {
-                        "id": "8e5e0b62",
-                        "name": "湯煎焼きしたプリン",
+                        "id": "e9b90438",
+                        "name": "加熱した1と4",
                         "utensil_interactions_list": [
                             {
-                                "source_state_id": "f5b7c0b3",
+                                "source_state_id": "7e4dbfe5",
                                 "vessel": [
-                                    "流し型"
+                                    "流し型",
+                                    "盛り付け皿・器"
                                 ],
-                                "tools": [
-                                    "道具不使用"
-                                ]
+                                "tools": []
                             },
                             {
-                                "source_state_id": "19c46d2f",
+                                "source_state_id": "c51dc7f3",
                                 "vessel": [
-                                    "ボウル",
-                                    "流し型"
+                                    "鍋（蓋付き）-2",
+                                    "盛り付け皿・器"
                                 ],
-                                "tools": [
-                                    "おたま",
-                                    "裏漉し器（受け皿なし）",
-                                    "スプーン"
-                                ]
+                                "tools": []
                             }
                         ],
-                        "final_position": "流し型"
+                        "final_position": "盛り付け皿・器"
                     }
                 ]
             },
@@ -428,19 +446,15 @@
                 "step_after": 6,
                 "state_list": [
                     {
-                        "id": "4696e017",
+                        "id": "ad4b24cf",
                         "name": "例題2：ジャンボプリン",
                         "utensil_interactions_list": [
                             {
-                                "source_state_id": "8e5e0b62",
+                                "source_state_id": "e9b90438",
                                 "vessel": [
-                                    "流し型",
                                     "盛り付け皿・器"
                                 ],
-                                "tools": [
-                                    "製菓用パレットナイフ",
-                                    "スプーン"
-                                ]
+                                "tools": []
                             }
                         ],
                         "final_position": "盛り付け皿・器"
@@ -558,8 +572,8 @@
                 "step_after": 1,
                 "state_list": [
                     {
-                        "id": "6573637e",
-                        "name": "ざるにあげた米",
+                        "id": "e4c0be8d",
+                        "name": "加熱した米",
                         "utensil_interactions_list": [
                             {
                                 "source_state_id": "1",
@@ -567,26 +581,23 @@
                                     "鍋（蓋付き）",
                                     "ざる"
                                 ],
-                                "tools": [
-                                    "しゃもじ"
-                                ]
+                                "tools": []
                             }
                         ],
                         "final_position": "ざる"
                     },
                     {
-                        "id": "9f20f5c6",
-                        "name": "切った鶏肉",
+                        "id": "a7e63561",
+                        "name": "切った鶏もも肉",
                         "utensil_interactions_list": [
                             {
                                 "source_state_id": "2",
                                 "vessel": [
-                                    "生肉・生魚用まな板",
-                                    "ボウル"
+                                    "ボウル",
+                                    "生肉・生魚用まな板"
                                 ],
                                 "tools": [
-                                    "包丁",
-                                    "スプーン"
+                                    "包丁"
                                 ]
                             },
                             {
@@ -594,33 +605,27 @@
                                 "vessel": [
                                     "ボウル"
                                 ],
-                                "tools": [
-                                    "スプーン"
-                                ]
+                                "tools": []
                             },
                             {
                                 "source_state_id": "8",
                                 "vessel": [
                                     "ボウル"
                                 ],
-                                "tools": [
-                                    "スプーン"
-                                ]
+                                "tools": []
                             },
                             {
                                 "source_state_id": "14",
                                 "vessel": [
                                     "ボウル"
                                 ],
-                                "tools": [
-                                    "スプーン"
-                                ]
+                                "tools": []
                             }
                         ],
                         "final_position": "ボウル"
                     },
                     {
-                        "id": "5236fecf",
+                        "id": "07206cf9",
                         "name": "塩水",
                         "utensil_interactions_list": [
                             {
@@ -628,15 +633,13 @@
                                 "vessel": [
                                     "ボウル-2"
                                 ],
-                                "tools": [
-                                    "スプーン"
-                                ]
+                                "tools": []
                             }
                         ],
                         "final_position": "ボウル-2"
                     },
                     {
-                        "id": "b742f7a8",
+                        "id": "9dc121e3",
                         "name": "サフラン水",
                         "utensil_interactions_list": [
                             {
@@ -644,9 +647,7 @@
                                 "vessel": [
                                     "ボウル-3"
                                 ],
-                                "tools": [
-                                    "スプーン"
-                                ]
+                                "tools": []
                             }
                         ],
                         "final_position": "ボウル-3"
@@ -657,7 +658,7 @@
                 "step_after": 2,
                 "state_list": [
                     {
-                        "id": "c2811a0b",
+                        "id": "787cf675",
                         "name": "カレーベース",
                         "utensil_interactions_list": [
                             {
@@ -666,7 +667,7 @@
                                     "フライパン（蓋付き）"
                                 ],
                                 "tools": [
-                                    "菜箸"
+                                    "耐熱ゴムべら"
                                 ]
                             },
                             {
@@ -675,7 +676,7 @@
                                     "フライパン（蓋付き）"
                                 ],
                                 "tools": [
-                                    "菜箸"
+                                    "耐熱ゴムべら"
                                 ]
                             },
                             {
@@ -684,7 +685,7 @@
                                     "フライパン（蓋付き）"
                                 ],
                                 "tools": [
-                                    "菜箸"
+                                    "耐熱ゴムべら"
                                 ]
                             },
                             {
@@ -693,7 +694,7 @@
                                     "フライパン（蓋付き）"
                                 ],
                                 "tools": [
-                                    "菜箸"
+                                    "耐熱ゴムべら"
                                 ]
                             },
                             {
@@ -702,7 +703,7 @@
                                     "フライパン（蓋付き）"
                                 ],
                                 "tools": [
-                                    "菜箸"
+                                    "耐熱ゴムべら"
                                 ]
                             },
                             {
@@ -711,7 +712,7 @@
                                     "フライパン（蓋付き）"
                                 ],
                                 "tools": [
-                                    "菜箸"
+                                    "耐熱ゴムべら"
                                 ]
                             }
                         ],
@@ -723,49 +724,38 @@
                 "step_after": 3,
                 "state_list": [
                     {
-                        "id": "1bebc8ed",
-                        "name": "2に鶏肉・塩水・カレー粉を加えたカレーベース",
+                        "id": "66f6f299",
+                        "name": "加熱した鶏もも肉",
                         "utensil_interactions_list": [
                             {
-                                "source_state_id": "c2811a0b",
+                                "source_state_id": "a7e63561",
                                 "vessel": [
-                                    "フライパン（蓋付き）"
+                                    "フライパン（蓋付き）-2"
                                 ],
                                 "tools": [
-                                    "木製へら"
+                                    "耐熱ゴムべら"
                                 ]
                             },
                             {
-                                "source_state_id": "9f20f5c6",
+                                "source_state_id": "07206cf9",
                                 "vessel": [
-                                    "ボウル",
-                                    "フライパン（蓋付き）"
+                                    "フライパン（蓋付き）-2"
                                 ],
                                 "tools": [
-                                    "木製へら"
-                                ]
-                            },
-                            {
-                                "source_state_id": "5236fecf",
-                                "vessel": [
-                                    "ボウル-2",
-                                    "フライパン（蓋付き）"
-                                ],
-                                "tools": [
-                                    "木製へら"
+                                    "耐熱ゴムべら"
                                 ]
                             },
                             {
                                 "source_state_id": "8",
                                 "vessel": [
-                                    "フライパン（蓋付き）"
+                                    "フライパン（蓋付き）-2"
                                 ],
                                 "tools": [
-                                    "木製へら"
+                                    "耐熱ゴムべら"
                                 ]
                             }
                         ],
-                        "final_position": "フライパン（蓋付き）"
+                        "final_position": "フライパン（蓋付き）-2"
                     }
                 ]
             },
@@ -773,79 +763,74 @@
                 "step_after": 4,
                 "state_list": [
                     {
-                        "id": "506eb811",
+                        "id": "d7f84718",
                         "name": "本格チキンビリヤニ",
                         "utensil_interactions_list": [
                             {
                                 "source_state_id": "16",
                                 "vessel": [
-                                    "鍋（蓋付き）-2",
+                                    "鍋（蓋付き）",
                                     "盛り付け皿・器"
                                 ],
-                                "tools": [
-                                    "刷毛",
-                                    "おたま"
-                                ]
+                                "tools": []
                             },
                             {
-                                "source_state_id": "6573637e",
+                                "source_state_id": "e4c0be8d",
                                 "vessel": [
                                     "ざる",
-                                    "鍋（蓋付き）-2",
+                                    "鍋（蓋付き）",
                                     "盛り付け皿・器"
                                 ],
-                                "tools": [
-                                    "おたま"
-                                ]
+                                "tools": []
                             },
                             {
-                                "source_state_id": "1bebc8ed",
+                                "source_state_id": "787cf675",
                                 "vessel": [
                                     "フライパン（蓋付き）",
-                                    "鍋（蓋付き）-2",
+                                    "鍋（蓋付き）",
                                     "盛り付け皿・器"
                                 ],
-                                "tools": [
-                                    "おたま"
-                                ]
+                                "tools": []
                             },
                             {
-                                "source_state_id": "b742f7a8",
+                                "source_state_id": "9dc121e3",
                                 "vessel": [
                                     "ボウル-3",
-                                    "鍋（蓋付き）-2",
+                                    "鍋（蓋付き）",
                                     "盛り付け皿・器"
                                 ],
-                                "tools": [
-                                    "おたま"
-                                ]
+                                "tools": []
                             },
                             {
                                 "source_state_id": "11",
                                 "vessel": [
+                                    "鍋（蓋付き）",
                                     "盛り付け皿・器"
                                 ],
-                                "tools": [
-                                    "道具不使用"
-                                ]
+                                "tools": []
                             },
                             {
                                 "source_state_id": "12",
                                 "vessel": [
                                     "盛り付け皿・器"
                                 ],
-                                "tools": [
-                                    "道具不使用"
-                                ]
+                                "tools": []
                             },
                             {
                                 "source_state_id": "13",
                                 "vessel": [
                                     "盛り付け皿・器"
                                 ],
-                                "tools": [
-                                    "道具不使用"
-                                ]
+                                "tools": []
+                            },
+                            {
+                                "source_state_id": "66f6f299",
+                                "vessel": [
+                                    "フライパン（蓋付き）-2",
+                                    "鍋（蓋付き）",
+                                    "盛り付け皿・器"
+                                ],
+                                "tools": []
                             }
                         ],
                         "final_position": "盛り付け皿・器"
@@ -853,7 +838,7 @@
                 ]
             }
         ],
-        "annotation_note": "step1: 米の状態が不明"
+        "annotation_note": ""
     },
     {
         "title": "フランス風豚バラ大根",
@@ -921,7 +906,7 @@
                 "step_after": 1,
                 "state_list": [
                     {
-                        "id": "26a6c88c",
+                        "id": "870db8b7",
                         "name": "切った大根",
                         "utensil_interactions_list": [
                             {
@@ -937,8 +922,8 @@
                         "final_position": "まな板"
                     },
                     {
-                        "id": "8d6a4905",
-                        "name": "切った豚肉",
+                        "id": "a4221a1e",
+                        "name": "切って味付けした豚肉",
                         "utensil_interactions_list": [
                             {
                                 "source_state_id": "1",
@@ -954,18 +939,14 @@
                                 "vessel": [
                                     "生肉・生魚用まな板"
                                 ],
-                                "tools": [
-                                    "道具不使用"
-                                ]
+                                "tools": []
                             },
                             {
                                 "source_state_id": "8",
                                 "vessel": [
                                     "生肉・生魚用まな板"
                                 ],
-                                "tools": [
-                                    "道具不使用"
-                                ]
+                                "tools": []
                             }
                         ],
                         "final_position": "生肉・生魚用まな板"
@@ -976,8 +957,8 @@
                 "step_after": 2,
                 "state_list": [
                     {
-                        "id": "56f6fe1e",
-                        "name": "焼いた豚肉",
+                        "id": "6ca96b92",
+                        "name": "加熱した豚肉",
                         "utensil_interactions_list": [
                             {
                                 "source_state_id": "9",
@@ -985,18 +966,15 @@
                                     "フライパン（蓋付き）"
                                 ],
                                 "tools": [
-                                    "フライ返し",
                                     "菜箸"
                                 ]
                             },
                             {
-                                "source_state_id": "8d6a4905",
+                                "source_state_id": "a4221a1e",
                                 "vessel": [
-                                    "生肉・生魚用まな板",
                                     "フライパン（蓋付き）"
                                 ],
                                 "tools": [
-                                    "フライ返し",
                                     "菜箸"
                                 ]
                             }
@@ -1009,36 +987,29 @@
                 "step_after": 3,
                 "state_list": [
                     {
-                        "id": "2c0f551d",
-                        "name": "2に大根を加えたもの",
+                        "id": "84088c5c",
+                        "name": "白ワインを加えた豚肉と大根",
                         "utensil_interactions_list": [
-                            {
-                                "source_state_id": "56f6fe1e",
-                                "vessel": [
-                                    "フライパン（蓋付き）"
-                                ],
-                                "tools": [
-                                    "道具不使用"
-                                ]
-                            },
-                            {
-                                "source_state_id": "26a6c88c",
-                                "vessel": [
-                                    "まな板",
-                                    "フライパン（蓋付き）"
-                                ],
-                                "tools": [
-                                    "道具不使用"
-                                ]
-                            },
                             {
                                 "source_state_id": "3",
                                 "vessel": [
                                     "フライパン（蓋付き）"
                                 ],
-                                "tools": [
-                                    "道具不使用"
-                                ]
+                                "tools": []
+                            },
+                            {
+                                "source_state_id": "6ca96b92",
+                                "vessel": [
+                                    "フライパン（蓋付き）"
+                                ],
+                                "tools": []
+                            },
+                            {
+                                "source_state_id": "870db8b7",
+                                "vessel": [
+                                    "フライパン（蓋付き）"
+                                ],
+                                "tools": []
                             }
                         ],
                         "final_position": "フライパン（蓋付き）"
@@ -1049,16 +1020,16 @@
                 "step_after": 4,
                 "state_list": [
                     {
-                        "id": "c38005a2",
-                        "name": "3に固形スープの素・タイム・ローリエを加えて煮たもの",
+                        "id": "64614b23",
+                        "name": "味付けした豚肉と大根",
                         "utensil_interactions_list": [
                             {
-                                "source_state_id": "2c0f551d",
+                                "source_state_id": "84088c5c",
                                 "vessel": [
                                     "フライパン（蓋付き）"
                                 ],
                                 "tools": [
-                                    "網目の細かい網杓子"
+                                    "おたま"
                                 ]
                             },
                             {
@@ -1067,7 +1038,7 @@
                                     "フライパン（蓋付き）"
                                 ],
                                 "tools": [
-                                    "網目の細かい網杓子"
+                                    "おたま"
                                 ]
                             },
                             {
@@ -1076,7 +1047,7 @@
                                     "フライパン（蓋付き）"
                                 ],
                                 "tools": [
-                                    "網目の細かい網杓子"
+                                    "おたま"
                                 ]
                             },
                             {
@@ -1085,7 +1056,7 @@
                                     "フライパン（蓋付き）"
                                 ],
                                 "tools": [
-                                    "網目の細かい網杓子"
+                                    "おたま"
                                 ]
                             }
                         ],
@@ -1097,18 +1068,15 @@
                 "step_after": 5,
                 "state_list": [
                     {
-                        "id": "65845e58",
+                        "id": "aa7664da",
                         "name": "フランス風豚バラ大根",
                         "utensil_interactions_list": [
                             {
-                                "source_state_id": "c38005a2",
+                                "source_state_id": "64614b23",
                                 "vessel": [
-                                    "フライパン（蓋付き）",
                                     "盛り付け皿・器"
                                 ],
-                                "tools": [
-                                    "おたま"
-                                ]
+                                "tools": []
                             }
                         ],
                         "final_position": "盛り付け皿・器"
@@ -1178,8 +1146,8 @@
                 "step_after": 1,
                 "state_list": [
                     {
-                        "id": "b578febe",
-                        "name": "切った白菜の根本以外の部分",
+                        "id": "73a0462f",
+                        "name": "3等分の白菜",
                         "utensil_interactions_list": [
                             {
                                 "source_state_id": "1",
@@ -1194,8 +1162,8 @@
                         "final_position": "まな板"
                     },
                     {
-                        "id": "62890b13",
-                        "name": "切った白菜の根本部分",
+                        "id": "03e23e45",
+                        "name": "白菜の根本",
                         "utensil_interactions_list": [
                             {
                                 "source_state_id": "1",
@@ -1210,7 +1178,7 @@
                         "final_position": "まな板"
                     },
                     {
-                        "id": "8026e5ae",
+                        "id": "1747090c",
                         "name": "切ったにんにく",
                         "utensil_interactions_list": [
                             {
@@ -1226,20 +1194,20 @@
                         "final_position": "まな板"
                     },
                     {
-                        "id": "50785c35",
-                        "name": "切り離した手羽先",
+                        "id": "edcd6ded",
+                        "name": "処理した手羽先",
                         "utensil_interactions_list": [
                             {
                                 "source_state_id": "2",
                                 "vessel": [
-                                    "ボウル"
+                                    "生肉・生魚用まな板"
                                 ],
                                 "tools": [
-                                    "道具不使用"
+                                    "包丁"
                                 ]
                             }
                         ],
-                        "final_position": "ボウル"
+                        "final_position": "生肉・生魚用まな板"
                     }
                 ]
             },
@@ -1247,41 +1215,26 @@
                 "step_after": 2,
                 "state_list": [
                     {
-                        "id": "56142eda",
-                        "name": "焼いた白菜の根本部分",
+                        "id": "66a10692",
+                        "name": "加熱した白菜と手羽先",
                         "utensil_interactions_list": [
                             {
-                                "source_state_id": "62890b13",
+                                "source_state_id": "03e23e45",
                                 "vessel": [
-                                    "まな板",
-                                    "フライパン（蓋付き）",
-                                    "ボウル-2"
+                                    "フライパン（蓋付き）"
                                 ],
-                                "tools": [
-                                    "菜箸"
-                                ]
+                                "tools": []
                             },
                             {
                                 "source_state_id": "7",
                                 "vessel": [
-                                    "フライパン（蓋付き）",
-                                    "ボウル-2"
+                                    "フライパン（蓋付き）"
                                 ],
-                                "tools": [
-                                    "菜箸"
-                                ]
-                            }
-                        ],
-                        "final_position": "ボウル-2"
-                    },
-                    {
-                        "id": "c9f257ff",
-                        "name": "焼いた手羽先",
-                        "utensil_interactions_list": [
+                                "tools": []
+                            },
                             {
-                                "source_state_id": "50785c35",
+                                "source_state_id": "edcd6ded",
                                 "vessel": [
-                                    "ボウル",
                                     "フライパン（蓋付き）"
                                 ],
                                 "tools": [
@@ -1297,28 +1250,27 @@
                 "step_after": 3,
                 "state_list": [
                     {
-                        "id": "03a5e3a5",
+                        "id": "bdcceb46",
                         "name": "白菜と手羽先のピリ辛煮",
                         "utensil_interactions_list": [
                             {
-                                "source_state_id": "c9f257ff",
+                                "source_state_id": "66a10692",
                                 "vessel": [
                                     "フライパン（蓋付き）",
                                     "盛り付け皿・器"
                                 ],
                                 "tools": [
-                                    "おたま"
+                                    "菜箸"
                                 ]
                             },
                             {
-                                "source_state_id": "8026e5ae",
+                                "source_state_id": "1747090c",
                                 "vessel": [
-                                    "まな板",
                                     "フライパン（蓋付き）",
                                     "盛り付け皿・器"
                                 ],
                                 "tools": [
-                                    "おたま"
+                                    "菜箸"
                                 ]
                             },
                             {
@@ -1328,29 +1280,7 @@
                                     "盛り付け皿・器"
                                 ],
                                 "tools": [
-                                    "おたま"
-                                ]
-                            },
-                            {
-                                "source_state_id": "b578febe",
-                                "vessel": [
-                                    "まな板",
-                                    "フライパン（蓋付き）",
-                                    "盛り付け皿・器"
-                                ],
-                                "tools": [
-                                    "おたま"
-                                ]
-                            },
-                            {
-                                "source_state_id": "56142eda",
-                                "vessel": [
-                                    "ボウル-2",
-                                    "フライパン（蓋付き）",
-                                    "盛り付け皿・器"
-                                ],
-                                "tools": [
-                                    "おたま"
+                                    "菜箸"
                                 ]
                             },
                             {
@@ -1360,7 +1290,17 @@
                                     "盛り付け皿・器"
                                 ],
                                 "tools": [
-                                    "おたま"
+                                    "菜箸"
+                                ]
+                            },
+                            {
+                                "source_state_id": "73a0462f",
+                                "vessel": [
+                                    "フライパン（蓋付き）",
+                                    "盛り付け皿・器"
+                                ],
+                                "tools": [
+                                    "菜箸"
                                 ]
                             },
                             {
@@ -1370,7 +1310,7 @@
                                     "盛り付け皿・器"
                                 ],
                                 "tools": [
-                                    "おたま"
+                                    "菜箸"
                                 ]
                             },
                             {
@@ -1380,7 +1320,7 @@
                                     "盛り付け皿・器"
                                 ],
                                 "tools": [
-                                    "おたま"
+                                    "菜箸"
                                 ]
                             }
                         ],
@@ -1445,7 +1385,7 @@
                 "step_after": 1,
                 "state_list": [
                     {
-                        "id": "f33cb361",
+                        "id": "cab41771",
                         "name": "切ったアスパラガス",
                         "utensil_interactions_list": [
                             {
@@ -1454,8 +1394,7 @@
                                     "まな板"
                                 ],
                                 "tools": [
-                                    "包丁",
-                                    "ピーラー"
+                                    "包丁"
                                 ]
                             }
                         ],
@@ -1467,49 +1406,39 @@
                 "step_after": 2,
                 "state_list": [
                     {
-                        "id": "27986f7f",
-                        "name": "豚肉を巻きつけたアスパラガス",
+                        "id": "cdd18266",
+                        "name": "豚肉を巻いたアスパラガス",
                         "utensil_interactions_list": [
                             {
-                                "source_state_id": "f33cb361",
+                                "source_state_id": "cab41771",
                                 "vessel": [
-                                    "まな板",
-                                    "バット"
+                                    "まな板"
                                 ],
-                                "tools": [
-                                    "道具不使用"
-                                ]
+                                "tools": []
                             },
                             {
                                 "source_state_id": "2",
                                 "vessel": [
-                                    "まな板",
-                                    "バット"
+                                    "まな板"
                                 ],
-                                "tools": [
-                                    "道具不使用"
-                                ]
+                                "tools": []
                             },
                             {
                                 "source_state_id": "4",
                                 "vessel": [
-                                    "バット"
+                                    "まな板"
                                 ],
-                                "tools": [
-                                    "道具不使用"
-                                ]
+                                "tools": []
                             },
                             {
                                 "source_state_id": "5",
                                 "vessel": [
-                                    "バット"
+                                    "まな板"
                                 ],
-                                "tools": [
-                                    "道具不使用"
-                                ]
+                                "tools": []
                             }
                         ],
-                        "final_position": "バット"
+                        "final_position": "まな板"
                     }
                 ]
             },
@@ -1517,37 +1446,31 @@
                 "step_after": 3,
                 "state_list": [
                     {
-                        "id": "5c68c170",
+                        "id": "21a5edad",
                         "name": "アスパラの豚肉巻き",
                         "utensil_interactions_list": [
                             {
-                                "source_state_id": "6",
+                                "source_state_id": "cdd18266",
                                 "vessel": [
-                                    "フライパン（蓋付き）",
-                                    "盛り付け皿・器"
+                                    "フライパン（蓋付き）"
                                 ],
                                 "tools": [
-                                    "菜箸",
-                                    "クッキングペーパー"
+                                    "菜箸"
                                 ]
                             },
                             {
-                                "source_state_id": "27986f7f",
+                                "source_state_id": "6",
                                 "vessel": [
-                                    "バット",
-                                    "フライパン（蓋付き）",
-                                    "盛り付け皿・器"
+                                    "フライパン（蓋付き）"
                                 ],
                                 "tools": [
-                                    "菜箸",
-                                    "クッキングペーパー"
+                                    "菜箸"
                                 ]
                             },
                             {
                                 "source_state_id": "7",
                                 "vessel": [
-                                    "フライパン（蓋付き）",
-                                    "盛り付け皿・器"
+                                    "フライパン（蓋付き）"
                                 ],
                                 "tools": [
                                     "菜箸"
@@ -1556,14 +1479,14 @@
                             {
                                 "source_state_id": "3",
                                 "vessel": [
-                                    "盛り付け皿・器"
+                                    "フライパン（蓋付き）"
                                 ],
                                 "tools": [
-                                    "道具不使用"
+                                    "菜箸"
                                 ]
                             }
                         ],
-                        "final_position": "盛り付け皿・器"
+                        "final_position": "フライパン（蓋付き）"
                     }
                 ]
             }
@@ -1654,14 +1577,13 @@
                 "step_after": 1,
                 "state_list": [
                     {
-                        "id": "92f24285",
+                        "id": "20c6b66e",
                         "name": "ゆでたスパゲッティ",
                         "utensil_interactions_list": [
                             {
                                 "source_state_id": "9",
                                 "vessel": [
-                                    "鍋（蓋付き）",
-                                    "ざる"
+                                    "鍋（蓋付き）"
                                 ],
                                 "tools": [
                                     "菜箸"
@@ -1686,7 +1608,7 @@
                 "step_after": 2,
                 "state_list": [
                     {
-                        "id": "8ecc03cc",
+                        "id": "7847b1f0",
                         "name": "切ったハム",
                         "utensil_interactions_list": [
                             {
@@ -1702,7 +1624,7 @@
                         "final_position": "まな板"
                     },
                     {
-                        "id": "096bf0b6",
+                        "id": "357cc503",
                         "name": "切ったたまねぎ",
                         "utensil_interactions_list": [
                             {
@@ -1718,7 +1640,7 @@
                         "final_position": "まな板"
                     },
                     {
-                        "id": "c48c467e",
+                        "id": "2f4dc313",
                         "name": "切ったピーマン",
                         "utensil_interactions_list": [
                             {
@@ -1734,7 +1656,7 @@
                         "final_position": "まな板"
                     },
                     {
-                        "id": "58f5fd76",
+                        "id": "96422618",
                         "name": "切ったマッシュルーム",
                         "utensil_interactions_list": [
                             {
@@ -1755,8 +1677,8 @@
                 "step_after": 3,
                 "state_list": [
                     {
-                        "id": "ffd58e54",
-                        "name": "ピーマン・ハム・マッシュルームを焼いたもの",
+                        "id": "5a86851a",
+                        "name": "加熱した具材",
                         "utensil_interactions_list": [
                             {
                                 "source_state_id": "10",
@@ -1768,9 +1690,8 @@
                                 ]
                             },
                             {
-                                "source_state_id": "096bf0b6",
+                                "source_state_id": "357cc503",
                                 "vessel": [
-                                    "まな板",
                                     "フライパン（蓋付き）"
                                 ],
                                 "tools": [
@@ -1778,9 +1699,8 @@
                                 ]
                             },
                             {
-                                "source_state_id": "c48c467e",
+                                "source_state_id": "2f4dc313",
                                 "vessel": [
-                                    "まな板",
                                     "フライパン（蓋付き）"
                                 ],
                                 "tools": [
@@ -1788,9 +1708,8 @@
                                 ]
                             },
                             {
-                                "source_state_id": "8ecc03cc",
+                                "source_state_id": "7847b1f0",
                                 "vessel": [
-                                    "まな板",
                                     "フライパン（蓋付き）"
                                 ],
                                 "tools": [
@@ -1798,22 +1717,12 @@
                                 ]
                             },
                             {
-                                "source_state_id": "58f5fd76",
+                                "source_state_id": "96422618",
                                 "vessel": [
-                                    "まな板",
                                     "フライパン（蓋付き）"
                                 ],
                                 "tools": [
                                     "菜箸"
-                                ]
-                            },
-                            {
-                                "source_state_id": "9",
-                                "vessel": [
-                                    "フライパン（蓋付き）"
-                                ],
-                                "tools": [
-                                    "道具不使用"
                                 ]
                             },
                             {
@@ -1822,7 +1731,7 @@
                                     "フライパン（蓋付き）"
                                 ],
                                 "tools": [
-                                    "道具不使用"
+                                    "菜箸"
                                 ]
                             }
                         ],
@@ -1834,28 +1743,27 @@
                 "step_after": 4,
                 "state_list": [
                     {
-                        "id": "3502783d",
+                        "id": "427f662d",
                         "name": "ナポリタン",
                         "utensil_interactions_list": [
                             {
-                                "source_state_id": "ffd58e54",
+                                "source_state_id": "20c6b66e",
                                 "vessel": [
                                     "フライパン（蓋付き）",
                                     "盛り付け皿・器"
                                 ],
                                 "tools": [
-                                    "トング"
+                                    "菜箸"
                                 ]
                             },
                             {
-                                "source_state_id": "92f24285",
+                                "source_state_id": "5a86851a",
                                 "vessel": [
-                                    "ざる",
                                     "フライパン（蓋付き）",
                                     "盛り付け皿・器"
                                 ],
                                 "tools": [
-                                    "トング"
+                                    "菜箸"
                                 ]
                             },
                             {
@@ -1865,7 +1773,7 @@
                                     "盛り付け皿・器"
                                 ],
                                 "tools": [
-                                    "トング"
+                                    "菜箸"
                                 ]
                             },
                             {
@@ -1875,8 +1783,15 @@
                                     "盛り付け皿・器"
                                 ],
                                 "tools": [
-                                    "トング"
+                                    "菜箸"
                                 ]
+                            },
+                            {
+                                "source_state_id": "8",
+                                "vessel": [
+                                    "盛り付け皿・器"
+                                ],
+                                "tools": []
                             },
                             {
                                 "source_state_id": "12",
@@ -1885,16 +1800,7 @@
                                     "盛り付け皿・器"
                                 ],
                                 "tools": [
-                                    "トング"
-                                ]
-                            },
-                            {
-                                "source_state_id": "8",
-                                "vessel": [
-                                    "盛り付け皿・器"
-                                ],
-                                "tools": [
-                                    "道具不使用"
+                                    "菜箸"
                                 ]
                             }
                         ],
@@ -1959,7 +1865,7 @@
                 "step_after": 1,
                 "state_list": [
                     {
-                        "id": "d921a109",
+                        "id": "2bde8bc1",
                         "name": "クリーム",
                         "utensil_interactions_list": [
                             {
@@ -1998,30 +1904,13 @@
                 "step_after": 2,
                 "state_list": [
                     {
-                        "id": "95f1f6b1",
-                        "name": "ビスケット8枚をコーヒーに浸し器に並び入れたもの",
-                        "utensil_interactions_list": [
-                            {
-                                "source_state_id": "6",
-                                "vessel": [
-                                    "None_マグカップ",
-                                    "盛り付け皿・器"
-                                ],
-                                "tools": [
-                                    "道具不使用"
-                                ]
-                            }
-                        ],
-                        "final_position": "盛り付け皿・器"
-                    },
-                    {
-                        "id": "d5eb7685",
-                        "name": "コーヒー",
+                        "id": "9d0c94c6",
+                        "name": "インスタントコーヒーとビスケット",
                         "utensil_interactions_list": [
                             {
                                 "source_state_id": "4",
                                 "vessel": [
-                                    "None_マグカップ"
+                                    "盛り付け皿・器"
                                 ],
                                 "tools": [
                                     "スプーン"
@@ -2030,14 +1919,21 @@
                             {
                                 "source_state_id": "5",
                                 "vessel": [
-                                    "None_マグカップ"
+                                    "盛り付け皿・器"
                                 ],
                                 "tools": [
                                     "スプーン"
                                 ]
+                            },
+                            {
+                                "source_state_id": "6",
+                                "vessel": [
+                                    "盛り付け皿・器"
+                                ],
+                                "tools": []
                             }
                         ],
-                        "final_position": "None_マグカップ"
+                        "final_position": "盛り付け皿・器"
                     }
                 ]
             },
@@ -2045,46 +1941,36 @@
                 "step_after": 3,
                 "state_list": [
                     {
-                        "id": "f2fa62db",
+                        "id": "199b8e32",
                         "name": "簡単ティラミス",
                         "utensil_interactions_list": [
                             {
-                                "source_state_id": "d921a109",
+                                "source_state_id": "2bde8bc1",
                                 "vessel": [
-                                    "ボウル",
                                     "盛り付け皿・器"
                                 ],
-                                "tools": [
-                                    "耐熱ゴムべら"
-                                ]
+                                "tools": []
+                            },
+                            {
+                                "source_state_id": "9d0c94c6",
+                                "vessel": [
+                                    "盛り付け皿・器"
+                                ],
+                                "tools": []
                             },
                             {
                                 "source_state_id": "6",
                                 "vessel": [
-                                    "None_マグカップ",
                                     "盛り付け皿・器"
                                 ],
-                                "tools": [
-                                    "道具不使用"
-                                ]
-                            },
-                            {
-                                "source_state_id": "d5eb7685",
-                                "vessel": [
-                                    "None_マグカップ"
-                                ],
-                                "tools": [
-                                    "道具不使用"
-                                ]
+                                "tools": []
                             },
                             {
                                 "source_state_id": "7",
                                 "vessel": [
                                     "盛り付け皿・器"
                                 ],
-                                "tools": [
-                                    "None_茶こし"
-                                ]
+                                "tools": []
                             }
                         ],
                         "final_position": "盛り付け皿・器"
@@ -2092,7 +1978,7 @@
                 ]
             }
         ],
-        "annotation_note": "step2: コーヒーをどうするべきか\n全体: アノテーション難しい"
+        "annotation_note": ""
     },
     {
         "title": "ワザあり豚カツ",
@@ -2172,69 +2058,59 @@
                 "step_after": 1,
                 "state_list": [
                     {
-                        "id": "a6d171b8",
-                        "name": "水けを切った千切りキャベツ",
+                        "id": "51543823",
+                        "name": "切ったキャベツ",
                         "utensil_interactions_list": [
                             {
                                 "source_state_id": "2",
                                 "vessel": [
-                                    "まな板",
-                                    "ボウル",
-                                    "ざる"
+                                    "まな板"
                                 ],
                                 "tools": [
                                     "包丁"
                                 ]
                             }
                         ],
-                        "final_position": "ざる"
+                        "final_position": "まな板"
                     },
                     {
-                        "id": "b5dffac3",
-                        "name": "[A]を混ぜ合わせたもの",
+                        "id": "95a45aae",
+                        "name": "混ぜた調味料",
                         "utensil_interactions_list": [
                             {
                                 "source_state_id": "3",
                                 "vessel": [
                                     "None_ポリ袋"
                                 ],
-                                "tools": [
-                                    "道具不使用"
-                                ]
+                                "tools": []
                             },
                             {
                                 "source_state_id": "4",
                                 "vessel": [
                                     "None_ポリ袋"
                                 ],
-                                "tools": [
-                                    "道具不使用"
-                                ]
+                                "tools": []
                             },
                             {
                                 "source_state_id": "5",
                                 "vessel": [
                                     "None_ポリ袋"
                                 ],
-                                "tools": [
-                                    "道具不使用"
-                                ]
+                                "tools": []
                             }
                         ],
                         "final_position": "None_ポリ袋"
                     },
                     {
-                        "id": "1ced2103",
-                        "name": "広げたパン粉",
+                        "id": "0203c216",
+                        "name": "パン粉",
                         "utensil_interactions_list": [
                             {
                                 "source_state_id": "6",
                                 "vessel": [
                                     "バット"
                                 ],
-                                "tools": [
-                                    "道具不使用"
-                                ]
+                                "tools": []
                             }
                         ],
                         "final_position": "バット"
@@ -2245,40 +2121,34 @@
                 "step_after": 2,
                 "state_list": [
                     {
-                        "id": "ade830ac",
-                        "name": "[A]をまぶした卵をからめた豚肉",
+                        "id": "64c68969",
+                        "name": "下味をつけた豚肉",
                         "utensil_interactions_list": [
                             {
                                 "source_state_id": "1",
                                 "vessel": [
-                                    "まな板",
+                                    "生肉・生魚用まな板",
                                     "None_ポリ袋",
-                                    "ボウル-2"
+                                    "ボウル"
                                 ],
                                 "tools": [
-                                    "クッキングペーパー",
                                     "包丁",
-                                    "料理ばさみ",
-                                    "None_フォーク"
+                                    "料理ばさみ"
                                 ]
                             },
                             {
-                                "source_state_id": "b5dffac3",
+                                "source_state_id": "95a45aae",
                                 "vessel": [
                                     "None_ポリ袋"
                                 ],
-                                "tools": [
-                                    "道具不使用"
-                                ]
+                                "tools": []
                             },
                             {
                                 "source_state_id": "7",
                                 "vessel": [
                                     "None_ポリ袋"
                                 ],
-                                "tools": [
-                                    "道具不使用"
-                                ]
+                                "tools": []
                             }
                         ],
                         "final_position": "None_ポリ袋"
@@ -2289,27 +2159,22 @@
                 "step_after": 3,
                 "state_list": [
                     {
-                        "id": "47e51d0a",
-                        "name": "パン粉を定着させた豚肉",
+                        "id": "9b4d0257",
+                        "name": "パン粉をまぶした豚肉",
                         "utensil_interactions_list": [
                             {
-                                "source_state_id": "ade830ac",
+                                "source_state_id": "64c68969",
                                 "vessel": [
-                                    "None_ポリ袋",
                                     "バット"
                                 ],
-                                "tools": [
-                                    "None_フォーク"
-                                ]
+                                "tools": []
                             },
                             {
-                                "source_state_id": "1ced2103",
+                                "source_state_id": "0203c216",
                                 "vessel": [
                                     "バット"
                                 ],
-                                "tools": [
-                                    "道具不使用"
-                                ]
+                                "tools": []
                             }
                         ],
                         "final_position": "バット"
@@ -2320,13 +2185,12 @@
                 "step_after": 4,
                 "state_list": [
                     {
-                        "id": "b846df59",
+                        "id": "a4241965",
                         "name": "揚げた豚肉",
                         "utensil_interactions_list": [
                             {
-                                "source_state_id": "47e51d0a",
+                                "source_state_id": "9b4d0257",
                                 "vessel": [
-                                    "バット",
                                     "フライパン（蓋付き）"
                                 ],
                                 "tools": [
@@ -2351,59 +2215,43 @@
                 "step_after": 5,
                 "state_list": [
                     {
-                        "id": "e285462b",
+                        "id": "1df182fc",
                         "name": "ワザあり豚カツ",
                         "utensil_interactions_list": [
                             {
-                                "source_state_id": "b846df59",
+                                "source_state_id": "a4241965",
                                 "vessel": [
-                                    "フライパン（蓋付き）",
-                                    "バット",
-                                    "まな板",
                                     "盛り付け皿・器"
                                 ],
-                                "tools": [
-                                    "None_網",
-                                    "菜箸",
-                                    "包丁"
-                                ]
-                            },
-                            {
-                                "source_state_id": "a6d171b8",
-                                "vessel": [
-                                    "ざる",
-                                    "盛り付け皿・器"
-                                ],
-                                "tools": [
-                                    "道具不使用"
-                                ]
+                                "tools": []
                             },
                             {
                                 "source_state_id": "8",
                                 "vessel": [
                                     "盛り付け皿・器"
                                 ],
-                                "tools": [
-                                    "道具不使用"
-                                ]
+                                "tools": []
                             },
                             {
                                 "source_state_id": "9",
                                 "vessel": [
                                     "盛り付け皿・器"
                                 ],
-                                "tools": [
-                                    "道具不使用"
-                                ]
+                                "tools": []
                             },
                             {
                                 "source_state_id": "10",
                                 "vessel": [
                                     "盛り付け皿・器"
                                 ],
-                                "tools": [
-                                    "道具不使用"
-                                ]
+                                "tools": []
+                            },
+                            {
+                                "source_state_id": "51543823",
+                                "vessel": [
+                                    "盛り付け皿・器"
+                                ],
+                                "tools": []
                             }
                         ],
                         "final_position": "盛り付け皿・器"
@@ -2411,7 +2259,7 @@
                 ]
             }
         ],
-        "annotation_note": "step2: アノテーション難しい"
+        "annotation_note": ""
     },
     {
         "title": "春の豚たまあえ",
@@ -2479,80 +2327,77 @@
                 "step_after": 1,
                 "state_list": [
                     {
-                        "id": "abd54738",
-                        "name": "切った新たまねぎ",
+                        "id": "9e8fc0fd",
+                        "name": "切ったたまねぎ",
                         "utensil_interactions_list": [
                             {
                                 "source_state_id": "1",
                                 "vessel": [
-                                    "まな板",
-                                    "ボウル"
+                                    "まな板"
                                 ],
                                 "tools": [
                                     "包丁"
                                 ]
                             }
                         ],
-                        "final_position": "ボウル"
+                        "final_position": "まな板"
                     },
                     {
-                        "id": "0f2d3577",
-                        "name": "ヘタと筋を除いたスナップえんどう",
+                        "id": "0ac15cf6",
+                        "name": "筋を除いたスナップえんどう",
                         "utensil_interactions_list": [
                             {
                                 "source_state_id": "2",
                                 "vessel": [
-                                    "ボウル-2"
+                                    "まな板"
                                 ],
-                                "tools": [
-                                    "道具不使用"
-                                ]
+                                "tools": []
                             }
                         ],
-                        "final_position": "ボウル-2"
+                        "final_position": "まな板"
                     },
                     {
-                        "id": "3eb6541c",
-                        "name": "[A]とポン酢を混ぜたもの",
+                        "id": "d5809118",
+                        "name": "混ぜた調味料",
                         "utensil_interactions_list": [
                             {
                                 "source_state_id": "4",
                                 "vessel": [
-                                    "ボウル-3"
+                                    "ボウル"
                                 ],
                                 "tools": [
-                                    "スプーン"
+                                    "菜箸"
                                 ]
                             },
                             {
                                 "source_state_id": "5",
                                 "vessel": [
-                                    "ボウル-3"
+                                    "ボウル"
                                 ],
                                 "tools": [
-                                    "スプーン"
+                                    "菜箸"
                                 ]
                             },
                             {
                                 "source_state_id": "6",
                                 "vessel": [
-                                    "ボウル-3"
+                                    "ボウル"
                                 ],
                                 "tools": [
-                                    "スプーン"
+                                    "菜箸"
                                 ]
                             },
                             {
                                 "source_state_id": "7",
                                 "vessel": [
-                                    "ボウル-3"
+                                    "ボウル"
                                 ],
                                 "tools": [
-                                    "スプーン"
+                                    "菜箸"
                                 ]
                             }
                         ],
-                        "final_position": "ボウル-3"
+                        "final_position": "ボウル"
                     }
                 ]
             },
@@ -2560,31 +2405,28 @@
                 "step_after": 2,
                 "state_list": [
                     {
-                        "id": "310a495f",
-                        "name": "茹でて水けを取ったスナップえんどう",
+                        "id": "00565519",
+                        "name": "加熱したスナップえんどう",
                         "utensil_interactions_list": [
-                            {
-                                "source_state_id": "0f2d3577",
-                                "vessel": [
-                                    "ボウル-2",
-                                    "鍋（蓋付き）",
-                                    "ざる"
-                                ],
-                                "tools": [
-                                    "クッキングペーパー"
-                                ]
-                            },
                             {
                                 "source_state_id": "8",
                                 "vessel": [
                                     "鍋（蓋付き）"
                                 ],
+                                "tools": []
+                            },
+                            {
+                                "source_state_id": "0ac15cf6",
+                                "vessel": [
+                                    "鍋（蓋付き）",
+                                    "ざる"
+                                ],
                                 "tools": [
-                                    "道具不使用"
+                                    "菜箸"
                                 ]
                             }
                         ],
-                        "final_position": "鍋（蓋付き）"
+                        "final_position": "ざる"
                     }
                 ]
             },
@@ -2592,21 +2434,21 @@
                 "step_after": 3,
                 "state_list": [
                     {
-                        "id": "44cd5785",
-                        "name": "茹でて粗熱を取った豚肉",
+                        "id": "1ce00ce3",
+                        "name": "加熱した豚肉",
                         "utensil_interactions_list": [
                             {
                                 "source_state_id": "3",
                                 "vessel": [
                                     "鍋（蓋付き）",
-                                    "None_ざる-2"
+                                    "ざる"
                                 ],
                                 "tools": [
                                     "菜箸"
                                 ]
                             }
                         ],
-                        "final_position": "None_ざる-2"
+                        "final_position": "ざる"
                     }
                 ]
             },
@@ -2614,60 +2456,47 @@
                 "step_after": 4,
                 "state_list": [
                     {
-                        "id": "4f94181b",
+                        "id": "69ef1142",
                         "name": "春の豚たまあえ",
                         "utensil_interactions_list": [
                             {
-                                "source_state_id": "3eb6541c",
+                                "source_state_id": "00565519",
                                 "vessel": [
-                                    "ボウル-3",
-                                    "盛り付け皿・器"
+                                    "盛り付け皿・器",
+                                    "ボウル"
                                 ],
-                                "tools": [
-                                    "菜箸"
-                                ]
+                                "tools": []
                             },
                             {
-                                "source_state_id": "310a495f",
+                                "source_state_id": "9e8fc0fd",
                                 "vessel": [
-                                    "ざる",
-                                    "ボウル-3",
-                                    "盛り付け皿・器"
+                                    "盛り付け皿・器",
+                                    "ボウル"
                                 ],
-                                "tools": [
-                                    "菜箸"
-                                ]
+                                "tools": []
                             },
                             {
-                                "source_state_id": "abd54738",
+                                "source_state_id": "1ce00ce3",
+                                "vessel": [
+                                    "盛り付け皿・器",
+                                    "ボウル"
+                                ],
+                                "tools": []
+                            },
+                            {
+                                "source_state_id": "d5809118",
                                 "vessel": [
                                     "ボウル",
-                                    "ボウル-3",
                                     "盛り付け皿・器"
                                 ],
-                                "tools": [
-                                    "菜箸"
-                                ]
-                            },
-                            {
-                                "source_state_id": "44cd5785",
-                                "vessel": [
-                                    "None_ざる-2",
-                                    "ボウル-3",
-                                    "盛り付け皿・器"
-                                ],
-                                "tools": [
-                                    "菜箸"
-                                ]
+                                "tools": []
                             },
                             {
                                 "source_state_id": "9",
                                 "vessel": [
                                     "盛り付け皿・器"
                                 ],
-                                "tools": [
-                                    "道具不使用"
-                                ]
+                                "tools": []
                             }
                         ],
                         "final_position": "盛り付け皿・器"
@@ -2773,7 +2602,7 @@
                 "step_after": 1,
                 "state_list": [
                     {
-                        "id": "7b0bff03",
+                        "id": "82b9284c",
                         "name": "切ったたまねぎ",
                         "utensil_interactions_list": [
                             {
@@ -2789,7 +2618,7 @@
                         "final_position": "まな板"
                     },
                     {
-                        "id": "db0a760a",
+                        "id": "56a251f9",
                         "name": "切ったセロリ",
                         "utensil_interactions_list": [
                             {
@@ -2805,7 +2634,7 @@
                         "final_position": "まな板"
                     },
                     {
-                        "id": "d1b778cb",
+                        "id": "1ee73d2f",
                         "name": "切ったにんじん",
                         "utensil_interactions_list": [
                             {
@@ -2826,18 +2655,17 @@
                 "step_after": 2,
                 "state_list": [
                     {
-                        "id": "f62b2e30",
-                        "name": "牛肉・1・にんにく・[A]を火にかけたもの",
+                        "id": "e7850b8f",
+                        "name": "加熱した具材",
                         "utensil_interactions_list": [
                             {
                                 "source_state_id": "1",
                                 "vessel": [
-                                    "まな板",
+                                    "生肉・生魚用まな板",
                                     "鍋（蓋付き）"
                                 ],
                                 "tools": [
-                                    "包丁",
-                                    "木製へら"
+                                    "包丁"
                                 ]
                             },
                             {
@@ -2845,47 +2673,40 @@
                                 "vessel": [
                                     "鍋（蓋付き）"
                                 ],
-                                "tools": [
-                                    "木製へら"
-                                ]
+                                "tools": []
                             },
                             {
                                 "source_state_id": "14",
                                 "vessel": [
                                     "鍋（蓋付き）"
                                 ],
-                                "tools": [
-                                    "木製へら"
-                                ]
+                                "tools": []
                             },
                             {
-                                "source_state_id": "7b0bff03",
+                                "source_state_id": "82b9284c",
                                 "vessel": [
-                                    "まな板",
                                     "鍋（蓋付き）"
                                 ],
                                 "tools": [
-                                    "木製へら"
+                                    "菜箸"
                                 ]
                             },
                             {
-                                "source_state_id": "db0a760a",
+                                "source_state_id": "56a251f9",
                                 "vessel": [
-                                    "まな板",
                                     "鍋（蓋付き）"
                                 ],
                                 "tools": [
-                                    "木製へら"
+                                    "菜箸"
                                 ]
                             },
                             {
-                                "source_state_id": "d1b778cb",
+                                "source_state_id": "1ee73d2f",
                                 "vessel": [
-                                    "まな板",
                                     "鍋（蓋付き）"
                                 ],
                                 "tools": [
-                                    "木製へら"
+                                    "菜箸"
                                 ]
                             },
                             {
@@ -2893,27 +2714,21 @@
                                 "vessel": [
                                     "鍋（蓋付き）"
                                 ],
-                                "tools": [
-                                    "木製へら"
-                                ]
+                                "tools": []
                             },
                             {
                                 "source_state_id": "7",
                                 "vessel": [
                                     "鍋（蓋付き）"
                                 ],
-                                "tools": [
-                                    "木製へら"
-                                ]
+                                "tools": []
                             },
                             {
                                 "source_state_id": "8",
                                 "vessel": [
                                     "鍋（蓋付き）"
                                 ],
-                                "tools": [
-                                    "木製へら"
-                                ]
+                                "tools": []
                             },
                             {
                                 "source_state_id": "9",
@@ -2921,7 +2736,7 @@
                                     "鍋（蓋付き）"
                                 ],
                                 "tools": [
-                                    "木製へら"
+                                    "菜箸"
                                 ]
                             },
                             {
@@ -2930,7 +2745,7 @@
                                     "鍋（蓋付き）"
                                 ],
                                 "tools": [
-                                    "木製へら"
+                                    "菜箸"
                                 ]
                             },
                             {
@@ -2938,9 +2753,7 @@
                                 "vessel": [
                                     "鍋（蓋付き）"
                                 ],
-                                "tools": [
-                                    "木製へら"
-                                ]
+                                "tools": []
                             },
                             {
                                 "source_state_id": "5",
@@ -2948,7 +2761,7 @@
                                     "鍋（蓋付き）"
                                 ],
                                 "tools": [
-                                    "木製へら"
+                                    "菜箸"
                                 ]
                             }
                         ],
@@ -2960,17 +2773,16 @@
                 "step_after": 3,
                 "state_list": [
                     {
-                        "id": "3e75ec7e",
-                        "name": "2を煮込んだもの",
+                        "id": "37a7b6ee",
+                        "name": "煮込んだ２",
                         "utensil_interactions_list": [
                             {
-                                "source_state_id": "f62b2e30",
+                                "source_state_id": "e7850b8f",
                                 "vessel": [
                                     "鍋（蓋付き）"
                                 ],
                                 "tools": [
-                                    "網目の細かい網杓子",
-                                    "木製へら"
+                                    "おたま"
                                 ]
                             }
                         ],
@@ -2982,27 +2794,23 @@
                 "step_after": 4,
                 "state_list": [
                     {
-                        "id": "76037e41",
+                        "id": "3ec8694c",
                         "name": "牛肉の赤ワイン煮込み",
                         "utensil_interactions_list": [
                             {
-                                "source_state_id": "3e75ec7e",
+                                "source_state_id": "37a7b6ee",
                                 "vessel": [
                                     "鍋（蓋付き）",
                                     "盛り付け皿・器"
                                 ],
-                                "tools": [
-                                    "おたま"
-                                ]
+                                "tools": []
                             },
                             {
                                 "source_state_id": "12",
                                 "vessel": [
                                     "盛り付け皿・器"
                                 ],
-                                "tools": [
-                                    "おたま"
-                                ]
+                                "tools": []
                             }
                         ],
                         "final_position": "盛り付け皿・器"
@@ -3072,7 +2880,7 @@
                 "step_after": 1,
                 "state_list": [
                     {
-                        "id": "1d8f3498",
+                        "id": "b9bd9c18",
                         "name": "切ったキャベツ",
                         "utensil_interactions_list": [
                             {
@@ -3088,7 +2896,7 @@
                         "final_position": "まな板"
                     },
                     {
-                        "id": "fb7a3afd",
+                        "id": "058a36e6",
                         "name": "切ったにんじん",
                         "utensil_interactions_list": [
                             {
@@ -3104,7 +2912,7 @@
                         "final_position": "まな板"
                     },
                     {
-                        "id": "dc6089ea",
+                        "id": "ea7ce73d",
                         "name": "切ったベーコン",
                         "utensil_interactions_list": [
                             {
@@ -3125,8 +2933,8 @@
                 "step_after": 2,
                 "state_list": [
                     {
-                        "id": "d3962f5c",
-                        "name": "1を炒めたもの",
+                        "id": "b6b72366",
+                        "name": "炒めた１",
                         "utensil_interactions_list": [
                             {
                                 "source_state_id": "6",
@@ -3134,37 +2942,34 @@
                                     "鍋（蓋付き）"
                                 ],
                                 "tools": [
-                                    "木製へら"
+                                    "菜箸"
                                 ]
                             },
                             {
-                                "source_state_id": "1d8f3498",
+                                "source_state_id": "b9bd9c18",
                                 "vessel": [
-                                    "まな板",
                                     "鍋（蓋付き）"
                                 ],
                                 "tools": [
-                                    "木製へら"
+                                    "菜箸"
                                 ]
                             },
                             {
-                                "source_state_id": "fb7a3afd",
+                                "source_state_id": "058a36e6",
                                 "vessel": [
-                                    "まな板",
                                     "鍋（蓋付き）"
                                 ],
                                 "tools": [
-                                    "木製へら"
+                                    "菜箸"
                                 ]
                             },
                             {
-                                "source_state_id": "dc6089ea",
+                                "source_state_id": "ea7ce73d",
                                 "vessel": [
-                                    "まな板",
                                     "鍋（蓋付き）"
                                 ],
                                 "tools": [
-                                    "木製へら"
+                                    "菜箸"
                                 ]
                             }
                         ],
@@ -3176,18 +2981,16 @@
                 "step_after": 3,
                 "state_list": [
                     {
-                        "id": "57ee1e26",
+                        "id": "f6ea280d",
                         "name": "春キャベツと春にんじんのスープ",
                         "utensil_interactions_list": [
                             {
-                                "source_state_id": "d3962f5c",
+                                "source_state_id": "b6b72366",
                                 "vessel": [
                                     "鍋（蓋付き）",
                                     "盛り付け皿・器"
                                 ],
-                                "tools": [
-                                    "おたま"
-                                ]
+                                "tools": []
                             },
                             {
                                 "source_state_id": "4",
@@ -3195,9 +2998,7 @@
                                     "鍋（蓋付き）",
                                     "盛り付け皿・器"
                                 ],
-                                "tools": [
-                                    "おたま"
-                                ]
+                                "tools": []
                             },
                             {
                                 "source_state_id": "5",
@@ -3205,9 +3006,7 @@
                                     "鍋（蓋付き）",
                                     "盛り付け皿・器"
                                 ],
-                                "tools": [
-                                    "おたま"
-                                ]
+                                "tools": []
                             },
                             {
                                 "source_state_id": "7",
@@ -3215,9 +3014,7 @@
                                     "鍋（蓋付き）",
                                     "盛り付け皿・器"
                                 ],
-                                "tools": [
-                                    "おたま"
-                                ]
+                                "tools": []
                             },
                             {
                                 "source_state_id": "8",
@@ -3225,9 +3022,7 @@
                                     "鍋（蓋付き）",
                                     "盛り付け皿・器"
                                 ],
-                                "tools": [
-                                    "おたま"
-                                ]
+                                "tools": []
                             }
                         ],
                         "final_position": "盛り付け皿・器"
