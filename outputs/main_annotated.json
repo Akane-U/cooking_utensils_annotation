@@ -11775,14 +11775,16 @@
                             {
                                 "source_state_id": "3493f5e6",
                                 "vessel": [
-                                    "フライパン（蓋付き）"
+                                    "フライパン（蓋付き）",
+                                    "盛り付け皿・器"
                                 ],
                                 "tools": [
-                                    "フライ返し"
+                                    "フライ返し",
+                                    "スプーン"
                                 ]
                             }
                         ],
-                        "final_position": "フライパン（蓋付き）"
+                        "final_position": "盛り付け皿・器"
                     }
                 ]
             },
@@ -11794,12 +11796,66 @@
                         "name": "たいのムニエル 春キャベツのハーブ蒸し",
                         "utensil_interactions_list": [
                             {
-                                "source_state_id": "",
-                                "vessel": [],
-                                "tools": []
+                                "source_state_id": "8",
+                                "vessel": [
+                                    "フライパン（蓋付き）",
+                                    "盛り付け皿・器"
+                                ],
+                                "tools": [
+                                    "菜箸"
+                                ]
+                            },
+                            {
+                                "source_state_id": "f4ca8521",
+                                "vessel": [
+                                    "まな板",
+                                    "フライパン（蓋付き）",
+                                    "盛り付け皿・器"
+                                ],
+                                "tools": [
+                                    "菜箸"
+                                ]
+                            },
+                            {
+                                "source_state_id": "3",
+                                "vessel": [
+                                    "フライパン（蓋付き）",
+                                    "盛り付け皿・器"
+                                ],
+                                "tools": [
+                                    "菜箸"
+                                ]
+                            },
+                            {
+                                "source_state_id": "4",
+                                "vessel": [
+                                    "フライパン（蓋付き）"
+                                ],
+                                "tools": [
+                                    "菜箸"
+                                ]
+                            },
+                            {
+                                "source_state_id": "5",
+                                "vessel": [
+                                    "フライパン（蓋付き）",
+                                    "盛り付け皿・器"
+                                ],
+                                "tools": [
+                                    "菜箸"
+                                ]
+                            },
+                            {
+                                "source_state_id": "4a7e1994",
+                                "vessel": [
+                                    "盛り付け皿・器"
+                                ],
+                                "tools": [
+                                    "道具不使用"
+                                ]
                             }
                         ],
-                        "final_position": ""
+                        "final_position": "盛り付け皿・器"
                     }
                 ]
             }
@@ -11894,7 +11950,20 @@
             },
             {
                 "step_after": 1,
-                "state_list": []
+                "state_list": [
+                    {
+                        "id": "5e29d8a0",
+                        "name": "",
+                        "utensil_interactions_list": [
+                            {
+                                "source_state_id": "",
+                                "vessel": [],
+                                "tools": []
+                            }
+                        ],
+                        "final_position": ""
+                    }
+                ]
             },
             {
                 "step_after": 2,
@@ -11912,7 +11981,8 @@
                 "step_after": 5,
                 "state_list": []
             }
-        ]
+        ],
+        "annotation_note": ""
     },
     {
         "title": "手羽元とキャベツの煮物",
