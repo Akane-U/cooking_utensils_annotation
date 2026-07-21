@@ -978,7 +978,7 @@
                             {
                                 "source_state_id": "7",
                                 "vessel": [
-                                    "まな板"
+                                    "生肉・生魚用まな板"
                                 ],
                                 "tools": [
                                     "道具不使用"
@@ -987,14 +987,14 @@
                             {
                                 "source_state_id": "8",
                                 "vessel": [
-                                    "まな板"
+                                    "生肉・生魚用まな板"
                                 ],
                                 "tools": [
                                     "道具不使用"
                                 ]
                             }
                         ],
-                        "final_position": "まな板"
+                        "final_position": "生肉・生魚用まな板"
                     }
                 ]
             },
