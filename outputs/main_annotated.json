@@ -11348,7 +11348,8 @@
                                     "ボウル"
                                 ],
                                 "tools": [
-                                    "包丁"
+                                    "包丁",
+                                    "菜箸"
                                 ]
                             },
                             {
@@ -11356,25 +11357,39 @@
                                 "vessel": [
                                     "ボウル"
                                 ],
-                                "tools": []
+                                "tools": [
+                                    "菜箸"
+                                ]
                             },
                             {
                                 "source_state_id": "12",
-                                "vessel": [],
-                                "tools": []
+                                "vessel": [
+                                    "ボウル"
+                                ],
+                                "tools": [
+                                    "菜箸"
+                                ]
                             },
                             {
                                 "source_state_id": "13",
-                                "vessel": [],
-                                "tools": []
+                                "vessel": [
+                                    "ボウル"
+                                ],
+                                "tools": [
+                                    "菜箸"
+                                ]
                             },
                             {
                                 "source_state_id": "14",
-                                "vessel": [],
-                                "tools": []
+                                "vessel": [
+                                    "ボウル"
+                                ],
+                                "tools": [
+                                    "道具不使用"
+                                ]
                             }
                         ],
-                        "final_position": ""
+                        "final_position": "ボウル"
                     }
                 ]
             },
