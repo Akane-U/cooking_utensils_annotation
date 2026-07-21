@@ -11662,21 +11662,149 @@
             },
             {
                 "step_after": 1,
-                "state_list": []
+                "state_list": [
+                    {
+                        "id": "f4ca8521",
+                        "name": "切ったキャベツ",
+                        "utensil_interactions_list": [
+                            {
+                                "source_state_id": "2",
+                                "vessel": [
+                                    "まな板"
+                                ],
+                                "tools": [
+                                    "包丁"
+                                ]
+                            }
+                        ],
+                        "final_position": "まな板"
+                    },
+                    {
+                        "id": "23eedf84",
+                        "name": "小麦粉をまぶしたたい",
+                        "utensil_interactions_list": [
+                            {
+                                "source_state_id": "1",
+                                "vessel": [
+                                    "バット"
+                                ],
+                                "tools": [
+                                    "クッキングペーパー",
+                                    "None_骨抜き"
+                                ]
+                            },
+                            {
+                                "source_state_id": "5",
+                                "vessel": [
+                                    "バット"
+                                ],
+                                "tools": [
+                                    "道具不使用"
+                                ]
+                            },
+                            {
+                                "source_state_id": "6",
+                                "vessel": [
+                                    "バット"
+                                ],
+                                "tools": [
+                                    "道具不使用"
+                                ]
+                            },
+                            {
+                                "source_state_id": "7",
+                                "vessel": [
+                                    "バット"
+                                ],
+                                "tools": [
+                                    "道具不使用"
+                                ]
+                            }
+                        ],
+                        "final_position": "バット"
+                    }
+                ]
             },
             {
                 "step_after": 2,
-                "state_list": []
+                "state_list": [
+                    {
+                        "id": "3493f5e6",
+                        "name": "フライパンに並べたたい",
+                        "utensil_interactions_list": [
+                            {
+                                "source_state_id": "8",
+                                "vessel": [
+                                    "フライパン（蓋付き）"
+                                ],
+                                "tools": [
+                                    "道具不使用"
+                                ]
+                            },
+                            {
+                                "source_state_id": "9",
+                                "vessel": [
+                                    "フライパン（蓋付き）"
+                                ],
+                                "tools": [
+                                    "道具不使用"
+                                ]
+                            },
+                            {
+                                "source_state_id": "23eedf84",
+                                "vessel": [
+                                    "バット",
+                                    "フライパン（蓋付き）"
+                                ],
+                                "tools": [
+                                    "木製へら"
+                                ]
+                            }
+                        ],
+                        "final_position": "フライパン（蓋付き）"
+                    }
+                ]
             },
             {
                 "step_after": 3,
-                "state_list": []
+                "state_list": [
+                    {
+                        "id": "4a7e1994",
+                        "name": "焼いたたい",
+                        "utensil_interactions_list": [
+                            {
+                                "source_state_id": "3493f5e6",
+                                "vessel": [
+                                    "フライパン（蓋付き）"
+                                ],
+                                "tools": [
+                                    "フライ返し"
+                                ]
+                            }
+                        ],
+                        "final_position": "フライパン（蓋付き）"
+                    }
+                ]
             },
             {
                 "step_after": 4,
-                "state_list": []
+                "state_list": [
+                    {
+                        "id": "3c392303",
+                        "name": "たいのムニエル 春キャベツのハーブ蒸し",
+                        "utensil_interactions_list": [
+                            {
+                                "source_state_id": "",
+                                "vessel": [],
+                                "tools": []
+                            }
+                        ],
+                        "final_position": ""
+                    }
+                ]
             }
-        ]
+        ],
+        "annotation_note": ""
     },
     {
         "title": "鶏肉の赤ワイン煮",
