@@ -1244,28 +1244,43 @@
                             {
                                 "source_state_id": "7",
                                 "vessel": [
-                                    "フライパン（蓋付き）"
+                                    "フライパン（蓋付き）",
+                                    "ボウル"
                                 ],
-                                "tools": []
-                            }
-                        ],
-                        "final_position": "フライパン（蓋付き）"
-                    },
-                    {
-                        "id": "c1b4d6c7",
-                        "name": "手羽先を焼いたもの",
-                        "utensil_interactions_list": [
+                                "tools": [
+                                    "菜箸"
+                                ]
+                            },
                             {
-                                "source_state_id": "",
+                                "source_state_id": "52f294d6",
                                 "vessel": [
-                                    "フライパン（蓋付き）"
+                                    "まな板",
+                                    "フライパン（蓋付き）",
+                                    "ボウル"
                                 ],
                                 "tools": [
                                     "菜箸"
                                 ]
                             }
                         ],
-                        "final_position": "フライパン（蓋付き）"
+                        "final_position": "ボウル"
+                    },
+                    {
+                        "id": "c1b4d6c7",
+                        "name": "手羽先を焼いたもの",
+                        "utensil_interactions_list": [
+                            {
+                                "source_state_id": "a2f2fd3e",
+                                "vessel": [
+                                    "まな板",
+                                    "フライパン（蓋付き）-2"
+                                ],
+                                "tools": [
+                                    "菜箸"
+                                ]
+                            }
+                        ],
+                        "final_position": "フライパン（蓋付き）-2"
                     }
                 ]
             },
@@ -1273,88 +1288,99 @@
                 "step_after": 3,
                 "state_list": [
                     {
-                        "id": "3dedfed1",
+                        "id": "7334f1e6",
                         "name": "白菜と手羽先のピリ辛煮",
                         "utensil_interactions_list": [
                             {
                                 "source_state_id": "c1b4d6c7",
                                 "vessel": [
-                                    "フライパン（蓋付き）",
+                                    "フライパン（蓋付き）-2",
                                     "盛り付け皿・器"
                                 ],
-                                "tools": []
+                                "tools": [
+                                    "菜箸"
+                                ]
                             },
                             {
-                                "source_state_id": "None_1e751372",
+                                "source_state_id": "1b221dfb",
                                 "vessel": [
-                                    "フライパン（蓋付き）",
+                                    "ボウル",
+                                    "フライパン（蓋付き）-2",
                                     "盛り付け皿・器"
                                 ],
-                                "tools": []
+                                "tools": [
+                                    "菜箸"
+                                ]
                             },
                             {
                                 "source_state_id": "4",
                                 "vessel": [
-                                    "フライパン（蓋付き）",
+                                    "鍋（蓋付き）-2",
                                     "盛り付け皿・器"
                                 ],
-                                "tools": []
+                                "tools": [
+                                    "菜箸"
+                                ]
                             },
                             {
                                 "source_state_id": "260a3b78",
                                 "vessel": [
-                                    "フライパン（蓋付き）",
-                                    "盛り付け皿・器"
-                                ],
-                                "tools": []
-                            },
-                            {
-                                "source_state_id": "8",
-                                "vessel": [
-                                    "フライパン（蓋付き）",
+                                    "まな板",
+                                    "フライパン（蓋付き）-2",
                                     "盛り付け皿・器"
                                 ],
                                 "tools": [
-                                    "None_計量スプーン"
-                                ]
-                            },
-                            {
-                                "source_state_id": "5",
-                                "vessel": [
-                                    "フライパン（蓋付き）",
-                                    "盛り付け皿・器"
-                                ],
-                                "tools": [
-                                    "None_計量スプーン"
-                                ]
-                            },
-                            {
-                                "source_state_id": "6",
-                                "vessel": [
-                                    "フライパン（蓋付き）",
-                                    "盛り付け皿・器"
-                                ],
-                                "tools": [
-                                    "None_計量スプーン"
+                                    "菜箸"
                                 ]
                             },
                             {
                                 "source_state_id": "2f8ac0bb",
                                 "vessel": [
-                                    "盛り付け皿・器",
-                                    "フライパン（蓋付き）"
+                                    "ボウル",
+                                    "鍋（蓋付き）-2",
+                                    "盛り付け皿・器"
                                 ],
                                 "tools": [
-                                    "None_計量スプーン"
+                                    "菜箸"
+                                ]
+                            },
+                            {
+                                "source_state_id": "8",
+                                "vessel": [
+                                    "フライパン（蓋付き）-2",
+                                    "盛り付け皿・器"
+                                ],
+                                "tools": [
+                                    "菜箸"
+                                ]
+                            },
+                            {
+                                "source_state_id": "5",
+                                "vessel": [
+                                    "フライパン（蓋付き）-2",
+                                    "盛り付け皿・器"
+                                ],
+                                "tools": [
+                                    "菜箸"
+                                ]
+                            },
+                            {
+                                "source_state_id": "6",
+                                "vessel": [
+                                    "フライパン（蓋付き）-2",
+                                    "盛り付け皿・器"
+                                ],
+                                "tools": [
+                                    "菜箸"
                                 ]
                             }
                         ],
-                        "final_position": "フライパン（蓋付き）"
+                        "final_position": "盛り付け皿・器"
                     }
                 ]
             }
         ],
-        "annotation_note": "step2の手羽先は、おそらく白菜を焼いたフライパンと同じものを使って焼くという意味だと思うので、フライパンは白菜と同一ものを選択しました。レシピは同一のフライパンをつかう事がわかるような記述にしたほうが分かりやすいと思いました。"
+        "annotation_note": "step2の手羽先は、レシピ文面から白菜を焼いたフライパンと同じものを使って焼くという意味だと思いますが、別のフライパンを選択したほうがよいのか迷い、別のフライパンとしました。（油を流用するのであれば同一のフライパンだと思いますが...）"
     },
     {
         "title": "アスパラの豚肉巻き",
