@@ -130,10 +130,7 @@
                         "utensil_interactions_list": [
                             {
                                 "source_state_id": "5fefbf50",
-                                "vessel": [
-                                    "鍋（蓋付き）",
-                                    "盛り付け皿・器"
-                                ],
+                                "vessel": [],
                                 "tools": [
                                     "おたま"
                                 ]
