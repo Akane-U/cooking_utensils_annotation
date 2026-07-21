@@ -11302,10 +11302,74 @@
                 "state_list": [
                     {
                         "id": "1dd6a85f",
-                        "name": "",
+                        "name": "切った大根",
                         "utensil_interactions_list": [
                             {
-                                "source_state_id": "",
+                                "source_state_id": "1",
+                                "vessel": [
+                                    "まな板"
+                                ],
+                                "tools": [
+                                    "包丁"
+                                ]
+                            }
+                        ],
+                        "final_position": "まな板"
+                    },
+                    {
+                        "id": "bc487697",
+                        "name": "切った水菜",
+                        "utensil_interactions_list": [
+                            {
+                                "source_state_id": "3",
+                                "vessel": [
+                                    "まな板"
+                                ],
+                                "tools": [
+                                    "包丁"
+                                ]
+                            }
+                        ],
+                        "final_position": "まな板"
+                    }
+                ]
+            },
+            {
+                "step_after": 2,
+                "state_list": [
+                    {
+                        "id": "f91aa16b",
+                        "name": "下味をつけて片栗粉をまぶした豚肉",
+                        "utensil_interactions_list": [
+                            {
+                                "source_state_id": "2",
+                                "vessel": [
+                                    "まな板",
+                                    "ボウル"
+                                ],
+                                "tools": [
+                                    "包丁"
+                                ]
+                            },
+                            {
+                                "source_state_id": "11",
+                                "vessel": [
+                                    "ボウル"
+                                ],
+                                "tools": []
+                            },
+                            {
+                                "source_state_id": "12",
+                                "vessel": [],
+                                "tools": []
+                            },
+                            {
+                                "source_state_id": "13",
+                                "vessel": [],
+                                "tools": []
+                            },
+                            {
+                                "source_state_id": "14",
                                 "vessel": [],
                                 "tools": []
                             }
@@ -11313,10 +11377,6 @@
                         "final_position": ""
                     }
                 ]
-            },
-            {
-                "step_after": 2,
-                "state_list": []
             },
             {
                 "step_after": 3,
