@@ -118,6 +118,18 @@
                             }
                         ],
                         "final_position": "鍋（蓋付き）"
+                    },
+                    {
+                        "id": "78718611",
+                        "name": "出汁",
+                        "utensil_interactions_list": [
+                            {
+                                "source_state_id": "",
+                                "vessel": [],
+                                "tools": []
+                            }
+                        ],
+                        "final_position": ""
                     }
                 ]
             },
@@ -130,7 +142,9 @@
                         "utensil_interactions_list": [
                             {
                                 "source_state_id": "5fefbf50",
-                                "vessel": [],
+                                "vessel": [
+                                    "まな板"
+                                ],
                                 "tools": [
                                     "おたま"
                                 ]
@@ -249,7 +263,7 @@
                                     "流し型"
                                 ],
                                 "tools": [
-                                    "耐熱ゴムべら"
+                                    "道具不使用"
                                 ]
                             },
                             {
@@ -259,7 +273,8 @@
                                     "流し型"
                                 ],
                                 "tools": [
-                                    "耐熱ゴムべら"
+                                    "耐熱ゴムべら",
+                                    "道具不使用"
                                 ]
                             }
                         ],
