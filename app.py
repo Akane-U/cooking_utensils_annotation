@@ -371,47 +371,6 @@ def utensil_multi_select(label: str, key: str, current: list, utensil_cats: dict
     ]
 
 
-def vessel_select_with_dup(label: str, key: str, current: list, utensil_cats: dict) -> list:
-    """使用容器の選択。同一欄内で同じ器具を複数回選択（重複）できる。選択順を維持したリストで管理する。"""
-    opts = []
-    for cat, names in utensil_cats.items():
-        opts.append(f"{_CAT_SEP_PRE}{cat}{_CAT_SEP_SUF}")
-        opts.extend(names)
-
-    st.markdown(f"**{label}**")
-
-    to_del = None
-    for i, v in enumerate(current):
-        row_l, row_r = st.columns([5, 1])
-        row_l.caption(v)
-        if row_r.button("🗑", key=f"{key}_del_{i}"):
-            to_del = i
-    if to_del is not None:
-        current.pop(to_del)
-        st.rerun()
-
-    add_key = f"{key}_add"
-
-    def _do_add() -> None:
-        picked = st.session_state.get(add_key)
-        if picked and not (picked.startswith(_CAT_SEP_PRE) and picked.endswith(_CAT_SEP_SUF)):
-            current.append(picked)
-        st.session_state[add_key] = None
-
-    st.selectbox(
-        "追加",
-        opts,
-        index=None,
-        key=add_key,
-        accept_new_options=True,
-        placeholder="選択、または一覧外の名称を入力（同じ器具の重複選択可）",
-        label_visibility="collapsed",
-        on_change=_do_add,
-    )
-
-    return current
-
-
 def source_label(step: int, name: str) -> str:
     """UIに表示するソースラベル。材料は名前のみ、中間stateは step N: name。"""
     return name if step == 0 else f"step {step}: {name}"
@@ -787,11 +746,12 @@ def main() -> None:
                             )
                             if src_step > 0 and src_position and not inter.get("vessel"):
                                 inter["vessel"] = [src_position]
+                                st.session_state[f"{wkey}_vessel"] = [src_position]
 
-                            inter["vessel"] = vessel_select_with_dup(
-                                "使用容器（vessels）※複数選択可・重複可",
+                            inter["vessel"] = utensil_multi_select(
+                                "使用容器（vessels）※複数選択可",
                                 f"{wkey}_vessel",
-                                inter.setdefault("vessel", []),
+                                inter.get("vessel", []),
                                 vessel_cats,
                             )
 
