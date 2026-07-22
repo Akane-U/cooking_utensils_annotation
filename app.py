@@ -241,12 +241,15 @@ def max_step(ridx: int) -> int:
     return max(ws["step_after"] for ws in st.session_state.ann[ridx]["world_state_list"])
 
 
-def prev_states(ridx: int, sidx: int) -> dict:
-    """Return {id: (step_after, name, final_position)} for all states in steps 0..sidx-1."""
+def prev_states(ridx: int, sidx: int, exclude_id: str = None) -> dict:
+    """Return {id: (step_after, name, final_position)} for all states in steps 0..sidx（同stepのstate含む）。
+    exclude_id を指定すると、そのidのstate自身は除外する（自己参照を防ぐため）。"""
     result = {}
     for ws in st.session_state.ann[ridx]["world_state_list"]:
-        if ws["step_after"] < sidx:
+        if ws["step_after"] <= sidx:
             for s in ws["state_list"]:
+                if s["id"] == exclude_id:
+                    continue
                 result[s["id"]] = (ws["step_after"], s["name"], compute_final_position(s))
     return result
 
@@ -366,6 +369,47 @@ def utensil_multi_select(label: str, key: str, current: list, utensil_cats: dict
         u for u in sel
         if not (u.startswith(_CAT_SEP_PRE) and u.endswith(_CAT_SEP_SUF))
     ]
+
+
+def vessel_select_with_dup(label: str, key: str, current: list, utensil_cats: dict) -> list:
+    """使用容器の選択。同一欄内で同じ器具を複数回選択（重複）できる。選択順を維持したリストで管理する。"""
+    opts = []
+    for cat, names in utensil_cats.items():
+        opts.append(f"{_CAT_SEP_PRE}{cat}{_CAT_SEP_SUF}")
+        opts.extend(names)
+
+    st.markdown(f"**{label}**")
+
+    to_del = None
+    for i, v in enumerate(current):
+        row_l, row_r = st.columns([5, 1])
+        row_l.caption(v)
+        if row_r.button("🗑", key=f"{key}_del_{i}"):
+            to_del = i
+    if to_del is not None:
+        current.pop(to_del)
+        st.rerun()
+
+    add_key = f"{key}_add"
+
+    def _do_add() -> None:
+        picked = st.session_state.get(add_key)
+        if picked and not (picked.startswith(_CAT_SEP_PRE) and picked.endswith(_CAT_SEP_SUF)):
+            current.append(picked)
+        st.session_state[add_key] = None
+
+    st.selectbox(
+        "追加",
+        opts,
+        index=None,
+        key=add_key,
+        accept_new_options=True,
+        placeholder="選択、または一覧外の名称を入力（同じ器具の重複選択可）",
+        label_visibility="collapsed",
+        on_change=_do_add,
+    )
+
+    return current
 
 
 def source_label(step: int, name: str) -> str:
@@ -671,7 +715,6 @@ def main() -> None:
             st.error("このステップのデータが見つかりません")
             return
 
-        src = prev_states(ridx, sidx)
         used_sources = used_source_ids(ridx, sidx)
 
         # stateが空なら1つ自動追加
@@ -686,6 +729,7 @@ def main() -> None:
 
         state_to_del = None
         for si, state in enumerate(step_ws["state_list"]):
+            src = prev_states(ridx, sidx, exclude_id=state["id"])
             with st.container(border=True):
                 h_col, del_col = st.columns([8, 1])
                 with h_col:
@@ -743,12 +787,11 @@ def main() -> None:
                             )
                             if src_step > 0 and src_position and not inter.get("vessel"):
                                 inter["vessel"] = [src_position]
-                                st.session_state[f"{wkey}_vessel"] = [src_position]
 
-                            inter["vessel"] = utensil_multi_select(
-                                "使用容器（vessels）※複数選択可",
+                            inter["vessel"] = vessel_select_with_dup(
+                                "使用容器（vessels）※複数選択可・重複可",
                                 f"{wkey}_vessel",
-                                inter.get("vessel", []),
+                                inter.setdefault("vessel", []),
                                 vessel_cats,
                             )
 
