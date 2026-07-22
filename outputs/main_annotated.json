@@ -2950,6 +2950,22 @@
                             }
                         ],
                         "final_position": "バット"
+                    },
+                    {
+                        "id": "28e8619d",
+                        "name": "一度使用した揚げ油",
+                        "utensil_interactions_list": [
+                            {
+                                "source_state_id": "e324c7bc",
+                                "vessel": [
+                                    "フライパン（蓋付き）"
+                                ],
+                                "tools": [
+                                    "道具不使用"
+                                ]
+                            }
+                        ],
+                        "final_position": "フライパン（蓋付き）"
                     }
                 ]
             },
@@ -2961,10 +2977,20 @@
                         "name": "再度揚げた4",
                         "utensil_interactions_list": [
                             {
+                                "source_state_id": "28e8619d",
+                                "vessel": [
+                                    "フライパン（蓋付き）"
+                                ],
+                                "tools": [
+                                    "道具不使用"
+                                ]
+                            },
+                            {
                                 "source_state_id": "e324c7bc",
                                 "vessel": [
                                     "バット",
-                                    "フライパン（蓋付き）"
+                                    "フライパン（蓋付き）",
+                                    "バット"
                                 ],
                                 "tools": [
                                     "菜箸",
@@ -2972,7 +2998,7 @@
                                 ]
                             }
                         ],
-                        "final_position": "フライパン（蓋付き）"
+                        "final_position": "バット"
                     }
                 ]
             },
@@ -3011,7 +3037,7 @@
                 ]
             }
         ],
-        "annotation_note": "step4: フライパンの油再利用しているが、アノテーション方法を定義していない"
+        "annotation_note": "step4: フライパンの油再利用して記入"
     },
     {
         "title": "大根と牛肉の韓国風煮物",
