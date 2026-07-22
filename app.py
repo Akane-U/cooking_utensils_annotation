@@ -371,6 +371,84 @@ def utensil_multi_select(label: str, key: str, current: list, utensil_cats: dict
     ]
 
 
+_DUP_SEP = "⁣"  # 重複識別用の区切り文字（保存データには出さない）
+
+
+def _dup_base(token: str) -> str:
+    return token.split(_DUP_SEP)[0]
+
+
+def _dup_fmt(token: str) -> str:
+    """表示ラベル。重複選択肢は同一ラベルだとStreamlitがドロップダウンから除外してしまうため、
+    2個目以降は「名前（n）」のように連番を付けて区別できるようにする。"""
+    base, _, n = token.partition(_DUP_SEP)
+    return base if not n else f"{base}（{n}）"
+
+
+def _dup_encode_seq(names: list) -> list:
+    """名前のリスト（重複あり）→ 同名には連番タグを付けたトークン列。"""
+    counts = {}
+    tokens = []
+    for n in names:
+        counts[n] = counts.get(n, 0) + 1
+        tokens.append(n if counts[n] == 1 else f"{n}{_DUP_SEP}{counts[n]}")
+    return tokens
+
+
+def vessel_multi_select(label: str, key: str, current: list, utensil_cats: dict) -> list:
+    """複数選択（使用容器用）。見た目は通常のmultiselectのまま、同じ器具を複数回選択できる。
+    選択順を維持したクリーンな名前リスト（重複を含む）を返す。"""
+    utensils = flat_utensils(utensil_cats)
+
+    raw_current = st.session_state.get(key)
+    if raw_current is None:
+        raw_current = _dup_encode_seq(current)
+
+    opts = []
+    for cat, names in utensil_cats.items():
+        opts.append(f"{_CAT_SEP_PRE}{cat}{_CAT_SEP_SUF}")
+        opts.extend(names)
+    # 既存の一覧外（自由記述）値も選択肢に加える
+    for u in current:
+        if u not in utensils and u not in opts:
+            opts.append(u)
+    # 現在保持しているトークン（重複タグ付き含む）は必ず選択肢に含める
+    for t in raw_current:
+        if t not in opts:
+            opts.append(t)
+    # 各項目について、もう1回重複選択できる「次の枠」を追加
+    counts = {}
+    for t in raw_current:
+        counts[_dup_base(t)] = counts.get(_dup_base(t), 0) + 1
+    for base, cnt in counts.items():
+        nxt = f"{base}{_DUP_SEP}{cnt + 1}"
+        if nxt not in opts:
+            opts.append(nxt)
+
+    def _remove_seps() -> None:
+        st.session_state[key] = [
+            u for u in st.session_state[key]
+            if not (_dup_base(u).startswith(_CAT_SEP_PRE) and _dup_base(u).endswith(_CAT_SEP_SUF))
+        ]
+
+    sel = st.multiselect(
+        label,
+        opts,
+        default=[t for t in raw_current if t in opts],
+        key=key,
+        format_func=_dup_fmt,
+        on_change=_remove_seps,
+        accept_new_options=True,
+        placeholder="選択、または一覧外の名称を入力（同じ器具の重複選択可）",
+    )
+
+    sel = [
+        u for u in sel
+        if not (_dup_base(u).startswith(_CAT_SEP_PRE) and _dup_base(u).endswith(_CAT_SEP_SUF))
+    ]
+    return [_dup_base(u) for u in sel]
+
+
 def source_label(step: int, name: str) -> str:
     """UIに表示するソースラベル。材料は名前のみ、中間stateは step N: name。"""
     return name if step == 0 else f"step {step}: {name}"
@@ -748,8 +826,8 @@ def main() -> None:
                                 inter["vessel"] = [src_position]
                                 st.session_state[f"{wkey}_vessel"] = [src_position]
 
-                            inter["vessel"] = utensil_multi_select(
-                                "使用容器（vessels）※複数選択可",
+                            inter["vessel"] = vessel_multi_select(
+                                "使用容器（vessels）※複数選択可・重複可",
                                 f"{wkey}_vessel",
                                 inter.get("vessel", []),
                                 vessel_cats,
