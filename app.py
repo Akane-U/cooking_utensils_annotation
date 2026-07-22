@@ -439,7 +439,7 @@ def vessel_multi_select(label: str, key: str, current: list, utensil_cats: dict)
         format_func=_dup_fmt,
         on_change=_remove_seps,
         accept_new_options=True,
-        placeholder="選択、または一覧外の名称を入力（同じ器具の重複選択可）",
+        placeholder="選択、または一覧外の名称を入力",
     )
 
     sel = [
@@ -827,7 +827,7 @@ def main() -> None:
                                 st.session_state[f"{wkey}_vessel"] = [src_position]
 
                             inter["vessel"] = vessel_multi_select(
-                                "使用容器（vessels）※複数選択可・重複可",
+                                "使用容器（vessels）※複数選択可",
                                 f"{wkey}_vessel",
                                 inter.get("vessel", []),
                                 vessel_cats,
