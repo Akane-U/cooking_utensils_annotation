@@ -1495,7 +1495,7 @@
                 "state_list": [
                     {
                         "id": "23b63e50",
-                        "name": "クリームチーズ・バターを混ぜたもの",
+                        "name": "クリームチーズ・バターを練り混ぜたもの",
                         "utensil_interactions_list": [
                             {
                                 "source_state_id": "1",
