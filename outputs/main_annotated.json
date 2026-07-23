@@ -11875,7 +11875,7 @@
                                 "source_state_id": "3493f5e6",
                                 "vessel": [
                                     "フライパン（蓋付き）",
-                                    "盛り付け皿・器"
+                                    "None_バット-2"
                                 ],
                                 "tools": [
                                     "フライ返し",
@@ -11883,7 +11883,7 @@
                                 ]
                             }
                         ],
-                        "final_position": "盛り付け皿・器"
+                        "final_position": "None_バット-2"
                     }
                 ]
             },
@@ -11947,10 +11947,11 @@
                             {
                                 "source_state_id": "4a7e1994",
                                 "vessel": [
+                                    "None_バット-2",
                                     "盛り付け皿・器"
                                 ],
                                 "tools": [
-                                    "道具不使用"
+                                    "フライ返し"
                                 ]
                             }
                         ],
@@ -11959,7 +11960,7 @@
                 ]
             }
         ],
-        "annotation_note": ""
+        "annotation_note": "step4: 副産物は未記入"
     },
     {
         "title": "鶏肉の赤ワイン煮",
@@ -12380,7 +12381,7 @@
                 ]
             }
         ],
-        "annotation_note": ""
+        "annotation_note": "step3: アク除くときに接触する道具要確認（全レシピ対象）"
     },
     {
         "title": "手羽元とキャベツの煮物",
