@@ -2924,11 +2924,27 @@
                 "step_after": 3,
                 "state_list": [
                     {
-                        "id": "e324c7bc",
-                        "name": "揚げた2",
+                        "id": "28e8619d",
+                        "name": "揚げ油",
                         "utensil_interactions_list": [
                             {
                                 "source_state_id": "13",
+                                "vessel": [
+                                    "フライパン（蓋付き）"
+                                ],
+                                "tools": [
+                                    "道具不使用"
+                                ]
+                            }
+                        ],
+                        "final_position": "フライパン（蓋付き）"
+                    },
+                    {
+                        "id": "81beae5c",
+                        "name": "揚げた2",
+                        "utensil_interactions_list": [
+                            {
+                                "source_state_id": "28e8619d",
                                 "vessel": [
                                     "フライパン（蓋付き）"
                                 ],
@@ -2950,22 +2966,6 @@
                             }
                         ],
                         "final_position": "バット"
-                    },
-                    {
-                        "id": "28e8619d",
-                        "name": "一度使用した揚げ油",
-                        "utensil_interactions_list": [
-                            {
-                                "source_state_id": "e324c7bc",
-                                "vessel": [
-                                    "フライパン（蓋付き）"
-                                ],
-                                "tools": [
-                                    "道具不使用"
-                                ]
-                            }
-                        ],
-                        "final_position": "フライパン（蓋付き）"
                     }
                 ]
             },
@@ -2986,7 +2986,7 @@
                                 ]
                             },
                             {
-                                "source_state_id": "e324c7bc",
+                                "source_state_id": "81beae5c",
                                 "vessel": [
                                     "バット",
                                     "フライパン（蓋付き）",
