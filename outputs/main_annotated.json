@@ -4687,22 +4687,6 @@
                             }
                         ],
                         "final_position": "None_バット-2"
-                    },
-                    {
-                        "id": "151d5cf7",
-                        "name": "3で出てきた煮汁",
-                        "utensil_interactions_list": [
-                            {
-                                "source_state_id": "178afe68",
-                                "vessel": [
-                                    "フライパン（蓋付き）"
-                                ],
-                                "tools": [
-                                    "道具不使用"
-                                ]
-                            }
-                        ],
-                        "final_position": "フライパン（蓋付き）"
                     }
                 ]
             },
@@ -4742,16 +4726,6 @@
                                 "tools": [
                                     "道具不使用"
                                 ]
-                            },
-                            {
-                                "source_state_id": "151d5cf7",
-                                "vessel": [
-                                    "フライパン（蓋付き）",
-                                    "盛り付け皿・器"
-                                ],
-                                "tools": [
-                                    "スプーン"
-                                ]
                             }
                         ],
                         "final_position": "盛り付け皿・器"
@@ -4759,7 +4733,7 @@
                 ]
             }
         ],
-        "annotation_note": "step2: ごま油の使用器具は書くべきかどうか迷ったが記入した\nstep5: 副産物の煮汁を記入した"
+        "annotation_note": "step2: ごま油の使用器具は書くべきかどうか迷ったがルールに基づき未記入\nstep5: 副産物の煮汁は未記入"
     },
     {
         "title": "キャベツと豚肉の蒸し煮",
