@@ -6875,22 +6875,6 @@
                             }
                         ],
                         "final_position": "ボウル"
-                    },
-                    {
-                        "id": "38cf8ffa",
-                        "name": "肉汁",
-                        "utensil_interactions_list": [
-                            {
-                                "source_state_id": "366d9ad1",
-                                "vessel": [
-                                    "ボウル"
-                                ],
-                                "tools": [
-                                    "道具不使用"
-                                ]
-                            }
-                        ],
-                        "final_position": "ボウル"
                     }
                 ]
             },
@@ -6942,16 +6926,6 @@
                                 ],
                                 "tools": [
                                     "包丁",
-                                    "菜箸"
-                                ]
-                            },
-                            {
-                                "source_state_id": "38cf8ffa",
-                                "vessel": [
-                                    "ボウル",
-                                    "フライパン（蓋付き）"
-                                ],
-                                "tools": [
                                     "菜箸"
                                 ]
                             },
@@ -7013,7 +6987,7 @@
                 ]
             }
         ],
-        "annotation_note": "step3: ラップは接しているか不明だが記入済（他のレシピも確認）\nstep5: 肉汁を記入済"
+        "annotation_note": "step3: ラップは接しているか不明だが記入済（他のレシピも確認）\nstep5: 肉汁は未記入"
     },
     {
         "title": "トマトと豆腐の和風サラダ",
