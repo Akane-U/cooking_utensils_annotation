@@ -306,6 +306,13 @@ def main() -> None:
             max-height: 100vh;
             overflow-y: auto;
         }
+        /* 名前・生成元・使用容器・使用道具の行内カラムはスクロール対象から除外 */
+        div[data-testid="stColumn"] div[data-testid="stColumn"] {
+            position: static !important;
+            top: auto !important;
+            max-height: none !important;
+            overflow-y: visible !important;
+        }
         /* CUD: state カード — 青(#005AFF)左アクセント + 薄青背景 */
         div[data-testid="stVerticalBlockBorderWrapper"] {
             background-color: #EFF7FF !important;
