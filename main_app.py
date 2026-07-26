@@ -476,7 +476,7 @@ def main() -> None:
                     nkey = f"name_{ridx}_{sidx}_{si}"
                     st.markdown(f"**名前（name）：** {state.get('name', '')}")
                     state["name_check"] = st.checkbox(
-                        "🚩 name が間違っている・違和感がある",
+                        "違和感あり",
                         value=state.get("name_check", False),
                         key=f"{nkey}_chk",
                     )
@@ -491,8 +491,6 @@ def main() -> None:
                         )
 
                     st.markdown("---")
-                    fp = state.get("final_position", "")
-                    st.caption(f"最終位置（final_position）： {fp or '（なし）'}")
 
                     interactions = state.get("utensil_interactions_list", [])
                     if not interactions:
@@ -509,9 +507,14 @@ def main() -> None:
                             sid = inter.get("source_state_id", "")
                             step, sname, _pos = id_index.get(sid, (0, sid, ""))
                             label = source_label(step, sname) if sid else "（なし）"
-                            st.markdown(f"生成元（source）：**{label}**")
+                            st.markdown(
+                                '<div style="background:#F0F0F0;border-left:4px solid #9E9E9E;'
+                                'border-radius:4px;padding:6px 10px;margin-bottom:4px">'
+                                f"生成元（source）：<b>{label}</b></div>",
+                                unsafe_allow_html=True,
+                            )
                             inter["source_state_id_check"] = st.checkbox(
-                                "誤り・違和感あり",
+                                "違和感あり",
                                 value=inter.get("source_state_id_check", False),
                                 key=f"{wkey}_src_chk",
                             )
@@ -527,12 +530,15 @@ def main() -> None:
                         with vessel_col:
                             vessels = inter.get("vessel", [])
                             st.markdown(
-                                "使用容器（vessels）：**"
+                                '<div style="background:#E3F2FD;border-left:4px solid #4DC4FF;'
+                                'border-radius:4px;padding:6px 10px;margin-bottom:4px">'
+                                "使用容器（vessels）：<b>"
                                 + ("、".join(vessels) if vessels else "（なし）")
-                                + "**"
+                                + "</b></div>",
+                                unsafe_allow_html=True,
                             )
                             inter["vessel_check"] = st.checkbox(
-                                "誤り・違和感あり",
+                                "違和感あり",
                                 value=inter.get("vessel_check", False),
                                 key=f"{wkey}_vessel_chk",
                             )
@@ -548,12 +554,15 @@ def main() -> None:
                         with tools_col:
                             tools = inter.get("tools", [])
                             st.markdown(
-                                "使用道具（tools）：**"
+                                '<div style="background:#FFF3E0;border-left:4px solid #F6AA00;'
+                                'border-radius:4px;padding:6px 10px;margin-bottom:4px">'
+                                "使用道具（tools）：<b>"
                                 + ("、".join(tools) if tools else "（なし）")
-                                + "**"
+                                + "</b></div>",
+                                unsafe_allow_html=True,
                             )
                             inter["tools_check"] = st.checkbox(
-                                "誤り・違和感あり",
+                                "違和感あり",
                                 value=inter.get("tools_check", False),
                                 key=f"{wkey}_tools_chk",
                             )
