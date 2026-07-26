@@ -85,19 +85,8 @@
                 "state_list": [
                     {
                         "id": "4ef62c39",
-                        "name": "皮をむいたトマト",
+                        "name": "煮汁",
                         "utensil_interactions_list": [
-                            {
-                                "source_state_id": "e10655e5",
-                                "vessel": [
-                                    "まな板",
-                                    "鍋（蓋付き）",
-                                    "ボウル"
-                                ],
-                                "tools": [
-                                    "網目の粗い網杓子"
-                                ]
-                            },
                             {
                                 "source_state_id": "3",
                                 "vessel": [
@@ -118,6 +107,33 @@
                             }
                         ],
                         "final_position": "鍋（蓋付き）"
+                    },
+                    {
+                        "id": "affee75e",
+                        "name": "皮をむいたトマト",
+                        "utensil_interactions_list": [
+                            {
+                                "source_state_id": "e10655e5",
+                                "vessel": [
+                                    "まな板",
+                                    "鍋（蓋付き）",
+                                    "ボウル"
+                                ],
+                                "tools": [
+                                    "網目の細かい網杓子"
+                                ]
+                            },
+                            {
+                                "source_state_id": "4ef62c39",
+                                "vessel": [
+                                    "鍋（蓋付き）"
+                                ],
+                                "tools": [
+                                    "道具不使用"
+                                ]
+                            }
+                        ],
+                        "final_position": "鍋（蓋付き）"
                     }
                 ]
             },
@@ -129,7 +145,7 @@
                         "name": "油揚げとトマトを冷やしたもの",
                         "utensil_interactions_list": [
                             {
-                                "source_state_id": "None_43bd963f",
+                                "source_state_id": "4ef62c39",
                                 "vessel": [
                                     "鍋（蓋付き）",
                                     "ボウル"
@@ -150,7 +166,7 @@
                                 ]
                             },
                             {
-                                "source_state_id": "4ef62c39",
+                                "source_state_id": "affee75e",
                                 "vessel": [
                                     "ボウル"
                                 ],
