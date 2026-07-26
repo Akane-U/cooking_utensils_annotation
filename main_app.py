@@ -117,14 +117,22 @@ def load_utensils() -> dict:
 # ─── Review structure ─────────────────────────────────────────────────────────
 
 
+def _strip_none(value: str) -> str:
+    """一覧外の値に付与された None_ プレフィックスを表示用に除去する。"""
+    return value[5:] if value.startswith("None_") else value
+
+
 def build_review(ground_truth: list) -> list:
     """main_annotated.json から正誤判定用の構造を作る（check/commentフィールドを付与）。
-    name / source_state_id / vessel / tools は固定値としてそのまま保持する。"""
+    name / source_state_id / vessel / tools は固定値としてそのまま保持する
+    （None_ プレフィックスのみ表示用に除去する）。"""
     result = deepcopy(ground_truth)
     for recipe in result:
         recipe.setdefault("reviewer_note", "")
         recipe.setdefault("reviewed", False)
         for ws in recipe["world_state_list"]:
+            for state in ws["state_list"]:
+                state["final_position"] = _strip_none(state.get("final_position", ""))
             if ws["step_after"] == 0:
                 continue
             for state in ws["state_list"]:
@@ -132,6 +140,9 @@ def build_review(ground_truth: list) -> list:
                 state.setdefault("name_comment", "")
                 for ii, inter in enumerate(state.get("utensil_interactions_list", [])):
                     inter["_uid"] = f"{state['id']}_{ii}"
+                    inter["source_state_id"] = _strip_none(inter.get("source_state_id", ""))
+                    inter["vessel"] = [_strip_none(v) for v in inter.get("vessel", [])]
+                    inter["tools"] = [_strip_none(t) for t in inter.get("tools", [])]
                     inter.setdefault("source_state_id_check", False)
                     inter.setdefault("source_state_id_comment", "")
                     inter.setdefault("vessel_check", False)
@@ -474,15 +485,19 @@ def main() -> None:
                     )
 
                     nkey = f"name_{ridx}_{sidx}_{si}"
-                    st.markdown(f"**名前（name）：** {state.get('name', '')}")
-                    state["name_check"] = st.checkbox(
-                        "違和感あり",
-                        value=state.get("name_check", False),
-                        key=f"{nkey}_chk",
-                    )
+                    name_col, name_chk_col = st.columns([6, 1])
+                    with name_col:
+                        st.markdown(f"**名前：** {state.get('name', '')}")
+                    with name_chk_col:
+                        state["name_check"] = st.checkbox(
+                            "違和感あり",
+                            value=state.get("name_check", False),
+                            key=f"{nkey}_chk",
+                            label_visibility="collapsed",
+                        )
                     if state["name_check"]:
                         state["name_comment"] = st.text_area(
-                            "コメント（name）",
+                            "コメント",
                             value=state.get("name_comment", ""),
                             key=f"{nkey}_cmt",
                             height=70,
@@ -500,24 +515,33 @@ def main() -> None:
                         uid = inter.get("_uid", f"{state['id']}_{ii}")
                         wkey = f"u_{ridx}_{sidx}_{si}_{uid}"
 
-                        st.markdown(f"**― 生成元 {ii + 1} ―**")
+                        if ii > 0:
+                            st.markdown(
+                                "<hr style='margin:10px 0;border:none;border-top:1px solid #ddd'>",
+                                unsafe_allow_html=True,
+                            )
+
                         src_col, vessel_col, tools_col = st.columns(3)
 
                         with src_col:
                             sid = inter.get("source_state_id", "")
                             step, sname, _pos = id_index.get(sid, (0, sid, ""))
                             label = source_label(step, sname) if sid else "（なし）"
-                            st.markdown(
-                                '<div style="background:#F0F0F0;border-left:4px solid #9E9E9E;'
-                                'border-radius:4px;padding:6px 10px;margin-bottom:4px">'
-                                f"生成元（source）：<b>{label}</b></div>",
-                                unsafe_allow_html=True,
-                            )
-                            inter["source_state_id_check"] = st.checkbox(
-                                "違和感あり",
-                                value=inter.get("source_state_id_check", False),
-                                key=f"{wkey}_src_chk",
-                            )
+                            box_col, chk_col = st.columns([5, 1])
+                            with box_col:
+                                st.markdown(
+                                    '<div style="background:#F0F0F0;border-left:4px solid #9E9E9E;'
+                                    'border-radius:4px;padding:6px 10px;margin-bottom:4px">'
+                                    f"生成元：<b>{label}</b></div>",
+                                    unsafe_allow_html=True,
+                                )
+                            with chk_col:
+                                inter["source_state_id_check"] = st.checkbox(
+                                    "違和感あり",
+                                    value=inter.get("source_state_id_check", False),
+                                    key=f"{wkey}_src_chk",
+                                    label_visibility="collapsed",
+                                )
                             if inter["source_state_id_check"]:
                                 inter["source_state_id_comment"] = st.text_area(
                                     "コメント",
@@ -529,19 +553,23 @@ def main() -> None:
 
                         with vessel_col:
                             vessels = inter.get("vessel", [])
-                            st.markdown(
-                                '<div style="background:#E3F2FD;border-left:4px solid #4DC4FF;'
-                                'border-radius:4px;padding:6px 10px;margin-bottom:4px">'
-                                "使用容器（vessels）：<b>"
-                                + ("、".join(vessels) if vessels else "（なし）")
-                                + "</b></div>",
-                                unsafe_allow_html=True,
-                            )
-                            inter["vessel_check"] = st.checkbox(
-                                "違和感あり",
-                                value=inter.get("vessel_check", False),
-                                key=f"{wkey}_vessel_chk",
-                            )
+                            box_col, chk_col = st.columns([5, 1])
+                            with box_col:
+                                st.markdown(
+                                    '<div style="background:#E3F2FD;border-left:4px solid #4DC4FF;'
+                                    'border-radius:4px;padding:6px 10px;margin-bottom:4px">'
+                                    "使用容器：<b>"
+                                    + ("、".join(vessels) if vessels else "（なし）")
+                                    + "</b></div>",
+                                    unsafe_allow_html=True,
+                                )
+                            with chk_col:
+                                inter["vessel_check"] = st.checkbox(
+                                    "違和感あり",
+                                    value=inter.get("vessel_check", False),
+                                    key=f"{wkey}_vessel_chk",
+                                    label_visibility="collapsed",
+                                )
                             if inter["vessel_check"]:
                                 inter["vessel_comment"] = st.text_area(
                                     "コメント",
@@ -553,19 +581,23 @@ def main() -> None:
 
                         with tools_col:
                             tools = inter.get("tools", [])
-                            st.markdown(
-                                '<div style="background:#FFF3E0;border-left:4px solid #F6AA00;'
-                                'border-radius:4px;padding:6px 10px;margin-bottom:4px">'
-                                "使用道具（tools）：<b>"
-                                + ("、".join(tools) if tools else "（なし）")
-                                + "</b></div>",
-                                unsafe_allow_html=True,
-                            )
-                            inter["tools_check"] = st.checkbox(
-                                "違和感あり",
-                                value=inter.get("tools_check", False),
-                                key=f"{wkey}_tools_chk",
-                            )
+                            box_col, chk_col = st.columns([5, 1])
+                            with box_col:
+                                st.markdown(
+                                    '<div style="background:#FFF3E0;border-left:4px solid #F6AA00;'
+                                    'border-radius:4px;padding:6px 10px;margin-bottom:4px">'
+                                    "使用道具：<b>"
+                                    + ("、".join(tools) if tools else "（なし）")
+                                    + "</b></div>",
+                                    unsafe_allow_html=True,
+                                )
+                            with chk_col:
+                                inter["tools_check"] = st.checkbox(
+                                    "違和感あり",
+                                    value=inter.get("tools_check", False),
+                                    key=f"{wkey}_tools_chk",
+                                    label_visibility="collapsed",
+                                )
                             if inter["tools_check"]:
                                 inter["tools_comment"] = st.text_area(
                                     "コメント",
