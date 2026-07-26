@@ -2014,30 +2014,13 @@
                 "step_after": 2,
                 "state_list": [
                     {
-                        "id": "95f1f6b1",
-                        "name": "ビスケット8枚をコーヒーに浸し器に並び入れたもの",
-                        "utensil_interactions_list": [
-                            {
-                                "source_state_id": "6",
-                                "vessel": [
-                                    "None_マグカップ",
-                                    "盛り付け皿・器"
-                                ],
-                                "tools": [
-                                    "道具不使用"
-                                ]
-                            }
-                        ],
-                        "final_position": "盛り付け皿・器"
-                    },
-                    {
                         "id": "d5eb7685",
                         "name": "コーヒー",
                         "utensil_interactions_list": [
                             {
                                 "source_state_id": "4",
                                 "vessel": [
-                                    "None_マグカップ"
+                                    "ボウル-2"
                                 ],
                                 "tools": [
                                     "スプーン"
@@ -2046,14 +2029,40 @@
                             {
                                 "source_state_id": "5",
                                 "vessel": [
-                                    "None_マグカップ"
+                                    "ボウル-2"
                                 ],
                                 "tools": [
                                     "スプーン"
                                 ]
                             }
                         ],
-                        "final_position": "None_マグカップ"
+                        "final_position": "ボウル-2"
+                    },
+                    {
+                        "id": "a619f94e",
+                        "name": "ビスケット8枚をコーヒーに浸し器に並び入れたもの",
+                        "utensil_interactions_list": [
+                            {
+                                "source_state_id": "6",
+                                "vessel": [
+                                    "ボウル-2",
+                                    "盛り付け皿・器"
+                                ],
+                                "tools": [
+                                    "菜箸"
+                                ]
+                            },
+                            {
+                                "source_state_id": "d5eb7685",
+                                "vessel": [
+                                    "ボウル-2"
+                                ],
+                                "tools": [
+                                    "道具不使用"
+                                ]
+                            }
+                        ],
+                        "final_position": "ボウル-2"
                     }
                 ]
             },
@@ -2077,7 +2086,7 @@
                             {
                                 "source_state_id": "6",
                                 "vessel": [
-                                    "None_マグカップ",
+                                    "ボウル-2",
                                     "盛り付け皿・器"
                                 ],
                                 "tools": [
@@ -2087,7 +2096,7 @@
                             {
                                 "source_state_id": "d5eb7685",
                                 "vessel": [
-                                    "None_マグカップ"
+                                    "ボウル-2"
                                 ],
                                 "tools": [
                                     "道具不使用"
@@ -2108,7 +2117,7 @@
                 ]
             }
         ],
-        "annotation_note": "step2: コーヒーをどうするべきか\n全体: アノテーション難しい"
+        "annotation_note": ""
     },
     {
         "title": "ワザあり豚カツ",
