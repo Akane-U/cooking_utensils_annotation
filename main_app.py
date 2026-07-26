@@ -522,12 +522,6 @@ def main() -> None:
                         uid = inter.get("_uid", f"{state['id']}_{ii}")
                         wkey = f"u_{ridx}_{sidx}_{si}_{uid}"
 
-                        if ii > 0:
-                            st.markdown(
-                                "<hr style='margin:10px 0;border:none;border-top:1px solid #ddd'>",
-                                unsafe_allow_html=True,
-                            )
-
                         src_col, vessel_col, tools_col = st.columns(3)
 
                         with src_col:
