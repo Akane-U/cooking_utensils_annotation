@@ -12496,7 +12496,7 @@
                 ]
             }
         ],
-        "annotation_note": "step4: 副産物は未記入"
+        "annotation_note": "step4: 副産物は記入"
     },
     {
         "title": "鶏肉の赤ワイン煮",
@@ -15702,6 +15702,22 @@
                             }
                         ],
                         "final_position": "鍋（蓋付き）"
+                    },
+                    {
+                        "id": "b9223b25",
+                        "name": "煮汁",
+                        "utensil_interactions_list": [
+                            {
+                                "source_state_id": "3a7c0775",
+                                "vessel": [
+                                    "鍋（蓋付き）"
+                                ],
+                                "tools": [
+                                    "道具不使用"
+                                ]
+                            }
+                        ],
+                        "final_position": "鍋（蓋付き）"
                     }
                 ]
             },
@@ -15713,6 +15729,17 @@
                         "name": "せん切りキャベツと鶏ひき肉の重ね煮",
                         "utensil_interactions_list": [
                             {
+                                "source_state_id": "b9223b25",
+                                "vessel": [
+                                    "鍋（蓋付き）",
+                                    "ボウル-2",
+                                    "盛り付け皿・器"
+                                ],
+                                "tools": [
+                                    "おたま"
+                                ]
+                            },
+                            {
                                 "source_state_id": "3a7c0775",
                                 "vessel": [
                                     "鍋（蓋付き）",
@@ -15721,8 +15748,7 @@
                                 "tools": [
                                     "None_鍋つかみ",
                                     "フライ返し",
-                                    "None_おもしの皿",
-                                    "おたま"
+                                    "None_おもしの皿"
                                 ]
                             },
                             {
@@ -15758,7 +15784,7 @@
                 ]
             }
         ],
-        "annotation_note": "step4: 煮汁を一度ボウルに移しているが、直接盛り付け皿に移すよう、おたまを記入した"
+        "annotation_note": "step4: 煮汁を記入"
     },
     {
         "title": "ねぎの香味漬け",
