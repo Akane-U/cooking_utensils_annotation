@@ -422,7 +422,7 @@ def main() -> None:
 
     # ── Left column: recipe info ───────────────────────────────────────────────
     with left:
-        if ridx >= 51:
+        if ridx >= 50:
             st.warning("準備中（まだアノテーションしないでください）")
 
         st.subheader(recipe["title"])
@@ -496,7 +496,7 @@ def main() -> None:
                     )
 
                     nkey = f"name_{ridx}_{sidx}_{si}"
-                    name_chk_col, name_col = st.columns([1, 6])
+                    name_chk_col, name_col = st.columns([1, 12], gap="xxsmall")
                     with name_chk_col:
                         state["name_check"] = st.checkbox(
                             "違和感あり",
@@ -532,7 +532,7 @@ def main() -> None:
                             sid = inter.get("source_state_id", "")
                             step, sname, _pos = id_index.get(sid, (0, sid, ""))
                             label = source_label(step, sname) if sid else "（なし）"
-                            chk_col, box_col = st.columns([1, 5])
+                            chk_col, box_col = st.columns([1, 10], gap="xxsmall")
                             with chk_col:
                                 inter["source_state_id_check"] = st.checkbox(
                                     "違和感あり",
@@ -559,7 +559,7 @@ def main() -> None:
 
                         with vessel_col:
                             vessels = inter.get("vessel", [])
-                            chk_col, box_col = st.columns([1, 5])
+                            chk_col, box_col = st.columns([1, 10], gap="xxsmall")
                             with chk_col:
                                 inter["vessel_check"] = st.checkbox(
                                     "違和感あり",
@@ -588,7 +588,7 @@ def main() -> None:
 
                         with tools_col:
                             tools = inter.get("tools", [])
-                            chk_col, box_col = st.columns([1, 5])
+                            chk_col, box_col = st.columns([1, 10], gap="xxsmall")
                             with chk_col:
                                 inter["tools_check"] = st.checkbox(
                                     "違和感あり",
