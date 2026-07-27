@@ -7257,7 +7257,7 @@
                 ]
             }
         ],
-        "annotation_note": "step2: 副産物の脂は無視"
+        "annotation_note": "step2: 副産物の脂を記入"
     },
     {
         "title": "冬のロールチキン",
@@ -7414,6 +7414,22 @@
                             }
                         ],
                         "final_position": "ボウル"
+                    },
+                    {
+                        "id": "ae400373",
+                        "name": "肉汁",
+                        "utensil_interactions_list": [
+                            {
+                                "source_state_id": "76872012",
+                                "vessel": [
+                                    "ボウル"
+                                ],
+                                "tools": [
+                                    "道具不使用"
+                                ]
+                            }
+                        ],
+                        "final_position": "ボウル"
                     }
                 ]
             },
@@ -7448,22 +7464,6 @@
                             }
                         ],
                         "final_position": "ボウル-2"
-                    },
-                    {
-                        "id": "95c6c37a",
-                        "name": "肉汁",
-                        "utensil_interactions_list": [
-                            {
-                                "source_state_id": "6cc51775",
-                                "vessel": [
-                                    "フライパン（蓋付き）"
-                                ],
-                                "tools": [
-                                    "道具不使用"
-                                ]
-                            }
-                        ],
-                        "final_position": "フライパン（蓋付き）"
                     }
                 ]
             },
@@ -7475,8 +7475,9 @@
                         "name": "炒めたブロッコリー",
                         "utensil_interactions_list": [
                             {
-                                "source_state_id": "95c6c37a",
+                                "source_state_id": "ae400373",
                                 "vessel": [
+                                    "ボウル",
                                     "フライパン（蓋付き）"
                                 ],
                                 "tools": [
@@ -7552,7 +7553,7 @@
                 ]
             }
         ],
-        "annotation_note": "step3: ラップは接しているか不明だが記入済（他のレシピも確認）\nstep5: 肉汁は未記入"
+        "annotation_note": "step3: ラップは接しているか不明だが記入済（他のレシピも確認）\nstep5: 肉汁は記入"
     },
     {
         "title": "トマトと豆腐の和風サラダ",
