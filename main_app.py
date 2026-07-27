@@ -379,6 +379,12 @@ def main() -> None:
                 st.session_state.sidx = si
                 st.rerun()
 
+        ann[ridx]["reviewed"] = st.checkbox(
+            "✅ このレシピの確認完了",
+            value=ann[ridx].get("reviewed", False),
+            key=f"reviewed_{ridx}",
+        )
+
         st.divider()
 
         filename = st.session_state.save_filename
@@ -418,7 +424,7 @@ def main() -> None:
     with left:
         st.subheader(recipe["title"])
 
-        with st.expander("材料", expanded=False):
+        with st.expander("材料", expanded=True):
             for ing in recipe["ingredients"]:
                 st.write(f"• {ing}")
 
@@ -440,19 +446,14 @@ def main() -> None:
             with st.expander("作成者の備考", expanded=False):
                 st.write(admin_note)
 
-        st.markdown("#### レビューコメント（レシピ全体）")
+        st.markdown("#### レシピ全体に対するコメント")
         ann[ridx]["reviewer_note"] = st.text_area(
             "レビューコメント",
             value=ann[ridx].get("reviewer_note", ""),
             key=f"reviewer_note_{ridx}",
             height=100,
-            placeholder="レシピ全体を通しての気づき・コメント（複数ある場合は改行して区切る）",
+            placeholder="レシピ全体を通してのコメント（複数ある場合は改行して区切る）",
             label_visibility="collapsed",
-        )
-        ann[ridx]["reviewed"] = st.checkbox(
-            "✅ このレシピの確認完了",
-            value=ann[ridx].get("reviewed", False),
-            key=f"reviewed_{ridx}",
         )
 
     # ── Utensil column ────────────────────────────────────────────────────────
@@ -509,7 +510,7 @@ def main() -> None:
                             key=f"{nkey}_cmt",
                             height=70,
                             label_visibility="collapsed",
-                            placeholder="何が間違っている・違和感があるか記入してください",
+                            placeholder="あなたが考える正解を記入してください",
                         )
 
                     st.markdown("---")
@@ -550,6 +551,7 @@ def main() -> None:
                                     key=f"{wkey}_src_cmt",
                                     height=70,
                                     label_visibility="collapsed",
+                                    placeholder="あなたが考える正解を記入してください",
                                 )
 
                         with vessel_col:
@@ -578,6 +580,7 @@ def main() -> None:
                                     key=f"{wkey}_vessel_cmt",
                                     height=70,
                                     label_visibility="collapsed",
+                                    placeholder="あなたが考える正解を記入してください",
                                 )
 
                         with tools_col:
@@ -606,6 +609,7 @@ def main() -> None:
                                     key=f"{wkey}_tools_cmt",
                                     height=70,
                                     label_visibility="collapsed",
+                                    placeholder="あなたが考える正解を記入してください",
                                 )
 
 
