@@ -5071,10 +5071,13 @@
                             {
                                 "source_state_id": "10",
                                 "vessel": [
-                                    "フライパン（蓋付き）"
+                                    "フライパン（蓋付き）",
+                                    "ボウル-3",
+                                    "None_ざる-2"
                                 ],
                                 "tools": [
-                                    "道具不使用"
+                                    "フライ返し",
+                                    "菜箸"
                                 ]
                             },
                             {
@@ -5092,6 +5095,22 @@
                             }
                         ],
                         "final_position": "None_ざる-2"
+                    },
+                    {
+                        "id": "31291e9a",
+                        "name": "フライパンに残った脂",
+                        "utensil_interactions_list": [
+                            {
+                                "source_state_id": "9d54e779",
+                                "vessel": [
+                                    "フライパン（蓋付き）"
+                                ],
+                                "tools": [
+                                    "道具不使用"
+                                ]
+                            }
+                        ],
+                        "final_position": "フライパン（蓋付き）"
                     }
                 ]
             },
@@ -5102,6 +5121,15 @@
                         "id": "b36c9ea9",
                         "name": "豚肉・ねぎの青い部分を蒸し焼きにしたもの",
                         "utensil_interactions_list": [
+                            {
+                                "source_state_id": "31291e9a",
+                                "vessel": [
+                                    "フライパン（蓋付き）"
+                                ],
+                                "tools": [
+                                    "クッキングペーパー"
+                                ]
+                            },
                             {
                                 "source_state_id": "9d54e779",
                                 "vessel": [
@@ -5216,7 +5244,7 @@
                 ]
             }
         ],
-        "annotation_note": "step2: ごま油の使用器具は書くべきかどうか迷ったがルールに基づき未記入\nstep5: 副産物の煮汁は未記入"
+        "annotation_note": "step2: ごま油の使用器具は記入\nstep5: 副産物の煮汁は未記入"
     },
     {
         "title": "キャベツと豚肉の蒸し煮",
