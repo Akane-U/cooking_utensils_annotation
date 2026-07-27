@@ -151,7 +151,10 @@ def build_review(ground_truth: list) -> list:
             if ws["step_after"] == 0:
                 continue
             ws.setdefault("missing_state_check", False)
-            ws.setdefault("missing_state_comment", "")
+            ws.setdefault("missing_state_name_comment", "")
+            ws.setdefault("missing_state_source_comment", "")
+            ws.setdefault("missing_state_vessel_comment", "")
+            ws.setdefault("missing_state_tools_comment", "")
             for state in ws["state_list"]:
                 state.setdefault("name_check", False)
                 state.setdefault("name_comment", "")
@@ -204,7 +207,10 @@ def merge_saved_review(fresh: list, saved: list) -> list:
             sws = saved_ws_by_step.get(ws.get("step_after"))
             if sws:
                 ws["missing_state_check"] = sws.get("missing_state_check", False)
-                ws["missing_state_comment"] = sws.get("missing_state_comment", "")
+                ws["missing_state_name_comment"] = sws.get("missing_state_name_comment", "")
+                ws["missing_state_source_comment"] = sws.get("missing_state_source_comment", "")
+                ws["missing_state_vessel_comment"] = sws.get("missing_state_vessel_comment", "")
+                ws["missing_state_tools_comment"] = sws.get("missing_state_tools_comment", "")
             for state in ws["state_list"]:
                 ss = saved_states.get(state["id"])
                 if not ss:
@@ -672,7 +678,7 @@ def main() -> None:
                                 value=state.get("missing_source_comment", ""),
                                 key=f"{mikey}_src_cmt",
                                 height=70,
-                                placeholder="不足している生成元を記入",
+                                placeholder="不足している生成元を記入（複数の場合は改行）",
                             )
                         with mi_vessel:
                             state["missing_vessel_comment"] = st.text_area(
@@ -680,7 +686,7 @@ def main() -> None:
                                 value=state.get("missing_vessel_comment", ""),
                                 key=f"{mikey}_vessel_cmt",
                                 height=70,
-                                placeholder="不足している使用容器を記入",
+                                placeholder="不足している使用容器を記入（生成元が複数の場合は生成元に対応して改行）",
                             )
                         with mi_tools:
                             state["missing_tools_comment"] = st.text_area(
@@ -688,7 +694,7 @@ def main() -> None:
                                 value=state.get("missing_tools_comment", ""),
                                 key=f"{mikey}_tools_cmt",
                                 height=70,
-                                placeholder="不足している使用道具を記入",
+                                placeholder="不足している使用道具を記入（生成元が複数の場合は生成元に対応して改行）",
                             )
 
             mskey = f"missingstate_{ridx}_{sidx}"
@@ -698,13 +704,38 @@ def main() -> None:
                 key=f"{mskey}_chk",
             )
             if step_ws["missing_state_check"]:
-                step_ws["missing_state_comment"] = st.text_area(
+                step_ws["missing_state_name_comment"] = st.text_area(
                     "名前",
-                    value=step_ws.get("missing_state_comment", ""),
-                    key=f"{mskey}_cmt",
+                    value=step_ws.get("missing_state_name_comment", ""),
+                    key=f"{mskey}_name_cmt",
                     height=70,
                     placeholder="不足しているStateの名前を記入",
                 )
+                ms_src, ms_vessel, ms_tools = st.columns(3)
+                with ms_src:
+                    step_ws["missing_state_source_comment"] = st.text_area(
+                        "生成元",
+                        value=step_ws.get("missing_state_source_comment", ""),
+                        key=f"{mskey}_src_cmt",
+                        height=70,
+                        placeholder="不足しているStateの生成元を記入（複数の場合は改行）",
+                    )
+                with ms_vessel:
+                    step_ws["missing_state_vessel_comment"] = st.text_area(
+                        "使用容器",
+                        value=step_ws.get("missing_state_vessel_comment", ""),
+                        key=f"{mskey}_vessel_cmt",
+                        height=70,
+                        placeholder="不足しているStateの使用容器を記入（生成元が複数の場合は生成元に対応して改行）",
+                    )
+                with ms_tools:
+                    step_ws["missing_state_tools_comment"] = st.text_area(
+                        "使用道具",
+                        value=step_ws.get("missing_state_tools_comment", ""),
+                        key=f"{mskey}_tools_cmt",
+                        height=70,
+                        placeholder="不足しているStateの使用道具を記入（生成元が複数の場合は生成元に対応して改行）",
+                    )
 
 
 if __name__ == "__main__":
