@@ -61,22 +61,6 @@
                             }
                         ],
                         "final_position": "まな板"
-                    },
-                    {
-                        "id": "dc434abf",
-                        "name": "切った油揚げ",
-                        "utensil_interactions_list": [
-                            {
-                                "source_state_id": "2",
-                                "vessel": [
-                                    "まな板"
-                                ],
-                                "tools": [
-                                    "包丁"
-                                ]
-                            }
-                        ],
-                        "final_position": "まな板"
                     }
                 ]
             },
@@ -155,7 +139,7 @@
                                 ]
                             },
                             {
-                                "source_state_id": "dc434abf",
+                                "source_state_id": "None_dc434abf",
                                 "vessel": [
                                     "まな板",
                                     "鍋（蓋付き）",
@@ -281,17 +265,16 @@
                                 ]
                             },
                             {
-                                "source_state_id": "2",
+                                "source_state_id": "3",
                                 "vessel": [
-                                    "鍋（蓋付き）",
-                                    "流し型"
+                                    "鍋（蓋付き）"
                                 ],
                                 "tools": [
                                     "道具不使用"
                                 ]
                             }
                         ],
-                        "final_position": "流し型"
+                        "final_position": "鍋（蓋付き）"
                     }
                 ]
             },
@@ -322,6 +305,15 @@
                             },
                             {
                                 "source_state_id": "5",
+                                "vessel": [
+                                    "ボウル"
+                                ],
+                                "tools": [
+                                    "泡だて器"
+                                ]
+                            },
+                            {
+                                "source_state_id": "6",
                                 "vessel": [
                                     "ボウル"
                                 ],
