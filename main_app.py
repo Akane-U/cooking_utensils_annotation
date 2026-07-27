@@ -306,7 +306,7 @@ def init() -> None:
 
 
 def _login_screen() -> None:
-    st.title("調理器具アノテーション 正誤判定")
+    st.title("調理器具本番アノテーション")
     st.markdown("#### あなたの名字を半角ローマ字で入力して開始してください")
     entered = st.text_input("名前")
 
@@ -320,7 +320,7 @@ def _login_screen() -> None:
 
 
 def main() -> None:
-    st.set_page_config(page_title="正誤判定ツール", layout="wide")
+    st.set_page_config(page_title="本番アノテーションツール", layout="wide")
 
     if not st.session_state.get("annotator_confirmed", False):
         _login_screen()
