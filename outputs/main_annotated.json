@@ -3460,6 +3460,15 @@
                         "name": "フライドチキン",
                         "utensil_interactions_list": [
                             {
+                                "source_state_id": "28e8619d",
+                                "vessel": [
+                                    "フライパン（蓋付き）"
+                                ],
+                                "tools": [
+                                    "道具不使用"
+                                ]
+                            },
+                            {
                                 "source_state_id": "0c1b6ddd",
                                 "vessel": [
                                     "ボウル-2",
