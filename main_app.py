@@ -580,7 +580,7 @@ def main() -> None:
                                     key=f"{wkey}_vessel_cmt",
                                     height=70,
                                     label_visibility="collapsed",
-                                    placeholder="正しい答えを記入",
+                                    placeholder="正しい答えを記入（複数ある場合は 半角カンマ+スペース で区切る）",
                                 )
 
                         with tools_col:
@@ -609,7 +609,7 @@ def main() -> None:
                                     key=f"{wkey}_tools_cmt",
                                     height=70,
                                     label_visibility="collapsed",
-                                    placeholder="正しい答えを記入",
+                                    placeholder="正しい答えを記入（複数ある場合は 半角カンマ+スペース で区切る）",
                                 )
 
 
