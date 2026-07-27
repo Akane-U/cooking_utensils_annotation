@@ -807,11 +807,11 @@ def main() -> None:
 
                 h_src, h_vessel, h_tools, _h_copy, _h_del = st.columns([4, 4, 4, 1, 1])
                 with h_src:
-                    st.markdown("**生成元**")
+                    st.markdown("**生成元（source_state_id）**")
                 with h_vessel:
-                    st.markdown("**使用容器**")
+                    st.markdown("**使用容器（vessels）**")
                 with h_tools:
-                    st.markdown("**使用道具**")
+                    st.markdown("**使用道具（tools）**")
 
                 to_del = None
                 for ii, inter in enumerate(interactions):
