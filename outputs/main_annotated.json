@@ -45,21 +45,182 @@
             },
             {
                 "step_after": 1,
-                "state_list": []
+                "state_list": [
+                    {
+                        "id": "e10655e5",
+                        "name": "ヘタをくり抜いたトマト",
+                        "utensil_interactions_list": [
+                            {
+                                "source_state_id": "1",
+                                "vessel": [
+                                    "まな板"
+                                ],
+                                "tools": [
+                                    "包丁"
+                                ]
+                            }
+                        ],
+                        "final_position": "まな板"
+                    },
+                    {
+                        "id": "dc434abf",
+                        "name": "切った油揚げ",
+                        "utensil_interactions_list": [
+                            {
+                                "source_state_id": "2",
+                                "vessel": [
+                                    "まな板"
+                                ],
+                                "tools": [
+                                    "包丁"
+                                ]
+                            }
+                        ],
+                        "final_position": "まな板"
+                    }
+                ]
             },
             {
                 "step_after": 2,
-                "state_list": []
+                "state_list": [
+                    {
+                        "id": "4ef62c39",
+                        "name": "煮汁",
+                        "utensil_interactions_list": [
+                            {
+                                "source_state_id": "3",
+                                "vessel": [
+                                    "鍋（蓋付き）"
+                                ],
+                                "tools": [
+                                    "道具不使用"
+                                ]
+                            },
+                            {
+                                "source_state_id": "4",
+                                "vessel": [
+                                    "鍋（蓋付き）"
+                                ],
+                                "tools": [
+                                    "道具不使用"
+                                ]
+                            }
+                        ],
+                        "final_position": "鍋（蓋付き）"
+                    },
+                    {
+                        "id": "affee75e",
+                        "name": "皮をむいたトマト",
+                        "utensil_interactions_list": [
+                            {
+                                "source_state_id": "e10655e5",
+                                "vessel": [
+                                    "まな板",
+                                    "鍋（蓋付き）",
+                                    "ボウル"
+                                ],
+                                "tools": [
+                                    "網目の細かい網杓子"
+                                ]
+                            },
+                            {
+                                "source_state_id": "4ef62c39",
+                                "vessel": [
+                                    "鍋（蓋付き）"
+                                ],
+                                "tools": [
+                                    "道具不使用"
+                                ]
+                            }
+                        ],
+                        "final_position": "鍋（蓋付き）"
+                    }
+                ]
             },
             {
                 "step_after": 3,
-                "state_list": []
+                "state_list": [
+                    {
+                        "id": "f4736715",
+                        "name": "油揚げとトマトを冷やしたもの",
+                        "utensil_interactions_list": [
+                            {
+                                "source_state_id": "4ef62c39",
+                                "vessel": [
+                                    "鍋（蓋付き）",
+                                    "ボウル"
+                                ],
+                                "tools": [
+                                    "おたま"
+                                ]
+                            },
+                            {
+                                "source_state_id": "dc434abf",
+                                "vessel": [
+                                    "まな板",
+                                    "鍋（蓋付き）",
+                                    "ボウル"
+                                ],
+                                "tools": [
+                                    "おたま"
+                                ]
+                            },
+                            {
+                                "source_state_id": "affee75e",
+                                "vessel": [
+                                    "ボウル"
+                                ],
+                                "tools": [
+                                    "道具不使用"
+                                ]
+                            }
+                        ],
+                        "final_position": "ボウル"
+                    }
+                ]
             },
             {
                 "step_after": 4,
-                "state_list": []
+                "state_list": [
+                    {
+                        "id": "48476713",
+                        "name": "例題1：トマトの冷やしおでん風",
+                        "utensil_interactions_list": [
+                            {
+                                "source_state_id": "f4736715",
+                                "vessel": [
+                                    "ボウル",
+                                    "盛り付け皿・器"
+                                ],
+                                "tools": [
+                                    "おたま"
+                                ]
+                            },
+                            {
+                                "source_state_id": "5",
+                                "vessel": [
+                                    "盛り付け皿・器"
+                                ],
+                                "tools": [
+                                    "道具不使用"
+                                ]
+                            },
+                            {
+                                "source_state_id": "6",
+                                "vessel": [
+                                    "盛り付け皿・器"
+                                ],
+                                "tools": [
+                                    "道具不使用"
+                                ]
+                            }
+                        ],
+                        "final_position": "盛り付け皿・器"
+                    }
+                ]
             }
-        ]
+        ],
+        "annotation_note": ""
     },
     {
         "title": "例題2：ジャンボプリン",
@@ -113,29 +274,197 @@
             },
             {
                 "step_after": 1,
-                "state_list": []
+                "state_list": [
+                    {
+                        "id": "f5b7c0b3",
+                        "name": "カラメルソース",
+                        "utensil_interactions_list": [
+                            {
+                                "source_state_id": "1",
+                                "vessel": [
+                                    "鍋（蓋付き）",
+                                    "流し型"
+                                ],
+                                "tools": [
+                                    "道具不使用"
+                                ]
+                            },
+                            {
+                                "source_state_id": "2",
+                                "vessel": [
+                                    "鍋（蓋付き）",
+                                    "流し型"
+                                ],
+                                "tools": [
+                                    "道具不使用"
+                                ]
+                            }
+                        ],
+                        "final_position": "流し型"
+                    }
+                ]
             },
             {
                 "step_after": 2,
-                "state_list": []
+                "state_list": [
+                    {
+                        "id": "b7e52b53",
+                        "name": "卵・卵黄・グラニュー糖を混ぜたもの",
+                        "utensil_interactions_list": [
+                            {
+                                "source_state_id": "3",
+                                "vessel": [
+                                    "ボウル"
+                                ],
+                                "tools": [
+                                    "泡だて器"
+                                ]
+                            },
+                            {
+                                "source_state_id": "4",
+                                "vessel": [
+                                    "ボウル"
+                                ],
+                                "tools": [
+                                    "泡だて器"
+                                ]
+                            },
+                            {
+                                "source_state_id": "5",
+                                "vessel": [
+                                    "ボウル"
+                                ],
+                                "tools": [
+                                    "泡だて器"
+                                ]
+                            }
+                        ],
+                        "final_position": "ボウル"
+                    }
+                ]
             },
             {
                 "step_after": 3,
-                "state_list": []
+                "state_list": [
+                    {
+                        "id": "edcf883d",
+                        "name": "牛乳・生クリームを沸騰させたもの",
+                        "utensil_interactions_list": [
+                            {
+                                "source_state_id": "6",
+                                "vessel": [
+                                    "鍋（蓋付き）-2"
+                                ],
+                                "tools": [
+                                    "耐熱ゴムべら"
+                                ]
+                            },
+                            {
+                                "source_state_id": "7",
+                                "vessel": [
+                                    "鍋（蓋付き）-2"
+                                ],
+                                "tools": [
+                                    "耐熱ゴムべら"
+                                ]
+                            }
+                        ],
+                        "final_position": "鍋（蓋付き）-2"
+                    }
+                ]
             },
             {
                 "step_after": 4,
-                "state_list": []
+                "state_list": [
+                    {
+                        "id": "19c46d2f",
+                        "name": "2・3を混ぜ合わせたもの",
+                        "utensil_interactions_list": [
+                            {
+                                "source_state_id": "b7e52b53",
+                                "vessel": [
+                                    "ボウル"
+                                ],
+                                "tools": [
+                                    "泡だて器",
+                                    "耐熱ゴムべら"
+                                ]
+                            },
+                            {
+                                "source_state_id": "edcf883d",
+                                "vessel": [
+                                    "鍋（蓋付き）-2",
+                                    "ボウル"
+                                ],
+                                "tools": [
+                                    "おたま",
+                                    "泡だて器",
+                                    "耐熱ゴムべら"
+                                ]
+                            }
+                        ],
+                        "final_position": "ボウル"
+                    }
+                ]
             },
             {
                 "step_after": 5,
-                "state_list": []
+                "state_list": [
+                    {
+                        "id": "8e5e0b62",
+                        "name": "湯煎焼きしたプリン",
+                        "utensil_interactions_list": [
+                            {
+                                "source_state_id": "f5b7c0b3",
+                                "vessel": [
+                                    "流し型"
+                                ],
+                                "tools": [
+                                    "道具不使用"
+                                ]
+                            },
+                            {
+                                "source_state_id": "19c46d2f",
+                                "vessel": [
+                                    "ボウル",
+                                    "流し型"
+                                ],
+                                "tools": [
+                                    "おたま",
+                                    "裏漉し器（受け皿なし）",
+                                    "スプーン"
+                                ]
+                            }
+                        ],
+                        "final_position": "流し型"
+                    }
+                ]
             },
             {
                 "step_after": 6,
-                "state_list": []
+                "state_list": [
+                    {
+                        "id": "4696e017",
+                        "name": "例題2：ジャンボプリン",
+                        "utensil_interactions_list": [
+                            {
+                                "source_state_id": "8e5e0b62",
+                                "vessel": [
+                                    "流し型",
+                                    "盛り付け皿・器"
+                                ],
+                                "tools": [
+                                    "製菓用パレットナイフ",
+                                    "スプーン"
+                                ]
+                            }
+                        ],
+                        "final_position": "盛り付け皿・器"
+                    }
+                ]
             }
-        ]
+        ],
+        "annotation_note": ""
     },
     {
         "title": "春キャベツとさば缶の酢みそ炒め",
