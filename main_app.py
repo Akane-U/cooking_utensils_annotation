@@ -444,11 +444,6 @@ def main() -> None:
                 st.markdown(f"**Step** {instr}")
             st.write("")
 
-        admin_note = ann[ridx].get("annotation_note", "")
-        if admin_note:
-            with st.expander("作成者の備考", expanded=False):
-                st.write(admin_note)
-
         st.markdown("#### レシピ全体に対するコメント")
         ann[ridx]["reviewer_note"] = st.text_area(
             "レビューコメント",
@@ -496,7 +491,7 @@ def main() -> None:
                     )
 
                     nkey = f"name_{ridx}_{sidx}_{si}"
-                    name_chk_col, name_col = st.columns([1, 12], gap="xxsmall")
+                    name_chk_col, name_col = st.columns([1, 32], gap="xxsmall")
                     with name_chk_col:
                         state["name_check"] = st.checkbox(
                             "違和感あり",
@@ -544,7 +539,7 @@ def main() -> None:
                                 st.markdown(
                                     '<div style="background:#F0F0F0;border-left:4px solid #9E9E9E;'
                                     'border-radius:4px;padding:6px 10px;margin-bottom:4px">'
-                                    f"生成元：<b>{label}</b></div>",
+                                    f"<b>{label}</b></div>",
                                     unsafe_allow_html=True,
                                 )
                             if inter["source_state_id_check"]:
@@ -571,8 +566,8 @@ def main() -> None:
                                 st.markdown(
                                     '<div style="background:#E3F2FD;border-left:4px solid #4DC4FF;'
                                     'border-radius:4px;padding:6px 10px;margin-bottom:4px">'
-                                    "使用容器：<b>"
-                                    + ("、".join(vessels) if vessels else "（なし）")
+                                    "<b>"
+                                    + (", ".join(vessels) if vessels else "（なし）")
                                     + "</b></div>",
                                     unsafe_allow_html=True,
                                 )
@@ -600,8 +595,8 @@ def main() -> None:
                                 st.markdown(
                                     '<div style="background:#FFF3E0;border-left:4px solid #F6AA00;'
                                     'border-radius:4px;padding:6px 10px;margin-bottom:4px">'
-                                    "使用道具：<b>"
-                                    + ("、".join(tools) if tools else "（なし）")
+                                    "<b>"
+                                    + (", ".join(tools) if tools else "（なし）")
                                     + "</b></div>",
                                     unsafe_allow_html=True,
                                 )
