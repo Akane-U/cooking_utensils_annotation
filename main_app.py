@@ -511,11 +511,22 @@ def main() -> None:
                             placeholder="正しい答えを記入",
                         )
 
-                    st.markdown("---")
+                    st.markdown(
+                        "<hr style='margin:4px 0;border:none;border-top:1px solid #ddd'>",
+                        unsafe_allow_html=True,
+                    )
 
                     interactions = state.get("utensil_interactions_list", [])
                     if not interactions:
                         st.caption("生成元の記録がありません")
+                    else:
+                        h_src, h_vessel, h_tools = st.columns(3)
+                        with h_src:
+                            st.markdown("**生成元**")
+                        with h_vessel:
+                            st.markdown("**使用容器**")
+                        with h_tools:
+                            st.markdown("**使用道具**")
 
                     for ii, inter in enumerate(interactions):
                         uid = inter.get("_uid", f"{state['id']}_{ii}")
