@@ -7347,10 +7347,11 @@
                             {
                                 "source_state_id": "8",
                                 "vessel": [
-                                    "フライパン（蓋付き）"
+                                    "フライパン（蓋付き）",
+                                    "ボウル-2"
                                 ],
                                 "tools": [
-                                    "道具不使用"
+                                    "菜箸"
                                 ]
                             },
                             {
@@ -7367,6 +7368,22 @@
                             }
                         ],
                         "final_position": "ボウル-2"
+                    },
+                    {
+                        "id": "95c6c37a",
+                        "name": "肉汁",
+                        "utensil_interactions_list": [
+                            {
+                                "source_state_id": "6cc51775",
+                                "vessel": [
+                                    "フライパン（蓋付き）"
+                                ],
+                                "tools": [
+                                    "道具不使用"
+                                ]
+                            }
+                        ],
+                        "final_position": "フライパン（蓋付き）"
                     }
                 ]
             },
