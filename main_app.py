@@ -150,9 +150,15 @@ def build_review(ground_truth: list) -> list:
                 state["final_position"] = _strip_none(state.get("final_position", ""))
             if ws["step_after"] == 0:
                 continue
+            ws.setdefault("missing_state_check", False)
+            ws.setdefault("missing_state_comment", "")
             for state in ws["state_list"]:
                 state.setdefault("name_check", False)
                 state.setdefault("name_comment", "")
+                state.setdefault("missing_interaction_check", False)
+                state.setdefault("missing_source_comment", "")
+                state.setdefault("missing_vessel_comment", "")
+                state.setdefault("missing_tools_comment", "")
                 for ii, inter in enumerate(state.get("utensil_interactions_list", [])):
                     inter["_uid"] = f"{state['id']}_{ii}"
                     inter["source_state_id"] = _strip_none(inter.get("source_state_id", ""))
@@ -188,18 +194,27 @@ def merge_saved_review(fresh: list, saved: list) -> list:
             continue
         recipe["reviewer_note"] = sr.get("reviewer_note", "")
         recipe["reviewed"] = sr.get("reviewed", False)
+        saved_ws_by_step = {ws.get("step_after"): ws for ws in sr.get("world_state_list", [])}
         saved_states = {
             s["id"]: s
             for ws in sr.get("world_state_list", [])
             for s in ws.get("state_list", [])
         }
         for ws in recipe["world_state_list"]:
+            sws = saved_ws_by_step.get(ws.get("step_after"))
+            if sws:
+                ws["missing_state_check"] = sws.get("missing_state_check", False)
+                ws["missing_state_comment"] = sws.get("missing_state_comment", "")
             for state in ws["state_list"]:
                 ss = saved_states.get(state["id"])
                 if not ss:
                     continue
                 state["name_check"] = ss.get("name_check", False)
                 state["name_comment"] = ss.get("name_comment", "")
+                state["missing_interaction_check"] = ss.get("missing_interaction_check", False)
+                state["missing_source_comment"] = ss.get("missing_source_comment", "")
+                state["missing_vessel_comment"] = ss.get("missing_vessel_comment", "")
+                state["missing_tools_comment"] = ss.get("missing_tools_comment", "")
                 saved_inters = ss.get("utensil_interactions_list", [])
                 for ii, inter in enumerate(state.get("utensil_interactions_list", [])):
                     if ii >= len(saved_inters):
@@ -637,6 +652,59 @@ def main() -> None:
                                     label_visibility="collapsed",
                                     placeholder="1行目：正答（部分誤答の場合は正答部分含め全て書き出す。半角カンマ+スペースで区切る。），2行目：誤答判定理由",
                                 )
+
+                    st.markdown(
+                        "<hr style='margin:4px 0;border:none;border-top:1px solid #ddd'>",
+                        unsafe_allow_html=True,
+                    )
+
+                    mikey = f"missinginter_{ridx}_{sidx}_{si}"
+                    state["missing_interaction_check"] = st.checkbox(
+                        "生成元が不足",
+                        value=state.get("missing_interaction_check", False),
+                        key=f"{mikey}_chk",
+                    )
+                    if state["missing_interaction_check"]:
+                        mi_src, mi_vessel, mi_tools = st.columns(3)
+                        with mi_src:
+                            state["missing_source_comment"] = st.text_area(
+                                "生成元",
+                                value=state.get("missing_source_comment", ""),
+                                key=f"{mikey}_src_cmt",
+                                height=70,
+                                placeholder="不足している生成元を記入",
+                            )
+                        with mi_vessel:
+                            state["missing_vessel_comment"] = st.text_area(
+                                "使用容器",
+                                value=state.get("missing_vessel_comment", ""),
+                                key=f"{mikey}_vessel_cmt",
+                                height=70,
+                                placeholder="不足している使用容器を記入",
+                            )
+                        with mi_tools:
+                            state["missing_tools_comment"] = st.text_area(
+                                "使用道具",
+                                value=state.get("missing_tools_comment", ""),
+                                key=f"{mikey}_tools_cmt",
+                                height=70,
+                                placeholder="不足している使用道具を記入",
+                            )
+
+            mskey = f"missingstate_{ridx}_{sidx}"
+            step_ws["missing_state_check"] = st.checkbox(
+                "State が不足",
+                value=step_ws.get("missing_state_check", False),
+                key=f"{mskey}_chk",
+            )
+            if step_ws["missing_state_check"]:
+                step_ws["missing_state_comment"] = st.text_area(
+                    "名前",
+                    value=step_ws.get("missing_state_comment", ""),
+                    key=f"{mskey}_cmt",
+                    height=70,
+                    placeholder="不足しているStateの名前を記入",
+                )
 
 
 if __name__ == "__main__":
