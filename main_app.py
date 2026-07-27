@@ -500,7 +500,7 @@ def main() -> None:
                             label_visibility="collapsed",
                         )
                     with name_col:
-                        st.markdown(f"**名前：** {state.get('name', '')}")
+                        st.markdown(f"**名前（name）：** {state.get('name', '')}")
                     if state["name_check"]:
                         state["name_comment"] = st.text_area(
                             "コメント",
@@ -522,11 +522,11 @@ def main() -> None:
                     else:
                         h_src, h_vessel, h_tools = st.columns(3)
                         with h_src:
-                            st.markdown("**生成元**")
+                            st.markdown("**生成元（source_state_id）**")
                         with h_vessel:
-                            st.markdown("**使用容器**")
+                            st.markdown("**使用容器（vessels）**")
                         with h_tools:
-                            st.markdown("**使用道具**")
+                            st.markdown("**使用道具（tools）**")
 
                     for ii, inter in enumerate(interactions):
                         uid = inter.get("_uid", f"{state['id']}_{ii}")
