@@ -422,6 +422,9 @@ def main() -> None:
 
     # ── Left column: recipe info ───────────────────────────────────────────────
     with left:
+        if ridx >= 51:
+            st.warning("準備中（まだアノテーションしないでください）")
+
         st.subheader(recipe["title"])
 
         with st.expander("材料", expanded=True):
@@ -493,9 +496,7 @@ def main() -> None:
                     )
 
                     nkey = f"name_{ridx}_{sidx}_{si}"
-                    name_col, name_chk_col = st.columns([6, 1])
-                    with name_col:
-                        st.markdown(f"**名前：** {state.get('name', '')}")
+                    name_chk_col, name_col = st.columns([1, 6])
                     with name_chk_col:
                         state["name_check"] = st.checkbox(
                             "違和感あり",
@@ -503,6 +504,8 @@ def main() -> None:
                             key=f"{nkey}_chk",
                             label_visibility="collapsed",
                         )
+                    with name_col:
+                        st.markdown(f"**名前：** {state.get('name', '')}")
                     if state["name_check"]:
                         state["name_comment"] = st.text_area(
                             "コメント",
@@ -529,20 +532,20 @@ def main() -> None:
                             sid = inter.get("source_state_id", "")
                             step, sname, _pos = id_index.get(sid, (0, sid, ""))
                             label = source_label(step, sname) if sid else "（なし）"
-                            box_col, chk_col = st.columns([5, 1])
-                            with box_col:
-                                st.markdown(
-                                    '<div style="background:#F0F0F0;border-left:4px solid #9E9E9E;'
-                                    'border-radius:4px;padding:6px 10px;margin-bottom:4px">'
-                                    f"生成元：<b>{label}</b></div>",
-                                    unsafe_allow_html=True,
-                                )
+                            chk_col, box_col = st.columns([1, 5])
                             with chk_col:
                                 inter["source_state_id_check"] = st.checkbox(
                                     "違和感あり",
                                     value=inter.get("source_state_id_check", False),
                                     key=f"{wkey}_src_chk",
                                     label_visibility="collapsed",
+                                )
+                            with box_col:
+                                st.markdown(
+                                    '<div style="background:#F0F0F0;border-left:4px solid #9E9E9E;'
+                                    'border-radius:4px;padding:6px 10px;margin-bottom:4px">'
+                                    f"生成元：<b>{label}</b></div>",
+                                    unsafe_allow_html=True,
                                 )
                             if inter["source_state_id_check"]:
                                 inter["source_state_id_comment"] = st.text_area(
@@ -556,7 +559,14 @@ def main() -> None:
 
                         with vessel_col:
                             vessels = inter.get("vessel", [])
-                            box_col, chk_col = st.columns([5, 1])
+                            chk_col, box_col = st.columns([1, 5])
+                            with chk_col:
+                                inter["vessel_check"] = st.checkbox(
+                                    "違和感あり",
+                                    value=inter.get("vessel_check", False),
+                                    key=f"{wkey}_vessel_chk",
+                                    label_visibility="collapsed",
+                                )
                             with box_col:
                                 st.markdown(
                                     '<div style="background:#E3F2FD;border-left:4px solid #4DC4FF;'
@@ -565,13 +575,6 @@ def main() -> None:
                                     + ("、".join(vessels) if vessels else "（なし）")
                                     + "</b></div>",
                                     unsafe_allow_html=True,
-                                )
-                            with chk_col:
-                                inter["vessel_check"] = st.checkbox(
-                                    "違和感あり",
-                                    value=inter.get("vessel_check", False),
-                                    key=f"{wkey}_vessel_chk",
-                                    label_visibility="collapsed",
                                 )
                             if inter["vessel_check"]:
                                 inter["vessel_comment"] = st.text_area(
@@ -585,7 +588,14 @@ def main() -> None:
 
                         with tools_col:
                             tools = inter.get("tools", [])
-                            box_col, chk_col = st.columns([5, 1])
+                            chk_col, box_col = st.columns([1, 5])
+                            with chk_col:
+                                inter["tools_check"] = st.checkbox(
+                                    "違和感あり",
+                                    value=inter.get("tools_check", False),
+                                    key=f"{wkey}_tools_chk",
+                                    label_visibility="collapsed",
+                                )
                             with box_col:
                                 st.markdown(
                                     '<div style="background:#FFF3E0;border-left:4px solid #F6AA00;'
@@ -594,13 +604,6 @@ def main() -> None:
                                     + ("、".join(tools) if tools else "（なし）")
                                     + "</b></div>",
                                     unsafe_allow_html=True,
-                                )
-                            with chk_col:
-                                inter["tools_check"] = st.checkbox(
-                                    "違和感あり",
-                                    value=inter.get("tools_check", False),
-                                    key=f"{wkey}_tools_chk",
-                                    label_visibility="collapsed",
                                 )
                             if inter["tools_check"]:
                                 inter["tools_comment"] = st.text_area(
