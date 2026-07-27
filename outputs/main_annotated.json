@@ -12395,6 +12395,22 @@
                             }
                         ],
                         "final_position": "None_バット-2"
+                    },
+                    {
+                        "id": "54485a0b",
+                        "name": "フライパンに残ったもの",
+                        "utensil_interactions_list": [
+                            {
+                                "source_state_id": "4a7e1994",
+                                "vessel": [
+                                    "フライパン（蓋付き）"
+                                ],
+                                "tools": [
+                                    "道具不使用"
+                                ]
+                            }
+                        ],
+                        "final_position": "フライパン（蓋付き）"
                     }
                 ]
             },
@@ -12405,6 +12421,15 @@
                         "id": "3c392303",
                         "name": "たいのムニエル 春キャベツのハーブ蒸し",
                         "utensil_interactions_list": [
+                            {
+                                "source_state_id": "54485a0b",
+                                "vessel": [
+                                    "フライパン（蓋付き）"
+                                ],
+                                "tools": [
+                                    "クッキングペーパー"
+                                ]
+                            },
                             {
                                 "source_state_id": "8",
                                 "vessel": [
