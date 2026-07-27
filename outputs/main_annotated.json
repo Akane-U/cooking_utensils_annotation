@@ -7395,6 +7395,15 @@
                         "name": "炒めたブロッコリー",
                         "utensil_interactions_list": [
                             {
+                                "source_state_id": "95c6c37a",
+                                "vessel": [
+                                    "フライパン（蓋付き）"
+                                ],
+                                "tools": [
+                                    "菜箸"
+                                ]
+                            },
+                            {
                                 "source_state_id": "4",
                                 "vessel": [
                                     "まな板",
@@ -7445,7 +7454,7 @@
                                     "盛り付け皿・器"
                                 ],
                                 "tools": [
-                                    "菜箸"
+                                    "耐熱ゴムべら"
                                 ]
                             },
                             {
