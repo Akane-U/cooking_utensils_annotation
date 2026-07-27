@@ -363,6 +363,7 @@ def utensil_multi_select(label: str, key: str, current: list, utensil_cats: dict
         on_change=_remove_seps,
         accept_new_options=True,
         placeholder="選択、または一覧外の名称を入力",
+        label_visibility="collapsed",
     )
 
     return [
@@ -440,6 +441,7 @@ def vessel_multi_select(label: str, key: str, current: list, utensil_cats: dict)
         on_change=_remove_seps,
         accept_new_options=True,
         placeholder="選択、または一覧外の名称を入力",
+        label_visibility="collapsed",
     )
 
     sel = [
@@ -470,7 +472,7 @@ def source_select(label: str, key: str, current: str, src: dict, used_ids: set =
             return "✔ " + v
         return v
 
-    sel = st.selectbox(label, opts, index=idx, key=key, format_func=_fmt)
+    sel = st.selectbox(label, opts, index=idx, key=key, format_func=_fmt, label_visibility="collapsed")
     return label2id.get(sel, "")
 
 
@@ -790,8 +792,10 @@ def main() -> None:
                     key=f"name_{ridx}_{sidx}_{si}",
                 )
 
-                st.markdown("---")
-                st.markdown("**生成元（材料一覧・登録済 State） → 使用容器（vessel）・使用道具（tools）**")
+                st.markdown(
+                    "<hr style='margin:4px 0;border:none;border-top:1px solid #ddd'>",
+                    unsafe_allow_html=True,
+                )
 
                 interactions = state.setdefault("utensil_interactions_list", [])
 
@@ -800,6 +804,14 @@ def main() -> None:
                     interactions.append(
                         {"source_state_id": "", "vessel": [], "tools": [], "_uid": uuid.uuid4().hex[:8]}
                     )
+
+                h_src, h_vessel, h_tools, _h_copy, _h_del = st.columns([4, 4, 4, 1, 1])
+                with h_src:
+                    st.markdown("**生成元**")
+                with h_vessel:
+                    st.markdown("**使用容器**")
+                with h_tools:
+                    st.markdown("**使用道具**")
 
                 to_del = None
                 for ii, inter in enumerate(interactions):

@@ -508,7 +508,7 @@ def main() -> None:
                             key=f"{nkey}_cmt",
                             height=70,
                             label_visibility="collapsed",
-                            placeholder="正しい答えを記入",
+                            placeholder="1行目：正答，2行目：誤答判定理由",
                         )
 
                     st.markdown(
@@ -560,7 +560,7 @@ def main() -> None:
                                     key=f"{wkey}_src_cmt",
                                     height=70,
                                     label_visibility="collapsed",
-                                    placeholder="正しい答えを記入",
+                                    placeholder="1行目：正答，2行目：誤答判定理由",
                                 )
 
                         with vessel_col:
@@ -589,7 +589,7 @@ def main() -> None:
                                     key=f"{wkey}_vessel_cmt",
                                     height=70,
                                     label_visibility="collapsed",
-                                    placeholder="正しい答えを記入（複数ある場合は 半角カンマ+スペース で区切る）",
+                                    placeholder="1行目：正答（部分誤答の場合は正答部分含め全て書き出す。半角カンマ+スペースで区切る。），2行目：誤答判定理由",
                                 )
 
                         with tools_col:
@@ -618,7 +618,7 @@ def main() -> None:
                                     key=f"{wkey}_tools_cmt",
                                     height=70,
                                     label_visibility="collapsed",
-                                    placeholder="正しい答えを記入（複数ある場合は 半角カンマ+スペース で区切る）",
+                                    placeholder="1行目：正答（部分誤答の場合は正答部分含め全て書き出す。半角カンマ+スペースで区切る。），2行目：誤答判定理由",
                                 )
 
 
