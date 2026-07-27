@@ -110,6 +110,21 @@ def load_sub_recipes(batch: str) -> list:
         return json.load(f)
 
 
+def recipe_option_labels(recipes: list) -> list[str]:
+    """レシピ選択肢の表示ラベル。例題（タイトルが「例題」で始まる）には連番を振らず、
+    実レシピのみ1から連番を振る。"""
+    labels = []
+    real_num = 0
+    for r in recipes:
+        title = r["title"]
+        if title.startswith("例題"):
+            labels.append(title)
+        else:
+            real_num += 1
+            labels.append(f"{real_num}. {title}")
+    return labels
+
+
 @st.cache_data
 def load_utensils() -> dict:
     """Returns {category_name: [utensil_name, ...]}"""
@@ -625,10 +640,11 @@ def main() -> None:
 
         st.divider()
 
+        recipe_labels = recipe_option_labels(recipes)
         new_ridx = st.selectbox(
             "レシピ選択",
             range(len(recipes)),
-            format_func=lambda i: f"{i + 1}. {recipes[i]['title']}",
+            format_func=lambda i: recipe_labels[i],
             index=st.session_state.ridx,
             key="sb_recipe",
         )

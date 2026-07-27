@@ -95,6 +95,21 @@ def load_recipes() -> list:
         return json.load(f)
 
 
+def recipe_option_labels(recipes: list) -> list[str]:
+    """レシピ選択肢の表示ラベル。例題（タイトルが「例題」で始まる）には連番を振らず、
+    実レシピのみ1から連番を振る。"""
+    labels = []
+    real_num = 0
+    for r in recipes:
+        title = r["title"]
+        if title.startswith("例題"):
+            labels.append(title)
+        else:
+            real_num += 1
+            labels.append(f"{real_num}. {title}")
+    return labels
+
+
 @st.cache_data
 def load_ground_truth() -> list:
     """正誤判定の元データ（本番アノテーション結果、正解として扱う）。"""
@@ -356,10 +371,11 @@ def main() -> None:
 
         st.divider()
 
+        recipe_labels = recipe_option_labels(recipes)
         new_ridx = st.selectbox(
             "レシピ選択",
             range(len(recipes)),
-            format_func=lambda i: f"{i + 1}. {recipes[i]['title']}",
+            format_func=lambda i: recipe_labels[i],
             index=st.session_state.ridx,
             key="sb_recipe",
         )
@@ -422,7 +438,8 @@ def main() -> None:
 
     # ── Left column: recipe info ───────────────────────────────────────────────
     with left:
-        if ridx >= 50:
+        real_num = sum(1 for r in recipes[: ridx + 1] if not r["title"].startswith("例題"))
+        if not recipe["title"].startswith("例題") and real_num >= 51:
             st.warning("準備中（まだアノテーションしないでください）")
 
         st.subheader(recipe["title"])
