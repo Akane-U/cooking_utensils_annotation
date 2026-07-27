@@ -510,7 +510,7 @@ def main() -> None:
                             key=f"{nkey}_cmt",
                             height=70,
                             label_visibility="collapsed",
-                            placeholder="あなたが考える正解を記入してください",
+                            placeholder="正しい答えを記入",
                         )
 
                     st.markdown("---")
@@ -551,7 +551,7 @@ def main() -> None:
                                     key=f"{wkey}_src_cmt",
                                     height=70,
                                     label_visibility="collapsed",
-                                    placeholder="あなたが考える正解を記入してください",
+                                    placeholder="正しい答えを記入",
                                 )
 
                         with vessel_col:
@@ -580,7 +580,7 @@ def main() -> None:
                                     key=f"{wkey}_vessel_cmt",
                                     height=70,
                                     label_visibility="collapsed",
-                                    placeholder="あなたが考える正解を記入してください",
+                                    placeholder="正しい答えを記入",
                                 )
 
                         with tools_col:
@@ -609,7 +609,7 @@ def main() -> None:
                                     key=f"{wkey}_tools_cmt",
                                     height=70,
                                     label_visibility="collapsed",
-                                    placeholder="あなたが考える正解を記入してください",
+                                    placeholder="正しい答えを記入",
                                 )
 
 
