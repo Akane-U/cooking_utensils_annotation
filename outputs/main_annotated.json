@@ -15896,14 +15896,72 @@
             },
             {
                 "step_after": 2,
-                "state_list": []
+                "state_list": [
+                    {
+                        "id": "173b1804",
+                        "name": "煮たねぎ",
+                        "utensil_interactions_list": [
+                            {
+                                "source_state_id": "2",
+                                "vessel": [
+                                    "鍋（蓋付き）"
+                                ],
+                                "tools": [
+                                    "道具不使用"
+                                ]
+                            },
+                            {
+                                "source_state_id": "c933dc29",
+                                "vessel": [
+                                    "まな板",
+                                    "鍋（蓋付き）"
+                                ],
+                                "tools": [
+                                    "道具不使用"
+                                ]
+                            }
+                        ],
+                        "final_position": "鍋（蓋付き）"
+                    }
+                ]
             },
             {
                 "step_after": 3,
-                "state_list": []
+                "state_list": [
+                    {
+                        "id": "d02b2b53",
+                        "name": "ねぎの香味漬け",
+                        "utensil_interactions_list": [
+                            {
+                                "source_state_id": "173b1804",
+                                "vessel": [
+                                    "鍋（蓋付き）",
+                                    "ざる",
+                                    "ボウル",
+                                    "盛り付け皿・器"
+                                ],
+                                "tools": [
+                                    "網目の粗い網杓子",
+                                    "スプーン"
+                                ]
+                            },
+                            {
+                                "source_state_id": "92e1ae4d",
+                                "vessel": [
+                                    "ボウル",
+                                    "盛り付け皿・器"
+                                ],
+                                "tools": [
+                                    "スプーン"
+                                ]
+                            }
+                        ],
+                        "final_position": "盛り付け皿・器"
+                    }
+                ]
             }
         ],
-        "annotation_note": ""
+        "annotation_note": "step3: 煮汁は未記入"
     },
     {
         "title": "大根の皮のみそ漬け",
@@ -15927,13 +15985,59 @@
             },
             {
                 "step_after": 1,
-                "state_list": []
+                "state_list": [
+                    {
+                        "id": "1d08efad",
+                        "name": "みそを塗って重ねた大根",
+                        "utensil_interactions_list": [
+                            {
+                                "source_state_id": "1",
+                                "vessel": [
+                                    "まな板"
+                                ],
+                                "tools": [
+                                    "包丁"
+                                ]
+                            },
+                            {
+                                "source_state_id": "2",
+                                "vessel": [
+                                    "まな板"
+                                ],
+                                "tools": [
+                                    "スプーン"
+                                ]
+                            }
+                        ],
+                        "final_position": "まな板"
+                    }
+                ]
             },
             {
                 "step_after": 2,
-                "state_list": []
+                "state_list": [
+                    {
+                        "id": "6abff6a4",
+                        "name": "大根の皮のみそ漬け",
+                        "utensil_interactions_list": [
+                            {
+                                "source_state_id": "1d08efad",
+                                "vessel": [
+                                    "まな板",
+                                    "None_保存袋",
+                                    "盛り付け皿・器"
+                                ],
+                                "tools": [
+                                    "菜箸"
+                                ]
+                            }
+                        ],
+                        "final_position": "盛り付け皿・器"
+                    }
+                ]
             }
-        ]
+        ],
+        "annotation_note": ""
     },
     {
         "title": "新たまと鶏肉の甘酢あえ",
@@ -16005,25 +16109,235 @@
             },
             {
                 "step_after": 1,
-                "state_list": []
+                "state_list": [
+                    {
+                        "id": "c417a941",
+                        "name": "切ったたまねぎ",
+                        "utensil_interactions_list": [
+                            {
+                                "source_state_id": "1",
+                                "vessel": [
+                                    "まな板"
+                                ],
+                                "tools": [
+                                    "包丁"
+                                ]
+                            }
+                        ],
+                        "final_position": "まな板"
+                    },
+                    {
+                        "id": "7b5867e8",
+                        "name": "切ったみつば",
+                        "utensil_interactions_list": [
+                            {
+                                "source_state_id": "3",
+                                "vessel": [
+                                    "まな板"
+                                ],
+                                "tools": [
+                                    "包丁"
+                                ]
+                            }
+                        ],
+                        "final_position": "まな板"
+                    },
+                    {
+                        "id": "63583855",
+                        "name": "小麦粉をまぶした鶏肉",
+                        "utensil_interactions_list": [
+                            {
+                                "source_state_id": "2",
+                                "vessel": [
+                                    "生肉・生魚用まな板"
+                                ],
+                                "tools": [
+                                    "包丁"
+                                ]
+                            },
+                            {
+                                "source_state_id": "8",
+                                "vessel": [
+                                    "生肉・生魚用まな板"
+                                ],
+                                "tools": [
+                                    "道具不使用"
+                                ]
+                            },
+                            {
+                                "source_state_id": "9",
+                                "vessel": [
+                                    "生肉・生魚用まな板"
+                                ],
+                                "tools": [
+                                    "道具不使用"
+                                ]
+                            }
+                        ],
+                        "final_position": "生肉・生魚用まな板"
+                    }
+                ]
             },
             {
                 "step_after": 2,
-                "state_list": []
+                "state_list": [
+                    {
+                        "id": "d41f1f79",
+                        "name": "混ぜ合わせた[A]",
+                        "utensil_interactions_list": [
+                            {
+                                "source_state_id": "4",
+                                "vessel": [
+                                    "ボウル"
+                                ],
+                                "tools": [
+                                    "スプーン"
+                                ]
+                            },
+                            {
+                                "source_state_id": "5",
+                                "vessel": [
+                                    "ボウル"
+                                ],
+                                "tools": [
+                                    "スプーン"
+                                ]
+                            },
+                            {
+                                "source_state_id": "6",
+                                "vessel": [
+                                    "ボウル"
+                                ],
+                                "tools": [
+                                    "スプーン"
+                                ]
+                            },
+                            {
+                                "source_state_id": "7",
+                                "vessel": [
+                                    "ボウル"
+                                ],
+                                "tools": [
+                                    "スプーン"
+                                ]
+                            }
+                        ],
+                        "final_position": "ボウル"
+                    }
+                ]
             },
             {
                 "step_after": 3,
-                "state_list": []
+                "state_list": [
+                    {
+                        "id": "f0c023da",
+                        "name": "茹でたたまねぎ",
+                        "utensil_interactions_list": [
+                            {
+                                "source_state_id": "c417a941",
+                                "vessel": [
+                                    "まな板",
+                                    "鍋（蓋付き）",
+                                    "ざる"
+                                ],
+                                "tools": [
+                                    "網目の粗い網杓子"
+                                ]
+                            }
+                        ],
+                        "final_position": "ざる"
+                    }
+                ]
             },
             {
                 "step_after": 4,
-                "state_list": []
+                "state_list": [
+                    {
+                        "id": "70b07e4b",
+                        "name": "焼いた鶏肉",
+                        "utensil_interactions_list": [
+                            {
+                                "source_state_id": "10",
+                                "vessel": [
+                                    "フライパン（蓋付き）"
+                                ],
+                                "tools": [
+                                    "菜箸",
+                                    "クッキングペーパー"
+                                ]
+                            },
+                            {
+                                "source_state_id": "63583855",
+                                "vessel": [
+                                    "生肉・生魚用まな板",
+                                    "フライパン（蓋付き）"
+                                ],
+                                "tools": [
+                                    "菜箸",
+                                    "クッキングペーパー"
+                                ]
+                            }
+                        ],
+                        "final_position": "フライパン（蓋付き）"
+                    }
+                ]
             },
             {
                 "step_after": 5,
-                "state_list": []
+                "state_list": [
+                    {
+                        "id": "d3ca9320",
+                        "name": "新たまと鶏肉の甘酢あえ",
+                        "utensil_interactions_list": [
+                            {
+                                "source_state_id": "70b07e4b",
+                                "vessel": [
+                                    "フライパン（蓋付き）",
+                                    "ボウル",
+                                    "盛り付け皿・器"
+                                ],
+                                "tools": [
+                                    "菜箸"
+                                ]
+                            },
+                            {
+                                "source_state_id": "d41f1f79",
+                                "vessel": [
+                                    "ボウル",
+                                    "盛り付け皿・器"
+                                ],
+                                "tools": [
+                                    "菜箸"
+                                ]
+                            },
+                            {
+                                "source_state_id": "7b5867e8",
+                                "vessel": [
+                                    "まな板",
+                                    "ボウル",
+                                    "盛り付け皿・器"
+                                ],
+                                "tools": [
+                                    "菜箸"
+                                ]
+                            },
+                            {
+                                "source_state_id": "f0c023da",
+                                "vessel": [
+                                    "ざる",
+                                    "盛り付け皿・器"
+                                ],
+                                "tools": [
+                                    "菜箸"
+                                ]
+                            }
+                        ],
+                        "final_position": "盛り付け皿・器"
+                    }
+                ]
             }
-        ]
+        ],
+        "annotation_note": "step4: 余分な油\nstep5: つけ汁はstep5の汁？"
     },
     {
         "title": "ダブルたんぱく質のつくね",
@@ -16119,7 +16433,20 @@
             },
             {
                 "step_after": 1,
-                "state_list": []
+                "state_list": [
+                    {
+                        "id": "074cdbfb",
+                        "name": "",
+                        "utensil_interactions_list": [
+                            {
+                                "source_state_id": "",
+                                "vessel": [],
+                                "tools": []
+                            }
+                        ],
+                        "final_position": ""
+                    }
+                ]
             },
             {
                 "step_after": 2,
@@ -16137,7 +16464,8 @@
                 "step_after": 5,
                 "state_list": []
             }
-        ]
+        ],
+        "annotation_note": ""
     },
     {
         "title": "塩鶏じゃが",
