@@ -16759,17 +16759,195 @@
             },
             {
                 "step_after": 1,
-                "state_list": []
+                "state_list": [
+                    {
+                        "id": "74d79451",
+                        "name": "切った鶏肉",
+                        "utensil_interactions_list": [
+                            {
+                                "source_state_id": "1",
+                                "vessel": [
+                                    "生肉・生魚用まな板"
+                                ],
+                                "tools": [
+                                    "包丁"
+                                ]
+                            }
+                        ],
+                        "final_position": "生肉・生魚用まな板"
+                    },
+                    {
+                        "id": "88658505",
+                        "name": "切ったじゃがいも",
+                        "utensil_interactions_list": [
+                            {
+                                "source_state_id": "2",
+                                "vessel": [
+                                    "まな板"
+                                ],
+                                "tools": [
+                                    "包丁"
+                                ]
+                            }
+                        ],
+                        "final_position": "まな板"
+                    },
+                    {
+                        "id": "1ef6fb96",
+                        "name": "戻した干ししいたけ",
+                        "utensil_interactions_list": [
+                            {
+                                "source_state_id": "3",
+                                "vessel": [
+                                    "ボウル",
+                                    "まな板"
+                                ],
+                                "tools": [
+                                    "ラップフィルム",
+                                    "菜箸",
+                                    "包丁"
+                                ]
+                            }
+                        ],
+                        "final_position": "まな板"
+                    },
+                    {
+                        "id": "c70b3631",
+                        "name": "水を加えた戻し汁",
+                        "utensil_interactions_list": [
+                            {
+                                "source_state_id": "1ef6fb96",
+                                "vessel": [
+                                    "ボウル"
+                                ],
+                                "tools": [
+                                    "道具不使用"
+                                ]
+                            }
+                        ],
+                        "final_position": "ボウル"
+                    }
+                ]
             },
             {
                 "step_after": 2,
-                "state_list": []
+                "state_list": [
+                    {
+                        "id": "7f222de0",
+                        "name": "鶏肉・じゃがいも・戻したしいたけを煮たもの",
+                        "utensil_interactions_list": [
+                            {
+                                "source_state_id": "4",
+                                "vessel": [
+                                    "鍋（蓋付き）"
+                                ],
+                                "tools": [
+                                    "菜箸",
+                                    "落とし蓋"
+                                ]
+                            },
+                            {
+                                "source_state_id": "74d79451",
+                                "vessel": [
+                                    "生肉・生魚用まな板",
+                                    "鍋（蓋付き）"
+                                ],
+                                "tools": [
+                                    "菜箸",
+                                    "落とし蓋"
+                                ]
+                            },
+                            {
+                                "source_state_id": "88658505",
+                                "vessel": [
+                                    "まな板",
+                                    "鍋（蓋付き）"
+                                ],
+                                "tools": [
+                                    "菜箸",
+                                    "落とし蓋"
+                                ]
+                            },
+                            {
+                                "source_state_id": "c70b3631",
+                                "vessel": [
+                                    "ボウル",
+                                    "鍋（蓋付き）"
+                                ],
+                                "tools": [
+                                    "菜箸",
+                                    "落とし蓋"
+                                ]
+                            },
+                            {
+                                "source_state_id": "5",
+                                "vessel": [
+                                    "鍋（蓋付き）"
+                                ],
+                                "tools": [
+                                    "菜箸",
+                                    "落とし蓋"
+                                ]
+                            },
+                            {
+                                "source_state_id": "1ef6fb96",
+                                "vessel": [
+                                    "まな板",
+                                    "鍋（蓋付き）"
+                                ],
+                                "tools": [
+                                    "菜箸",
+                                    "落とし蓋"
+                                ]
+                            }
+                        ],
+                        "final_position": "鍋（蓋付き）"
+                    }
+                ]
             },
             {
                 "step_after": 3,
-                "state_list": []
+                "state_list": [
+                    {
+                        "id": "094018cf",
+                        "name": "塩鶏じゃが",
+                        "utensil_interactions_list": [
+                            {
+                                "source_state_id": "7f222de0",
+                                "vessel": [
+                                    "鍋（蓋付き）",
+                                    "盛り付け皿・器"
+                                ],
+                                "tools": [
+                                    "おたま"
+                                ]
+                            },
+                            {
+                                "source_state_id": "6",
+                                "vessel": [
+                                    "鍋（蓋付き）",
+                                    "盛り付け皿・器"
+                                ],
+                                "tools": [
+                                    "おたま"
+                                ]
+                            },
+                            {
+                                "source_state_id": "7",
+                                "vessel": [
+                                    "盛り付け皿・器"
+                                ],
+                                "tools": [
+                                    "道具不使用"
+                                ]
+                            }
+                        ],
+                        "final_position": "盛り付け皿・器"
+                    }
+                ]
             }
-        ]
+        ],
+        "annotation_note": ""
     },
     {
         "title": "焼き鳥",
