@@ -16436,8 +16436,110 @@
                 "state_list": [
                     {
                         "id": "074cdbfb",
-                        "name": "",
+                        "name": "水きりした豆腐",
                         "utensil_interactions_list": [
+                            {
+                                "source_state_id": "1",
+                                "vessel": [
+                                    "バット"
+                                ],
+                                "tools": [
+                                    "クッキングペーパー",
+                                    "None_おもしの皿"
+                                ]
+                            }
+                        ],
+                        "final_position": "バット"
+                    },
+                    {
+                        "id": "9870974b",
+                        "name": "切ったピーマン",
+                        "utensil_interactions_list": [
+                            {
+                                "source_state_id": "12",
+                                "vessel": [
+                                    "まな板"
+                                ],
+                                "tools": [
+                                    "包丁"
+                                ]
+                            }
+                        ],
+                        "final_position": "まな板"
+                    },
+                    {
+                        "id": "df968dc8",
+                        "name": "甘辛だれ",
+                        "utensil_interactions_list": [
+                            {
+                                "source_state_id": "7",
+                                "vessel": [
+                                    "ボウル"
+                                ],
+                                "tools": [
+                                    "スプーン"
+                                ]
+                            },
+                            {
+                                "source_state_id": "8",
+                                "vessel": [
+                                    "ボウル"
+                                ],
+                                "tools": [
+                                    "スプーン"
+                                ]
+                            },
+                            {
+                                "source_state_id": "9",
+                                "vessel": [
+                                    "ボウル"
+                                ],
+                                "tools": [
+                                    "スプーン"
+                                ]
+                            },
+                            {
+                                "source_state_id": "10",
+                                "vessel": [
+                                    "ボウル"
+                                ],
+                                "tools": [
+                                    "スプーン"
+                                ]
+                            },
+                            {
+                                "source_state_id": "11",
+                                "vessel": [
+                                    "ボウル"
+                                ],
+                                "tools": [
+                                    "スプーン"
+                                ]
+                            }
+                        ],
+                        "final_position": "ボウル"
+                    }
+                ]
+            },
+            {
+                "step_after": 2,
+                "state_list": [
+                    {
+                        "id": "a6a57821",
+                        "name": "豆腐・ひき肉・[A]を練り混ぜ小判形に整えたもの",
+                        "utensil_interactions_list": [
+                            {
+                                "source_state_id": "074cdbfb",
+                                "vessel": [
+                                    "バット"
+                                ],
+                                "tools": []
+                            },
+                            {
+                                "source_state_id": "2",
+                                "vessel": [],
+                                "tools": []
+                            },
                             {
                                 "source_state_id": "",
                                 "vessel": [],
@@ -16447,10 +16549,6 @@
                         "final_position": ""
                     }
                 ]
-            },
-            {
-                "step_after": 2,
-                "state_list": []
             },
             {
                 "step_after": 3,
@@ -16465,7 +16563,7 @@
                 "state_list": []
             }
         ],
-        "annotation_note": ""
+        "annotation_note": "step1: おもしの皿は接触していないが記入している"
     },
     {
         "title": "塩鶏じゃが",
