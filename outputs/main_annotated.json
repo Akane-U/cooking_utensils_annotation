@@ -17968,17 +17968,191 @@
             },
             {
                 "step_after": 1,
-                "state_list": []
+                "state_list": [
+                    {
+                        "id": "a0a20fe4",
+                        "name": "穴を開けたじゃがいも",
+                        "utensil_interactions_list": [
+                            {
+                                "source_state_id": "1",
+                                "vessel": [
+                                    "まな板"
+                                ],
+                                "tools": [
+                                    "クッキングペーパー",
+                                    "包丁",
+                                    "None_フォーク"
+                                ]
+                            }
+                        ],
+                        "final_position": "まな板"
+                    },
+                    {
+                        "id": "0ef3f077",
+                        "name": "切った鶏肉",
+                        "utensil_interactions_list": [
+                            {
+                                "source_state_id": "2",
+                                "vessel": [
+                                    "生肉・生魚用まな板"
+                                ],
+                                "tools": [
+                                    "包丁"
+                                ]
+                            }
+                        ],
+                        "final_position": "生肉・生魚用まな板"
+                    },
+                    {
+                        "id": "e7e2ac65",
+                        "name": "切ったしょうが",
+                        "utensil_interactions_list": [
+                            {
+                                "source_state_id": "3",
+                                "vessel": [
+                                    "まな板"
+                                ],
+                                "tools": [
+                                    "包丁"
+                                ]
+                            }
+                        ],
+                        "final_position": "まな板"
+                    },
+                    {
+                        "id": "d6c31656",
+                        "name": "切った赤とうがらし",
+                        "utensil_interactions_list": [
+                            {
+                                "source_state_id": "4",
+                                "vessel": [
+                                    "まな板"
+                                ],
+                                "tools": [
+                                    "包丁"
+                                ]
+                            }
+                        ],
+                        "final_position": "まな板"
+                    }
+                ]
             },
             {
                 "step_after": 2,
-                "state_list": []
+                "state_list": [
+                    {
+                        "id": "3be921e6",
+                        "name": "炒めた1",
+                        "utensil_interactions_list": [
+                            {
+                                "source_state_id": "5",
+                                "vessel": [
+                                    "まな板",
+                                    "フライパン（蓋付き）"
+                                ],
+                                "tools": [
+                                    "菜箸"
+                                ]
+                            },
+                            {
+                                "source_state_id": "a0a20fe4",
+                                "vessel": [
+                                    "生肉・生魚用まな板",
+                                    "フライパン（蓋付き）"
+                                ],
+                                "tools": [
+                                    "菜箸"
+                                ]
+                            },
+                            {
+                                "source_state_id": "0ef3f077",
+                                "vessel": [
+                                    "まな板",
+                                    "フライパン（蓋付き）"
+                                ],
+                                "tools": [
+                                    "菜箸"
+                                ]
+                            },
+                            {
+                                "source_state_id": "e7e2ac65",
+                                "vessel": [
+                                    "まな板",
+                                    "フライパン（蓋付き）"
+                                ],
+                                "tools": [
+                                    "菜箸"
+                                ]
+                            },
+                            {
+                                "source_state_id": "d6c31656",
+                                "vessel": [
+                                    "まな板",
+                                    "フライパン（蓋付き）"
+                                ],
+                                "tools": [
+                                    "菜箸"
+                                ]
+                            }
+                        ],
+                        "final_position": "フライパン（蓋付き）"
+                    }
+                ]
             },
             {
                 "step_after": 3,
-                "state_list": []
+                "state_list": [
+                    {
+                        "id": "6ecd24dc",
+                        "name": "新じゃがいものピリ辛煮",
+                        "utensil_interactions_list": [
+                            {
+                                "source_state_id": "3be921e6",
+                                "vessel": [
+                                    "フライパン（蓋付き）",
+                                    "盛り付け皿・器"
+                                ],
+                                "tools": [
+                                    "耐熱ゴムべら"
+                                ]
+                            },
+                            {
+                                "source_state_id": "6",
+                                "vessel": [
+                                    "フライパン（蓋付き）",
+                                    "盛り付け皿・器"
+                                ],
+                                "tools": [
+                                    "耐熱ゴムべら"
+                                ]
+                            },
+                            {
+                                "source_state_id": "",
+                                "vessel": [
+                                    "フライパン（蓋付き）",
+                                    "盛り付け皿・器"
+                                ],
+                                "tools": [
+                                    "耐熱ゴムべら"
+                                ]
+                            },
+                            {
+                                "source_state_id": "8",
+                                "vessel": [
+                                    "フライパン（蓋付き）",
+                                    "盛り付け皿・器"
+                                ],
+                                "tools": [
+                                    "耐熱ゴムべら"
+                                ]
+                            }
+                        ],
+                        "final_position": "盛り付け皿・器"
+                    }
+                ]
             }
-        ]
+        ],
+        "annotation_note": "step3: 煮込み系で盛り付け道具統一したい"
     },
     {
         "title": "ゆで鶏",
@@ -18050,21 +18224,182 @@
             },
             {
                 "step_after": 1,
-                "state_list": []
+                "state_list": [
+                    {
+                        "id": "1882b725",
+                        "name": "塩・砂糖・酒をからめた鶏肉",
+                        "utensil_interactions_list": [
+                            {
+                                "source_state_id": "1",
+                                "vessel": [
+                                    "ボウル"
+                                ],
+                                "tools": [
+                                    "道具不使用"
+                                ]
+                            },
+                            {
+                                "source_state_id": "2",
+                                "vessel": [
+                                    "ボウル"
+                                ],
+                                "tools": [
+                                    "道具不使用"
+                                ]
+                            },
+                            {
+                                "source_state_id": "3",
+                                "vessel": [
+                                    "ボウル"
+                                ],
+                                "tools": [
+                                    "道具不使用"
+                                ]
+                            },
+                            {
+                                "source_state_id": "4",
+                                "vessel": [
+                                    "ボウル"
+                                ],
+                                "tools": [
+                                    "道具不使用"
+                                ]
+                            }
+                        ],
+                        "final_position": "ボウル"
+                    }
+                ]
             },
             {
                 "step_after": 2,
-                "state_list": []
+                "state_list": [
+                    {
+                        "id": "6f534b3b",
+                        "name": "1・しょうがを煮てできたゆで鶏",
+                        "utensil_interactions_list": [
+                            {
+                                "source_state_id": "1882b725",
+                                "vessel": [
+                                    "ボウル",
+                                    "鍋（蓋付き）"
+                                ],
+                                "tools": [
+                                    "網目の細かい網杓子"
+                                ]
+                            },
+                            {
+                                "source_state_id": "5",
+                                "vessel": [
+                                    "ボウル",
+                                    "鍋（蓋付き）"
+                                ],
+                                "tools": [
+                                    "網目の細かい網杓子"
+                                ]
+                            }
+                        ],
+                        "final_position": "鍋（蓋付き）"
+                    }
+                ]
             },
             {
                 "step_after": 3,
-                "state_list": []
+                "state_list": [
+                    {
+                        "id": "bb83ef93",
+                        "name": "トマトソース",
+                        "utensil_interactions_list": [
+                            {
+                                "source_state_id": "6",
+                                "vessel": [
+                                    "まな板",
+                                    "鍋（蓋付き）-2",
+                                    "まな板",
+                                    "ボウル-2"
+                                ],
+                                "tools": [
+                                    "包丁",
+                                    "網目の粗い網杓子",
+                                    "スプーン"
+                                ]
+                            },
+                            {
+                                "source_state_id": "7",
+                                "vessel": [
+                                    "ボウル-2"
+                                ],
+                                "tools": [
+                                    "スプーン"
+                                ]
+                            },
+                            {
+                                "source_state_id": "8",
+                                "vessel": [
+                                    "ボウル-2"
+                                ],
+                                "tools": [
+                                    "スプーン"
+                                ]
+                            },
+                            {
+                                "source_state_id": "9",
+                                "vessel": [
+                                    "ボウル-2"
+                                ],
+                                "tools": [
+                                    "スプーン"
+                                ]
+                            },
+                            {
+                                "source_state_id": "10",
+                                "vessel": [
+                                    "ボウル-2"
+                                ],
+                                "tools": [
+                                    "スプーン"
+                                ]
+                            }
+                        ],
+                        "final_position": "ボウル-2"
+                    }
+                ]
             },
             {
                 "step_after": 4,
-                "state_list": []
+                "state_list": [
+                    {
+                        "id": "73e3ba2c",
+                        "name": "ゆで鶏",
+                        "utensil_interactions_list": [
+                            {
+                                "source_state_id": "6f534b3b",
+                                "vessel": [
+                                    "鍋（蓋付き）",
+                                    "まな板",
+                                    "盛り付け皿・器"
+                                ],
+                                "tools": [
+                                    "菜箸",
+                                    "包丁"
+                                ]
+                            },
+                            {
+                                "source_state_id": "bb83ef93",
+                                "vessel": [
+                                    "ボウル-2",
+                                    "盛り付け皿・器"
+                                ],
+                                "tools": [
+                                    "スプーン"
+                                ]
+                            }
+                        ],
+                        "final_position": "盛り付け皿・器"
+                    }
+                ]
             }
-        ]
+        ],
+        "annotation_note": ""
     },
     {
         "title": "蒸し豚",
