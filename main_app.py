@@ -32,7 +32,17 @@ def github_read_json(filename: str):
         return None, None
     r.raise_for_status()
     data = r.json()
-    content = json.loads(base64.b64decode(data["content"]).decode("utf-8"))
+    if data.get("content"):
+        content = json.loads(base64.b64decode(data["content"]).decode("utf-8"))
+    else:
+        # Contents API はファイルサイズが1MBを超えると content を省略するため、
+        # raw media type で本文を直接取得する。
+        raw = requests.get(
+            _gh_url(filename),
+            headers={**_gh_headers(), "Accept": "application/vnd.github.raw"},
+        )
+        raw.raise_for_status()
+        content = json.loads(raw.content.decode("utf-8"))
     return content, data["sha"]
 
 
