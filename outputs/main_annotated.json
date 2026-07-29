@@ -18459,11 +18459,61 @@
             },
             {
                 "step_after": 1,
-                "state_list": []
+                "state_list": [
+                    {
+                        "id": "80c011df",
+                        "name": "切った白菜",
+                        "utensil_interactions_list": [
+                            {
+                                "source_state_id": "2",
+                                "vessel": [
+                                    "まな板",
+                                    "バット"
+                                ],
+                                "tools": [
+                                    "包丁",
+                                    "クッキングペーパー"
+                                ]
+                            }
+                        ],
+                        "final_position": "バット"
+                    },
+                    {
+                        "id": "afdaf2fd",
+                        "name": "切ったほうれんそう",
+                        "utensil_interactions_list": [
+                            {
+                                "source_state_id": "3",
+                                "vessel": [
+                                    "まな板",
+                                    "バット"
+                                ],
+                                "tools": [
+                                    "包丁",
+                                    "クッキングペーパー"
+                                ]
+                            }
+                        ],
+                        "final_position": "バット"
+                    }
+                ]
             },
             {
                 "step_after": 2,
-                "state_list": []
+                "state_list": [
+                    {
+                        "id": "a8d3fbf0",
+                        "name": "",
+                        "utensil_interactions_list": [
+                            {
+                                "source_state_id": "",
+                                "vessel": [],
+                                "tools": []
+                            }
+                        ],
+                        "final_position": ""
+                    }
+                ]
             },
             {
                 "step_after": 3,
@@ -18477,7 +18527,8 @@
                 "step_after": 5,
                 "state_list": []
             }
-        ]
+        ],
+        "annotation_note": ""
     },
     {
         "title": "えび、わかめ、きのこ入り茶碗蒸し",
