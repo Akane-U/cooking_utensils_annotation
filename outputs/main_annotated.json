@@ -17430,32 +17430,224 @@
                 "state_list": [
                     {
                         "id": "58cece00",
-                        "name": "",
+                        "name": "ほぐしたさけにしょうが・酒・酢を加えて混ぜたもの",
                         "utensil_interactions_list": [
                             {
-                                "source_state_id": "",
-                                "vessel": [],
-                                "tools": []
+                                "source_state_id": "1",
+                                "vessel": [
+                                    "バット"
+                                ],
+                                "tools": [
+                                    "菜箸",
+                                    "クッキングペーパー"
+                                ]
+                            },
+                            {
+                                "source_state_id": "6",
+                                "vessel": [
+                                    "バット"
+                                ],
+                                "tools": [
+                                    "菜箸",
+                                    "クッキングペーパー"
+                                ]
+                            },
+                            {
+                                "source_state_id": "13",
+                                "vessel": [
+                                    "バット"
+                                ],
+                                "tools": [
+                                    "菜箸",
+                                    "クッキングペーパー"
+                                ]
+                            },
+                            {
+                                "source_state_id": "14",
+                                "vessel": [
+                                    "バット"
+                                ],
+                                "tools": [
+                                    "菜箸",
+                                    "クッキングペーパー"
+                                ]
                             }
                         ],
-                        "final_position": ""
+                        "final_position": "バット"
                     }
                 ]
             },
             {
                 "step_after": 2,
-                "state_list": []
+                "state_list": [
+                    {
+                        "id": "a3c43509",
+                        "name": "卵・[B]を混ぜてできたいり卵",
+                        "utensil_interactions_list": [
+                            {
+                                "source_state_id": "7",
+                                "vessel": [
+                                    "ボウル"
+                                ],
+                                "tools": [
+                                    "泡だて器"
+                                ]
+                            },
+                            {
+                                "source_state_id": "8",
+                                "vessel": [
+                                    "ボウル"
+                                ],
+                                "tools": [
+                                    "泡だて器"
+                                ]
+                            },
+                            {
+                                "source_state_id": "9",
+                                "vessel": [
+                                    "ボウル"
+                                ],
+                                "tools": [
+                                    "泡だて器"
+                                ]
+                            },
+                            {
+                                "source_state_id": "10",
+                                "vessel": [
+                                    "ボウル"
+                                ],
+                                "tools": [
+                                    "泡だて器"
+                                ]
+                            }
+                        ],
+                        "final_position": "ボウル"
+                    }
+                ]
             },
             {
                 "step_after": 3,
-                "state_list": []
+                "state_list": [
+                    {
+                        "id": "55b18dfe",
+                        "name": "ご飯・[A}・1・2を混ぜたもの",
+                        "utensil_interactions_list": [
+                            {
+                                "source_state_id": "2",
+                                "vessel": [
+                                    "ボウル-2"
+                                ],
+                                "tools": [
+                                    "しゃもじ"
+                                ]
+                            },
+                            {
+                                "source_state_id": "3",
+                                "vessel": [
+                                    "ボウル-2"
+                                ],
+                                "tools": [
+                                    "しゃもじ"
+                                ]
+                            },
+                            {
+                                "source_state_id": "4",
+                                "vessel": [
+                                    "ボウル-2"
+                                ],
+                                "tools": [
+                                    "しゃもじ"
+                                ]
+                            },
+                            {
+                                "source_state_id": "5",
+                                "vessel": [
+                                    "ボウル-2"
+                                ],
+                                "tools": [
+                                    "しゃもじ"
+                                ]
+                            },
+                            {
+                                "source_state_id": "11",
+                                "vessel": [
+                                    "ボウル-2"
+                                ],
+                                "tools": [
+                                    "しゃもじ"
+                                ]
+                            },
+                            {
+                                "source_state_id": "58cece00",
+                                "vessel": [
+                                    "バット",
+                                    "ボウル-2"
+                                ],
+                                "tools": [
+                                    "しゃもじ"
+                                ]
+                            },
+                            {
+                                "source_state_id": "a3c43509",
+                                "vessel": [
+                                    "ボウル",
+                                    "ボウル-2"
+                                ],
+                                "tools": [
+                                    "しゃもじ"
+                                ]
+                            }
+                        ],
+                        "final_position": "ボウル-2"
+                    }
+                ]
             },
             {
                 "step_after": 4,
-                "state_list": []
+                "state_list": [
+                    {
+                        "id": "0405981c",
+                        "name": "さけずし",
+                        "utensil_interactions_list": [
+                            {
+                                "source_state_id": "12",
+                                "vessel": [
+                                    "まな板",
+                                    "ボウル-2",
+                                    "盛り付け皿・器"
+                                ],
+                                "tools": [
+                                    "包丁",
+                                    "しゃもじ"
+                                ]
+                            },
+                            {
+                                "source_state_id": "55b18dfe",
+                                "vessel": [
+                                    "ボウル-2",
+                                    "盛り付け皿・器"
+                                ],
+                                "tools": [
+                                    "しゃもじ"
+                                ]
+                            },
+                            {
+                                "source_state_id": "a3c43509",
+                                "vessel": [
+                                    "ボウル",
+                                    "盛り付け皿・器"
+                                ],
+                                "tools": [
+                                    "しゃもじ"
+                                ]
+                            }
+                        ],
+                        "final_position": "盛り付け皿・器"
+                    }
+                ]
             }
         ],
-        "annotation_note": ""
+        "annotation_note": "step1: ほぐす道具が不明"
     },
     {
         "title": "ぶりごぼう",
@@ -17527,17 +17719,143 @@
             },
             {
                 "step_after": 1,
-                "state_list": []
+                "state_list": [
+                    {
+                        "id": "a13e3cce",
+                        "name": "ごぼう・こんにゃくを茹でたもの",
+                        "utensil_interactions_list": [
+                            {
+                                "source_state_id": "2",
+                                "vessel": [
+                                    "まな板",
+                                    "鍋（蓋付き）",
+                                    "ざる"
+                                ],
+                                "tools": [
+                                    "包丁"
+                                ]
+                            },
+                            {
+                                "source_state_id": "3",
+                                "vessel": [
+                                    "まな板",
+                                    "鍋（蓋付き）",
+                                    "ざる"
+                                ],
+                                "tools": [
+                                    "包丁"
+                                ]
+                            }
+                        ],
+                        "final_position": "ざる"
+                    }
+                ]
             },
             {
                 "step_after": 2,
-                "state_list": []
+                "state_list": [
+                    {
+                        "id": "15f44163",
+                        "name": "切ったさやいんげん",
+                        "utensil_interactions_list": [
+                            {
+                                "source_state_id": "4",
+                                "vessel": [
+                                    "まな板"
+                                ],
+                                "tools": [
+                                    "包丁"
+                                ]
+                            }
+                        ],
+                        "final_position": "まな板"
+                    },
+                    {
+                        "id": "fe82533d",
+                        "name": "水けを拭いたぶり",
+                        "utensil_interactions_list": [
+                            {
+                                "source_state_id": "1",
+                                "vessel": [
+                                    "バット"
+                                ],
+                                "tools": [
+                                    "クッキングペーパー"
+                                ]
+                            }
+                        ],
+                        "final_position": "バット"
+                    }
+                ]
             },
             {
                 "step_after": 3,
-                "state_list": []
+                "state_list": [
+                    {
+                        "id": "c338f7fe",
+                        "name": "ぶりごぼう",
+                        "utensil_interactions_list": [
+                            {
+                                "source_state_id": "5",
+                                "vessel": [
+                                    "フライパン（蓋付き）",
+                                    "盛り付け皿・器"
+                                ],
+                                "tools": []
+                            },
+                            {
+                                "source_state_id": "6",
+                                "vessel": [],
+                                "tools": []
+                            },
+                            {
+                                "source_state_id": "7",
+                                "vessel": [],
+                                "tools": []
+                            },
+                            {
+                                "source_state_id": "8",
+                                "vessel": [],
+                                "tools": []
+                            },
+                            {
+                                "source_state_id": "9",
+                                "vessel": [],
+                                "tools": []
+                            },
+                            {
+                                "source_state_id": "a13e3cce",
+                                "vessel": [
+                                    "ざる"
+                                ],
+                                "tools": []
+                            },
+                            {
+                                "source_state_id": "fe82533d",
+                                "vessel": [
+                                    "バット"
+                                ],
+                                "tools": []
+                            },
+                            {
+                                "source_state_id": "15f44163",
+                                "vessel": [
+                                    "まな板"
+                                ],
+                                "tools": []
+                            },
+                            {
+                                "source_state_id": "",
+                                "vessel": [],
+                                "tools": []
+                            }
+                        ],
+                        "final_position": ""
+                    }
+                ]
             }
-        ]
+        ],
+        "annotation_note": ""
     },
     {
         "title": "新じゃがいものピリ辛煮",
