@@ -18504,7 +18504,116 @@
                 "state_list": [
                     {
                         "id": "a8d3fbf0",
-                        "name": "",
+                        "name": "1の上に豚肉を乗せたもの",
+                        "utensil_interactions_list": [
+                            {
+                                "source_state_id": "80c011df",
+                                "vessel": [
+                                    "バット"
+                                ],
+                                "tools": [
+                                    "道具不使用"
+                                ]
+                            },
+                            {
+                                "source_state_id": "afdaf2fd",
+                                "vessel": [
+                                    "バット"
+                                ],
+                                "tools": [
+                                    "道具不使用"
+                                ]
+                            },
+                            {
+                                "source_state_id": "1",
+                                "vessel": [
+                                    "バット"
+                                ],
+                                "tools": [
+                                    "道具不使用"
+                                ]
+                            },
+                            {
+                                "source_state_id": "8",
+                                "vessel": [
+                                    "バット"
+                                ],
+                                "tools": [
+                                    "道具不使用"
+                                ]
+                            }
+                        ],
+                        "final_position": "バット"
+                    }
+                ]
+            },
+            {
+                "step_after": 3,
+                "state_list": [
+                    {
+                        "id": "0a3b5142",
+                        "name": "蒸した2",
+                        "utensil_interactions_list": [
+                            {
+                                "source_state_id": "a8d3fbf0",
+                                "vessel": [
+                                    "バット",
+                                    "フライパン（蓋付き）"
+                                ],
+                                "tools": [
+                                    "道具不使用"
+                                ]
+                            }
+                        ],
+                        "final_position": "フライパン（蓋付き）"
+                    }
+                ]
+            },
+            {
+                "step_after": 4,
+                "state_list": [
+                    {
+                        "id": "d438251a",
+                        "name": "そぎ切りにした豚肉",
+                        "utensil_interactions_list": [
+                            {
+                                "source_state_id": "0a3b5142",
+                                "vessel": [
+                                    "フライパン（蓋付き）",
+                                    "まな板"
+                                ],
+                                "tools": [
+                                    "菜箸",
+                                    "包丁"
+                                ]
+                            }
+                        ],
+                        "final_position": "まな板"
+                    },
+                    {
+                        "id": "83fa243f",
+                        "name": "野菜",
+                        "utensil_interactions_list": [
+                            {
+                                "source_state_id": "0a3b5142",
+                                "vessel": [
+                                    "フライパン（蓋付き）"
+                                ],
+                                "tools": [
+                                    "道具不使用"
+                                ]
+                            }
+                        ],
+                        "final_position": "フライパン（蓋付き）"
+                    }
+                ]
+            },
+            {
+                "step_after": 5,
+                "state_list": [
+                    {
+                        "id": "fcc34552",
+                        "name": "蒸し豚",
                         "utensil_interactions_list": [
                             {
                                 "source_state_id": "",
@@ -18515,21 +18624,9 @@
                         "final_position": ""
                     }
                 ]
-            },
-            {
-                "step_after": 3,
-                "state_list": []
-            },
-            {
-                "step_after": 4,
-                "state_list": []
-            },
-            {
-                "step_after": 5,
-                "state_list": []
             }
         ],
-        "annotation_note": ""
+        "annotation_note": "step2,3: どんな状況か不明"
     },
     {
         "title": "えび、わかめ、きのこ入り茶碗蒸し",
@@ -18595,7 +18692,20 @@
             },
             {
                 "step_after": 1,
-                "state_list": []
+                "state_list": [
+                    {
+                        "id": "495b639b",
+                        "name": "",
+                        "utensil_interactions_list": [
+                            {
+                                "source_state_id": "",
+                                "vessel": [],
+                                "tools": []
+                            }
+                        ],
+                        "final_position": ""
+                    }
+                ]
             },
             {
                 "step_after": 2,
@@ -18609,7 +18719,8 @@
                 "step_after": 4,
                 "state_list": []
             }
-        ]
+        ],
+        "annotation_note": ""
     },
     {
         "title": "ねぎフライ",
