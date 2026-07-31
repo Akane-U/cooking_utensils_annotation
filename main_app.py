@@ -470,7 +470,7 @@ def main() -> None:
     # ── Left column: recipe info ───────────────────────────────────────────────
     with left:
         real_num = sum(1 for r in recipes[: ridx + 1] if not r["title"].startswith("例題"))
-        if not recipe["title"].startswith("例題") and real_num >= 61:
+        if not recipe["title"].startswith("例題") and real_num >= 81:
             st.warning("準備中（まだアノテーションしないでください）")
 
         st.subheader(recipe["title"])
