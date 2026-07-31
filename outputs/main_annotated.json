@@ -18482,8 +18482,7 @@
                                     "None_耐熱皿"
                                 ],
                                 "tools": [
-                                    "包丁",
-                                    "クッキングペーパー"
+                                    "包丁"
                                 ]
                             }
                         ],
@@ -18798,7 +18797,7 @@
                     },
                     {
                         "id": "014eae7e",
-                        "name": "切って水けを絞ったわかめ",
+                        "name": "切ったわかめ",
                         "utensil_interactions_list": [
                             {
                                 "source_state_id": "8",
@@ -19226,7 +19225,20 @@
             },
             {
                 "step_after": 1,
-                "state_list": []
+                "state_list": [
+                    {
+                        "id": "b056531e",
+                        "name": "",
+                        "utensil_interactions_list": [
+                            {
+                                "source_state_id": "",
+                                "vessel": [],
+                                "tools": []
+                            }
+                        ],
+                        "final_position": ""
+                    }
+                ]
             },
             {
                 "step_after": 2,
@@ -19236,7 +19248,8 @@
                 "step_after": 3,
                 "state_list": []
             }
-        ]
+        ],
+        "annotation_note": ""
     },
     {
         "title": "柚子なます",
