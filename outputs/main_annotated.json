@@ -19314,12 +19314,16 @@
                         "name": "茶碗蒸し",
                         "utensil_interactions_list": [
                             {
-                                "source_state_id": "",
-                                "vessel": [],
-                                "tools": []
+                                "source_state_id": "1012fd13",
+                                "vessel": [
+                                    "盛り付け皿・器"
+                                ],
+                                "tools": [
+                                    "串"
+                                ]
                             }
                         ],
-                        "final_position": ""
+                        "final_position": "盛り付け皿・器"
                     }
                 ]
             }
