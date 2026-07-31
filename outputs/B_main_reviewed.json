@@ -390,10 +390,10 @@
                                 "tools": [
                                     "道具不使用"
                                 ],
-                                "source_state_id_check": false,
-                                "source_state_id_comment": "",
-                                "vessel_check": false,
-                                "vessel_comment": "",
+                                "source_state_id_check": true,
+                                "source_state_id_comment": "【カラメルソース】 水 小さじ1",
+                                "vessel_check": true,
+                                "vessel_comment": "鍋（蓋付き）, 流し型",
                                 "tools_check": false,
                                 "tools_comment": ""
                             }
@@ -473,12 +473,12 @@
                                 "tools": [
                                     "泡だて器"
                                 ],
-                                "source_state_id_check": false,
-                                "source_state_id_comment": "",
-                                "vessel_check": false,
-                                "vessel_comment": "",
-                                "tools_check": false,
-                                "tools_comment": ""
+                                "source_state_id_check": true,
+                                "source_state_id_comment": "不要",
+                                "vessel_check": true,
+                                "vessel_comment": "不要",
+                                "tools_check": true,
+                                "tools_comment": "不要"
                             }
                         ],
                         "final_position": "ボウル",
@@ -705,7 +705,7 @@
         ],
         "annotation_note": "",
         "reviewer_note": "",
-        "reviewed": false
+        "reviewed": true
     },
     {
         "title": "春キャベツとさば缶の酢みそ炒め",
