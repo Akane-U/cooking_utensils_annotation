@@ -19382,13 +19382,116 @@
             },
             {
                 "step_after": 1,
-                "state_list": []
+                "state_list": [
+                    {
+                        "id": "707d97b7",
+                        "name": "大根・にんじんを塩水において水けを絞ったもの",
+                        "utensil_interactions_list": [
+                            {
+                                "source_state_id": "1",
+                                "vessel": [
+                                    "まな板",
+                                    "ボウル",
+                                    "ボウル-2"
+                                ],
+                                "tools": [
+                                    "包丁"
+                                ]
+                            },
+                            {
+                                "source_state_id": "2",
+                                "vessel": [
+                                    "まな板",
+                                    "ボウル",
+                                    "ボウル-2"
+                                ],
+                                "tools": [
+                                    "包丁"
+                                ]
+                            },
+                            {
+                                "source_state_id": "7",
+                                "vessel": [
+                                    "まな板",
+                                    "ボウル",
+                                    "ボウル-2"
+                                ],
+                                "tools": [
+                                    "包丁"
+                                ]
+                            }
+                        ],
+                        "final_position": "ボウル-2"
+                    }
+                ]
             },
             {
                 "step_after": 2,
-                "state_list": []
+                "state_list": [
+                    {
+                        "id": "a5efec4b",
+                        "name": "柚子なます",
+                        "utensil_interactions_list": [
+                            {
+                                "source_state_id": "3",
+                                "vessel": [
+                                    "まな板",
+                                    "ボウル-3",
+                                    "盛り付け皿・器"
+                                ],
+                                "tools": [
+                                    "包丁",
+                                    "スプーン"
+                                ]
+                            },
+                            {
+                                "source_state_id": "4",
+                                "vessel": [
+                                    "ボウル-3",
+                                    "盛り付け皿・器"
+                                ],
+                                "tools": [
+                                    "スプーン"
+                                ]
+                            },
+                            {
+                                "source_state_id": "5",
+                                "vessel": [
+                                    "ボウル-3",
+                                    "盛り付け皿・器"
+                                ],
+                                "tools": [
+                                    "スプーン"
+                                ]
+                            },
+                            {
+                                "source_state_id": "6",
+                                "vessel": [
+                                    "ボウル-3",
+                                    "盛り付け皿・器"
+                                ],
+                                "tools": [
+                                    "スプーン"
+                                ]
+                            },
+                            {
+                                "source_state_id": "707d97b7",
+                                "vessel": [
+                                    "ボウル-2",
+                                    "ボウル-3",
+                                    "盛り付け皿・器"
+                                ],
+                                "tools": [
+                                    "スプーン"
+                                ]
+                            }
+                        ],
+                        "final_position": "盛り付け皿・器"
+                    }
+                ]
             }
-        ]
+        ],
+        "annotation_note": "step1: state を分けるべきか迷ったが同じにした"
     },
     {
         "title": "豆苗とエリンギの肉巻き",
@@ -19448,17 +19551,174 @@
             },
             {
                 "step_after": 1,
-                "state_list": []
+                "state_list": [
+                    {
+                        "id": "df3aba04",
+                        "name": "切った豆苗",
+                        "utensil_interactions_list": [
+                            {
+                                "source_state_id": "2",
+                                "vessel": [
+                                    "まな板"
+                                ],
+                                "tools": [
+                                    "包丁"
+                                ]
+                            }
+                        ],
+                        "final_position": "まな板"
+                    },
+                    {
+                        "id": "c369503b",
+                        "name": "切ったエリンギ",
+                        "utensil_interactions_list": [
+                            {
+                                "source_state_id": "3",
+                                "vessel": [
+                                    "まな板"
+                                ],
+                                "tools": [
+                                    "包丁"
+                                ]
+                            }
+                        ],
+                        "final_position": "まな板"
+                    },
+                    {
+                        "id": "ab07133c",
+                        "name": "混ぜた[A]",
+                        "utensil_interactions_list": [
+                            {
+                                "source_state_id": "4",
+                                "vessel": [
+                                    "ボウル"
+                                ],
+                                "tools": [
+                                    "スプーン"
+                                ]
+                            },
+                            {
+                                "source_state_id": "5",
+                                "vessel": [
+                                    "ボウル"
+                                ],
+                                "tools": [
+                                    "スプーン"
+                                ]
+                            },
+                            {
+                                "source_state_id": "6",
+                                "vessel": [
+                                    "ボウル"
+                                ],
+                                "tools": [
+                                    "スプーン"
+                                ]
+                            }
+                        ],
+                        "final_position": "ボウル"
+                    }
+                ]
             },
             {
                 "step_after": 2,
-                "state_list": []
+                "state_list": [
+                    {
+                        "id": "ef8e32ab",
+                        "name": "豚肉で豆苗・エリンギを巻いたもの",
+                        "utensil_interactions_list": [
+                            {
+                                "source_state_id": "1",
+                                "vessel": [
+                                    "バット"
+                                ],
+                                "tools": [
+                                    "道具不使用"
+                                ]
+                            },
+                            {
+                                "source_state_id": "df3aba04",
+                                "vessel": [
+                                    "まな板",
+                                    "バット"
+                                ],
+                                "tools": [
+                                    "道具不使用"
+                                ]
+                            },
+                            {
+                                "source_state_id": "c369503b",
+                                "vessel": [
+                                    "まな板",
+                                    "バット"
+                                ],
+                                "tools": [
+                                    "道具不使用"
+                                ]
+                            },
+                            {
+                                "source_state_id": "7",
+                                "vessel": [
+                                    "バット"
+                                ],
+                                "tools": [
+                                    "ふるい"
+                                ]
+                            }
+                        ],
+                        "final_position": "バット"
+                    }
+                ]
             },
             {
                 "step_after": 3,
-                "state_list": []
+                "state_list": [
+                    {
+                        "id": "a0d3dffe",
+                        "name": "豆苗とエリンギの肉巻き",
+                        "utensil_interactions_list": [
+                            {
+                                "source_state_id": "8",
+                                "vessel": [
+                                    "フライパン（蓋付き）",
+                                    "盛り付け皿・器"
+                                ],
+                                "tools": [
+                                    "菜箸",
+                                    "包丁"
+                                ]
+                            },
+                            {
+                                "source_state_id": "ef8e32ab",
+                                "vessel": [
+                                    "バット",
+                                    "フライパン（蓋付き）",
+                                    "盛り付け皿・器"
+                                ],
+                                "tools": [
+                                    "菜箸",
+                                    "包丁"
+                                ]
+                            },
+                            {
+                                "source_state_id": "ab07133c",
+                                "vessel": [
+                                    "ボウル",
+                                    "フライパン（蓋付き）",
+                                    "盛り付け皿・器"
+                                ],
+                                "tools": [
+                                    "菜箸",
+                                    "包丁"
+                                ]
+                            }
+                        ],
+                        "final_position": "盛り付け皿・器"
+                    }
+                ]
             }
-        ]
+        ],
+        "annotation_note": ""
     },
     {
         "title": "新じゃがとベーコンの甘辛煮",
@@ -19500,17 +19760,129 @@
             },
             {
                 "step_after": 1,
-                "state_list": []
+                "state_list": [
+                    {
+                        "id": "fa9ceef7",
+                        "name": "切ったじゃがいも",
+                        "utensil_interactions_list": [
+                            {
+                                "source_state_id": "1",
+                                "vessel": [
+                                    "ボウル",
+                                    "まな板",
+                                    "ボウル",
+                                    "ざる"
+                                ],
+                                "tools": [
+                                    "None_たわし",
+                                    "包丁"
+                                ]
+                            }
+                        ],
+                        "final_position": "ざる"
+                    },
+                    {
+                        "id": "8fac25d5",
+                        "name": "切ったベーコン",
+                        "utensil_interactions_list": [
+                            {
+                                "source_state_id": "2",
+                                "vessel": [
+                                    "まな板"
+                                ],
+                                "tools": [
+                                    "包丁"
+                                ]
+                            }
+                        ],
+                        "final_position": "まな板"
+                    }
+                ]
             },
             {
                 "step_after": 2,
-                "state_list": []
+                "state_list": [
+                    {
+                        "id": "37639432",
+                        "name": "じゃがいも・ベーコンを煮たもの",
+                        "utensil_interactions_list": [
+                            {
+                                "source_state_id": "fa9ceef7",
+                                "vessel": [
+                                    "ざる",
+                                    "鍋（蓋付き）"
+                                ],
+                                "tools": [
+                                    "木製へら"
+                                ]
+                            },
+                            {
+                                "source_state_id": "8fac25d5",
+                                "vessel": [
+                                    "まな板",
+                                    "鍋（蓋付き）"
+                                ],
+                                "tools": [
+                                    "木製へら"
+                                ]
+                            },
+                            {
+                                "source_state_id": "3",
+                                "vessel": [
+                                    "鍋（蓋付き）"
+                                ],
+                                "tools": [
+                                    "木製へら"
+                                ]
+                            },
+                            {
+                                "source_state_id": "4",
+                                "vessel": [
+                                    "鍋（蓋付き）"
+                                ],
+                                "tools": [
+                                    "木製へら"
+                                ]
+                            },
+                            {
+                                "source_state_id": "5",
+                                "vessel": [
+                                    "鍋（蓋付き）"
+                                ],
+                                "tools": [
+                                    "木製へら"
+                                ]
+                            }
+                        ],
+                        "final_position": "鍋（蓋付き）"
+                    }
+                ]
             },
             {
                 "step_after": 3,
-                "state_list": []
+                "state_list": [
+                    {
+                        "id": "1f9ba88c",
+                        "name": "新じゃがとベーコンの甘辛煮",
+                        "utensil_interactions_list": [
+                            {
+                                "source_state_id": "37639432",
+                                "vessel": [
+                                    "鍋（蓋付き）",
+                                    "盛り付け皿・器"
+                                ],
+                                "tools": [
+                                    "串",
+                                    "菜箸"
+                                ]
+                            }
+                        ],
+                        "final_position": "盛り付け皿・器"
+                    }
+                ]
             }
-        ]
+        ],
+        "annotation_note": ""
     },
     {
         "title": "チーズもち",
@@ -19540,17 +19912,91 @@
             },
             {
                 "step_after": 1,
-                "state_list": []
+                "state_list": [
+                    {
+                        "id": "05308143",
+                        "name": "餅にチーズをのせて電子レンジにかけたもの",
+                        "utensil_interactions_list": [
+                            {
+                                "source_state_id": "1",
+                                "vessel": [
+                                    "バット"
+                                ],
+                                "tools": [
+                                    "None_オーブン用の紙",
+                                    "ラップフィルム"
+                                ]
+                            },
+                            {
+                                "source_state_id": "2",
+                                "vessel": [
+                                    "バット"
+                                ],
+                                "tools": [
+                                    "None_オーブン用の紙",
+                                    "ラップフィルム"
+                                ]
+                            }
+                        ],
+                        "final_position": "バット"
+                    }
+                ]
             },
             {
                 "step_after": 2,
-                "state_list": []
+                "state_list": [
+                    {
+                        "id": "f63f8f6b",
+                        "name": "こねた1",
+                        "utensil_interactions_list": [
+                            {
+                                "source_state_id": "05308143",
+                                "vessel": [
+                                    "バット",
+                                    "None_布巾"
+                                ],
+                                "tools": [
+                                    "None_オーブン用の紙"
+                                ]
+                            }
+                        ],
+                        "final_position": "None_布巾"
+                    }
+                ]
             },
             {
                 "step_after": 3,
-                "state_list": []
+                "state_list": [
+                    {
+                        "id": "6fc5365f",
+                        "name": "チーズもち",
+                        "utensil_interactions_list": [
+                            {
+                                "source_state_id": "f63f8f6b",
+                                "vessel": [
+                                    "None_布巾",
+                                    "盛り付け皿・器"
+                                ],
+                                "tools": [
+                                    "道具不使用"
+                                ]
+                            },
+                            {
+                                "source_state_id": "3",
+                                "vessel": [
+                                    "盛り付け皿・器"
+                                ],
+                                "tools": [
+                                    "料理ばさみ"
+                                ]
+                            }
+                        ],
+                        "final_position": "盛り付け皿・器"
+                    }
+                ]
             }
-        ]
+        ],
+        "annotation_note": "step2: 道具・容器の対応が難しい"
     },
     {
         "title": "みそバターチキン",
