@@ -20956,6 +20956,132 @@
                 "state_list": [
                     {
                         "id": "649b867c",
+                        "name": "水切りした豆腐",
+                        "utensil_interactions_list": [
+                            {
+                                "source_state_id": "1",
+                                "vessel": [
+                                    "バット"
+                                ],
+                                "tools": [
+                                    "クッキングペーパー",
+                                    "None_おもしの皿"
+                                ]
+                            }
+                        ],
+                        "final_position": "バット"
+                    },
+                    {
+                        "id": "64cfb790",
+                        "name": "溶き卵",
+                        "utensil_interactions_list": [
+                            {
+                                "source_state_id": "6",
+                                "vessel": [
+                                    "ボウル"
+                                ],
+                                "tools": [
+                                    "菜箸"
+                                ]
+                            }
+                        ],
+                        "final_position": "ボウル"
+                    }
+                ]
+            },
+            {
+                "step_after": 2,
+                "state_list": [
+                    {
+                        "id": "3d8a278c",
+                        "name": "切ったにんじん",
+                        "utensil_interactions_list": [
+                            {
+                                "source_state_id": "4",
+                                "vessel": [
+                                    "まな板"
+                                ],
+                                "tools": [
+                                    "包丁"
+                                ]
+                            }
+                        ],
+                        "final_position": "まな板"
+                    },
+                    {
+                        "id": "6bf65ccb",
+                        "name": "切ったしいたけのかさ",
+                        "utensil_interactions_list": [
+                            {
+                                "source_state_id": "5",
+                                "vessel": [
+                                    "まな板"
+                                ],
+                                "tools": [
+                                    "包丁"
+                                ]
+                            }
+                        ],
+                        "final_position": "まな板"
+                    },
+                    {
+                        "id": "692a3526",
+                        "name": "切ったしいたけの軸",
+                        "utensil_interactions_list": [
+                            {
+                                "source_state_id": "5",
+                                "vessel": [
+                                    "まな板"
+                                ],
+                                "tools": [
+                                    "包丁"
+                                ]
+                            }
+                        ],
+                        "final_position": "まな板"
+                    }
+                ]
+            },
+            {
+                "step_after": 3,
+                "state_list": [
+                    {
+                        "id": "5a18e4fc",
+                        "name": "下処理して切ったえび",
+                        "utensil_interactions_list": [
+                            {
+                                "source_state_id": "3",
+                                "vessel": [
+                                    "ボウル",
+                                    "生肉・生魚用まな板"
+                                ],
+                                "tools": [
+                                    "串",
+                                    "クッキングペーパー",
+                                    "包丁"
+                                ]
+                            },
+                            {
+                                "source_state_id": "13",
+                                "vessel": [
+                                    "ボウル",
+                                    "生肉・生魚用まな板"
+                                ],
+                                "tools": [
+                                    "クッキングペーパー",
+                                    "包丁"
+                                ]
+                            }
+                        ],
+                        "final_position": "生肉・生魚用まな板"
+                    }
+                ]
+            },
+            {
+                "step_after": 4,
+                "state_list": [
+                    {
+                        "id": "f2685adc",
                         "name": "",
                         "utensil_interactions_list": [
                             {
@@ -20969,23 +21095,11 @@
                 ]
             },
             {
-                "step_after": 2,
-                "state_list": []
-            },
-            {
-                "step_after": 3,
-                "state_list": []
-            },
-            {
-                "step_after": 4,
-                "state_list": []
-            },
-            {
                 "step_after": 5,
                 "state_list": []
             }
         ],
-        "annotation_note": ""
+        "annotation_note": "step1: 重しの皿は非接触？"
     },
     {
         "title": "にんじんと豚肉の甘酢炒め",
