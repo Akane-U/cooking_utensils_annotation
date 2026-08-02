@@ -22829,7 +22829,7 @@
                 "state_list": [
                     {
                         "id": "a2f55f93",
-                        "name": "茹でたキャベツ",
+                        "name": "茹でたキャベツの葉",
                         "utensil_interactions_list": [
                             {
                                 "source_state_id": "1",
@@ -22847,7 +22847,26 @@
                         "final_position": "まな板"
                     },
                     {
-                        "id": "8809bc89",
+                        "id": "e93df966",
+                        "name": "茹でたキャベツの軸",
+                        "utensil_interactions_list": [
+                            {
+                                "source_state_id": "3",
+                                "vessel": [
+                                    "鍋（蓋付き）",
+                                    "ざる",
+                                    "まな板"
+                                ],
+                                "tools": [
+                                    "菜箸",
+                                    "包丁"
+                                ]
+                            }
+                        ],
+                        "final_position": "まな板"
+                    },
+                    {
+                        "id": "8d58911c",
                         "name": "切ったベーコン",
                         "utensil_interactions_list": [
                             {
@@ -22863,7 +22882,7 @@
                         "final_position": "まな板"
                     },
                     {
-                        "id": "e93df966",
+                        "id": "b74c2bc1",
                         "name": "切ったにんにく",
                         "utensil_interactions_list": [
                             {
@@ -22882,7 +22901,20 @@
             },
             {
                 "step_after": 2,
-                "state_list": []
+                "state_list": [
+                    {
+                        "id": "fed02a32",
+                        "name": "",
+                        "utensil_interactions_list": [
+                            {
+                                "source_state_id": "",
+                                "vessel": [],
+                                "tools": []
+                            }
+                        ],
+                        "final_position": ""
+                    }
+                ]
             },
             {
                 "step_after": 3,
