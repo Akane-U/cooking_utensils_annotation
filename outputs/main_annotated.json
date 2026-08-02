@@ -22904,24 +22904,112 @@
                 "state_list": [
                     {
                         "id": "fed02a32",
-                        "name": "",
+                        "name": "キャベツでベーコンを巻いたもの",
                         "utensil_interactions_list": [
                             {
-                                "source_state_id": "",
-                                "vessel": [],
-                                "tools": []
+                                "source_state_id": "a2f55f93",
+                                "vessel": [
+                                    "まな板",
+                                    "バット"
+                                ],
+                                "tools": [
+                                    "道具不使用"
+                                ]
+                            },
+                            {
+                                "source_state_id": "e93df966",
+                                "vessel": [
+                                    "まな板",
+                                    "バット"
+                                ],
+                                "tools": [
+                                    "道具不使用"
+                                ]
+                            },
+                            {
+                                "source_state_id": "8d58911c",
+                                "vessel": [
+                                    "まな板",
+                                    "バット"
+                                ],
+                                "tools": [
+                                    "道具不使用"
+                                ]
                             }
                         ],
-                        "final_position": ""
+                        "final_position": "バット"
                     }
                 ]
             },
             {
                 "step_after": 3,
-                "state_list": []
+                "state_list": [
+                    {
+                        "id": "1371af2f",
+                        "name": "ベーコンロールキャベツ",
+                        "utensil_interactions_list": [
+                            {
+                                "source_state_id": "b74c2bc1",
+                                "vessel": [
+                                    "まな板",
+                                    "鍋（蓋付き）",
+                                    "盛り付け皿・器"
+                                ],
+                                "tools": [
+                                    "おたま",
+                                    "菜箸"
+                                ]
+                            },
+                            {
+                                "source_state_id": "5",
+                                "vessel": [
+                                    "鍋（蓋付き）",
+                                    "盛り付け皿・器"
+                                ],
+                                "tools": [
+                                    "おたま",
+                                    "菜箸"
+                                ]
+                            },
+                            {
+                                "source_state_id": "fed02a32",
+                                "vessel": [
+                                    "バット",
+                                    "鍋（蓋付き）",
+                                    "盛り付け皿・器"
+                                ],
+                                "tools": [
+                                    "おたま",
+                                    "菜箸"
+                                ]
+                            },
+                            {
+                                "source_state_id": "6",
+                                "vessel": [
+                                    "鍋（蓋付き）",
+                                    "盛り付け皿・器"
+                                ],
+                                "tools": [
+                                    "おたま",
+                                    "菜箸"
+                                ]
+                            },
+                            {
+                                "source_state_id": "4",
+                                "vessel": [
+                                    "盛り付け皿・器"
+                                ],
+                                "tools": [
+                                    "道具不使用"
+                                ]
+                            }
+                        ],
+                        "final_position": "盛り付け皿・器"
+                    }
+                ]
             }
         ],
-        "annotation_note": ""
+        "annotation_note": "step3: キャベツの芯や外葉は分量外なので未記入"
     },
     {
         "title": "BLTサンド",
@@ -22969,7 +23057,58 @@
             },
             {
                 "step_after": 1,
-                "state_list": []
+                "state_list": [
+                    {
+                        "id": "2042b64b",
+                        "name": "焼いたベーコン",
+                        "utensil_interactions_list": [
+                            {
+                                "source_state_id": "2",
+                                "vessel": [
+                                    "まな板",
+                                    "フライパン（蓋付き）",
+                                    "ボウル"
+                                ],
+                                "tools": [
+                                    "包丁"
+                                ]
+                            }
+                        ],
+                        "final_position": "ボウル"
+                    },
+                    {
+                        "id": "c6c6c445",
+                        "name": "切ったトマト",
+                        "utensil_interactions_list": [
+                            {
+                                "source_state_id": "3",
+                                "vessel": [
+                                    "まな板"
+                                ],
+                                "tools": [
+                                    "包丁"
+                                ]
+                            }
+                        ],
+                        "final_position": "まな板"
+                    },
+                    {
+                        "id": "813e899d",
+                        "name": "折りたたんだレタス",
+                        "utensil_interactions_list": [
+                            {
+                                "source_state_id": "4",
+                                "vessel": [
+                                    "バット"
+                                ],
+                                "tools": [
+                                    "道具不使用"
+                                ]
+                            }
+                        ],
+                        "final_position": "バット"
+                    }
+                ]
             },
             {
                 "step_after": 2,
@@ -22983,7 +23122,8 @@
                 "step_after": 4,
                 "state_list": []
             }
-        ]
+        ],
+        "annotation_note": ""
     },
     {
         "title": "初がつおと新たまねぎの菜合わせ",
