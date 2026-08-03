@@ -23375,7 +23375,7 @@
                                 "source_state_id": "6",
                                 "vessel": [
                                     "鍋（蓋付き）",
-                                    "バット"
+                                    "ボウル-3"
                                 ],
                                 "tools": [
                                     "木製へら",
@@ -23386,7 +23386,7 @@
                                 "source_state_id": "7",
                                 "vessel": [
                                     "鍋（蓋付き）",
-                                    "バット"
+                                    "ボウル-3"
                                 ],
                                 "tools": [
                                     "木製へら",
@@ -23397,7 +23397,7 @@
                                 "source_state_id": "8",
                                 "vessel": [
                                     "鍋（蓋付き）",
-                                    "バット"
+                                    "ボウル-3"
                                 ],
                                 "tools": [
                                     "木製へら",
@@ -23408,7 +23408,7 @@
                                 "source_state_id": "9",
                                 "vessel": [
                                     "鍋（蓋付き）",
-                                    "バット"
+                                    "ボウル-3"
                                 ],
                                 "tools": [
                                     "木製へら",
@@ -23416,7 +23416,7 @@
                                 ]
                             }
                         ],
-                        "final_position": "バット"
+                        "final_position": "ボウル-3"
                     },
                     {
                         "id": "d70b4adf",
@@ -23425,8 +23425,8 @@
                             {
                                 "source_state_id": "10",
                                 "vessel": [
-                                    "ボウル-3",
-                                    "None_バット-2"
+                                    "None_ボウル-4",
+                                    "None_ボウル-5"
                                 ],
                                 "tools": [
                                     "スプーン",
@@ -23436,8 +23436,8 @@
                             {
                                 "source_state_id": "11",
                                 "vessel": [
-                                    "ボウル-3",
-                                    "None_バット-2"
+                                    "None_ボウル-4",
+                                    "None_ボウル-5"
                                 ],
                                 "tools": [
                                     "スプーン",
@@ -23447,8 +23447,8 @@
                             {
                                 "source_state_id": "12",
                                 "vessel": [
-                                    "ボウル-3",
-                                    "None_バット-2"
+                                    "None_ボウル-4",
+                                    "None_ボウル-5"
                                 ],
                                 "tools": [
                                     "スプーン",
@@ -23458,8 +23458,8 @@
                             {
                                 "source_state_id": "13",
                                 "vessel": [
-                                    "ボウル-3",
-                                    "None_バット-2"
+                                    "None_ボウル-4",
+                                    "None_ボウル-5"
                                 ],
                                 "tools": [
                                     "スプーン",
@@ -23467,7 +23467,7 @@
                                 ]
                             }
                         ],
-                        "final_position": "None_バット-2"
+                        "final_position": "None_ボウル-5"
                     }
                 ]
             },
@@ -23539,7 +23539,7 @@
                             {
                                 "source_state_id": "ecc24115",
                                 "vessel": [
-                                    "バット",
+                                    "ボウル-3",
                                     "盛り付け皿・器"
                                 ],
                                 "tools": [
@@ -23549,7 +23549,7 @@
                             {
                                 "source_state_id": "d70b4adf",
                                 "vessel": [
-                                    "None_バット-2",
+                                    "None_ボウル-5",
                                     "盛り付け皿・器"
                                 ],
                                 "tools": [
@@ -23562,7 +23562,7 @@
                 ]
             }
         ],
-        "annotation_note": "step2: 容器が紙タオル？？"
+        "annotation_note": "step2: 紙タオルで漉す方法が不明"
     },
     {
         "title": "豚肉のしょうが焼き",
