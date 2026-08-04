@@ -6764,7 +6764,7 @@
                                 ],
                                 "source_state_id_check": false,
                                 "source_state_id_comment": "",
-                                "vessel_check": false,
+                                "vessel_check": true,
                                 "vessel_comment": "",
                                 "tools_check": false,
                                 "tools_comment": ""
@@ -7036,8 +7036,8 @@
                                 "source_state_id_comment": "",
                                 "vessel_check": false,
                                 "vessel_comment": "",
-                                "tools_check": false,
-                                "tools_comment": ""
+                                "tools_check": true,
+                                "tools_comment": "ふるい\n薄くまぶすとあるので、茶こしのようなちいさなふるいが必要と思いました"
                             }
                         ],
                         "final_position": "バット",
