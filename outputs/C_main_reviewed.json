@@ -2057,8 +2057,8 @@
             }
         ],
         "annotation_note": "",
-        "reviewer_note": "",
-        "reviewed": false
+        "reviewer_note": "step3の『フライパンをサッと拭き』というのを無視していますが、step2に「フライパンに残ったもの」とstateを作り、サッと拭くというレシピを反映させるべきか迷いました。",
+        "reviewed": true
     },
     {
         "title": "ねぎの青い部分のチヂミ風",
