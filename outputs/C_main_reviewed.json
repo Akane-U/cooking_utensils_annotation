@@ -10560,8 +10560,8 @@
                                 "source_state_id_comment": "",
                                 "vessel_check": false,
                                 "vessel_comment": "",
-                                "tools_check": false,
-                                "tools_comment": ""
+                                "tools_check": true,
+                                "tools_comment": "包丁,ピーラー\nアスパラの皮むきは通常ピーラーで行うので"
                             }
                         ],
                         "final_position": "まな板",
@@ -10596,8 +10596,8 @@
                                 ],
                                 "source_state_id_check": false,
                                 "source_state_id_comment": "",
-                                "vessel_check": false,
-                                "vessel_comment": "",
+                                "vessel_check": true,
+                                "vessel_comment": "鍋（蓋付き）",
                                 "tools_check": false,
                                 "tools_comment": ""
                             },
@@ -10612,8 +10612,8 @@
                                 ],
                                 "source_state_id_check": false,
                                 "source_state_id_comment": "",
-                                "vessel_check": false,
-                                "vessel_comment": "",
+                                "vessel_check": true,
+                                "vessel_comment": "生肉・生魚用まな板, 鍋（蓋付き）",
                                 "tools_check": false,
                                 "tools_comment": ""
                             },
@@ -10628,8 +10628,8 @@
                                 ],
                                 "source_state_id_check": false,
                                 "source_state_id_comment": "",
-                                "vessel_check": false,
-                                "vessel_comment": "",
+                                "vessel_check": true,
+                                "vessel_comment": "まな板, 鍋（蓋付き）",
                                 "tools_check": false,
                                 "tools_comment": ""
                             },
@@ -10644,8 +10644,8 @@
                                 ],
                                 "source_state_id_check": false,
                                 "source_state_id_comment": "",
-                                "vessel_check": false,
-                                "vessel_comment": "",
+                                "vessel_check": true,
+                                "vessel_comment": "まな板, 鍋（蓋付き）",
                                 "tools_check": false,
                                 "tools_comment": ""
                             }
@@ -10683,8 +10683,8 @@
                                 ],
                                 "source_state_id_check": false,
                                 "source_state_id_comment": "",
-                                "vessel_check": false,
-                                "vessel_comment": "",
+                                "vessel_check": true,
+                                "vessel_comment": "鍋（蓋付き）, 盛り付け皿・器",
                                 "tools_check": false,
                                 "tools_comment": ""
                             },
@@ -10699,8 +10699,8 @@
                                 ],
                                 "source_state_id_check": false,
                                 "source_state_id_comment": "",
-                                "vessel_check": false,
-                                "vessel_comment": "",
+                                "vessel_check": true,
+                                "vessel_comment": "鍋（蓋付き）, 盛り付け皿・器",
                                 "tools_check": false,
                                 "tools_comment": ""
                             },
@@ -10715,8 +10715,8 @@
                                 ],
                                 "source_state_id_check": false,
                                 "source_state_id_comment": "",
-                                "vessel_check": false,
-                                "vessel_comment": "",
+                                "vessel_check": true,
+                                "vessel_comment": "鍋（蓋付き）, 盛り付け皿・器",
                                 "tools_check": false,
                                 "tools_comment": ""
                             },
@@ -10731,8 +10731,8 @@
                                 ],
                                 "source_state_id_check": false,
                                 "source_state_id_comment": "",
-                                "vessel_check": false,
-                                "vessel_comment": "",
+                                "vessel_check": true,
+                                "vessel_comment": "鍋（蓋付き）, 盛り付け皿・器",
                                 "tools_check": false,
                                 "tools_comment": ""
                             },
@@ -10746,8 +10746,8 @@
                                 ],
                                 "source_state_id_check": false,
                                 "source_state_id_comment": "",
-                                "vessel_check": false,
-                                "vessel_comment": "",
+                                "vessel_check": true,
+                                "vessel_comment": "鍋（蓋付き）, 盛り付け皿・器",
                                 "tools_check": false,
                                 "tools_comment": ""
                             }
@@ -10770,7 +10770,7 @@
         ],
         "annotation_note": "",
         "reviewer_note": "",
-        "reviewed": false
+        "reviewed": true
     },
     {
         "title": "鶏とそら豆の水ギョーザ",
