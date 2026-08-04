@@ -7567,7 +7567,7 @@
                                 "source_state_id_check": false,
                                 "source_state_id_comment": "",
                                 "vessel_check": true,
-                                "vessel_comment": "ボウル\n重ねずに",
+                                "vessel_comment": "ボウル\n重ねずに保管する容器としては、ボウルというルールのため",
                                 "tools_check": false,
                                 "tools_comment": ""
                             }
@@ -7596,8 +7596,8 @@
                                 ],
                                 "source_state_id_check": false,
                                 "source_state_id_comment": "",
-                                "vessel_check": false,
-                                "vessel_comment": "",
+                                "vessel_check": true,
+                                "vessel_comment": "まな板,ボウル-2,ざる\nstate1でボウルを追加したため",
                                 "tools_check": false,
                                 "tools_comment": ""
                             }
@@ -7624,8 +7624,8 @@
                                 ],
                                 "source_state_id_check": false,
                                 "source_state_id_comment": "",
-                                "vessel_check": false,
-                                "vessel_comment": "",
+                                "vessel_check": true,
+                                "vessel_comment": "ボウル-3\nstate1でボウルを追加したため",
                                 "tools_check": false,
                                 "tools_comment": ""
                             },
@@ -7639,8 +7639,8 @@
                                 ],
                                 "source_state_id_check": false,
                                 "source_state_id_comment": "",
-                                "vessel_check": false,
-                                "vessel_comment": "",
+                                "vessel_check": true,
+                                "vessel_comment": "ボウル-3\nstate1でボウルを追加したため",
                                 "tools_check": false,
                                 "tools_comment": ""
                             },
@@ -7654,8 +7654,8 @@
                                 ],
                                 "source_state_id_check": false,
                                 "source_state_id_comment": "",
-                                "vessel_check": false,
-                                "vessel_comment": "",
+                                "vessel_check": true,
+                                "vessel_comment": "ボウル-3\nstate1でボウルを追加したため",
                                 "tools_check": false,
                                 "tools_comment": ""
                             },
@@ -7669,8 +7669,8 @@
                                 ],
                                 "source_state_id_check": false,
                                 "source_state_id_comment": "",
-                                "vessel_check": false,
-                                "vessel_comment": "",
+                                "vessel_check": true,
+                                "vessel_comment": "ボウル-3\nstate1でボウルを追加したため",
                                 "tools_check": false,
                                 "tools_comment": ""
                             },
@@ -7684,8 +7684,8 @@
                                 ],
                                 "source_state_id_check": false,
                                 "source_state_id_comment": "",
-                                "vessel_check": false,
-                                "vessel_comment": "",
+                                "vessel_check": true,
+                                "vessel_comment": "ボウル-3\nstate1でボウルを追加したため",
                                 "tools_check": false,
                                 "tools_comment": ""
                             }
