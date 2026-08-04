@@ -10343,8 +10343,8 @@
             }
         ],
         "annotation_note": "",
-        "reviewer_note": "",
-        "reviewed": false
+        "reviewer_note": "step1はスライサーの場合にしています。",
+        "reviewed": true
     },
     {
         "title": "鶏肉とアスパラのトマトスープ",
