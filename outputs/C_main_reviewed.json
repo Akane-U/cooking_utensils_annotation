@@ -1798,7 +1798,7 @@
             }
         ],
         "annotation_note": "",
-        "reviewer_note": "",
+        "reviewer_note": "step3の「２のフライパンをサッと拭き」を反映するために、step2にstate「フライパンに残ったもの」を追加するか迷いましたが、それは追加せずに、サッと拭くという文言は無視しました。",
         "reviewed": true
     },
     {
