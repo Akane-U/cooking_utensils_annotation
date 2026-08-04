@@ -13063,8 +13063,8 @@
                                 "source_state_id_comment": "",
                                 "vessel_check": false,
                                 "vessel_comment": "",
-                                "tools_check": false,
-                                "tools_comment": ""
+                                "tools_check": true,
+                                "tools_comment": "たこ糸,ラップフィルム, トング\nたこ糸はstep2からそのまま使用しているため。おおきな塊のため上下を返すにはトングの方が適していると思いました。"
                             }
                         ],
                         "final_position": "ボウル",
@@ -13130,8 +13130,8 @@
                                 "source_state_id_comment": "",
                                 "vessel_check": false,
                                 "vessel_comment": "",
-                                "tools_check": false,
-                                "tools_comment": ""
+                                "tools_check": true,
+                                "tools_comment": "トング\ntep3からそのまま使用（おおきな塊のため上下を返すにはトングの方が適していると思いました。）"
                             },
                             {
                                 "source_state_id": "366d9ad1",
@@ -13147,8 +13147,8 @@
                                 "source_state_id_comment": "",
                                 "vessel_check": false,
                                 "vessel_comment": "",
-                                "tools_check": false,
-                                "tools_comment": ""
+                                "tools_check": true,
+                                "tools_comment": "トング\ntep3からそのまま使用（おおきな塊のため上下を返すにはトングの方が適していると思いました。）"
                             }
                         ],
                         "final_position": "ボウル-2",
@@ -13186,8 +13186,8 @@
                                 "source_state_id_comment": "",
                                 "vessel_check": false,
                                 "vessel_comment": "",
-                                "tools_check": false,
-                                "tools_comment": ""
+                                "tools_check": true,
+                                "tools_comment": "木製へら\nブロッコリーは刻んであるため、そのほうが適していると思いました"
                             },
                             {
                                 "source_state_id": "4",
@@ -13203,8 +13203,8 @@
                                 "source_state_id_comment": "",
                                 "vessel_check": false,
                                 "vessel_comment": "",
-                                "tools_check": false,
-                                "tools_comment": ""
+                                "tools_check": true,
+                                "tools_comment": "木製へら\nブロッコリーは刻んであるため、そのほうが適していると思いました"
                             },
                             {
                                 "source_state_id": "6",
@@ -13218,8 +13218,8 @@
                                 "source_state_id_comment": "",
                                 "vessel_check": false,
                                 "vessel_comment": "",
-                                "tools_check": false,
-                                "tools_comment": ""
+                                "tools_check": true,
+                                "tools_comment": "木製へら\nブロッコリーは刻んであるため、そのほうが適していると思いました"
                             }
                         ],
                         "final_position": "フライパン（蓋付き）",
@@ -13259,8 +13259,8 @@
                                 "source_state_id_comment": "",
                                 "vessel_check": false,
                                 "vessel_comment": "",
-                                "tools_check": false,
-                                "tools_comment": ""
+                                "tools_check": true,
+                                "tools_comment": "トング,包丁,菜箸\nまな板にはトングで運び、飾りつけは菜箸がよいと思ったため"
                             },
                             {
                                 "source_state_id": "6b27b214",
@@ -13275,8 +13275,8 @@
                                 "source_state_id_comment": "",
                                 "vessel_check": false,
                                 "vessel_comment": "",
-                                "tools_check": false,
-                                "tools_comment": ""
+                                "tools_check": true,
+                                "tools_comment": "木製へら\nstep5で使用した木製へらをそのまま使用したほうがよいと思ったため"
                             },
                             {
                                 "source_state_id": "5",
@@ -13312,7 +13312,7 @@
         ],
         "annotation_note": "step3: ラップは接しているか不明だが記入済（他のレシピも確認）\nstep5: 肉汁は記入",
         "reviewer_note": "",
-        "reviewed": false
+        "reviewed": true
     },
     {
         "title": "トマトと豆腐の和風サラダ",
