@@ -3775,8 +3775,8 @@
                                 "source_state_id_comment": "",
                                 "vessel_check": false,
                                 "vessel_comment": "",
-                                "tools_check": false,
-                                "tools_comment": ""
+                                "tools_check": true,
+                                "tools_comment": "菜箸\n注ぐ際にstep1の菜箸をそのまま使用したほうが自然と感じたので"
                             }
                         ],
                         "final_position": "盛り付け皿・器",
