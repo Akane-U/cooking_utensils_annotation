@@ -12185,8 +12185,8 @@
                                 ],
                                 "source_state_id_check": false,
                                 "source_state_id_comment": "",
-                                "vessel_check": false,
-                                "vessel_comment": "",
+                                "vessel_check": true,
+                                "vessel_comment": "フライパン（蓋付き）, ボウル-2\nボウルはたまねぎで使用しており、2個目なので",
                                 "tools_check": false,
                                 "tools_comment": ""
                             },
@@ -12202,8 +12202,8 @@
                                 ],
                                 "source_state_id_check": false,
                                 "source_state_id_comment": "",
-                                "vessel_check": false,
-                                "vessel_comment": "",
+                                "vessel_check": true,
+                                "vessel_comment": "フライパン（蓋付き）, ボウル-2\nボウルはたまねぎで使用しており、2個目なので",
                                 "tools_check": false,
                                 "tools_comment": ""
                             }
@@ -12243,8 +12243,8 @@
                                 "source_state_id_comment": "",
                                 "vessel_check": false,
                                 "vessel_comment": "",
-                                "tools_check": false,
-                                "tools_comment": ""
+                                "tools_check": true,
+                                "tools_comment": "木製へら\n野菜や肉が中心のため、木製へらの方が適していると思うため"
                             },
                             {
                                 "source_state_id": "3",
@@ -12258,8 +12258,8 @@
                                 "source_state_id_comment": "",
                                 "vessel_check": false,
                                 "vessel_comment": "",
-                                "tools_check": false,
-                                "tools_comment": ""
+                                "tools_check": true,
+                                "tools_comment": "木製へら\n野菜や肉が中心のため、木製へらの方が適していると思うため"
                             },
                             {
                                 "source_state_id": "4",
@@ -12273,8 +12273,8 @@
                                 "source_state_id_comment": "",
                                 "vessel_check": false,
                                 "vessel_comment": "",
-                                "tools_check": false,
-                                "tools_comment": ""
+                                "tools_check": true,
+                                "tools_comment": "木製へら\n野菜や肉が中心のため、木製へらの方が適していると思うため"
                             },
                             {
                                 "source_state_id": "5",
@@ -12288,8 +12288,8 @@
                                 "source_state_id_comment": "",
                                 "vessel_check": false,
                                 "vessel_comment": "",
-                                "tools_check": false,
-                                "tools_comment": ""
+                                "tools_check": true,
+                                "tools_comment": "木製へら\n野菜や肉が中心のため、木製へらの方が適していると思うため"
                             },
                             {
                                 "source_state_id": "6",
@@ -12303,8 +12303,8 @@
                                 "source_state_id_comment": "",
                                 "vessel_check": false,
                                 "vessel_comment": "",
-                                "tools_check": false,
-                                "tools_comment": ""
+                                "tools_check": true,
+                                "tools_comment": "木製へら\n野菜や肉が中心のため、木製へらの方が適していると思うため"
                             },
                             {
                                 "source_state_id": "00c6bb65",
@@ -12317,10 +12317,10 @@
                                 ],
                                 "source_state_id_check": false,
                                 "source_state_id_comment": "",
-                                "vessel_check": false,
-                                "vessel_comment": "",
-                                "tools_check": false,
-                                "tools_comment": ""
+                                "vessel_check": true,
+                                "vessel_comment": "ボウル-2, フライパン（蓋付き）\nボウルはたまねぎで使用しており、鶏肉が入っているものは2個目なので",
+                                "tools_check": true,
+                                "tools_comment": "木製へら\n野菜や肉が中心のため、木製へらの方が適していると思うため"
                             }
                         ],
                         "final_position": "フライパン（蓋付き）",
@@ -12358,8 +12358,8 @@
                                 "source_state_id_comment": "",
                                 "vessel_check": false,
                                 "vessel_comment": "",
-                                "tools_check": false,
-                                "tools_comment": ""
+                                "tools_check": true,
+                                "tools_comment": "木製へら\nstep3は野菜や肉が中心のため、木製へらの方が適していると思うため"
                             },
                             {
                                 "source_state_id": "c07da8b4",
@@ -12395,7 +12395,7 @@
         ],
         "annotation_note": "",
         "reviewer_note": "",
-        "reviewed": false
+        "reviewed": true
     },
     {
         "title": "キャベツと豚肉のみそ炒め",
