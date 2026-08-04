@@ -3943,8 +3943,8 @@
                                 ],
                                 "source_state_id_check": false,
                                 "source_state_id_comment": "",
-                                "vessel_check": false,
-                                "vessel_comment": "",
+                                "vessel_check": true,
+                                "vessel_comment": "バット\n工程が多いので、盛り付け皿ではなく、バットがよいと思いました",
                                 "tools_check": false,
                                 "tools_comment": ""
                             },
@@ -3958,8 +3958,8 @@
                                 ],
                                 "source_state_id_check": false,
                                 "source_state_id_comment": "",
-                                "vessel_check": false,
-                                "vessel_comment": "",
+                                "vessel_check": true,
+                                "vessel_comment": "バット\n工程が多いので、盛り付け皿ではなく、バットがよいと思いました",
                                 "tools_check": false,
                                 "tools_comment": ""
                             },
@@ -3974,8 +3974,8 @@
                                 ],
                                 "source_state_id_check": false,
                                 "source_state_id_comment": "",
-                                "vessel_check": false,
-                                "vessel_comment": "",
+                                "vessel_check": true,
+                                "vessel_comment": "まな板, バット\n工程が多いので、盛り付け皿ではなく、バットがよいと思いました",
                                 "tools_check": false,
                                 "tools_comment": ""
                             },
@@ -3990,8 +3990,8 @@
                                 ],
                                 "source_state_id_check": false,
                                 "source_state_id_comment": "",
-                                "vessel_check": false,
-                                "vessel_comment": "",
+                                "vessel_check": true,
+                                "vessel_comment": "バット\n工程が多いので、盛り付け皿ではなく、バットがよいと思いました",
                                 "tools_check": false,
                                 "tools_comment": ""
                             },
@@ -4005,8 +4005,8 @@
                                 ],
                                 "source_state_id_check": false,
                                 "source_state_id_comment": "",
-                                "vessel_check": false,
-                                "vessel_comment": "",
+                                "vessel_check": true,
+                                "vessel_comment": "バット\n工程が多いので、盛り付け皿ではなく、バットがよいと思いました",
                                 "tools_check": false,
                                 "tools_comment": ""
                             }
@@ -4044,8 +4044,8 @@
                                 ],
                                 "source_state_id_check": false,
                                 "source_state_id_comment": "",
-                                "vessel_check": false,
-                                "vessel_comment": "",
+                                "vessel_check": true,
+                                "vessel_comment": "バット,盛り付け皿・器\nバットでの作業後に盛り付け皿に移すのがよいと思いました",
                                 "tools_check": false,
                                 "tools_comment": ""
                             }
@@ -4067,8 +4067,8 @@
             }
         ],
         "annotation_note": "",
-        "reviewer_note": "",
-        "reviewed": false
+        "reviewer_note": "step3の切り分ける作業が、バット上でよいのか、まな板に移したほうがよいのか迷いましたが、なるべく容器を少なくするため、バットで切り分ける想定にしました。",
+        "reviewed": true
     },
     {
         "title": "昔ながらの堅めプリン",
