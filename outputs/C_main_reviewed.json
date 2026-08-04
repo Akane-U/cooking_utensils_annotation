@@ -3657,8 +3657,8 @@
                                 "source_state_id_comment": "",
                                 "vessel_check": false,
                                 "vessel_comment": "",
-                                "tools_check": false,
-                                "tools_comment": ""
+                                "tools_check": true,
+                                "tools_comment": "木製へら\n固体を混ぜるため、木製へらの方が適していると思いました"
                             },
                             {
                                 "source_state_id": "90d40a8b",
@@ -3673,8 +3673,8 @@
                                 "source_state_id_comment": "",
                                 "vessel_check": false,
                                 "vessel_comment": "",
-                                "tools_check": false,
-                                "tools_comment": ""
+                                "tools_check": true,
+                                "tools_comment": "木製へら\n固体を混ぜるため、木製へらの方が適していると思いました"
                             },
                             {
                                 "source_state_id": "3c42c590",
@@ -3689,8 +3689,8 @@
                                 "source_state_id_comment": "",
                                 "vessel_check": false,
                                 "vessel_comment": "",
-                                "tools_check": false,
-                                "tools_comment": ""
+                                "tools_check": true,
+                                "tools_comment": "木製へら\n固体を混ぜるため、木製へらの方が適していると思いました"
                             },
                             {
                                 "source_state_id": "d97bd143",
@@ -3705,8 +3705,8 @@
                                 "source_state_id_comment": "",
                                 "vessel_check": false,
                                 "vessel_comment": "",
-                                "tools_check": false,
-                                "tools_comment": ""
+                                "tools_check": true,
+                                "tools_comment": "木製へら\n固体を混ぜるため、木製へらの方が適していると思いました"
                             }
                         ],
                         "final_position": "フライパン（蓋付き）",
@@ -3744,8 +3744,8 @@
                                 "source_state_id_comment": "",
                                 "vessel_check": false,
                                 "vessel_comment": "",
-                                "tools_check": false,
-                                "tools_comment": ""
+                                "tools_check": true,
+                                "tools_comment": "木製へら\n固体を混ぜるため、木製へらの方が適していると思いました"
                             },
                             {
                                 "source_state_id": "8",
