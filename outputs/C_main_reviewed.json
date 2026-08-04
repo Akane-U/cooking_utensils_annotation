@@ -6053,8 +6053,8 @@
                                 ],
                                 "source_state_id_check": false,
                                 "source_state_id_comment": "",
-                                "vessel_check": false,
-                                "vessel_comment": "",
+                                "vessel_check": true,
+                                "vessel_comment": "まな板,鍋（蓋付き）\n切ったしいたけはまな板からそのまま入れるのでボウルは不要",
                                 "tools_check": false,
                                 "tools_comment": ""
                             },
@@ -6211,7 +6211,7 @@
         ],
         "annotation_note": "",
         "reviewer_note": "",
-        "reviewed": false
+        "reviewed": true
     },
     {
         "title": "れんこんグラタン",
