@@ -7391,8 +7391,8 @@
                                 ],
                                 "source_state_id_check": false,
                                 "source_state_id_comment": "",
-                                "vessel_check": false,
-                                "vessel_comment": "",
+                                "vessel_check": true,
+                                "vessel_comment": "バット,まな板\nstep1で肉ダネの最終容器はバットなので",
                                 "tools_check": false,
                                 "tools_comment": ""
                             }
@@ -7473,7 +7473,7 @@
         ],
         "annotation_note": "",
         "reviewer_note": "",
-        "reviewed": false
+        "reviewed": true
     },
     {
         "title": "みそチャーシュー",
