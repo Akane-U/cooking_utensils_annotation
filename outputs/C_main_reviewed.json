@@ -5683,8 +5683,8 @@
                                 "source_state_id_comment": "",
                                 "vessel_check": false,
                                 "vessel_comment": "",
-                                "tools_check": false,
-                                "tools_comment": ""
+                                "tools_check": true,
+                                "tools_comment": "串,菜箸\nレシピで「時々上下を返しながら」とあるので、菜箸のほうが最適だと思いました。"
                             },
                             {
                                 "source_state_id": "7",
@@ -5699,8 +5699,8 @@
                                 "source_state_id_comment": "",
                                 "vessel_check": false,
                                 "vessel_comment": "",
-                                "tools_check": false,
-                                "tools_comment": ""
+                                "tools_check": true,
+                                "tools_comment": "菜箸\nレシピで「時々上下を返しながら」とあるので、菜箸のほうが最適だと思いました。"
                             },
                             {
                                 "source_state_id": "8",
@@ -5715,8 +5715,8 @@
                                 "source_state_id_comment": "",
                                 "vessel_check": false,
                                 "vessel_comment": "",
-                                "tools_check": false,
-                                "tools_comment": ""
+                                "tools_check": true,
+                                "tools_comment": "菜箸\nレシピで「時々上下を返しながら」とあるので、菜箸のほうが最適だと思いました。"
                             },
                             {
                                 "source_state_id": "9",
@@ -5753,7 +5753,7 @@
         ],
         "annotation_note": "step3: ゴムべらで煮るのが適切か不明",
         "reviewer_note": "",
-        "reviewed": false
+        "reviewed": true
     },
     {
         "title": "豚肉とスナップえんどうのサンラータン風",
