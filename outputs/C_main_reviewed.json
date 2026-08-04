@@ -6765,7 +6765,7 @@
                                 "source_state_id_check": false,
                                 "source_state_id_comment": "",
                                 "vessel_check": true,
-                                "vessel_comment": "",
+                                "vessel_comment": "ざる,まな板\n水切りにざるが必要だと思いました",
                                 "tools_check": false,
                                 "tools_comment": ""
                             }
@@ -7566,8 +7566,8 @@
                                 ],
                                 "source_state_id_check": false,
                                 "source_state_id_comment": "",
-                                "vessel_check": false,
-                                "vessel_comment": "",
+                                "vessel_check": true,
+                                "vessel_comment": "ボウル\n重ねずに",
                                 "tools_check": false,
                                 "tools_comment": ""
                             }
