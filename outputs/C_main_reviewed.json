@@ -9981,8 +9981,8 @@
                                 "source_state_id_comment": "",
                                 "vessel_check": false,
                                 "vessel_comment": "",
-                                "tools_check": false,
-                                "tools_comment": ""
+                                "tools_check": true,
+                                "tools_comment": "菜箸,串, 落とし蓋\nstep2の菜箸をそのまま使用すれば、木製へらは不要だと思ったため"
                             },
                             {
                                 "source_state_id": "817b96b7",
@@ -10000,8 +10000,8 @@
                                 "source_state_id_comment": "",
                                 "vessel_check": false,
                                 "vessel_comment": "",
-                                "tools_check": false,
-                                "tools_comment": ""
+                                "tools_check": true,
+                                "tools_comment": "菜箸,串, 落とし蓋\nstep2の菜箸をそのまま使用すれば、木製へらは不要だと思ったため"
                             },
                             {
                                 "source_state_id": "11c946a5",
@@ -10019,8 +10019,8 @@
                                 "source_state_id_comment": "",
                                 "vessel_check": false,
                                 "vessel_comment": "",
-                                "tools_check": false,
-                                "tools_comment": ""
+                                "tools_check": true,
+                                "tools_comment": "菜箸,串, 落とし蓋\nstep2の菜箸をそのまま使用すれば、木製へらは不要だと思ったため"
                             },
                             {
                                 "source_state_id": "4",
@@ -10037,8 +10037,8 @@
                                 "source_state_id_comment": "",
                                 "vessel_check": false,
                                 "vessel_comment": "",
-                                "tools_check": false,
-                                "tools_comment": ""
+                                "tools_check": true,
+                                "tools_comment": "菜箸,串, 落とし蓋\nstep2の菜箸をそのまま使用すれば、木製へらは不要だと思ったため"
                             },
                             {
                                 "source_state_id": "5",
@@ -10055,8 +10055,8 @@
                                 "source_state_id_comment": "",
                                 "vessel_check": false,
                                 "vessel_comment": "",
-                                "tools_check": false,
-                                "tools_comment": ""
+                                "tools_check": true,
+                                "tools_comment": "菜箸,串, 落とし蓋\nstep2の菜箸をそのまま使用すれば、木製へらは不要だと思ったため"
                             },
                             {
                                 "source_state_id": "6",
@@ -10073,8 +10073,8 @@
                                 "source_state_id_comment": "",
                                 "vessel_check": false,
                                 "vessel_comment": "",
-                                "tools_check": false,
-                                "tools_comment": ""
+                                "tools_check": true,
+                                "tools_comment": "菜箸,串, 落とし蓋\nstep2の菜箸をそのまま使用すれば、木製へらは不要だと思ったため"
                             }
                         ],
                         "final_position": "盛り付け皿・器",
