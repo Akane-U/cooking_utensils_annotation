@@ -7986,7 +7986,7 @@
                                 "source_state_id_check": false,
                                 "source_state_id_comment": "",
                                 "vessel_check": true,
-                                "vessel_comment": "バット-1, 盛り付け皿・器\nstep1state1でバットをボウルに変更したため、step3の最終容器はバット-1,",
+                                "vessel_comment": "バット-1, まな板,盛り付け皿・器\nstep1state1でバットをボウルに変更したため、step3の最終容器はバット-1になっています。また、肉を切るのにまな板が必要と考えました。",
                                 "tools_check": false,
                                 "tools_comment": ""
                             },
