@@ -3058,8 +3058,8 @@
             }
         ],
         "annotation_note": "step3: step2と同じフライパンを使用すると手順に書かれていないが、使用材料が一部被っている（たまねぎ）ため再利用した",
-        "reviewer_note": "",
-        "reviewed": false
+        "reviewer_note": "Step3のフライパンは『フライパン-２』とすることができるが、step2と同じフライパンで問題なさそうなので、そのままにしました。",
+        "reviewed": true
     },
     {
         "title": "春キャベツのスープ",
