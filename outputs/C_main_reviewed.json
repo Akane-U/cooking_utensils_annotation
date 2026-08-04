@@ -4281,7 +4281,7 @@
                                 "vessel_check": false,
                                 "vessel_comment": "",
                                 "tools_check": true,
-                                "tools_comment": "泡だて器\n鍋は温めだけなので混ぜるものは必要なく、２はもともと泡だて器を使っていたのでそのまま混ぜる道具として使用"
+                                "tools_comment": "泡だて器\n鍋は温めだけなので混ぜるものは必要なく、２はもともと泡だて器を使っていたのでそのまま混ぜる道具として使用したほうが自然と感じたので"
                             },
                             {
                                 "source_state_id": "5d8acf64",
@@ -4298,7 +4298,7 @@
                                 "vessel_check": false,
                                 "vessel_comment": "",
                                 "tools_check": true,
-                                "tools_comment": "泡だて器\n２はもともと泡だて器を使っていたのでそのまま混ぜる道具として使用"
+                                "tools_comment": "泡だて器\n２はもともと泡だて器を使っていたのでそのまま混ぜる道具として使用したほうが自然と感じたので"
                             }
                         ],
                         "final_position": "ボウル-2",
