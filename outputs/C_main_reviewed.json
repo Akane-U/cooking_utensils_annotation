@@ -4359,8 +4359,8 @@
                                 "source_state_id_comment": "",
                                 "vessel_check": false,
                                 "vessel_comment": "",
-                                "tools_check": false,
-                                "tools_comment": ""
+                                "tools_check": true,
+                                "tools_comment": "菜箸\n不使用でもよいが、step1で使用したものをそのまま使用するのが自然と思いました。"
                             }
                         ],
                         "final_position": "盛り付け皿・器",
