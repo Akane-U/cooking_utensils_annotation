@@ -6314,8 +6314,8 @@
                                 ],
                                 "source_state_id_check": false,
                                 "source_state_id_comment": "",
-                                "vessel_check": false,
-                                "vessel_comment": "",
+                                "vessel_check": true,
+                                "vessel_comment": "ボウル, ざる\nざるに上げる際に接触すると思うので",
                                 "tools_check": false,
                                 "tools_comment": ""
                             }
@@ -6495,10 +6495,10 @@
                                 ],
                                 "source_state_id_check": false,
                                 "source_state_id_comment": "",
-                                "vessel_check": false,
-                                "vessel_comment": "",
-                                "tools_check": false,
-                                "tools_comment": ""
+                                "vessel_check": true,
+                                "vessel_comment": "ざる,ボウル-3, 盛り付け皿・器\nstep1の最終容器はざる。ボウル3を使い野菜とハムを混ぜ合わせる",
+                                "tools_check": true,
+                                "tools_comment": "スプーン\nボウル３で野菜とハムを混ぜ合わせるのに使用するため"
                             },
                             {
                                 "source_state_id": "cf233f29",
@@ -6511,10 +6511,10 @@
                                 ],
                                 "source_state_id_check": false,
                                 "source_state_id_comment": "",
-                                "vessel_check": false,
-                                "vessel_comment": "",
-                                "tools_check": false,
-                                "tools_comment": ""
+                                "vessel_check": true,
+                                "vessel_comment": "まな板,ボウル-3,  盛り付け皿・器\nボウル3を使い野菜とハムを混ぜ合わせる",
+                                "tools_check": true,
+                                "tools_comment": "スプーン\nボウル３で野菜とハムを混ぜ合わせるのに使用するため"
                             },
                             {
                                 "source_state_id": "73c7ce7e",
@@ -6527,10 +6527,10 @@
                                 ],
                                 "source_state_id_check": false,
                                 "source_state_id_comment": "",
-                                "vessel_check": false,
-                                "vessel_comment": "",
-                                "tools_check": false,
-                                "tools_comment": ""
+                                "vessel_check": true,
+                                "vessel_comment": "まな板,ボウル-3,  盛り付け皿・器\nボウル3を使い野菜とハムを混ぜ合わせる",
+                                "tools_check": true,
+                                "tools_comment": "スプーン\nボウル３で野菜とハムを混ぜ合わせるのに使用するため"
                             },
                             {
                                 "source_state_id": "07852315",
@@ -6543,10 +6543,10 @@
                                 ],
                                 "source_state_id_check": false,
                                 "source_state_id_comment": "",
-                                "vessel_check": false,
-                                "vessel_comment": "",
-                                "tools_check": false,
-                                "tools_comment": ""
+                                "vessel_check": true,
+                                "vessel_comment": "まな板,ボウル-3,  盛り付け皿・器\nボウル3を使い野菜とハムを混ぜ合わせる",
+                                "tools_check": true,
+                                "tools_comment": "スプーン\nボウル３で野菜とハムを混ぜ合わせるのに使用するため"
                             },
                             {
                                 "source_state_id": "372bfeb2",
@@ -6561,8 +6561,8 @@
                                 "source_state_id_comment": "",
                                 "vessel_check": false,
                                 "vessel_comment": "",
-                                "tools_check": false,
-                                "tools_comment": ""
+                                "tools_check": true,
+                                "tools_comment": "スプーン\nstep1で使用したスプーンをそのまま使用するのが自然なので"
                             }
                         ],
                         "final_position": "盛り付け皿・器",
