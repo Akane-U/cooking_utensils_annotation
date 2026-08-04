@@ -201,8 +201,8 @@
                                 "source_state_id_comment": "",
                                 "vessel_check": false,
                                 "vessel_comment": "",
-                                "tools_check": false,
-                                "tools_comment": ""
+                                "tools_check": true,
+                                "tools_comment": "網目の粗い網杓子\n煮汁を取り出すときに接触する"
                             }
                         ],
                         "final_position": "鍋（蓋付き）",
