@@ -7597,7 +7597,7 @@
                                 "source_state_id_check": false,
                                 "source_state_id_comment": "",
                                 "vessel_check": true,
-                                "vessel_comment": "まな板,ボウル-2,ざる\nstate1でボウルを追加したため",
+                                "vessel_comment": "まな板,ボウル-2,ざる\nstate1でバットではなくボウルに変更したため",
                                 "tools_check": false,
                                 "tools_comment": ""
                             }
@@ -7625,7 +7625,7 @@
                                 "source_state_id_check": false,
                                 "source_state_id_comment": "",
                                 "vessel_check": true,
-                                "vessel_comment": "ボウル-3\nstate1でボウルを追加したため",
+                                "vessel_comment": "ボウル-3\nstate1でバットではなくボウルに変更したため",
                                 "tools_check": false,
                                 "tools_comment": ""
                             },
@@ -7640,7 +7640,7 @@
                                 "source_state_id_check": false,
                                 "source_state_id_comment": "",
                                 "vessel_check": true,
-                                "vessel_comment": "ボウル-3\nstate1でボウルを追加したため",
+                                "vessel_comment": "ボウル-3\nstate1でバットではなくボウルに変更したため",
                                 "tools_check": false,
                                 "tools_comment": ""
                             },
@@ -7655,7 +7655,7 @@
                                 "source_state_id_check": false,
                                 "source_state_id_comment": "",
                                 "vessel_check": true,
-                                "vessel_comment": "ボウル-3\nstate1でボウルを追加したため",
+                                "vessel_comment": "ボウル-3\nstate1でバットではなくボウルに変更したため",
                                 "tools_check": false,
                                 "tools_comment": ""
                             },
@@ -7670,7 +7670,7 @@
                                 "source_state_id_check": false,
                                 "source_state_id_comment": "",
                                 "vessel_check": true,
-                                "vessel_comment": "ボウル-3\nstate1でボウルを追加したため",
+                                "vessel_comment": "ボウル-3\nstate1でバットではなくボウルに変更したため",
                                 "tools_check": false,
                                 "tools_comment": ""
                             },
@@ -7685,7 +7685,7 @@
                                 "source_state_id_check": false,
                                 "source_state_id_comment": "",
                                 "vessel_check": true,
-                                "vessel_comment": "ボウル-3\nstate1でボウルを追加したため",
+                                "vessel_comment": "ボウル-3\nstate1でバットではなくボウルに変更したため",
                                 "tools_check": false,
                                 "tools_comment": ""
                             }
@@ -7725,8 +7725,8 @@
                                 ],
                                 "source_state_id_check": false,
                                 "source_state_id_comment": "",
-                                "vessel_check": false,
-                                "vessel_comment": "",
+                                "vessel_check": true,
+                                "vessel_comment": "フライパン（蓋付き）, ボウル-4, ざる-2\nstep1state1でバットをボウルに変更したため",
                                 "tools_check": false,
                                 "tools_comment": ""
                             },
@@ -7744,8 +7744,8 @@
                                 ],
                                 "source_state_id_check": false,
                                 "source_state_id_comment": "",
-                                "vessel_check": false,
-                                "vessel_comment": "",
+                                "vessel_check": true,
+                                "vessel_comment": "ボウル, フライパン（蓋付き）, ボウル-4, ざる-2\nstep1state1でバットをボウルに変更したため",
                                 "tools_check": false,
                                 "tools_comment": ""
                             }
@@ -7845,8 +7845,8 @@
                                 "source_state_id_comment": "",
                                 "vessel_check": false,
                                 "vessel_comment": "",
-                                "tools_check": false,
-                                "tools_comment": ""
+                                "tools_check": true,
+                                "tools_comment": "菜箸, 落とし蓋\n菜箸も使用するほうが自然なので"
                             },
                             {
                                 "source_state_id": "11",
@@ -7860,8 +7860,8 @@
                                 "source_state_id_comment": "",
                                 "vessel_check": false,
                                 "vessel_comment": "",
-                                "tools_check": false,
-                                "tools_comment": ""
+                                "tools_check": true,
+                                "tools_comment": "菜箸, 落とし蓋\n菜箸も使用するほうが自然なので"
                             }
                         ],
                         "final_position": "フライパン（蓋付き）",
@@ -7898,10 +7898,10 @@
                                 ],
                                 "source_state_id_check": false,
                                 "source_state_id_comment": "",
-                                "vessel_check": false,
-                                "vessel_comment": "",
-                                "tools_check": false,
-                                "tools_comment": ""
+                                "vessel_check": true,
+                                "vessel_comment": "フライパン（蓋付き）, バット-1\nstep1state1でバットをボウルに変更したため",
+                                "tools_check": true,
+                                "tools_comment": "菜箸,フライ返し, アルミホイル\nねぎを除くのに菜箸が必要なため"
                             },
                             {
                                 "source_state_id": "adc8311a",
@@ -7917,8 +7917,8 @@
                                 ],
                                 "source_state_id_check": false,
                                 "source_state_id_comment": "",
-                                "vessel_check": false,
-                                "vessel_comment": "",
+                                "vessel_check": true,
+                                "vessel_comment": "ボウル-3, フライパン（蓋付き）, バット-1\nstep1state1でバットをボウルに変更したため",
                                 "tools_check": false,
                                 "tools_comment": ""
                             }
@@ -7985,8 +7985,8 @@
                                 ],
                                 "source_state_id_check": false,
                                 "source_state_id_comment": "",
-                                "vessel_check": false,
-                                "vessel_comment": "",
+                                "vessel_check": true,
+                                "vessel_comment": "バット-1, 盛り付け皿・器\nstep1state1でバットをボウルに変更したため、step3の最終容器はバット-1,",
                                 "tools_check": false,
                                 "tools_comment": ""
                             },
