@@ -7566,7 +7566,7 @@
                                 ],
                                 "source_state_id_check": false,
                                 "source_state_id_comment": "",
-                                "vessel_check": true,
+                                "vessel_check": false,
                                 "vessel_comment": "ボウル\n重ねずに保管する容器としては、ボウルというルールのため",
                                 "tools_check": false,
                                 "tools_comment": ""
@@ -7596,7 +7596,7 @@
                                 ],
                                 "source_state_id_check": false,
                                 "source_state_id_comment": "",
-                                "vessel_check": true,
+                                "vessel_check": false,
                                 "vessel_comment": "まな板,ボウル-2,ざる\nstate1でバットではなくボウルに変更したため",
                                 "tools_check": false,
                                 "tools_comment": ""
@@ -7624,7 +7624,7 @@
                                 ],
                                 "source_state_id_check": false,
                                 "source_state_id_comment": "",
-                                "vessel_check": true,
+                                "vessel_check": false,
                                 "vessel_comment": "ボウル-3\nstate1でバットではなくボウルに変更したため",
                                 "tools_check": false,
                                 "tools_comment": ""
@@ -7639,7 +7639,7 @@
                                 ],
                                 "source_state_id_check": false,
                                 "source_state_id_comment": "",
-                                "vessel_check": true,
+                                "vessel_check": false,
                                 "vessel_comment": "ボウル-3\nstate1でバットではなくボウルに変更したため",
                                 "tools_check": false,
                                 "tools_comment": ""
@@ -7654,7 +7654,7 @@
                                 ],
                                 "source_state_id_check": false,
                                 "source_state_id_comment": "",
-                                "vessel_check": true,
+                                "vessel_check": false,
                                 "vessel_comment": "ボウル-3\nstate1でバットではなくボウルに変更したため",
                                 "tools_check": false,
                                 "tools_comment": ""
@@ -7669,7 +7669,7 @@
                                 ],
                                 "source_state_id_check": false,
                                 "source_state_id_comment": "",
-                                "vessel_check": true,
+                                "vessel_check": false,
                                 "vessel_comment": "ボウル-3\nstate1でバットではなくボウルに変更したため",
                                 "tools_check": false,
                                 "tools_comment": ""
@@ -7684,7 +7684,7 @@
                                 ],
                                 "source_state_id_check": false,
                                 "source_state_id_comment": "",
-                                "vessel_check": true,
+                                "vessel_check": false,
                                 "vessel_comment": "ボウル-3\nstate1でバットではなくボウルに変更したため",
                                 "tools_check": false,
                                 "tools_comment": ""
@@ -7725,7 +7725,7 @@
                                 ],
                                 "source_state_id_check": false,
                                 "source_state_id_comment": "",
-                                "vessel_check": true,
+                                "vessel_check": false,
                                 "vessel_comment": "フライパン（蓋付き）, ボウル-4, ざる-2\nstep1state1でバットをボウルに変更したため",
                                 "tools_check": false,
                                 "tools_comment": ""
@@ -7744,7 +7744,7 @@
                                 ],
                                 "source_state_id_check": false,
                                 "source_state_id_comment": "",
-                                "vessel_check": true,
+                                "vessel_check": false,
                                 "vessel_comment": "ボウル, フライパン（蓋付き）, ボウル-4, ざる-2\nstep1state1でバットをボウルに変更したため",
                                 "tools_check": false,
                                 "tools_comment": ""
@@ -7898,7 +7898,7 @@
                                 ],
                                 "source_state_id_check": false,
                                 "source_state_id_comment": "",
-                                "vessel_check": true,
+                                "vessel_check": false,
                                 "vessel_comment": "フライパン（蓋付き）, バット-1\nstep1state1でバットをボウルに変更したため",
                                 "tools_check": true,
                                 "tools_comment": "菜箸,フライ返し, アルミホイル\nねぎを除くのに菜箸が必要なため"
@@ -7917,7 +7917,7 @@
                                 ],
                                 "source_state_id_check": false,
                                 "source_state_id_comment": "",
-                                "vessel_check": true,
+                                "vessel_check": false,
                                 "vessel_comment": "ボウル-3, フライパン（蓋付き）, バット-1\nstep1state1でバットをボウルに変更したため",
                                 "tools_check": false,
                                 "tools_comment": ""
@@ -7986,7 +7986,7 @@
                                 "source_state_id_check": false,
                                 "source_state_id_comment": "",
                                 "vessel_check": true,
-                                "vessel_comment": "バット-1, まな板,盛り付け皿・器\nstep1state1でバットをボウルに変更したため、step3の最終容器はバット-1になっています。また、肉を切るのにまな板が必要と考えました。",
+                                "vessel_comment": "バット-2, まな板,盛り付け皿・器\nstep3の最終容器はバット-2になっています。また、肉を切るのにまな板が必要と考えました。",
                                 "tools_check": false,
                                 "tools_comment": ""
                             },
@@ -8056,7 +8056,7 @@
         ],
         "annotation_note": "step2: ごま油の使用器具は記入、残った脂は記入\nstep5: 副産物の煮汁は記入",
         "reviewer_note": "",
-        "reviewed": false
+        "reviewed": true
     },
     {
         "title": "キャベツと豚肉の蒸し煮",
