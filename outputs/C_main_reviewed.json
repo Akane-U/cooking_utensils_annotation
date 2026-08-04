@@ -75,11 +75,11 @@
                         "missing_tools_comment": ""
                     }
                 ],
-                "missing_state_check": false,
-                "missing_state_name_comment": "",
-                "missing_state_source_comment": "",
-                "missing_state_vessel_comment": "",
-                "missing_state_tools_comment": ""
+                "missing_state_check": true,
+                "missing_state_name_comment": "切った油揚げ",
+                "missing_state_source_comment": "油揚げ 40g",
+                "missing_state_vessel_comment": "まな板",
+                "missing_state_tools_comment": "包丁"
             },
             {
                 "step_after": 2,
