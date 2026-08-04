@@ -473,12 +473,12 @@
                                 "tools": [
                                     "泡だて器"
                                 ],
-                                "source_state_id_check": false,
-                                "source_state_id_comment": "",
-                                "vessel_check": false,
-                                "vessel_comment": "",
-                                "tools_check": false,
-                                "tools_comment": ""
+                                "source_state_id_check": true,
+                                "source_state_id_comment": "不要",
+                                "vessel_check": true,
+                                "vessel_comment": "不要",
+                                "tools_check": true,
+                                "tools_comment": "不要"
                             }
                         ],
                         "final_position": "ボウル",
