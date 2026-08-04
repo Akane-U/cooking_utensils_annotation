@@ -256,7 +256,7 @@
                                 "source_state_id_check": true,
                                 "source_state_id_comment": "step1:切った油揚げ\n",
                                 "vessel_check": true,
-                                "vessel_comment": "まな板, 鍋（蓋付き）, ボウル\nボウルはトマトと同じボウルに入れるため",
+                                "vessel_comment": "まな板, 鍋（蓋付き）, ボウル\nstep2のトマトと同じボウルに入れるため",
                                 "tools_check": false,
                                 "tools_comment": ""
                             },
