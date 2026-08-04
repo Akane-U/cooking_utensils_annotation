@@ -478,10 +478,10 @@
                                 "tools": [
                                     "道具不使用"
                                 ],
-                                "source_state_id_check": false,
-                                "source_state_id_comment": "",
-                                "vessel_check": false,
-                                "vessel_comment": "",
+                                "source_state_id_check": true,
+                                "source_state_id_comment": " 【カラメルソース】 水 小さじ1",
+                                "vessel_check": true,
+                                "vessel_comment": "鍋（蓋付き）, 流し型",
                                 "tools_check": false,
                                 "tools_comment": ""
                             }
