@@ -4832,7 +4832,7 @@
         ],
         "annotation_note": "",
         "reviewer_note": "",
-        "reviewed": false
+        "reviewed": true
     },
     {
         "title": "フライドチキン",
@@ -4955,8 +4955,8 @@
                                 ],
                                 "source_state_id_check": false,
                                 "source_state_id_comment": "",
-                                "vessel_check": false,
-                                "vessel_comment": "",
+                                "vessel_check": true,
+                                "vessel_comment": "バット,ボウル\n手羽先をペーパータオルで水気を拭くのに、何かしら置く場所が必要なので",
                                 "tools_check": false,
                                 "tools_comment": ""
                             },
@@ -5244,8 +5244,8 @@
                                 ],
                                 "source_state_id_check": false,
                                 "source_state_id_comment": "",
-                                "vessel_check": false,
-                                "vessel_comment": "",
+                                "vessel_check": true,
+                                "vessel_comment": "ボウル, フライパン（蓋付き）, バット-2\nstep1でバットを追加したのでここはバット-2としました",
                                 "tools_check": false,
                                 "tools_comment": ""
                             }
@@ -5300,8 +5300,8 @@
                                 ],
                                 "source_state_id_check": false,
                                 "source_state_id_comment": "",
-                                "vessel_check": false,
-                                "vessel_comment": "",
+                                "vessel_check": true,
+                                "vessel_comment": "バット-2, フライパン（蓋付き）, バット-2\nstep1でバットを追加したのでここはバット-2としました",
                                 "tools_check": false,
                                 "tools_comment": ""
                             }
@@ -5372,8 +5372,8 @@
                                 ],
                                 "source_state_id_check": false,
                                 "source_state_id_comment": "",
-                                "vessel_check": false,
-                                "vessel_comment": "",
+                                "vessel_check": true,
+                                "vessel_comment": "バット-2, 盛り付け皿・器\nstep1でバットを追加したので、ここではバット-2としました",
                                 "tools_check": false,
                                 "tools_comment": ""
                             }
