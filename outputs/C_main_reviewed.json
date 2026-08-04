@@ -212,10 +212,10 @@
                                 "tools": [
                                     "おたま"
                                 ],
-                                "source_state_id_check": false,
-                                "source_state_id_comment": "",
-                                "vessel_check": false,
-                                "vessel_comment": "",
+                                "source_state_id_check": true,
+                                "source_state_id_comment": "step1：切った油揚げ",
+                                "vessel_check": true,
+                                "vessel_comment": "まな板, 鍋（蓋付き）, ボウル\n煮汁と同じボウルだから",
                                 "tools_check": false,
                                 "tools_comment": ""
                             },
@@ -270,8 +270,8 @@
                                 "source_state_id_comment": "",
                                 "vessel_check": false,
                                 "vessel_comment": "",
-                                "tools_check": false,
-                                "tools_comment": ""
+                                "tools_check": true,
+                                "tools_comment": "おたま\n網目の粗い網杓子だと煮汁が移せないため"
                             },
                             {
                                 "source_state_id": "5",
@@ -292,10 +292,10 @@
                         "final_position": "盛り付け皿・器",
                         "name_check": false,
                         "name_comment": "",
-                        "missing_interaction_check": false,
-                        "missing_source_comment": "",
-                        "missing_vessel_comment": "",
-                        "missing_tools_comment": ""
+                        "missing_interaction_check": true,
+                        "missing_source_comment": "七味とうがらし",
+                        "missing_vessel_comment": "盛り付け皿・器",
+                        "missing_tools_comment": "道具不使用"
                     }
                 ],
                 "missing_state_check": false,
