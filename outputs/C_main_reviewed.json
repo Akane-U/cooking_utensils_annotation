@@ -4731,8 +4731,8 @@
                                 "source_state_id_comment": "",
                                 "vessel_check": false,
                                 "vessel_comment": "",
-                                "tools_check": false,
-                                "tools_comment": ""
+                                "tools_check": true,
+                                "tools_comment": "菜箸\nstep2で使用している菜箸をそのまま使うことが自然なので"
                             },
                             {
                                 "source_state_id": "4",
@@ -4747,8 +4747,8 @@
                                 "source_state_id_comment": "",
                                 "vessel_check": false,
                                 "vessel_comment": "",
-                                "tools_check": false,
-                                "tools_comment": ""
+                                "tools_check": true,
+                                "tools_comment": "菜箸\nstep2で使用している菜箸をそのまま使うことが自然なので"
                             },
                             {
                                 "source_state_id": "5",
@@ -4763,8 +4763,8 @@
                                 "source_state_id_comment": "",
                                 "vessel_check": false,
                                 "vessel_comment": "",
-                                "tools_check": false,
-                                "tools_comment": ""
+                                "tools_check": true,
+                                "tools_comment": "菜箸\nstep2で使用している菜箸をそのまま使うことが自然なので"
                             },
                             {
                                 "source_state_id": "6",
@@ -4779,8 +4779,8 @@
                                 "source_state_id_comment": "",
                                 "vessel_check": false,
                                 "vessel_comment": "",
-                                "tools_check": false,
-                                "tools_comment": ""
+                                "tools_check": true,
+                                "tools_comment": "菜箸\nstep2で使用している菜箸をそのまま使うことが自然なので"
                             },
                             {
                                 "source_state_id": "7",
@@ -4795,8 +4795,8 @@
                                 "source_state_id_comment": "",
                                 "vessel_check": false,
                                 "vessel_comment": "",
-                                "tools_check": false,
-                                "tools_comment": ""
+                                "tools_check": true,
+                                "tools_comment": "菜箸\nstep2で使用している菜箸をそのまま使うことが自然なので"
                             },
                             {
                                 "source_state_id": "1a7472f6",
