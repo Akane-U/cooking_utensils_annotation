@@ -15664,8 +15664,8 @@
                                 "source_state_id_comment": "",
                                 "vessel_check": false,
                                 "vessel_comment": "",
-                                "tools_check": false,
-                                "tools_comment": ""
+                                "tools_check": true,
+                                "tools_comment": "菜箸,おたま\n昆布を取り出す作業に菜箸が必要だから。鍋を混ぜる・とろみのあるものをすくうにはおたまが適していると思うので"
                             },
                             {
                                 "source_state_id": "10",
@@ -15679,8 +15679,8 @@
                                 "source_state_id_comment": "",
                                 "vessel_check": false,
                                 "vessel_comment": "",
-                                "tools_check": false,
-                                "tools_comment": ""
+                                "tools_check": true,
+                                "tools_comment": "おたま\n鍋を混ぜる・とろみのあるものをすくうにはおたまが適していると思うので"
                             },
                             {
                                 "source_state_id": "8",
@@ -15695,8 +15695,8 @@
                                 "source_state_id_comment": "",
                                 "vessel_check": false,
                                 "vessel_comment": "",
-                                "tools_check": false,
-                                "tools_comment": ""
+                                "tools_check": true,
+                                "tools_comment": "おたま\n鍋を混ぜる・とろみのあるものをすくうにはおたまが適していると思うので"
                             },
                             {
                                 "source_state_id": "9",
@@ -15711,8 +15711,8 @@
                                 "source_state_id_comment": "",
                                 "vessel_check": false,
                                 "vessel_comment": "",
-                                "tools_check": false,
-                                "tools_comment": ""
+                                "tools_check": true,
+                                "tools_comment": "おたま\n鍋を混ぜる・とろみのあるものをすくうにはおたまが適していると思うので"
                             },
                             {
                                 "source_state_id": "57a2dd4e",
@@ -15729,8 +15729,8 @@
                                 "source_state_id_comment": "",
                                 "vessel_check": false,
                                 "vessel_comment": "",
-                                "tools_check": false,
-                                "tools_comment": ""
+                                "tools_check": true,
+                                "tools_comment": "菜箸, おたま\n鍋を混ぜる・とろみのあるものをすくうにはおたまが適していると思うので"
                             },
                             {
                                 "source_state_id": "854aa84b",
@@ -15746,8 +15746,8 @@
                                 "source_state_id_comment": "",
                                 "vessel_check": false,
                                 "vessel_comment": "",
-                                "tools_check": false,
-                                "tools_comment": ""
+                                "tools_check": true,
+                                "tools_comment": "鍋を混ぜる・とろみのあるものをすくうにはおたまが適していると思うので"
                             },
                             {
                                 "source_state_id": "1a1b3d38",
@@ -15784,7 +15784,7 @@
         ],
         "annotation_note": "",
         "reviewer_note": "",
-        "reviewed": false
+        "reviewed": true
     },
     {
         "title": "青じそつくね",
