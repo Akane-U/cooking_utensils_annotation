@@ -19127,8 +19127,8 @@
                                 ],
                                 "source_state_id_check": false,
                                 "source_state_id_comment": "",
-                                "vessel_check": false,
-                                "vessel_comment": "",
+                                "vessel_check": true,
+                                "vessel_comment": "鍋（蓋付き）, バット-2, 盛り付け皿・器\n揚げる前のバットとは別のものなので\n",
                                 "tools_check": false,
                                 "tools_comment": ""
                             },
@@ -19166,7 +19166,7 @@
         ],
         "annotation_note": "step3: 鶏肉は網杓子と接触するのを前提としている",
         "reviewer_note": "step2の「1のボウルからにんにくとしょうがを除き」では菜箸が必要ですが、どこにも入れるところがないので無視しています。",
-        "reviewed": false
+        "reviewed": true
     },
     {
         "title": "新たまナポリタン",
