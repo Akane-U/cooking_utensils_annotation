@@ -20485,8 +20485,8 @@
                                 "source_state_id_comment": "",
                                 "vessel_check": false,
                                 "vessel_comment": "",
-                                "tools_check": false,
-                                "tools_comment": ""
+                                "tools_check": true,
+                                "tools_comment": "菜箸,おたま\nとろみがあるものの盛り付けにはおたまが適していると思ったので"
                             },
                             {
                                 "source_state_id": "2",
@@ -20501,8 +20501,8 @@
                                 "source_state_id_comment": "",
                                 "vessel_check": false,
                                 "vessel_comment": "",
-                                "tools_check": false,
-                                "tools_comment": ""
+                                "tools_check": true,
+                                "tools_comment": "菜箸,おたま\nとろみがあるものの盛り付けにはおたまが適していると思ったので"
                             },
                             {
                                 "source_state_id": "4",
@@ -20517,8 +20517,8 @@
                                 "source_state_id_comment": "",
                                 "vessel_check": false,
                                 "vessel_comment": "",
-                                "tools_check": false,
-                                "tools_comment": ""
+                                "tools_check": true,
+                                "tools_comment": "菜箸,おたま\nとろみがあるものの盛り付けにはおたまが適していると思ったので"
                             },
                             {
                                 "source_state_id": "5",
@@ -20533,8 +20533,8 @@
                                 "source_state_id_comment": "",
                                 "vessel_check": false,
                                 "vessel_comment": "",
-                                "tools_check": false,
-                                "tools_comment": ""
+                                "tools_check": true,
+                                "tools_comment": "菜箸,おたま\nとろみがあるものの盛り付けにはおたまが適していると思ったので"
                             }
                         ],
                         "final_position": "盛り付け皿・器",
@@ -20555,7 +20555,7 @@
         ],
         "annotation_note": "",
         "reviewer_note": "",
-        "reviewed": false
+        "reviewed": true
     },
     {
         "title": "干し芋",
