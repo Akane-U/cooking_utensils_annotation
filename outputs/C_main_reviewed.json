@@ -32404,8 +32404,8 @@
                                 "source_state_id_comment": "",
                                 "vessel_check": false,
                                 "vessel_comment": "",
-                                "tools_check": false,
-                                "tools_comment": ""
+                                "tools_check": true,
+                                "tools_comment": "トング, 包丁，菜箸\n茹で鶏を取り出すのには大きいのでトングが適している。盛り付けは菜箸にしています。"
                             },
                             {
                                 "source_state_id": "bb83ef93",
@@ -32441,7 +32441,7 @@
             }
         ],
         "annotation_note": "",
-        "reviewer_note": "",
+        "reviewer_note": "Step 4.の「皮は好みで細切りにし、添えてもよい。」は無視しています。",
         "reviewed": false
     },
     {
