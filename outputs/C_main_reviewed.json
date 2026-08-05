@@ -25466,8 +25466,8 @@
                                 "source_state_id_comment": "",
                                 "vessel_check": false,
                                 "vessel_comment": "",
-                                "tools_check": false,
-                                "tools_comment": ""
+                                "tools_check": true,
+                                "tools_comment": "菜箸，フライ返し\n半分に折りたたむのにフライ返しが必要なので"
                             },
                             {
                                 "source_state_id": "88e2e0b0",
@@ -25483,8 +25483,8 @@
                                 "source_state_id_comment": "",
                                 "vessel_check": false,
                                 "vessel_comment": "",
-                                "tools_check": false,
-                                "tools_comment": ""
+                                "tools_check": true,
+                                "tools_comment": "菜箸，フライ返し\n半分に折りたたむのにフライ返しが必要なので"
                             },
                             {
                                 "source_state_id": "480cdd8d",
@@ -25500,8 +25500,8 @@
                                 "source_state_id_comment": "",
                                 "vessel_check": false,
                                 "vessel_comment": "",
-                                "tools_check": false,
-                                "tools_comment": ""
+                                "tools_check": true,
+                                "tools_comment": "菜箸，フライ返し\n半分に折りたたむのにフライ返しが必要なので"
                             }
                         ],
                         "final_position": "盛り付け皿・器",
