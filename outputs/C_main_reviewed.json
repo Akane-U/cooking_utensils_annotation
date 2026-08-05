@@ -32257,8 +32257,8 @@
                                 ],
                                 "source_state_id_check": false,
                                 "source_state_id_comment": "",
-                                "vessel_check": false,
-                                "vessel_comment": "",
+                                "vessel_check": true,
+                                "vessel_comment": "鍋（蓋付き）\nしょうがはここで初めて出てくるので、ボウルは必要ない。",
                                 "tools_check": false,
                                 "tools_comment": ""
                             }
