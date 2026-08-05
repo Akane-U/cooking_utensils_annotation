@@ -29702,8 +29702,8 @@
                                 "source_state_id_comment": "",
                                 "vessel_check": false,
                                 "vessel_comment": "",
-                                "tools_check": false,
-                                "tools_comment": ""
+                                "tools_check": true,
+                                "tools_comment": "菜箸,  落とし蓋\n菜箸があれば、木製へらは不要"
                             },
                             {
                                 "source_state_id": "74d79451",
@@ -29720,8 +29720,8 @@
                                 "source_state_id_comment": "",
                                 "vessel_check": false,
                                 "vessel_comment": "",
-                                "tools_check": false,
-                                "tools_comment": ""
+                                "tools_check": true,
+                                "tools_comment": "菜箸,  落とし蓋\n菜箸があれば、木製へらは不要"
                             },
                             {
                                 "source_state_id": "88658505",
@@ -29737,10 +29737,10 @@
                                 ],
                                 "source_state_id_check": false,
                                 "source_state_id_comment": "",
-                                "vessel_check": false,
-                                "vessel_comment": "",
-                                "tools_check": false,
-                                "tools_comment": ""
+                                "vessel_check": true,
+                                "vessel_comment": "まな板, 鍋（蓋付き）",
+                                "tools_check": true,
+                                "tools_comment": "菜箸,  落とし蓋\n菜箸があれば、木製へらは不要"
                             },
                             {
                                 "source_state_id": "c70b3631",
@@ -29756,8 +29756,8 @@
                                 "source_state_id_comment": "",
                                 "vessel_check": false,
                                 "vessel_comment": "",
-                                "tools_check": false,
-                                "tools_comment": ""
+                                "tools_check": true,
+                                "tools_comment": "落とし蓋\n「液体かつボウルから鍋への移動」は道具不要のルールなので"
                             },
                             {
                                 "source_state_id": "5",
@@ -29772,8 +29772,8 @@
                                 "source_state_id_comment": "",
                                 "vessel_check": false,
                                 "vessel_comment": "",
-                                "tools_check": false,
-                                "tools_comment": ""
+                                "tools_check": true,
+                                "tools_comment": "落とし蓋\n木製へらは他でも不要なので"
                             },
                             {
                                 "source_state_id": "1ef6fb96",
@@ -29789,8 +29789,8 @@
                                 "source_state_id_comment": "",
                                 "vessel_check": false,
                                 "vessel_comment": "",
-                                "tools_check": false,
-                                "tools_comment": ""
+                                "tools_check": true,
+                                "tools_comment": "落とし蓋\n「熱くない固体から鍋への移動」は道具不要のルールなので"
                             }
                         ],
                         "final_position": "鍋（蓋付き）",
@@ -29881,7 +29881,7 @@
         ],
         "annotation_note": "",
         "reviewer_note": "",
-        "reviewed": false
+        "reviewed": true
     },
     {
         "title": "焼き鳥",
