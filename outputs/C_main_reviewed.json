@@ -30958,10 +30958,10 @@
                                 ],
                                 "source_state_id_check": false,
                                 "source_state_id_comment": "",
-                                "vessel_check": false,
-                                "vessel_comment": "",
-                                "tools_check": false,
-                                "tools_comment": ""
+                                "vessel_check": true,
+                                "vessel_comment": "ボウル-4，ボウル-3\nAを混ぜる容器でボウル-4が必要",
+                                "tools_check": true,
+                                "tools_comment": "スプーン，しゃもじ\nAを混ぜる道具でボスプーンが必要"
                             },
                             {
                                 "source_state_id": "4",
@@ -30973,10 +30973,10 @@
                                 ],
                                 "source_state_id_check": false,
                                 "source_state_id_comment": "",
-                                "vessel_check": false,
-                                "vessel_comment": "",
-                                "tools_check": false,
-                                "tools_comment": ""
+                                "vessel_check": true,
+                                "vessel_comment": "ボウル-4，ボウル-3\nAを混ぜる容器でボウル-4が必要",
+                                "tools_check": true,
+                                "tools_comment": "スプーン，しゃもじ\nAを混ぜる道具でボスプーンが必要"
                             },
                             {
                                 "source_state_id": "5",
@@ -30988,10 +30988,10 @@
                                 ],
                                 "source_state_id_check": false,
                                 "source_state_id_comment": "",
-                                "vessel_check": false,
-                                "vessel_comment": "",
-                                "tools_check": false,
-                                "tools_comment": ""
+                                "vessel_check": true,
+                                "vessel_comment": "ボウル-4，ボウル-3\nAを混ぜる容器でボウル-4が必要",
+                                "tools_check": true,
+                                "tools_comment": "スプーン，しゃもじ\nAを混ぜる道具でボスプーンが必要"
                             },
                             {
                                 "source_state_id": "11",
@@ -31108,8 +31108,8 @@
                                 ],
                                 "source_state_id_check": false,
                                 "source_state_id_comment": "",
-                                "vessel_check": false,
-                                "vessel_comment": "",
+                                "vessel_check": true,
+                                "vessel_comment": "ボウル-2, 盛り付け皿・器\nstep2で残しておいたいりたまごはボウル-2に入っているため",
                                 "tools_check": false,
                                 "tools_comment": ""
                             }
@@ -31131,8 +31131,8 @@
             }
         ],
         "annotation_note": "step1: ほぐす道具が不明",
-        "reviewer_note": "",
-        "reviewed": false
+        "reviewer_note": "step3でさけや炒り卵をボウル-3に移動する際、スプーンを使わずしゃもじでよいか迷いました。",
+        "reviewed": true
     },
     {
         "title": "ぶりごぼう",
