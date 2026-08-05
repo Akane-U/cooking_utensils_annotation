@@ -32572,7 +32572,7 @@
                                 "source_state_id_check": false,
                                 "source_state_id_comment": "",
                                 "vessel_check": false,
-                                "vessel_comment": "",
+                                "vessel_comment": "まな板, ボウル\n耐熱皿は一覧にないため",
                                 "tools_check": false,
                                 "tools_comment": ""
                             }
@@ -32933,7 +32933,7 @@
             }
         ],
         "annotation_note": "step3: 直接接するのは耐熱皿のみ",
-        "reviewer_note": "Step 1は同じ耐熱皿に並べているので、stateを「白菜とほうれん草をきって並べたもの」などとして、ひとつにまとめてもよいと思いました。",
+        "reviewer_note": "「耐熱皿」は存在しませんか。\n\nStep 1は同じ耐熱皿に並べているので、stateを「白菜とほうれん草をきって並べたもの」などとして、ひとつにまとめてもよいと思いました。",
         "reviewed": true
     },
     {
