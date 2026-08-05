@@ -17309,8 +17309,8 @@
                                 "source_state_id_comment": "",
                                 "vessel_check": false,
                                 "vessel_comment": "",
-                                "tools_check": false,
-                                "tools_comment": ""
+                                "tools_check": true,
+                                "tools_comment": "スプーン, 菜箸\nフライパンで「からめる」作業は菜箸のほうが適していると思ったので"
                             },
                             {
                                 "source_state_id": "3",
@@ -17327,8 +17327,8 @@
                                 "source_state_id_comment": "",
                                 "vessel_check": false,
                                 "vessel_comment": "",
-                                "tools_check": false,
-                                "tools_comment": ""
+                                "tools_check": true,
+                                "tools_comment": "スプーン, 菜箸\nフライパンで「からめる」作業は菜箸のほうが適していると思ったので"
                             },
                             {
                                 "source_state_id": "4",
@@ -17345,8 +17345,8 @@
                                 "source_state_id_comment": "",
                                 "vessel_check": false,
                                 "vessel_comment": "",
-                                "tools_check": false,
-                                "tools_comment": ""
+                                "tools_check": true,
+                                "tools_comment": "スプーン, 菜箸\nフライパンで「からめる」作業は菜箸のほうが適していると思ったので"
                             },
                             {
                                 "source_state_id": "5",
@@ -17363,8 +17363,8 @@
                                 "source_state_id_comment": "",
                                 "vessel_check": false,
                                 "vessel_comment": "",
-                                "tools_check": false,
-                                "tools_comment": ""
+                                "tools_check": true,
+                                "tools_comment": "スプーン, 菜箸\nフライパンで「からめる」作業は菜箸のほうが適していると思ったので"
                             },
                             {
                                 "source_state_id": "8",
@@ -17379,8 +17379,8 @@
                                 "source_state_id_comment": "",
                                 "vessel_check": false,
                                 "vessel_comment": "",
-                                "tools_check": false,
-                                "tools_comment": ""
+                                "tools_check": true,
+                                "tools_comment": "菜箸\nフライパンで「からめる」作業は菜箸のほうが適していると思ったので"
                             },
                             {
                                 "source_state_id": "762fe2bb",
@@ -17396,8 +17396,8 @@
                                 "source_state_id_comment": "",
                                 "vessel_check": false,
                                 "vessel_comment": "",
-                                "tools_check": false,
-                                "tools_comment": ""
+                                "tools_check": true,
+                                "tools_comment": " 菜箸\nフライパンで「からめる」作業は菜箸のほうが適していると思ったので"
                             },
                             {
                                 "source_state_id": "9",
@@ -17447,8 +17447,8 @@
             }
         ],
         "annotation_note": "step1: ラップが接しているか不明だが記入済",
-        "reviewer_note": "",
-        "reviewed": false
+        "reviewer_note": "Step1の大根は、通常のステンレス製のバットはレンジ使用不可なのでボウルにしたが、大根を並べるにはバットのような形状が望ましいので、どちらにしたらよいか迷いました。",
+        "reviewed": true
     },
     {
         "title": "セロリバーグ",
