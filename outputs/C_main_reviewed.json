@@ -33138,8 +33138,8 @@
                                 ],
                                 "source_state_id_check": false,
                                 "source_state_id_comment": "",
-                                "vessel_check": false,
-                                "vessel_comment": "",
+                                "vessel_check": true,
+                                "vessel_comment": "ボウル-2, ざる, まな板, ざる\nさおｇｐ\n",
                                 "tools_check": false,
                                 "tools_comment": ""
                             }
@@ -33207,10 +33207,10 @@
                                 ],
                                 "source_state_id_check": false,
                                 "source_state_id_comment": "",
-                                "vessel_check": false,
-                                "vessel_comment": "",
-                                "tools_check": false,
-                                "tools_comment": ""
+                                "vessel_check": true,
+                                "vessel_comment": "ボウル-3, ボウル-4, ざる-2, ボウル-5\nざるをstep1のわかめで使用、と変更したため",
+                                "tools_check": true,
+                                "tools_comment": "菜箸\nスプーンでもよいが、のちに卵も混ぜるので、すべて菜箸ですませてよいのではと思います"
                             },
                             {
                                 "source_state_id": "3",
@@ -33225,10 +33225,10 @@
                                 ],
                                 "source_state_id_check": false,
                                 "source_state_id_comment": "",
-                                "vessel_check": false,
-                                "vessel_comment": "",
-                                "tools_check": false,
-                                "tools_comment": ""
+                                "vessel_check": true,
+                                "vessel_comment": "ボウル-3, ボウル-4, ざる-2, ボウル-5\nざるをstep1のわかめで使用、と変更したため",
+                                "tools_check": true,
+                                "tools_comment": "菜箸\nスプーンでもよいが、のちに卵も混ぜるので、すべて菜箸ですませてよいのではと思います"
                             },
                             {
                                 "source_state_id": "4",
@@ -33243,10 +33243,10 @@
                                 ],
                                 "source_state_id_check": false,
                                 "source_state_id_comment": "",
-                                "vessel_check": false,
-                                "vessel_comment": "",
-                                "tools_check": false,
-                                "tools_comment": ""
+                                "vessel_check": true,
+                                "vessel_comment": "ボウル-3, ボウル-4, ざる-2, ボウル-5\nざるをstep1のわかめで使用、と変更したため",
+                                "tools_check": true,
+                                "tools_comment": "菜箸\nスプーンでもよいが、のちに卵も混ぜるので、すべて菜箸ですませてよいのではと思います"
                             },
                             {
                                 "source_state_id": "1",
@@ -33260,10 +33260,10 @@
                                 ],
                                 "source_state_id_check": false,
                                 "source_state_id_comment": "",
-                                "vessel_check": false,
-                                "vessel_comment": "",
-                                "tools_check": false,
-                                "tools_comment": ""
+                                "vessel_check": true,
+                                "vessel_comment": "ボウル-4, ざる-2, ボウル-5\nざるをstep1のわかめで使用、と変更したため",
+                                "tools_check": true,
+                                "tools_comment": "菜箸\n卵を溶きほぐすのは菜箸が適しているので"
                             }
                         ],
                         "final_position": "ボウル-5",
