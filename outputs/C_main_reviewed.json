@@ -21096,10 +21096,10 @@
                                 ],
                                 "source_state_id_check": false,
                                 "source_state_id_comment": "",
-                                "vessel_check": false,
-                                "vessel_comment": "",
-                                "tools_check": false,
-                                "tools_comment": ""
+                                "vessel_check": true,
+                                "vessel_comment": "生肉・生魚用まな板,ボウル",
+                                "tools_check": true,
+                                "tools_comment": "包丁\n揉みこむ作業に道具は不要と考えたため"
                             },
                             {
                                 "source_state_id": "11",
@@ -21113,8 +21113,8 @@
                                 "source_state_id_comment": "",
                                 "vessel_check": false,
                                 "vessel_comment": "",
-                                "tools_check": false,
-                                "tools_comment": ""
+                                "tools_check": true,
+                                "tools_comment": "道具不使用\n揉みこむ作業に道具は不要と考えたため"
                             },
                             {
                                 "source_state_id": "12",
@@ -21128,8 +21128,8 @@
                                 "source_state_id_comment": "",
                                 "vessel_check": false,
                                 "vessel_comment": "",
-                                "tools_check": false,
-                                "tools_comment": ""
+                                "tools_check": true,
+                                "tools_comment": "道具不使用\n揉みこむ作業に道具は不要と考えたため"
                             },
                             {
                                 "source_state_id": "13",
@@ -21143,8 +21143,8 @@
                                 "source_state_id_comment": "",
                                 "vessel_check": false,
                                 "vessel_comment": "",
-                                "tools_check": false,
-                                "tools_comment": ""
+                                "tools_check": true,
+                                "tools_comment": "道具不使用\n揉みこむ作業に道具は不要と考えたため"
                             },
                             {
                                 "source_state_id": "14",
@@ -21267,8 +21267,8 @@
                                 ],
                                 "source_state_id_check": false,
                                 "source_state_id_comment": "",
-                                "vessel_check": false,
-                                "vessel_comment": "",
+                                "vessel_check": true,
+                                "vessel_comment": "鍋（蓋付き）,ボウル-2， フライパン（蓋付き）, 盛り付け皿・器\n水気を拭いた大根を一旦保管する容器が必要のため",
                                 "tools_check": false,
                                 "tools_comment": ""
                             },
@@ -21311,8 +21311,8 @@
                                 ],
                                 "source_state_id_check": false,
                                 "source_state_id_comment": "",
-                                "vessel_check": false,
-                                "vessel_comment": "",
+                                "vessel_check": true,
+                                "vessel_comment": "ボウル-3\n水気を拭いた大根の保管容器でボウルを追加したため",
                                 "tools_check": false,
                                 "tools_comment": ""
                             },
@@ -21326,8 +21326,8 @@
                                 ],
                                 "source_state_id_check": false,
                                 "source_state_id_comment": "",
-                                "vessel_check": false,
-                                "vessel_comment": "",
+                                "vessel_check": true,
+                                "vessel_comment": "ボウル-3\n水気を拭いた大根の保管容器でボウルを追加したため",
                                 "tools_check": false,
                                 "tools_comment": ""
                             },
@@ -21341,8 +21341,8 @@
                                 ],
                                 "source_state_id_check": false,
                                 "source_state_id_comment": "",
-                                "vessel_check": false,
-                                "vessel_comment": "",
+                                "vessel_check": true,
+                                "vessel_comment": "ボウル-3\n水気を拭いた大根の保管容器でボウルを追加したため",
                                 "tools_check": false,
                                 "tools_comment": ""
                             },
@@ -21356,8 +21356,8 @@
                                 ],
                                 "source_state_id_check": false,
                                 "source_state_id_comment": "",
-                                "vessel_check": false,
-                                "vessel_comment": "",
+                                "vessel_check": true,
+                                "vessel_comment": "ボウル-3\n水気を拭いた大根の保管容器でボウルを追加したため",
                                 "tools_check": false,
                                 "tools_comment": ""
                             }
@@ -21397,8 +21397,8 @@
                                 "source_state_id_comment": "",
                                 "vessel_check": false,
                                 "vessel_comment": "",
-                                "tools_check": false,
-                                "tools_comment": ""
+                                "tools_check": true,
+                                "tools_comment": "菜箸\n豚こま肉には、肉を広げたりできる菜箸が適していると思ったため"
                             },
                             {
                                 "source_state_id": "f91aa16b",
@@ -21414,8 +21414,8 @@
                                 "source_state_id_comment": "",
                                 "vessel_check": false,
                                 "vessel_comment": "",
-                                "tools_check": false,
-                                "tools_comment": ""
+                                "tools_check": true,
+                                "tools_comment": "菜箸\n豚こま肉には、肉を広げたりできる菜箸が適していると思ったため"
                             },
                             {
                                 "source_state_id": "4",
@@ -21430,8 +21430,8 @@
                                 "source_state_id_comment": "",
                                 "vessel_check": false,
                                 "vessel_comment": "",
-                                "tools_check": false,
-                                "tools_comment": ""
+                                "tools_check": true,
+                                "tools_comment": "菜箸\n豚こま肉には、肉を広げたりできる菜箸が適していると思ったため"
                             },
                             {
                                 "source_state_id": "5",
@@ -21446,8 +21446,8 @@
                                 "source_state_id_comment": "",
                                 "vessel_check": false,
                                 "vessel_comment": "",
-                                "tools_check": false,
-                                "tools_comment": ""
+                                "tools_check": true,
+                                "tools_comment": "菜箸\n豚こま肉には、肉を広げたりできる菜箸が適していると思ったため"
                             },
                             {
                                 "source_state_id": "1f0309b3",
@@ -21462,10 +21462,10 @@
                                 ],
                                 "source_state_id_check": false,
                                 "source_state_id_comment": "",
-                                "vessel_check": false,
-                                "vessel_comment": "",
-                                "tools_check": false,
-                                "tools_comment": ""
+                                "vessel_check": true,
+                                "vessel_comment": "ボウル-3, フライパン（蓋付き）, 盛り付け皿・器\nstep4でボウル-3に変更したため",
+                                "tools_check": true,
+                                "tools_comment": "スプーン, 菜箸\n豚こま肉には、肉を広げたりできる菜箸が適していると思ったため"
                             },
                             {
                                 "source_state_id": "40a29f86",
@@ -21516,8 +21516,8 @@
             }
         ],
         "annotation_note": "",
-        "reviewer_note": "",
-        "reviewed": false
+        "reviewer_note": "step5のフライパンはstep4と同じものを使用しても問題ないと判断しました",
+        "reviewed": true
     },
     {
         "title": "たいのムニエル 春キャベツのハーブ蒸し",
