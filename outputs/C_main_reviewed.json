@@ -15234,8 +15234,8 @@
                                 ],
                                 "source_state_id_check": false,
                                 "source_state_id_comment": "",
-                                "vessel_check": false,
-                                "vessel_comment": "",
+                                "vessel_check": true,
+                                "vessel_comment": "ポリ袋, 盛り付け皿・器",
                                 "tools_check": false,
                                 "tools_comment": ""
                             },
@@ -15251,8 +15251,8 @@
                                 ],
                                 "source_state_id_check": false,
                                 "source_state_id_comment": "",
-                                "vessel_check": false,
-                                "vessel_comment": "",
+                                "vessel_check": true,
+                                "vessel_comment": "ポリ袋, 盛り付け皿・器",
                                 "tools_check": false,
                                 "tools_comment": ""
                             }
