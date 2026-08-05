@@ -15026,8 +15026,8 @@
                                 "source_state_id_comment": "",
                                 "vessel_check": false,
                                 "vessel_comment": "",
-                                "tools_check": false,
-                                "tools_comment": ""
+                                "tools_check": true,
+                                "tools_comment": "しゃもじ\nご飯を盛るのに必要なので"
                             },
                             {
                                 "source_state_id": "7",
@@ -15109,7 +15109,7 @@
         ],
         "annotation_note": "",
         "reviewer_note": "",
-        "reviewed": false
+        "reviewed": true
     },
     {
         "title": "きゅうりのピリ辛漬け",
