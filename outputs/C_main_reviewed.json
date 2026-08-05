@@ -14084,9 +14084,9 @@
                                 "source_state_id_check": false,
                                 "source_state_id_comment": "",
                                 "vessel_check": false,
-                                "vessel_comment": "",
-                                "tools_check": false,
-                                "tools_comment": ""
+                                "vessel_comment": "まな板, バット-2",
+                                "tools_check": true,
+                                "tools_comment": "包丁,ピーラー\n皮をこそぐのに包丁が必要なため"
                             },
                             {
                                 "source_state_id": "3",
@@ -14100,7 +14100,7 @@
                                 "source_state_id_check": false,
                                 "source_state_id_comment": "",
                                 "vessel_check": false,
-                                "vessel_comment": "",
+                                "vessel_comment": "まな板, バット-2",
                                 "tools_check": false,
                                 "tools_comment": ""
                             },
@@ -14116,7 +14116,7 @@
                                 "source_state_id_check": false,
                                 "source_state_id_comment": "",
                                 "vessel_check": false,
-                                "vessel_comment": "",
+                                "vessel_comment": "まな板, バット-2",
                                 "tools_check": false,
                                 "tools_comment": ""
                             }
@@ -14284,8 +14284,8 @@
             }
         ],
         "annotation_note": "step3, 4: 盛り付け皿・器を複数にしている",
-        "reviewer_note": "",
-        "reviewed": false
+        "reviewer_note": "step3の野菜とぶりの器を「盛り付け皿」とするのか「バット」とするのか迷いました。（役割的にはバットに近いと思うので）",
+        "reviewed": true
     },
     {
         "title": "のり梅醤（ジャン）の豚バラ炒め",
