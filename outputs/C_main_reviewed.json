@@ -22601,8 +22601,8 @@
                                 "source_state_id_comment": "",
                                 "vessel_check": false,
                                 "vessel_comment": "",
-                                "tools_check": false,
-                                "tools_comment": ""
+                                "tools_check": true,
+                                "tools_comment": "道具不使用\n煮るだけで特に道具は必要ないと思ったので"
                             },
                             {
                                 "source_state_id": "8",
@@ -22616,8 +22616,8 @@
                                 "source_state_id_comment": "",
                                 "vessel_check": false,
                                 "vessel_comment": "",
-                                "tools_check": false,
-                                "tools_comment": ""
+                                "tools_check": true,
+                                "tools_comment": "道具不使用\n煮るだけで特に道具は必要ないと思ったので"
                             },
                             {
                                 "source_state_id": "e97c5590",
@@ -22632,8 +22632,8 @@
                                 "source_state_id_comment": "",
                                 "vessel_check": false,
                                 "vessel_comment": "",
-                                "tools_check": false,
-                                "tools_comment": ""
+                                "tools_check": true,
+                                "tools_comment": "道具不使用\n煮るだけで特に道具は必要ないと思ったので"
                             }
                         ],
                         "final_position": "フライパン（蓋付き）",
