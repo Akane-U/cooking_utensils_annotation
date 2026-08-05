@@ -31830,8 +31830,8 @@
                                 ],
                                 "source_state_id_check": false,
                                 "source_state_id_comment": "",
-                                "vessel_check": false,
-                                "vessel_comment": "",
+                                "vessel_check": true,
+                                "vessel_comment": "フライパン（蓋付き）",
                                 "tools_check": false,
                                 "tools_comment": ""
                             },
@@ -31846,8 +31846,8 @@
                                 ],
                                 "source_state_id_check": false,
                                 "source_state_id_comment": "",
-                                "vessel_check": false,
-                                "vessel_comment": "",
+                                "vessel_check": true,
+                                "vessel_comment": "まな板, フライパン（蓋付き）\nstep1でまな板を使用しているので",
                                 "tools_check": false,
                                 "tools_comment": ""
                             },
@@ -31862,8 +31862,8 @@
                                 ],
                                 "source_state_id_check": false,
                                 "source_state_id_comment": "",
-                                "vessel_check": false,
-                                "vessel_comment": "",
+                                "vessel_check": true,
+                                "vessel_comment": "生肉・生魚用まな板, フライパン（蓋付き）\nstep1で生肉・生魚用まな板を使用しているので",
                                 "tools_check": false,
                                 "tools_comment": ""
                             },
@@ -31935,8 +31935,8 @@
                                 "source_state_id_comment": "",
                                 "vessel_check": false,
                                 "vessel_comment": "",
-                                "tools_check": false,
-                                "tools_comment": ""
+                                "tools_check": true,
+                                "tools_comment": "おたま\n固体と液体があるので、おたまのほうが適している"
                             },
                             {
                                 "source_state_id": "6",
@@ -31951,8 +31951,8 @@
                                 "source_state_id_comment": "",
                                 "vessel_check": false,
                                 "vessel_comment": "",
-                                "tools_check": false,
-                                "tools_comment": ""
+                                "tools_check": true,
+                                "tools_comment": "おたま\n固体と液体があるので、おたまのほうが適している"
                             },
                             {
                                 "source_state_id": "7",
@@ -31967,8 +31967,8 @@
                                 "source_state_id_comment": "",
                                 "vessel_check": false,
                                 "vessel_comment": "",
-                                "tools_check": false,
-                                "tools_comment": ""
+                                "tools_check": true,
+                                "tools_comment": "おたま\n固体と液体があるので、おたまのほうが適している"
                             },
                             {
                                 "source_state_id": "8",
@@ -31983,8 +31983,8 @@
                                 "source_state_id_comment": "",
                                 "vessel_check": false,
                                 "vessel_comment": "",
-                                "tools_check": false,
-                                "tools_comment": ""
+                                "tools_check": true,
+                                "tools_comment": "おたま\n固体と液体があるので、おたまのほうが適している"
                             }
                         ],
                         "final_position": "盛り付け皿・器",
@@ -32005,7 +32005,7 @@
         ],
         "annotation_note": "step3: 煮込み系で盛り付け道具統一したい",
         "reviewer_note": "",
-        "reviewed": false
+        "reviewed": true
     },
     {
         "title": "ゆで鶏",
