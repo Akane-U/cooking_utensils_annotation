@@ -18725,8 +18725,8 @@
                                 "source_state_id_comment": "",
                                 "vessel_check": false,
                                 "vessel_comment": "",
-                                "tools_check": false,
-                                "tools_comment": ""
+                                "tools_check": true,
+                                "tools_comment": "菜箸,フライ返し\n具材を広げるには菜箸が適していると思ったので"
                             },
                             {
                                 "source_state_id": "464009cf",
@@ -19165,7 +19165,7 @@
             }
         ],
         "annotation_note": "step3: 鶏肉は網杓子と接触するのを前提としている",
-        "reviewer_note": "",
+        "reviewer_note": "step2の「1のボウルからにんにくとしょうがを除き」では菜箸が必要ですが、どこにも入れるところがないので無視しています。",
         "reviewed": false
     },
     {
