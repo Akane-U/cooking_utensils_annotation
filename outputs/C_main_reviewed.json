@@ -26727,8 +26727,8 @@
                                 ],
                                 "source_state_id_check": false,
                                 "source_state_id_comment": "",
-                                "vessel_check": false,
-                                "vessel_comment": "",
+                                "vessel_check": true,
+                                "vessel_comment": "まな板\n後ほど切る作業があるので、まな板上で作業するのがいいと思いました。",
                                 "tools_check": false,
                                 "tools_comment": ""
                             },
@@ -26742,9 +26742,9 @@
                                 ],
                                 "source_state_id_check": false,
                                 "source_state_id_comment": "",
-                                "vessel_check": false,
-                                "vessel_comment": "",
-                                "tools_check": false,
+                                "vessel_check": true,
+                                "vessel_comment": "まな板\n後ほど切る作業があるので、まな板上で作業するのがいいと思いました",
+                                "tools_check": true,
                                 "tools_comment": ""
                             },
                             {
@@ -26758,9 +26758,9 @@
                                 ],
                                 "source_state_id_check": false,
                                 "source_state_id_comment": "",
-                                "vessel_check": false,
-                                "vessel_comment": "",
-                                "tools_check": false,
+                                "vessel_check": true,
+                                "vessel_comment": "ボウル-2, まな板\n後ほど切る作業があるので、まな板上で作業するのがいいと思いました",
+                                "tools_check": true,
                                 "tools_comment": ""
                             },
                             {
@@ -26774,9 +26774,9 @@
                                 ],
                                 "source_state_id_check": false,
                                 "source_state_id_comment": "",
-                                "vessel_check": false,
-                                "vessel_comment": "",
-                                "tools_check": false,
+                                "vessel_check": true,
+                                "vessel_comment": "ボウル-2, まな板\n後ほど切る作業があるので、まな板上で作業するのがいいと思いました",
+                                "tools_check": true,
                                 "tools_comment": ""
                             },
                             {
@@ -26790,9 +26790,9 @@
                                 ],
                                 "source_state_id_check": false,
                                 "source_state_id_comment": "",
-                                "vessel_check": false,
-                                "vessel_comment": "",
-                                "tools_check": false,
+                                "vessel_check": true,
+                                "vessel_comment": "バット, まな板\n後ほど切る作業があるので、まな板上で作業するのがいいと思いました",
+                                "tools_check": true,
                                 "tools_comment": ""
                             }
                         ],
@@ -26851,7 +26851,7 @@
             }
         ],
         "annotation_note": "",
-        "reviewer_note": "",
+        "reviewer_note": "Step3の使用道具のラップは、食パンだけでよいのか、中の具材（バターやからし、卵焼き）には必要ないのか判断が分からず、そのままにしました。",
         "reviewed": false
     },
     {
