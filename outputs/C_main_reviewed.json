@@ -17628,8 +17628,8 @@
                                 ],
                                 "source_state_id_check": false,
                                 "source_state_id_comment": "",
-                                "vessel_check": false,
-                                "vessel_comment": "",
+                                "vessel_check": true,
+                                "vessel_comment": "ボウル,ざる\n大根の水気を切るのに必要なので\n",
                                 "tools_check": false,
                                 "tools_comment": ""
                             }
@@ -17804,8 +17804,8 @@
                                 ],
                                 "source_state_id_check": false,
                                 "source_state_id_comment": "",
-                                "vessel_check": false,
-                                "vessel_comment": "",
+                                "vessel_check": true,
+                                "vessel_comment": "バット, フライパン（蓋付き）, 盛り付け皿・器\nstep2の最終容器はバットなので",
                                 "tools_check": false,
                                 "tools_comment": ""
                             },
@@ -17820,8 +17820,8 @@
                                 ],
                                 "source_state_id_check": false,
                                 "source_state_id_comment": "",
-                                "vessel_check": false,
-                                "vessel_comment": "",
+                                "vessel_check": true,
+                                "vessel_comment": "ざる, 盛り付け皿・器\n大根の保管容器はざるに変更したので",
                                 "tools_check": false,
                                 "tools_comment": ""
                             },
@@ -17873,8 +17873,8 @@
             }
         ],
         "annotation_note": "step1: 汁けは素手で切ることを前提とした",
-        "reviewer_note": "",
-        "reviewed": false
+        "reviewer_note": "step1の大根おろしの汁気をきるのに、キッチンペーパーを使用する方法もありますが、絶対ではないのでキッチンペーパーは入れませんでした。",
+        "reviewed": true
     },
     {
         "title": "新じゃがのポタージュ",
