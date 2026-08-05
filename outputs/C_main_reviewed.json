@@ -25234,7 +25234,7 @@
                         ],
                         "final_position": "ボウル",
                         "name_check": true,
-                        "name_comment": "不要\nstate1に含むので",
+                        "name_comment": "不要\nレシピ通りだとstate1に含むので",
                         "missing_interaction_check": false,
                         "missing_source_comment": "",
                         "missing_vessel_comment": "",
@@ -25635,12 +25635,12 @@
                                 "tools": [
                                     "道具不使用"
                                 ],
-                                "source_state_id_check": false,
-                                "source_state_id_comment": "",
-                                "vessel_check": false,
-                                "vessel_comment": "",
-                                "tools_check": false,
-                                "tools_comment": ""
+                                "source_state_id_check": true,
+                                "source_state_id_comment": "step 1: 春菊とAをあえたもの\nstep1state1を変更したので",
+                                "vessel_check": true,
+                                "vessel_comment": "ボウル\nstep1state1を変更したので",
+                                "tools_check": true,
+                                "tools_comment": "菜箸\nstep1state1を変更したので"
                             }
                         ],
                         "final_position": "まな板",
