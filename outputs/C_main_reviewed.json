@@ -32601,8 +32601,8 @@
                                 ],
                                 "source_state_id_check": false,
                                 "source_state_id_comment": "",
-                                "vessel_check": false,
-                                "vessel_comment": "",
+                                "vessel_check": true,
+                                "vessel_comment": "まな板,ボウル，ざる， 耐熱皿\n水にさらし、水気をきるのにボウルとざるが必要なので\n\n",
                                 "tools_check": false,
                                 "tools_comment": ""
                             }
@@ -32862,8 +32862,8 @@
                                 ],
                                 "source_state_id_check": false,
                                 "source_state_id_comment": "",
-                                "vessel_check": false,
-                                "vessel_comment": "",
+                                "vessel_check": true,
+                                "vessel_comment": "ボウル-2, 盛り付け皿・器\nstep1のほうれん草でボウルを使用したため",
                                 "tools_check": false,
                                 "tools_comment": ""
                             },
@@ -32878,8 +32878,8 @@
                                 ],
                                 "source_state_id_check": false,
                                 "source_state_id_comment": "",
-                                "vessel_check": false,
-                                "vessel_comment": "",
+                                "vessel_check": true,
+                                "vessel_comment": "ボウル-2, 盛り付け皿・器\nstep1のほうれん草でボウルを使用したため",
                                 "tools_check": false,
                                 "tools_comment": ""
                             },
@@ -32894,8 +32894,8 @@
                                 ],
                                 "source_state_id_check": false,
                                 "source_state_id_comment": "",
-                                "vessel_check": false,
-                                "vessel_comment": "",
+                                "vessel_check": true,
+                                "vessel_comment": "ボウル-2, 盛り付け皿・器\nstep1のほうれん草でボウルを使用したため",
                                 "tools_check": false,
                                 "tools_comment": ""
                             },
@@ -32910,8 +32910,8 @@
                                 ],
                                 "source_state_id_check": false,
                                 "source_state_id_comment": "",
-                                "vessel_check": false,
-                                "vessel_comment": "",
+                                "vessel_check": true,
+                                "vessel_comment": "ボウル-2, 盛り付け皿・器\nstep1のほうれん草でボウルを使用したため",
                                 "tools_check": false,
                                 "tools_comment": ""
                             }
@@ -32933,8 +32933,8 @@
             }
         ],
         "annotation_note": "step3: 直接接するのは耐熱皿のみ",
-        "reviewer_note": "",
-        "reviewed": false
+        "reviewer_note": "Step 1は同じ耐熱皿に並べているので、stateを「白菜とほうれん草をきって並べたもの」などとして、ひとつにまとめてもよいと思いました。",
+        "reviewed": true
     },
     {
         "title": "えび、わかめ、きのこ入り茶碗蒸し",
