@@ -25153,19 +25153,19 @@
                                 ],
                                 "source_state_id_check": false,
                                 "source_state_id_comment": "",
-                                "vessel_check": false,
-                                "vessel_comment": "",
-                                "tools_check": false,
-                                "tools_comment": ""
+                                "vessel_check": true,
+                                "vessel_comment": "まな板，ボウル",
+                                "tools_check": true,
+                                "tools_comment": "包丁，スプーン"
                             }
                         ],
                         "final_position": "まな板",
-                        "name_check": false,
-                        "name_comment": "",
-                        "missing_interaction_check": false,
-                        "missing_source_comment": "",
-                        "missing_vessel_comment": "",
-                        "missing_tools_comment": ""
+                        "name_check": true,
+                        "name_comment": "春菊とAをあえたもの",
+                        "missing_interaction_check": true,
+                        "missing_source_comment": "【A】 ごま油 小さじ1\n【A】 塩 1つまみ\n【A】 にんにく（すりおろす） 少々\n【A】 白ごま 少々",
+                        "missing_vessel_comment": "ボウル\nボウル\nボウル\nボウル",
+                        "missing_tools_comment": "スプーン\nスプーン\nスプーン\nスプーン"
                     },
                     {
                         "id": "dff826db",
@@ -25179,12 +25179,12 @@
                                 "tools": [
                                     "スプーン"
                                 ],
-                                "source_state_id_check": false,
-                                "source_state_id_comment": "",
-                                "vessel_check": false,
-                                "vessel_comment": "",
-                                "tools_check": false,
-                                "tools_comment": ""
+                                "source_state_id_check": true,
+                                "source_state_id_comment": "不要\nstate1に含むので",
+                                "vessel_check": true,
+                                "vessel_comment": "不要\nstate1に含むので",
+                                "tools_check": true,
+                                "tools_comment": "不要\nstate1に含むので"
                             },
                             {
                                 "source_state_id": "5",
@@ -25194,12 +25194,12 @@
                                 "tools": [
                                     "スプーン"
                                 ],
-                                "source_state_id_check": false,
-                                "source_state_id_comment": "",
-                                "vessel_check": false,
-                                "vessel_comment": "",
-                                "tools_check": false,
-                                "tools_comment": ""
+                                "source_state_id_check": true,
+                                "source_state_id_comment": "不要\nstate1に含むので",
+                                "vessel_check": true,
+                                "vessel_comment": "不要\nstate1に含むので",
+                                "tools_check": true,
+                                "tools_comment": "不要\nstate1に含むので"
                             },
                             {
                                 "source_state_id": "6",
@@ -25209,12 +25209,12 @@
                                 "tools": [
                                     "スプーン"
                                 ],
-                                "source_state_id_check": false,
-                                "source_state_id_comment": "",
-                                "vessel_check": false,
-                                "vessel_comment": "",
-                                "tools_check": false,
-                                "tools_comment": ""
+                                "source_state_id_check": true,
+                                "source_state_id_comment": "不要\nstate1に含むので",
+                                "vessel_check": true,
+                                "vessel_comment": "不要\nstate1に含むので",
+                                "tools_check": true,
+                                "tools_comment": "不要\nstate1に含むので"
                             },
                             {
                                 "source_state_id": "7",
@@ -25224,17 +25224,17 @@
                                 "tools": [
                                     "スプーン"
                                 ],
-                                "source_state_id_check": false,
-                                "source_state_id_comment": "",
-                                "vessel_check": false,
-                                "vessel_comment": "",
-                                "tools_check": false,
-                                "tools_comment": ""
+                                "source_state_id_check": true,
+                                "source_state_id_comment": "不要\nstate1に含むので",
+                                "vessel_check": true,
+                                "vessel_comment": "不要\nstate1に含むので",
+                                "tools_check": true,
+                                "tools_comment": "不要\nstate1に含むので"
                             }
                         ],
                         "final_position": "ボウル",
-                        "name_check": false,
-                        "name_comment": "",
+                        "name_check": true,
+                        "name_comment": "不要\nstate1に含むので",
                         "missing_interaction_check": false,
                         "missing_source_comment": "",
                         "missing_vessel_comment": "",
