@@ -26851,7 +26851,7 @@
             }
         ],
         "annotation_note": "",
-        "reviewer_note": "",
+        "reviewer_note": "Step 3の使用道具でラップを食パンだけにするか、中の具材も入れていいか迷いました。",
         "reviewed": true
     },
     {
@@ -27115,7 +27115,7 @@
                         ],
                         "final_position": "ボウル",
                         "name_check": false,
-                        "name_comment": "",
+                        "name_comment": "混ぜたA",
                         "missing_interaction_check": false,
                         "missing_source_comment": "",
                         "missing_vessel_comment": "",
