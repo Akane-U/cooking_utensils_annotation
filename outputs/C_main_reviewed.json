@@ -26745,7 +26745,7 @@
                                 "vessel_check": true,
                                 "vessel_comment": "まな板\n後ほど切る作業があるので、まな板上で作業するのがいいと思いました",
                                 "tools_check": true,
-                                "tools_comment": ""
+                                "tools_comment": "ラップフィルム\n直接触れてはいないが、包まれているため"
                             },
                             {
                                 "source_state_id": "4",
@@ -26761,7 +26761,7 @@
                                 "vessel_check": true,
                                 "vessel_comment": "ボウル-2, まな板\n後ほど切る作業があるので、まな板上で作業するのがいいと思いました",
                                 "tools_check": true,
-                                "tools_comment": ""
+                                "tools_comment": "スプーン，ラップフィルム\n直接触れてはいないが、包まれているため"
                             },
                             {
                                 "source_state_id": "5",
@@ -26777,7 +26777,7 @@
                                 "vessel_check": true,
                                 "vessel_comment": "ボウル-2, まな板\n後ほど切る作業があるので、まな板上で作業するのがいいと思いました",
                                 "tools_check": true,
-                                "tools_comment": ""
+                                "tools_comment": "スプーン，ラップフィルム\n直接触れてはいないが、包まれているため"
                             },
                             {
                                 "source_state_id": "0f1b44aa",
@@ -26793,7 +26793,7 @@
                                 "vessel_check": true,
                                 "vessel_comment": "バット, まな板\n後ほど切る作業があるので、まな板上で作業するのがいいと思いました",
                                 "tools_check": true,
-                                "tools_comment": ""
+                                "tools_comment": "フライ返し，ラップフィルム\n直接触れてはいないが、包まれているため"
                             }
                         ],
                         "final_position": "盛り付け皿・器",
@@ -26828,10 +26828,10 @@
                                 ],
                                 "source_state_id_check": false,
                                 "source_state_id_comment": "",
-                                "vessel_check": false,
-                                "vessel_comment": "",
-                                "tools_check": false,
-                                "tools_comment": ""
+                                "vessel_check": true,
+                                "vessel_comment": "まな板，盛り付け皿・器",
+                                "tools_check": true,
+                                "tools_comment": "ラップフィルム，包丁"
                             }
                         ],
                         "final_position": "盛り付け皿・器",
@@ -26851,8 +26851,8 @@
             }
         ],
         "annotation_note": "",
-        "reviewer_note": "Step3の使用道具のラップは、食パンだけでよいのか、中の具材（バターやからし、卵焼き）には必要ないのか判断が分からず、そのままにしました。",
-        "reviewed": false
+        "reviewer_note": "",
+        "reviewed": true
     },
     {
         "title": "いわしのかば焼き",
