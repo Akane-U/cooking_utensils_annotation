@@ -18182,8 +18182,8 @@
                                 "source_state_id_comment": "",
                                 "vessel_check": false,
                                 "vessel_comment": "",
-                                "tools_check": false,
-                                "tools_comment": ""
+                                "tools_check": true,
+                                "tools_comment": "菜箸,木製へら\nローリエを取り出すのに菜箸が必要だから"
                             }
                         ],
                         "final_position": "鍋（蓋付き）",
@@ -18306,7 +18306,7 @@
         ],
         "annotation_note": "",
         "reviewer_note": "",
-        "reviewed": false
+        "reviewed": true
     },
     {
         "title": "にらと豚肉、キムチのチヂミ",
