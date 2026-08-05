@@ -27762,8 +27762,8 @@
                                 ],
                                 "source_state_id_check": false,
                                 "source_state_id_comment": "",
-                                "vessel_check": false,
-                                "vessel_comment": "",
+                                "vessel_check": true,
+                                "vessel_comment": "鍋（蓋付き）,まな板， 盛り付け皿・器",
                                 "tools_check": false,
                                 "tools_comment": ""
                             },
@@ -27830,8 +27830,8 @@
             }
         ],
         "annotation_note": "step4: 煮汁を記入\nstep4: 取り出す操作なのでおもしの皿など未記入",
-        "reviewer_note": "",
-        "reviewed": false
+        "reviewer_note": "step3state1蒸し煮にした2 の「酒」におもしの皿を入れなくてよいかが分かりませんでした。直接触れないと思い入れていません。",
+        "reviewed": true
     },
     {
         "title": "ねぎの香味漬け",
