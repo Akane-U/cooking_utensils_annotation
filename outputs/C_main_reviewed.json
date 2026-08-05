@@ -29169,8 +29169,8 @@
                                 ],
                                 "source_state_id_check": false,
                                 "source_state_id_comment": "",
-                                "vessel_check": false,
-                                "vessel_comment": "",
+                                "vessel_check": true,
+                                "vessel_comment": "バット, ボウル-2, バット-2\nstep1甘辛だれとは別のボウルを使用するため",
                                 "tools_check": false,
                                 "tools_comment": ""
                             },
@@ -29185,8 +29185,8 @@
                                 ],
                                 "source_state_id_check": false,
                                 "source_state_id_comment": "",
-                                "vessel_check": false,
-                                "vessel_comment": "",
+                                "vessel_check": true,
+                                "vessel_comment": "ボウル-2, バット-2\nstep1甘辛だれとは別のボウルを使用するため",
                                 "tools_check": false,
                                 "tools_comment": ""
                             },
@@ -29201,8 +29201,8 @@
                                 ],
                                 "source_state_id_check": false,
                                 "source_state_id_comment": "",
-                                "vessel_check": false,
-                                "vessel_comment": "",
+                                "vessel_check": true,
+                                "vessel_comment": "ボウル-2, バット-2\nstep1甘辛だれとは別のボウルを使用するため",
                                 "tools_check": false,
                                 "tools_comment": ""
                             },
@@ -29217,8 +29217,8 @@
                                 ],
                                 "source_state_id_check": false,
                                 "source_state_id_comment": "",
-                                "vessel_check": false,
-                                "vessel_comment": "",
+                                "vessel_check": true,
+                                "vessel_comment": "ボウル-2, バット-2\nstep1甘辛だれとは別のボウルを使用するため",
                                 "tools_check": false,
                                 "tools_comment": ""
                             },
@@ -29233,8 +29233,8 @@
                                 ],
                                 "source_state_id_check": false,
                                 "source_state_id_comment": "",
-                                "vessel_check": false,
-                                "vessel_comment": "",
+                                "vessel_check": true,
+                                "vessel_comment": "ボウル-2, バット-2\nstep1甘辛だれとは別のボウルを使用するため",
                                 "tools_check": false,
                                 "tools_comment": ""
                             },
@@ -29249,8 +29249,8 @@
                                 ],
                                 "source_state_id_check": false,
                                 "source_state_id_comment": "",
-                                "vessel_check": false,
-                                "vessel_comment": "",
+                                "vessel_check": true,
+                                "vessel_comment": "ボウル-2, バット-2\nstep1甘辛だれとは別のボウルを使用するため",
                                 "tools_check": false,
                                 "tools_comment": ""
                             }
@@ -29288,8 +29288,8 @@
                                 ],
                                 "source_state_id_check": false,
                                 "source_state_id_comment": "",
-                                "vessel_check": false,
-                                "vessel_comment": "",
+                                "vessel_check": true,
+                                "vessel_comment": "フライパン（蓋付き）, ボウル-3\nstep2でボウル-2を使用したため",
                                 "tools_check": false,
                                 "tools_comment": ""
                             },
@@ -29305,8 +29305,8 @@
                                 ],
                                 "source_state_id_check": false,
                                 "source_state_id_comment": "",
-                                "vessel_check": false,
-                                "vessel_comment": "",
+                                "vessel_check": true,
+                                "vessel_comment": "まな板, フライパン（蓋付き）, ボウル-3\nstep2でボウル-2を使用したため\n",
                                 "tools_check": false,
                                 "tools_comment": ""
                             }
@@ -29433,8 +29433,8 @@
                                 ],
                                 "source_state_id_check": false,
                                 "source_state_id_comment": "",
-                                "vessel_check": false,
-                                "vessel_comment": "",
+                                "vessel_check": true,
+                                "vessel_comment": "ボウル-3, 盛り付け皿・器\nstep3でボウル-3に変更したため\n",
                                 "tools_check": false,
                                 "tools_comment": ""
                             }
@@ -29457,7 +29457,7 @@
         ],
         "annotation_note": "step1: おもしの皿は接触していないが記入している\nstep5: フライパンの油",
         "reviewer_note": "",
-        "reviewed": false
+        "reviewed": true
     },
     {
         "title": "塩鶏じゃが",
