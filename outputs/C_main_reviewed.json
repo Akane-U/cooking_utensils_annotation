@@ -16948,8 +16948,8 @@
                                 "source_state_id_comment": "",
                                 "vessel_check": false,
                                 "vessel_comment": "",
-                                "tools_check": false,
-                                "tools_comment": ""
+                                "tools_check": true,
+                                "tools_comment": "おたま\n液体を混ぜたり味をみるのに適しているから。「全体がなじんだら」の部分を炒める作業とすると、木製へらも追加する必要がある。"
                             },
                             {
                                 "source_state_id": "9",
@@ -16963,8 +16963,8 @@
                                 "source_state_id_comment": "",
                                 "vessel_check": false,
                                 "vessel_comment": "",
-                                "tools_check": false,
-                                "tools_comment": ""
+                                "tools_check": true,
+                                "tools_comment": "おたま\n液体を混ぜたり味をみるのに適しているから"
                             },
                             {
                                 "source_state_id": "12",
@@ -16978,8 +16978,8 @@
                                 "source_state_id_comment": "",
                                 "vessel_check": false,
                                 "vessel_comment": "",
-                                "tools_check": false,
-                                "tools_comment": ""
+                                "tools_check": true,
+                                "tools_comment": "おたま\n液体を混ぜたり味をみるのに適しているから"
                             }
                         ],
                         "final_position": "鍋（蓋付き）",
@@ -17016,8 +17016,8 @@
                                 "source_state_id_comment": "",
                                 "vessel_check": false,
                                 "vessel_comment": "",
-                                "tools_check": false,
-                                "tools_comment": ""
+                                "tools_check": true,
+                                "tools_comment": "しゃもじ"
                             },
                             {
                                 "source_state_id": "407608cb",
@@ -17047,8 +17047,8 @@
                                 "source_state_id_comment": "",
                                 "vessel_check": false,
                                 "vessel_comment": "",
-                                "tools_check": false,
-                                "tools_comment": ""
+                                "tools_check": true,
+                                "tools_comment": "菜箸\n野菜の内容次第だが菜箸が必要"
                             }
                         ],
                         "final_position": "盛り付け皿・器",
@@ -17069,7 +17069,7 @@
         ],
         "annotation_note": "",
         "reviewer_note": "",
-        "reviewed": false
+        "reviewed": true
     },
     {
         "title": "大根ステーキ",
