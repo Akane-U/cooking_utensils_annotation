@@ -32303,8 +32303,8 @@
                                 "source_state_id_comment": "",
                                 "vessel_check": false,
                                 "vessel_comment": "",
-                                "tools_check": false,
-                                "tools_comment": ""
+                                "tools_check": true,
+                                "tools_comment": "包丁, 網目の粗い網杓子,\n包丁 , スプーン\n包丁が2回出てくるので"
                             },
                             {
                                 "source_state_id": "7",
