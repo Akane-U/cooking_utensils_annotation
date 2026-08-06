@@ -17628,10 +17628,10 @@
                                 ],
                                 "source_state_id_check": false,
                                 "source_state_id_comment": "",
-                                "vessel_check": true,
-                                "vessel_comment": "ボウル,ざる\n大根の水気を切るのに必要なので\n",
-                                "tools_check": false,
-                                "tools_comment": ""
+                                "vessel_check": false,
+                                "vessel_comment": "ボウル\n大根の水気を切るのに必要なので\n",
+                                "tools_check": true,
+                                "tools_comment": "おろし器（受け皿なし），クッキングペーパー\n大根の汁気をきるのに使用"
                             }
                         ],
                         "final_position": "ボウル",
