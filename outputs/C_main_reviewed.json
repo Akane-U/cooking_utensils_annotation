@@ -7874,8 +7874,8 @@
                                 ],
                                 "source_state_id_check": false,
                                 "source_state_id_comment": "",
-                                "vessel_check": false,
-                                "vessel_comment": "ざる,まな板\n水切りにざるが必要だと思いました",
+                                "vessel_check": true,
+                                "vessel_comment": "ざる,まな板\n水切りに30分程かけるため、クッキングペーパー以外にもざるが必要だと思いました",
                                 "tools_check": true,
                                 "tools_comment": "クッキングペーパー, 包丁\nおもしの皿は豆腐に直接触れていないので不要"
                             }
