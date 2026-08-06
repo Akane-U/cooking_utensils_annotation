@@ -41109,8 +41109,8 @@
                                 "source_state_id_comment": "",
                                 "vessel_check": false,
                                 "vessel_comment": "",
-                                "tools_check": false,
-                                "tools_comment": ""
+                                "tools_check": true,
+                                "tools_comment": "おろし器（受け皿なし）,クッキングペーパー\n崩れやすいのでクッキングペーパーを使用"
                             }
                         ],
                         "final_position": "ボウル-2",
@@ -41149,8 +41149,8 @@
                                 "source_state_id_comment": "",
                                 "vessel_check": false,
                                 "vessel_comment": "",
-                                "tools_check": false,
-                                "tools_comment": ""
+                                "tools_check": true,
+                                "tools_comment": "木製へら, クッキングペーパー\n不織布タイプのクッキングペーパーが適している"
                             },
                             {
                                 "source_state_id": "7",
@@ -41166,8 +41166,8 @@
                                 "source_state_id_comment": "",
                                 "vessel_check": false,
                                 "vessel_comment": "",
-                                "tools_check": false,
-                                "tools_comment": ""
+                                "tools_check": true,
+                                "tools_comment": "木製へら, クッキングペーパー\n不織布タイプのクッキングペーパーが適している"
                             },
                             {
                                 "source_state_id": "8",
@@ -41183,8 +41183,8 @@
                                 "source_state_id_comment": "",
                                 "vessel_check": false,
                                 "vessel_comment": "",
-                                "tools_check": false,
-                                "tools_comment": ""
+                                "tools_check": true,
+                                "tools_comment": "木製へら, クッキングペーパー\n不織布タイプのクッキングペーパーが適している"
                             },
                             {
                                 "source_state_id": "9",
@@ -41200,8 +41200,8 @@
                                 "source_state_id_comment": "",
                                 "vessel_check": false,
                                 "vessel_comment": "",
-                                "tools_check": false,
-                                "tools_comment": ""
+                                "tools_check": true,
+                                "tools_comment": "木製へら, クッキングペーパー\n不織布タイプのクッキングペーパーが適している"
                             }
                         ],
                         "final_position": "ボウル-3",
@@ -41230,8 +41230,8 @@
                                 "source_state_id_comment": "",
                                 "vessel_check": false,
                                 "vessel_comment": "",
-                                "tools_check": false,
-                                "tools_comment": ""
+                                "tools_check": true,
+                                "tools_comment": "スプーン, クッキングペーパー\n不織布タイプのクッキングペーパーが適している"
                             },
                             {
                                 "source_state_id": "11",
@@ -41247,8 +41247,8 @@
                                 "source_state_id_comment": "",
                                 "vessel_check": false,
                                 "vessel_comment": "",
-                                "tools_check": false,
-                                "tools_comment": ""
+                                "tools_check": true,
+                                "tools_comment": "スプーン, クッキングペーパー\n不織布タイプのクッキングペーパーが適している"
                             },
                             {
                                 "source_state_id": "12",
@@ -41264,8 +41264,8 @@
                                 "source_state_id_comment": "",
                                 "vessel_check": false,
                                 "vessel_comment": "",
-                                "tools_check": false,
-                                "tools_comment": ""
+                                "tools_check": true,
+                                "tools_comment": "スプーン, クッキングペーパー\n不織布タイプのクッキングペーパーが適している"
                             },
                             {
                                 "source_state_id": "13",
@@ -41281,8 +41281,8 @@
                                 "source_state_id_comment": "",
                                 "vessel_check": false,
                                 "vessel_comment": "",
-                                "tools_check": false,
-                                "tools_comment": ""
+                                "tools_check": true,
+                                "tools_comment": "スプーン, クッキングペーパー\n不織布タイプのクッキングペーパーが適している"
                             }
                         ],
                         "final_position": "ボウル-5",
@@ -41320,8 +41320,8 @@
                                 "source_state_id_comment": "",
                                 "vessel_check": false,
                                 "vessel_comment": "",
-                                "tools_check": false,
-                                "tools_comment": ""
+                                "tools_check": true,
+                                "tools_comment": "包丁，菜箸"
                             },
                             {
                                 "source_state_id": "14",
@@ -41452,7 +41452,7 @@
         ],
         "annotation_note": "step2: 紙タオルで漉す方法が不明",
         "reviewer_note": "",
-        "reviewed": false
+        "reviewed": true
     },
     {
         "title": "豚肉のしょうが焼き",
