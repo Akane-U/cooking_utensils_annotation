@@ -27664,8 +27664,8 @@
                                 "source_state_id_comment": "",
                                 "vessel_check": false,
                                 "vessel_comment": "",
-                                "tools_check": false,
-                                "tools_comment": ""
+                                "tools_check": true,
+                                "tools_comment": "バット\nおもしの皿は耐熱皿なのでバットで代用可能"
                             },
                             {
                                 "source_state_id": "12",
@@ -27764,8 +27764,8 @@
                                 "source_state_id_comment": "",
                                 "vessel_check": true,
                                 "vessel_comment": "鍋（蓋付き）,まな板， 盛り付け皿・器",
-                                "tools_check": false,
-                                "tools_comment": ""
+                                "tools_check": true,
+                                "tools_comment": "バット,フライ返し, 包丁\nおもしの皿は耐熱皿なのでバットで代用可能"
                             },
                             {
                                 "source_state_id": "8",
