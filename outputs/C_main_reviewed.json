@@ -39152,8 +39152,8 @@
                                 "source_state_id_comment": "",
                                 "vessel_check": false,
                                 "vessel_comment": "",
-                                "tools_check": false,
-                                "tools_comment": ""
+                                "tools_check": true,
+                                "tools_comment": "トング\n菜箸でもいいですが、トングのほうが崩れにくいと思いました"
                             },
                             {
                                 "source_state_id": "4",
@@ -39218,7 +39218,7 @@
             }
         ],
         "annotation_note": "",
-        "reviewer_note": "",
+        "reviewer_note": "step1の鶏肉を常温に戻すのに、「生肉・生魚用まな板」を選んでいいかが分かりませんでした。実際は保管容器（ボウル）を使用すると思いますが、次のstepでまな板を使用するため、ここではまな板としました。\n",
         "reviewed": false
     },
     {
