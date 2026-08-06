@@ -38572,8 +38572,8 @@
                             }
                         ],
                         "final_position": "ボウル-2",
-                        "name_check": false,
-                        "name_comment": "",
+                        "name_check": true,
+                        "name_comment": "【A】 水で溶いたみそ\nのほうがよいと思いました",
                         "missing_interaction_check": false,
                         "missing_source_comment": "",
                         "missing_vessel_comment": "",
@@ -38605,7 +38605,7 @@
                                 ],
                                 "source_state_id_check": false,
                                 "source_state_id_comment": "",
-                                "vessel_check": false,
+                                "vessel_check": true,
                                 "vessel_comment": "",
                                 "tools_check": false,
                                 "tools_comment": ""
@@ -38856,7 +38856,7 @@
         ],
         "annotation_note": "",
         "reviewer_note": "",
-        "reviewed": false
+        "reviewed": true
     },
     {
         "title": "新たまねぎと鶏もも肉のグリル焼き",
