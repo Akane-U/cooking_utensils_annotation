@@ -38280,8 +38280,8 @@
                                 "source_state_id_comment": "",
                                 "vessel_check": false,
                                 "vessel_comment": "",
-                                "tools_check": false,
-                                "tools_comment": ""
+                                "tools_check": true,
+                                "tools_comment": "菜箸，おたま\n崩れやすいのでおたまのほうが盛り付けに適している"
                             },
                             {
                                 "source_state_id": "a4d21cfe",
@@ -38296,8 +38296,8 @@
                                 "source_state_id_comment": "",
                                 "vessel_check": false,
                                 "vessel_comment": "",
-                                "tools_check": false,
-                                "tools_comment": ""
+                                "tools_check": true,
+                                "tools_comment": "おたま\n崩れやすいのでおたまのほうが盛り付けに適している"
                             },
                             {
                                 "source_state_id": "9fcffeff",
@@ -38313,8 +38313,8 @@
                                 "source_state_id_comment": "",
                                 "vessel_check": false,
                                 "vessel_comment": "",
-                                "tools_check": false,
-                                "tools_comment": ""
+                                "tools_check": true,
+                                "tools_comment": "おたま\n崩れやすいのでおたまのほうが盛り付けに適している"
                             },
                             {
                                 "source_state_id": "8",
@@ -38327,10 +38327,10 @@
                                 ],
                                 "source_state_id_check": false,
                                 "source_state_id_comment": "",
-                                "vessel_check": false,
-                                "vessel_comment": "",
-                                "tools_check": false,
-                                "tools_comment": ""
+                                "vessel_check": true,
+                                "vessel_comment": "盛り付け皿・器",
+                                "tools_check": true,
+                                "tools_comment": "しゃもじ"
                             }
                         ],
                         "final_position": "フライパン（蓋付き）",
@@ -38351,7 +38351,7 @@
         ],
         "annotation_note": "step3: 盛り付けの道具が不明",
         "reviewer_note": "",
-        "reviewed": false
+        "reviewed": true
     },
     {
         "title": "豆乳親子にゅうめん",
