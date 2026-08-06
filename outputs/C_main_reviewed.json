@@ -43286,8 +43286,8 @@
             }
         ],
         "annotation_note": "",
-        "reviewer_note": "",
-        "reviewed": false
+        "reviewer_note": "Step1の「ごぼうはよく洗って皮ごとみじん切りにする。」はボウルを使わないと仮定しています。（実際はシンクでそのまま水を出して洗うことが多いので）\n",
+        "reviewed": true
     },
     {
         "title": "里芋のともあえ",
