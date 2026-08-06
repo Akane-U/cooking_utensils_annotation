@@ -33078,8 +33078,8 @@
                                 ],
                                 "source_state_id_check": false,
                                 "source_state_id_comment": "",
-                                "vessel_check": false,
-                                "vessel_comment": "",
+                                "vessel_check": true,
+                                "vessel_comment": "生肉・生魚用まな板, ボウル，生肉・生魚用まな板, ボウル\nまな板で背ワタを除く→ボウルで水で洗う、という過程を追加",
                                 "tools_check": false,
                                 "tools_comment": ""
                             },
