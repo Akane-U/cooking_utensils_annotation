@@ -35076,8 +35076,8 @@
                                 ],
                                 "source_state_id_check": false,
                                 "source_state_id_comment": "",
-                                "vessel_check": false,
-                                "vessel_comment": "",
+                                "vessel_check": true,
+                                "vessel_comment": "道具不使用\n餅とチーズはクッキングシート上にあり、触れていないため",
                                 "tools_check": false,
                                 "tools_comment": ""
                             },
@@ -35092,8 +35092,8 @@
                                 ],
                                 "source_state_id_check": false,
                                 "source_state_id_comment": "",
-                                "vessel_check": false,
-                                "vessel_comment": "",
+                                "vessel_check": true,
+                                "vessel_comment": "道具不使用\n餅とチーズはクッキングシート上にあり、触れていないため",
                                 "tools_check": false,
                                 "tools_comment": ""
                             }
@@ -35131,8 +35131,8 @@
                                 ],
                                 "source_state_id_check": false,
                                 "source_state_id_comment": "",
-                                "vessel_check": false,
-                                "vessel_comment": "",
+                                "vessel_check": true,
+                                "vessel_comment": "道具不使用\n餅とチーズはクッキングシート上にあり、触れていないため",
                                 "tools_check": false,
                                 "tools_comment": ""
                             }
@@ -35170,10 +35170,10 @@
                                 ],
                                 "source_state_id_check": false,
                                 "source_state_id_comment": "",
-                                "vessel_check": false,
-                                "vessel_comment": "",
-                                "tools_check": false,
-                                "tools_comment": ""
+                                "vessel_check": true,
+                                "vessel_comment": "盛り付け皿・器\n餅とチーズはクッキングシート上にあり、布巾には触れていないため。\nstep3の作業もおそらくクッキングシート上で行われているため",
+                                "tools_check": true,
+                                "tools_comment": "クッキングシート"
                             },
                             {
                                 "source_state_id": "3",
@@ -35187,8 +35187,8 @@
                                 "source_state_id_comment": "",
                                 "vessel_check": false,
                                 "vessel_comment": "",
-                                "tools_check": false,
-                                "tools_comment": ""
+                                "tools_check": true,
+                                "tools_comment": "クッキングシート，料理ばさみ"
                             }
                         ],
                         "final_position": "盛り付け皿・器",
@@ -35208,7 +35208,7 @@
             }
         ],
         "annotation_note": "step2: 道具・容器の対応が難しい",
-        "reviewer_note": "",
+        "reviewer_note": "Step1 「餅を水にくぐらせて」には容器は使用していないものとしています。\n\nstep3はクッキングシート以外に使用容器を入れる必要がある場合は「バット」だと思います。",
         "reviewed": false
     },
     {
