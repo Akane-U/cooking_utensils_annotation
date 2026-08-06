@@ -33539,8 +33539,8 @@
                                 ],
                                 "source_state_id_check": false,
                                 "source_state_id_comment": "",
-                                "vessel_check": false,
-                                "vessel_comment": "",
+                                "vessel_check": true,
+                                "vessel_comment": "まな板，バット\n串に刺したものはバットに入れる",
                                 "tools_check": false,
                                 "tools_comment": ""
                             },
@@ -33555,8 +33555,8 @@
                                 ],
                                 "source_state_id_check": false,
                                 "source_state_id_comment": "",
-                                "vessel_check": false,
-                                "vessel_comment": "",
+                                "vessel_check": true,
+                                "vessel_comment": "ざる，バット\n水気をきるにはざるが適している。串に刺したものはバットに入れる",
                                 "tools_check": false,
                                 "tools_comment": ""
                             }
