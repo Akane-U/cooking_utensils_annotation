@@ -41800,7 +41800,7 @@
                                 "source_state_id_check": false,
                                 "source_state_id_comment": "",
                                 "vessel_check": false,
-                                "vessel_comment": "",
+                                "vessel_comment": "フライパン（蓋付き）",
                                 "tools_check": false,
                                 "tools_comment": ""
                             },
@@ -41817,7 +41817,7 @@
                                 "source_state_id_check": false,
                                 "source_state_id_comment": "",
                                 "vessel_check": false,
-                                "vessel_comment": "",
+                                "vessel_comment": "生肉・生魚用まな板, フライパン（蓋付き）",
                                 "tools_check": false,
                                 "tools_comment": ""
                             }
@@ -41945,7 +41945,7 @@
         ],
         "annotation_note": "",
         "reviewer_note": "",
-        "reviewed": false
+        "reviewed": true
     },
     {
         "title": "焼き肉おにぎらず弁当",
