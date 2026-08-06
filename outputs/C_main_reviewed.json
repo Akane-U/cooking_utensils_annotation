@@ -33885,7 +33885,7 @@
                                 "vessel_check": false,
                                 "vessel_comment": "",
                                 "tools_check": false,
-                                "tools_comment": ""
+                                "tools_comment": "スプーン,菜箸"
                             },
                             {
                                 "source_state_id": "3",
@@ -33903,7 +33903,7 @@
                                 "vessel_check": false,
                                 "vessel_comment": "",
                                 "tools_check": false,
-                                "tools_comment": ""
+                                "tools_comment": "スプーン,菜箸\n卵と合わせてからは菜箸のほうがよく混ざると思うので"
                             },
                             {
                                 "source_state_id": "4",
@@ -33921,7 +33921,7 @@
                                 "vessel_check": false,
                                 "vessel_comment": "",
                                 "tools_check": false,
-                                "tools_comment": ""
+                                "tools_comment": "スプーン,菜箸"
                             },
                             {
                                 "source_state_id": "1",
@@ -33939,7 +33939,7 @@
                                 "vessel_check": false,
                                 "vessel_comment": "",
                                 "tools_check": false,
-                                "tools_comment": ""
+                                "tools_comment": "菜箸"
                             }
                         ],
                         "final_position": "ボウル-3",
@@ -33976,8 +33976,8 @@
                                 ],
                                 "source_state_id_check": false,
                                 "source_state_id_comment": "",
-                                "vessel_check": false,
-                                "vessel_comment": "",
+                                "vessel_check": true,
+                                "vessel_comment": "ボウル-3，盛り付け皿・器\n計量カップ廃止というルールのため",
                                 "tools_check": false,
                                 "tools_comment": ""
                             }
