@@ -44536,8 +44536,8 @@
                                 "source_state_id_comment": "",
                                 "vessel_check": false,
                                 "vessel_comment": "",
-                                "tools_check": false,
-                                "tools_comment": ""
+                                "tools_check": true,
+                                "tools_comment": "包丁, スプーン, 包丁\n最後に切るので"
                             },
                             {
                                 "source_state_id": "31f526c8",
@@ -44591,7 +44591,7 @@
             }
         ],
         "annotation_note": "",
-        "reviewer_note": "",
-        "reviewed": false
+        "reviewer_note": "Step 1はボウルやまな板でも代用できそうなのでどれがよいか迷いましたが、バットのままにしています。",
+        "reviewed": true
     }
 ]
