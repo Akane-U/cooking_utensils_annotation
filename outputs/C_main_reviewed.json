@@ -29015,8 +29015,8 @@
                                 "source_state_id_comment": "",
                                 "vessel_check": false,
                                 "vessel_comment": "",
-                                "tools_check": false,
-                                "tools_comment": ""
+                                "tools_check": true,
+                                "tools_comment": "クッキングペーパー,\nおもしの皿は直接触れないので"
                             }
                         ],
                         "final_position": "バット",
