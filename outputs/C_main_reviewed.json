@@ -17820,7 +17820,7 @@
                                 ],
                                 "source_state_id_check": false,
                                 "source_state_id_comment": "",
-                                "vessel_check": true,
+                                "vessel_check": false,
                                 "vessel_comment": "ざる, 盛り付け皿・器\n大根の保管容器はざるに変更したので",
                                 "tools_check": false,
                                 "tools_comment": ""
