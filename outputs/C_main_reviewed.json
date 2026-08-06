@@ -42285,8 +42285,8 @@
                                 "source_state_id_comment": "",
                                 "vessel_check": false,
                                 "vessel_comment": "",
-                                "tools_check": false,
-                                "tools_comment": ""
+                                "tools_check": true,
+                                "tools_comment": "しゃもじ\n広げるのに必要なので"
                             },
                             {
                                 "source_state_id": "8",
@@ -42348,8 +42348,8 @@
                                 "source_state_id_comment": "",
                                 "vessel_check": false,
                                 "vessel_comment": "",
-                                "tools_check": false,
-                                "tools_comment": ""
+                                "tools_check": true,
+                                "tools_comment": "フライ返し\nそのほうが適していると思った"
                             }
                         ],
                         "final_position": "バット-3",
@@ -42401,8 +42401,8 @@
                                 "source_state_id_comment": "",
                                 "vessel_check": false,
                                 "vessel_comment": "",
-                                "tools_check": false,
-                                "tools_comment": ""
+                                "tools_check": true,
+                                "tools_comment": "しゃもじ\n広げるのにひつようなので"
                             },
                             {
                                 "source_state_id": "8",
@@ -42530,8 +42530,8 @@
             }
         ],
         "annotation_note": "step3: 卵は菜箸で移動可能？",
-        "reviewer_note": "",
-        "reviewed": false
+        "reviewer_note": "Step 2. 「1のフライパンを洗って水けを拭き」は無視しています\n\nstep3はラップが直接触れているのはのりだけとしています。\n\nstep5では前ステップからラップは変化していないので、ここで使用道具には入れていません",
+        "reviewed": true
     },
     {
         "title": "和風ドライカレー",
