@@ -32571,8 +32571,8 @@
                                 ],
                                 "source_state_id_check": false,
                                 "source_state_id_comment": "",
-                                "vessel_check": false,
-                                "vessel_comment": "まな板, ボウル\n耐熱皿は一覧にないため",
+                                "vessel_check": true,
+                                "vessel_comment": "まな板, バット\n耐熱皿はバットで代用できるため",
                                 "tools_check": false,
                                 "tools_comment": ""
                             }
@@ -32602,7 +32602,7 @@
                                 "source_state_id_check": false,
                                 "source_state_id_comment": "",
                                 "vessel_check": true,
-                                "vessel_comment": "まな板,ボウル，ざる， 耐熱皿\n水にさらし、水気をきるのにボウルとざるが必要なので\n\n",
+                                "vessel_comment": "まな板,ボウル，ざる， バット\n水にさらし、水気をきるのにボウルとざるが必要なので。耐熱皿はバットで代用\n\n",
                                 "tools_check": false,
                                 "tools_comment": ""
                             }
@@ -32639,8 +32639,8 @@
                                 ],
                                 "source_state_id_check": false,
                                 "source_state_id_comment": "",
-                                "vessel_check": false,
-                                "vessel_comment": "",
+                                "vessel_check": true,
+                                "vessel_comment": "バット\n耐熱皿はバットで代用",
                                 "tools_check": false,
                                 "tools_comment": ""
                             },
@@ -32654,8 +32654,8 @@
                                 ],
                                 "source_state_id_check": false,
                                 "source_state_id_comment": "",
-                                "vessel_check": false,
-                                "vessel_comment": "",
+                                "vessel_check": true,
+                                "vessel_comment": "バット\n耐熱皿はバットで代用",
                                 "tools_check": false,
                                 "tools_comment": ""
                             },
@@ -32669,8 +32669,8 @@
                                 ],
                                 "source_state_id_check": false,
                                 "source_state_id_comment": "",
-                                "vessel_check": false,
-                                "vessel_comment": "",
+                                "vessel_check": true,
+                                "vessel_comment": "バット\n耐熱皿はバットで代用",
                                 "tools_check": false,
                                 "tools_comment": ""
                             },
@@ -32684,8 +32684,8 @@
                                 ],
                                 "source_state_id_check": false,
                                 "source_state_id_comment": "",
-                                "vessel_check": false,
-                                "vessel_comment": "",
+                                "vessel_check": true,
+                                "vessel_comment": "バット\n耐熱皿はバットで代用",
                                 "tools_check": false,
                                 "tools_comment": ""
                             }
@@ -32722,8 +32722,8 @@
                                 ],
                                 "source_state_id_check": false,
                                 "source_state_id_comment": "",
-                                "vessel_check": false,
-                                "vessel_comment": "",
+                                "vessel_check": true,
+                                "vessel_comment": "バット\n耐熱皿はバットで代用",
                                 "tools_check": false,
                                 "tools_comment": ""
                             }
@@ -32762,8 +32762,8 @@
                                 ],
                                 "source_state_id_check": false,
                                 "source_state_id_comment": "",
-                                "vessel_check": false,
-                                "vessel_comment": "",
+                                "vessel_check": true,
+                                "vessel_comment": "バット, まな板\n耐熱皿はバットで代用",
                                 "tools_check": false,
                                 "tools_comment": ""
                             }
@@ -32790,8 +32790,8 @@
                                 ],
                                 "source_state_id_check": false,
                                 "source_state_id_comment": "",
-                                "vessel_check": false,
-                                "vessel_comment": "",
+                                "vessel_check": true,
+                                "vessel_comment": "バット\n耐熱皿はバットで代用",
                                 "tools_check": false,
                                 "tools_comment": ""
                             }
@@ -32829,8 +32829,8 @@
                                 ],
                                 "source_state_id_check": false,
                                 "source_state_id_comment": "",
-                                "vessel_check": false,
-                                "vessel_comment": "",
+                                "vessel_check": true,
+                                "vessel_comment": "バット, 盛り付け皿・器\n耐熱皿はバットで代用",
                                 "tools_check": false,
                                 "tools_comment": ""
                             },
@@ -32846,8 +32846,8 @@
                                 ],
                                 "source_state_id_check": false,
                                 "source_state_id_comment": "",
-                                "vessel_check": false,
-                                "vessel_comment": "",
+                                "vessel_check": true,
+                                "vessel_comment": "まな板, バット, 盛り付け皿・器\n耐熱皿はバットで代用",
                                 "tools_check": false,
                                 "tools_comment": ""
                             },
