@@ -4670,7 +4670,7 @@
                                 "source_state_id_check": false,
                                 "source_state_id_comment": "",
                                 "vessel_check": true,
-                                "vessel_comment": "バット,盛り付け皿・器\nバットでの作業後に盛り付け皿に移すのがよいと思いました",
+                                "vessel_comment": "バット,まな板,盛り付け皿・器\nまな板で切って盛り付け皿に移すのがよいと思いました",
                                 "tools_check": false,
                                 "tools_comment": ""
                             }
