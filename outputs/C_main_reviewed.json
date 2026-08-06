@@ -34231,8 +34231,8 @@
                                 ],
                                 "source_state_id_check": false,
                                 "source_state_id_comment": "",
-                                "vessel_check": false,
-                                "vessel_comment": "",
+                                "vessel_check": true,
+                                "vessel_comment": "まな板，ボウル-2, 盛り付け皿・器\nstep1でボウル-2をざるに変更したので、ここではボウル-2になる",
                                 "tools_check": false,
                                 "tools_comment": ""
                             },
@@ -34247,8 +34247,8 @@
                                 ],
                                 "source_state_id_check": false,
                                 "source_state_id_comment": "",
-                                "vessel_check": false,
-                                "vessel_comment": "",
+                                "vessel_check": true,
+                                "vessel_comment": "ボウル-2, 盛り付け皿・器\nstep1でボウル-2をざるに変更したので、ここではボウル-2になる",
                                 "tools_check": false,
                                 "tools_comment": ""
                             },
@@ -34263,8 +34263,8 @@
                                 ],
                                 "source_state_id_check": false,
                                 "source_state_id_comment": "",
-                                "vessel_check": false,
-                                "vessel_comment": "",
+                                "vessel_check": true,
+                                "vessel_comment": "ボウル-2, 盛り付け皿・器\nstep1でボウル-2をざるに変更したので、ここではボウル-2になる",
                                 "tools_check": false,
                                 "tools_comment": ""
                             },
@@ -34279,8 +34279,8 @@
                                 ],
                                 "source_state_id_check": false,
                                 "source_state_id_comment": "",
-                                "vessel_check": false,
-                                "vessel_comment": "",
+                                "vessel_check": true,
+                                "vessel_comment": "ボウル-2, 盛り付け皿・器\nstep1でボウル-2をざるに変更したので、ここではボウル-2になる",
                                 "tools_check": false,
                                 "tools_comment": ""
                             },
@@ -34296,8 +34296,8 @@
                                 ],
                                 "source_state_id_check": false,
                                 "source_state_id_comment": "",
-                                "vessel_check": false,
-                                "vessel_comment": "",
+                                "vessel_check": true,
+                                "vessel_comment": "ざる，ボウル-2, 盛り付け皿・器\nstep1でボウル-2をざるに変更したので",
                                 "tools_check": false,
                                 "tools_comment": ""
                             }
@@ -34320,7 +34320,7 @@
         ],
         "annotation_note": "step1: state を分けるべきか迷ったが同じにした",
         "reviewer_note": "",
-        "reviewed": false
+        "reviewed": true
     },
     {
         "title": "豆苗とエリンギの肉巻き",
