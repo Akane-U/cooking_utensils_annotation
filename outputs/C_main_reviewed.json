@@ -37701,8 +37701,8 @@
                                 "source_state_id_comment": "",
                                 "vessel_check": false,
                                 "vessel_comment": "",
-                                "tools_check": false,
-                                "tools_comment": ""
+                                "tools_check": true,
+                                "tools_comment": "ふるい\n薄くまぶすには必要"
                             }
                         ],
                         "final_position": "生肉・生魚用まな板",
@@ -37927,7 +37927,7 @@
         ],
         "annotation_note": "",
         "reviewer_note": "",
-        "reviewed": false
+        "reviewed": true
     },
     {
         "title": "新たま他人丼",
