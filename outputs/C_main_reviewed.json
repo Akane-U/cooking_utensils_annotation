@@ -34985,8 +34985,8 @@
                                 "source_state_id_comment": "",
                                 "vessel_check": false,
                                 "vessel_comment": "",
-                                "tools_check": false,
-                                "tools_comment": ""
+                                "tools_check": true,
+                                "tools_comment": "串，木製へら\nstep2で木製へらを使用しているので、そのまま使用でも問題ないと思いました。"
                             }
                         ],
                         "final_position": "盛り付け皿・器",
