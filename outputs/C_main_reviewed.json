@@ -33540,7 +33540,7 @@
                                 "source_state_id_check": false,
                                 "source_state_id_comment": "",
                                 "vessel_check": true,
-                                "vessel_comment": "まな板，バット\n串に刺したものはバットに入れる",
+                                "vessel_comment": "まな板，バット\n串に刺したものを入れる容器としてバット",
                                 "tools_check": false,
                                 "tools_comment": ""
                             },
@@ -33556,7 +33556,7 @@
                                 "source_state_id_check": false,
                                 "source_state_id_comment": "",
                                 "vessel_check": true,
-                                "vessel_comment": "ざる，バット\n水気をきるにはざるが適している。串に刺したものはバットに入れる",
+                                "vessel_comment": "ざる，バット\n水気をきるにはざるが適している。串に刺したものを入れる容器としてバット",
                                 "tools_check": false,
                                 "tools_comment": ""
                             }
@@ -33596,8 +33596,8 @@
                                 ],
                                 "source_state_id_check": false,
                                 "source_state_id_comment": "",
-                                "vessel_check": false,
-                                "vessel_comment": "",
+                                "vessel_check": true,
+                                "vessel_comment": "バット-2, バット-3, バット-4, バット-5\nStep1でバットを使用したため",
                                 "tools_check": false,
                                 "tools_comment": ""
                             },
@@ -33613,8 +33613,8 @@
                                 ],
                                 "source_state_id_check": false,
                                 "source_state_id_comment": "",
-                                "vessel_check": false,
-                                "vessel_comment": "",
+                                "vessel_check": true,
+                                "vessel_comment": "バット-3, バット-4, バット-5\nStep1でバットを使用したため",
                                 "tools_check": false,
                                 "tools_comment": ""
                             },
@@ -33629,8 +33629,8 @@
                                 ],
                                 "source_state_id_check": false,
                                 "source_state_id_comment": "",
-                                "vessel_check": false,
-                                "vessel_comment": "",
+                                "vessel_check": true,
+                                "vessel_comment": "バット-4, バット-5\nStep1でバットを使用したため",
                                 "tools_check": false,
                                 "tools_comment": ""
                             },
@@ -33648,10 +33648,10 @@
                                 ],
                                 "source_state_id_check": false,
                                 "source_state_id_comment": "",
-                                "vessel_check": false,
-                                "vessel_comment": "",
-                                "tools_check": false,
-                                "tools_comment": ""
+                                "vessel_check": true,
+                                "vessel_comment": "バット, バット-2, バット-3, バット-4, バット-5",
+                                "tools_check": true,
+                                "tools_comment": "串\n串がついている状態なので"
                             }
                         ],
                         "final_position": "バット-4",
@@ -33688,8 +33688,8 @@
                                 ],
                                 "source_state_id_check": false,
                                 "source_state_id_comment": "",
-                                "vessel_check": false,
-                                "vessel_comment": "",
+                                "vessel_check": true,
+                                "vessel_comment": "フライパン（蓋付き）, バット-6\nStep1でバットを使用したため",
                                 "tools_check": false,
                                 "tools_comment": ""
                             },
@@ -33706,10 +33706,10 @@
                                 ],
                                 "source_state_id_check": false,
                                 "source_state_id_comment": "",
-                                "vessel_check": false,
-                                "vessel_comment": "",
-                                "tools_check": false,
-                                "tools_comment": ""
+                                "vessel_check": true,
+                                "vessel_comment": "バット-5, フライパン（蓋付き）, バット-6\nStep1でバットを使用したため",
+                                "tools_check": true,
+                                "tools_comment": "串,菜箸, クッキングペーパー\n串を使用しているため"
                             }
                         ],
                         "final_position": "バット-5",
@@ -33798,7 +33798,7 @@
             }
         ],
         "annotation_note": "",
-        "reviewer_note": "",
+        "reviewer_note": "串を無視していいのかわからなかったので、すべてに追加しました。",
         "reviewed": false
     },
     {
