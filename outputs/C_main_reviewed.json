@@ -34156,8 +34156,8 @@
                                 ],
                                 "source_state_id_check": false,
                                 "source_state_id_comment": "",
-                                "vessel_check": false,
-                                "vessel_comment": "",
+                                "vessel_check": true,
+                                "vessel_comment": "まな板, ボウル,ざる\n水気を切るにはざるが適している",
                                 "tools_check": false,
                                 "tools_comment": ""
                             },
@@ -34173,8 +34173,8 @@
                                 ],
                                 "source_state_id_check": false,
                                 "source_state_id_comment": "",
-                                "vessel_check": false,
-                                "vessel_comment": "",
+                                "vessel_check": true,
+                                "vessel_comment": "まな板, ボウル,ざる\n水気を切るにはざるが適している",
                                 "tools_check": false,
                                 "tools_comment": ""
                             },
@@ -34190,10 +34190,10 @@
                                 ],
                                 "source_state_id_check": false,
                                 "source_state_id_comment": "",
-                                "vessel_check": false,
-                                "vessel_comment": "",
-                                "tools_check": false,
-                                "tools_comment": ""
+                                "vessel_check": true,
+                                "vessel_comment": "ボウル,ざる\n水気を切るにはざるが適している",
+                                "tools_check": true,
+                                "tools_comment": "道具不使用"
                             }
                         ],
                         "final_position": "ボウル-2",
