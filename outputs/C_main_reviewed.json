@@ -36919,8 +36919,8 @@
                                 "source_state_id_comment": "",
                                 "vessel_check": false,
                                 "vessel_comment": "",
-                                "tools_check": false,
-                                "tools_comment": ""
+                                "tools_check": true,
+                                "tools_comment": "包丁, クッキングペーパー\nおもしの皿は直接触れないため"
                             }
                         ],
                         "final_position": "バット",
@@ -37080,8 +37080,8 @@
                                 ],
                                 "source_state_id_check": false,
                                 "source_state_id_comment": "",
-                                "vessel_check": false,
-                                "vessel_comment": "",
+                                "vessel_check": true,
+                                "vessel_comment": "ボウル-2，生肉・生魚用まな板\nstep1の卵でボウルを使用しているので",
                                 "tools_check": false,
                                 "tools_comment": ""
                             },
@@ -37097,8 +37097,8 @@
                                 ],
                                 "source_state_id_check": false,
                                 "source_state_id_comment": "",
-                                "vessel_check": false,
-                                "vessel_comment": "",
+                                "vessel_check": true,
+                                "vessel_comment": "ボウル-2，生肉・生魚用まな板\nstep1の卵でボウルを使用しているので",
                                 "tools_check": false,
                                 "tools_comment": ""
                             }
@@ -37422,7 +37422,7 @@
         ],
         "annotation_note": "step1: 重しの皿は非接触だが記入している",
         "reviewer_note": "",
-        "reviewed": false
+        "reviewed": true
     },
     {
         "title": "にんじんと豚肉の甘酢炒め",
