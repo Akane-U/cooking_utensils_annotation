@@ -32603,8 +32603,8 @@
                                 "source_state_id_comment": "",
                                 "vessel_check": true,
                                 "vessel_comment": "まな板,ボウル，ざる， バット\n水にさらし、水気をきるのにボウルとざるが必要なので。耐熱皿はバットで代用\n\n",
-                                "tools_check": false,
-                                "tools_comment": ""
+                                "tools_check": true,
+                                "tools_comment": "包丁\n生のほうれん草の水切りは崩れにくく絞れないもので、クッキングペーパー不要"
                             }
                         ],
                         "final_position": "耐熱皿",
