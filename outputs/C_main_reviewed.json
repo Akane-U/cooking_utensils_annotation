@@ -7874,10 +7874,10 @@
                                 ],
                                 "source_state_id_check": false,
                                 "source_state_id_comment": "",
-                                "vessel_check": true,
+                                "vessel_check": false,
                                 "vessel_comment": "ざる,まな板\n水切りにざるが必要だと思いました",
-                                "tools_check": false,
-                                "tools_comment": ""
+                                "tools_check": true,
+                                "tools_comment": "クッキングペーパー, 包丁\nおもしの皿は豆腐に直接触れていないので不要"
                             }
                         ],
                         "final_position": "まな板",
