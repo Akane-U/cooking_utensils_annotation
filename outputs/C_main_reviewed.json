@@ -40401,8 +40401,8 @@
                                 ],
                                 "source_state_id_check": false,
                                 "source_state_id_comment": "",
-                                "vessel_check": false,
-                                "vessel_comment": "",
+                                "vessel_check": true,
+                                "vessel_comment": "まな板, 鍋（蓋付き）-2, 盛り付け皿・器\nstep1で使用した鍋とは別なので",
                                 "tools_check": false,
                                 "tools_comment": ""
                             },
@@ -40418,8 +40418,8 @@
                                 ],
                                 "source_state_id_check": false,
                                 "source_state_id_comment": "",
-                                "vessel_check": false,
-                                "vessel_comment": "",
+                                "vessel_check": true,
+                                "vessel_comment": "鍋（蓋付き）-2, 盛り付け皿・器\nstep1で使用した鍋とは別なので",
                                 "tools_check": false,
                                 "tools_comment": ""
                             },
@@ -40436,8 +40436,8 @@
                                 ],
                                 "source_state_id_check": false,
                                 "source_state_id_comment": "",
-                                "vessel_check": false,
-                                "vessel_comment": "",
+                                "vessel_check": true,
+                                "vessel_comment": "バット, 鍋（蓋付き）-2, 盛り付け皿・器\nstep1で使用した鍋とは別なので",
                                 "tools_check": false,
                                 "tools_comment": ""
                             },
@@ -40453,8 +40453,8 @@
                                 ],
                                 "source_state_id_check": false,
                                 "source_state_id_comment": "",
-                                "vessel_check": false,
-                                "vessel_comment": "",
+                                "vessel_check": true,
+                                "vessel_comment": "鍋（蓋付き）-2, 盛り付け皿・器\nstep1で使用した鍋とは別なので",
                                 "tools_check": false,
                                 "tools_comment": ""
                             },
