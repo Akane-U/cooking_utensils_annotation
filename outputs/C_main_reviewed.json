@@ -36277,8 +36277,8 @@
                                 "source_state_id_comment": "",
                                 "vessel_check": false,
                                 "vessel_comment": "",
-                                "tools_check": false,
-                                "tools_comment": ""
+                                "tools_check": true,
+                                "tools_comment": "ぬれ布巾，ラップフィルム"
                             },
                             {
                                 "source_state_id": "1",
@@ -36664,8 +36664,8 @@
                                 "source_state_id_comment": "",
                                 "vessel_check": false,
                                 "vessel_comment": "",
-                                "tools_check": false,
-                                "tools_comment": ""
+                                "tools_check": true,
+                                "tools_comment": "菜箸\n刺身なので、菜箸を使って並べたほうがよいと思いました"
                             },
                             {
                                 "source_state_id": "25b9217e",
@@ -36702,7 +36702,7 @@
         ],
         "annotation_note": "step2: うちわは非接触なので未記入",
         "reviewer_note": "",
-        "reviewed": false
+        "reviewed": true
     },
     {
         "title": "ごちそういり豆腐",
