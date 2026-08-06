@@ -1769,8 +1769,8 @@
                                 ],
                                 "source_state_id_check": false,
                                 "source_state_id_comment": "",
-                                "vessel_check": false,
-                                "vessel_comment": "",
+                                "vessel_check": true,
+                                "vessel_comment": "ざる,まな板\n水気を切るのに崩れにくいが絞れないので",
                                 "tools_check": false,
                                 "tools_comment": ""
                             }
