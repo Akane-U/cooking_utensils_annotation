@@ -35506,8 +35506,8 @@
                                 "source_state_id_comment": "",
                                 "vessel_check": false,
                                 "vessel_comment": "",
-                                "tools_check": false,
-                                "tools_comment": ""
+                                "tools_check": true,
+                                "tools_comment": "ふるい\n「薄くまぶす」にはふるいが必要だから"
                             }
                         ],
                         "final_position": "生肉・生魚用まな板",
@@ -35683,8 +35683,8 @@
                                 "source_state_id_comment": "",
                                 "vessel_check": false,
                                 "vessel_comment": "",
-                                "tools_check": false,
-                                "tools_comment": ""
+                                "tools_check": true,
+                                "tools_comment": "菜箸\nstep4で使用した菜箸をそのままで問題ないと思いました。\n"
                             },
                             {
                                 "source_state_id": "f09147df",
@@ -35700,8 +35700,8 @@
                                 "source_state_id_comment": "",
                                 "vessel_check": false,
                                 "vessel_comment": "",
-                                "tools_check": false,
-                                "tools_comment": ""
+                                "tools_check": true,
+                                "tools_comment": "菜箸\nstep4で使用した菜箸をそのままで問題ないと思いました。"
                             },
                             {
                                 "source_state_id": "10",
@@ -35716,8 +35716,8 @@
                                 "source_state_id_comment": "",
                                 "vessel_check": false,
                                 "vessel_comment": "",
-                                "tools_check": false,
-                                "tools_comment": ""
+                                "tools_check": true,
+                                "tools_comment": "菜箸\nstep4で使用した菜箸をそのままで問題ないと思いました。"
                             },
                             {
                                 "source_state_id": "d2db1439",
@@ -35753,7 +35753,7 @@
         ],
         "annotation_note": "",
         "reviewer_note": "",
-        "reviewed": false
+        "reviewed": true
     },
     {
         "title": "にらたま",
