@@ -33650,7 +33650,7 @@
                                 "source_state_id_comment": "",
                                 "vessel_check": true,
                                 "vessel_comment": "バット, バット-2, バット-3, バット-4, バット-5",
-                                "tools_check": true,
+                                "tools_check": false,
                                 "tools_comment": "串\n串がついている状態なので"
                             }
                         ],
@@ -33708,7 +33708,7 @@
                                 "source_state_id_comment": "",
                                 "vessel_check": true,
                                 "vessel_comment": "バット-5, フライパン（蓋付き）, バット-6\nStep1でバットを使用したため",
-                                "tools_check": true,
+                                "tools_check": false,
                                 "tools_comment": "串,菜箸, クッキングペーパー\n串を使用しているため"
                             }
                         ],
@@ -33762,7 +33762,7 @@
                                 "source_state_id_comment": "",
                                 "vessel_check": true,
                                 "vessel_comment": "バット-6, 盛り付け皿・器\nStep1でバットを使用したため",
-                                "tools_check": true,
+                                "tools_check": false,
                                 "tools_comment": "串\n串に刺さっているので。菜箸は使わず手で移動するのが自然"
                             },
                             {
@@ -33798,7 +33798,7 @@
             }
         ],
         "annotation_note": "",
-        "reviewer_note": "串を無視していいのかわからなかったので、すべてに追加しました。",
+        "reviewer_note": "串の扱いが分からなかったのでstep1のみに記載しています。",
         "reviewed": true
     },
     {
