@@ -1,5 +1,5 @@
 # /data/
 # /outputs/
 /doc/
-/analysis/
+# /analysis/
 .streamlit/secrets.toml
