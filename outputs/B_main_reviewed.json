@@ -116,7 +116,7 @@
                         "missing_tools_comment": ""
                     }
                 ],
-                "missing_state_check": true,
+                "missing_state_check": false,
                 "missing_state_name_comment": "切った油揚げ",
                 "missing_state_source_comment": "油揚げ 40g",
                 "missing_state_vessel_comment": "まな板",
@@ -348,7 +348,7 @@
         ],
         "annotation_note": "",
         "reviewer_note": "",
-        "reviewed": false
+        "reviewed": true
     },
     {
         "title": "例題2：ジャンボプリン",
@@ -5160,7 +5160,7 @@
         ],
         "annotation_note": "",
         "reviewer_note": "",
-        "reviewed": false
+        "reviewed": true
     },
     {
         "title": "ちぎりキャベツの豚バラ甘辛ソース",
@@ -5557,7 +5557,7 @@
         ],
         "annotation_note": "",
         "reviewer_note": "",
-        "reviewed": false
+        "reviewed": true
     },
     {
         "title": "フライドチキン",
@@ -6203,8 +6203,8 @@
             }
         ],
         "annotation_note": "step4: フライパンの油再利用して記入",
-        "reviewer_note": "",
-        "reviewed": false
+        "reviewer_note": "Step 3 の State 2 で、油切りにクッキングペーパーを使う場合もあるが、油切り用バットの方が一般的な気がする。",
+        "reviewed": true
     },
     {
         "title": "大根と牛肉の韓国風煮物",
@@ -6632,7 +6632,7 @@
         ],
         "annotation_note": "step3: ゴムべらで煮るのが適切か不明",
         "reviewer_note": "",
-        "reviewed": false
+        "reviewed": true
     },
     {
         "title": "豚肉とスナップえんどうのサンラータン風",
@@ -7167,7 +7167,7 @@
         ],
         "annotation_note": "",
         "reviewer_note": "",
-        "reviewed": false
+        "reviewed": true
     },
     {
         "title": "れんこんグラタン",
@@ -7672,7 +7672,7 @@
         ],
         "annotation_note": "",
         "reviewer_note": "",
-        "reviewed": false
+        "reviewed": true
     },
     {
         "title": "肉巻き豆腐の照りポンタルタル",
@@ -8312,7 +8312,7 @@
         ],
         "annotation_note": "step4: 余分な脂を記入",
         "reviewer_note": "",
-        "reviewed": false
+        "reviewed": true
     },
     {
         "title": "れんこんのひき肉はさみ焼き",
