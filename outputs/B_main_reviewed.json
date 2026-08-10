@@ -44494,10 +44494,10 @@
                                 ],
                                 "source_state_id_check": false,
                                 "source_state_id_comment": "",
-                                "vessel_check": false,
-                                "vessel_comment": "",
-                                "tools_check": false,
-                                "tools_comment": ""
+                                "vessel_check": true,
+                                "vessel_comment": "まな板\nここでいう「たたく」は「包丁で叩くように切ってペーストにする」の意味だと思われる。",
+                                "tools_check": true,
+                                "tools_comment": "包丁\nここでいう「たたく」は「包丁で叩くように切ってペーストにする」の意味だと思われる。"
                             }
                         ],
                         "final_position": "バット",
@@ -44592,6 +44592,6 @@
         ],
         "annotation_note": "",
         "reviewer_note": "",
-        "reviewed": false
+        "reviewed": true
     }
 ]
