@@ -24393,7 +24393,7 @@
                     }
                 ],
                 "missing_state_check": true,
-                "missing_state_name_comment": "ブリを焼いた後のフライパン\n次のStepで油を拭いて流用するため",
+                "missing_state_name_comment": "ブリを焼いた跡\n次のStepで油を拭いて流用するため",
                 "missing_state_source_comment": "全体を焼いたぶり",
                 "missing_state_vessel_comment": "フライパン（蓋付き）",
                 "missing_state_tools_comment": "道具不使用"
@@ -24493,7 +24493,7 @@
                         "name_check": false,
                         "name_comment": "",
                         "missing_interaction_check": true,
-                        "missing_source_comment": "ブリを焼いた後のフライパン",
+                        "missing_source_comment": "ブリを焼いた跡",
                         "missing_vessel_comment": "フライパン（蓋付き）",
                         "missing_tools_comment": "ペーパータオル, 耐熱ゴムべら, スプーン, フライ返し"
                     }
