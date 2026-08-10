@@ -24392,11 +24392,11 @@
                         "missing_tools_comment": ""
                     }
                 ],
-                "missing_state_check": false,
-                "missing_state_name_comment": "",
-                "missing_state_source_comment": "",
-                "missing_state_vessel_comment": "",
-                "missing_state_tools_comment": ""
+                "missing_state_check": true,
+                "missing_state_name_comment": "ブリを焼いた後のフライパン\n次のStepで油を拭いて流用するため",
+                "missing_state_source_comment": "全体を焼いたぶり",
+                "missing_state_vessel_comment": "フライパン（蓋付き）",
+                "missing_state_tools_comment": "道具不使用"
             },
             {
                 "step_after": 4,
@@ -24470,8 +24470,8 @@
                                 "source_state_id_comment": "",
                                 "vessel_check": false,
                                 "vessel_comment": "",
-                                "tools_check": false,
-                                "tools_comment": ""
+                                "tools_check": true,
+                                "tools_comment": "スプーン, フライ返し\nタレを回しかけるときに触れる"
                             },
                             {
                                 "source_state_id": "5",
@@ -24492,10 +24492,10 @@
                         "final_position": "盛り付け皿・器",
                         "name_check": false,
                         "name_comment": "",
-                        "missing_interaction_check": false,
-                        "missing_source_comment": "",
-                        "missing_vessel_comment": "",
-                        "missing_tools_comment": ""
+                        "missing_interaction_check": true,
+                        "missing_source_comment": "ブリを焼いた後のフライパン",
+                        "missing_vessel_comment": "フライパン（蓋付き）",
+                        "missing_tools_comment": "ペーパータオル, 耐熱ゴムべら, スプーン, フライ返し"
                     }
                 ],
                 "missing_state_check": false,
@@ -24507,7 +24507,7 @@
         ],
         "annotation_note": "step4: 副産物の脂は未記入",
         "reviewer_note": "",
-        "reviewed": false
+        "reviewed": true
     },
     {
         "title": "春キャベツの巣ごもりスープ",
