@@ -29457,7 +29457,7 @@
         ],
         "annotation_note": "step1: おもしの皿は接触していないが記入している\nstep5: フライパンの油",
         "reviewer_note": "",
-        "reviewed": false
+        "reviewed": true
     },
     {
         "title": "塩鶏じゃが",
@@ -29881,7 +29881,7 @@
         ],
         "annotation_note": "",
         "reviewer_note": "",
-        "reviewed": false
+        "reviewed": true
     },
     {
         "title": "焼き鳥",
@@ -30204,7 +30204,7 @@
         ],
         "annotation_note": "",
         "reviewer_note": "",
-        "reviewed": false
+        "reviewed": true
     },
     {
         "title": "チキンカツ",
@@ -30573,7 +30573,7 @@
         ],
         "annotation_note": "",
         "reviewer_note": "",
-        "reviewed": false
+        "reviewed": true
     },
     {
         "title": "さけずし",
@@ -31132,7 +31132,7 @@
         ],
         "annotation_note": "step1: ほぐす道具が不明",
         "reviewer_note": "",
-        "reviewed": false
+        "reviewed": true
     },
     {
         "title": "ぶりごぼう",
@@ -31577,7 +31577,7 @@
         ],
         "annotation_note": "",
         "reviewer_note": "",
-        "reviewed": false
+        "reviewed": true
     },
     {
         "title": "新じゃがいものピリ辛煮",
@@ -32005,7 +32005,7 @@
         ],
         "annotation_note": "step3: 煮込み系で盛り付け道具統一したい",
         "reviewer_note": "",
-        "reviewed": false
+        "reviewed": true
     },
     {
         "title": "ゆで鶏",
@@ -32442,7 +32442,7 @@
         ],
         "annotation_note": "",
         "reviewer_note": "",
-        "reviewed": false
+        "reviewed": true
     },
     {
         "title": "蒸し豚",
@@ -32933,7 +32933,7 @@
             }
         ],
         "annotation_note": "step3: 直接接するのは耐熱皿のみ",
-        "reviewer_note": "",
+        "reviewer_note": "Step 3 で食材に直接は触れないがフライパンを用いているが、追記しなかった。",
         "reviewed": false
     },
     {
