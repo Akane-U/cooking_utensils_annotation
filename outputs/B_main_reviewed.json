@@ -33798,7 +33798,7 @@
             }
         ],
         "annotation_note": "",
-        "reviewer_note": "Step 3の油切りは、油切り用バットの方が一般的だが、クッキングペーパーでも代替可能なので、修正しなかった。",
+        "reviewer_note": "Step 3の油切りは、油切り用バットの方が一般的だが、クッキングペーパーでも一応代替可能なので、修正しなかった。",
         "reviewed": true
     },
     {
@@ -34037,8 +34037,8 @@
             }
         ],
         "annotation_note": "step3: 直接接しないフライパン・菜箸は未記入",
-        "reviewer_note": "",
-        "reviewed": false
+        "reviewer_note": "Step 1の「目の細かいザル」は本来裏漉し機だと思うが、レシピ側の不備なのでここでは修正せずザルのままとした。",
+        "reviewed": true
     },
     {
         "title": "柚子なます",
@@ -34320,7 +34320,7 @@
         ],
         "annotation_note": "step1: state を分けるべきか迷ったが同じにした",
         "reviewer_note": "",
-        "reviewed": false
+        "reviewed": true
     },
     {
         "title": "豆苗とエリンギの肉巻き",
@@ -34719,7 +34719,7 @@
         ],
         "annotation_note": "",
         "reviewer_note": "",
-        "reviewed": false
+        "reviewed": true
     },
     {
         "title": "新じゃがとベーコンの甘辛煮",
@@ -35006,8 +35006,8 @@
             }
         ],
         "annotation_note": "",
-        "reviewer_note": "",
-        "reviewed": false
+        "reviewer_note": "Step 1のState 1で、ジャガイモをボウルの中で洗った後にまな板の上で切ってさらにボウルの中で洗うが、表記は「ボウル, まな板, ボウル, ざる」で合ってる？とりあえずそのままにした。",
+        "reviewed": true
     },
     {
         "title": "チーズもち",
@@ -35209,7 +35209,7 @@
         ],
         "annotation_note": "step2: 道具・容器の対応が難しい",
         "reviewer_note": "",
-        "reviewed": false
+        "reviewed": true
     },
     {
         "title": "みそバターチキン",
@@ -35753,7 +35753,7 @@
         ],
         "annotation_note": "",
         "reviewer_note": "",
-        "reviewed": false
+        "reviewed": true
     },
     {
         "title": "にらたま",
