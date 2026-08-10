@@ -9284,7 +9284,7 @@
         ],
         "annotation_note": "step2: ごま油の使用器具は記入、残った脂は記入\nstep5: 副産物の煮汁は記入",
         "reviewer_note": "",
-        "reviewed": false
+        "reviewed": true
     },
     {
         "title": "キャベツと豚肉の蒸し煮",
@@ -9710,8 +9710,8 @@
             }
         ],
         "annotation_note": "",
-        "reviewer_note": "",
-        "reviewed": false
+        "reviewer_note": "煮汁も盛り付けるならお玉が必要だが、元レシピの写真を見るに煮汁は使っていなかったので追記しなかった。",
+        "reviewed": true
     },
     {
         "title": "新たまのトマトすき煮",
