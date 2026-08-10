@@ -42455,8 +42455,8 @@
                                 "source_state_id_comment": "",
                                 "vessel_check": false,
                                 "vessel_comment": "",
-                                "tools_check": false,
-                                "tools_comment": ""
+                                "tools_check": true,
+                                "tools_comment": "ラップ, 包丁\nラップで包むとあるため。"
                             }
                         ],
                         "final_position": "まな板",
@@ -42530,7 +42530,7 @@
             }
         ],
         "annotation_note": "step3: 卵は菜箸で移動可能？",
-        "reviewer_note": "Step3~4にかけて、ご飯や具材は海苔の上にあるためラップとは直接触れていないが、どう判断すべきか難しい。",
+        "reviewer_note": "Step3~4にかけて、ご飯や具材は海苔の上にあるためラップとは直接触れていないが、どう判断すべきか難しい。少なくともStep 5の「切った4」は海苔も含むためラップと触れるので追記した。",
         "reviewed": true
     },
     {
@@ -43287,7 +43287,7 @@
         ],
         "annotation_note": "",
         "reviewer_note": "",
-        "reviewed": false
+        "reviewed": true
     },
     {
         "title": "里芋のともあえ",
@@ -43595,7 +43595,7 @@
         ],
         "annotation_note": "step2: 布巾は非接触なので未記入",
         "reviewer_note": "",
-        "reviewed": false
+        "reviewed": true
     },
     {
         "title": "小松菜とじゃこの炒め物",
