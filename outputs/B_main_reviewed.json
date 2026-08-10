@@ -116,7 +116,7 @@
                         "missing_tools_comment": ""
                     }
                 ],
-                "missing_state_check": true,
+                "missing_state_check": false,
                 "missing_state_name_comment": "切った油揚げ",
                 "missing_state_source_comment": "油揚げ 40g",
                 "missing_state_vessel_comment": "まな板",
@@ -348,7 +348,7 @@
         ],
         "annotation_note": "",
         "reviewer_note": "",
-        "reviewed": false
+        "reviewed": true
     },
     {
         "title": "例題2：ジャンボプリン",
@@ -5160,7 +5160,7 @@
         ],
         "annotation_note": "",
         "reviewer_note": "",
-        "reviewed": false
+        "reviewed": true
     },
     {
         "title": "ちぎりキャベツの豚バラ甘辛ソース",
@@ -5557,7 +5557,7 @@
         ],
         "annotation_note": "",
         "reviewer_note": "",
-        "reviewed": false
+        "reviewed": true
     },
     {
         "title": "フライドチキン",
