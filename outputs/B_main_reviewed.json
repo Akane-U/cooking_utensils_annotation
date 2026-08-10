@@ -24471,7 +24471,7 @@
                                 "vessel_check": false,
                                 "vessel_comment": "",
                                 "tools_check": true,
-                                "tools_comment": "スプーン, フライ返し\nタレを回しかけるときに触れる"
+                                "tools_comment": "スプーン, フライ返し\nタレを回しかけるときにスプーンに触れる"
                             },
                             {
                                 "source_state_id": "5",
