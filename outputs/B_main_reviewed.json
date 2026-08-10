@@ -8099,8 +8099,8 @@
                                 ],
                                 "source_state_id_check": false,
                                 "source_state_id_comment": "",
-                                "vessel_check": false,
-                                "vessel_comment": "",
+                                "vessel_check": true,
+                                "vessel_comment": "まな板, バット-2\n水切りにバット-1を使ったため。",
                                 "tools_check": false,
                                 "tools_comment": ""
                             },
@@ -8114,8 +8114,8 @@
                                 ],
                                 "source_state_id_check": false,
                                 "source_state_id_comment": "",
-                                "vessel_check": false,
-                                "vessel_comment": "",
+                                "vessel_check": true,
+                                "vessel_comment": "まな板, バット-2\n水切りにバット-1を使ったため。",
                                 "tools_check": false,
                                 "tools_comment": ""
                             },
@@ -8129,8 +8129,8 @@
                                 ],
                                 "source_state_id_check": false,
                                 "source_state_id_comment": "",
-                                "vessel_check": false,
-                                "vessel_comment": "",
+                                "vessel_check": true,
+                                "vessel_comment": "まな板, バット-2\n水切りにバット-1を使ったため。",
                                 "tools_check": false,
                                 "tools_comment": ""
                             },
@@ -8144,8 +8144,8 @@
                                 ],
                                 "source_state_id_check": false,
                                 "source_state_id_comment": "",
-                                "vessel_check": false,
-                                "vessel_comment": "",
+                                "vessel_check": true,
+                                "vessel_comment": "まな板, バット-2\n水切りにバット-1を使ったため。",
                                 "tools_check": false,
                                 "tools_comment": ""
                             }
@@ -8200,8 +8200,8 @@
                                 ],
                                 "source_state_id_check": false,
                                 "source_state_id_comment": "",
-                                "vessel_check": false,
-                                "vessel_comment": "",
+                                "vessel_check": true,
+                                "vessel_comment": "バット-2, フライパン（蓋付き）\n水切りにバット-1を使ったため。",
                                 "tools_check": false,
                                 "tools_comment": ""
                             },
