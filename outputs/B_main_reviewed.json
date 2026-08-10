@@ -11230,8 +11230,8 @@
                                 "source_state_id_comment": "",
                                 "vessel_check": false,
                                 "vessel_comment": "",
-                                "tools_check": false,
-                                "tools_comment": ""
+                                "tools_check": true,
+                                "tools_comment": "スプーン\n「よく混ぜる」とあるので混ぜるためにスプーンが必要。"
                             },
                             {
                                 "source_state_id": "11",
@@ -11245,8 +11245,8 @@
                                 "source_state_id_comment": "",
                                 "vessel_check": false,
                                 "vessel_comment": "",
-                                "tools_check": false,
-                                "tools_comment": ""
+                                "tools_check": true,
+                                "tools_comment": "スプーン\n「よく混ぜる」とあるので混ぜるためにスプーンが必要。"
                             },
                             {
                                 "source_state_id": "12",
@@ -11260,8 +11260,8 @@
                                 "source_state_id_comment": "",
                                 "vessel_check": false,
                                 "vessel_comment": "",
-                                "tools_check": false,
-                                "tools_comment": ""
+                                "tools_check": true,
+                                "tools_comment": "スプーン\n「よく混ぜる」とあるので混ぜるためにスプーンが必要。"
                             },
                             {
                                 "source_state_id": "13",
@@ -11275,8 +11275,8 @@
                                 "source_state_id_comment": "",
                                 "vessel_check": false,
                                 "vessel_comment": "",
-                                "tools_check": false,
-                                "tools_comment": ""
+                                "tools_check": true,
+                                "tools_comment": "スプーン\n「よく混ぜる」とあるので混ぜるためにスプーンが必要。"
                             },
                             {
                                 "source_state_id": "8",
@@ -11290,8 +11290,8 @@
                                 "source_state_id_comment": "",
                                 "vessel_check": false,
                                 "vessel_comment": "",
-                                "tools_check": false,
-                                "tools_comment": ""
+                                "tools_check": true,
+                                "tools_comment": "スプーン\n「よく混ぜる」とあるので混ぜるためにスプーンが必要。"
                             },
                             {
                                 "source_state_id": "14",
@@ -11934,8 +11934,8 @@
             }
         ],
         "annotation_note": "全体: 手順が長い\nstep7: あんはひき肉なので素手で作る",
-        "reviewer_note": "",
-        "reviewed": false
+        "reviewer_note": "Step 7でよく混ぜる際の道具が道具不使用（素手）だが、スプーンを使う人もいそう。レシピを見る限り料理慣れしている人向けっぽいので道具不使用のままにした。",
+        "reviewed": true
     },
     {
         "title": "ふんわり鶏むね肉のたまねぎソース",
