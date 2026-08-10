@@ -27204,8 +27204,8 @@
                                 "source_state_id_comment": "",
                                 "vessel_check": false,
                                 "vessel_comment": "",
-                                "tools_check": false,
-                                "tools_comment": ""
+                                "tools_check": true,
+                                "tools_comment": "スプーン, フライ返し\nタレを掬ってかけるときに触れる"
                             },
                             {
                                 "source_state_id": "d635c2fa",
@@ -27275,7 +27275,7 @@
         ],
         "annotation_note": "",
         "reviewer_note": "",
-        "reviewed": false
+        "reviewed": true
     },
     {
         "title": "せん切りキャベツと鶏ひき肉の重ね煮",
