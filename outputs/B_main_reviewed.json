@@ -38351,7 +38351,7 @@
         ],
         "annotation_note": "step3: 盛り付けの道具が不明",
         "reviewer_note": "",
-        "reviewed": false
+        "reviewed": true
     },
     {
         "title": "豆乳親子にゅうめん",
@@ -38855,8 +38855,8 @@
             }
         ],
         "annotation_note": "",
-        "reviewer_note": "",
-        "reviewed": false
+        "reviewer_note": "Step 5でトングを使っているが、菜箸の方が一般的な気がする。どちらでも良いのでここでは修正せず。",
+        "reviewed": true
     },
     {
         "title": "新たまねぎと鶏もも肉のグリル焼き",
