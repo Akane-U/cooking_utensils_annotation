@@ -348,7 +348,7 @@
         ],
         "annotation_note": "",
         "reviewer_note": "",
-        "reviewed": true
+        "reviewed": false
     },
     {
         "title": "例題2：ジャンボプリン",
@@ -7874,8 +7874,8 @@
                                 ],
                                 "source_state_id_check": false,
                                 "source_state_id_comment": "",
-                                "vessel_check": false,
-                                "vessel_comment": "",
+                                "vessel_check": true,
+                                "vessel_comment": "バット、まな板\nまな板の上で水切りすると水分が周りに垂れるので、バットを使う。",
                                 "tools_check": false,
                                 "tools_comment": ""
                             }
