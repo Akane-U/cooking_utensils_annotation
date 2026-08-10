@@ -39648,7 +39648,7 @@
         ],
         "annotation_note": "step3: 副産物の脂あり",
         "reviewer_note": "",
-        "reviewed": false
+        "reviewed": true
     },
     {
         "title": "梅豚肉のねぎ炒め",
@@ -40095,7 +40095,7 @@
         ],
         "annotation_note": "",
         "reviewer_note": "",
-        "reviewed": false
+        "reviewed": true
     },
     {
         "title": "ベーコンロールキャベツ",
@@ -40492,7 +40492,7 @@
         ],
         "annotation_note": "step3: キャベツの芯や外葉は分量外なので未記入",
         "reviewer_note": "",
-        "reviewed": false
+        "reviewed": true
     },
     {
         "title": "BLTサンド",
@@ -40877,7 +40877,7 @@
         ],
         "annotation_note": "step2: 食パンに対してスプーン・菜箸は記入すべきか",
         "reviewer_note": "",
-        "reviewed": false
+        "reviewed": true
     },
     {
         "title": "初がつおと新たまねぎの菜合わせ",
@@ -41452,7 +41452,7 @@
         ],
         "annotation_note": "step2: 紙タオルで漉す方法が不明",
         "reviewer_note": "",
-        "reviewed": false
+        "reviewed": true
     },
     {
         "title": "豚肉のしょうが焼き",
@@ -41945,7 +41945,7 @@
         ],
         "annotation_note": "",
         "reviewer_note": "",
-        "reviewed": false
+        "reviewed": true
     },
     {
         "title": "焼き肉おにぎらず弁当",
@@ -42530,8 +42530,8 @@
             }
         ],
         "annotation_note": "step3: 卵は菜箸で移動可能？",
-        "reviewer_note": "",
-        "reviewed": false
+        "reviewer_note": "Step3~4にかけて、ご飯や具材は海苔の上にあるためラップとは直接触れていないが、どう判断すべきか難しい。",
+        "reviewed": true
     },
     {
         "title": "和風ドライカレー",
