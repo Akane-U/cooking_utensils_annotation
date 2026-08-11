@@ -352,7 +352,7 @@ def init() -> None:
         if batch:
             fname = f"{annotator}_{batch}_annotated.json"
         else:
-            fname = f"{annotator}_annotated.json"
+            fname = f"{annotator}_annotated_v2.json"
         st.session_state.save_filename = fname
         st.session_state["save_filename_input"] = fname
 
