@@ -58,14 +58,9 @@
                                 "tools": [
                                     "包丁"
                                 ]
-                            },
-                            {
-                                "source_state_id": "2",
-                                "vessel": [],
-                                "tools": []
                             }
                         ],
-                        "final_position": ""
+                        "final_position": "まな板"
                     }
                 ]
             },
