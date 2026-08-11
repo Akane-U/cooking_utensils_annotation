@@ -58,9 +58,14 @@
                                 "tools": [
                                     "包丁"
                                 ]
+                            },
+                            {
+                                "source_state_id": "2",
+                                "vessel": [],
+                                "tools": []
                             }
                         ],
-                        "final_position": "まな板"
+                        "final_position": ""
                     }
                 ]
             },
@@ -195,7 +200,7 @@
                 ]
             }
         ],
-        "annotation_note": "aaa"
+        "annotation_note": ""
     },
     {
         "title": "例題2：ジャンボプリン",
