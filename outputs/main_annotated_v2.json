@@ -4504,11 +4504,11 @@
                             {
                                 "source_state_id": "1",
                                 "vessel": [
+                                    "バット",
                                     "まな板"
                                 ],
                                 "tools": [
                                     "クッキングペーパー",
-                                    "None_おもしの皿",
                                     "包丁"
                                 ]
                             }
@@ -4637,7 +4637,7 @@
                                 "source_state_id": "aa36cfb4",
                                 "vessel": [
                                     "まな板",
-                                    "バット"
+                                    "None_バット-2"
                                 ],
                                 "tools": [
                                     "道具不使用"
@@ -4646,7 +4646,7 @@
                             {
                                 "source_state_id": "2",
                                 "vessel": [
-                                    "バット"
+                                    "None_バット-2"
                                 ],
                                 "tools": [
                                     "道具不使用"
@@ -4655,7 +4655,7 @@
                             {
                                 "source_state_id": "12",
                                 "vessel": [
-                                    "バット"
+                                    "None_バット-2"
                                 ],
                                 "tools": [
                                     "道具不使用"
@@ -4664,14 +4664,14 @@
                             {
                                 "source_state_id": "13",
                                 "vessel": [
-                                    "バット"
+                                    "None_バット-2"
                                 ],
                                 "tools": [
                                     "道具不使用"
                                 ]
                             }
                         ],
-                        "final_position": "バット"
+                        "final_position": "None_バット-2"
                     }
                 ]
             },
@@ -4695,7 +4695,7 @@
                             {
                                 "source_state_id": "d70c29b4",
                                 "vessel": [
-                                    "バット",
+                                    "None_バット-2",
                                     "フライパン（蓋付き）"
                                 ],
                                 "tools": [
@@ -4762,7 +4762,7 @@
                 ]
             }
         ],
-        "annotation_note": "step4: 余分な脂を記入"
+        "annotation_note": "片栗粉のふるい未記入"
     },
     {
         "title": "れんこんのひき肉はさみ焼き",
