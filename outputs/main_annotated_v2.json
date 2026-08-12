@@ -14996,7 +14996,7 @@
                                 "source_state_id": "1",
                                 "vessel": [
                                     "まな板",
-                                    "None_干し網"
+                                    "ざる"
                                 ],
                                 "tools": [
                                     "包丁",
@@ -15004,7 +15004,7 @@
                                 ]
                             }
                         ],
-                        "final_position": "None_干し網"
+                        "final_position": "ざる"
                     }
                 ]
             },
@@ -15057,7 +15057,7 @@
                             {
                                 "source_state_id": "7718dc11",
                                 "vessel": [
-                                    "None_干し網",
+                                    "ざる",
                                     "まな板",
                                     "None_保存袋"
                                 ],
