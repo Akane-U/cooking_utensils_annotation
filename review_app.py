@@ -75,6 +75,22 @@ _NAME_TO_ID = {v: k for k, v in ANNOTATORS.items()}
 # main の全レシピに対する各アノテーターのレビュー結果ファイル（main が再アノテーションする際の参考表示用）
 REVIEW_FILES = {"A": "A_main_reviewed.json", "B": "B_main_reviewed.json", "C": "C_main_reviewed.json"}
 
+# レビュアーのノート下部に常に表示する、実験前の統一事項
+UNIFICATION_NOTES_HTML = """\
+<div style="background:#fff3cd;border-left:4px solid #f0ad4e;padding:8px 12px;margin:8px 0;font-size:0.85em">
+<b>実験前に統一したいこと</b>
+<ul style="margin:4px 0 0;padding-left:1.2em">
+<li>盛り付け時のごむべらと木べら→木べらに統一</li>
+<li>おもしの皿は非接触だけど記入している→記入しないに統一</li>
+<li>調味料を混ぜたボウルを移動するための道具の有無→液体・半固体かで区別</li>
+<li>煮物で汁気がある際は、盛り付けにおたまも使用すべきか→記入するに統一</li>
+<li>ラップ・アルミで覆うとき・串で刺すときに、生成物が材料を重ねたものを対象とするならば、接していない層に道具を書くべきか→記入するに統一</li>
+<li>盛り付けで切る動作はまな板上で統一すべきか→まな板上に統一</li>
+<li>保管する生成元が直後のステップで調理にうつる場合は、その調理で使用する容器を使用</li>
+</ul>
+</div>
+"""
+
 # sub1/sub2 レシピファイル
 SUB_RECIPE_FILES = {
     "sub1": "sub1_recipe_10.json",
@@ -861,6 +877,8 @@ def main() -> None:
                 st.caption("📋 レビュアーのコメント")
                 for label, note in reviewer_notes:
                     st.info(f"**{label}**: {note}")
+
+        st.markdown(UNIFICATION_NOTES_HTML, unsafe_allow_html=True)
 
     # ── Utensil column ────────────────────────────────────────────────────────
     with utensil_col:
