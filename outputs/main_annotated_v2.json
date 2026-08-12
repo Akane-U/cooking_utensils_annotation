@@ -21903,7 +21903,7 @@
                     },
                     {
                         "id": "6cf39a05",
-                        "name": "水で溶いたみそ",
+                        "name": "水で溶いたみそ[A]",
                         "utensil_interactions_list": [
                             {
                                 "source_state_id": "5",
