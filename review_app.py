@@ -275,7 +275,7 @@ def _index_review_recipe(recipe: dict) -> dict:
             "missing_state_tools_comment": ws.get("missing_state_tools_comment", ""),
             "states": {s["id"]: s for s in ws.get("state_list", [])},
         }
-    return {"steps": steps, "annotation_note": recipe.get("annotation_note", "")}
+    return {"steps": steps, "reviewer_note": recipe.get("reviewer_note", "")}
 
 
 def build_review_index(review_data: dict) -> dict:
@@ -852,10 +852,15 @@ def main() -> None:
         )
 
         if recipe_review:
-            submitted_note = next(iter(recipe_review.values()))["annotation_note"].strip()
-            if submitted_note:
-                st.caption("📋 レビュー提出時のメモ（参考）")
-                st.info(submitted_note)
+            reviewer_notes = [
+                (ANNOTATORS.get(rid, rid), rdata["reviewer_note"].strip())
+                for rid, rdata in recipe_review.items()
+                if rdata["reviewer_note"].strip()
+            ]
+            if reviewer_notes:
+                st.caption("📋 レビュアーのコメント")
+                for label, note in reviewer_notes:
+                    st.info(f"**{label}**: {note}")
 
     # ── Utensil column ────────────────────────────────────────────────────────
     with utensil_col:
