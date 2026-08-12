@@ -13939,6 +13939,14 @@
                         "name": "ふっくら ぶり照り",
                         "utensil_interactions_list": [
                             {
+                                "source_state_id": "1bf084e4",
+                                "vessel": [
+                                    "フライパン（蓋付き）"
+                                ],
+                                "tools": [
+                                    "クッキングペーパー"                                ]
+                            },
+                            {
                                 "source_state_id": "2",
                                 "vessel": [
                                     "フライパン（蓋付き）",
