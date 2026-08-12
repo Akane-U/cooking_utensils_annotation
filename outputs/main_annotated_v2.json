@@ -19140,7 +19140,8 @@
                             {
                                 "source_state_id": "1",
                                 "vessel": [
-                                    "まな板"
+                                    "まな板",
+                                    "バット"
                                 ],
                                 "tools": [
                                     "包丁",
@@ -19150,15 +19151,15 @@
                             {
                                 "source_state_id": "2",
                                 "vessel": [
-                                    "まな板"
+                                    "ざる",
+                                    "バット"
                                 ],
                                 "tools": [
-                                    "クッキングペーパー",
                                     "串"
                                 ]
                             }
                         ],
-                        "final_position": "まな板"
+                        "final_position": "バット"
                     }
                 ]
             },
@@ -19172,10 +19173,10 @@
                             {
                                 "source_state_id": "7",
                                 "vessel": [
-                                    "バット",
                                     "None_バット-2",
                                     "None_バット-3",
-                                    "None_バット-4"
+                                    "None_バット-4",
+                                    "None_バット-5"
                                 ],
                                 "tools": [
                                     "道具不使用"
@@ -19184,9 +19185,9 @@
                             {
                                 "source_state_id": "3",
                                 "vessel": [
-                                    "None_バット-2",
                                     "None_バット-3",
-                                    "None_バット-4"
+                                    "None_バット-4",
+                                    "None_バット-5"
                                 ],
                                 "tools": [
                                     "道具不使用"
@@ -19195,8 +19196,8 @@
                             {
                                 "source_state_id": "4",
                                 "vessel": [
-                                    "None_バット-3",
-                                    "None_バット-4"
+                                    "None_バット-4",
+                                    "None_バット-5"
                                 ],
                                 "tools": [
                                     "道具不使用"
@@ -19205,18 +19206,18 @@
                             {
                                 "source_state_id": "8adc99f3",
                                 "vessel": [
-                                    "まな板",
                                     "バット",
                                     "None_バット-2",
                                     "None_バット-3",
-                                    "None_バット-4"
+                                    "None_バット-4",
+                                    "None_バット-5"
                                 ],
                                 "tools": [
-                                    "道具不使用"
+                                    "串"
                                 ]
                             }
                         ],
-                        "final_position": "None_バット-4"
+                        "final_position": "None_バット-5"
                     }
                 ]
             },
@@ -19231,7 +19232,7 @@
                                 "source_state_id": "8",
                                 "vessel": [
                                     "フライパン（蓋付き）",
-                                    "None_バット-5"
+                                    "None_バット-6"
                                 ],
                                 "tools": [
                                     "菜箸",
@@ -19241,17 +19242,18 @@
                             {
                                 "source_state_id": "2856ce89",
                                 "vessel": [
-                                    "None_バット-4",
+                                    "None_バット-5",
                                     "フライパン（蓋付き）",
-                                    "None_バット-5"
+                                    "None_バット-6"
                                 ],
                                 "tools": [
+                                    "串",
                                     "菜箸",
                                     "クッキングペーパー"
                                 ]
                             }
                         ],
-                        "final_position": "None_バット-5"
+                        "final_position": "None_バット-6"
                     }
                 ]
             },
@@ -19274,11 +19276,11 @@
                             {
                                 "source_state_id": "da568ccc",
                                 "vessel": [
-                                    "None_バット-5",
+                                    "None_バット-6",
                                     "盛り付け皿・器"
                                 ],
                                 "tools": [
-                                    "菜箸"
+                                    "串"
                                 ]
                             },
                             {
@@ -19296,7 +19298,7 @@
                 ]
             }
         ],
-        "annotation_note": ""
+        "annotation_note": "串継承"
     },
     {
         "title": "茶碗蒸し",
