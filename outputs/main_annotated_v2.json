@@ -13837,6 +13837,22 @@
                             }
                         ],
                         "final_position": "None_バット-2"
+                    },
+                    {
+                        "id": "1bf084e4",
+                        "name": "フライパンに残った脂",
+                        "utensil_interactions_list": [
+                            {
+                                "source_state_id": "607a2eeb",
+                                "vessel": [
+                                    "フライパン（蓋付き）"
+                                ],
+                                "tools": [
+                                    "道具不使用"
+                                ]
+                            }
+                        ],
+                        "final_position": "フライパン（蓋付き）"
                     }
                 ]
             },
