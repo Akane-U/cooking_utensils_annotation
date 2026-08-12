@@ -1,0 +1,1121 @@
+import base64
+import json
+import uuid
+from copy import deepcopy
+from pathlib import Path
+
+import pandas as pd
+import requests
+import streamlit as st
+
+# ─── Paths ────────────────────────────────────────────────────────────────────
+BASE = Path(__file__).parent
+DATA = BASE / "data"
+
+# ─── GitHub storage ───────────────────────────────────────────────────────────
+def _gh_headers() -> dict:
+    token = st.secrets["github"]["token"]
+    return {"Authorization": f"token {token}", "Accept": "application/vnd.github.v3+json"}
+
+
+def _gh_url(filename: str) -> str:
+    cfg = st.secrets["github"]
+    return f"https://api.github.com/repos/{cfg['owner']}/{cfg['repo']}/contents/outputs/{filename}"
+
+
+def github_read_json(filename: str):
+    """outputs/{filename} を GitHub から読み込む。存在しなければ None を返す。"""
+    r = requests.get(_gh_url(filename), headers=_gh_headers())
+    if r.status_code == 404:
+        return None, None
+    r.raise_for_status()
+    data = r.json()
+    if data.get("content"):
+        content = json.loads(base64.b64decode(data["content"]).decode("utf-8"))
+    else:
+        # Contents API はファイルサイズが1MBを超えると content を省略するため、
+        # raw media type で本文を直接取得する。
+        raw = requests.get(
+            _gh_url(filename),
+            headers={**_gh_headers(), "Accept": "application/vnd.github.raw"},
+        )
+        raw.raise_for_status()
+        content = json.loads(raw.content.decode("utf-8"))
+    return content, data["sha"]
+
+
+def github_write_json(filename: str, data) -> None:
+    """outputs/{filename} を GitHub に保存（なければ作成、あれば更新）。"""
+    cfg = st.secrets["github"]
+    _, sha = github_read_json(filename)
+    body = {
+        "message": f"update {filename}",
+        "content": base64.b64encode(
+            json.dumps(data, ensure_ascii=False, indent=4).encode("utf-8")
+        ).decode("utf-8"),
+        "branch": cfg["branch"],
+    }
+    if sha:
+        body["sha"] = sha
+    r = requests.put(_gh_url(filename), headers=_gh_headers(), json=body)
+    r.raise_for_status()
+
+# ─── Constants ────────────────────────────────────────────────────────────────
+# アノテーターID → ログイン名の対応表
+ANNOTATORS = {
+    "main": "admain",
+    "ad":   "adsub1",
+    "ad2":  "adsub2",
+    "A":    "ayabe",
+    "B":    "shibata",
+    "C":    "kondo",
+}
+_NAME_TO_ID = {v: k for k, v in ANNOTATORS.items()}
+
+# main の全レシピに対する各アノテーターのレビュー結果ファイル（main が再アノテーションする際の参考表示用）
+REVIEW_FILES = {"A": "A_main_reviewed.json", "B": "B_main_reviewed.json", "C": "C_main_reviewed.json"}
+
+# sub1/sub2 レシピファイル
+SUB_RECIPE_FILES = {
+    "sub1": "sub1_recipe_10.json",
+    "sub2": "sub2_recipe_10.json",
+}
+# バッチ固定のアノテーター（ad: sub1専任, ad2: sub2専任）
+_FIXED_BATCH = {"ad": "sub1", "ad2": "sub2"}
+# ログイン後にsub1/sub2を選択するアノテーター（同じログイン名で両方担当）
+_SELECTABLE_BATCH_IDS = {"A", "B", "C"}
+
+UTENSIL_CATEGORIES = {
+    "容器・保管可能な器具": (100, 199),
+    "加熱容器": (200, 299),
+    "切る": (300, 399),
+    "混ぜる": (400, 499),
+    "すくう": (500, 599),
+    "すりおろす・漉す・ふるう": (600, 699),
+    "伸ばす・塗る": (700, 799),
+    "整える": (800, 899),
+    "包む・覆う・敷く": (900, 999),
+    "道具不使用": (1000, 1099),
+}
+
+# vessel（容器・場）扱いのカテゴリ。それ以外は tools（操作道具）扱い。
+VESSEL_CATEGORY_NAMES = {"容器・保管可能な器具", "加熱容器"}
+
+
+def split_utensil_cats(utensil_cats: dict) -> tuple[dict, dict]:
+    """utensil_cats を vessel用カテゴリと tools用カテゴリに分割する。"""
+    vessel_cats = {k: v for k, v in utensil_cats.items() if k in VESSEL_CATEGORY_NAMES}
+    tool_cats = {k: v for k, v in utensil_cats.items() if k not in VESSEL_CATEGORY_NAMES}
+    return vessel_cats, tool_cats
+
+# ─── Data loaders ─────────────────────────────────────────────────────────────
+
+
+@st.cache_data
+def load_recipes() -> list:
+    with open(DATA / "recipe_100.json", encoding="utf-8") as f:
+        return json.load(f)
+
+
+@st.cache_data
+def load_sub_recipes(batch: str) -> list:
+    with open(DATA / SUB_RECIPE_FILES[batch], encoding="utf-8") as f:
+        return json.load(f)
+
+
+def recipe_option_labels(recipes: list) -> list[str]:
+    """レシピ選択肢の表示ラベル。例題（タイトルが「例題」で始まる）には連番を振らず、
+    実レシピのみ1から連番を振る。"""
+    labels = []
+    real_num = 0
+    for r in recipes:
+        title = r["title"]
+        if title.startswith("例題"):
+            labels.append(title)
+        else:
+            real_num += 1
+            labels.append(f"{real_num}. {title}")
+    return labels
+
+
+@st.cache_data
+def load_utensils() -> dict:
+    """Returns {category_name: [utensil_name, ...]}"""
+    df = pd.read_csv(DATA / "utensils.csv")
+    result = {}
+    for cat, (lo, hi) in UTENSIL_CATEGORIES.items():
+        names = df[df["id"].between(lo, hi)]["name"].tolist()
+        if names:
+            result[cat] = names
+    return result
+
+
+def flat_utensils(utensil_cats: dict) -> list:
+    return [name for names in utensil_cats.values() for name in names]
+
+
+def build_from_recipes(recipes: list) -> list:
+    """レシピJSONからアノテーション初期構造を生成する（resulting_from なし）。"""
+    result = []
+    for recipe in recipes:
+        step0 = [
+            {
+                "id": str(i),
+                "name": ing,
+                "utensil_interactions_list": [],
+            }
+            for i, ing in enumerate(recipe["ingredients"], 1)
+        ]
+        wsl = [{"step_after": 0, "state_list": step0}]
+        for n in range(1, len(recipe["instructions"]) + 1):
+            wsl.append({"step_after": n, "state_list": []})
+        result.append({"title": recipe["title"], "world_state_list": wsl})
+    return result
+
+
+def clean_for_save(annotations: list) -> list:
+    """内部ヘルパーフィールドと resulting_from を除去してからディスクに書き出す。"""
+    result = deepcopy(annotations)
+    for recipe in result:
+        for ws in recipe["world_state_list"]:
+            for state in ws["state_list"]:
+                state.pop("resulting_from", None)
+                for inter in state.get("utensil_interactions_list", []):
+                    inter.pop("_uid", None)
+    return result
+
+
+def strip_none_prefixes(annotations: list) -> list:
+    """JSON読み込み時に None_ プレフィックスを除去してUI用に正規化する。"""
+    result = deepcopy(annotations)
+    for recipe in result:
+        for ws in recipe.get("world_state_list", []):
+            for state in ws.get("state_list", []):
+                fp = state.get("final_position", "")
+                if fp.startswith("None_"):
+                    state["final_position"] = fp[5:]
+                for inter in state.get("utensil_interactions_list", []):
+                    sid = inter.get("source_state_id", "")
+                    if sid.startswith("None_"):
+                        inter["source_state_id"] = sid[5:]
+                    inter["vessel"] = [
+                        v[5:] if v.startswith("None_") else v
+                        for v in inter.get("vessel", [])
+                    ]
+                    inter["tools"] = [
+                        t[5:] if t.startswith("None_") else t
+                        for t in inter.get("tools", [])
+                    ]
+    return result
+
+
+def add_none_prefixes(annotations: list, utensil_cats: dict) -> list:
+    """保存前に一覧外の値へ None_ プレフィックスを付与し、final_position を自動導出する。"""
+    flat = flat_utensils(utensil_cats)
+    result = deepcopy(annotations)
+    for recipe in result:
+        valid_ids = {
+            s["id"]
+            for ws in recipe.get("world_state_list", [])
+            for s in ws.get("state_list", [])
+        }
+        for ws in recipe.get("world_state_list", []):
+            for state in ws.get("state_list", []):
+                for inter in state.get("utensil_interactions_list", []):
+                    sid = inter.get("source_state_id", "")
+                    if sid and sid not in valid_ids:
+                        inter["source_state_id"] = f"None_{sid}"
+                    inter["vessel"] = [
+                        v if v in flat else f"None_{v}"
+                        for v in inter.get("vessel", [])
+                    ]
+                    inter["tools"] = [
+                        t if t in flat else f"None_{t}"
+                        for t in inter.get("tools", [])
+                    ]
+                state["final_position"] = compute_final_position(state)
+    return result
+
+
+def compute_final_position(state: dict) -> str:
+    """Stateの最終位置を、合流する最後の生成元(interaction)のvessel配列の末尾から自動導出する。"""
+    interactions = state.get("utensil_interactions_list", [])
+    if not interactions:
+        return ""
+    vessel = interactions[-1].get("vessel", [])
+    return vessel[-1] if vessel else ""
+
+
+# ─── Review data (main用の参考表示) ─────────────────────────────────────────────
+
+
+@st.cache_data(ttl=300)
+def load_review_data() -> dict:
+    """main の全レシピに対する各アノテーターのレビュー結果を GitHub から読み込む。
+    ファイルが存在しない場合はそのアノテーターをスキップする。"""
+    data = {}
+    for rid, fname in REVIEW_FILES.items():
+        try:
+            content, _ = github_read_json(fname)
+        except Exception:
+            content = None
+        if content:
+            data[rid] = content
+    return data
+
+
+def _index_review_recipe(recipe: dict) -> dict:
+    steps = {}
+    for ws in recipe.get("world_state_list", []):
+        steps[ws["step_after"]] = {
+            "missing_state_check": ws.get("missing_state_check", False),
+            "missing_state_name_comment": ws.get("missing_state_name_comment", ""),
+            "missing_state_source_comment": ws.get("missing_state_source_comment", ""),
+            "missing_state_vessel_comment": ws.get("missing_state_vessel_comment", ""),
+            "missing_state_tools_comment": ws.get("missing_state_tools_comment", ""),
+            "states": {s["id"]: s for s in ws.get("state_list", [])},
+        }
+    return {"steps": steps, "annotation_note": recipe.get("annotation_note", "")}
+
+
+def build_review_index(review_data: dict) -> dict:
+    """{reviewer_id: recipes} → {recipe_title: {reviewer_id: indexed_recipe}}"""
+    index = {}
+    for rid, recipes in review_data.items():
+        for recipe in recipes:
+            index.setdefault(recipe["title"], {})[rid] = _index_review_recipe(recipe)
+    return index
+
+
+def get_review_state(rdata: dict, step_after: int, state_id: str) -> dict | None:
+    step_info = rdata["steps"].get(step_after)
+    if not step_info:
+        return None
+    return step_info["states"].get(state_id)
+
+
+def get_review_interaction(rdata: dict, step_after: int, state_id: str, ii: int) -> dict | None:
+    state = get_review_state(rdata, step_after, state_id)
+    if not state:
+        return None
+    inters = state.get("utensil_interactions_list", [])
+    return inters[ii] if ii < len(inters) else None
+
+
+# ─── State helpers ────────────────────────────────────────────────────────────
+
+
+def ensure_uids(annotations: list) -> None:
+    for recipe in annotations:
+        for ws in recipe["world_state_list"]:
+            for state in ws["state_list"]:
+                for inter in state.get("utensil_interactions_list", []):
+                    if "_uid" not in inter:
+                        inter["_uid"] = uuid.uuid4().hex[:8]
+
+
+def get_step_ws(ridx: int, sidx: int):
+    for ws in st.session_state.ann[ridx]["world_state_list"]:
+        if ws["step_after"] == sidx:
+            return ws
+    return None
+
+
+def max_step(ridx: int) -> int:
+    return max(ws["step_after"] for ws in st.session_state.ann[ridx]["world_state_list"])
+
+
+def prev_states(ridx: int, sidx: int, exclude_id: str = None) -> dict:
+    """Return {id: (step_after, name, final_position)} for all states in steps 0..sidx（同stepのstate含む）。
+    exclude_id を指定すると、そのidのstate自身は除外する（自己参照を防ぐため）。"""
+    result = {}
+    for ws in st.session_state.ann[ridx]["world_state_list"]:
+        if ws["step_after"] <= sidx:
+            for s in ws["state_list"]:
+                if s["id"] == exclude_id:
+                    continue
+                result[s["id"]] = (ws["step_after"], s["name"], compute_final_position(s))
+    return result
+
+
+def used_source_ids(ridx: int, sidx: int) -> set:
+    """Return all source_state_ids referenced in steps 0..sidx (current step含む)."""
+    result = set()
+    for ws in st.session_state.ann[ridx]["world_state_list"]:
+        if ws["step_after"] <= sidx:
+            for state in ws["state_list"]:
+                for inter in state.get("utensil_interactions_list", []):
+                    sid = inter.get("source_state_id")
+                    if sid:
+                        result.add(sid)
+    return result
+
+
+def used_utensils_in_recipe(ridx: int) -> set:
+    """Return all utensil names used across all steps of the recipe."""
+    result = set()
+    for ws in st.session_state.ann[ridx]["world_state_list"]:
+        for state in ws["state_list"]:
+            for inter in state.get("utensil_interactions_list", []):
+                for u in inter.get("vessel", []) + inter.get("tools", []):
+                    if u:
+                        result.add(u)
+    return result
+
+
+def unannotated_indices(ann: list) -> list[int]:
+    """全stepを通じてnameが空のstateが1件以上あるレシピのインデックスを返す。"""
+    result = []
+    for i, recipe in enumerate(ann):
+        steps = [ws for ws in recipe["world_state_list"] if ws["step_after"] >= 1]
+        has_empty = any(
+            not ws["state_list"] or any(not s.get("name", "") for s in ws["state_list"])
+            for ws in steps
+        )
+        if has_empty:
+            result.append(i)
+    return result
+
+
+# ─── Session state init ────────────────────────────────────────────────────────
+
+
+def get_batch(annotator: str) -> str | None:
+    """アノテーターが担当するバッチ（'sub1'/'sub2'）。main はフルレシピのため None。"""
+    if annotator in _FIXED_BATCH:
+        return _FIXED_BATCH[annotator]
+    if annotator in _SELECTABLE_BATCH_IDS:
+        return st.session_state.get("batch_select")
+    return None
+
+
+def get_recipes(annotator: str) -> list:
+    batch = get_batch(annotator)
+    return load_sub_recipes(batch) if batch else load_recipes()
+
+
+def init() -> None:
+    annotator = st.session_state.get("annotator_select", "")
+    batch = get_batch(annotator)
+    key = (annotator, batch)
+    prev = st.session_state.get("_ann_key", "__UNSET__")
+
+    if "ann" not in st.session_state or prev != key:
+        recipes = load_sub_recipes(batch) if batch else load_recipes()
+        ann = build_from_recipes(recipes)
+        ensure_uids(ann)
+        st.session_state.ann = ann
+        st.session_state.ridx = 0
+        st.session_state.sidx = 1
+        st.session_state._ann_key = key
+        if batch:
+            fname = f"{annotator}_{batch}_annotated.json"
+        else:
+            fname = f"{annotator}_annotated_v2.json"
+        st.session_state.save_filename = fname
+        st.session_state["save_filename_input"] = fname
+
+
+# ─── Widget helpers ────────────────────────────────────────────────────────────
+
+_CAT_SEP_PRE = "── "
+_CAT_SEP_SUF = " ──"
+
+
+def utensil_multi_select(label: str, key: str, current: list, utensil_cats: dict) -> list:
+    """複数選択。選択順（一覧外の自由記述も含む）はそのまま維持して返す。"""
+    utensils = flat_utensils(utensil_cats)
+
+    opts = []
+    for cat, names in utensil_cats.items():
+        opts.append(f"{_CAT_SEP_PRE}{cat}{_CAT_SEP_SUF}")
+        opts.extend(names)
+    # 既存の一覧外（自由記述）値も選択肢に加え、選択済みとして表示できるようにする
+    opts.extend(u for u in current if u not in utensils)
+
+    def _remove_seps() -> None:
+        st.session_state[key] = [
+            u for u in st.session_state[key]
+            if not (u.startswith(_CAT_SEP_PRE) and u.endswith(_CAT_SEP_SUF))
+        ]
+
+    sel = st.multiselect(
+        label,
+        opts,
+        default=[u for u in current if u in opts],
+        key=key,
+        on_change=_remove_seps,
+        accept_new_options=True,
+        placeholder="選択、または一覧外の名称を入力",
+        label_visibility="collapsed",
+    )
+
+    return [
+        u for u in sel
+        if not (u.startswith(_CAT_SEP_PRE) and u.endswith(_CAT_SEP_SUF))
+    ]
+
+
+_DUP_SEP = "⁣"  # 重複識別用の区切り文字（保存データには出さない）
+
+
+def _dup_base(token: str) -> str:
+    return token.split(_DUP_SEP)[0]
+
+
+def _dup_fmt(token: str) -> str:
+    """表示ラベル。重複選択肢は同一ラベルだとStreamlitがドロップダウンから除外してしまうため、
+    2個目以降は「名前（n）」のように連番を付けて区別できるようにする。"""
+    base, _, n = token.partition(_DUP_SEP)
+    return base if not n else f"{base}（{n}）"
+
+
+def _dup_encode_seq(names: list) -> list:
+    """名前のリスト（重複あり）→ 同名には連番タグを付けたトークン列。"""
+    counts = {}
+    tokens = []
+    for n in names:
+        counts[n] = counts.get(n, 0) + 1
+        tokens.append(n if counts[n] == 1 else f"{n}{_DUP_SEP}{counts[n]}")
+    return tokens
+
+
+def vessel_multi_select(label: str, key: str, current: list, utensil_cats: dict) -> list:
+    """複数選択（使用容器用）。見た目は通常のmultiselectのまま、同じ器具を複数回選択できる。
+    選択順を維持したクリーンな名前リスト（重複を含む）を返す。"""
+    utensils = flat_utensils(utensil_cats)
+
+    raw_current = st.session_state.get(key)
+    if raw_current is None:
+        raw_current = _dup_encode_seq(current)
+
+    opts = []
+    for cat, names in utensil_cats.items():
+        opts.append(f"{_CAT_SEP_PRE}{cat}{_CAT_SEP_SUF}")
+        opts.extend(names)
+    # 既存の一覧外（自由記述）値も選択肢に加える
+    for u in current:
+        if u not in utensils and u not in opts:
+            opts.append(u)
+    # 現在保持しているトークン（重複タグ付き含む）は必ず選択肢に含める
+    for t in raw_current:
+        if t not in opts:
+            opts.append(t)
+    # 各項目について、もう1回重複選択できる「次の枠」を追加
+    counts = {}
+    for t in raw_current:
+        counts[_dup_base(t)] = counts.get(_dup_base(t), 0) + 1
+    for base, cnt in counts.items():
+        nxt = f"{base}{_DUP_SEP}{cnt + 1}"
+        if nxt not in opts:
+            opts.append(nxt)
+
+    def _remove_seps() -> None:
+        st.session_state[key] = [
+            u for u in st.session_state[key]
+            if not (_dup_base(u).startswith(_CAT_SEP_PRE) and _dup_base(u).endswith(_CAT_SEP_SUF))
+        ]
+
+    sel = st.multiselect(
+        label,
+        opts,
+        default=[t for t in raw_current if t in opts],
+        key=key,
+        format_func=_dup_fmt,
+        on_change=_remove_seps,
+        accept_new_options=True,
+        placeholder="選択、または一覧外の名称を入力",
+        label_visibility="collapsed",
+    )
+
+    sel = [
+        u for u in sel
+        if not (_dup_base(u).startswith(_CAT_SEP_PRE) and _dup_base(u).endswith(_CAT_SEP_SUF))
+    ]
+    return [_dup_base(u) for u in sel]
+
+
+def _check_comment_html(label: str, checked: bool, comment: str) -> str:
+    """check=true ならハイライト表示、comment があれば非ハイライトで表示。両方無ければ空文字。"""
+    comment = (comment or "").strip()
+    if not checked and not comment:
+        return ""
+    text = comment.replace("\n", "<br>")
+    if checked:
+        return (
+            '<div style="background:#ffe3e3;border-left:3px solid #e53935;'
+            'padding:2px 6px;margin:2px 0 4px;font-size:0.8em;border-radius:3px">'
+            f"⚠ <b>{label}</b>{' - ' + text if text else ''}</div>"
+        )
+    return (
+        '<div style="color:#555;font-size:0.78em;padding:1px 6px 4px">'
+        f"💬 <b>{label}</b>: {text}</div>"
+    )
+
+
+def render_review_marks(marks: list[tuple[str, bool, str]]) -> None:
+    """(ラベル, check, comment) のリストから、該当項目のみをまとめて描画する。"""
+    html = "".join(_check_comment_html(label, checked, comment) for label, checked, comment in marks)
+    if html:
+        st.markdown(html, unsafe_allow_html=True)
+
+
+def source_label(step: int, name: str) -> str:
+    """UIに表示するソースラベル。材料は名前のみ、中間stateは step N: name。"""
+    return name if step == 0 else f"step {step}: {name}"
+
+
+def source_select(label: str, key: str, current: str, src: dict, used_ids: set = None) -> str:
+    """src: {id: (step_after, name, final_position)}; used_ids: 既に使用済みのid集合"""
+    id2label = {sid: source_label(step, name) for sid, (step, name, _pos) in src.items()}
+    label2id = {v: k for k, v in id2label.items()}
+
+    used_labels = {id2label[sid] for sid in (used_ids or []) if sid in id2label}
+
+    cur_label = id2label.get(current, "")
+    opts = [""] + list(id2label.values())
+    idx = opts.index(cur_label) if cur_label in opts else 0
+
+    def _fmt(v: str) -> str:
+        if v in used_labels:
+            return "✔ " + v
+        return v
+
+    sel = st.selectbox(label, opts, index=idx, key=key, format_func=_fmt, label_visibility="collapsed")
+    return label2id.get(sel, "")
+
+
+# ─── Callbacks ────────────────────────────────────────────────────────────────
+
+
+def cb_add_interaction(ridx, sidx, si):
+    ws = get_step_ws(ridx, sidx)
+    ws["state_list"][si]["utensil_interactions_list"].append(
+        {"source_state_id": "", "vessel": [], "tools": [], "_uid": uuid.uuid4().hex[:8]}
+    )
+
+
+def cb_del_interaction(ridx, sidx, si, ii):
+    ws = get_step_ws(ridx, sidx)
+    ws["state_list"][si]["utensil_interactions_list"].pop(ii)
+
+
+def cb_add_state(ridx, sidx):
+    ws = get_step_ws(ridx, sidx)
+    ws["state_list"].append(
+        {
+            "id": uuid.uuid4().hex[:8],
+            "name": "",
+            "utensil_interactions_list": [],
+        }
+    )
+
+
+def cb_del_state(ridx, sidx, si):
+    ws = get_step_ws(ridx, sidx)
+    ws["state_list"].pop(si)
+
+
+# ─── Main ─────────────────────────────────────────────────────────────────────
+
+
+def _login_screen() -> None:
+    st.title("調理器具アノテーション")
+    st.markdown("#### あなたの名字を半角ローマ字で入力して開始してください")
+    entered = st.text_input("名前")
+
+    if st.button("開始", type="primary"):
+        if entered not in _NAME_TO_ID:
+            st.error(f"名前が正しくありません: {entered}")
+            return
+        st.session_state.annotator_select = _NAME_TO_ID[entered]
+        st.session_state.annotator_confirmed = True
+        st.rerun()
+
+
+def _batch_screen() -> None:
+    st.title("調理器具アノテーション")
+    annotator = st.session_state.get("annotator_select", "")
+    label = ANNOTATORS.get(annotator, "")
+    st.markdown(f"#### {label} さん、担当するレシピセットを選択してください")
+
+    col1, col2 = st.columns(2)
+    with col1:
+        if st.button("sub1（10レシピ）", type="primary", use_container_width=True):
+            st.session_state.batch_select = "sub1"
+            st.rerun()
+    with col2:
+        if st.button("sub2（10レシピ）", type="primary", use_container_width=True):
+            st.session_state.batch_select = "sub2"
+            st.rerun()
+
+
+def main() -> None:
+    st.set_page_config(page_title="アノテーションツール", layout="wide")
+
+    if not st.session_state.get("annotator_confirmed", False):
+        _login_screen()
+        return
+
+    annotator = st.session_state.get("annotator_select", "")
+    if annotator in _SELECTABLE_BATCH_IDS and not st.session_state.get("batch_select"):
+        _batch_screen()
+        return
+
+    init()
+
+    st.markdown(
+        """
+        <style>
+        div[data-testid="stHorizontalBlock"] { align-items: flex-start; }
+        /* 全カラム独立スクロール */
+        section[data-testid="stMain"]
+            div[data-testid="stHorizontalBlock"]
+            > div[data-testid="stColumn"] {
+            position: sticky;
+            top: 0;
+            max-height: 100vh;
+            overflow-y: auto;
+        }
+        /* CUD: state カード — 青(#005AFF)左アクセント + 薄青背景 */
+        div[data-testid="stVerticalBlockBorderWrapper"] {
+            background-color: #EFF7FF !important;
+            border-left: 4px solid #005AFF !important;
+        }
+        /* CUD: primary ボタン（stepナビ・保存）をオレンジ→緑 */
+        button[data-testid="stBaseButton-primary"] {
+            background-color: #03AF7A !important;
+            border-color: #03AF7A !important;
+            color: #fff !important;
+        }
+        button[data-testid="stBaseButton-primary"]:hover {
+            background-color: #029468 !important;
+            border-color: #029468 !important;
+        }
+        /* CUD: multiselect 選択チップをオレンジ→緑 */
+        div[data-testid="stMultiSelect"] span[data-baseweb="tag"] {
+            background-color: #03AF7A !important;
+        }
+        /* CUD: multiselect の "Select all" を非表示 */
+        div[data-testid="stMultiSelect"] ul li:first-child:has(input[type="checkbox"]) {
+            display: none !important;
+        }
+        /* 備考テキストエリアを小さめに */
+        textarea[data-testid="stTextArea"] {
+            font-size: 0.82em;
+        }
+        </style>
+        """,
+        unsafe_allow_html=True,
+    )
+
+    utensil_cats = load_utensils()
+    vessel_cats, tool_cats = split_utensil_cats(utensil_cats)
+    annotator = st.session_state.get("annotator_select", "")
+    batch = get_batch(annotator)
+    recipes = get_recipes(annotator)
+    ann = st.session_state.ann
+
+    # main はレビュー結果（各アノテーターによるチェック・コメント）を参考表示する
+    review_index = build_review_index(load_review_data()) if annotator == "main" else {}
+
+    # ── 4カラム: ナビ | レシピ情報 | アノテーション | 器具一覧 ───────────────────────
+    nav_col, left, mid, utensil_col = st.columns([1, 2, 5, 1], gap="large")
+
+    # ── Nav column ────────────────────────────────────────────────────────────
+    with nav_col:
+        # st.markdown("**アノテーション**")
+
+        annotator_label = ANNOTATORS.get(annotator, "admin")
+        label_suffix = f"（{batch}）" if batch else ""
+        st.markdown(f"**{annotator_label}{label_suffix}**")
+
+        if st.button("ログアウト", use_container_width=True):
+            for k in ["annotator_confirmed", "annotator_select", "batch_select", "_ann_key", "ann"]:
+                st.session_state.pop(k, None)
+            st.rerun()
+
+        st.divider()
+
+        recipe_labels = recipe_option_labels(recipes)
+        new_ridx = st.selectbox(
+            "レシピ選択",
+            range(len(recipes)),
+            format_func=lambda i: recipe_labels[i],
+            index=st.session_state.ridx,
+            key="sb_recipe",
+        )
+        if new_ridx != st.session_state.ridx:
+            st.session_state.ridx = new_ridx
+            st.session_state.sidx = 1
+            st.rerun()
+
+        ridx = st.session_state.ridx
+        mstep = max_step(ridx)
+
+        st.divider()
+
+        for si in range(1, mstep + 1):
+            btype = "primary" if si == st.session_state.sidx else "secondary"
+            if st.button(f"Step {si}", key=f"nav_{si}", type=btype, use_container_width=True):
+                st.session_state.sidx = si
+                st.rerun()
+
+        st.divider()
+
+        filename = st.session_state.save_filename
+        if not filename.endswith(".json"):
+            filename += ".json"
+
+        if st.button("☁ 保存", type="primary", use_container_width=True):
+            try:
+                github_write_json(
+                    filename,
+                    add_none_prefixes(clean_for_save(ann), utensil_cats),
+                )
+                st.success(f"保存しました: outputs/{filename}")
+            except Exception as e:
+                st.error(f"保存失敗: {e}")
+
+        if st.button("☁ 読み込み", use_container_width=True):
+            try:
+                loaded, _ = github_read_json(filename)
+                if loaded is None:
+                    st.warning(f"outputs/{filename} がストレージに見つかりません")
+                else:
+                    fresh = build_from_recipes(recipes)
+                    loaded_stripped = strip_none_prefixes(loaded)
+                    loaded_map = {r["title"]: r for r in loaded_stripped}
+                    for i, r in enumerate(fresh):
+                        if r["title"] in loaded_map:
+                            fresh[i] = loaded_map[r["title"]]
+                    ensure_uids(fresh)
+                    st.session_state.ann = fresh
+                    st.session_state.ridx = 0
+                    st.session_state.sidx = 1
+                    st.rerun()
+            except Exception as e:
+                st.error(f"読み込み失敗: {e}")
+
+        unannotated = unannotated_indices(ann)
+        if unannotated:
+            st.divider()
+            st.markdown(f"**未アノテーション：{len(unannotated)}件**")
+            st.caption(f"「{recipes[unannotated[0]]['title']}」から再開")
+
+        if annotator == "main":
+            st.divider()
+            cur_title = recipes[ridx]["title"]
+            reviewers = ", ".join(ANNOTATORS.get(rid, rid) for rid in review_index.get(cur_title, {}))
+            st.caption(f"レビュー: {reviewers or 'なし'}")
+            if st.button("🔍 レビュー再読み込み", use_container_width=True):
+                load_review_data.clear()
+                st.rerun()
+
+    ridx = st.session_state.ridx
+    sidx = st.session_state.sidx
+    recipe = recipes[ridx]
+    recipe_review = review_index.get(recipe["title"], {})
+
+    # ── Left column: recipe info ───────────────────────────────────────────────
+    with left:
+        st.subheader(recipe["title"])
+
+        with st.expander("材料", expanded=False):
+            for ing in recipe["ingredients"]:
+                st.write(f"• {ing}")
+
+        st.markdown("#### 調理手順")
+        for i, instr in enumerate(recipe["instructions"], 1):
+            if i == sidx:
+                st.markdown(
+                    f'<div style="background:#fff9c4;padding:10px;border-radius:6px;'
+                    f'border-left:4px solid #f9a825;margin:4px 0">'
+                    f"<b>Step </b> {instr}</div>",
+                    unsafe_allow_html=True,
+                )
+            else:
+                st.markdown(f"**Step** {instr}")
+            st.write("")
+
+        if sidx == mstep:
+            st.warning("「盛り付け皿・器」を最終容器として記入")
+
+        st.markdown("#### アノテーション備考欄")
+        ann[ridx]["annotation_note"] = st.text_area(
+            "アノテーション備考欄",
+            value=ann[ridx].get("annotation_note", ""),
+            key=f"annotation_note_{ridx}",
+            height=120,
+            placeholder="不明点・迷った点・感じた点・改善すべき点（Step1: ○○が不明など）（複数ある場合は改行して区切る）",
+            label_visibility="collapsed",
+        )
+
+        if recipe_review:
+            submitted_note = next(iter(recipe_review.values()))["annotation_note"].strip()
+            if submitted_note:
+                st.caption("📋 レビュー提出時のメモ（参考）")
+                st.info(submitted_note)
+
+    # ── Utensil column ────────────────────────────────────────────────────────
+    with utensil_col:
+        st.markdown("**🥄 器具一覧**")
+        st.divider()
+        used = used_utensils_in_recipe(ridx)
+        mark_cats = {"容器・保管可能な器具", "加熱容器"}
+        for cat, names in utensil_cats.items():
+            with st.expander(cat, expanded=(cat in mark_cats)):
+                for u in names:
+                    if cat in mark_cats and u in used:
+                        st.markdown(
+                            f'<span style="color:#03AF7A;font-weight:bold">✔ {u}</span>',
+                            unsafe_allow_html=True,
+                        )
+                    else:
+                        st.caption(u)
+
+    # ── Middle column: annotation form ────────────────────────────────────────
+    with mid:
+        st.markdown(f"#### Step {sidx} アノテーション")
+
+        if recipe_review:
+            step_marks = []
+            for rid, rdata in recipe_review.items():
+                info = rdata["steps"].get(sidx)
+                if not info:
+                    continue
+                label = ANNOTATORS.get(rid, rid)
+                step_marks.append((f"{label}: stateの不足あり", info["missing_state_check"], ""))
+                step_marks.append((f"{label} 名前メモ", False, info["missing_state_name_comment"]))
+                step_marks.append((f"{label} 生成元メモ", False, info["missing_state_source_comment"]))
+                step_marks.append((f"{label} 容器メモ", False, info["missing_state_vessel_comment"]))
+                step_marks.append((f"{label} 道具メモ", False, info["missing_state_tools_comment"]))
+            render_review_marks(step_marks)
+
+        step_ws = get_step_ws(ridx, sidx)
+        if step_ws is None:
+            st.error("このステップのデータが見つかりません")
+            return
+
+        used_sources = used_source_ids(ridx, sidx)
+
+        # stateが空なら1つ自動追加
+        if not step_ws["state_list"]:
+            step_ws["state_list"].append(
+                {
+                    "id": uuid.uuid4().hex[:8],
+                    "name": "",
+                    "utensil_interactions_list": [],
+                }
+            )
+
+        state_to_del = None
+        for si, state in enumerate(step_ws["state_list"]):
+            src = prev_states(ridx, sidx, exclude_id=state["id"])
+            with st.container(border=True):
+                h_col, del_col = st.columns([8, 1])
+                with h_col:
+                    st.markdown(
+                        f'<span style="background:#005AFF;color:#fff;'
+                        f'padding:3px 10px;border-radius:4px;font-size:0.9em;font-weight:bold">'
+                        f'State {si + 1}</span>',
+                        unsafe_allow_html=True,
+                    )
+                with del_col:
+                    if st.button("🗑", key=f"dst_{ridx}_{sidx}_{si}", help="このStateを削除"):
+                        state_to_del = si
+
+                # 最終ステップは名前にレシピタイトルを必ず入れる
+                if sidx == mstep and not state.get("name"):
+                    state["name"] = recipe["title"]
+
+                state["name"] = st.text_input(
+                    "名前（name）",
+                    value=state.get("name", ""),
+                    key=f"name_{ridx}_{sidx}_{si}",
+                )
+
+                if recipe_review:
+                    name_marks = []
+                    for rid, rdata in recipe_review.items():
+                        rstate = get_review_state(rdata, sidx, state["id"])
+                        if not rstate:
+                            continue
+                        label = ANNOTATORS.get(rid, rid)
+                        name_marks.append(
+                            (label, rstate.get("name_check", False), rstate.get("name_comment", ""))
+                        )
+                    render_review_marks(name_marks)
+
+                st.markdown(
+                    "<hr style='margin:4px 0;border:none;border-top:1px solid #ddd'>",
+                    unsafe_allow_html=True,
+                )
+
+                interactions = state.setdefault("utensil_interactions_list", [])
+
+                # 生成元が空なら1つ自動追加
+                if not interactions:
+                    interactions.append(
+                        {"source_state_id": "", "vessel": [], "tools": [], "_uid": uuid.uuid4().hex[:8]}
+                    )
+
+                h_src, h_vessel, h_tools, _h_copy, _h_del = st.columns([4, 4, 4, 1, 1])
+                with h_src:
+                    st.markdown("**生成元（source_state_id）**")
+                with h_vessel:
+                    st.markdown("**使用容器（vessels）**")
+                with h_tools:
+                    st.markdown("**使用道具（tools）**")
+
+                to_del = None
+                for ii, inter in enumerate(interactions):
+                    uid = inter.setdefault("_uid", uuid.uuid4().hex[:8])
+                    wkey = f"u_{ridx}_{sidx}_{si}_{uid}"
+
+                    with st.container():
+                        src_col, vessel_col, tools_col, copy_col, del_col = st.columns([4, 4, 4, 1, 1])
+
+                        with src_col:
+                            inter["source_state_id"] = source_select(
+                                "生成元（source_state_id）",
+                                f"src_{ridx}_{sidx}_{si}_{uid}",
+                                inter.get("source_state_id", ""),
+                                src,
+                                used_ids=used_sources,
+                            )
+                            if recipe_review:
+                                marks = []
+                                for rid, rdata in recipe_review.items():
+                                    rinter = get_review_interaction(rdata, sidx, state["id"], ii)
+                                    if not rinter:
+                                        continue
+                                    label = ANNOTATORS.get(rid, rid)
+                                    marks.append((
+                                        label,
+                                        rinter.get("source_state_id_check", False),
+                                        rinter.get("source_state_id_comment", ""),
+                                    ))
+                                render_review_marks(marks)
+
+                        with vessel_col:
+                            src_step, _src_name, src_position = src.get(
+                                inter["source_state_id"], (0, "", "")
+                            )
+                            if src_step > 0 and src_position and not inter.get("vessel"):
+                                inter["vessel"] = [src_position]
+                                st.session_state[f"{wkey}_vessel"] = [src_position]
+
+                            inter["vessel"] = vessel_multi_select(
+                                "使用容器（vessels）※複数選択可",
+                                f"{wkey}_vessel",
+                                inter.get("vessel", []),
+                                vessel_cats,
+                            )
+                            if recipe_review:
+                                marks = []
+                                for rid, rdata in recipe_review.items():
+                                    rinter = get_review_interaction(rdata, sidx, state["id"], ii)
+                                    if not rinter:
+                                        continue
+                                    label = ANNOTATORS.get(rid, rid)
+                                    marks.append((
+                                        label, rinter.get("vessel_check", False), rinter.get("vessel_comment", "")
+                                    ))
+                                render_review_marks(marks)
+
+                        with tools_col:
+                            inter["tools"] = utensil_multi_select(
+                                "使用道具（tools）※複数選択可",
+                                f"{wkey}_tools",
+                                inter.get("tools", []),
+                                tool_cats,
+                            )
+                            if recipe_review:
+                                marks = []
+                                for rid, rdata in recipe_review.items():
+                                    rinter = get_review_interaction(rdata, sidx, state["id"], ii)
+                                    if not rinter:
+                                        continue
+                                    label = ANNOTATORS.get(rid, rid)
+                                    marks.append((
+                                        label, rinter.get("tools_check", False), rinter.get("tools_comment", "")
+                                    ))
+                                render_review_marks(marks)
+
+                        with copy_col:
+                            if ii > 0:
+                                prev_vessel = deepcopy(interactions[ii - 1].get("vessel", []))
+                                prev_tools = deepcopy(interactions[ii - 1].get("tools", []))
+
+                                def _do_copy(
+                                    _inter=inter,
+                                    _prev_vessel=prev_vessel,
+                                    _prev_tools=prev_tools,
+                                    _wkey=wkey,
+                                ) -> None:
+                                    for _field, _prev in (
+                                        ("vessel", _prev_vessel),
+                                        ("tools", _prev_tools),
+                                    ):
+                                        current_u = _inter.get(_field, [])
+                                        merged = list(dict.fromkeys(current_u + _prev))
+                                        _inter[_field] = merged
+                                        st.session_state[f"{_wkey}_{_field}"] = merged
+
+                                st.write("")
+                                st.button(
+                                    "⬆",
+                                    key=f"copy_{ridx}_{sidx}_{si}_{uid}",
+                                    help="1個上の行の容器・道具をコピー",
+                                    on_click=_do_copy,
+                                )
+
+                        with del_col:
+                            st.write("")
+                            if st.button("🗑", key=f"del_{ridx}_{sidx}_{si}_{uid}"):
+                                to_del = ii
+
+                if to_del is not None:
+                    cb_del_interaction(ridx, sidx, si, to_del)
+                    st.rerun()
+
+                if recipe_review:
+                    missing_marks = []
+                    for rid, rdata in recipe_review.items():
+                        rstate = get_review_state(rdata, sidx, state["id"])
+                        if not rstate:
+                            continue
+                        label = ANNOTATORS.get(rid, rid)
+                        missing_marks.append((
+                            f"{label}: 生成元/容器/道具の不足あり",
+                            rstate.get("missing_interaction_check", False),
+                            "",
+                        ))
+                        missing_marks.append(
+                            (f"{label} 生成元不足メモ", False, rstate.get("missing_source_comment", ""))
+                        )
+                        missing_marks.append(
+                            (f"{label} 容器不足メモ", False, rstate.get("missing_vessel_comment", ""))
+                        )
+                        missing_marks.append(
+                            (f"{label} 道具不足メモ", False, rstate.get("missing_tools_comment", ""))
+                        )
+                    render_review_marks(missing_marks)
+
+                if st.button("＋ ソースを追加", key=f"add_{ridx}_{sidx}_{si}"):
+                    cb_add_interaction(ridx, sidx, si)
+                    st.rerun()
+
+        if state_to_del is not None:
+            cb_del_state(ridx, sidx, state_to_del)
+            st.rerun()
+
+        st.markdown("---")
+        if st.button("＋ Stateを追加", key=f"addst_{ridx}_{sidx}"):
+            cb_add_state(ridx, sidx)
+            st.rerun()
+
+
+if __name__ == "__main__":
+    main()
