@@ -14271,24 +14271,19 @@
                 "state_list": [
                     {
                         "id": "f356652e",
-                        "name": "切った春菊",
+                        "name": "春菊・[A]をあえたもの",
                         "utensil_interactions_list": [
                             {
                                 "source_state_id": "3",
                                 "vessel": [
-                                    "まな板"
+                                    "まな板",
+                                    "ボウル"
                                 ],
                                 "tools": [
-                                    "包丁"
+                                    "包丁",
+                                    "スプーン"
                                 ]
-                            }
-                        ],
-                        "final_position": "まな板"
-                    },
-                    {
-                        "id": "dff826db",
-                        "name": "混ぜた[A]",
-                        "utensil_interactions_list": [
+                            },
                             {
                                 "source_state_id": "4",
                                 "vessel": [
@@ -14560,14 +14555,14 @@
                             {
                                 "source_state_id": "f356652e",
                                 "vessel": [
-                                    "まな板"
+                                    "ボウル"
                                 ],
                                 "tools": [
-                                    "道具不使用"
+                                    "スプーン"
                                 ]
                             }
                         ],
-                        "final_position": "まな板"
+                        "final_position": "ボウル"
                     }
                 ]
             }
