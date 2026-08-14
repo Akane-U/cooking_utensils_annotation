@@ -25409,14 +25409,14 @@
                             {
                                 "source_state_id": "3",
                                 "vessel": [
-                                    "バット"
+                                    "まな板"
                                 ],
                                 "tools": [
-                                    "スプーン"
+                                    "包丁"
                                 ]
                             }
                         ],
-                        "final_position": "バット"
+                        "final_position": "まな板"
                     }
                 ]
             },
@@ -25441,7 +25441,6 @@
                             {
                                 "source_state_id": "31f526c8",
                                 "vessel": [
-                                    "バット",
                                     "まな板",
                                     "盛り付け皿・器"
                                 ],
