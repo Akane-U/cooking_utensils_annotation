@@ -18585,14 +18585,14 @@
                                 "source_state_id": "2",
                                 "vessel": [
                                     "まな板",
-                                    "None_耐熱皿"
+                                    "バット"
                                 ],
                                 "tools": [
                                     "包丁"
                                 ]
                             }
                         ],
-                        "final_position": "None_耐熱皿"
+                        "final_position": "バット"
                     },
                     {
                         "id": "afdaf2fd",
@@ -18604,14 +18604,14 @@
                                     "まな板",
                                     "ボウル",
                                     "ざる",
-                                    "None_耐熱皿"
+                                    "バット"
                                 ],
                                 "tools": [
                                     "包丁"
                                 ]
                             }
                         ],
-                        "final_position": "None_耐熱皿"
+                        "final_position": "バット"
                     }
                 ]
             },
@@ -18625,7 +18625,7 @@
                             {
                                 "source_state_id": "80c011df",
                                 "vessel": [
-                                    "None_耐熱皿"
+                                    "バット"
                                 ],
                                 "tools": [
                                     "道具不使用"
@@ -18634,7 +18634,7 @@
                             {
                                 "source_state_id": "afdaf2fd",
                                 "vessel": [
-                                    "None_耐熱皿"
+                                    "バット"
                                 ],
                                 "tools": [
                                     "道具不使用"
@@ -18643,7 +18643,7 @@
                             {
                                 "source_state_id": "1",
                                 "vessel": [
-                                    "None_耐熱皿"
+                                    "バット"
                                 ],
                                 "tools": [
                                     "道具不使用"
@@ -18652,14 +18652,14 @@
                             {
                                 "source_state_id": "8",
                                 "vessel": [
-                                    "None_耐熱皿"
+                                    "バット"
                                 ],
                                 "tools": [
                                     "道具不使用"
                                 ]
                             }
                         ],
-                        "final_position": "None_耐熱皿"
+                        "final_position": "バット"
                     }
                 ]
             },
@@ -18673,14 +18673,14 @@
                             {
                                 "source_state_id": "a8d3fbf0",
                                 "vessel": [
-                                    "None_耐熱皿"
+                                    "バット"
                                 ],
                                 "tools": [
                                     "道具不使用"
                                 ]
                             }
                         ],
-                        "final_position": "None_耐熱皿"
+                        "final_position": "バット"
                     }
                 ]
             },
@@ -18694,7 +18694,7 @@
                             {
                                 "source_state_id": "0a3b5142",
                                 "vessel": [
-                                    "None_耐熱皿",
+                                    "バット",
                                     "まな板"
                                 ],
                                 "tools": [
@@ -18712,14 +18712,14 @@
                             {
                                 "source_state_id": "0a3b5142",
                                 "vessel": [
-                                    "None_耐熱皿"
+                                    "バット"
                                 ],
                                 "tools": [
                                     "道具不使用"
                                 ]
                             }
                         ],
-                        "final_position": "None_耐熱皿"
+                        "final_position": "バット"
                     }
                 ]
             },
@@ -18733,7 +18733,7 @@
                             {
                                 "source_state_id": "83fa243f",
                                 "vessel": [
-                                    "None_耐熱皿",
+                                    "バット",
                                     "盛り付け皿・器"
                                 ],
                                 "tools": [
@@ -18744,7 +18744,7 @@
                                 "source_state_id": "d438251a",
                                 "vessel": [
                                     "まな板",
-                                    "None_耐熱皿",
+                                    "バット",
                                     "盛り付け皿・器"
                                 ],
                                 "tools": [
@@ -18797,7 +18797,7 @@
                 ]
             }
         ],
-        "annotation_note": "step3: 直接接するのは耐熱皿のみ\n耐熱皿はバットで代用可能？"
+        "annotation_note": "step3: 直接接するのは耐熱皿のみ\n耐熱皿はバットで代用可能？⇒可能"
     },
     {
         "title": "えび、わかめ、きのこ入り茶碗蒸し",
