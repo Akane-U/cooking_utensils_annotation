@@ -61,6 +61,22 @@
                             }
                         ],
                         "final_position": "まな板"
+                    },
+                    {
+                        "id": "81fa317a",
+                        "name": "切った油揚げ",
+                        "utensil_interactions_list": [
+                            {
+                                "source_state_id": "2",
+                                "vessel": [
+                                    "まな板"
+                                ],
+                                "tools": [
+                                    "包丁"
+                                ]
+                            }
+                        ],
+                        "final_position": "まな板"
                     }
                 ]
             },
@@ -139,11 +155,11 @@
                                 ]
                             },
                             {
-                                "source_state_id": "",
+                                "source_state_id": "81fa317a",
                                 "vessel": [
                                     "まな板",
                                     "鍋（蓋付き）",
-                                    "ボウル-2"
+                                    "ボウル"
                                 ],
                                 "tools": [
                                     "おたま"
@@ -177,11 +193,20 @@
                                     "盛り付け皿・器"
                                 ],
                                 "tools": [
-                                    "網目の粗い網杓子"
+                                    "おたま"
                                 ]
                             },
                             {
                                 "source_state_id": "5",
+                                "vessel": [
+                                    "盛り付け皿・器"
+                                ],
+                                "tools": [
+                                    "道具不使用"
+                                ]
+                            },
+                            {
+                                "source_state_id": "6",
                                 "vessel": [
                                     "盛り付け皿・器"
                                 ],
