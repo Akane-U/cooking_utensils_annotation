@@ -9073,7 +9073,7 @@
                                 "source_state_id_comment": "",
                                 "vessel_check": false,
                                 "vessel_comment": "",
-                                "tools_check": true,
+                                "tools_check": false,
                                 "tools_comment": "菜箸, 落とし蓋\n菜箸も使用するほうが自然なので"
                             },
                             {
@@ -9088,7 +9088,7 @@
                                 "source_state_id_comment": "",
                                 "vessel_check": false,
                                 "vessel_comment": "",
-                                "tools_check": true,
+                                "tools_check": false,
                                 "tools_comment": "菜箸, 落とし蓋\n菜箸も使用するほうが自然なので"
                             }
                         ],
@@ -38605,7 +38605,7 @@
                                 ],
                                 "source_state_id_check": false,
                                 "source_state_id_comment": "",
-                                "vessel_check": true,
+                                "vessel_check": false,
                                 "vessel_comment": "",
                                 "tools_check": false,
                                 "tools_comment": ""
