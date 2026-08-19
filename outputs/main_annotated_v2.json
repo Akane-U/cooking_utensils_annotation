@@ -8058,7 +8058,7 @@
                                 "source_state_id": "2",
                                 "vessel": [
                                     "まな板",
-                                    "盛り付け皿・器"
+                                    "None_バット-2"
                                 ],
                                 "tools": [
                                     "包丁",
@@ -8069,7 +8069,7 @@
                                 "source_state_id": "3",
                                 "vessel": [
                                     "まな板",
-                                    "盛り付け皿・器"
+                                    "None_バット-2"
                                 ],
                                 "tools": [
                                     "包丁"
@@ -8079,14 +8079,14 @@
                                 "source_state_id": "4",
                                 "vessel": [
                                     "まな板",
-                                    "盛り付け皿・器"
+                                    "None_バット-2"
                                 ],
                                 "tools": [
                                     "包丁"
                                 ]
                             }
                         ],
-                        "final_position": "盛り付け皿・器"
+                        "final_position": "None_バット-2"
                     },
                     {
                         "id": "fe39107d",
@@ -8096,14 +8096,14 @@
                                 "source_state_id": "e8cbb2f5",
                                 "vessel": [
                                     "バット",
-                                    "None_盛り付け皿・器-2"
+                                    "None_バット-3"
                                 ],
                                 "tools": [
                                     "道具不使用"
                                 ]
                             }
                         ],
-                        "final_position": "None_盛り付け皿・器-2"
+                        "final_position": "None_バット-3"
                     }
                 ]
             },
@@ -8135,9 +8135,9 @@
                             {
                                 "source_state_id": "71055dcc",
                                 "vessel": [
-                                    "盛り付け皿・器",
+                                    "None_バット-2",
                                     "鍋（蓋付き）",
-                                    "None_盛り付け皿・器-3"
+                                    "盛り付け皿・器"
                                 ],
                                 "tools": [
                                     "菜箸"
@@ -8146,9 +8146,9 @@
                             {
                                 "source_state_id": "fe39107d",
                                 "vessel": [
-                                    "None_盛り付け皿・器-2",
+                                    "None_バット-3",
                                     "鍋（蓋付き）",
-                                    "None_盛り付け皿・器-3"
+                                    "盛り付け皿・器"
                                 ],
                                 "tools": [
                                     "菜箸"
@@ -8157,7 +8157,7 @@
                             {
                                 "source_state_id": "7",
                                 "vessel": [
-                                    "None_盛り付け皿・器-3"
+                                    "盛り付け皿・器"
                                 ],
                                 "tools": [
                                     "菜箸"
@@ -8166,19 +8166,19 @@
                             {
                                 "source_state_id": "8",
                                 "vessel": [
-                                    "None_盛り付け皿・器-3"
+                                    "盛り付け皿・器"
                                 ],
                                 "tools": [
                                     "菜箸"
                                 ]
                             }
                         ],
-                        "final_position": "None_盛り付け皿・器-3"
+                        "final_position": "盛り付け皿・器"
                     }
                 ]
             }
         ],
-        "annotation_note": "step3, 4: 盛り付け皿・器を複数にしているため、難しい"
+        "annotation_note": ""
     },
     {
         "title": "のり梅醤（ジャン）の豚バラ炒め",
